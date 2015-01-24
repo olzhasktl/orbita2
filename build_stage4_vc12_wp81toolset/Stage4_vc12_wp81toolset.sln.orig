@@ -1,0 +1,28 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Stage4_vc12_wp81toolset", "Stage4_vc12_wp81toolset.vcxproj", "{A2D38A22-F7F2-EA34-0A88-0D49975C8A1F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|X86 = Debug|X86
+		Release|ARM = Release|ARM
+		Release|X86 = Release|X86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A2D38A22-F7F2-EA34-0A88-0D49975C8A1F}.Debug|ARM.ActiveCfg = Debug|ARM
+		{A2D38A22-F7F2-EA34-0A88-0D49975C8A1F}.Debug|ARM.Build.0 = Debug|ARM
+		{A2D38A22-F7F2-EA34-0A88-0D49975C8A1F}.Debug|ARM.Deploy.0 = Debug|ARM
+		{A2D38A22-F7F2-EA34-0A88-0D49975C8A1F}.Debug|X86.ActiveCfg = Debug|X86
+		{A2D38A22-F7F2-EA34-0A88-0D49975C8A1F}.Debug|X86.Build.0 = Debug|X86
+		{A2D38A22-F7F2-EA34-0A88-0D49975C8A1F}.Debug|X86.Deploy.0 = Debug|X86
+		{A2D38A22-F7F2-EA34-0A88-0D49975C8A1F}.Release|ARM.ActiveCfg = Release|ARM
+		{A2D38A22-F7F2-EA34-0A88-0D49975C8A1F}.Release|ARM.Build.0 = Release|ARM
+		{A2D38A22-F7F2-EA34-0A88-0D49975C8A1F}.Release|ARM.Deploy.0 = Release|ARM
+		{A2D38A22-F7F2-EA34-0A88-0D49975C8A1F}.Release|X86.ActiveCfg = Release|X86
+		{A2D38A22-F7F2-EA34-0A88-0D49975C8A1F}.Release|X86.Build.0 = Release|X86
+		{A2D38A22-F7F2-EA34-0A88-0D49975C8A1F}.Release|X86.Deploy.0 = Release|X86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

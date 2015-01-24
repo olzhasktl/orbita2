@@ -1,0 +1,2 @@
+#TargetFrameworkVersion=v4.0:PlatformToolSet=v120:EnableManagedIncrementalBuild=false:VCToolArchitecture=Native32Bit
+x86 Debug|Win32|c:\Marmalade\7.5\examples\GameTutorial\CPP\Stage4\build_stage4_vc12\|

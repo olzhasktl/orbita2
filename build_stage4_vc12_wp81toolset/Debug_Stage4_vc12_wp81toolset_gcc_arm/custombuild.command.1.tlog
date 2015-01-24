@@ -1,0 +1,2 @@
+^C:\MARMALADE\7.5\EXAMPLES\GAMETUTORIAL\CPP\STAGE4\STAGE4.MKB
+"C:\Marmalade\7.5\s3e\python\python.exe" "C:\Marmalade\7.5\s3e\makefile_builder\mkb.py" "c:/Marmalade/7.5/examples/GameTutorial/CPP/Stage4/Stage4.mkb" "--buildenv=VC12" "--buildenv-toolset=WP81" "--default-buildenv=vc12" --msvc-project
