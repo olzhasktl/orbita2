@@ -13,7 +13,7 @@
 #if !defined(__RESOURCES_H__)
 #define __RESOURCES_H__
 
-#define MAX_GEM_TYPES   5
+#define MAX_GEM_TYPES   2
 
 #include "Iw2D.h"
 #include "Iw2DSceneGraph.h"
@@ -33,7 +33,12 @@ using namespace Iw2DSceneGraph;
 class Resources
 {
 protected:
-    CIw2DImage*     Gem;
+	CIw2DImage*     Gem;
+	CIw2DImage*     inactive_player;
+	CIw2DImage*     player1;
+	CIw2DImage*     player2;
+	CIw2DImage*     player3;
+	CIw2DImage*     player4;
     CIw2DImage*     MenuBG;
     CIw2DImage*     GameBG;
     CIw2DImage*     MenuButton;
@@ -42,9 +47,22 @@ protected:
     CIw2DImage*     PlayButton;
     CIw2DFont*      Font;
     CAtlas*         GemAtlas;
+	CAtlas*         inactivePlayerAtlas;
+	CAtlas*         player1Atlas;
+	CAtlas*         player2Atlas;
+	CAtlas*         player3Atlas;
+	CAtlas*         player4Atlas;
+	CIw2DImage*     Bonus;
+	CIw2DImage*     Bomb;
+
 
 public:
-    CIw2DImage*     getGem()                    { return Gem; }
+	CIw2DImage*     getGem()                    { return Gem; }
+	CIw2DImage*     getInactivePlayer()			{ return inactive_player; }
+	CIw2DImage*     getPlayer1()				{ return player1; }
+	CIw2DImage*     getPlayer2()				{ return player2; }
+	CIw2DImage*     getPlayer3()				{ return player3; }
+	CIw2DImage*     getPlayer4()				{ return player4; }
     CIw2DImage*     getMenuBG()                 { return MenuBG; }
     CIw2DImage*     getGameBG()                 { return GameBG; }
     CIw2DImage*     getMenuButton()             { return MenuButton; }
@@ -52,7 +70,15 @@ public:
     CIw2DImage*     getPlayButton()             { return PlayButton; }
     CIw2DImage*     getPauseIcon()              { return PauseIcon; }
     CIw2DFont*      getFont()                   { return Font; }
-    CAtlas*         getGemAtlas()               { return GemAtlas; }
+	CAtlas*         getGemAtlas()               { return GemAtlas; }
+	CAtlas*         getGemInactivePlayer()      { return inactivePlayerAtlas; }
+	CAtlas*         getPlayer1Atlas()			{ return player1Atlas; }
+	CAtlas*         getPlayer2Atlas()			{ return player2Atlas; }
+	CAtlas*         getPlayer3Atlas()			{ return player3Atlas; }
+	CAtlas*         getPlayer4Atlas()			{ return player4Atlas; }
+	CIw2DImage*     getBonus()                  { return Bonus; }
+	CIw2DImage*     getBomb()                   { return Bomb; }
+
 
 public:
     Resources();

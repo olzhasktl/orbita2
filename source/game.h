@@ -14,19 +14,32 @@
 #define __GAME_H__
 
 #include "scene.h"
+#include "timer.h"
 
 class Game : public Scene
 {
 protected:
     int             currentRoundScore;              // Current round score
+	int p1, p2, p3, p4;
+	bool pl1, pl2, pl3, pl4;
 
     // UI components
     CLabel*         scoreLabel;
-    CSprite*        pauseSprite;
+    //CSprite*        pauseSprite;
     CSprite*        gemSprite;
+	CSprite*        gemPlayer1;
+	CSprite*        gemPlayer2;
+	CSprite*        gemPlayer3;
+	CSprite*        gemPlayer4;
+	CLabel*         scorePlayer1;
+	CLabel*         scorePlayer2;
+	CLabel*         scorePlayer3;
+	CLabel*         scorePlayer4;
 
 private:
-    void            initUI();
+	void            initUI();
+	void            GameInitPlayers();
+	void			addBonus(Timer* timer, void* userData);
 public:
     Game() {}
     ~Game();

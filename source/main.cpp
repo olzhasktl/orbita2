@@ -17,7 +17,6 @@
 #include "scene.h"
 #include "resources.h"
 #include "game.h"
-#include "mainMenu.h"
 #include "pauseMenu.h"
 
 using namespace IwTween;
@@ -55,11 +54,11 @@ int main()
     g_pSceneManager->Add(game);
     game->newGame();
 
-    // Init the main menu
-    MainMenu* main_menu = new MainMenu();
-    main_menu->SetName("mainmenu");
-    main_menu->Init();
-    g_pSceneManager->Add(main_menu);
+    //// Init the main menu
+    //MainMenu* main_menu = new MainMenu();
+    //main_menu->SetName("mainmenu");
+    //main_menu->Init();
+    //g_pSceneManager->Add(main_menu);
 
     // Init the pause menu
     PauseMenu* pause_menu = new PauseMenu();
@@ -68,7 +67,7 @@ int main()
     g_pSceneManager->Add(pause_menu);
 
     // Switch to main menu scene
-    g_pSceneManager->SwitchTo(main_menu);
+	g_pSceneManager->SwitchTo(game);
 
     // Loop forever, until the user or the OS performs some action to quit the app
     while (!s3eDeviceCheckQuitRequest())

@@ -4,9 +4,9 @@
 # tool during the build process.
 
 config = {}
-cmdline = ['C:/Marmalade/7.5/s3e/makefile_builder/mkb.py', 'c:/Marmalade/7.5/examples/GameTutorial/CPP/Stage4/Stage4.mkb', '--buildenv=VC12', '--fake-vc-call', '--deploy-only']
+cmdline = ['C:/Marmalade/7.5/s3e/makefile_builder/mkb.py', 'c:/Marmalade/7.5/examples/GameTutorial/CPP/Stage4/Stage4.mkb', '--buildenv=VC12', '--debug', '--x86', '--no-ide', '--execute', '--deploy-only']
 mkb = 'c:/Marmalade/7.5/examples/GameTutorial/CPP/Stage4/Stage4.mkb'
-mkf = ['c:\\marmalade\\7.5\\s3e\\s3e-default.mkf', 'c:\\marmalade\\7.5\\modules\\iw2d\\iw2d.mkf', 'c:\\marmalade\\7.5\\modules\\iwgx\\iwgx.mkf', 'c:\\marmalade\\7.5\\modules\\iwgl\\iwgl.mkf', 'c:\\marmalade\\7.5\\modules\\iwutil\\iwutil.mkf', 'c:\\marmalade\\7.5\\modules\\third_party\\libjpeg\\libjpeg.mkf', 'c:\\marmalade\\7.5\\modules\\third_party\\libpng\\libpng.mkf', 'c:\\marmalade\\7.5\\modules\\third_party\\zlib\\zlib.mkf', 'c:\\marmalade\\7.5\\modules\\iwgeom\\iwgeom.mkf', 'c:\\marmalade\\7.5\\modules\\iwresmanager\\iwresmanager.mkf', 'c:\\marmalade\\7.5\\extensions\\pvrtextool\\pvrtextool.mkf', 'c:\\marmalade\\7.5\\modules\\iwgxfont\\iwgxfont.mkf', 'c:\\marmalade\\7.5\\modules\\third_party\\tiniconv\\tiniconv.mkf', 'c:\\marmalade\\7.5\\modules\\iw2dscenegraph\\iw2dscenegraph.mkf', 'c:\\marmalade\\7.5\\modules\\iw2dscenegraphcore\\iw2dscenegraphcore.mkf', 'c:\\marmalade\\7.5\\modules\\iwtween\\iwtween.mkf', 'c:\\marmalade\\7.5\\examples\\gametutorial\\cpp\\modules\\soundengine\\soundengine.mkf', 'c:\\marmalade\\7.5\\examples\\marmaladeexampleresources\\marmaladeexampleresources.mkf']
+mkf = ['c:\\marmalade\\7.5\\s3e\\s3e-default.mkf', 'c:\\marmalade\\7.5\\modules\\iw2d\\iw2d.mkf', 'c:\\marmalade\\7.5\\modules\\iwgx\\iwgx.mkf', 'c:\\marmalade\\7.5\\modules\\iwgl\\iwgl.mkf', 'c:\\marmalade\\7.5\\modules\\iwutil\\iwutil.mkf', 'c:\\marmalade\\7.5\\modules\\third_party\\libjpeg\\libjpeg.mkf', 'c:\\marmalade\\7.5\\modules\\third_party\\libpng\\libpng.mkf', 'c:\\marmalade\\7.5\\modules\\third_party\\zlib\\zlib.mkf', 'c:\\marmalade\\7.5\\modules\\iwgeom\\iwgeom.mkf', 'c:\\marmalade\\7.5\\modules\\iwresmanager\\iwresmanager.mkf', 'c:\\marmalade\\7.5\\extensions\\pvrtextool\\pvrtextool.mkf', 'c:\\marmalade\\7.5\\modules\\iwgxfont\\iwgxfont.mkf', 'c:\\marmalade\\7.5\\modules\\third_party\\tiniconv\\tiniconv.mkf', 'c:\\marmalade\\7.5\\modules\\iw2dscenegraph\\iw2dscenegraph.mkf', 'c:\\marmalade\\7.5\\modules\\iw2dscenegraphcore\\iw2dscenegraphcore.mkf', 'c:\\marmalade\\7.5\\modules\\iwtween\\iwtween.mkf', 'c:\\marmalade\\7.5\\examples\\gametutorial\\cpp\\modules\\soundengine\\soundengine.mkf']
 
 class DeployConfig(object):
     pass
@@ -48,13 +48,11 @@ class DefaultConfig(DeployConfig):
     android_extra_application_manifest = []
     ws8_ext_native_dll = []
     android_external_assets = []
-    splashscreen = 'c:/marmalade/7.5/examples/marmaladeexampleresources/resources/splashscreens'
     blackberry_extra_descriptor = []
     android_extra_manifest = []
     wp81_ext_sdk_ref = []
     iphone_link_libdirs = []
     wp81_ext_device_capabilities = []
-    icon = 'c:/marmalade/7.5/examples/marmaladeexampleresources/resources/icons'
     linux_ext_lib = []
     ws8_ext_managed_dll = []
     ws8_ext_sdk_manifest_part = []

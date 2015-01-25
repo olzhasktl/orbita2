@@ -47,8 +47,6 @@
     </Filter>
     <Filter Include="'Marmalade System (S3E)'\GL\GLES 2.0">
     </Filter>
-    <Filter Include="(MarmaladeExampleResources)">
-    </Filter>
     <Filter Include="'Marmalade System (S3E)'\stdc headers">
     </Filter>
     <Filter Include="'Marmalade Studio'\iwgx">
@@ -277,9 +275,6 @@
     </None>
     <None Include="c:/marmalade/7.5/s3e/h/std/c++/map">
       <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
-    </None>
-    <None Include="c:/marmalade/7.5/examples/marmaladeexampleresources/marmaladeexampleresources.mkf">
-      <Filter>(MarmaladeExampleResources)</Filter>
     </None>
     <None Include="c:/marmalade/7.5/s3e/h/std/c++/memory">
       <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
@@ -1267,6 +1262,9 @@
     <ClInclude Include="c:/marmalade/7.5/s3e/h/std/sys/time.h">
       <Filter>'Marmalade System (S3E)'\stdc headers\sys</Filter>
     </ClInclude>
+    <ClInclude Include="c:/Marmalade/7.5/examples/GameTutorial/CPP/Stage4/source/timer.h">
+      <Filter>source</Filter>
+    </ClInclude>
     <ClInclude Include="c:/marmalade/7.5/s3e/h/std/sys/times.h">
       <Filter>'Marmalade System (S3E)'\stdc headers\sys</Filter>
     </ClInclude>
@@ -1387,6 +1385,9 @@
       <Filter>source</Filter>
     </ClCompile>
     <ClCompile Include="..\source\scene.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\timer.cpp">
       <Filter>source</Filter>
     </ClCompile>
   </ItemGroup>

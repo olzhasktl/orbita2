@@ -1,18 +1,12 @@
 #!/usr/bin/env mkb
 
-options
-{
-    module_path="../modules"
-}
-
 subprojects
 {
     iw2d
     iw2dscenegraph
     iw2dscenegraphcore
     iwtween
-    SoundEngine
-    ../../../MarmaladeExampleResources
+    modules/SoundEngine
 
 }
 
@@ -28,6 +22,7 @@ files
     pauseMenu.cpp
     resources.cpp
     scene.cpp
+	timer.cpp
 
     audio.h
     game.h
@@ -37,6 +32,7 @@ files
     pauseMenu.h
     resources.h
     scene.h
+	timer.h
 }
 
 assets
