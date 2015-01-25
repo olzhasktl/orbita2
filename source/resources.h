@@ -54,7 +54,7 @@ protected:
 	CAtlas*         player4Atlas;
 	CIw2DImage*     Bonus;
 	CIw2DImage*     Bomb;
-
+	CIw2DImage*     PlayerImage;
 
 public:
 	CIw2DImage*     getGem()                    { return Gem; }
@@ -78,6 +78,7 @@ public:
 	CAtlas*         getPlayer4Atlas()			{ return player4Atlas; }
 	CIw2DImage*     getBonus()                  { return Bonus; }
 	CIw2DImage*     getBomb()                   { return Bomb; }
+	CIw2DImage*     getPlayerImage()              { return PlayerImage; }
 
 
 public:

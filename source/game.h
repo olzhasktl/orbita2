@@ -12,9 +12,8 @@
 
 #if !defined(__GAME_H__)
 #define __GAME_H__
-
+#include <iostream>
 #include "scene.h"
-#include "timer.h"
 
 class Game : public Scene
 {
@@ -35,11 +34,15 @@ protected:
 	CLabel*         scorePlayer2;
 	CLabel*         scorePlayer3;
 	CLabel*         scorePlayer4;
+	CSprite*        gemPlayer;
+	std::vector<CSprite*> bonuses;
+	std::vector<bool> bonuses_deleted;
 
 private:
 	void            initUI();
 	void            GameInitPlayers();
-	void			addBonus(Timer* timer, void* userData);
+	static void		addBonus(Timer* timer, void* userData);
+	void            setTargetGem(int type);
 public:
     Game() {}
     ~Game();
