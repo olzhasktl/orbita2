@@ -1,462 +1,370 @@
-	.arch armv6
-	.fpu softvfp
-	.eabi_attribute 20, 1
-	.eabi_attribute 21, 1
-	.eabi_attribute 23, 3
-	.eabi_attribute 24, 1
-	.eabi_attribute 25, 1
-	.eabi_attribute 26, 2
-	.eabi_attribute 30, 6
-	.eabi_attribute 34, 1
-	.eabi_attribute 18, 2
 	.file	"PVRTexTool_interface.cpp"
 	.text
 .Ltext0:
-	.cfi_sections	.debug_frame
-	.bss
-	.align	2
-_ZL5g_Ext:
-	.space	8
-_ZL8g_GotExt:
-	.space	1
-_ZL10g_TriedExt:
-	.space	1
-_ZL15g_TriedNoMsgExt:
-	.space	1
+	.local	_ZL5g_Ext
+	.comm	_ZL5g_Ext,8,4
+	.local	_ZL8g_GotExt
+	.comm	_ZL8g_GotExt,1,1
+	.local	_ZL10g_TriedExt
+	.comm	_ZL10g_TriedExt,1,1
+	.local	_ZL15g_TriedNoMsgExt
+	.comm	_ZL15g_TriedNoMsgExt,1,1
 	.section	.rodata
-	.align	2
+	.align 4
 .LC0:
-	.ascii	"error loading extension: PVRTexTool\000"
-	.section	.text._ZL8_extLoadv,"ax",%progbits
-	.align	2
-	.type	_ZL8_extLoadv, %function
+	.string	"error loading extension: PVRTexTool"
+	.text
+	.type	_ZL8_extLoadv, @function
 _ZL8_extLoadv:
-.LFB19:
+.LFB21:
 	.file 1 "c:/marmalade/7.5/extensions/pvrtextool/interface/PVRTexTool_interface.cpp"
 	.loc 1 43 0
 	.cfi_startproc
-	@ args = 0, pretend = 0, frame = 8
-	@ frame_needed = 0, uses_anonymous_args = 0
-	str	lr, [sp, #-4]!
-.LCFI0:
-	.cfi_def_cfa_offset 4
-	.cfi_offset 14, -4
-	sub	sp, sp, #12
-.LCFI1:
-	.cfi_def_cfa_offset 16
+	pushl	%ebp
+	.cfi_def_cfa_offset 8
+	.cfi_offset 5, -8
+	movl	%esp, %ebp
+	.cfi_def_cfa_register 5
+	pushl	%ebx
+	leal	-36(%esp), %esp
+	.cfi_offset 3, -12
+	call	__x86.get_pc_thunk.bx
+	addl	$_GLOBAL_OFFSET_TABLE_, %ebx
 .LBB2:
 .LBB3:
 	.loc 1 44 0
-	ldr	r3, .L6
-.LPIC0:
-	add	r3, pc, r3
-	ldrb	r3, [r3]	@ zero_extendqisi2
-	eor	r3, r3, #1
-	uxtb	r3, r3
-	cmp	r3, #0
-	beq	.L2
+	movzbl	_ZL8g_GotExt@GOTOFF(%ebx), %eax
+	xorl	$1, %eax
+	testb	%al, %al
+	je	.L2
 	.loc 1 44 0 is_stmt 0 discriminator 1
-	ldr	r3, .L6+4
-.LPIC1:
-	add	r3, pc, r3
-	ldrb	r3, [r3]	@ zero_extendqisi2
-	eor	r3, r3, #1
-	uxtb	r3, r3
-	cmp	r3, #0
-	beq	.L2
+	movzbl	_ZL10g_TriedExt@GOTOFF(%ebx), %eax
+	xorl	$1, %eax
+	testb	%al, %al
+	je	.L2
 .LBB4:
 	.loc 1 46 0 is_stmt 1
-	ldr	r0, .L6+8
-	ldr	r3, .L6+12
-.LPIC2:
-	add	r3, pc, r3
-	mov	r1, r3
-	mov	r2, #8
-	bl	s3eExtGetHash(PLT)
-	str	r0, [sp, #4]
+	movl	$8, 8(%esp)
+	leal	_ZL5g_Ext@GOTOFF(%ebx), %eax
+	movl	%eax, 4(%esp)
+	movl	$-1229730132, (%esp)
+	call	s3eExtGetHash@PLT
+	movl	%eax, -12(%ebp)
 	.loc 1 47 0
-	ldr	r3, [sp, #4]
-	cmp	r3, #0
-	bne	.L3
+	cmpl	$0, -12(%ebp)
+	jne	.L3
 	.loc 1 48 0
-	ldr	r3, .L6+16
-.LPIC3:
-	add	r3, pc, r3
-	mov	r2, #1
-	strb	r2, [r3]
-	b	.L4
+	movb	$1, _ZL8g_GotExt@GOTOFF(%ebx)
+	jmp	.L4
 .L3:
 	.loc 1 50 0
-	mov	r0, #2
-	ldr	r3, .L6+20
-.LPIC4:
-	add	r3, pc, r3
-	mov	r1, r3
-	bl	s3eDebugAssertShow(PLT)
+	leal	.LC0@GOTOFF(%ebx), %eax
+	movl	%eax, 4(%esp)
+	movl	$2, (%esp)
+	call	s3eDebugAssertShow@PLT
 .L4:
 	.loc 1 52 0 discriminator 1
-	ldr	r3, .L6+24
-.LPIC5:
-	add	r3, pc, r3
-	mov	r2, #1
-	strb	r2, [r3]
+	movb	$1, _ZL10g_TriedExt@GOTOFF(%ebx)
 	.loc 1 53 0 discriminator 1
-	ldr	r3, .L6+28
-.LPIC6:
-	add	r3, pc, r3
-	mov	r2, #1
-	strb	r2, [r3]
+	movb	$1, _ZL15g_TriedNoMsgExt@GOTOFF(%ebx)
 .L2:
 .LBE4:
 .LBE3:
 	.loc 1 56 0
-	ldr	r3, .L6+32
-.LPIC7:
-	add	r3, pc, r3
-	ldrb	r3, [r3]	@ zero_extendqisi2
+	movzbl	_ZL8g_GotExt@GOTOFF(%ebx), %eax
 .LBE2:
 	.loc 1 57 0
-	mov	r0, r3
-	add	sp, sp, #12
-	@ sp needed
-	ldr	pc, [sp], #4
-.L7:
-	.align	2
-.L6:
-	.word	_ZL8g_GotExt-(.LPIC0+8)
-	.word	_ZL10g_TriedExt-(.LPIC1+8)
-	.word	-1229730132
-	.word	_ZL5g_Ext-(.LPIC2+8)
-	.word	_ZL8g_GotExt-(.LPIC3+8)
-	.word	.LC0-(.LPIC4+8)
-	.word	_ZL10g_TriedExt-(.LPIC5+8)
-	.word	_ZL15g_TriedNoMsgExt-(.LPIC6+8)
-	.word	_ZL8g_GotExt-(.LPIC7+8)
+	leal	36(%esp), %esp
+	popl	%ebx
+	.cfi_restore 3
+	popl	%ebp
+	.cfi_restore 5
+	.cfi_def_cfa 4, 4
+	ret
 	.cfi_endproc
-.LFE19:
+.LFE21:
 	.size	_ZL8_extLoadv, .-_ZL8_extLoadv
-	.section	.text._ZL13_extLoadNoMsgv,"ax",%progbits
-	.align	2
-	.type	_ZL13_extLoadNoMsgv, %function
+	.type	_ZL13_extLoadNoMsgv, @function
 _ZL13_extLoadNoMsgv:
-.LFB20:
+.LFB22:
 	.loc 1 60 0
 	.cfi_startproc
-	@ args = 0, pretend = 0, frame = 8
-	@ frame_needed = 0, uses_anonymous_args = 0
-	str	lr, [sp, #-4]!
-.LCFI2:
-	.cfi_def_cfa_offset 4
-	.cfi_offset 14, -4
-	sub	sp, sp, #12
-.LCFI3:
-	.cfi_def_cfa_offset 16
+	pushl	%ebp
+	.cfi_def_cfa_offset 8
+	.cfi_offset 5, -8
+	movl	%esp, %ebp
+	.cfi_def_cfa_register 5
+	pushl	%ebx
+	leal	-36(%esp), %esp
+	.cfi_offset 3, -12
+	call	__x86.get_pc_thunk.bx
+	addl	$_GLOBAL_OFFSET_TABLE_, %ebx
 .LBB5:
 .LBB6:
 	.loc 1 61 0
-	ldr	r3, .L13
-.LPIC8:
-	add	r3, pc, r3
-	ldrb	r3, [r3]	@ zero_extendqisi2
-	eor	r3, r3, #1
-	uxtb	r3, r3
-	cmp	r3, #0
-	beq	.L9
+	movzbl	_ZL8g_GotExt@GOTOFF(%ebx), %eax
+	xorl	$1, %eax
+	testb	%al, %al
+	je	.L7
 	.loc 1 61 0 is_stmt 0 discriminator 1
-	ldr	r3, .L13+4
-.LPIC9:
-	add	r3, pc, r3
-	ldrb	r3, [r3]	@ zero_extendqisi2
-	eor	r3, r3, #1
-	uxtb	r3, r3
-	cmp	r3, #0
-	beq	.L9
+	movzbl	_ZL15g_TriedNoMsgExt@GOTOFF(%ebx), %eax
+	xorl	$1, %eax
+	testb	%al, %al
+	je	.L7
 .LBB7:
 	.loc 1 63 0 is_stmt 1
-	ldr	r0, .L13+8
-	ldr	r3, .L13+12
-.LPIC10:
-	add	r3, pc, r3
-	mov	r1, r3
-	mov	r2, #8
-	bl	s3eExtGetHash(PLT)
-	str	r0, [sp, #4]
+	movl	$8, 8(%esp)
+	leal	_ZL5g_Ext@GOTOFF(%ebx), %eax
+	movl	%eax, 4(%esp)
+	movl	$-1229730132, (%esp)
+	call	s3eExtGetHash@PLT
+	movl	%eax, -12(%ebp)
 	.loc 1 64 0
-	ldr	r3, [sp, #4]
-	cmp	r3, #0
-	bne	.L10
+	cmpl	$0, -12(%ebp)
+	jne	.L8
 	.loc 1 65 0
-	ldr	r3, .L13+16
-.LPIC11:
-	add	r3, pc, r3
-	mov	r2, #1
-	strb	r2, [r3]
-.L10:
+	movb	$1, _ZL8g_GotExt@GOTOFF(%ebx)
+.L8:
 	.loc 1 66 0
-	ldr	r3, .L13+20
-.LPIC12:
-	add	r3, pc, r3
-	mov	r2, #1
-	strb	r2, [r3]
+	movb	$1, _ZL15g_TriedNoMsgExt@GOTOFF(%ebx)
 	.loc 1 67 0
-	ldr	r3, .L13+24
-.LPIC13:
-	add	r3, pc, r3
-	ldrb	r3, [r3]	@ zero_extendqisi2
-	cmp	r3, #0
-	beq	.L11
+	movzbl	_ZL10g_TriedExt@GOTOFF(%ebx), %eax
+	testb	%al, %al
+	je	.L9
 	.loc 1 68 0
-	ldr	r3, .L13+28
-.LPIC14:
-	add	r3, pc, r3
-	mov	r2, #1
-	strb	r2, [r3]
-.L11:
+	movb	$1, _ZL10g_TriedExt@GOTOFF(%ebx)
 .L9:
+.L7:
 .LBE7:
 .LBE6:
 	.loc 1 71 0
-	ldr	r3, .L13+32
-.LPIC15:
-	add	r3, pc, r3
-	ldrb	r3, [r3]	@ zero_extendqisi2
+	movzbl	_ZL8g_GotExt@GOTOFF(%ebx), %eax
 .LBE5:
 	.loc 1 72 0
-	mov	r0, r3
-	add	sp, sp, #12
-	@ sp needed
-	ldr	pc, [sp], #4
-.L14:
-	.align	2
-.L13:
-	.word	_ZL8g_GotExt-(.LPIC8+8)
-	.word	_ZL15g_TriedNoMsgExt-(.LPIC9+8)
-	.word	-1229730132
-	.word	_ZL5g_Ext-(.LPIC10+8)
-	.word	_ZL8g_GotExt-(.LPIC11+8)
-	.word	_ZL15g_TriedNoMsgExt-(.LPIC12+8)
-	.word	_ZL10g_TriedExt-(.LPIC13+8)
-	.word	_ZL10g_TriedExt-(.LPIC14+8)
-	.word	_ZL8g_GotExt-(.LPIC15+8)
-	.cfi_endproc
-.LFE20:
-	.size	_ZL13_extLoadNoMsgv, .-_ZL13_extLoadNoMsgv
-	.section	.text.PVRTexToolAvailable,"ax",%progbits
-	.align	2
-	.global	PVRTexToolAvailable
-	.hidden	PVRTexToolAvailable
-	.type	PVRTexToolAvailable, %function
-PVRTexToolAvailable:
-.LFB21:
-	.loc 1 75 0
-	.cfi_startproc
-	@ args = 0, pretend = 0, frame = 0
-	@ frame_needed = 0, uses_anonymous_args = 0
-	stmfd	sp!, {r3, lr}
-.LCFI4:
-	.cfi_def_cfa_offset 8
-	.cfi_offset 3, -8
-	.cfi_offset 14, -4
-	.loc 1 76 0
-	bl	_ZL13_extLoadNoMsgv(PLT)
-	.loc 1 77 0
-	ldr	r3, .L19
-.LPIC16:
-	add	r3, pc, r3
-	ldrb	r3, [r3]	@ zero_extendqisi2
-	cmp	r3, #0
-	beq	.L16
-	.loc 1 77 0 is_stmt 0 discriminator 1
-	mov	r3, #1
-	b	.L17
-.L16:
-	.loc 1 77 0 discriminator 2
-	mov	r3, #0
-.L17:
-	.loc 1 78 0 is_stmt 1 discriminator 3
-	mov	r0, r3
-	ldmfd	sp!, {r3, pc}
-.L20:
-	.align	2
-.L19:
-	.word	_ZL8g_GotExt-(.LPIC16+8)
-	.cfi_endproc
-.LFE21:
-	.size	PVRTexToolAvailable, .-PVRTexToolAvailable
-	.section	.rodata
-	.align	2
-.LC1:
-	.ascii	"PVRTEXTOOL_VERBOSE\000"
-	.align	2
-.LC2:
-	.ascii	"calling PVRTexTool[0] func: PVRTexToolConvert\000"
-	.section	.text.PVRTexToolConvert,"ax",%progbits
-	.align	2
-	.global	PVRTexToolConvert
-	.hidden	PVRTexToolConvert
-	.type	PVRTexToolConvert, %function
-PVRTexToolConvert:
-.LFB22:
-	.loc 1 81 0
-	.cfi_startproc
-	@ args = 0, pretend = 0, frame = 16
-	@ frame_needed = 0, uses_anonymous_args = 0
-	str	lr, [sp, #-4]!
-.LCFI5:
-	.cfi_def_cfa_offset 4
-	.cfi_offset 14, -4
-	sub	sp, sp, #20
-.LCFI6:
-	.cfi_def_cfa_offset 24
-	str	r0, [sp, #4]
-.LBB8:
-	.loc 1 82 0
-	ldr	r3, .L25
-.LPIC17:
-	add	r3, pc, r3
-	mov	r0, r3
-	mov	r1, #1
-	bl	IwDebugTraceIsChannelOn(PLT)
-	mov	r3, r0
-	cmp	r3, #0
-	moveq	r3, #0
-	movne	r3, #1
-	uxtb	r3, r3
-	cmp	r3, #0
-	beq	.L22
-	.loc 1 82 0 is_stmt 0 discriminator 1
-	ldr	r3, .L25+4
-.LPIC18:
-	add	r3, pc, r3
-	mov	r0, r3
-	bl	IwDebugTraceSetTraceChannel(PLT)
-	ldr	r3, .L25+8
-.LPIC19:
-	add	r3, pc, r3
-	mov	r0, r3
-	bl	IwDebugTraceLinePrintf(PLT)
-.L22:
-	.loc 1 84 0 is_stmt 1
-	bl	_ZL8_extLoadv(PLT)
-	mov	r3, r0
-	eor	r3, r3, #1
-	uxtb	r3, r3
-	cmp	r3, #0
-	beq	.L23
-	.loc 1 85 0
-	mov	r3, #0
-	b	.L24
-.L23:
-	.loc 1 91 0
-	ldr	r3, .L25+12
-.LPIC20:
-	add	r3, pc, r3
-	ldr	r3, [r3]
-	ldr	r0, [sp, #4]
-	blx	r3
-	str	r0, [sp, #12]
-	.loc 1 97 0
-	ldr	r3, [sp, #12]
-.L24:
-.LBE8:
-	.loc 1 98 0
-	mov	r0, r3
-	add	sp, sp, #20
-	@ sp needed
-	ldr	pc, [sp], #4
-.L26:
-	.align	2
-.L25:
-	.word	.LC1-(.LPIC17+8)
-	.word	.LC1-(.LPIC18+8)
-	.word	.LC2-(.LPIC19+8)
-	.word	_ZL5g_Ext-(.LPIC20+8)
+	leal	36(%esp), %esp
+	popl	%ebx
+	.cfi_restore 3
+	popl	%ebp
+	.cfi_restore 5
+	.cfi_def_cfa 4, 4
+	ret
 	.cfi_endproc
 .LFE22:
-	.size	PVRTexToolConvert, .-PVRTexToolConvert
-	.section	.rodata
-	.align	2
-.LC3:
-	.ascii	"calling PVRTexTool[1] func: PVRTexToolFree\000"
-	.section	.text.PVRTexToolFree,"ax",%progbits
-	.align	2
-	.global	PVRTexToolFree
-	.hidden	PVRTexToolFree
-	.type	PVRTexToolFree, %function
-PVRTexToolFree:
+	.size	_ZL13_extLoadNoMsgv, .-_ZL13_extLoadNoMsgv
+	.globl	PVRTexToolAvailable
+	.hidden	PVRTexToolAvailable
+	.type	PVRTexToolAvailable, @function
+PVRTexToolAvailable:
 .LFB23:
-	.loc 1 101 0
+	.loc 1 75 0
 	.cfi_startproc
-	@ args = 0, pretend = 0, frame = 8
-	@ frame_needed = 0, uses_anonymous_args = 0
-	str	lr, [sp, #-4]!
-.LCFI7:
-	.cfi_def_cfa_offset 4
-	.cfi_offset 14, -4
-	sub	sp, sp, #12
-.LCFI8:
-	.cfi_def_cfa_offset 16
-	str	r0, [sp, #4]
-	.loc 1 102 0
-	ldr	r3, .L31
-.LPIC21:
-	add	r3, pc, r3
-	mov	r0, r3
-	mov	r1, #1
-	bl	IwDebugTraceIsChannelOn(PLT)
-	mov	r3, r0
-	cmp	r3, #0
-	moveq	r3, #0
-	movne	r3, #1
-	uxtb	r3, r3
-	cmp	r3, #0
-	beq	.L28
-	.loc 1 102 0 is_stmt 0 discriminator 1
-	ldr	r3, .L31+4
-.LPIC22:
-	add	r3, pc, r3
-	mov	r0, r3
-	bl	IwDebugTraceSetTraceChannel(PLT)
-	ldr	r3, .L31+8
-.LPIC23:
-	add	r3, pc, r3
-	mov	r0, r3
-	bl	IwDebugTraceLinePrintf(PLT)
-.L28:
-	.loc 1 104 0 is_stmt 1
-	bl	_ZL8_extLoadv(PLT)
-	mov	r3, r0
-	eor	r3, r3, #1
-	uxtb	r3, r3
-	cmp	r3, #0
-	beq	.L29
-	.loc 1 105 0
-	b	.L27
-.L29:
-	.loc 1 111 0
-	ldr	r3, .L31+12
-.LPIC24:
-	add	r3, pc, r3
-	ldr	r3, [r3, #4]
-	ldr	r0, [sp, #4]
-	blx	r3
-	.loc 1 117 0
-	mov	r0, r0	@ nop
-.L27:
-	.loc 1 118 0
-	add	sp, sp, #12
-	@ sp needed
-	ldr	pc, [sp], #4
-.L32:
-	.align	2
-.L31:
-	.word	.LC1-(.LPIC21+8)
-	.word	.LC1-(.LPIC22+8)
-	.word	.LC3-(.LPIC23+8)
-	.word	_ZL5g_Ext-(.LPIC24+8)
+	pushl	%ebp
+	.cfi_def_cfa_offset 8
+	.cfi_offset 5, -8
+	movl	%esp, %ebp
+	.cfi_def_cfa_register 5
+	pushl	%ebx
+	leal	-4(%esp), %esp
+	.cfi_offset 3, -12
+	call	__x86.get_pc_thunk.bx
+	addl	$_GLOBAL_OFFSET_TABLE_, %ebx
+	.loc 1 76 0
+	call	_ZL13_extLoadNoMsgv
+	.loc 1 77 0
+	movzbl	_ZL8g_GotExt@GOTOFF(%ebx), %eax
+	testb	%al, %al
+	je	.L12
+	.loc 1 77 0 is_stmt 0 discriminator 1
+	movl	$1, %eax
+	jmp	.L13
+.L12:
+	.loc 1 77 0 discriminator 2
+	movl	$0, %eax
+.L13:
+	.loc 1 78 0 is_stmt 1 discriminator 3
+	leal	4(%esp), %esp
+	popl	%ebx
+	.cfi_restore 3
+	popl	%ebp
+	.cfi_restore 5
+	.cfi_def_cfa 4, 4
+	ret
 	.cfi_endproc
 .LFE23:
+	.size	PVRTexToolAvailable, .-PVRTexToolAvailable
+	.section	.rodata
+.LC1:
+	.string	"PVRTEXTOOL_VERBOSE"
+	.align 4
+.LC2:
+	.string	"calling PVRTexTool[0] func: PVRTexToolConvert"
+	.text
+	.globl	PVRTexToolConvert
+	.hidden	PVRTexToolConvert
+	.type	PVRTexToolConvert, @function
+PVRTexToolConvert:
+.LFB24:
+	.loc 1 81 0
+	.cfi_startproc
+	pushl	%ebp
+	.cfi_def_cfa_offset 8
+	.cfi_offset 5, -8
+	movl	%esp, %ebp
+	.cfi_def_cfa_register 5
+	pushl	%ebx
+	leal	-36(%esp), %esp
+	.cfi_offset 3, -12
+	call	__x86.get_pc_thunk.bx
+	addl	$_GLOBAL_OFFSET_TABLE_, %ebx
+.LBB8:
+	.loc 1 82 0
+	movl	$1, 4(%esp)
+	leal	.LC1@GOTOFF(%ebx), %eax
+	movl	%eax, (%esp)
+	call	IwDebugTraceIsChannelOn@PLT
+	testb	%al, %al
+	setne	%al
+	testb	%al, %al
+	je	.L16
+	.loc 1 82 0 is_stmt 0 discriminator 1
+	leal	.LC1@GOTOFF(%ebx), %eax
+	movl	%eax, (%esp)
+	call	IwDebugTraceSetTraceChannel@PLT
+	leal	.LC2@GOTOFF(%ebx), %eax
+	movl	%eax, (%esp)
+	call	IwDebugTraceLinePrintf@PLT
+.L16:
+	.loc 1 84 0 is_stmt 1
+	call	_ZL8_extLoadv
+	xorl	$1, %eax
+	testb	%al, %al
+	je	.L17
+	.loc 1 85 0
+	movl	$0, %eax
+	jmp	.L18
+.L17:
+	.loc 1 88 0
+	movl	$0, 4(%esp)
+	movl	$1, (%esp)
+	call	s3eDeviceLoaderCallStart@PLT
+	.loc 1 91 0
+	movl	_ZL5g_Ext@GOTOFF(%ebx), %eax
+	movl	8(%ebp), %edx
+	movl	%edx, (%esp)
+	call	*%eax
+	movl	%eax, -12(%ebp)
+	.loc 1 94 0
+	movl	$0, 4(%esp)
+	movl	$1, (%esp)
+	call	s3eDeviceLoaderCallDone@PLT
+	.loc 1 97 0
+	movl	-12(%ebp), %eax
+.L18:
+.LBE8:
+	.loc 1 98 0
+	leal	36(%esp), %esp
+	popl	%ebx
+	.cfi_restore 3
+	popl	%ebp
+	.cfi_restore 5
+	.cfi_def_cfa 4, 4
+	ret
+	.cfi_endproc
+.LFE24:
+	.size	PVRTexToolConvert, .-PVRTexToolConvert
+	.section	.rodata
+	.align 4
+.LC3:
+	.string	"calling PVRTexTool[1] func: PVRTexToolFree"
+	.text
+	.globl	PVRTexToolFree
+	.hidden	PVRTexToolFree
+	.type	PVRTexToolFree, @function
+PVRTexToolFree:
+.LFB25:
+	.loc 1 101 0
+	.cfi_startproc
+	pushl	%ebp
+	.cfi_def_cfa_offset 8
+	.cfi_offset 5, -8
+	movl	%esp, %ebp
+	.cfi_def_cfa_register 5
+	pushl	%ebx
+	leal	-20(%esp), %esp
+	.cfi_offset 3, -12
+	call	__x86.get_pc_thunk.bx
+	addl	$_GLOBAL_OFFSET_TABLE_, %ebx
+	.loc 1 102 0
+	movl	$1, 4(%esp)
+	leal	.LC1@GOTOFF(%ebx), %eax
+	movl	%eax, (%esp)
+	call	IwDebugTraceIsChannelOn@PLT
+	testb	%al, %al
+	setne	%al
+	testb	%al, %al
+	je	.L20
+	.loc 1 102 0 is_stmt 0 discriminator 1
+	leal	.LC1@GOTOFF(%ebx), %eax
+	movl	%eax, (%esp)
+	call	IwDebugTraceSetTraceChannel@PLT
+	leal	.LC3@GOTOFF(%ebx), %eax
+	movl	%eax, (%esp)
+	call	IwDebugTraceLinePrintf@PLT
+.L20:
+	.loc 1 104 0 is_stmt 1
+	call	_ZL8_extLoadv
+	xorl	$1, %eax
+	testb	%al, %al
+	je	.L21
+	.loc 1 105 0
+	jmp	.L19
+.L21:
+	.loc 1 108 0
+	movl	$0, 4(%esp)
+	movl	$1, (%esp)
+	call	s3eDeviceLoaderCallStart@PLT
+	.loc 1 111 0
+	movl	4+_ZL5g_Ext@GOTOFF(%ebx), %eax
+	movl	8(%ebp), %edx
+	movl	%edx, (%esp)
+	call	*%eax
+	.loc 1 114 0
+	movl	$0, 4(%esp)
+	movl	$1, (%esp)
+	call	s3eDeviceLoaderCallDone@PLT
+	.loc 1 117 0
+	nop
+.L19:
+	.loc 1 118 0
+	leal	20(%esp), %esp
+	popl	%ebx
+	.cfi_restore 3
+	popl	%ebp
+	.cfi_restore 5
+	.cfi_def_cfa 4, 4
+	ret
+	.cfi_endproc
+.LFE25:
 	.size	PVRTexToolFree, .-PVRTexToolFree
+	.section	.text.__x86.get_pc_thunk.bx,"axG",@progbits,__x86.get_pc_thunk.bx,comdat
+	.globl	__x86.get_pc_thunk.bx
+	.hidden	__x86.get_pc_thunk.bx
+	.type	__x86.get_pc_thunk.bx, @function
+__x86.get_pc_thunk.bx:
+.LFB26:
+	.cfi_startproc
+	nop
+	nop
+	nop
+	nop
+	nop
+	nop
+	nop
+	nop
+	movl	(%esp), %ebx
+	ret
+	.cfi_endproc
+.LFE26:
 	.text
 .Letext0:
 	.file 2 "c:/marmalade/7.5/s3e/h/s3eTypes.h"
@@ -467,499 +375,468 @@ PVRTexToolFree:
 	.file 7 "c:/marmalade/7.5/s3e/h/std/c++/stl/_config.h"
 	.file 8 "c:/marmalade/7.5/extensions/pvrtextool/h/PVRTexTool.h"
 	.file 9 "<built-in>"
-	.section	.debug_info,"",%progbits
+	.section	.debug_info,"",@progbits
 .Ldebug_info0:
-	.4byte	0x3e3
-	.2byte	0x2
-	.4byte	.Ldebug_abbrev0
+	.long	0x3b2
+	.value	0x4
+	.long	.Ldebug_abbrev0
 	.byte	0x4
 	.uleb128 0x1
-	.4byte	.LASF53
+	.long	.LASF53
 	.byte	0x4
-	.4byte	.LASF54
-	.4byte	.LASF55
-	.4byte	.Ldebug_ranges0+0
-	.4byte	0
-	.4byte	0
-	.4byte	.Ldebug_line0
+	.long	.LASF54
+	.long	.LASF55
+	.long	.Ltext0
+	.long	.Letext0-.Ltext0
+	.long	.Ldebug_line0
 	.uleb128 0x2
 	.byte	0x1
 	.byte	0x8
-	.4byte	.LASF0
+	.long	.LASF0
 	.uleb128 0x2
 	.byte	0x1
 	.byte	0x6
-	.4byte	.LASF1
+	.long	.LASF1
 	.uleb128 0x2
 	.byte	0x2
 	.byte	0x7
-	.4byte	.LASF2
+	.long	.LASF2
 	.uleb128 0x2
 	.byte	0x2
 	.byte	0x5
-	.4byte	.LASF3
+	.long	.LASF3
 	.uleb128 0x2
 	.byte	0x4
 	.byte	0x7
-	.4byte	.LASF4
+	.long	.LASF4
 	.uleb128 0x3
 	.byte	0x4
 	.byte	0x5
-	.ascii	"int\000"
+	.string	"int"
 	.uleb128 0x2
 	.byte	0x8
 	.byte	0x7
-	.4byte	.LASF5
+	.long	.LASF5
 	.uleb128 0x2
 	.byte	0x8
 	.byte	0x5
-	.4byte	.LASF6
+	.long	.LASF6
 	.uleb128 0x2
 	.byte	0x4
 	.byte	0x7
-	.4byte	.LASF7
+	.long	.LASF7
 	.uleb128 0x2
 	.byte	0x4
 	.byte	0x5
-	.4byte	.LASF8
+	.long	.LASF8
 	.uleb128 0x4
-	.4byte	.LASF11
+	.long	.LASF11
 	.byte	0x2
 	.byte	0x7e
-	.4byte	0x29
+	.long	0x25
 	.uleb128 0x5
-	.4byte	.LASF12
+	.long	.LASF12
 	.byte	0x4
 	.byte	0x2
 	.byte	0xea
-	.4byte	0x93
+	.long	0x8f
 	.uleb128 0x6
-	.4byte	.LASF9
+	.long	.LASF9
 	.sleb128 0
 	.uleb128 0x6
-	.4byte	.LASF10
+	.long	.LASF10
 	.sleb128 1
 	.byte	0
 	.uleb128 0x4
-	.4byte	.LASF12
+	.long	.LASF12
 	.byte	0x2
 	.byte	0xee
-	.4byte	0x7a
+	.long	0x76
 	.uleb128 0x4
-	.4byte	.LASF13
+	.long	.LASF13
 	.byte	0x2
 	.byte	0xf3
-	.4byte	0x6f
+	.long	0x6b
 	.uleb128 0x2
 	.byte	0x2
 	.byte	0x7
-	.4byte	.LASF14
+	.long	.LASF14
 	.uleb128 0x7
-	.4byte	.LASF15
+	.long	.LASF15
 	.byte	0x4
 	.byte	0x3
-	.2byte	0x116
-	.4byte	0xd0
+	.value	0x116
+	.long	0xcc
 	.uleb128 0x6
-	.4byte	.LASF16
+	.long	.LASF16
 	.sleb128 0
 	.uleb128 0x6
-	.4byte	.LASF17
+	.long	.LASF17
 	.sleb128 1
 	.uleb128 0x6
-	.4byte	.LASF18
+	.long	.LASF18
 	.sleb128 2
 	.byte	0
 	.uleb128 0x2
 	.byte	0x4
 	.byte	0x7
-	.4byte	.LASF19
+	.long	.LASF19
 	.uleb128 0x2
 	.byte	0x1
 	.byte	0x8
-	.4byte	.LASF20
+	.long	.LASF20
 	.uleb128 0x8
-	.ascii	"std\000"
+	.string	"std"
 	.byte	0x9
 	.byte	0
-	.4byte	0x10f
+	.long	0x106
 	.uleb128 0x9
-	.4byte	.LASF21
-	.byte	0x1
+	.long	.LASF21
 	.uleb128 0x9
-	.4byte	.LASF22
-	.byte	0x1
+	.long	.LASF22
 	.uleb128 0xa
 	.byte	0x4
 	.byte	0x17
-	.4byte	0xe9
+	.long	0xe5
 	.uleb128 0x9
-	.4byte	.LASF23
-	.byte	0x1
+	.long	.LASF23
 	.uleb128 0x9
-	.4byte	.LASF24
-	.byte	0x1
+	.long	.LASF24
 	.uleb128 0x9
-	.4byte	.LASF25
-	.byte	0x1
+	.long	.LASF25
 	.byte	0
 	.uleb128 0xb
-	.4byte	.LASF27
+	.long	.LASF27
 	.byte	0x7
-	.2byte	0x1e9
-	.4byte	0xde
+	.value	0x1e9
+	.long	0xda
 	.uleb128 0xc
-	.4byte	.LASF26
+	.long	.LASF26
 	.byte	0x7
-	.2byte	0x222
-	.4byte	0x159
+	.value	0x222
+	.long	0x150
 	.uleb128 0xa
 	.byte	0x5
 	.byte	0x4e
-	.4byte	0xe9
+	.long	0xe5
 	.uleb128 0xa
 	.byte	0x5
 	.byte	0x4f
-	.4byte	0xef
+	.long	0xea
 	.uleb128 0xa
 	.byte	0x5
 	.byte	0x4e
-	.4byte	0xe9
+	.long	0xe5
 	.uleb128 0xa
 	.byte	0x5
 	.byte	0x4f
-	.4byte	0xef
+	.long	0xea
 	.uleb128 0xa
 	.byte	0x6
 	.byte	0x2f
-	.4byte	0xfc
+	.long	0xf6
 	.uleb128 0xa
 	.byte	0x6
 	.byte	0x33
-	.4byte	0x102
+	.long	0xfb
 	.uleb128 0xa
 	.byte	0x6
 	.byte	0x3d
-	.4byte	0x108
+	.long	0x100
 	.byte	0
 	.uleb128 0xb
-	.4byte	.LASF28
+	.long	.LASF28
 	.byte	0x7
-	.2byte	0x224
-	.4byte	0x11b
+	.value	0x224
+	.long	0x112
 	.uleb128 0xd
-	.4byte	.LASF41
+	.long	.LASF41
 	.byte	0x7c
 	.byte	0x8
 	.byte	0x24
-	.4byte	0x1f0
+	.long	0x1d5
 	.uleb128 0xe
-	.4byte	.LASF29
+	.long	.LASF29
 	.byte	0x8
 	.byte	0x2a
-	.4byte	0x1f0
-	.byte	0x2
-	.byte	0x23
-	.uleb128 0
+	.long	0x1d5
+	.byte	0
 	.uleb128 0xe
-	.4byte	.LASF30
+	.long	.LASF30
 	.byte	0x8
 	.byte	0x2f
-	.4byte	0x200
-	.byte	0x2
-	.byte	0x23
-	.uleb128 0x4
+	.long	0x1e5
+	.byte	0x4
 	.uleb128 0xe
-	.4byte	.LASF31
+	.long	.LASF31
 	.byte	0x8
 	.byte	0x35
-	.4byte	0x4c
-	.byte	0x2
-	.byte	0x23
-	.uleb128 0x8
+	.long	0x48
+	.byte	0x8
 	.uleb128 0xe
-	.4byte	.LASF32
+	.long	.LASF32
 	.byte	0x8
 	.byte	0x3a
-	.4byte	0x4c
-	.byte	0x2
-	.byte	0x23
-	.uleb128 0xc
+	.long	0x48
+	.byte	0xc
 	.uleb128 0xe
-	.4byte	.LASF33
+	.long	.LASF33
 	.byte	0x8
 	.byte	0x3f
-	.4byte	0x4c
-	.byte	0x2
-	.byte	0x23
-	.uleb128 0x10
+	.long	0x48
+	.byte	0x10
 	.uleb128 0xe
-	.4byte	.LASF34
+	.long	.LASF34
 	.byte	0x8
 	.byte	0x45
-	.4byte	0x210
-	.byte	0x2
-	.byte	0x23
-	.uleb128 0x14
+	.long	0x1f5
+	.byte	0x14
 	.uleb128 0xe
-	.4byte	.LASF35
+	.long	.LASF35
 	.byte	0x8
 	.byte	0x4a
-	.4byte	0x220
-	.byte	0x2
-	.byte	0x23
-	.uleb128 0x44
+	.long	0x205
+	.byte	0x44
 	.uleb128 0xe
-	.4byte	.LASF36
+	.long	.LASF36
 	.byte	0x8
 	.byte	0x50
-	.4byte	0x236
-	.byte	0x2
-	.byte	0x23
-	.uleb128 0x74
+	.long	0x21b
+	.byte	0x74
 	.uleb128 0xe
-	.4byte	.LASF37
+	.long	.LASF37
 	.byte	0x8
 	.byte	0x55
-	.4byte	0x45
-	.byte	0x2
-	.byte	0x23
-	.uleb128 0x78
+	.long	0x41
+	.byte	0x78
 	.byte	0
 	.uleb128 0xf
-	.4byte	0xd7
-	.4byte	0x200
+	.long	0xd3
+	.long	0x1e5
 	.uleb128 0x10
-	.4byte	0xd0
+	.long	0xcc
 	.byte	0x3
 	.byte	0
 	.uleb128 0xf
-	.4byte	0x29
-	.4byte	0x210
+	.long	0x25
+	.long	0x1f5
 	.uleb128 0x10
-	.4byte	0xd0
+	.long	0xcc
 	.byte	0x3
 	.byte	0
 	.uleb128 0xf
-	.4byte	0x45
-	.4byte	0x220
+	.long	0x41
+	.long	0x205
 	.uleb128 0x10
-	.4byte	0xd0
+	.long	0xcc
 	.byte	0xb
 	.byte	0
 	.uleb128 0xf
-	.4byte	0x230
-	.4byte	0x230
+	.long	0x215
+	.long	0x215
 	.uleb128 0x10
-	.4byte	0xd0
+	.long	0xcc
 	.byte	0xb
 	.byte	0
 	.uleb128 0x11
 	.byte	0x4
-	.4byte	0x29
+	.long	0x25
 	.uleb128 0x2
 	.byte	0x1
 	.byte	0x2
-	.4byte	.LASF38
+	.long	.LASF38
 	.uleb128 0x4
-	.4byte	.LASF39
+	.long	.LASF39
 	.byte	0x1
 	.byte	0x19
-	.4byte	0x248
+	.long	0x22d
 	.uleb128 0x11
 	.byte	0x4
-	.4byte	0x24e
+	.long	0x233
 	.uleb128 0x12
-	.4byte	0x25d
-	.4byte	0x25d
+	.long	0x242
+	.long	0x242
 	.uleb128 0x13
-	.4byte	0x25d
+	.long	0x242
 	.byte	0
 	.uleb128 0x11
 	.byte	0x4
-	.4byte	0x165
+	.long	0x15c
 	.uleb128 0x4
-	.4byte	.LASF40
+	.long	.LASF40
 	.byte	0x1
 	.byte	0x1a
-	.4byte	0x26e
+	.long	0x253
 	.uleb128 0x11
 	.byte	0x4
-	.4byte	0x274
+	.long	0x259
 	.uleb128 0x14
-	.4byte	0x27f
+	.long	0x264
 	.uleb128 0x13
-	.4byte	0x25d
+	.long	0x242
 	.byte	0
 	.uleb128 0xd
-	.4byte	.LASF42
+	.long	.LASF42
 	.byte	0x8
 	.byte	0x1
 	.byte	0x1f
-	.4byte	0x2a8
+	.long	0x289
 	.uleb128 0xe
-	.4byte	.LASF43
+	.long	.LASF43
 	.byte	0x1
 	.byte	0x21
-	.4byte	0x23d
-	.byte	0x2
-	.byte	0x23
-	.uleb128 0
+	.long	0x222
+	.byte	0
 	.uleb128 0xe
-	.4byte	.LASF44
+	.long	.LASF44
 	.byte	0x1
 	.byte	0x22
-	.4byte	0x263
-	.byte	0x2
-	.byte	0x23
-	.uleb128 0x4
+	.long	0x248
+	.byte	0x4
 	.byte	0
 	.uleb128 0x4
-	.4byte	.LASF42
+	.long	.LASF42
 	.byte	0x1
 	.byte	0x23
-	.4byte	0x27f
+	.long	0x264
 	.uleb128 0x15
-	.4byte	.LASF45
+	.long	.LASF45
 	.byte	0x1
 	.byte	0x2a
-	.4byte	0x236
-	.4byte	.LFB19
-	.4byte	.LFE19
-	.4byte	.LLST0
-	.byte	0x1
-	.4byte	0x2e8
+	.long	0x21b
+	.long	.LFB21
+	.long	.LFE21-.LFB21
+	.uleb128 0x1
+	.byte	0x9c
+	.long	0x2c6
 	.uleb128 0x16
-	.4byte	.LBB4
-	.4byte	.LBE4
+	.long	.LBB4
+	.long	.LBE4-.LBB4
 	.uleb128 0x17
-	.ascii	"res\000"
+	.string	"res"
 	.byte	0x1
 	.byte	0x2e
-	.4byte	0x93
-	.byte	0x2
+	.long	0x8f
+	.uleb128 0x2
 	.byte	0x91
-	.sleb128 -12
+	.sleb128 -20
 	.byte	0
 	.byte	0
 	.uleb128 0x15
-	.4byte	.LASF46
+	.long	.LASF46
 	.byte	0x1
 	.byte	0x3b
-	.4byte	0x236
-	.4byte	.LFB20
-	.4byte	.LFE20
-	.4byte	.LLST1
-	.byte	0x1
-	.4byte	0x31d
+	.long	0x21b
+	.long	.LFB22
+	.long	.LFE22-.LFB22
+	.uleb128 0x1
+	.byte	0x9c
+	.long	0x2f8
 	.uleb128 0x16
-	.4byte	.LBB7
-	.4byte	.LBE7
+	.long	.LBB7
+	.long	.LBE7-.LBB7
 	.uleb128 0x17
-	.ascii	"res\000"
+	.string	"res"
 	.byte	0x1
 	.byte	0x3f
-	.4byte	0x93
-	.byte	0x2
+	.long	0x8f
+	.uleb128 0x2
 	.byte	0x91
-	.sleb128 -12
+	.sleb128 -20
 	.byte	0
 	.byte	0
 	.uleb128 0x18
-	.byte	0x1
-	.4byte	.LASF56
+	.long	.LASF56
 	.byte	0x1
 	.byte	0x4a
-	.4byte	0x9e
-	.4byte	.LFB21
-	.4byte	.LFE21
-	.4byte	.LLST2
-	.byte	0x1
+	.long	0x9a
+	.long	.LFB23
+	.long	.LFE23-.LFB23
+	.uleb128 0x1
+	.byte	0x9c
 	.uleb128 0x19
-	.byte	0x1
-	.4byte	.LASF57
+	.long	.LASF57
 	.byte	0x1
 	.byte	0x50
-	.4byte	0x25d
-	.4byte	.LFB22
-	.4byte	.LFE22
-	.4byte	.LLST3
-	.byte	0x1
-	.4byte	0x37a
+	.long	0x242
+	.long	.LFB24
+	.long	.LFE24-.LFB24
+	.uleb128 0x1
+	.byte	0x9c
+	.long	0x34d
 	.uleb128 0x1a
-	.4byte	.LASF47
+	.long	.LASF47
 	.byte	0x1
 	.byte	0x50
-	.4byte	0x25d
-	.byte	0x2
+	.long	0x242
+	.uleb128 0x2
 	.byte	0x91
-	.sleb128 -20
+	.sleb128 0
 	.uleb128 0x16
-	.4byte	.LBB8
-	.4byte	.LBE8
+	.long	.LBB8
+	.long	.LBE8-.LBB8
 	.uleb128 0x17
-	.ascii	"ret\000"
+	.string	"ret"
 	.byte	0x1
 	.byte	0x5b
-	.4byte	0x25d
-	.byte	0x2
+	.long	0x242
+	.uleb128 0x2
 	.byte	0x91
-	.sleb128 -12
+	.sleb128 -20
 	.byte	0
 	.byte	0
 	.uleb128 0x1b
-	.byte	0x1
-	.4byte	.LASF58
+	.long	.LASF58
 	.byte	0x1
 	.byte	0x64
-	.4byte	.LFB23
-	.4byte	.LFE23
-	.4byte	.LLST4
-	.byte	0x1
-	.4byte	0x3a2
+	.long	.LFB25
+	.long	.LFE25-.LFB25
+	.uleb128 0x1
+	.byte	0x9c
+	.long	0x371
 	.uleb128 0x1a
-	.4byte	.LASF48
+	.long	.LASF48
 	.byte	0x1
 	.byte	0x64
-	.4byte	0x25d
-	.byte	0x2
+	.long	0x242
+	.uleb128 0x2
 	.byte	0x91
-	.sleb128 -12
+	.sleb128 0
 	.byte	0
 	.uleb128 0x1c
-	.4byte	.LASF49
+	.long	.LASF49
 	.byte	0x1
 	.byte	0x25
-	.4byte	0x2a8
-	.byte	0x5
+	.long	0x289
+	.uleb128 0x5
 	.byte	0x3
-	.4byte	_ZL5g_Ext
+	.long	_ZL5g_Ext
 	.uleb128 0x1c
-	.4byte	.LASF50
+	.long	.LASF50
 	.byte	0x1
 	.byte	0x26
-	.4byte	0x236
-	.byte	0x5
+	.long	0x21b
+	.uleb128 0x5
 	.byte	0x3
-	.4byte	_ZL8g_GotExt
+	.long	_ZL8g_GotExt
 	.uleb128 0x1c
-	.4byte	.LASF51
+	.long	.LASF51
 	.byte	0x1
 	.byte	0x27
-	.4byte	0x236
-	.byte	0x5
+	.long	0x21b
+	.uleb128 0x5
 	.byte	0x3
-	.4byte	_ZL10g_TriedExt
+	.long	_ZL10g_TriedExt
 	.uleb128 0x1c
-	.4byte	.LASF52
+	.long	.LASF52
 	.byte	0x1
 	.byte	0x28
-	.4byte	0x236
-	.byte	0x5
+	.long	0x21b
+	.uleb128 0x5
 	.byte	0x3
-	.4byte	_ZL15g_TriedNoMsgExt
+	.long	_ZL15g_TriedNoMsgExt
 	.byte	0
-	.section	.debug_abbrev,"",%progbits
+	.section	.debug_abbrev,"",@progbits
 .Ldebug_abbrev0:
 	.uleb128 0x1
 	.uleb128 0x11
@@ -972,14 +849,12 @@ PVRTexToolFree:
 	.uleb128 0xe
 	.uleb128 0x1b
 	.uleb128 0xe
-	.uleb128 0x55
-	.uleb128 0x6
 	.uleb128 0x11
 	.uleb128 0x1
-	.uleb128 0x52
-	.uleb128 0x1
-	.uleb128 0x10
+	.uleb128 0x12
 	.uleb128 0x6
+	.uleb128 0x10
+	.uleb128 0x17
 	.byte	0
 	.byte	0
 	.uleb128 0x2
@@ -1075,7 +950,7 @@ PVRTexToolFree:
 	.uleb128 0x3
 	.uleb128 0xe
 	.uleb128 0x3c
-	.uleb128 0xc
+	.uleb128 0x19
 	.byte	0
 	.byte	0
 	.uleb128 0xa
@@ -1142,7 +1017,7 @@ PVRTexToolFree:
 	.uleb128 0x49
 	.uleb128 0x13
 	.uleb128 0x38
-	.uleb128 0xa
+	.uleb128 0xb
 	.byte	0
 	.byte	0
 	.uleb128 0xf
@@ -1209,11 +1084,11 @@ PVRTexToolFree:
 	.uleb128 0x11
 	.uleb128 0x1
 	.uleb128 0x12
-	.uleb128 0x1
-	.uleb128 0x40
 	.uleb128 0x6
+	.uleb128 0x40
+	.uleb128 0x18
 	.uleb128 0x2116
-	.uleb128 0xc
+	.uleb128 0x19
 	.uleb128 0x1
 	.uleb128 0x13
 	.byte	0
@@ -1224,7 +1099,7 @@ PVRTexToolFree:
 	.uleb128 0x11
 	.uleb128 0x1
 	.uleb128 0x12
-	.uleb128 0x1
+	.uleb128 0x6
 	.byte	0
 	.byte	0
 	.uleb128 0x17
@@ -1239,14 +1114,14 @@ PVRTexToolFree:
 	.uleb128 0x49
 	.uleb128 0x13
 	.uleb128 0x2
-	.uleb128 0xa
+	.uleb128 0x18
 	.byte	0
 	.byte	0
 	.uleb128 0x18
 	.uleb128 0x2e
 	.byte	0
 	.uleb128 0x3f
-	.uleb128 0xc
+	.uleb128 0x19
 	.uleb128 0x3
 	.uleb128 0xe
 	.uleb128 0x3a
@@ -1258,18 +1133,18 @@ PVRTexToolFree:
 	.uleb128 0x11
 	.uleb128 0x1
 	.uleb128 0x12
-	.uleb128 0x1
-	.uleb128 0x40
 	.uleb128 0x6
+	.uleb128 0x40
+	.uleb128 0x18
 	.uleb128 0x2116
-	.uleb128 0xc
+	.uleb128 0x19
 	.byte	0
 	.byte	0
 	.uleb128 0x19
 	.uleb128 0x2e
 	.byte	0x1
 	.uleb128 0x3f
-	.uleb128 0xc
+	.uleb128 0x19
 	.uleb128 0x3
 	.uleb128 0xe
 	.uleb128 0x3a
@@ -1281,11 +1156,11 @@ PVRTexToolFree:
 	.uleb128 0x11
 	.uleb128 0x1
 	.uleb128 0x12
-	.uleb128 0x1
-	.uleb128 0x40
 	.uleb128 0x6
+	.uleb128 0x40
+	.uleb128 0x18
 	.uleb128 0x2116
-	.uleb128 0xc
+	.uleb128 0x19
 	.uleb128 0x1
 	.uleb128 0x13
 	.byte	0
@@ -1302,14 +1177,14 @@ PVRTexToolFree:
 	.uleb128 0x49
 	.uleb128 0x13
 	.uleb128 0x2
-	.uleb128 0xa
+	.uleb128 0x18
 	.byte	0
 	.byte	0
 	.uleb128 0x1b
 	.uleb128 0x2e
 	.byte	0x1
 	.uleb128 0x3f
-	.uleb128 0xc
+	.uleb128 0x19
 	.uleb128 0x3
 	.uleb128 0xe
 	.uleb128 0x3a
@@ -1319,11 +1194,11 @@ PVRTexToolFree:
 	.uleb128 0x11
 	.uleb128 0x1
 	.uleb128 0x12
-	.uleb128 0x1
-	.uleb128 0x40
 	.uleb128 0x6
+	.uleb128 0x40
+	.uleb128 0x18
 	.uleb128 0x2116
-	.uleb128 0xc
+	.uleb128 0x19
 	.uleb128 0x1
 	.uleb128 0x13
 	.byte	0
@@ -1340,259 +1215,143 @@ PVRTexToolFree:
 	.uleb128 0x49
 	.uleb128 0x13
 	.uleb128 0x2
-	.uleb128 0xa
+	.uleb128 0x18
 	.byte	0
 	.byte	0
 	.byte	0
-	.section	.debug_loc,"",%progbits
-.Ldebug_loc0:
-.LLST0:
-	.4byte	.LFB19
-	.4byte	.LCFI0
-	.2byte	0x2
-	.byte	0x7d
-	.sleb128 0
-	.4byte	.LCFI0
-	.4byte	.LCFI1
-	.2byte	0x2
-	.byte	0x7d
-	.sleb128 4
-	.4byte	.LCFI1
-	.4byte	.LFE19
-	.2byte	0x2
-	.byte	0x7d
-	.sleb128 16
-	.4byte	0
-	.4byte	0
-.LLST1:
-	.4byte	.LFB20
-	.4byte	.LCFI2
-	.2byte	0x2
-	.byte	0x7d
-	.sleb128 0
-	.4byte	.LCFI2
-	.4byte	.LCFI3
-	.2byte	0x2
-	.byte	0x7d
-	.sleb128 4
-	.4byte	.LCFI3
-	.4byte	.LFE20
-	.2byte	0x2
-	.byte	0x7d
-	.sleb128 16
-	.4byte	0
-	.4byte	0
-.LLST2:
-	.4byte	.LFB21
-	.4byte	.LCFI4
-	.2byte	0x2
-	.byte	0x7d
-	.sleb128 0
-	.4byte	.LCFI4
-	.4byte	.LFE21
-	.2byte	0x2
-	.byte	0x7d
-	.sleb128 8
-	.4byte	0
-	.4byte	0
-.LLST3:
-	.4byte	.LFB22
-	.4byte	.LCFI5
-	.2byte	0x2
-	.byte	0x7d
-	.sleb128 0
-	.4byte	.LCFI5
-	.4byte	.LCFI6
-	.2byte	0x2
-	.byte	0x7d
-	.sleb128 4
-	.4byte	.LCFI6
-	.4byte	.LFE22
-	.2byte	0x2
-	.byte	0x7d
-	.sleb128 24
-	.4byte	0
-	.4byte	0
-.LLST4:
-	.4byte	.LFB23
-	.4byte	.LCFI7
-	.2byte	0x2
-	.byte	0x7d
-	.sleb128 0
-	.4byte	.LCFI7
-	.4byte	.LCFI8
-	.2byte	0x2
-	.byte	0x7d
-	.sleb128 4
-	.4byte	.LCFI8
-	.4byte	.LFE23
-	.2byte	0x2
-	.byte	0x7d
-	.sleb128 16
-	.4byte	0
-	.4byte	0
-	.section	.debug_aranges,"",%progbits
-	.4byte	0x3c
-	.2byte	0x2
-	.4byte	.Ldebug_info0
+	.section	.debug_aranges,"",@progbits
+	.long	0x1c
+	.value	0x2
+	.long	.Ldebug_info0
 	.byte	0x4
 	.byte	0
-	.2byte	0
-	.2byte	0
-	.4byte	.LFB19
-	.4byte	.LFE19-.LFB19
-	.4byte	.LFB20
-	.4byte	.LFE20-.LFB20
-	.4byte	.LFB21
-	.4byte	.LFE21-.LFB21
-	.4byte	.LFB22
-	.4byte	.LFE22-.LFB22
-	.4byte	.LFB23
-	.4byte	.LFE23-.LFB23
-	.4byte	0
-	.4byte	0
-	.section	.debug_ranges,"",%progbits
-.Ldebug_ranges0:
-	.4byte	.LFB19
-	.4byte	.LFE19
-	.4byte	.LFB20
-	.4byte	.LFE20
-	.4byte	.LFB21
-	.4byte	.LFE21
-	.4byte	.LFB22
-	.4byte	.LFE22
-	.4byte	.LFB23
-	.4byte	.LFE23
-	.4byte	0
-	.4byte	0
-	.section	.debug_line,"",%progbits
+	.value	0
+	.value	0
+	.long	.Ltext0
+	.long	.Letext0-.Ltext0
+	.long	0
+	.long	0
+	.section	.debug_line,"",@progbits
 .Ldebug_line0:
-	.section	.debug_str,"MS",%progbits,1
+	.section	.debug_str,"MS",@progbits,1
 .LASF2:
-	.ascii	"short unsigned int\000"
+	.string	"short unsigned int"
 .LASF36:
-	.ascii	"m_GenerateMips\000"
+	.string	"m_GenerateMips"
 .LASF24:
-	.ascii	"bad_typeid\000"
+	.string	"bad_typeid"
 .LASF31:
-	.ascii	"m_Width\000"
-.LASF46:
-	.ascii	"_extLoadNoMsg\000"
-.LASF13:
-	.ascii	"s3eBool\000"
-.LASF38:
-	.ascii	"bool\000"
-.LASF52:
-	.ascii	"g_TriedNoMsgExt\000"
-.LASF40:
-	.ascii	"PVRTexToolFree_t\000"
-.LASF45:
-	.ascii	"_extLoad\000"
-.LASF41:
-	.ascii	"PVRTexToolData\000"
-.LASF33:
-	.ascii	"m_MipMaps\000"
-.LASF48:
-	.ascii	"data\000"
-.LASF15:
-	.ascii	"s3eMessageType\000"
-.LASF55:
-	.ascii	"c:\\\\Stage4\\\\build_stage4_vc12\000"
-.LASF0:
-	.ascii	"unsigned char\000"
-.LASF26:
-	.ascii	"_STL\000"
-.LASF47:
-	.ascii	"input\000"
-.LASF49:
-	.ascii	"g_Ext\000"
-.LASF29:
-	.ascii	"m_Channels\000"
-.LASF7:
-	.ascii	"long unsigned int\000"
-.LASF51:
-	.ascii	"g_TriedExt\000"
-.LASF27:
-	.ascii	"__std_alias\000"
-.LASF39:
-	.ascii	"PVRTexToolConvert_t\000"
-.LASF37:
-	.ascii	"m_GLESFormat\000"
+	.string	"m_Width"
 .LASF53:
-	.ascii	"GNU C++ 4.8.3 20140228 (release) [ARM/embedded-4_8-"
-	.ascii	"branch revision 208322] -fpreprocessed -mstructure-"
-	.ascii	"size-boundary=8 -march=armv6 -mfloat-abi=soft -mthu"
-	.ascii	"mb-interwork -mword-relocations -g -gdwarf-2 -O0 -f"
-	.ascii	"unsigned-char -fno-strict-aliasing -fno-stack-prote"
-	.ascii	"ctor -fno-short-enums -fshort-wchar -fomit-frame-po"
-	.ascii	"inter -fmessage-length=0 -ffunction-sections -fvisi"
-	.ascii	"bility=hidden -fPIC -fvisibility-inlines-hidden -fn"
-	.ascii	"o-exceptions\000"
+	.ascii	"GNU C++ 4.8 -fpreprocessed -mstackrealign -msse3 -m"
+	.string	"bionic -m32 -mtune=atom -march=i686 -g -O0 -funsigned-char -fno-strict-aliasing -fno-stack-protector -fno-short-enums -fshort-wchar -fmessage-length=0 -fasynchronous-unwind-tables -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fno-exceptions -frtti"
+.LASF46:
+	.string	"_extLoadNoMsg"
+.LASF13:
+	.string	"s3eBool"
+.LASF38:
+	.string	"bool"
+.LASF52:
+	.string	"g_TriedNoMsgExt"
+.LASF40:
+	.string	"PVRTexToolFree_t"
+.LASF45:
+	.string	"_extLoad"
+.LASF41:
+	.string	"PVRTexToolData"
+.LASF33:
+	.string	"m_MipMaps"
+.LASF48:
+	.string	"data"
+.LASF15:
+	.string	"s3eMessageType"
+.LASF55:
+	.string	"c:\\\\Stage4\\\\build_stage4_vc12"
+.LASF0:
+	.string	"unsigned char"
+.LASF26:
+	.string	"_STL"
+.LASF47:
+	.string	"input"
+.LASF49:
+	.string	"g_Ext"
+.LASF29:
+	.string	"m_Channels"
+.LASF7:
+	.string	"long unsigned int"
+.LASF51:
+	.string	"g_TriedExt"
+.LASF27:
+	.string	"__std_alias"
+.LASF39:
+	.string	"PVRTexToolConvert_t"
+.LASF37:
+	.string	"m_GLESFormat"
 .LASF22:
-	.ascii	"bad_exception\000"
+	.string	"bad_exception"
 .LASF3:
-	.ascii	"short int\000"
+	.string	"short int"
 .LASF14:
-	.ascii	"wchar_t\000"
+	.string	"wchar_t"
 .LASF25:
-	.ascii	"bad_cast\000"
+	.string	"bad_cast"
 .LASF32:
-	.ascii	"m_Height\000"
+	.string	"m_Height"
 .LASF28:
-	.ascii	"stlport\000"
+	.string	"stlport"
 .LASF4:
-	.ascii	"unsigned int\000"
+	.string	"unsigned int"
 .LASF21:
-	.ascii	"exception\000"
+	.string	"exception"
 .LASF54:
-	.ascii	"c:/marmalade/7.5/extensions/pvrtextool/interface/PV"
-	.ascii	"RTexTool_interface.cpp\000"
+	.string	"c:/marmalade/7.5/extensions/pvrtextool/interface/PVRTexTool_interface.cpp"
 .LASF17:
-	.ascii	"S3E_MESSAGE_CONTINUE_STOP\000"
+	.string	"S3E_MESSAGE_CONTINUE_STOP"
 .LASF5:
-	.ascii	"long long unsigned int\000"
+	.string	"long long unsigned int"
 .LASF42:
-	.ascii	"PVRTexToolFuncs\000"
+	.string	"PVRTexToolFuncs"
 .LASF57:
-	.ascii	"PVRTexToolConvert\000"
+	.string	"PVRTexToolConvert"
 .LASF10:
-	.ascii	"S3E_RESULT_ERROR\000"
+	.string	"S3E_RESULT_ERROR"
 .LASF56:
-	.ascii	"PVRTexToolAvailable\000"
+	.string	"PVRTexToolAvailable"
 .LASF58:
-	.ascii	"PVRTexToolFree\000"
+	.string	"PVRTexToolFree"
 .LASF19:
-	.ascii	"sizetype\000"
+	.string	"sizetype"
 .LASF6:
-	.ascii	"long long int\000"
+	.string	"long long int"
 .LASF9:
-	.ascii	"S3E_RESULT_SUCCESS\000"
+	.string	"S3E_RESULT_SUCCESS"
 .LASF20:
-	.ascii	"char\000"
+	.string	"char"
 .LASF50:
-	.ascii	"g_GotExt\000"
+	.string	"g_GotExt"
 .LASF44:
-	.ascii	"m_PVRTexToolFree\000"
+	.string	"m_PVRTexToolFree"
 .LASF18:
-	.ascii	"S3E_MESSAGE_CONTINUE_STOP_IGNORE\000"
+	.string	"S3E_MESSAGE_CONTINUE_STOP_IGNORE"
 .LASF43:
-	.ascii	"m_PVRTexToolConvert\000"
+	.string	"m_PVRTexToolConvert"
 .LASF11:
-	.ascii	"uint8\000"
+	.string	"uint8"
 .LASF23:
-	.ascii	"type_info\000"
+	.string	"type_info"
 .LASF8:
-	.ascii	"long int\000"
+	.string	"long int"
 .LASF30:
-	.ascii	"m_ChannelSizes\000"
+	.string	"m_ChannelSizes"
 .LASF35:
-	.ascii	"m_Data\000"
+	.string	"m_Data"
 .LASF34:
-	.ascii	"m_Sizes\000"
+	.string	"m_Sizes"
 .LASF1:
-	.ascii	"signed char\000"
+	.string	"signed char"
 .LASF12:
-	.ascii	"s3eResult\000"
+	.string	"s3eResult"
 .LASF16:
-	.ascii	"S3E_MESSAGE_CONTINUE\000"
-	.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.3 20140228 (release) [ARM/embedded-4_8-branch revision 208322]"
+	.string	"S3E_MESSAGE_CONTINUE"
+	.ident	"GCC: (GNU) 4.8"
+	.section	.note.GNU-stack,"",@progbits

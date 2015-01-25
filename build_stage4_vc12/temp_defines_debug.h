@@ -180,6 +180,12 @@
     #endif
 #endif
 
+#if defined __i386__ && defined __ANDROID__
+#ifndef S3E_ANDROID_X86
+#   define S3E_ANDROID_X86 1
+#endif
+#endif
+
 #undef _WIN32
 #undef WIN32
 #undef __linux__

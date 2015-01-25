@@ -2113,10 +2113,15 @@ typedef struct __XXFILE FILE;
 typedef uint32 fpos_t;
 # 38 "c:/marmalade/7.5/s3e/h/ext/../std/stdio.h"
 extern "C" {
-# 54 "c:/marmalade/7.5/s3e/h/ext/../std/stdio.h"
-extern FILE *__aeabi_stdin;
-extern FILE *__aeabi_stdout;
-extern FILE *__aeabi_stderr;
+
+
+
+struct _reent
+{
+  int _errno;
+  void *_stdin, *_stdout, *_stderr;
+};
+extern struct _reent *_impure_ptr;
 # 73 "c:/marmalade/7.5/s3e/h/ext/../std/stdio.h"
 FILE *fopen(const char *path, const char *mode);
 int fclose(FILE *fp);
@@ -2297,10 +2302,7 @@ using ::vsprintf;
 # 1 "c:/marmalade/7.5/s3e/h/ext/../std/c++/exception.h" 1
 # 18 "c:/marmalade/7.5/s3e/h/ext/../std/c++/exception.h"
 # 1 "c:/marmalade/7.5/s3e/h/std/c++/exception_gcc" 1
-# 41 "c:/marmalade/7.5/s3e/h/std/c++/exception_gcc"
-#pragma GCC visibility push(default)
-
-
+# 44 "c:/marmalade/7.5/s3e/h/std/c++/exception_gcc"
 extern "C++" {
 
 namespace std
@@ -2354,9 +2356,6 @@ namespace __gnu_cxx
 }
 
 }
-
-
-#pragma GCC visibility pop
 # 19 "c:/marmalade/7.5/s3e/h/ext/../std/c++/exception.h" 2
 # 59 "c:/marmalade/7.5/s3e/h/std/c++/exception" 2
 # 75 "c:/marmalade/7.5/s3e/h/std/c++/exception"
@@ -5917,14 +5916,12 @@ namespace std
 
 
     const char* name() const;
+# 133 "c:/marmalade/7.5/s3e/h/std/c++/typeinfo_gcc"
+    bool before(const type_info& __arg) const
+    { return __name < __arg.__name; }
+    bool operator==(const type_info& __arg) const
+    { return __name == __arg.__name; }
 
-
-    bool before(const type_info& __arg) const;
-
-
-
-    bool operator==(const type_info& __arg) const;
-# 138 "c:/marmalade/7.5/s3e/h/std/c++/typeinfo_gcc"
     bool operator!=(const type_info& __arg) const
     { return !operator==(__arg); }
 
@@ -6028,7 +6025,7 @@ _To IwSafeCast(_From from)
             ,
  594
 # 593 "c:/marmalade/7.5/modules/iwutil/h/IwDebug.h"
-            , (1))) { case S3E_ERROR_SHOW_STOP: do { if (s3eDebugIsDebuggerPresent()) do {if (s3eDebugIsDebuggerPresent()) *(int*)0xfffffff4 = 0; } while(0); else IwDebugExit(); } while(0); break; case S3E_ERROR_SHOW_IGNORE: _s_IwAssertIgnoreThis = 1;; break; default:; } IwDebugAssertSetUID(0); } } while (0); } while (0)
+            , (1))) { case S3E_ERROR_SHOW_STOP: do { if (s3eDebugIsDebuggerPresent()) do { if (s3eDebugIsDebuggerPresent()) __asm__ (" int $3 "); } while(0); else IwDebugExit(); } while(0); break; case S3E_ERROR_SHOW_IGNORE: _s_IwAssertIgnoreThis = 1;; break; default:; } IwDebugAssertSetUID(0); } } while (0); } while (0)
                                ;
     }
 
@@ -6267,7 +6264,7 @@ CTween* CTweenManager::Tween(float time, ...)
         void* target;
         int value;
 
-        do { do { static uint8 _s_IwAssertIgnoreThis = 0;; if ((!(type <= END)) && (IwDebugAssertIsChannelOn("TWEEN")) && (_s_IwAssertIgnoreThis==0)) { IwDebugAssertSetSolution (__null); IwDebugAssertSetUID(0); IwDebugAssertSetMessage ("Variable argument list contains illegal CTween::Type value"); switch (IwDebugAssertShow("type <= END", "c:/marmalade/7.5/modules/iwtween/source/IwTween.cpp", 258, (1))) { case S3E_ERROR_SHOW_STOP: do { if (s3eDebugIsDebuggerPresent()) do {if (s3eDebugIsDebuggerPresent()) *(int*)0xfffffff4 = 0; } while(0); else IwDebugExit(); } while(0); break; case S3E_ERROR_SHOW_IGNORE: _s_IwAssertIgnoreThis = 1;; break; default:; } IwDebugAssertSetUID(0); } } while (0); } while (0);
+        do { do { static uint8 _s_IwAssertIgnoreThis = 0;; if ((!(type <= END)) && (IwDebugAssertIsChannelOn("TWEEN")) && (_s_IwAssertIgnoreThis==0)) { IwDebugAssertSetSolution (__null); IwDebugAssertSetUID(0); IwDebugAssertSetMessage ("Variable argument list contains illegal CTween::Type value"); switch (IwDebugAssertShow("type <= END", "c:/marmalade/7.5/modules/iwtween/source/IwTween.cpp", 258, (1))) { case S3E_ERROR_SHOW_STOP: do { if (s3eDebugIsDebuggerPresent()) do { if (s3eDebugIsDebuggerPresent()) __asm__ (" int $3 "); } while(0); else IwDebugExit(); } while(0); break; case S3E_ERROR_SHOW_IGNORE: _s_IwAssertIgnoreThis = 1;; break; default:; } IwDebugAssertSetUID(0); } } while (0); } while (0);
         switch(type)
         {
 
@@ -6369,7 +6366,7 @@ CTween* CTweenManager::Tween(float time, ...)
                     }
                     break;
                 default:
-                    do { do { static uint8 _s_IwAssertIgnoreThis = 0;; if ((!(false)) && (IwDebugAssertIsChannelOn("TWEEN")) && (_s_IwAssertIgnoreThis==0)) { IwDebugAssertSetSolution (__null); IwDebugAssertSetUID(0); IwDebugAssertSetMessage ("Unknown type"); switch (IwDebugAssertShow("false", "c:/marmalade/7.5/modules/iwtween/source/IwTween.cpp", 360, (1))) { case S3E_ERROR_SHOW_STOP: do { if (s3eDebugIsDebuggerPresent()) do {if (s3eDebugIsDebuggerPresent()) *(int*)0xfffffff4 = 0; } while(0); else IwDebugExit(); } while(0); break; case S3E_ERROR_SHOW_IGNORE: _s_IwAssertIgnoreThis = 1;; break; default:; } IwDebugAssertSetUID(0); } } while (0); } while (0);
+                    do { do { static uint8 _s_IwAssertIgnoreThis = 0;; if ((!(false)) && (IwDebugAssertIsChannelOn("TWEEN")) && (_s_IwAssertIgnoreThis==0)) { IwDebugAssertSetSolution (__null); IwDebugAssertSetUID(0); IwDebugAssertSetMessage ("Unknown type"); switch (IwDebugAssertShow("false", "c:/marmalade/7.5/modules/iwtween/source/IwTween.cpp", 360, (1))) { case S3E_ERROR_SHOW_STOP: do { if (s3eDebugIsDebuggerPresent()) do { if (s3eDebugIsDebuggerPresent()) __asm__ (" int $3 "); } while(0); else IwDebugExit(); } while(0); break; case S3E_ERROR_SHOW_IGNORE: _s_IwAssertIgnoreThis = 1;; break; default:; } IwDebugAssertSetUID(0); } } while (0); } while (0);
                     break;
                 }
                 pTween->m_ValueTypes.push_back(CTween::ValueType(type, target, value));

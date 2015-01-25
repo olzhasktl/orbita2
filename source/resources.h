@@ -58,6 +58,7 @@ protected:
 	CIw2DImage*     PlayerImage2;
 	CIw2DImage*     PlayerImage3;
 	CIw2DImage*     PlayerImage4;
+	CIw2DImage*     PlayerImage;
 
 	CAtlas*         rocket1Atlas;
 	CAtlas*         rocket2Atlas;
@@ -88,6 +89,7 @@ public:
 	CAtlas*         getPlayer4Atlas()			{ return player4Atlas; }
 	CIw2DImage*     getBonus()                  { return Bonus; }
 	CIw2DImage*     getBomb()                   { return Bomb; }
+	CIw2DImage*     getPlayerImage()              { return PlayerImage; }
 	CIw2DImage*     getPlayerImage1()              { return PlayerImage1; }
 	CIw2DImage*     getPlayerImage2()              { return PlayerImage2; }
 	CIw2DImage*     getPlayerImage3()              { return PlayerImage3; }

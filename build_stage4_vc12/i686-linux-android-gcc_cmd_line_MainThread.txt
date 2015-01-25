@@ -1,7 +1,7 @@
 -c
-c:/Stage4/source/timer.cpp
+c:/Stage4/source/scene.cpp
 -o
-Debug_Stage4_vc12_gcc_x86_android//timer.obj
+Debug_Stage4_vc12_gcc_x86_android//scene.obj
 -Ic:/marmalade/7.5/modules/iw2d/h
 -Ic:/marmalade/7.5/modules/iwgx/h
 -Ic:/marmalade/7.5/modules/iwgl/h
