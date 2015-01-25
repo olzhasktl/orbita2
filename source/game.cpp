@@ -67,59 +67,204 @@ void Game::Update(float deltaTime, float alphaMul)
     Scene::Update(deltaTime, alphaMul);
 
     // Detect screen tap
-	if (m_IsInputActive && m_Manager->GetCurrent() == this && !g_pInput->m_Touched && g_pInput->m_PrevTouched)
-	{
-		g_pInput->Reset();
+    if (m_IsInputActive && m_Manager->GetCurrent() == this && !g_pInput->m_Touched && g_pInput->m_PrevTouched)
+    {
+        g_pInput->Reset();
 		if (gemSprite->HitTest(g_pInput->m_X, g_pInput->m_Y))
-		{
-			// Enter pause menu
-			pauseGame();
-		}
-		else
-		{
-			// Move image to touched position
-			/*m_Tweener.Tween(2.0f,
-							FLOAT, &gemSprite->m_X, (float)g_pInput->m_X,
-							FLOAT, &gemSprite->m_Y, (float)g_pInput->m_Y,
-							EASING, Ease::sineIn,
-							END);*/
+        {
+            // Enter pause menu
+            pauseGame();
+        }
+        else
+        {
+            // Move image to touched position
+            /*m_Tweener.Tween(2.0f,
+                            FLOAT, &gemSprite->m_X, (float)g_pInput->m_X,
+                            FLOAT, &gemSprite->m_Y, (float)g_pInput->m_Y,
+                            EASING, Ease::sineIn,
+                            END);*/
 
-			// Increase score
-			addToRoundScore(10);
+            // Increase score
+            addToRoundScore(10);
 			k = 0;
-			// Play a sound effect
-			g_pAudio->PlaySound("audio/gem_destroyed.wav");
-		}
+            // Play a sound effect
+            g_pAudio->PlaySound("audio/gem_destroyed.wav");
+        }
 
 		if (gemPlayer1->HitTest(g_pInput->m_X, g_pInput->m_Y)) {
-			if (!pl1) {
-				gemPlayer1->SetAtlas(g_pResources->getPlayer1Atlas());
+			if (!pl1) { 
+				gemPlayer1->SetAtlas(g_pResources->getPlayer1Atlas()); 
 				pl1 = true;
+				
 			}
 			scoreLabel->m_Text = "player 1";
+			k1 = 0;
 		}
 		if (gemPlayer2->HitTest(g_pInput->m_X, g_pInput->m_Y)) {
-			if (!pl2) {
-				gemPlayer2->SetAtlas(g_pResources->getPlayer2Atlas());
+			if (!pl2) { 
+				gemPlayer2->SetAtlas(g_pResources->getPlayer2Atlas()); 
 				pl2 = true;
+				
 			}
 			scoreLabel->m_Text = "player 2";
+			k2 = 0;
 		}
 		if (gemPlayer3->HitTest(g_pInput->m_X, g_pInput->m_Y)) {
-			if (!pl3) {
-				gemPlayer3->SetAtlas(g_pResources->getPlayer3Atlas());
+			if (!pl3) { 
+				gemPlayer3->SetAtlas(g_pResources->getPlayer3Atlas()); 
 				pl3 = true;
+				
 			}
 			scoreLabel->m_Text = "player 3";
+			k3 = 0;
 		}
-		if (gemPlayer4->HitTest(g_pInput->m_X, g_pInput->m_Y)) {
-			if (!pl4) {
-				gemPlayer4->SetAtlas(g_pResources->getPlayer4Atlas());
+		if (gemPlayer4->HitTest(g_pInput->m_X, g_pInput->m_Y)) {			
+			if (!pl4) { 
+				gemPlayer4->SetAtlas(g_pResources->getPlayer4Atlas()); 
 				pl4 = true;
+				
 			}
 			scoreLabel->m_Text = "player 4";
+			k4 = 0;
 		}
 	}
+
+	updatePlayer1();
+	updatePlayer2();
+	updatePlayer3();
+	updatePlayer4();
+		
+}
+
+void Game::updatePlayer1(){
+	if (k1 < 12){
+		k1++;
+		float x = gemPlayerBody1->m_X;
+		float y = gemPlayerBody1->m_Y;
+
+
+
+		//float minAngle = directionAngle * -1;
+		//float oldAngle = gemPlayer->m_Angle;
+
+		float centerX = (float)IwGxGetScreenWidth() / 2;
+		float centerY = (float)IwGxGetScreenHeight() / 2;
+
+
+		float rx = centerX - x;
+		float ry = centerY - y;
+
+		oldCoreX1 += (float)5 / (float)radius1;
+		oldCoreY1 += (float)5 / (float)radius1;
+		float c = cos(directionAngle1 *oldCoreX1);
+		float s = sin(directionAngle1 *oldCoreY1);
+
+		//float x1 = x + rx * c - ry * s;
+		//float y1 = y + rx * s + ry * c;
+
+		float x1 = centerX + c * radius1;
+		float y1 = centerY + s * radius1;
+
+		radius1 += 2;
+
+		float aa = x - x1;
+		float bb = y - y1;
+		float angle = atan2(aa, bb) * 57;
+
+		// Move image to touched position
+		gemPlayerBody1->m_X = x1;
+		gemPlayerBody1->m_Y = y1;
+		gemPlayerBody1->m_AnchorX = 0.4;
+		gemPlayerBody1->m_AnchorY = 0.5;
+		gemPlayerBody1->m_Angle = (angle - gemPlayerBody1->m_Angle) / 10 + gemPlayerBody1->m_Angle;
+		//k_touch++;
+		//if (k_touch > 20) directionAngle *= -1;
+		return;
+		}
+	//if(k_touch > 0) k_touch -= 1;
+	float x = gemPlayerBody1->m_X;
+	float y = gemPlayerBody1->m_Y;
+
+
+	float centerX = (float)IwGxGetScreenWidth() / 2;
+	float centerY = (float)IwGxGetScreenHeight() / 2;
+
+
+
+	float rx = centerX - x;
+	float ry = centerY - y;
+
+	oldCoreX1 += (float)5 / (float)radius1;
+	oldCoreY1 += (float)5 / (float)radius1;
+	float c = cos(directionAngle1 *oldCoreX1);
+	float s = sin(directionAngle1 *oldCoreY1);
+
+	//float x1 = x + rx * c - ry * s;
+	//float y1 = y + rx * s + ry * c;
+
+	float x1 = centerX + c * radius1;
+	float y1 = centerY + s * radius1;
+
+	radius1 -= 0.6;
+	if (radius1 <= 0) radius1 = 1;
+
+	float aa = x - x1;
+	float bb = y - y1;
+	float angle = atan2(aa, bb) * 57;
+
+	// Move image to touched position
+	gemPlayerBody1->m_X = x1;
+	gemPlayerBody1->m_Y = y1;
+	gemPlayerBody1->m_AnchorX = 0.5;
+	gemPlayerBody1->m_AnchorY = 0.5;
+	gemPlayerBody1->m_Angle = (angle - gemPlayerBody1->m_Angle) + gemPlayerBody1->m_Angle;
+
+}
+void Game::updatePlayer2(){
+	if (k2 < 12){
+		k2++;
+		float x = gemPlayerBody2->m_X;
+		float y = gemPlayerBody2->m_Y;
+
+
+
+		//float minAngle = directionAngle * -1;
+		//float oldAngle = gemPlayer->m_Angle;
+
+		float centerX = (float)IwGxGetScreenWidth() / 2;
+		float centerY = (float)IwGxGetScreenHeight() / 2;
+
+
+		float rx = centerX - x;
+		float ry = centerY - y;
+
+		oldCoreX2 += (float)5 / (float)radius2;
+		oldCoreY2 += (float)5 / (float)radius2;
+		float c = cos(directionAngle2 *oldCoreX2);
+		float s = sin(directionAngle2 *oldCoreY2);
+
+		//float x1 = x + rx * c - ry * s;
+		//float y1 = y + rx * s + ry * c;
+
+		float x1 = centerX + c * radius2;
+		float y1 = centerY + s * radius2;
+
+		radius2 += 2;
+
+		float aa = x - x1;
+		float bb = y - y1;
+		float angle = atan2(aa, bb) * 57;
+
+		// Move image to touched position
+		gemPlayerBody2->m_X = x1;
+		gemPlayerBody2->m_Y = y1;
+		gemPlayerBody2->m_AnchorX = 0.4;
+		gemPlayerBody2->m_AnchorY = 0.5;
+		gemPlayerBody2->m_Angle = (angle - gemPlayerBody2->m_Angle) / 10 + gemPlayerBody2->m_Angle;
+		//k_touch++;
+		//if (k_touch > 20) directionAngle *= -1;
+		return;
+    }
 		if (k < 12){
 			k++;
 			float x = gemPlayer->m_X;
@@ -205,6 +350,182 @@ void Game::Update(float deltaTime, float alphaMul)
 		gemPlayer->m_AnchorX = 0.5;
 		gemPlayer->m_AnchorY = 0.5;
 		gemPlayer->m_Angle = (angle - gemPlayer->m_Angle) + gemPlayer->m_Angle;
+
+}
+void Game::updatePlayer3(){
+	if (k3 < 12){
+		k3++;
+		float x = gemPlayer3->m_X;
+		float y = gemPlayer3->m_Y;
+
+
+
+		//float minAngle = directionAngle * -1;
+		//float oldAngle = gemPlayer->m_Angle;
+
+		float centerX = (float)IwGxGetScreenWidth() / 2;
+		float centerY = (float)IwGxGetScreenHeight() / 2;
+
+
+		float rx = centerX - x;
+		float ry = centerY - y;
+
+		oldCoreX3 += (float)5 / (float)radius3;
+		oldCoreY3 += (float)5 / (float)radius3;
+		float c = cos(directionAngle3 *oldCoreX3);
+		float s = sin(directionAngle3 *oldCoreY3);
+
+		//float x1 = x + rx * c - ry * s;
+		//float y1 = y + rx * s + ry * c;
+
+		float x1 = centerX + c * radius3;
+		float y1 = centerY + s * radius3;
+
+		radius3 += 2;
+
+		float aa = x - x1;
+		float bb = y - y1;
+		float angle = atan2(aa, bb) * 57;
+
+		// Move image to touched position
+		gemPlayerBody3->m_X = x1;
+		gemPlayerBody3->m_Y = y1;
+		gemPlayerBody3->m_AnchorX = 0.4;
+		gemPlayerBody3->m_AnchorY = 0.5;
+		gemPlayerBody3->m_Angle = (angle - gemPlayerBody3->m_Angle) / 10 + gemPlayerBody3->m_Angle;
+		//k_touch++;
+		//if (k_touch > 20) directionAngle *= -1;
+		return;
+	}
+	//if(k_touch > 0) k_touch -= 1;
+	float x = gemPlayerBody3->m_X;
+	float y = gemPlayerBody3->m_Y;
+
+
+
+	//float minAngle = directionAngle * -1;
+	//float oldAngle = gemPlayer->m_Angle;
+
+	float centerX = (float)IwGxGetScreenWidth() / 2;
+	float centerY = (float)IwGxGetScreenHeight() / 2;
+
+
+
+	float rx = centerX - x;
+	float ry = centerY - y;
+
+	oldCoreX3 += (float)5 / (float)radius3;
+	oldCoreY3 += (float)5 / (float)radius3;
+	float c = cos(directionAngle3 *oldCoreX3);
+	float s = sin(directionAngle3 *oldCoreY3);
+
+	//float x1 = x + rx * c - ry * s;
+	//float y1 = y + rx * s + ry * c;
+
+	float x1 = centerX + c * radius3;
+	float y1 = centerY + s * radius3;
+
+	radius3 -= 0.6;
+	if (radius3 <= 0) radius3 = 1;
+
+	float aa = x - x1;
+	float bb = y - y1;
+	float angle = atan2(aa, bb) * 57;
+
+	// Move image to touched position
+	gemPlayerBody3->m_X = x1;
+	gemPlayerBody3->m_Y = y1;
+	gemPlayerBody3->m_AnchorX = 0.5;
+	gemPlayerBody3->m_AnchorY = 0.5;
+	gemPlayerBody3->m_Angle = (angle - gemPlayerBody3->m_Angle) + gemPlayerBody3->m_Angle;
+
+}
+void Game::updatePlayer4(){
+	if (k4 < 12){
+		k4++;
+		float x = gemPlayerBody4->m_X;
+		float y = gemPlayerBody4->m_Y;
+
+
+
+		//float minAngle = directionAngle * -1;
+		//float oldAngle = gemPlayer->m_Angle;
+
+		float centerX = (float)IwGxGetScreenWidth() / 2;
+		float centerY = (float)IwGxGetScreenHeight() / 2;
+
+
+		float rx = centerX - x;
+		float ry = centerY - y;
+
+		oldCoreX4 += (float)5 / (float)radius4;
+		oldCoreY4 += (float)5 / (float)radius4;
+		float c = cos(directionAngle4 *oldCoreX4);
+		float s = sin(directionAngle4 *oldCoreY4);
+
+		//float x1 = x + rx * c - ry * s;
+		//float y1 = y + rx * s + ry * c;
+
+		float x1 = centerX + c * radius4;
+		float y1 = centerY + s * radius4;
+
+		radius4 += 2;
+
+		float aa = x - x1;
+		float bb = y - y1;
+		float angle = atan2(aa, bb) * 57;
+
+		// Move image to touched position
+		gemPlayerBody4->m_X = x1;
+		gemPlayerBody4->m_Y = y1;
+		gemPlayerBody4->m_AnchorX = 0.4;
+		gemPlayerBody4->m_AnchorY = 0.5;
+		gemPlayerBody4->m_Angle = (angle - gemPlayerBody4->m_Angle) / 10 + gemPlayerBody4->m_Angle;
+		//k_touch++;
+		//if (k_touch > 20) directionAngle *= -1;
+		return;
+	}
+	//if(k_touch > 0) k_touch -= 1;
+	float x = gemPlayerBody4->m_X;
+	float y = gemPlayerBody4->m_Y;
+
+
+
+	//float minAngle = directionAngle * -1;
+	//float oldAngle = gemPlayer->m_Angle;
+
+	float centerX = (float)IwGxGetScreenWidth() / 2;
+	float centerY = (float)IwGxGetScreenHeight() / 2;
+
+
+
+	float rx = centerX - x;
+	float ry = centerY - y;
+
+	oldCoreX4 += (float)5 / (float)radius4;
+	oldCoreY4 += (float)5 / (float)radius4;
+	float c = cos(directionAngle4 *oldCoreX4);
+	float s = sin(directionAngle4 *oldCoreY4);
+
+	//float x1 = x + rx * c - ry * s;
+	//float y1 = y + rx * s + ry * c;
+
+	float x1 = centerX + c * radius4;
+	float y1 = centerY + s * radius4;
+
+	radius4 -= 0.6;
+	if (radius4 <= 0) radius4 = 1;
+
+	float aa = x - x1;
+	float bb = y - y1;
+	float angle = atan2(aa, bb) * 57;
+
+	// Move image to touched position
+	gemPlayerBody4->m_X = x1;
+	gemPlayerBody4->m_Y = y1;
+	gemPlayerBody4->m_AnchorX = 0.5;
+	gemPlayerBody4->m_AnchorY = 0.5;
+	gemPlayerBody4->m_Angle = (angle - gemPlayerBody4->m_Angle) + gemPlayerBody4->m_Angle;
 
 }
 
@@ -348,18 +669,55 @@ void Game::Init()
     gemSprite->m_W = (float)gemSprite->GetAtlas()->GetFrameWidth();
     gemSprite->m_H = (float)gemSprite->GetAtlas()->GetFrameHeight();
     gemSprite->m_AnchorX = 0.5;
+	gemSprite->m_AnchorY = 0.5;
     gemSprite->SetAnimDuration(2);
     AddChild(gemSprite);
 
-	gemPlayer = new CSprite();
-	gemPlayer->m_X = (float)IwGxGetScreenWidth() / 3;
-	gemPlayer->m_Y = (float)IwGxGetScreenHeight() / 3;
-	gemPlayer->SetImage(g_pResources->getPlayerImage());
-	gemPlayer->m_W = (float)gemPlayer->GetImage()->GetWidth();
-	gemPlayer->m_H = (float)gemPlayer->GetImage()->GetHeight();
-	gemPlayer->m_AnchorX = 0.5;
-	//gemSprite->SetAnimDuration(2);
-	AddChild(gemPlayer);
+	
+
+	gemPlayerBody1 = new CSprite();
+	gemPlayerBody1->m_X = (float)IwGxGetScreenWidth() / 3;
+	gemPlayerBody1->m_Y = (float)IwGxGetScreenHeight() / 3;
+	gemPlayerBody1->SetImage(g_pResources->getPlayerImage1());
+	gemPlayerBody1->m_W = (float)gemPlayerBody1->GetImage()->GetWidth();
+	gemPlayerBody1->m_H = (float)gemPlayerBody1->GetImage()->GetHeight();
+	gemPlayerBody1->m_AnchorX = 0.5;
+	gemPlayerBody1->m_AnchorY = 0.4;
+
+	AddChild(gemPlayerBody1);
+
+	gemPlayerBody2 = new CSprite();
+	gemPlayerBody2->m_X = (float)IwGxGetScreenWidth() / 4;
+	gemPlayerBody2->m_Y = (float)IwGxGetScreenHeight() / 4;
+	gemPlayerBody2->SetImage(g_pResources->getPlayerImage2());
+	gemPlayerBody2->m_W = (float)gemPlayerBody2->GetImage()->GetWidth();
+	gemPlayerBody2->m_H = (float)gemPlayerBody2->GetImage()->GetHeight();
+	gemPlayerBody2->m_AnchorX = 0.5;
+	gemPlayerBody2->m_AnchorY = 0.4;
+
+	AddChild(gemPlayerBody2);
+
+	gemPlayerBody3 = new CSprite();
+	gemPlayerBody3->m_X = (float)IwGxGetScreenWidth() / 2.5;
+	gemPlayerBody3->m_Y = (float)IwGxGetScreenHeight() / 2.5;
+	gemPlayerBody3->SetImage(g_pResources->getPlayerImage3());
+	gemPlayerBody3->m_W = (float)gemPlayerBody3->GetImage()->GetWidth();
+	gemPlayerBody3->m_H = (float)gemPlayerBody3->GetImage()->GetHeight();
+	gemPlayerBody3->m_AnchorX = 0.5;
+	gemPlayerBody3->m_AnchorY = 0.4;
+
+	AddChild(gemPlayerBody3);
+
+	gemPlayerBody4 = new CSprite();
+	gemPlayerBody4->m_X = (float)IwGxGetScreenWidth() / 3;
+	gemPlayerBody4->m_Y = (float)IwGxGetScreenHeight() / 3;
+	gemPlayerBody4->SetImage(g_pResources->getPlayerImage4());
+	gemPlayerBody4->m_W = (float)gemPlayerBody4->GetImage()->GetWidth();
+	gemPlayerBody4->m_H = (float)gemPlayerBody4->GetImage()->GetHeight();
+	gemPlayerBody4->m_AnchorX = 0.5;
+	gemPlayerBody4->m_AnchorY = 0.4;
+
+	AddChild(gemPlayerBody4);
 
 	GameInitPlayers();
 }

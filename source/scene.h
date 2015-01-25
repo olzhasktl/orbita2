@@ -43,14 +43,12 @@ protected:
     bool                m_IsInputActive;                // Input active state
     SceneManager*       m_Manager;                      // Scene manager
     CTweenManager       m_Tweener;                      // Scene local tween manager
-	int					k;
-	int					k_touch;
-	int					radius;
-	int					directionAngle;					// -1 or 1
-	float				oldCoreX;
-	float				oldCoreY;
-	TimerManager        m_Timers;                       // Timers manager
-
+	int					k1,k2,k3,k4;
+	int					k_touch1, k_touch2, k_touch3, k_touch4;
+	int					radius1,radius2,radius3,radius4;
+	int					directionAngle1, directionAngle2, directionAngle3, directionAngle4;					// -1 or 1
+	float				oldCoreX1, oldCoreX2, oldCoreX3, oldCoreX4;
+	float				oldCoreY1, oldCoreY2, oldCoreY3, oldCoreY4;
 public:
     bool                IsActive() const                    { return m_IsActive; }
     void                SetActive(bool active)              { m_IsActive = active; }
