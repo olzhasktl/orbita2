@@ -12,7 +12,7 @@
 
 #if !defined(__GAME_H__)
 #define __GAME_H__
-
+#include <iostream>
 #include "scene.h"
 #include "timer.h"
 
@@ -35,7 +35,10 @@ protected:
 	CLabel*         scorePlayer2;
 	CLabel*         scorePlayer3;
 	CLabel*         scorePlayer4;
-
+	CSprite*        gemPlayerBody1;
+	CSprite*        gemPlayerBody2;
+	CSprite*        gemPlayerBody3;
+	CSprite*        gemPlayerBody4;
 private:
 	void            initUI();
 	void            GameInitPlayers();
@@ -58,6 +61,10 @@ public:
     void            pauseGame();
     void            resumeGame();
     void            newGame();
+	void			updatePlayer1();
+	void			updatePlayer2();
+	void			updatePlayer3();
+	void			updatePlayer4();
 
 };
 

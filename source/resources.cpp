@@ -31,7 +31,10 @@ Resources::Resources()
     PlayButton = Iw2DCreateImage("textures/play.png");
 	Bonus = Iw2DCreateImage("textures/bonus.png");
 	Bomb = Iw2DCreateImage("textures/bomb.png");
-
+	PlayerImage1 = Iw2DCreateImage("textures/player1.png");
+	PlayerImage2 = Iw2DCreateImage("textures/player2.png");
+	PlayerImage3 = Iw2DCreateImage("textures/player3.png");
+	PlayerImage4 = Iw2DCreateImage("textures/player4.png");
     // Load fonts
     Font = Iw2DCreateFont("fonts/arial8.gxfont");
 
@@ -72,6 +75,10 @@ Resources::~Resources()
     delete Placard;
     delete PlayButton;
     delete Font;
+	delete PlayerImage1;
+	delete PlayerImage2;
+	delete PlayerImage3;
+	delete PlayerImage4;
 }
 
 // Global resources
