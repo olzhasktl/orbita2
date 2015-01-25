@@ -16,6 +16,7 @@
 #include <list>
 #include "Iw2DSceneGraph.h"
 #include "IwTween.h"
+//#include "timer.h"
 
 using namespace Iw2DSceneGraphCore;
 using namespace Iw2DSceneGraph;
@@ -48,6 +49,8 @@ protected:
 	int					directionAngle1, directionAngle2, directionAngle3, directionAngle4;					// -1 or 1
 	float				oldCoreX1, oldCoreX2, oldCoreX3, oldCoreX4;
 	float				oldCoreY1, oldCoreY2, oldCoreY3, oldCoreY4;
+	CSprite*			boom;  // Scene local tween manager
+	//TimerManager        m_Timers;                       // Timers manager
 public:
     bool                IsActive() const                    { return m_IsActive; }
     void                SetActive(bool active)              { m_IsActive = active; }
@@ -56,6 +59,7 @@ public:
     void                SetManager(SceneManager* manager)   { m_Manager = manager; }
     void                SetInputActive(bool active)         { m_IsInputActive = active; }
     CTweenManager&      GetTweener()                        { return m_Tweener; }
+	//TimerManager&       GetTimers()                         { return m_Timers; }
 
 public:
     Scene();

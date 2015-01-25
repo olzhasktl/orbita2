@@ -1,2142 +1,2507 @@
+	.arch armv6
+	.fpu softvfp
+	.eabi_attribute 20, 1
+	.eabi_attribute 21, 1
+	.eabi_attribute 23, 3
+	.eabi_attribute 24, 1
+	.eabi_attribute 25, 1
+	.eabi_attribute 26, 2
+	.eabi_attribute 30, 6
+	.eabi_attribute 34, 1
+	.eabi_attribute 18, 2
 	.file	"IwSoundADPCM.cpp"
 	.text
 .Ltext0:
-	.type	_ZL11IwDebugExitv, @function
+	.cfi_sections	.debug_frame
+	.section	.text._ZL11IwDebugExitv,"ax",%progbits
+	.align	2
+	.type	_ZL11IwDebugExitv, %function
 _ZL11IwDebugExitv:
 .LFB4:
 	.file 1 "c:/marmalade/7.5/modules/iwutil/h/IwDebug.h"
 	.loc 1 348 0
 	.cfi_startproc
-	pushl	%ebp
+	@ args = 0, pretend = 0, frame = 0
+	@ frame_needed = 0, uses_anonymous_args = 0
+	stmfd	sp!, {r3, lr}
+.LCFI0:
 	.cfi_def_cfa_offset 8
-	.cfi_offset 5, -8
-	movl	%esp, %ebp
-	.cfi_def_cfa_register 5
-	pushl	%ebx
-	leal	-4(%esp), %esp
-	.cfi_offset 3, -12
-	call	__x86.get_pc_thunk.bx
-	addl	$_GLOBAL_OFFSET_TABLE_, %ebx
+	.cfi_offset 3, -8
+	.cfi_offset 14, -4
 	.loc 1 349 0
-	call	abort@PLT
+	bl	abort(PLT)
 	.cfi_endproc
 .LFE4:
 	.size	_ZL11IwDebugExitv, .-_ZL11IwDebugExitv
-	.section	.text._ZN12CIwSoundData14GetSampleCountEv,"axG",@progbits,_ZN12CIwSoundData14GetSampleCountEv,comdat
-	.align 2
+	.section	.text._ZN12CIwSoundData14GetSampleCountEv,"axG",%progbits,_ZN12CIwSoundData14GetSampleCountEv,comdat
+	.align	2
 	.weak	_ZN12CIwSoundData14GetSampleCountEv
 	.hidden	_ZN12CIwSoundData14GetSampleCountEv
-	.type	_ZN12CIwSoundData14GetSampleCountEv, @function
+	.type	_ZN12CIwSoundData14GetSampleCountEv, %function
 _ZN12CIwSoundData14GetSampleCountEv:
-.LFB1424:
-	.file 2 "c:/marmalade/7.5/examples/gametutorial/cpp/modules/soundengine/h/IwSoundData.h"
+.LFB1421:
+	.file 2 "c:/stage4/modules/soundengine/h/IwSoundData.h"
 	.loc 2 45 0
 	.cfi_startproc
-	pushl	%ebp
+	@ args = 0, pretend = 0, frame = 8
+	@ frame_needed = 0, uses_anonymous_args = 0
+	@ link register save eliminated.
+	sub	sp, sp, #8
+.LCFI1:
 	.cfi_def_cfa_offset 8
-	.cfi_offset 5, -8
-	leal	(%esp), %ebp
-	.cfi_def_cfa_register 5
+	str	r0, [sp, #4]
 	.loc 2 45 0
-	movl	8(%ebp), %eax
-	movl	20(%eax), %eax
-	popl	%ebp
-	.cfi_restore 5
-	.cfi_def_cfa 4, 4
-	ret
+	ldr	r3, [sp, #4]
+	ldr	r3, [r3, #20]
+	mov	r0, r3
+	add	sp, sp, #8
+	@ sp needed
+	bx	lr
 	.cfi_endproc
-.LFE1424:
+.LFE1421:
 	.size	_ZN12CIwSoundData14GetSampleCountEv, .-_ZN12CIwSoundData14GetSampleCountEv
-	.section	.text._ZN17CIwSoundDataADPCM18GetSamplesPerBlockEv,"axG",@progbits,_ZN17CIwSoundDataADPCM18GetSamplesPerBlockEv,comdat
-	.align 2
+	.section	.text._ZN17CIwSoundDataADPCM18GetSamplesPerBlockEv,"axG",%progbits,_ZN17CIwSoundDataADPCM18GetSamplesPerBlockEv,comdat
+	.align	2
 	.weak	_ZN17CIwSoundDataADPCM18GetSamplesPerBlockEv
 	.hidden	_ZN17CIwSoundDataADPCM18GetSamplesPerBlockEv
-	.type	_ZN17CIwSoundDataADPCM18GetSamplesPerBlockEv, @function
+	.type	_ZN17CIwSoundDataADPCM18GetSamplesPerBlockEv, %function
 _ZN17CIwSoundDataADPCM18GetSamplesPerBlockEv:
-.LFB1428:
+.LFB1425:
 	.loc 2 97 0
 	.cfi_startproc
-	pushl	%ebp
+	@ args = 0, pretend = 0, frame = 8
+	@ frame_needed = 0, uses_anonymous_args = 0
+	@ link register save eliminated.
+	sub	sp, sp, #8
+.LCFI2:
 	.cfi_def_cfa_offset 8
-	.cfi_offset 5, -8
-	leal	(%esp), %ebp
-	.cfi_def_cfa_register 5
+	str	r0, [sp, #4]
 	.loc 2 97 0
-	movl	8(%ebp), %eax
-	movl	36(%eax), %eax
-	popl	%ebp
-	.cfi_restore 5
-	.cfi_def_cfa 4, 4
-	ret
+	ldr	r3, [sp, #4]
+	ldr	r3, [r3, #36]
+	mov	r0, r3
+	add	sp, sp, #8
+	@ sp needed
+	bx	lr
 	.cfi_endproc
-.LFE1428:
+.LFE1425:
 	.size	_ZN17CIwSoundDataADPCM18GetSamplesPerBlockEv, .-_ZN17CIwSoundDataADPCM18GetSamplesPerBlockEv
-	.section	.text._ZN17CIwSoundDataADPCM17GetBlockAlignmentEv,"axG",@progbits,_ZN17CIwSoundDataADPCM17GetBlockAlignmentEv,comdat
-	.align 2
+	.section	.text._ZN17CIwSoundDataADPCM17GetBlockAlignmentEv,"axG",%progbits,_ZN17CIwSoundDataADPCM17GetBlockAlignmentEv,comdat
+	.align	2
 	.weak	_ZN17CIwSoundDataADPCM17GetBlockAlignmentEv
 	.hidden	_ZN17CIwSoundDataADPCM17GetBlockAlignmentEv
-	.type	_ZN17CIwSoundDataADPCM17GetBlockAlignmentEv, @function
+	.type	_ZN17CIwSoundDataADPCM17GetBlockAlignmentEv, %function
 _ZN17CIwSoundDataADPCM17GetBlockAlignmentEv:
-.LFB1429:
+.LFB1426:
 	.loc 2 99 0
 	.cfi_startproc
-	pushl	%ebp
+	@ args = 0, pretend = 0, frame = 8
+	@ frame_needed = 0, uses_anonymous_args = 0
+	@ link register save eliminated.
+	sub	sp, sp, #8
+.LCFI3:
 	.cfi_def_cfa_offset 8
-	.cfi_offset 5, -8
-	leal	(%esp), %ebp
-	.cfi_def_cfa_register 5
+	str	r0, [sp, #4]
 	.loc 2 99 0
-	movl	8(%ebp), %eax
-	movl	40(%eax), %eax
-	popl	%ebp
-	.cfi_restore 5
-	.cfi_def_cfa 4, 4
-	ret
+	ldr	r3, [sp, #4]
+	ldr	r3, [r3, #40]
+	mov	r0, r3
+	add	sp, sp, #8
+	@ sp needed
+	bx	lr
 	.cfi_endproc
-.LFE1429:
+.LFE1426:
 	.size	_ZN17CIwSoundDataADPCM17GetBlockAlignmentEv, .-_ZN17CIwSoundDataADPCM17GetBlockAlignmentEv
 	.hidden	_ZN15CIwChannelADPCM13isInitializedE
-	.globl	_ZN15CIwChannelADPCM13isInitializedE
+	.global	_ZN15CIwChannelADPCM13isInitializedE
 	.bss
-	.align 4
-	.type	_ZN15CIwChannelADPCM13isInitializedE, @object
+	.align	2
+	.type	_ZN15CIwChannelADPCM13isInitializedE, %object
 	.size	_ZN15CIwChannelADPCM13isInitializedE, 4
 _ZN15CIwChannelADPCM13isInitializedE:
-	.zero	4
-	.text
-	.align 2
-	.globl	_ZN15CIwChannelADPCM13GenerateAudioEP20s3eSoundGenAudioInfo
+	.space	4
+	.global	__aeabi_idiv
+	.section	.text._ZN15CIwChannelADPCM13GenerateAudioEP20s3eSoundGenAudioInfo,"ax",%progbits
+	.align	2
+	.global	_ZN15CIwChannelADPCM13GenerateAudioEP20s3eSoundGenAudioInfo
 	.hidden	_ZN15CIwChannelADPCM13GenerateAudioEP20s3eSoundGenAudioInfo
-	.type	_ZN15CIwChannelADPCM13GenerateAudioEP20s3eSoundGenAudioInfo, @function
+	.type	_ZN15CIwChannelADPCM13GenerateAudioEP20s3eSoundGenAudioInfo, %function
 _ZN15CIwChannelADPCM13GenerateAudioEP20s3eSoundGenAudioInfo:
-.LFB1430:
-	.file 3 "c:/Marmalade/7.5/examples/GameTutorial/CPP/modules/soundengine/source/IwSoundADPCM.cpp"
+.LFB1427:
+	.file 3 "c:/Stage4/modules/soundengine/source/IwSoundADPCM.cpp"
 	.loc 3 28 0
 	.cfi_startproc
-	pushl	%ebp
+	@ args = 0, pretend = 0, frame = 40
+	@ frame_needed = 0, uses_anonymous_args = 0
+	stmfd	sp!, {r4, lr}
+.LCFI4:
 	.cfi_def_cfa_offset 8
-	.cfi_offset 5, -8
-	movl	%esp, %ebp
-	.cfi_def_cfa_register 5
-	pushl	%esi
-	pushl	%ebx
-	leal	-64(%esp), %esp
-	.cfi_offset 6, -12
-	.cfi_offset 3, -16
-	call	__x86.get_pc_thunk.bx
-	addl	$_GLOBAL_OFFSET_TABLE_, %ebx
+	.cfi_offset 4, -8
+	.cfi_offset 14, -4
+	sub	sp, sp, #56
+.LCFI5:
+	.cfi_def_cfa_offset 64
+	str	r0, [sp, #20]
+	str	r1, [sp, #16]
 .LBB2:
 	.loc 3 29 0
-	movl	12(%ebp), %eax
-	movl	4(%eax), %eax
-	movl	%eax, -12(%ebp)
+	ldr	r3, [sp, #16]
+	ldr	r3, [r3, #4]
+	str	r3, [sp, #52]
 	.loc 3 30 0
-	movl	12(%ebp), %eax
-	movl	8(%eax), %eax
-	movl	%eax, -16(%ebp)
+	ldr	r3, [sp, #16]
+	ldr	r3, [r3, #8]
+	str	r3, [sp, #48]
 	.loc 3 31 0
-	movl	12(%ebp), %eax
-	movl	12(%eax), %eax
-	movl	%eax, -20(%ebp)
+	ldr	r3, [sp, #16]
+	ldr	r3, [r3, #12]
+	str	r3, [sp, #44]
 .LBB3:
 	.loc 3 33 0
-	movl	8(%ebp), %eax
-	movl	(%eax), %eax
-	testl	%eax, %eax
-	jne	.L9
+	ldr	r3, [sp, #20]
+	ldr	r3, [r3]
+	cmp	r3, #0
+	bne	.L9
 .LBB4:
 	.loc 3 38 0
-	movl	12(%ebp), %eax
-	movl	16(%eax), %edx
-	movl	8(%ebp), %eax
-	movl	%edx, (%eax)
+	ldr	r3, [sp, #16]
+	ldr	r2, [r3, #16]
+	ldr	r3, [sp, #20]
+	str	r2, [r3]
 	.loc 3 39 0
-	movl	12(%ebp), %eax
-	movl	16(%eax), %edx
-	movl	12(%ebp), %eax
-	movl	20(%eax), %eax
-	andl	$-2, %eax
-	addl	%eax, %eax
-	addl	%eax, %edx
-	movl	8(%ebp), %eax
-	movl	%edx, 4(%eax)
+	ldr	r3, [sp, #16]
+	ldr	r2, [r3, #16]
+	ldr	r3, [sp, #16]
+	ldr	r3, [r3, #20]
+	bic	r3, r3, #1
+	mov	r3, r3, asl #1
+	add	r2, r2, r3
+	ldr	r3, [sp, #20]
+	str	r2, [r3, #4]
 	.loc 3 43 0
-	movl	12(%ebp), %eax
-	movl	(%eax), %eax
-	movl	$2, 4(%esp)
-	movl	%eax, (%esp)
-	call	s3eSoundChannelGetInt@PLT
-	movl	%eax, -24(%ebp)
+	ldr	r3, [sp, #16]
+	ldr	r3, [r3]
+	mov	r0, r3
+	mov	r1, #2
+	bl	s3eSoundChannelGetInt(PLT)
+	mov	r3, r0
+	str	r3, [sp, #40]
 	.loc 3 45 0
-	movl	-24(%ebp), %eax
-	movl	%eax, (%esp)
-	call	_ZN17CIwSoundDataADPCM18GetSamplesPerBlockEv
-	movl	%eax, %edx
-	movl	8(%ebp), %eax
-	movl	%edx, 24(%eax)
+	ldr	r0, [sp, #40]
+	bl	_ZN17CIwSoundDataADPCM18GetSamplesPerBlockEv(PLT)
+	mov	r3, r0
+	mov	r2, r3
+	ldr	r3, [sp, #20]
+	str	r2, [r3, #24]
 	.loc 3 46 0
-	movl	-24(%ebp), %eax
-	movl	%eax, (%esp)
-	call	_ZN17CIwSoundDataADPCM17GetBlockAlignmentEv
-	movl	%eax, %edx
-	movl	8(%ebp), %eax
-	movl	%edx, 28(%eax)
+	ldr	r0, [sp, #40]
+	bl	_ZN17CIwSoundDataADPCM17GetBlockAlignmentEv(PLT)
+	mov	r3, r0
+	mov	r2, r3
+	ldr	r3, [sp, #20]
+	str	r2, [r3, #28]
 	.loc 3 47 0
-	movl	-24(%ebp), %eax
-	movl	%eax, (%esp)
-	call	_ZN12CIwSoundData14GetSampleCountEv
-	movl	%eax, %edx
-	movl	8(%ebp), %eax
-	movl	%edx, 32(%eax)
+	ldr	r3, [sp, #40]
+	mov	r0, r3
+	bl	_ZN12CIwSoundData14GetSampleCountEv(PLT)
+	mov	r3, r0
+	mov	r2, r3
+	ldr	r3, [sp, #20]
+	str	r2, [r3, #32]
 	.loc 3 48 0
-	movl	8(%ebp), %eax
-	movl	$0, 36(%eax)
+	ldr	r3, [sp, #20]
+	mov	r2, #0
+	str	r2, [r3, #36]
 	.loc 3 55 0
-	movl	8(%ebp), %eax
-	movl	$0, 8(%eax)
+	ldr	r3, [sp, #20]
+	mov	r2, #0
+	str	r2, [r3, #8]
 	.loc 3 56 0
-	movl	8(%ebp), %eax
-	movl	$0, 12(%eax)
+	ldr	r3, [sp, #20]
+	mov	r2, #0
+	str	r2, [r3, #12]
 	.loc 3 57 0
-	movl	8(%ebp), %eax
-	movw	$0, 16(%eax)
+	ldr	r3, [sp, #20]
+	mov	r2, #0
+	strh	r2, [r3, #16]	@ movhi
 	.loc 3 58 0
-	movl	8(%ebp), %eax
-	movw	$0, 20(%eax)
+	ldr	r3, [sp, #20]
+	mov	r2, #0
+	strh	r2, [r3, #20]	@ movhi
 	.loc 3 59 0
-	movl	8(%ebp), %eax
-	movb	$0, 23(%eax)
+	ldr	r3, [sp, #20]
+	mov	r2, #0
+	strb	r2, [r3, #23]
 	.loc 3 60 0
-	movl	8(%ebp), %eax
-	movb	$0, 22(%eax)
+	ldr	r3, [sp, #20]
+	mov	r2, #0
+	strb	r2, [r3, #22]
 .L9:
 .LBE4:
 .LBE3:
 	.loc 3 64 0
-	movl	12(%ebp), %eax
-	movl	(%eax), %eax
-	movl	$1, 4(%esp)
-	movl	%eax, (%esp)
-	call	s3eSoundChannelGetInt@PLT
-	sall	$12, %eax
-	movl	%eax, %esi
-	movl	$1, (%esp)
-	call	s3eSoundGetInt@PLT
-	movl	%eax, %ecx
-	movl	%esi, %eax
-	movl	%eax, %edx
-	sarl	$31, %edx
-	idivl	%ecx
-	movl	%eax, -28(%ebp)
+	ldr	r3, [sp, #16]
+	ldr	r3, [r3]
+	mov	r0, r3
+	mov	r1, #1
+	bl	s3eSoundChannelGetInt(PLT)
+	mov	r3, r0
+	mov	r4, r3, asl #12
+	mov	r0, #1
+	bl	s3eSoundGetInt(PLT)
+	mov	r3, r0
+	mov	r0, r4
+	mov	r1, r3
+	bl	__aeabi_idiv(PLT)
+	mov	r3, r0
+	str	r3, [sp, #36]
 	.loc 3 65 0
-	movl	12(%ebp), %eax
-	movl	(%eax), %eax
-	movl	$3, 4(%esp)
-	movl	%eax, (%esp)
-	call	s3eSoundChannelGetInt@PLT
-	movl	%eax, -32(%ebp)
+	ldr	r3, [sp, #16]
+	ldr	r3, [r3]
+	mov	r0, r3
+	mov	r1, #3
+	bl	s3eSoundChannelGetInt(PLT)
+	str	r0, [sp, #32]
 	.loc 3 67 0
-	movl	$0, -40(%ebp)
+	mov	r3, #0
+	str	r3, [sp, #24]
 	.loc 3 68 0
-	leal	-40(%ebp), %eax
-	movl	%eax, 24(%esp)
-	movl	-20(%ebp), %eax
-	movl	%eax, 20(%esp)
-	movl	-32(%ebp), %eax
-	movl	%eax, 16(%esp)
-	movl	-28(%ebp), %eax
-	movl	%eax, 12(%esp)
-	movl	-16(%ebp), %eax
-	movl	%eax, 8(%esp)
-	movl	-12(%ebp), %eax
-	movl	%eax, 4(%esp)
-	movl	8(%ebp), %eax
-	movl	%eax, (%esp)
-	call	_ZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPi
-	movl	%eax, -36(%ebp)
+	ldr	r3, [sp, #32]
+	str	r3, [sp]
+	ldr	r3, [sp, #44]
+	str	r3, [sp, #4]
+	add	r3, sp, #24
+	str	r3, [sp, #8]
+	ldr	r0, [sp, #20]
+	ldr	r1, [sp, #52]
+	ldr	r2, [sp, #48]
+	ldr	r3, [sp, #36]
+	bl	_ZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPi(PLT)
+	str	r0, [sp, #28]
 	.loc 3 69 0
-	movl	-40(%ebp), %eax
-	testl	%eax, %eax
-	je	.L10
+	ldr	r3, [sp, #24]
+	cmp	r3, #0
+	beq	.L10
 	.loc 3 71 0
-	movl	12(%ebp), %eax
-	movb	$1, 28(%eax)
+	ldr	r3, [sp, #16]
+	mov	r2, #1
+	strb	r2, [r3, #28]
 	.loc 3 72 0
-	movl	8(%ebp), %eax
-	movl	$0, (%eax)
+	ldr	r3, [sp, #20]
+	mov	r2, #0
+	str	r2, [r3]
 .L10:
 	.loc 3 74 0
-	movl	-36(%ebp), %eax
+	ldr	r3, [sp, #28]
 .LBE2:
 	.loc 3 75 0
-	leal	64(%esp), %esp
-	popl	%ebx
-	.cfi_restore 3
-	popl	%esi
-	.cfi_restore 6
-	popl	%ebp
-	.cfi_restore 5
-	.cfi_def_cfa 4, 4
-	ret
+	mov	r0, r3
+	add	sp, sp, #56
+	@ sp needed
+	ldmfd	sp!, {r4, pc}
 	.cfi_endproc
-.LFE1430:
+.LFE1427:
 	.size	_ZN15CIwChannelADPCM13GenerateAudioEP20s3eSoundGenAudioInfo, .-_ZN15CIwChannelADPCM13GenerateAudioEP20s3eSoundGenAudioInfo
 	.data
-	.align 32
-	.type	_ZL13stepsizeTable, @object
+	.align	2
+	.type	_ZL13stepsizeTable, %object
 	.size	_ZL13stepsizeTable, 356
 _ZL13stepsizeTable:
-	.long	7
-	.long	8
-	.long	9
-	.long	10
-	.long	11
-	.long	12
-	.long	13
-	.long	14
-	.long	16
-	.long	17
-	.long	19
-	.long	21
-	.long	23
-	.long	25
-	.long	28
-	.long	31
-	.long	34
-	.long	37
-	.long	41
-	.long	45
-	.long	50
-	.long	55
-	.long	60
-	.long	66
-	.long	73
-	.long	80
-	.long	88
-	.long	97
-	.long	107
-	.long	118
-	.long	130
-	.long	143
-	.long	157
-	.long	173
-	.long	190
-	.long	209
-	.long	230
-	.long	253
-	.long	279
-	.long	307
-	.long	337
-	.long	371
-	.long	408
-	.long	449
-	.long	494
-	.long	544
-	.long	598
-	.long	658
-	.long	724
-	.long	796
-	.long	876
-	.long	963
-	.long	1060
-	.long	1166
-	.long	1282
-	.long	1411
-	.long	1552
-	.long	1707
-	.long	1878
-	.long	2066
-	.long	2272
-	.long	2499
-	.long	2749
-	.long	3024
-	.long	3327
-	.long	3660
-	.long	4026
-	.long	4428
-	.long	4871
-	.long	5358
-	.long	5894
-	.long	6484
-	.long	7132
-	.long	7845
-	.long	8630
-	.long	9493
-	.long	10442
-	.long	11487
-	.long	12635
-	.long	13899
-	.long	15289
-	.long	16818
-	.long	18500
-	.long	20350
-	.long	22385
-	.long	24623
-	.long	27086
-	.long	29794
-	.long	32767
-	.align 32
-	.type	_ZL6sTable, @object
+	.word	7
+	.word	8
+	.word	9
+	.word	10
+	.word	11
+	.word	12
+	.word	13
+	.word	14
+	.word	16
+	.word	17
+	.word	19
+	.word	21
+	.word	23
+	.word	25
+	.word	28
+	.word	31
+	.word	34
+	.word	37
+	.word	41
+	.word	45
+	.word	50
+	.word	55
+	.word	60
+	.word	66
+	.word	73
+	.word	80
+	.word	88
+	.word	97
+	.word	107
+	.word	118
+	.word	130
+	.word	143
+	.word	157
+	.word	173
+	.word	190
+	.word	209
+	.word	230
+	.word	253
+	.word	279
+	.word	307
+	.word	337
+	.word	371
+	.word	408
+	.word	449
+	.word	494
+	.word	544
+	.word	598
+	.word	658
+	.word	724
+	.word	796
+	.word	876
+	.word	963
+	.word	1060
+	.word	1166
+	.word	1282
+	.word	1411
+	.word	1552
+	.word	1707
+	.word	1878
+	.word	2066
+	.word	2272
+	.word	2499
+	.word	2749
+	.word	3024
+	.word	3327
+	.word	3660
+	.word	4026
+	.word	4428
+	.word	4871
+	.word	5358
+	.word	5894
+	.word	6484
+	.word	7132
+	.word	7845
+	.word	8630
+	.word	9493
+	.word	10442
+	.word	11487
+	.word	12635
+	.word	13899
+	.word	15289
+	.word	16818
+	.word	18500
+	.word	20350
+	.word	22385
+	.word	24623
+	.word	27086
+	.word	29794
+	.word	32767
+	.align	2
+	.type	_ZL6sTable, %object
 	.size	_ZL6sTable, 2912
 _ZL6sTable:
-	.long	-1
-	.long	-1
-	.long	-1
-	.long	-1
-	.long	2
-	.long	4
-	.long	6
-	.long	8
-	.long	-1
-	.long	-1
-	.long	-1
-	.long	-1
-	.long	2
-	.long	4
-	.long	6
-	.long	8
-	.long	0
-	.zero	2844
-	.text
-	.align 2
-	.globl	_ZN15CIwChannelADPCM4InitEv
+	.word	-1
+	.word	-1
+	.word	-1
+	.word	-1
+	.word	2
+	.word	4
+	.word	6
+	.word	8
+	.word	-1
+	.word	-1
+	.word	-1
+	.word	-1
+	.word	2
+	.word	4
+	.word	6
+	.word	8
+	.word	0
+	.space	2844
+	.section	.text._ZN15CIwChannelADPCM4InitEv,"ax",%progbits
+	.align	2
+	.global	_ZN15CIwChannelADPCM4InitEv
 	.hidden	_ZN15CIwChannelADPCM4InitEv
-	.type	_ZN15CIwChannelADPCM4InitEv, @function
+	.type	_ZN15CIwChannelADPCM4InitEv, %function
 _ZN15CIwChannelADPCM4InitEv:
-.LFB1431:
+.LFB1428:
 	.loc 3 112 0
 	.cfi_startproc
-	pushl	%ebp
+	@ args = 0, pretend = 0, frame = 8
+	@ frame_needed = 0, uses_anonymous_args = 0
+	@ link register save eliminated.
+	sub	sp, sp, #8
+.LCFI6:
 	.cfi_def_cfa_offset 8
-	.cfi_offset 5, -8
-	movl	%esp, %ebp
-	.cfi_def_cfa_register 5
-	pushl	%ebx
-	leal	-16(%esp), %esp
-	.cfi_offset 3, -12
-	call	__x86.get_pc_thunk.bx
-	addl	$_GLOBAL_OFFSET_TABLE_, %ebx
 .LBB5:
 	.loc 3 113 0
-	movl	$1, _ZN15CIwChannelADPCM13isInitializedE@GOTOFF(%ebx)
+	ldr	r3, .L17
+.LPIC0:
+	add	r3, pc, r3
+	mov	r2, #1
+	str	r2, [r3]
 	.loc 3 117 0
-	movl	$0, -12(%ebp)
-	jmp	.L13
+	mov	r3, #0
+	str	r3, [sp]
+	b	.L13
 .L16:
 	.loc 3 121 0
-	movl	$0, -8(%ebp)
-	jmp	.L14
+	mov	r3, #0
+	str	r3, [sp, #4]
+	b	.L14
 .L15:
 	.loc 3 123 0 discriminator 2
-	movl	-12(%ebp), %eax
-	movl	%eax, %edx
-	sall	$3, %edx
-	movl	-8(%ebp), %eax
-	movl	%edx, %ecx
-	addl	%eax, %ecx
-	movl	-12(%ebp), %eax
-	movl	_ZL13stepsizeTable@GOTOFF(%ebx,%eax,4), %eax
-	imull	-8(%ebp), %eax
-	sarl	$2, %eax
-	movl	%eax, %edx
-	movl	-12(%ebp), %eax
-	movl	_ZL13stepsizeTable@GOTOFF(%ebx,%eax,4), %eax
-	sarl	$3, %eax
-	addl	%eax, %edx
-	leal	16(%ecx), %eax
-	movl	%edx, _ZL6sTable@GOTOFF(%ebx,%eax,4)
+	ldr	r3, [sp]
+	mov	r2, r3, asl #3
+	ldr	r3, [sp, #4]
+	add	r2, r2, r3
+	ldr	r3, .L17+4
+.LPIC1:
+	add	r3, pc, r3
+	ldr	r1, [sp]
+	ldr	r3, [r3, r1, asl #2]
+	ldr	r1, [sp, #4]
+	mul	r3, r1, r3
+	mov	r1, r3, asr #2
+	ldr	r3, .L17+8
+.LPIC2:
+	add	r3, pc, r3
+	ldr	r0, [sp]
+	ldr	r3, [r3, r0, asl #2]
+	mov	r3, r3, asr #3
+	add	r1, r1, r3
+	ldr	r3, .L17+12
+.LPIC3:
+	add	r3, pc, r3
+	add	r2, r2, #16
+	str	r1, [r3, r2, asl #2]
 	.loc 3 121 0 discriminator 2
-	addl	$1, -8(%ebp)
+	ldr	r3, [sp, #4]
+	add	r3, r3, #1
+	str	r3, [sp, #4]
 .L14:
 	.loc 3 121 0 is_stmt 0 discriminator 1
-	cmpl	$7, -8(%ebp)
-	jle	.L15
+	ldr	r3, [sp, #4]
+	cmp	r3, #7
+	ble	.L15
 	.loc 3 117 0 is_stmt 1
-	addl	$1, -12(%ebp)
+	ldr	r3, [sp]
+	add	r3, r3, #1
+	str	r3, [sp]
 .L13:
 	.loc 3 117 0 is_stmt 0 discriminator 1
-	cmpl	$88, -12(%ebp)
-	jle	.L16
+	ldr	r3, [sp]
+	cmp	r3, #88
+	ble	.L16
 .LBE5:
 	.loc 3 135 0 is_stmt 1
-	leal	16(%esp), %esp
-	popl	%ebx
-	.cfi_restore 3
-	popl	%ebp
-	.cfi_restore 5
-	.cfi_def_cfa 4, 4
-	ret
+	add	sp, sp, #8
+	@ sp needed
+	bx	lr
+.L18:
+	.align	2
+.L17:
+	.word	_ZN15CIwChannelADPCM13isInitializedE-(.LPIC0+8)
+	.word	_ZL13stepsizeTable-(.LPIC1+8)
+	.word	_ZL13stepsizeTable-(.LPIC2+8)
+	.word	_ZL6sTable-(.LPIC3+8)
 	.cfi_endproc
-.LFE1431:
+.LFE1428:
 	.size	_ZN15CIwChannelADPCM4InitEv, .-_ZN15CIwChannelADPCM4InitEv
 	.section	.rodata
+	.align	2
 .LC0:
-	.string	"SOUND"
-	.align 4
+	.ascii	"SOUND\000"
+	.align	2
 .LC1:
-	.string	"c:/Marmalade/7.5/examples/GameTutorial/CPP/modules/soundengine/source/IwSoundADPCM.cpp"
+	.ascii	"_index >=0 && _index <= 88\000"
+	.align	2
 .LC2:
-	.string	"_index >=0 && _index <= 88"
+	.ascii	"c:/Stage4/modules/soundengine/source/IwSoundADPCM.c"
+	.ascii	"pp\000"
+	.align	2
 .LC3:
-	.string	"_count == 0"
-	.text
-	.align 2
-	.globl	_ZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPi
+	.ascii	"_count == 0\000"
+	.section	.text._ZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPi,"ax",%progbits
+	.align	2
+	.global	_ZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPi
 	.hidden	_ZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPi
-	.type	_ZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPi, @function
+	.type	_ZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPi, %function
 _ZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPi:
-.LFB1432:
+.LFB1429:
 	.loc 3 209 0
 	.cfi_startproc
-	pushl	%ebp
-	.cfi_def_cfa_offset 8
+	@ args = 12, pretend = 0, frame = 152
+	@ frame_needed = 0, uses_anonymous_args = 0
+	stmfd	sp!, {r4, r5, lr}
+.LCFI7:
+	.cfi_def_cfa_offset 12
+	.cfi_offset 4, -12
 	.cfi_offset 5, -8
-	movl	%esp, %ebp
-	.cfi_def_cfa_register 5
-	pushl	%edi
-	pushl	%esi
-	pushl	%ebx
-	leal	-172(%esp), %esp
-	.cfi_offset 7, -12
-	.cfi_offset 6, -16
-	.cfi_offset 3, -20
-	call	__x86.get_pc_thunk.bx
-	addl	$_GLOBAL_OFFSET_TABLE_, %ebx
+	.cfi_offset 14, -4
+	sub	sp, sp, #156
+.LCFI8:
+	.cfi_def_cfa_offset 168
+	str	r0, [sp, #12]
+	str	r1, [sp, #8]
+	str	r2, [sp, #4]
+	str	r3, [sp]
 .LBB6:
 	.loc 3 224 0
-	movl	12(%ebp), %eax
-	movl	%eax, -88(%ebp)
+	ldr	r3, [sp, #8]
+	str	r3, [sp, #88]
 	.loc 3 225 0
-	movl	8(%ebp), %eax
-	movl	(%eax), %eax
-	movl	%eax, -28(%ebp)
+	ldr	r3, [sp, #12]
+	ldr	r3, [r3]
+	str	r3, [sp, #148]
 	.loc 3 226 0
-	movl	8(%ebp), %eax
-	movl	8(%eax), %eax
-	movl	%eax, -32(%ebp)
+	ldr	r3, [sp, #12]
+	ldr	r3, [r3, #8]
+	str	r3, [sp, #144]
 	.loc 3 227 0
-	movl	8(%ebp), %eax
-	movl	12(%eax), %eax
-	movl	%eax, -36(%ebp)
+	ldr	r3, [sp, #12]
+	ldr	r3, [r3, #12]
+	str	r3, [sp, #140]
 	.loc 3 228 0
-	movl	8(%ebp), %eax
-	movzwl	16(%eax), %eax
-	movw	%ax, -38(%ebp)
+	ldr	r3, [sp, #12]
+	ldrh	r3, [r3, #16]	@ movhi
+	strh	r3, [sp, #138]	@ movhi
 	.loc 3 229 0
-	movl	8(%ebp), %eax
-	movzwl	20(%eax), %eax
-	movw	%ax, -40(%ebp)
+	ldr	r3, [sp, #12]
+	ldrh	r3, [r3, #20]	@ movhi
+	strh	r3, [sp, #136]	@ movhi
 	.loc 3 230 0
-	movl	8(%ebp), %eax
-	movzbl	22(%eax), %eax
-	movsbl	%al, %eax
-	movl	%eax, -44(%ebp)
+	ldr	r3, [sp, #12]
+	ldrb	r3, [r3, #22]	@ zero_extendqisi2
+	sxtb	r3, r3
+	str	r3, [sp, #132]
 	.loc 3 231 0
-	movl	8(%ebp), %eax
-	movzbl	23(%eax), %eax
-	movb	%al, -45(%ebp)
+	ldr	r3, [sp, #12]
+	ldrb	r3, [r3, #23]
+	strb	r3, [sp, #131]
 	.loc 3 236 0
-	cmpl	$0, 16(%ebp)
-	jne	.L18
+	ldr	r3, [sp, #4]
+	cmp	r3, #0
+	bne	.L20
 	.loc 3 237 0
-	movl	28(%ebp), %eax
-	jmp	.L19
-.L18:
+	ldr	r3, [sp, #172]
+	b	.L21
+.L20:
 .LBB7:
 	.loc 3 238 0
-	cmpl	$7, 24(%ebp)
-	jg	.L20
+	ldr	r3, [sp, #168]
+	cmp	r3, #7
+	bgt	.L22
 .LBB8:
 	.loc 3 240 0
-	movl	16(%ebp), %eax
-	movl	%eax, -52(%ebp)
+	ldr	r3, [sp, #4]
+	str	r3, [sp, #124]
 	.loc 3 241 0
-	cmpl	$0, 28(%ebp)
-	jne	.L21
+	ldr	r3, [sp, #172]
+	cmp	r3, #0
+	bne	.L23
 	.loc 3 243 0
-	jmp	.L22
-.L23:
+	b	.L24
+.L25:
 	.loc 3 244 0
-	movl	12(%ebp), %eax
-	movl	%eax, %edx
-	addl	$2, %edx
-	movl	%edx, 12(%ebp)
-	movw	$0, (%eax)
-.L22:
-	.loc 3 243 0 discriminator 1
-	movl	-52(%ebp), %eax
-	movl	%eax, %edx
-	subl	$1, %edx
-	movl	%edx, -52(%ebp)
-	testl	%eax, %eax
-	setne	%al
-	testb	%al, %al
-	jne	.L23
-	jmp	.L24
-.L21:
-	.loc 3 248 0
-	movl	-52(%ebp), %eax
-	addl	%eax, %eax
-	addl	%eax, 12(%ebp)
+	ldr	r3, [sp, #8]
+	add	r2, r3, #2
+	str	r2, [sp, #8]
+	mov	r2, #0
+	strh	r2, [r3]	@ movhi
 .L24:
+	.loc 3 243 0 discriminator 1
+	ldr	r3, [sp, #124]
+	sub	r2, r3, #1
+	str	r2, [sp, #124]
+	cmp	r3, #0
+	moveq	r3, #0
+	movne	r3, #1
+	uxtb	r3, r3
+	cmp	r3, #0
+	bne	.L25
+	b	.L26
+.L23:
+	.loc 3 248 0
+	ldr	r3, [sp, #124]
+	mov	r3, r3, asl #1
+	ldr	r2, [sp, #8]
+	add	r3, r2, r3
+	str	r3, [sp, #8]
+.L26:
 .LBB9:
 	.loc 3 251 0
-	movl	-36(%ebp), %eax
-	andl	$1, %eax
-	testl	%eax, %eax
-	je	.L25
+	ldr	r3, [sp, #140]
+	and	r3, r3, #1
+	cmp	r3, #0
+	beq	.L27
 	.loc 3 251 0 is_stmt 0 discriminator 1
-	nop
-.L26:
-	.loc 3 257 0 is_stmt 1 discriminator 1
-	jmp	.L28
-.L25:
-	.loc 3 252 0
-	jmp	.L27
-.L33:
-	.loc 3 254 0
-	subl	$1, -36(%ebp)
-	.loc 3 255 0
-	addl	$4096, -32(%ebp)
-	.loc 3 257 0
-	jmp	.L28
-.L30:
-	.loc 3 259 0
-	movl	20(%ebp), %eax
-	subl	%eax, -32(%ebp)
-	.loc 3 260 0
-	subl	$1, 16(%ebp)
-	cmpl	$0, 16(%ebp)
-	sete	%al
-	testb	%al, %al
-	je	.L28
-	.loc 3 261 0
-	jmp	.L29
+	mov	r0, r0	@ nop
 .L28:
-	.loc 3 257 0 discriminator 1
-	movl	-32(%ebp), %eax
-	cmpl	20(%ebp), %eax
-	jge	.L30
-	.loc 3 263 0
-	subl	$1, -36(%ebp)
-	.loc 3 264 0
-	addl	$1, -28(%ebp)
-	.loc 3 265 0
-	addl	$4096, -32(%ebp)
-	.loc 3 266 0
-	jmp	.L31
-.L32:
-	.loc 3 268 0
-	movl	20(%ebp), %eax
-	subl	%eax, -32(%ebp)
-	.loc 3 269 0
-	subl	$1, 16(%ebp)
-	cmpl	$0, 16(%ebp)
-	sete	%al
-	testb	%al, %al
-	je	.L31
-	.loc 3 270 0
-	jmp	.L29
-.L31:
-	.loc 3 266 0 discriminator 1
-	movl	-32(%ebp), %eax
-	cmpl	20(%ebp), %eax
-	jge	.L32
+	.loc 3 257 0 is_stmt 1 discriminator 1
+	b	.L30
 .L27:
-	.loc 3 252 0 discriminator 1
-	cmpl	$0, -36(%ebp)
-	jne	.L33
-	.loc 3 273 0
-	movl	8(%ebp), %eax
-	movl	4(%eax), %eax
-	cmpl	-28(%ebp), %eax
-	ja	.L34
-	.loc 3 275 0
-	movl	32(%ebp), %eax
-	movl	$1, (%eax)
-	.loc 3 276 0
-	movl	$0, -28(%ebp)
-	.loc 3 277 0
-	jmp	.L29
+	.loc 3 252 0
+	b	.L29
+.L35:
+	.loc 3 254 0
+	ldr	r3, [sp, #140]
+	sub	r3, r3, #1
+	str	r3, [sp, #140]
+	.loc 3 255 0
+	ldr	r3, [sp, #144]
+	add	r3, r3, #4096
+	str	r3, [sp, #144]
+	.loc 3 257 0
+	b	.L30
+.L32:
+	.loc 3 259 0
+	ldr	r2, [sp, #144]
+	ldr	r3, [sp]
+	rsb	r3, r3, r2
+	str	r3, [sp, #144]
+	.loc 3 260 0
+	ldr	r3, [sp, #4]
+	sub	r3, r3, #1
+	str	r3, [sp, #4]
+	ldr	r3, [sp, #4]
+	cmp	r3, #0
+	movne	r3, #0
+	moveq	r3, #1
+	uxtb	r3, r3
+	cmp	r3, #0
+	beq	.L30
+	.loc 3 261 0
+	b	.L31
+.L30:
+	.loc 3 257 0 discriminator 1
+	ldr	r2, [sp, #144]
+	ldr	r3, [sp]
+	cmp	r2, r3
+	bge	.L32
+	.loc 3 263 0
+	ldr	r3, [sp, #140]
+	sub	r3, r3, #1
+	str	r3, [sp, #140]
+	.loc 3 264 0
+	ldr	r3, [sp, #148]
+	add	r3, r3, #1
+	str	r3, [sp, #148]
+	.loc 3 265 0
+	ldr	r3, [sp, #144]
+	add	r3, r3, #4096
+	str	r3, [sp, #144]
+	.loc 3 266 0
+	b	.L33
 .L34:
+	.loc 3 268 0
+	ldr	r2, [sp, #144]
+	ldr	r3, [sp]
+	rsb	r3, r3, r2
+	str	r3, [sp, #144]
+	.loc 3 269 0
+	ldr	r3, [sp, #4]
+	sub	r3, r3, #1
+	str	r3, [sp, #4]
+	ldr	r3, [sp, #4]
+	cmp	r3, #0
+	movne	r3, #0
+	moveq	r3, #1
+	uxtb	r3, r3
+	cmp	r3, #0
+	beq	.L33
+	.loc 3 270 0
+	b	.L31
+.L33:
+	.loc 3 266 0 discriminator 1
+	ldr	r2, [sp, #144]
+	ldr	r3, [sp]
+	cmp	r2, r3
+	bge	.L34
+.L29:
+	.loc 3 252 0 discriminator 1
+	ldr	r3, [sp, #140]
+	cmp	r3, #0
+	bne	.L35
+	.loc 3 273 0
+	ldr	r3, [sp, #12]
+	ldr	r2, [r3, #4]
+	ldr	r3, [sp, #148]
+	cmp	r2, r3
+	bhi	.L36
+	.loc 3 275 0
+	ldr	r3, [sp, #176]
+	mov	r2, #1
+	str	r2, [r3]
+	.loc 3 276 0
+	mov	r3, #0
+	str	r3, [sp, #148]
+	.loc 3 277 0
+	b	.L31
+.L36:
 .LBB10:
 	.loc 3 281 0
-	movl	8(%ebp), %eax
-	movl	36(%eax), %eax
-	testl	%eax, %eax
-	jne	.L35
+	ldr	r3, [sp, #12]
+	ldr	r3, [r3, #36]
+	cmp	r3, #0
+	bne	.L37
 	.loc 3 283 0
-	movl	-28(%ebp), %eax
-	movl	%eax, -56(%ebp)
-	jmp	.L36
-.L35:
-	.loc 3 287 0
-	movl	8(%ebp), %eax
-	movl	36(%eax), %edx
-	movl	8(%ebp), %eax
-	movl	28(%eax), %eax
-	addl	%edx, %eax
-	movl	%eax, -56(%ebp)
-.L36:
-	.loc 3 290 0
-	movl	8(%ebp), %eax
-	movl	-56(%ebp), %edx
-	movl	%edx, 36(%eax)
-	.loc 3 291 0
-	movl	8(%ebp), %eax
-	movl	24(%eax), %eax
-	subl	$1, %eax
-	movl	%eax, -36(%ebp)
-	.loc 3 292 0
-	movl	8(%ebp), %eax
-	movl	28(%eax), %eax
-	movl	%eax, %edx
-	movl	-56(%ebp), %eax
-	addl	%eax, %edx
-	movl	8(%ebp), %eax
-	movl	4(%eax), %eax
-	cmpl	%eax, %edx
-	jbe	.L37
-	.loc 3 294 0
-	movl	8(%ebp), %eax
-	movl	4(%eax), %eax
-	movl	%eax, %edx
-	movl	-56(%ebp), %eax
-	subl	%eax, %edx
-	movl	%edx, %eax
-	subl	$4, %eax
-	addl	%eax, %eax
-	movl	%eax, -36(%ebp)
+	ldr	r3, [sp, #148]
+	str	r3, [sp, #120]
+	b	.L38
 .L37:
+	.loc 3 287 0
+	ldr	r3, [sp, #12]
+	ldr	r2, [r3, #36]
+	ldr	r3, [sp, #12]
+	ldr	r3, [r3, #28]
+	add	r3, r2, r3
+	str	r3, [sp, #120]
+.L38:
+	.loc 3 290 0
+	ldr	r3, [sp, #12]
+	ldr	r2, [sp, #120]
+	str	r2, [r3, #36]
+	.loc 3 291 0
+	ldr	r3, [sp, #12]
+	ldr	r3, [r3, #24]
+	sub	r3, r3, #1
+	str	r3, [sp, #140]
+	.loc 3 292 0
+	ldr	r3, [sp, #12]
+	ldr	r3, [r3, #28]
+	ldr	r2, [sp, #120]
+	add	r2, r2, r3
+	ldr	r3, [sp, #12]
+	ldr	r3, [r3, #4]
+	cmp	r2, r3
+	bls	.L39
+	.loc 3 294 0
+	ldr	r3, [sp, #12]
+	ldr	r3, [r3, #4]
+	mov	r2, r3
+	ldr	r3, [sp, #120]
+	rsb	r3, r3, r2
+	sub	r3, r3, #4
+	mov	r3, r3, asl #1
+	str	r3, [sp, #140]
+.L39:
 	.loc 3 296 0
-	movl	-56(%ebp), %eax
-	addl	$4, %eax
-	movl	%eax, -28(%ebp)
+	ldr	r3, [sp, #120]
+	add	r3, r3, #4
+	str	r3, [sp, #148]
 	.loc 3 297 0
-	movl	-56(%ebp), %eax
-	movzwl	(%eax), %eax
-	movw	%ax, -40(%ebp)
+	ldr	r3, [sp, #120]
+	ldrh	r3, [r3]	@ movhi
+	strh	r3, [sp, #136]	@ movhi
 	.loc 3 298 0
-	movl	-56(%ebp), %eax
-	movzbl	2(%eax), %eax
-	movzbl	%al, %eax
-	movl	%eax, -44(%ebp)
+	ldr	r3, [sp, #120]
+	ldrb	r3, [r3, #2]	@ zero_extendqisi2
+	str	r3, [sp, #132]
 	.loc 3 299 0
-	movb	$0, -45(%ebp)
+	mov	r3, #0
+	strb	r3, [sp, #131]
 	.loc 3 300 0
-	movl	8(%ebp), %eax
-	movl	32(%eax), %edx
-	movl	8(%ebp), %eax
-	movl	24(%eax), %eax
-	subl	%eax, %edx
-	movl	8(%ebp), %eax
-	movl	%edx, 32(%eax)
+	ldr	r3, [sp, #12]
+	ldr	r2, [r3, #32]
+	ldr	r3, [sp, #12]
+	ldr	r3, [r3, #24]
+	rsb	r2, r3, r2
+	ldr	r3, [sp, #12]
+	str	r2, [r3, #32]
 .LBE10:
 .LBE9:
 	.loc 3 303 0
-	jmp	.L24
-.L20:
+	b	.L26
+.L22:
 .LBE8:
 .LBE7:
 .LBB11:
 	.loc 3 307 0
-	cmpl	$0, 28(%ebp)
-	je	.L38
-.L84:
+	ldr	r3, [sp, #172]
+	cmp	r3, #0
+	beq	.L40
+.L86:
 .LBB12:
 .LBB13:
 .LBB14:
 	.loc 3 310 0
-	cmpl	$0, -36(%ebp)
-	je	.L39
+	ldr	r3, [sp, #140]
+	cmp	r3, #0
+	beq	.L41
 .LBB15:
 	.loc 3 314 0
-	movl	-36(%ebp), %eax
-	andl	$1, %eax
-	testl	%eax, %eax
-	je	.L40
+	ldr	r3, [sp, #140]
+	and	r3, r3, #1
+	cmp	r3, #0
+	beq	.L42
 	.loc 3 316 0
-	movl	-28(%ebp), %eax
-	movzbl	(%eax), %esi
+	ldr	r3, [sp, #148]
+	ldrb	r4, [r3]	@ zero_extendqisi2
 	.loc 3 317 0
-	nop
-.L41:
+	mov	r0, r0	@ nop
+.L43:
 .LBB16:
 	.loc 3 342 0
-	jmp	.L55
-.L40:
+	b	.L57
+.L42:
 .LBB17:
 	.loc 3 321 0
-	movl	-28(%ebp), %eax
-	movzbl	(%eax), %esi
+	ldr	r3, [sp, #148]
+	ldrb	r4, [r3]	@ zero_extendqisi2
 	.loc 3 322 0
-	subl	$1, -36(%ebp)
+	ldr	r3, [sp, #140]
+	sub	r3, r3, #1
+	str	r3, [sp, #140]
 .LBB18:
 .LBB19:
 	.loc 3 323 0
-	cmpl	$0, -44(%ebp)
-	js	.L42
+	ldr	r3, [sp, #132]
+	cmp	r3, #0
+	blt	.L44
 	.loc 3 323 0 is_stmt 0 discriminator 2
-	cmpl	$88, -44(%ebp)
-	jle	.L43
-.L42:
-	.loc 3 323 0 discriminator 1
-	leal	.LC0@GOTOFF(%ebx), %eax
-	movl	%eax, (%esp)
-	call	IwDebugAssertIsChannelOn@PLT
-	testb	%al, %al
-	je	.L43
-	movzbl	_ZZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPiE21_s_IwAssertIgnoreThis@GOTOFF(%ebx), %eax
-	testb	%al, %al
-	jne	.L43
-	.loc 3 323 0 discriminator 3
-	movl	$1, %eax
-	jmp	.L44
-.L43:
-	.loc 3 323 0 discriminator 1
-	movl	$0, %eax
+	ldr	r3, [sp, #132]
+	cmp	r3, #88
+	ble	.L45
 .L44:
+	.loc 3 323 0 discriminator 1
+	ldr	r3, .L132
+.LPIC4:
+	add	r3, pc, r3
+	mov	r0, r3
+	bl	IwDebugAssertIsChannelOn(PLT)
+	mov	r3, r0
+	cmp	r3, #0
+	beq	.L45
+	ldr	r3, .L132+4
+.LPIC5:
+	add	r3, pc, r3
+	ldrb	r3, [r3]	@ zero_extendqisi2
+	cmp	r3, #0
+	bne	.L45
+	.loc 3 323 0 discriminator 3
+	mov	r3, #1
+	b	.L46
+.L45:
+	.loc 3 323 0 discriminator 1
+	mov	r3, #0
+.L46:
 	.loc 3 323 0 discriminator 4
-	testb	%al, %al
-	je	.L45
+	cmp	r3, #0
+	beq	.L47
 	.loc 3 323 0 discriminator 1
-	movl	$0, (%esp)
-	call	IwDebugAssertSetSolution@PLT
-	movl	$0, (%esp)
-	call	IwDebugAssertSetUID@PLT
-	movl	$0, (%esp)
-	call	IwDebugAssertSetMessage@PLT
-	movl	$1, 12(%esp)
-	movl	$323, 8(%esp)
-	leal	.LC1@GOTOFF(%ebx), %eax
-	movl	%eax, 4(%esp)
-	leal	.LC2@GOTOFF(%ebx), %eax
-	movl	%eax, (%esp)
-	call	IwDebugAssertShow@PLT
-	cmpl	$1, %eax
-	je	.L47
-	cmpl	$2, %eax
-	je	.L48
+	mov	r0, #0
+	bl	IwDebugAssertSetSolution(PLT)
+	mov	r0, #0
+	bl	IwDebugAssertSetUID(PLT)
+	mov	r0, #0
+	bl	IwDebugAssertSetMessage(PLT)
+	ldr	r3, .L132+8
+.LPIC6:
+	add	r3, pc, r3
+	mov	r0, r3
+	ldr	r3, .L132+12
+.LPIC7:
+	add	r3, pc, r3
+	mov	r1, r3
+	ldr	r2, .L132+16
+	mov	r3, #1
+	bl	IwDebugAssertShow(PLT)
+	mov	r3, r0
+	cmp	r3, #1
+	beq	.L49
+	cmp	r3, #2
+	beq	.L50
 	.loc 3 323 0
-	jmp	.L46
-.L47:
-	.loc 3 323 0 discriminator 2
-	call	s3eDebugIsDebuggerPresent@PLT
-	testb	%al, %al
-	setne	%al
-	testb	%al, %al
-	je	.L49
-	.loc 3 323 0 discriminator 1
-	call	s3eDebugIsDebuggerPresent@PLT
-	testb	%al, %al
-	setne	%al
-	testb	%al, %al
-	je	.L50
-#APP
-# 323 "c:/Marmalade/7.5/examples/GameTutorial/CPP/modules/soundengine/source/IwSoundADPCM.cpp" 1
-	 int $3 
-# 0 "" 2
-#NO_APP
-	jmp	.L50
+	b	.L48
 .L49:
 	.loc 3 323 0 discriminator 2
-	call	_ZL11IwDebugExitv
-	jmp	.L46
+	bl	s3eDebugIsDebuggerPresent(PLT)
+	mov	r3, r0
+	cmp	r3, #0
+	moveq	r3, #0
+	movne	r3, #1
+	uxtb	r3, r3
+	cmp	r3, #0
+	beq	.L51
+	.loc 3 323 0 discriminator 1
+	bl	s3eDebugIsDebuggerPresent(PLT)
+	mov	r3, r0
+	cmp	r3, #0
+	moveq	r3, #0
+	movne	r3, #1
+	uxtb	r3, r3
+	cmp	r3, #0
+	beq	.L52
+	mvn	r3, #11
+	mov	r2, #0
+	str	r2, [r3]
+	b	.L52
+.L51:
+	.loc 3 323 0 discriminator 2
+	bl	_ZL11IwDebugExitv(PLT)
+	b	.L48
+.L52:
+	.loc 3 323 0 discriminator 1
+	b	.L48
 .L50:
-	.loc 3 323 0 discriminator 1
-	jmp	.L46
-.L48:
 	.loc 3 323 0 discriminator 3
-	movb	$1, _ZZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPiE21_s_IwAssertIgnoreThis@GOTOFF(%ebx)
-	nop
-.L46:
+	ldr	r3, .L132+20
+.LPIC8:
+	add	r3, pc, r3
+	mov	r2, #1
+	strb	r2, [r3]
+	mov	r0, r0	@ nop
+.L48:
 	.loc 3 323 0 discriminator 1
-	movl	$0, (%esp)
-	call	IwDebugAssertSetUID@PLT
-.L45:
+	mov	r0, #0
+	bl	IwDebugAssertSetUID(PLT)
+.L47:
 .LBE19:
 .LBE18:
 	.loc 3 324 0 is_stmt 1
-	movl	%esi, %eax
-	movzbl	%al, %eax
-	andl	$7, %eax
-	movl	%eax, -120(%ebp)
+	mov	r3, r4
+	and	r3, r3, #7
+	str	r3, [sp, #56]
 	.loc 3 325 0
-	movl	-44(%ebp), %eax
-	movl	%eax, %edx
-	sall	$3, %edx
-	movl	-120(%ebp), %eax
-	addl	%edx, %eax
-	leal	16(%eax), %eax
-	movl	_ZL6sTable@GOTOFF(%ebx,%eax,4), %eax
-	movl	%eax, -124(%ebp)
+	ldr	r3, [sp, #132]
+	mov	r2, r3, asl #3
+	ldr	r3, [sp, #56]
+	add	r2, r2, r3
+	ldr	r3, .L132+24
+.LPIC9:
+	add	r3, pc, r3
+	add	r2, r2, #16
+	ldr	r3, [r3, r2, asl #2]
+	str	r3, [sp, #52]
 	.loc 3 326 0
-	movl	-120(%ebp), %eax
-	movl	_ZL6sTable@GOTOFF(%ebx,%eax,4), %eax
-	movl	%eax, -128(%ebp)
+	ldr	r3, .L132+28
+.LPIC10:
+	add	r3, pc, r3
+	ldr	r2, [sp, #56]
+	ldr	r3, [r3, r2, asl #2]
+	str	r3, [sp, #48]
 	.loc 3 328 0
-	movl	%esi, %eax
-	movzbl	%al, %eax
-	andl	$8, %eax
-	testl	%eax, %eax
-	je	.L51
+	mov	r3, r4
+	and	r3, r3, #8
+	cmp	r3, #0
+	beq	.L53
 	.loc 3 329 0
-	movswl	-40(%ebp), %eax
-	subl	-124(%ebp), %eax
-	movl	%eax, -60(%ebp)
-	jmp	.L52
-.L51:
-	.loc 3 331 0
-	movswl	-40(%ebp), %edx
-	movl	-124(%ebp), %eax
-	addl	%edx, %eax
-	movl	%eax, -60(%ebp)
-.L52:
-	.loc 3 333 0
-	movl	-128(%ebp), %eax
-	addl	%eax, -44(%ebp)
-	.loc 3 334 0
-	cmpl	$0, -44(%ebp)
-	jns	.L53
-	.loc 3 334 0 is_stmt 0 discriminator 1
-	movl	$0, -44(%ebp)
-	jmp	.L54
+	ldrsh	r2, [sp, #136]
+	ldr	r3, [sp, #52]
+	rsb	r3, r3, r2
+	str	r3, [sp, #116]
+	b	.L54
 .L53:
-	.loc 3 335 0 is_stmt 1
-	cmpl	$88, -44(%ebp)
-	jle	.L54
-	.loc 3 335 0 is_stmt 0 discriminator 1
-	movl	$88, -44(%ebp)
+	.loc 3 331 0
+	ldrsh	r2, [sp, #136]
+	ldr	r3, [sp, #52]
+	add	r3, r2, r3
+	str	r3, [sp, #116]
 .L54:
+	.loc 3 333 0
+	ldr	r2, [sp, #132]
+	ldr	r3, [sp, #48]
+	add	r3, r2, r3
+	str	r3, [sp, #132]
+	.loc 3 334 0
+	ldr	r3, [sp, #132]
+	cmp	r3, #0
+	bge	.L55
+	.loc 3 334 0 is_stmt 0 discriminator 1
+	mov	r3, #0
+	str	r3, [sp, #132]
+	b	.L56
+.L55:
+	.loc 3 335 0 is_stmt 1
+	ldr	r3, [sp, #132]
+	cmp	r3, #88
+	ble	.L56
+	.loc 3 335 0 is_stmt 0 discriminator 1
+	mov	r3, #88
+	str	r3, [sp, #132]
+.L56:
 	.loc 3 337 0 is_stmt 1
-	movzwl	-40(%ebp), %eax
-	movw	%ax, -38(%ebp)
+	ldrh	r3, [sp, #136]	@ movhi
+	strh	r3, [sp, #138]	@ movhi
 	.loc 3 338 0
-	movl	-60(%ebp), %eax
-	movl	%eax, (%esp)
-	call	_ZN13CIwChannelPCMItE13clip_to_int16Ei
-	movw	%ax, -40(%ebp)
+	ldr	r0, [sp, #116]
+	bl	_ZN13CIwChannelPCMItE13clip_to_int16Ei(PLT)
+	mov	r3, r0
+	strh	r3, [sp, #136]	@ movhi
 .LBE17:
 	.loc 3 340 0
-	addl	$4096, -32(%ebp)
+	ldr	r3, [sp, #144]
+	add	r3, r3, #4096
+	str	r3, [sp, #144]
 	.loc 3 342 0
-	jmp	.L55
-.L56:
+	b	.L57
+.L58:
 .LBB20:
 	.loc 3 344 0
-	movl	20(%ebp), %eax
-	subl	%eax, -32(%ebp)
+	ldr	r2, [sp, #144]
+	ldr	r3, [sp]
+	rsb	r3, r3, r2
+	str	r3, [sp, #144]
 	.loc 3 345 0
-	movswl	-38(%ebp), %edx
-	movswl	-40(%ebp), %eax
-	subl	%eax, %edx
-	movl	%edx, %eax
-	imull	-32(%ebp), %eax
-	movl	%eax, -92(%ebp)
+	ldrsh	r2, [sp, #138]
+	ldrsh	r3, [sp, #136]
+	rsb	r3, r3, r2
+	ldr	r2, [sp, #144]
+	mul	r3, r2, r3
+	str	r3, [sp, #84]
 	.loc 3 346 0
-	movl	12(%ebp), %eax
-	movzwl	(%eax), %eax
-	cwtl
-	movl	%eax, -96(%ebp)
+	ldr	r3, [sp, #8]
+	ldrh	r3, [r3]
+	sxth	r3, r3
+	str	r3, [sp, #80]
 	.loc 3 347 0
-	movswl	-40(%ebp), %eax
-	movl	-92(%ebp), %edx
-	sarl	$12, %edx
-	addl	%edx, %eax
-	movl	%eax, -92(%ebp)
+	ldrsh	r2, [sp, #136]
+	ldr	r3, [sp, #84]
+	mov	r3, r3, asr #12
+	add	r3, r2, r3
+	str	r3, [sp, #84]
 	.loc 3 348 0
-	movl	-92(%ebp), %eax
-	imull	24(%ebp), %eax
-	movl	%eax, -92(%ebp)
+	ldr	r3, [sp, #84]
+	ldr	r2, [sp, #168]
+	mul	r3, r2, r3
+	str	r3, [sp, #84]
 	.loc 3 349 0
-	subl	$1, 16(%ebp)
+	ldr	r3, [sp, #4]
+	sub	r3, r3, #1
+	str	r3, [sp, #4]
 	.loc 3 350 0
-	movl	12(%ebp), %edi
-	movl	%edi, %eax
-	addl	$2, %eax
-	movl	%eax, 12(%ebp)
-	movl	-92(%ebp), %eax
-	sarl	$8, %eax
-	movl	%eax, %edx
-	movl	-96(%ebp), %eax
-	addl	%edx, %eax
-	movl	%eax, (%esp)
-	call	_ZN13CIwChannelPCMItE13clip_to_int16Ei
-	movw	%ax, (%edi)
+	ldr	r5, [sp, #8]
+	add	r3, r5, #2
+	str	r3, [sp, #8]
+	ldr	r3, [sp, #84]
+	mov	r2, r3, asr #8
+	ldr	r3, [sp, #80]
+	add	r3, r2, r3
+	mov	r0, r3
+	bl	_ZN13CIwChannelPCMItE13clip_to_int16Ei(PLT)
+	mov	r3, r0
+	strh	r3, [r5]	@ movhi
 	.loc 3 351 0
-	cmpl	$0, 16(%ebp)
-	jne	.L55
+	ldr	r3, [sp, #4]
+	cmp	r3, #0
+	bne	.L57
 	.loc 3 352 0
-	jmp	.L29
-.L55:
+	b	.L31
+.L57:
 .LBE20:
 	.loc 3 342 0 discriminator 1
-	movl	-32(%ebp), %eax
-	cmpl	20(%ebp), %eax
-	jge	.L56
+	ldr	r2, [sp, #144]
+	ldr	r3, [sp]
+	cmp	r2, r3
+	bge	.L58
 .LBB21:
 .LBB22:
 	.loc 3 354 0
-	cmpl	$0, -44(%ebp)
-	js	.L57
+	ldr	r3, [sp, #132]
+	cmp	r3, #0
+	blt	.L59
 	.loc 3 354 0 is_stmt 0 discriminator 2
-	cmpl	$88, -44(%ebp)
-	jle	.L58
-.L57:
-	.loc 3 354 0 discriminator 1
-	leal	.LC0@GOTOFF(%ebx), %eax
-	movl	%eax, (%esp)
-	call	IwDebugAssertIsChannelOn@PLT
-	testb	%al, %al
-	je	.L58
-	movzbl	_ZZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPiE21_s_IwAssertIgnoreThis_0@GOTOFF(%ebx), %eax
-	testb	%al, %al
-	jne	.L58
-	.loc 3 354 0 discriminator 3
-	movl	$1, %eax
-	jmp	.L59
-.L58:
-	.loc 3 354 0 discriminator 1
-	movl	$0, %eax
+	ldr	r3, [sp, #132]
+	cmp	r3, #88
+	ble	.L60
 .L59:
+	.loc 3 354 0 discriminator 1
+	ldr	r3, .L132+32
+.LPIC11:
+	add	r3, pc, r3
+	mov	r0, r3
+	bl	IwDebugAssertIsChannelOn(PLT)
+	mov	r3, r0
+	cmp	r3, #0
+	beq	.L60
+	ldr	r3, .L132+36
+.LPIC12:
+	add	r3, pc, r3
+	ldrb	r3, [r3]	@ zero_extendqisi2
+	cmp	r3, #0
+	bne	.L60
+	.loc 3 354 0 discriminator 3
+	mov	r3, #1
+	b	.L61
+.L60:
+	.loc 3 354 0 discriminator 1
+	mov	r3, #0
+.L61:
 	.loc 3 354 0 discriminator 4
-	testb	%al, %al
-	je	.L60
+	cmp	r3, #0
+	beq	.L62
 	.loc 3 354 0 discriminator 1
-	movl	$0, (%esp)
-	call	IwDebugAssertSetSolution@PLT
-	movl	$0, (%esp)
-	call	IwDebugAssertSetUID@PLT
-	movl	$0, (%esp)
-	call	IwDebugAssertSetMessage@PLT
-	movl	$1, 12(%esp)
-	movl	$354, 8(%esp)
-	leal	.LC1@GOTOFF(%ebx), %eax
-	movl	%eax, 4(%esp)
-	leal	.LC2@GOTOFF(%ebx), %eax
-	movl	%eax, (%esp)
-	call	IwDebugAssertShow@PLT
-	cmpl	$1, %eax
-	je	.L62
-	cmpl	$2, %eax
-	je	.L63
+	mov	r0, #0
+	bl	IwDebugAssertSetSolution(PLT)
+	mov	r0, #0
+	bl	IwDebugAssertSetUID(PLT)
+	mov	r0, #0
+	bl	IwDebugAssertSetMessage(PLT)
+	ldr	r3, .L132+40
+.LPIC13:
+	add	r3, pc, r3
+	mov	r0, r3
+	ldr	r3, .L132+44
+.LPIC14:
+	add	r3, pc, r3
+	mov	r1, r3
+	ldr	r2, .L132+48
+	mov	r3, #1
+	bl	IwDebugAssertShow(PLT)
+	mov	r3, r0
+	cmp	r3, #1
+	beq	.L64
+	cmp	r3, #2
+	beq	.L65
 	.loc 3 354 0
-	jmp	.L61
-.L62:
-	.loc 3 354 0 discriminator 2
-	call	s3eDebugIsDebuggerPresent@PLT
-	testb	%al, %al
-	setne	%al
-	testb	%al, %al
-	je	.L64
-	.loc 3 354 0 discriminator 1
-	call	s3eDebugIsDebuggerPresent@PLT
-	testb	%al, %al
-	setne	%al
-	testb	%al, %al
-	je	.L65
-#APP
-# 354 "c:/Marmalade/7.5/examples/GameTutorial/CPP/modules/soundengine/source/IwSoundADPCM.cpp" 1
-	 int $3 
-# 0 "" 2
-#NO_APP
-	jmp	.L65
+	b	.L63
 .L64:
 	.loc 3 354 0 discriminator 2
-	call	_ZL11IwDebugExitv
-	jmp	.L61
+	bl	s3eDebugIsDebuggerPresent(PLT)
+	mov	r3, r0
+	cmp	r3, #0
+	moveq	r3, #0
+	movne	r3, #1
+	uxtb	r3, r3
+	cmp	r3, #0
+	beq	.L66
+	.loc 3 354 0 discriminator 1
+	bl	s3eDebugIsDebuggerPresent(PLT)
+	mov	r3, r0
+	cmp	r3, #0
+	moveq	r3, #0
+	movne	r3, #1
+	uxtb	r3, r3
+	cmp	r3, #0
+	beq	.L67
+	mvn	r3, #11
+	mov	r2, #0
+	str	r2, [r3]
+	b	.L67
+.L66:
+	.loc 3 354 0 discriminator 2
+	bl	_ZL11IwDebugExitv(PLT)
+	b	.L63
+.L67:
+	.loc 3 354 0 discriminator 1
+	b	.L63
 .L65:
-	.loc 3 354 0 discriminator 1
-	jmp	.L61
-.L63:
 	.loc 3 354 0 discriminator 3
-	movb	$1, _ZZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPiE21_s_IwAssertIgnoreThis_0@GOTOFF(%ebx)
-	nop
-.L61:
+	ldr	r3, .L132+52
+.LPIC15:
+	add	r3, pc, r3
+	mov	r2, #1
+	strb	r2, [r3]
+	mov	r0, r0	@ nop
+.L63:
 	.loc 3 354 0 discriminator 1
-	movl	$0, (%esp)
-	call	IwDebugAssertSetUID@PLT
-.L60:
+	mov	r0, #0
+	bl	IwDebugAssertSetUID(PLT)
+.L62:
 .LBE22:
 .LBE21:
 	.loc 3 355 0 is_stmt 1
-	movl	%esi, %eax
-	movzbl	%al, %eax
-	sarl	$4, %eax
-	movl	%eax, %esi
+	mov	r3, r4
+	mov	r3, r3, asr #4
+	uxtb	r4, r3
 	.loc 3 356 0
-	movl	%esi, %eax
-	movzbl	%al, %eax
-	andl	$7, %eax
-	movl	%eax, -100(%ebp)
+	mov	r3, r4
+	and	r3, r3, #7
+	str	r3, [sp, #76]
 	.loc 3 357 0
-	movl	-44(%ebp), %eax
-	movl	%eax, %edx
-	sall	$3, %edx
-	movl	-100(%ebp), %eax
-	addl	%edx, %eax
-	leal	16(%eax), %eax
-	movl	_ZL6sTable@GOTOFF(%ebx,%eax,4), %eax
-	movl	%eax, -104(%ebp)
+	ldr	r3, [sp, #132]
+	mov	r2, r3, asl #3
+	ldr	r3, [sp, #76]
+	add	r2, r2, r3
+	ldr	r3, .L132+56
+.LPIC16:
+	add	r3, pc, r3
+	add	r2, r2, #16
+	ldr	r3, [r3, r2, asl #2]
+	str	r3, [sp, #72]
 	.loc 3 358 0
-	subl	$1, -36(%ebp)
+	ldr	r3, [sp, #140]
+	sub	r3, r3, #1
+	str	r3, [sp, #140]
 	.loc 3 359 0
-	movl	-100(%ebp), %eax
-	movl	_ZL6sTable@GOTOFF(%ebx,%eax,4), %eax
-	movl	%eax, -108(%ebp)
+	ldr	r3, .L132+60
+.LPIC17:
+	add	r3, pc, r3
+	ldr	r2, [sp, #76]
+	ldr	r3, [r3, r2, asl #2]
+	str	r3, [sp, #68]
 	.loc 3 360 0
-	addl	$1, -28(%ebp)
+	ldr	r3, [sp, #148]
+	add	r3, r3, #1
+	str	r3, [sp, #148]
 	.loc 3 362 0
-	movl	%esi, %eax
-	movzbl	%al, %eax
-	andl	$8, %eax
-	testl	%eax, %eax
-	je	.L66
+	mov	r3, r4
+	and	r3, r3, #8
+	cmp	r3, #0
+	beq	.L68
 	.loc 3 363 0
-	movswl	-40(%ebp), %eax
-	subl	-104(%ebp), %eax
-	movl	%eax, -64(%ebp)
-	jmp	.L67
-.L66:
-	.loc 3 365 0
-	movswl	-40(%ebp), %edx
-	movl	-104(%ebp), %eax
-	addl	%edx, %eax
-	movl	%eax, -64(%ebp)
-.L67:
-	.loc 3 367 0
-	movl	-108(%ebp), %eax
-	addl	%eax, -44(%ebp)
-	.loc 3 369 0
-	cmpl	$0, -44(%ebp)
-	jns	.L68
-	.loc 3 369 0 is_stmt 0 discriminator 1
-	movl	$0, -44(%ebp)
-	jmp	.L69
+	ldrsh	r2, [sp, #136]
+	ldr	r3, [sp, #72]
+	rsb	r3, r3, r2
+	str	r3, [sp, #112]
+	b	.L69
 .L68:
-	.loc 3 370 0 is_stmt 1
-	cmpl	$88, -44(%ebp)
-	jle	.L69
-	.loc 3 370 0 is_stmt 0 discriminator 1
-	movl	$88, -44(%ebp)
+	.loc 3 365 0
+	ldrsh	r2, [sp, #136]
+	ldr	r3, [sp, #72]
+	add	r3, r2, r3
+	str	r3, [sp, #112]
 .L69:
-	.loc 3 372 0 is_stmt 1
-	movzwl	-40(%ebp), %eax
-	movw	%ax, -38(%ebp)
-	.loc 3 373 0
-	movl	-64(%ebp), %eax
-	movl	%eax, (%esp)
-	call	_ZN13CIwChannelPCMItE13clip_to_int16Ei
-	movw	%ax, -40(%ebp)
-	.loc 3 374 0
-	addl	$4096, -32(%ebp)
-	.loc 3 375 0
-	jmp	.L70
+	.loc 3 367 0
+	ldr	r2, [sp, #132]
+	ldr	r3, [sp, #68]
+	add	r3, r2, r3
+	str	r3, [sp, #132]
+	.loc 3 369 0
+	ldr	r3, [sp, #132]
+	cmp	r3, #0
+	bge	.L70
+	.loc 3 369 0 is_stmt 0 discriminator 1
+	mov	r3, #0
+	str	r3, [sp, #132]
+	b	.L71
+.L70:
+	.loc 3 370 0 is_stmt 1
+	ldr	r3, [sp, #132]
+	cmp	r3, #88
+	ble	.L71
+	.loc 3 370 0 is_stmt 0 discriminator 1
+	mov	r3, #88
+	str	r3, [sp, #132]
 .L71:
+	.loc 3 372 0 is_stmt 1
+	ldrh	r3, [sp, #136]	@ movhi
+	strh	r3, [sp, #138]	@ movhi
+	.loc 3 373 0
+	ldr	r0, [sp, #112]
+	bl	_ZN13CIwChannelPCMItE13clip_to_int16Ei(PLT)
+	mov	r3, r0
+	strh	r3, [sp, #136]	@ movhi
+	.loc 3 374 0
+	ldr	r3, [sp, #144]
+	add	r3, r3, #4096
+	str	r3, [sp, #144]
+	.loc 3 375 0
+	b	.L72
+.L73:
 .LBB23:
 	.loc 3 377 0
-	movl	20(%ebp), %eax
-	subl	%eax, -32(%ebp)
+	ldr	r2, [sp, #144]
+	ldr	r3, [sp]
+	rsb	r3, r3, r2
+	str	r3, [sp, #144]
 	.loc 3 378 0
-	movswl	-38(%ebp), %edx
-	movswl	-40(%ebp), %eax
-	subl	%eax, %edx
-	movl	%edx, %eax
-	imull	-32(%ebp), %eax
-	movl	%eax, -112(%ebp)
+	ldrsh	r2, [sp, #138]
+	ldrsh	r3, [sp, #136]
+	rsb	r3, r3, r2
+	ldr	r2, [sp, #144]
+	mul	r3, r2, r3
+	str	r3, [sp, #64]
 	.loc 3 379 0
-	movl	12(%ebp), %eax
-	movzwl	(%eax), %eax
-	cwtl
-	movl	%eax, -116(%ebp)
+	ldr	r3, [sp, #8]
+	ldrh	r3, [r3]
+	sxth	r3, r3
+	str	r3, [sp, #60]
 	.loc 3 380 0
-	movswl	-40(%ebp), %eax
-	movl	-112(%ebp), %edx
-	sarl	$12, %edx
-	addl	%edx, %eax
-	movl	%eax, -112(%ebp)
+	ldrsh	r2, [sp, #136]
+	ldr	r3, [sp, #64]
+	mov	r3, r3, asr #12
+	add	r3, r2, r3
+	str	r3, [sp, #64]
 	.loc 3 381 0
-	movl	-112(%ebp), %eax
-	imull	24(%ebp), %eax
-	movl	%eax, -112(%ebp)
+	ldr	r3, [sp, #64]
+	ldr	r2, [sp, #168]
+	mul	r3, r2, r3
+	str	r3, [sp, #64]
 	.loc 3 382 0
-	subl	$1, 16(%ebp)
+	ldr	r3, [sp, #4]
+	sub	r3, r3, #1
+	str	r3, [sp, #4]
 	.loc 3 383 0
-	movl	12(%ebp), %esi
-	movl	%esi, %eax
-	addl	$2, %eax
-	movl	%eax, 12(%ebp)
-	movl	-112(%ebp), %eax
-	sarl	$8, %eax
-	movl	%eax, %edx
-	movl	-116(%ebp), %eax
-	addl	%edx, %eax
-	movl	%eax, (%esp)
-	call	_ZN13CIwChannelPCMItE13clip_to_int16Ei
-	movw	%ax, (%esi)
+	ldr	r4, [sp, #8]
+	add	r3, r4, #2
+	str	r3, [sp, #8]
+	ldr	r3, [sp, #64]
+	mov	r2, r3, asr #8
+	ldr	r3, [sp, #60]
+	add	r3, r2, r3
+	mov	r0, r3
+	bl	_ZN13CIwChannelPCMItE13clip_to_int16Ei(PLT)
+	mov	r3, r0
+	strh	r3, [r4]	@ movhi
 	.loc 3 384 0
-	cmpl	$0, 16(%ebp)
-	jne	.L70
+	ldr	r3, [sp, #4]
+	cmp	r3, #0
+	bne	.L72
 	.loc 3 385 0
-	jmp	.L29
-.L70:
+	b	.L31
+.L72:
 .LBE23:
 	.loc 3 375 0 discriminator 1
-	movl	-32(%ebp), %eax
-	cmpl	20(%ebp), %eax
-	jge	.L71
+	ldr	r2, [sp, #144]
+	ldr	r3, [sp]
+	cmp	r2, r3
+	bge	.L73
 .LBE16:
 	.loc 3 319 0
-	cmpl	$0, -36(%ebp)
-	jg	.L40
-.L39:
+	ldr	r3, [sp, #140]
+	cmp	r3, #0
+	bgt	.L42
+.L41:
 .LBE15:
 .LBE14:
 	.loc 3 391 0
-	movl	8(%ebp), %eax
-	movl	4(%eax), %eax
-	cmpl	-28(%ebp), %eax
-	ja	.L72
+	ldr	r3, [sp, #12]
+	ldr	r2, [r3, #4]
+	ldr	r3, [sp, #148]
+	cmp	r2, r3
+	bhi	.L74
 	.loc 3 393 0
-	movl	32(%ebp), %eax
-	movl	$1, (%eax)
+	ldr	r3, [sp, #176]
+	mov	r2, #1
+	str	r2, [r3]
 	.loc 3 394 0
-	movl	$0, -28(%ebp)
+	mov	r3, #0
+	str	r3, [sp, #148]
 	.loc 3 395 0
-	jmp	.L29
-.L72:
+	b	.L31
+.L74:
 .LBB24:
 .LBB25:
 	.loc 3 398 0
-	cmpl	$0, -36(%ebp)
-	je	.L73
+	ldr	r3, [sp, #140]
+	cmp	r3, #0
+	beq	.L75
 	.loc 3 398 0 is_stmt 0 discriminator 1
-	leal	.LC0@GOTOFF(%ebx), %eax
-	movl	%eax, (%esp)
-	call	IwDebugAssertIsChannelOn@PLT
-	testb	%al, %al
-	je	.L73
-	movzbl	_ZZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPiE21_s_IwAssertIgnoreThis_1@GOTOFF(%ebx), %eax
-	testb	%al, %al
-	jne	.L73
+	ldr	r3, .L132+64
+.LPIC18:
+	add	r3, pc, r3
+	mov	r0, r3
+	bl	IwDebugAssertIsChannelOn(PLT)
+	mov	r3, r0
+	cmp	r3, #0
+	beq	.L75
+	ldr	r3, .L132+68
+.LPIC19:
+	add	r3, pc, r3
+	ldrb	r3, [r3]	@ zero_extendqisi2
+	cmp	r3, #0
+	bne	.L75
 	.loc 3 398 0 discriminator 3
-	movl	$1, %eax
-	jmp	.L74
-.L73:
+	mov	r3, #1
+	b	.L76
+.L75:
 	.loc 3 398 0 discriminator 2
-	movl	$0, %eax
-.L74:
+	mov	r3, #0
+.L76:
 	.loc 3 398 0 discriminator 4
-	testb	%al, %al
-	je	.L75
+	cmp	r3, #0
+	beq	.L77
 	.loc 3 398 0 discriminator 1
-	movl	$0, (%esp)
-	call	IwDebugAssertSetSolution@PLT
-	movl	$0, (%esp)
-	call	IwDebugAssertSetUID@PLT
-	movl	$0, (%esp)
-	call	IwDebugAssertSetMessage@PLT
-	movl	$1, 12(%esp)
-	movl	$398, 8(%esp)
-	leal	.LC1@GOTOFF(%ebx), %eax
-	movl	%eax, 4(%esp)
-	leal	.LC3@GOTOFF(%ebx), %eax
-	movl	%eax, (%esp)
-	call	IwDebugAssertShow@PLT
-	cmpl	$1, %eax
-	je	.L77
-	cmpl	$2, %eax
-	je	.L78
+	mov	r0, #0
+	bl	IwDebugAssertSetSolution(PLT)
+	mov	r0, #0
+	bl	IwDebugAssertSetUID(PLT)
+	mov	r0, #0
+	bl	IwDebugAssertSetMessage(PLT)
+	ldr	r3, .L132+72
+.LPIC20:
+	add	r3, pc, r3
+	mov	r0, r3
+	ldr	r3, .L132+76
+.LPIC21:
+	add	r3, pc, r3
+	mov	r1, r3
+	ldr	r2, .L132+80
+	mov	r3, #1
+	bl	IwDebugAssertShow(PLT)
+	mov	r3, r0
+	cmp	r3, #1
+	beq	.L79
+	cmp	r3, #2
+	beq	.L80
 	.loc 3 398 0
-	jmp	.L76
-.L77:
-	.loc 3 398 0 discriminator 2
-	call	s3eDebugIsDebuggerPresent@PLT
-	testb	%al, %al
-	setne	%al
-	testb	%al, %al
-	je	.L79
-	.loc 3 398 0 discriminator 1
-	call	s3eDebugIsDebuggerPresent@PLT
-	testb	%al, %al
-	setne	%al
-	testb	%al, %al
-	je	.L80
-#APP
-# 398 "c:/Marmalade/7.5/examples/GameTutorial/CPP/modules/soundengine/source/IwSoundADPCM.cpp" 1
-	 int $3 
-# 0 "" 2
-#NO_APP
-	jmp	.L80
+	b	.L78
 .L79:
 	.loc 3 398 0 discriminator 2
-	call	_ZL11IwDebugExitv
-	jmp	.L76
+	bl	s3eDebugIsDebuggerPresent(PLT)
+	mov	r3, r0
+	cmp	r3, #0
+	moveq	r3, #0
+	movne	r3, #1
+	uxtb	r3, r3
+	cmp	r3, #0
+	beq	.L81
+	.loc 3 398 0 discriminator 1
+	bl	s3eDebugIsDebuggerPresent(PLT)
+	mov	r3, r0
+	cmp	r3, #0
+	moveq	r3, #0
+	movne	r3, #1
+	uxtb	r3, r3
+	cmp	r3, #0
+	beq	.L82
+	mvn	r3, #11
+	mov	r2, #0
+	str	r2, [r3]
+	b	.L82
+.L81:
+	.loc 3 398 0 discriminator 2
+	bl	_ZL11IwDebugExitv(PLT)
+	b	.L78
+.L82:
+	.loc 3 398 0 discriminator 1
+	b	.L78
 .L80:
-	.loc 3 398 0 discriminator 1
-	jmp	.L76
-.L78:
 	.loc 3 398 0 discriminator 3
-	movb	$1, _ZZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPiE21_s_IwAssertIgnoreThis_1@GOTOFF(%ebx)
-	nop
-.L76:
+	ldr	r3, .L132+84
+.LPIC22:
+	add	r3, pc, r3
+	mov	r2, #1
+	strb	r2, [r3]
+	mov	r0, r0	@ nop
+.L78:
 	.loc 3 398 0 discriminator 1
-	movl	$0, (%esp)
-	call	IwDebugAssertSetUID@PLT
-.L75:
+	mov	r0, #0
+	bl	IwDebugAssertSetUID(PLT)
+.L77:
 .LBE25:
 .LBE24:
 .LBB26:
 	.loc 3 401 0 is_stmt 1
-	movl	8(%ebp), %eax
-	movl	36(%eax), %eax
-	testl	%eax, %eax
-	jne	.L81
+	ldr	r3, [sp, #12]
+	ldr	r3, [r3, #36]
+	cmp	r3, #0
+	bne	.L83
 	.loc 3 403 0
-	movl	-28(%ebp), %eax
-	movl	%eax, -68(%ebp)
-	jmp	.L82
-.L81:
-	.loc 3 407 0
-	movl	8(%ebp), %eax
-	movl	36(%eax), %edx
-	movl	8(%ebp), %eax
-	movl	28(%eax), %eax
-	addl	%edx, %eax
-	movl	%eax, -68(%ebp)
-.L82:
-	.loc 3 410 0
-	movl	8(%ebp), %eax
-	movl	-68(%ebp), %edx
-	movl	%edx, 36(%eax)
-	.loc 3 411 0
-	movl	8(%ebp), %eax
-	movl	24(%eax), %eax
-	subl	$1, %eax
-	movl	%eax, -36(%ebp)
-	.loc 3 412 0
-	movl	8(%ebp), %eax
-	movl	28(%eax), %eax
-	movl	%eax, %edx
-	movl	-68(%ebp), %eax
-	addl	%eax, %edx
-	movl	8(%ebp), %eax
-	movl	4(%eax), %eax
-	cmpl	%eax, %edx
-	jbe	.L83
-	.loc 3 414 0
-	movl	8(%ebp), %eax
-	movl	4(%eax), %eax
-	movl	%eax, %edx
-	movl	-68(%ebp), %eax
-	subl	%eax, %edx
-	movl	%edx, %eax
-	subl	$4, %eax
-	addl	%eax, %eax
-	movl	%eax, -36(%ebp)
+	ldr	r3, [sp, #148]
+	str	r3, [sp, #108]
+	b	.L84
 .L83:
+	.loc 3 407 0
+	ldr	r3, [sp, #12]
+	ldr	r2, [r3, #36]
+	ldr	r3, [sp, #12]
+	ldr	r3, [r3, #28]
+	add	r3, r2, r3
+	str	r3, [sp, #108]
+.L84:
+	.loc 3 410 0
+	ldr	r3, [sp, #12]
+	ldr	r2, [sp, #108]
+	str	r2, [r3, #36]
+	.loc 3 411 0
+	ldr	r3, [sp, #12]
+	ldr	r3, [r3, #24]
+	sub	r3, r3, #1
+	str	r3, [sp, #140]
+	.loc 3 412 0
+	ldr	r3, [sp, #12]
+	ldr	r3, [r3, #28]
+	ldr	r2, [sp, #108]
+	add	r2, r2, r3
+	ldr	r3, [sp, #12]
+	ldr	r3, [r3, #4]
+	cmp	r2, r3
+	bls	.L85
+	.loc 3 414 0
+	ldr	r3, [sp, #12]
+	ldr	r3, [r3, #4]
+	mov	r2, r3
+	ldr	r3, [sp, #108]
+	rsb	r3, r3, r2
+	sub	r3, r3, #4
+	mov	r3, r3, asl #1
+	str	r3, [sp, #140]
+.L85:
 	.loc 3 416 0
-	movl	-68(%ebp), %eax
-	addl	$4, %eax
-	movl	%eax, -28(%ebp)
+	ldr	r3, [sp, #108]
+	add	r3, r3, #4
+	str	r3, [sp, #148]
 	.loc 3 417 0
-	movl	-68(%ebp), %eax
-	movzwl	(%eax), %eax
-	movw	%ax, -40(%ebp)
+	ldr	r3, [sp, #108]
+	ldrh	r3, [r3]	@ movhi
+	strh	r3, [sp, #136]	@ movhi
 	.loc 3 418 0
-	movl	-68(%ebp), %eax
-	movzbl	2(%eax), %eax
-	movzbl	%al, %eax
-	movl	%eax, -44(%ebp)
+	ldr	r3, [sp, #108]
+	ldrb	r3, [r3, #2]	@ zero_extendqisi2
+	str	r3, [sp, #132]
 	.loc 3 419 0
-	movb	$0, -45(%ebp)
+	mov	r3, #0
+	strb	r3, [sp, #131]
 	.loc 3 420 0
-	movl	8(%ebp), %eax
-	movl	32(%eax), %edx
-	movl	8(%ebp), %eax
-	movl	24(%eax), %eax
-	subl	%eax, %edx
-	movl	8(%ebp), %eax
-	movl	%edx, 32(%eax)
+	ldr	r3, [sp, #12]
+	ldr	r2, [r3, #32]
+	ldr	r3, [sp, #12]
+	ldr	r3, [r3, #24]
+	rsb	r2, r3, r2
+	ldr	r3, [sp, #12]
+	str	r2, [r3, #32]
 .LBE26:
 .LBE13:
 	.loc 3 422 0
-	jmp	.L84
-.L38:
+	b	.L86
+.L40:
 .LBE12:
 .LBB27:
 .LBB28:
 .LBB29:
 	.loc 3 427 0
-	cmpl	$0, -36(%ebp)
-	je	.L85
+	ldr	r3, [sp, #140]
+	cmp	r3, #0
+	beq	.L87
 .LBB30:
 	.loc 3 430 0
-	movl	-36(%ebp), %eax
-	andl	$1, %eax
-	testl	%eax, %eax
-	je	.L86
+	ldr	r3, [sp, #140]
+	and	r3, r3, #1
+	cmp	r3, #0
+	beq	.L88
 	.loc 3 432 0
-	movl	-28(%ebp), %eax
-	movzbl	(%eax), %eax
-	movb	%al, -69(%ebp)
+	ldr	r3, [sp, #148]
+	ldrb	r3, [r3]
+	strb	r3, [sp, #107]
 	.loc 3 433 0
-	nop
-.L87:
+	mov	r0, r0	@ nop
+.L89:
 .LBB31:
 	.loc 3 460 0
-	jmp	.L101
-.L86:
+	b	.L103
+.L88:
 .LBB32:
 	.loc 3 437 0
-	movl	-28(%ebp), %eax
-	movzbl	(%eax), %eax
-	movb	%al, -69(%ebp)
+	ldr	r3, [sp, #148]
+	ldrb	r3, [r3]
+	strb	r3, [sp, #107]
 	.loc 3 438 0
-	subl	$1, -36(%ebp)
+	ldr	r3, [sp, #140]
+	sub	r3, r3, #1
+	str	r3, [sp, #140]
 .LBB33:
 .LBB34:
 	.loc 3 439 0
-	cmpl	$0, -44(%ebp)
-	js	.L88
+	ldr	r3, [sp, #132]
+	cmp	r3, #0
+	blt	.L90
 	.loc 3 439 0 is_stmt 0 discriminator 2
-	cmpl	$88, -44(%ebp)
-	jle	.L89
-.L88:
-	.loc 3 439 0 discriminator 1
-	leal	.LC0@GOTOFF(%ebx), %eax
-	movl	%eax, (%esp)
-	call	IwDebugAssertIsChannelOn@PLT
-	testb	%al, %al
-	je	.L89
-	movzbl	_ZZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPiE21_s_IwAssertIgnoreThis_2@GOTOFF(%ebx), %eax
-	testb	%al, %al
-	jne	.L89
-	.loc 3 439 0 discriminator 3
-	movl	$1, %eax
-	jmp	.L90
-.L89:
-	.loc 3 439 0 discriminator 1
-	movl	$0, %eax
+	ldr	r3, [sp, #132]
+	cmp	r3, #88
+	ble	.L91
 .L90:
+	.loc 3 439 0 discriminator 1
+	ldr	r3, .L132+88
+.LPIC23:
+	add	r3, pc, r3
+	mov	r0, r3
+	bl	IwDebugAssertIsChannelOn(PLT)
+	mov	r3, r0
+	cmp	r3, #0
+	beq	.L91
+	ldr	r3, .L132+92
+.LPIC24:
+	add	r3, pc, r3
+	ldrb	r3, [r3]	@ zero_extendqisi2
+	cmp	r3, #0
+	bne	.L91
+	.loc 3 439 0 discriminator 3
+	mov	r3, #1
+	b	.L92
+.L91:
+	.loc 3 439 0 discriminator 1
+	mov	r3, #0
+.L92:
 	.loc 3 439 0 discriminator 4
-	testb	%al, %al
-	je	.L91
+	cmp	r3, #0
+	beq	.L93
 	.loc 3 439 0 discriminator 1
-	movl	$0, (%esp)
-	call	IwDebugAssertSetSolution@PLT
-	movl	$0, (%esp)
-	call	IwDebugAssertSetUID@PLT
-	movl	$0, (%esp)
-	call	IwDebugAssertSetMessage@PLT
-	movl	$1, 12(%esp)
-	movl	$439, 8(%esp)
-	leal	.LC1@GOTOFF(%ebx), %eax
-	movl	%eax, 4(%esp)
-	leal	.LC2@GOTOFF(%ebx), %eax
-	movl	%eax, (%esp)
-	call	IwDebugAssertShow@PLT
-	cmpl	$1, %eax
-	je	.L93
-	cmpl	$2, %eax
-	je	.L94
+	mov	r0, #0
+	bl	IwDebugAssertSetSolution(PLT)
+	mov	r0, #0
+	bl	IwDebugAssertSetUID(PLT)
+	mov	r0, #0
+	bl	IwDebugAssertSetMessage(PLT)
+	ldr	r3, .L132+96
+.LPIC25:
+	add	r3, pc, r3
+	mov	r0, r3
+	ldr	r3, .L132+100
+.LPIC26:
+	add	r3, pc, r3
+	mov	r1, r3
+	ldr	r2, .L132+104
+	mov	r3, #1
+	bl	IwDebugAssertShow(PLT)
+	mov	r3, r0
+	cmp	r3, #1
+	beq	.L95
+	cmp	r3, #2
+	beq	.L96
 	.loc 3 439 0
-	jmp	.L92
-.L93:
-	.loc 3 439 0 discriminator 2
-	call	s3eDebugIsDebuggerPresent@PLT
-	testb	%al, %al
-	setne	%al
-	testb	%al, %al
-	je	.L95
-	.loc 3 439 0 discriminator 1
-	call	s3eDebugIsDebuggerPresent@PLT
-	testb	%al, %al
-	setne	%al
-	testb	%al, %al
-	je	.L96
-#APP
-# 439 "c:/Marmalade/7.5/examples/GameTutorial/CPP/modules/soundengine/source/IwSoundADPCM.cpp" 1
-	 int $3 
-# 0 "" 2
-#NO_APP
-	jmp	.L96
+	b	.L94
 .L95:
 	.loc 3 439 0 discriminator 2
-	call	_ZL11IwDebugExitv
-	jmp	.L92
+	bl	s3eDebugIsDebuggerPresent(PLT)
+	mov	r3, r0
+	cmp	r3, #0
+	moveq	r3, #0
+	movne	r3, #1
+	uxtb	r3, r3
+	cmp	r3, #0
+	beq	.L97
+	.loc 3 439 0 discriminator 1
+	bl	s3eDebugIsDebuggerPresent(PLT)
+	mov	r3, r0
+	cmp	r3, #0
+	moveq	r3, #0
+	movne	r3, #1
+	uxtb	r3, r3
+	cmp	r3, #0
+	beq	.L98
+	mvn	r3, #11
+	mov	r2, #0
+	str	r2, [r3]
+	b	.L98
+.L97:
+	.loc 3 439 0 discriminator 2
+	bl	_ZL11IwDebugExitv(PLT)
+	b	.L94
+.L98:
+	.loc 3 439 0 discriminator 1
+	b	.L94
 .L96:
-	.loc 3 439 0 discriminator 1
-	jmp	.L92
-.L94:
 	.loc 3 439 0 discriminator 3
-	movb	$1, _ZZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPiE21_s_IwAssertIgnoreThis_2@GOTOFF(%ebx)
-	nop
-.L92:
+	ldr	r3, .L132+108
+.LPIC27:
+	add	r3, pc, r3
+	mov	r2, #1
+	strb	r2, [r3]
+	mov	r0, r0	@ nop
+.L94:
 	.loc 3 439 0 discriminator 1
-	movl	$0, (%esp)
-	call	IwDebugAssertSetUID@PLT
-.L91:
+	mov	r0, #0
+	bl	IwDebugAssertSetUID(PLT)
+.L93:
 .LBE34:
 .LBE33:
 	.loc 3 440 0 is_stmt 1
-	movzbl	-69(%ebp), %eax
-	andl	$7, %eax
-	movl	%eax, -152(%ebp)
+	ldrb	r3, [sp, #107]	@ zero_extendqisi2
+	and	r3, r3, #7
+	str	r3, [sp, #24]
 	.loc 3 441 0
-	movl	-44(%ebp), %eax
-	movl	%eax, %edx
-	sall	$3, %edx
-	movl	-152(%ebp), %eax
-	addl	%edx, %eax
-	leal	16(%eax), %eax
-	movl	_ZL6sTable@GOTOFF(%ebx,%eax,4), %eax
-	movl	%eax, -156(%ebp)
+	ldr	r3, [sp, #132]
+	mov	r2, r3, asl #3
+	ldr	r3, [sp, #24]
+	add	r2, r2, r3
+	ldr	r3, .L132+112
+.LPIC28:
+	add	r3, pc, r3
+	add	r2, r2, #16
+	ldr	r3, [r3, r2, asl #2]
+	str	r3, [sp, #20]
 	.loc 3 442 0
-	movl	-152(%ebp), %eax
-	movl	_ZL6sTable@GOTOFF(%ebx,%eax,4), %eax
-	movl	%eax, -160(%ebp)
+	ldr	r3, .L132+116
+.LPIC29:
+	add	r3, pc, r3
+	ldr	r2, [sp, #24]
+	ldr	r3, [r3, r2, asl #2]
+	str	r3, [sp, #16]
 	.loc 3 444 0
-	movzbl	-69(%ebp), %eax
-	andl	$8, %eax
-	testl	%eax, %eax
-	je	.L97
+	ldrb	r3, [sp, #107]	@ zero_extendqisi2
+	and	r3, r3, #8
+	cmp	r3, #0
+	beq	.L99
 	.loc 3 445 0
-	movswl	-40(%ebp), %eax
-	subl	-156(%ebp), %eax
-	movl	%eax, -76(%ebp)
-	jmp	.L98
-.L97:
-	.loc 3 447 0
-	movswl	-40(%ebp), %edx
-	movl	-156(%ebp), %eax
-	addl	%edx, %eax
-	movl	%eax, -76(%ebp)
-.L98:
-	.loc 3 449 0
-	movl	-160(%ebp), %eax
-	addl	%eax, -44(%ebp)
-	.loc 3 451 0
-	cmpl	$0, -44(%ebp)
-	jns	.L99
-	.loc 3 451 0 is_stmt 0 discriminator 1
-	movl	$0, -44(%ebp)
-	jmp	.L100
+	ldrsh	r2, [sp, #136]
+	ldr	r3, [sp, #20]
+	rsb	r3, r3, r2
+	str	r3, [sp, #100]
+	b	.L100
 .L99:
-	.loc 3 452 0 is_stmt 1
-	cmpl	$88, -44(%ebp)
-	jle	.L100
-	.loc 3 452 0 is_stmt 0 discriminator 1
-	movl	$88, -44(%ebp)
+	.loc 3 447 0
+	ldrsh	r2, [sp, #136]
+	ldr	r3, [sp, #20]
+	add	r3, r2, r3
+	str	r3, [sp, #100]
 .L100:
+	.loc 3 449 0
+	ldr	r2, [sp, #132]
+	ldr	r3, [sp, #16]
+	add	r3, r2, r3
+	str	r3, [sp, #132]
+	.loc 3 451 0
+	ldr	r3, [sp, #132]
+	cmp	r3, #0
+	bge	.L101
+	.loc 3 451 0 is_stmt 0 discriminator 1
+	mov	r3, #0
+	str	r3, [sp, #132]
+	b	.L102
+.L101:
+	.loc 3 452 0 is_stmt 1
+	ldr	r3, [sp, #132]
+	cmp	r3, #88
+	ble	.L102
+	.loc 3 452 0 is_stmt 0 discriminator 1
+	mov	r3, #88
+	str	r3, [sp, #132]
+.L102:
 	.loc 3 454 0 is_stmt 1
-	movzwl	-40(%ebp), %eax
-	movw	%ax, -38(%ebp)
+	ldrh	r3, [sp, #136]	@ movhi
+	strh	r3, [sp, #138]	@ movhi
 	.loc 3 455 0
-	movl	-76(%ebp), %eax
-	movl	%eax, (%esp)
-	call	_ZN13CIwChannelPCMItE13clip_to_int16Ei
-	movw	%ax, -40(%ebp)
+	ldr	r0, [sp, #100]
+	bl	_ZN13CIwChannelPCMItE13clip_to_int16Ei(PLT)
+	mov	r3, r0
+	strh	r3, [sp, #136]	@ movhi
 .LBE32:
 	.loc 3 458 0
-	addl	$4096, -32(%ebp)
+	ldr	r3, [sp, #144]
+	add	r3, r3, #4096
+	str	r3, [sp, #144]
 	.loc 3 460 0
-	jmp	.L101
-.L102:
+	b	.L103
+.L104:
 .LBB35:
 	.loc 3 463 0
-	movl	20(%ebp), %eax
-	subl	%eax, -32(%ebp)
+	ldr	r2, [sp, #144]
+	ldr	r3, [sp]
+	rsb	r3, r3, r2
+	str	r3, [sp, #144]
 	.loc 3 464 0
-	movswl	-40(%ebp), %eax
-	movswl	-38(%ebp), %ecx
-	movswl	-40(%ebp), %edx
-	subl	%edx, %ecx
-	movl	%ecx, %edx
-	imull	-32(%ebp), %edx
-	sarl	$12, %edx
-	addl	%edx, %eax
-	movl	%eax, -132(%ebp)
+	ldrsh	r2, [sp, #136]
+	ldrsh	r1, [sp, #138]
+	ldrsh	r3, [sp, #136]
+	rsb	r3, r3, r1
+	ldr	r1, [sp, #144]
+	mul	r3, r1, r3
+	mov	r3, r3, asr #12
+	add	r3, r2, r3
+	str	r3, [sp, #44]
 	.loc 3 465 0
-	movl	12(%ebp), %eax
-	movl	%eax, %edx
-	addl	$2, %edx
-	movl	%edx, 12(%ebp)
-	movl	-132(%ebp), %edx
-	imull	24(%ebp), %edx
-	sarl	$8, %edx
-	movw	%dx, (%eax)
+	ldr	r3, [sp, #8]
+	add	r2, r3, #2
+	str	r2, [sp, #8]
+	ldr	r2, [sp, #44]
+	ldr	r1, [sp, #168]
+	mul	r2, r1, r2
+	mov	r2, r2, asr #8
+	uxth	r2, r2
+	strh	r2, [r3]	@ movhi
 	.loc 3 466 0
-	subl	$1, 16(%ebp)
+	ldr	r3, [sp, #4]
+	sub	r3, r3, #1
+	str	r3, [sp, #4]
 	.loc 3 467 0
-	cmpl	$0, 16(%ebp)
-	jne	.L101
+	ldr	r3, [sp, #4]
+	cmp	r3, #0
+	bne	.L103
 	.loc 3 468 0
-	jmp	.L29
-.L101:
+	b	.L31
+.L103:
 .LBE35:
 	.loc 3 460 0 discriminator 1
-	movl	-32(%ebp), %eax
-	cmpl	20(%ebp), %eax
-	jge	.L102
+	ldr	r2, [sp, #144]
+	ldr	r3, [sp]
+	cmp	r2, r3
+	bge	.L104
 .LBB36:
 .LBB37:
 	.loc 3 471 0
-	cmpl	$0, -44(%ebp)
-	js	.L103
+	ldr	r3, [sp, #132]
+	cmp	r3, #0
+	blt	.L105
 	.loc 3 471 0 is_stmt 0 discriminator 2
-	cmpl	$88, -44(%ebp)
-	jle	.L104
-.L103:
-	.loc 3 471 0 discriminator 1
-	leal	.LC0@GOTOFF(%ebx), %eax
-	movl	%eax, (%esp)
-	call	IwDebugAssertIsChannelOn@PLT
-	testb	%al, %al
-	je	.L104
-	movzbl	_ZZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPiE21_s_IwAssertIgnoreThis_3@GOTOFF(%ebx), %eax
-	testb	%al, %al
-	jne	.L104
-	.loc 3 471 0 discriminator 3
-	movl	$1, %eax
-	jmp	.L105
-.L104:
-	.loc 3 471 0 discriminator 1
-	movl	$0, %eax
+	ldr	r3, [sp, #132]
+	cmp	r3, #88
+	ble	.L106
 .L105:
+	.loc 3 471 0 discriminator 1
+	ldr	r3, .L132+120
+.LPIC30:
+	add	r3, pc, r3
+	mov	r0, r3
+	bl	IwDebugAssertIsChannelOn(PLT)
+	mov	r3, r0
+	cmp	r3, #0
+	beq	.L106
+	ldr	r3, .L132+124
+.LPIC31:
+	add	r3, pc, r3
+	ldrb	r3, [r3]	@ zero_extendqisi2
+	cmp	r3, #0
+	bne	.L106
+	.loc 3 471 0 discriminator 3
+	mov	r3, #1
+	b	.L107
+.L106:
+	.loc 3 471 0 discriminator 1
+	mov	r3, #0
+.L107:
 	.loc 3 471 0 discriminator 4
-	testb	%al, %al
-	je	.L106
+	cmp	r3, #0
+	beq	.L108
 	.loc 3 471 0 discriminator 1
-	movl	$0, (%esp)
-	call	IwDebugAssertSetSolution@PLT
-	movl	$0, (%esp)
-	call	IwDebugAssertSetUID@PLT
-	movl	$0, (%esp)
-	call	IwDebugAssertSetMessage@PLT
-	movl	$1, 12(%esp)
-	movl	$471, 8(%esp)
-	leal	.LC1@GOTOFF(%ebx), %eax
-	movl	%eax, 4(%esp)
-	leal	.LC2@GOTOFF(%ebx), %eax
-	movl	%eax, (%esp)
-	call	IwDebugAssertShow@PLT
-	cmpl	$1, %eax
-	je	.L108
-	cmpl	$2, %eax
-	je	.L109
+	mov	r0, #0
+	bl	IwDebugAssertSetSolution(PLT)
+	mov	r0, #0
+	bl	IwDebugAssertSetUID(PLT)
+	mov	r0, #0
+	bl	IwDebugAssertSetMessage(PLT)
+	ldr	r3, .L132+128
+.LPIC32:
+	add	r3, pc, r3
+	mov	r0, r3
+	ldr	r3, .L132+132
+.LPIC33:
+	add	r3, pc, r3
+	mov	r1, r3
+	ldr	r2, .L132+136
+	mov	r3, #1
+	bl	IwDebugAssertShow(PLT)
+	mov	r3, r0
+	cmp	r3, #1
+	beq	.L110
+	cmp	r3, #2
+	beq	.L111
 	.loc 3 471 0
-	jmp	.L107
-.L108:
-	.loc 3 471 0 discriminator 2
-	call	s3eDebugIsDebuggerPresent@PLT
-	testb	%al, %al
-	setne	%al
-	testb	%al, %al
-	je	.L110
-	.loc 3 471 0 discriminator 1
-	call	s3eDebugIsDebuggerPresent@PLT
-	testb	%al, %al
-	setne	%al
-	testb	%al, %al
-	je	.L111
-#APP
-# 471 "c:/Marmalade/7.5/examples/GameTutorial/CPP/modules/soundengine/source/IwSoundADPCM.cpp" 1
-	 int $3 
-# 0 "" 2
-#NO_APP
-	jmp	.L111
+	b	.L109
 .L110:
 	.loc 3 471 0 discriminator 2
-	call	_ZL11IwDebugExitv
-	jmp	.L107
+	bl	s3eDebugIsDebuggerPresent(PLT)
+	mov	r3, r0
+	cmp	r3, #0
+	moveq	r3, #0
+	movne	r3, #1
+	uxtb	r3, r3
+	cmp	r3, #0
+	beq	.L112
+	.loc 3 471 0 discriminator 1
+	bl	s3eDebugIsDebuggerPresent(PLT)
+	mov	r3, r0
+	cmp	r3, #0
+	moveq	r3, #0
+	movne	r3, #1
+	uxtb	r3, r3
+	cmp	r3, #0
+	beq	.L113
+	mvn	r3, #11
+	mov	r2, #0
+	str	r2, [r3]
+	b	.L113
+.L112:
+	.loc 3 471 0 discriminator 2
+	bl	_ZL11IwDebugExitv(PLT)
+	b	.L109
+.L113:
+	.loc 3 471 0 discriminator 1
+	b	.L109
 .L111:
-	.loc 3 471 0 discriminator 1
-	jmp	.L107
-.L109:
 	.loc 3 471 0 discriminator 3
-	movb	$1, _ZZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPiE21_s_IwAssertIgnoreThis_3@GOTOFF(%ebx)
-	nop
-.L107:
+	ldr	r3, .L132+140
+.LPIC34:
+	add	r3, pc, r3
+	mov	r2, #1
+	strb	r2, [r3]
+	mov	r0, r0	@ nop
+.L109:
 	.loc 3 471 0 discriminator 1
-	movl	$0, (%esp)
-	call	IwDebugAssertSetUID@PLT
-.L106:
+	mov	r0, #0
+	bl	IwDebugAssertSetUID(PLT)
+.L108:
 .LBE37:
 .LBE36:
 	.loc 3 472 0 is_stmt 1
-	movzbl	-69(%ebp), %eax
-	sarl	$4, %eax
-	movb	%al, -69(%ebp)
+	ldrb	r3, [sp, #107]	@ zero_extendqisi2
+	mov	r3, r3, asr #4
+	strb	r3, [sp, #107]
 	.loc 3 473 0
-	movzbl	-69(%ebp), %eax
-	andl	$7, %eax
-	movl	%eax, -136(%ebp)
+	ldrb	r3, [sp, #107]	@ zero_extendqisi2
+	and	r3, r3, #7
+	str	r3, [sp, #40]
 	.loc 3 474 0
-	movl	-44(%ebp), %eax
-	movl	%eax, %edx
-	sall	$3, %edx
-	movl	-136(%ebp), %eax
-	addl	%edx, %eax
-	leal	16(%eax), %eax
-	movl	_ZL6sTable@GOTOFF(%ebx,%eax,4), %eax
-	movl	%eax, -140(%ebp)
+	ldr	r3, [sp, #132]
+	mov	r2, r3, asl #3
+	ldr	r3, [sp, #40]
+	add	r2, r2, r3
+	ldr	r3, .L132+144
+.LPIC35:
+	add	r3, pc, r3
+	add	r2, r2, #16
+	ldr	r3, [r3, r2, asl #2]
+	str	r3, [sp, #36]
 	.loc 3 475 0
-	subl	$1, -36(%ebp)
+	ldr	r3, [sp, #140]
+	sub	r3, r3, #1
+	str	r3, [sp, #140]
 	.loc 3 476 0
-	movl	-136(%ebp), %eax
-	movl	_ZL6sTable@GOTOFF(%ebx,%eax,4), %eax
-	movl	%eax, -144(%ebp)
+	ldr	r3, .L132+148
+.LPIC36:
+	add	r3, pc, r3
+	ldr	r2, [sp, #40]
+	ldr	r3, [r3, r2, asl #2]
+	str	r3, [sp, #32]
 	.loc 3 477 0
-	addl	$1, -28(%ebp)
+	ldr	r3, [sp, #148]
+	add	r3, r3, #1
+	str	r3, [sp, #148]
 	.loc 3 479 0
-	movzbl	-69(%ebp), %eax
-	andl	$8, %eax
-	testl	%eax, %eax
-	je	.L112
+	ldrb	r3, [sp, #107]	@ zero_extendqisi2
+	and	r3, r3, #8
+	cmp	r3, #0
+	beq	.L114
 	.loc 3 480 0
-	movswl	-40(%ebp), %eax
-	subl	-140(%ebp), %eax
-	movl	%eax, -80(%ebp)
-	jmp	.L113
-.L112:
-	.loc 3 482 0
-	movswl	-40(%ebp), %edx
-	movl	-140(%ebp), %eax
-	addl	%edx, %eax
-	movl	%eax, -80(%ebp)
-.L113:
-	.loc 3 484 0
-	movl	-144(%ebp), %eax
-	addl	%eax, -44(%ebp)
-	.loc 3 486 0
-	cmpl	$0, -44(%ebp)
-	jns	.L114
-	.loc 3 486 0 is_stmt 0 discriminator 1
-	movl	$0, -44(%ebp)
-	jmp	.L115
+	ldrsh	r2, [sp, #136]
+	ldr	r3, [sp, #36]
+	rsb	r3, r3, r2
+	str	r3, [sp, #96]
+	b	.L115
 .L114:
-	.loc 3 487 0 is_stmt 1
-	cmpl	$88, -44(%ebp)
-	jle	.L115
-	.loc 3 487 0 is_stmt 0 discriminator 1
-	movl	$88, -44(%ebp)
+	.loc 3 482 0
+	ldrsh	r2, [sp, #136]
+	ldr	r3, [sp, #36]
+	add	r3, r2, r3
+	str	r3, [sp, #96]
 .L115:
-	.loc 3 489 0 is_stmt 1
-	movzwl	-40(%ebp), %eax
-	movw	%ax, -38(%ebp)
-	.loc 3 490 0
-	movl	-80(%ebp), %eax
-	movl	%eax, (%esp)
-	call	_ZN13CIwChannelPCMItE13clip_to_int16Ei
-	movw	%ax, -40(%ebp)
-	.loc 3 491 0
-	addl	$4096, -32(%ebp)
-	.loc 3 492 0
-	jmp	.L116
+	.loc 3 484 0
+	ldr	r2, [sp, #132]
+	ldr	r3, [sp, #32]
+	add	r3, r2, r3
+	str	r3, [sp, #132]
+	.loc 3 486 0
+	ldr	r3, [sp, #132]
+	cmp	r3, #0
+	bge	.L116
+	.loc 3 486 0 is_stmt 0 discriminator 1
+	mov	r3, #0
+	str	r3, [sp, #132]
+	b	.L117
+.L116:
+	.loc 3 487 0 is_stmt 1
+	ldr	r3, [sp, #132]
+	cmp	r3, #88
+	ble	.L117
+	.loc 3 487 0 is_stmt 0 discriminator 1
+	mov	r3, #88
+	str	r3, [sp, #132]
 .L117:
+	.loc 3 489 0 is_stmt 1
+	ldrh	r3, [sp, #136]	@ movhi
+	strh	r3, [sp, #138]	@ movhi
+	.loc 3 490 0
+	ldr	r0, [sp, #96]
+	bl	_ZN13CIwChannelPCMItE13clip_to_int16Ei(PLT)
+	mov	r3, r0
+	strh	r3, [sp, #136]	@ movhi
+	.loc 3 491 0
+	ldr	r3, [sp, #144]
+	add	r3, r3, #4096
+	str	r3, [sp, #144]
+	.loc 3 492 0
+	b	.L118
+.L119:
 .LBB38:
 	.loc 3 495 0
-	movl	20(%ebp), %eax
-	subl	%eax, -32(%ebp)
+	ldr	r2, [sp, #144]
+	ldr	r3, [sp]
+	rsb	r3, r3, r2
+	str	r3, [sp, #144]
 	.loc 3 496 0
-	movswl	-40(%ebp), %eax
-	movswl	-38(%ebp), %ecx
-	movswl	-40(%ebp), %edx
-	subl	%edx, %ecx
-	movl	%ecx, %edx
-	imull	-32(%ebp), %edx
-	sarl	$12, %edx
-	addl	%edx, %eax
-	movl	%eax, -148(%ebp)
+	ldrsh	r2, [sp, #136]
+	ldrsh	r1, [sp, #138]
+	ldrsh	r3, [sp, #136]
+	rsb	r3, r3, r1
+	ldr	r1, [sp, #144]
+	mul	r3, r1, r3
+	mov	r3, r3, asr #12
+	add	r3, r2, r3
+	str	r3, [sp, #28]
 	.loc 3 497 0
-	movl	12(%ebp), %eax
-	movl	%eax, %edx
-	addl	$2, %edx
-	movl	%edx, 12(%ebp)
-	movl	-148(%ebp), %edx
-	imull	24(%ebp), %edx
-	sarl	$8, %edx
-	movw	%dx, (%eax)
+	ldr	r3, [sp, #8]
+	add	r2, r3, #2
+	str	r2, [sp, #8]
+	ldr	r2, [sp, #28]
+	ldr	r1, [sp, #168]
+	mul	r2, r1, r2
+	mov	r2, r2, asr #8
+	uxth	r2, r2
+	strh	r2, [r3]	@ movhi
 	.loc 3 498 0
-	subl	$1, 16(%ebp)
+	ldr	r3, [sp, #4]
+	sub	r3, r3, #1
+	str	r3, [sp, #4]
 	.loc 3 499 0
-	cmpl	$0, 16(%ebp)
-	jne	.L116
+	ldr	r3, [sp, #4]
+	cmp	r3, #0
+	bne	.L118
 	.loc 3 500 0
-	jmp	.L29
-.L116:
+	b	.L31
+.L118:
 .LBE38:
 	.loc 3 492 0 discriminator 1
-	movl	-32(%ebp), %eax
-	cmpl	20(%ebp), %eax
-	jge	.L117
+	ldr	r2, [sp, #144]
+	ldr	r3, [sp]
+	cmp	r2, r3
+	bge	.L119
 .LBE31:
 	.loc 3 435 0
-	cmpl	$0, -36(%ebp)
-	jg	.L86
-.L85:
+	ldr	r3, [sp, #140]
+	cmp	r3, #0
+	bgt	.L88
+.L87:
 .LBE30:
 .LBE29:
 	.loc 3 506 0
-	movl	8(%ebp), %eax
-	movl	4(%eax), %eax
-	cmpl	-28(%ebp), %eax
-	ja	.L118
+	ldr	r3, [sp, #12]
+	ldr	r2, [r3, #4]
+	ldr	r3, [sp, #148]
+	cmp	r2, r3
+	bhi	.L120
 	.loc 3 511 0
-	movl	32(%ebp), %eax
-	movl	$1, (%eax)
+	ldr	r3, [sp, #176]
+	mov	r2, #1
+	str	r2, [r3]
 	.loc 3 515 0
-	movl	$0, -28(%ebp)
+	mov	r3, #0
+	str	r3, [sp, #148]
 	.loc 3 516 0
-	jmp	.L29
-.L118:
+	b	.L31
+.L120:
 .LBB39:
 .LBB40:
 	.loc 3 518 0
-	cmpl	$0, -36(%ebp)
-	je	.L119
+	ldr	r3, [sp, #140]
+	cmp	r3, #0
+	beq	.L121
 	.loc 3 518 0 is_stmt 0 discriminator 1
-	leal	.LC0@GOTOFF(%ebx), %eax
-	movl	%eax, (%esp)
-	call	IwDebugAssertIsChannelOn@PLT
-	testb	%al, %al
-	je	.L119
-	movzbl	_ZZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPiE21_s_IwAssertIgnoreThis_4@GOTOFF(%ebx), %eax
-	testb	%al, %al
-	jne	.L119
+	ldr	r3, .L132+152
+.LPIC37:
+	add	r3, pc, r3
+	mov	r0, r3
+	bl	IwDebugAssertIsChannelOn(PLT)
+	mov	r3, r0
+	cmp	r3, #0
+	beq	.L121
+	ldr	r3, .L132+156
+.LPIC38:
+	add	r3, pc, r3
+	ldrb	r3, [r3]	@ zero_extendqisi2
+	cmp	r3, #0
+	bne	.L121
 	.loc 3 518 0 discriminator 3
-	movl	$1, %eax
-	jmp	.L120
-.L119:
+	mov	r3, #1
+	b	.L122
+.L121:
 	.loc 3 518 0 discriminator 2
-	movl	$0, %eax
-.L120:
+	mov	r3, #0
+.L122:
 	.loc 3 518 0 discriminator 4
-	testb	%al, %al
-	je	.L121
+	cmp	r3, #0
+	beq	.L123
 	.loc 3 518 0 discriminator 1
-	movl	$0, (%esp)
-	call	IwDebugAssertSetSolution@PLT
-	movl	$0, (%esp)
-	call	IwDebugAssertSetUID@PLT
-	movl	$0, (%esp)
-	call	IwDebugAssertSetMessage@PLT
-	movl	$1, 12(%esp)
-	movl	$518, 8(%esp)
-	leal	.LC1@GOTOFF(%ebx), %eax
-	movl	%eax, 4(%esp)
-	leal	.LC3@GOTOFF(%ebx), %eax
-	movl	%eax, (%esp)
-	call	IwDebugAssertShow@PLT
-	cmpl	$1, %eax
-	je	.L123
-	cmpl	$2, %eax
-	je	.L124
+	mov	r0, #0
+	bl	IwDebugAssertSetSolution(PLT)
+	mov	r0, #0
+	bl	IwDebugAssertSetUID(PLT)
+	mov	r0, #0
+	bl	IwDebugAssertSetMessage(PLT)
+	ldr	r3, .L132+160
+.LPIC39:
+	add	r3, pc, r3
+	mov	r0, r3
+	ldr	r3, .L132+164
+.LPIC40:
+	add	r3, pc, r3
+	mov	r1, r3
+	ldr	r2, .L132+168
+	mov	r3, #1
+	bl	IwDebugAssertShow(PLT)
+	mov	r3, r0
+	cmp	r3, #1
+	beq	.L125
+	cmp	r3, #2
+	beq	.L126
 	.loc 3 518 0
-	jmp	.L122
-.L123:
-	.loc 3 518 0 discriminator 2
-	call	s3eDebugIsDebuggerPresent@PLT
-	testb	%al, %al
-	setne	%al
-	testb	%al, %al
-	je	.L125
-	.loc 3 518 0 discriminator 1
-	call	s3eDebugIsDebuggerPresent@PLT
-	testb	%al, %al
-	setne	%al
-	testb	%al, %al
-	je	.L126
-#APP
-# 518 "c:/Marmalade/7.5/examples/GameTutorial/CPP/modules/soundengine/source/IwSoundADPCM.cpp" 1
-	 int $3 
-# 0 "" 2
-#NO_APP
-	jmp	.L126
+	b	.L124
 .L125:
 	.loc 3 518 0 discriminator 2
-	call	_ZL11IwDebugExitv
-	jmp	.L122
+	bl	s3eDebugIsDebuggerPresent(PLT)
+	mov	r3, r0
+	cmp	r3, #0
+	moveq	r3, #0
+	movne	r3, #1
+	uxtb	r3, r3
+	cmp	r3, #0
+	beq	.L127
+	.loc 3 518 0 discriminator 1
+	bl	s3eDebugIsDebuggerPresent(PLT)
+	mov	r3, r0
+	cmp	r3, #0
+	moveq	r3, #0
+	movne	r3, #1
+	uxtb	r3, r3
+	cmp	r3, #0
+	beq	.L128
+	mvn	r3, #11
+	mov	r2, #0
+	str	r2, [r3]
+	b	.L128
+.L127:
+	.loc 3 518 0 discriminator 2
+	bl	_ZL11IwDebugExitv(PLT)
+	b	.L124
+.L128:
+	.loc 3 518 0 discriminator 1
+	b	.L124
 .L126:
-	.loc 3 518 0 discriminator 1
-	jmp	.L122
-.L124:
 	.loc 3 518 0 discriminator 3
-	movb	$1, _ZZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPiE21_s_IwAssertIgnoreThis_4@GOTOFF(%ebx)
-	nop
-.L122:
+	ldr	r3, .L132+172
+.LPIC41:
+	add	r3, pc, r3
+	mov	r2, #1
+	strb	r2, [r3]
+	mov	r0, r0	@ nop
+.L124:
 	.loc 3 518 0 discriminator 1
-	movl	$0, (%esp)
-	call	IwDebugAssertSetUID@PLT
-.L121:
+	mov	r0, #0
+	bl	IwDebugAssertSetUID(PLT)
+.L123:
 .LBE40:
 .LBE39:
 .LBB41:
 	.loc 3 521 0 is_stmt 1
-	movl	8(%ebp), %eax
-	movl	36(%eax), %eax
-	testl	%eax, %eax
-	jne	.L127
+	ldr	r3, [sp, #12]
+	ldr	r3, [r3, #36]
+	cmp	r3, #0
+	bne	.L129
 	.loc 3 523 0
-	movl	-28(%ebp), %eax
-	movl	%eax, -84(%ebp)
-	jmp	.L128
-.L127:
-	.loc 3 527 0
-	movl	8(%ebp), %eax
-	movl	36(%eax), %edx
-	movl	8(%ebp), %eax
-	movl	28(%eax), %eax
-	addl	%edx, %eax
-	movl	%eax, -84(%ebp)
-.L128:
-	.loc 3 530 0
-	movl	8(%ebp), %eax
-	movl	-84(%ebp), %edx
-	movl	%edx, 36(%eax)
-	.loc 3 531 0
-	movl	8(%ebp), %eax
-	movl	24(%eax), %eax
-	subl	$1, %eax
-	movl	%eax, -36(%ebp)
-	.loc 3 532 0
-	movl	8(%ebp), %eax
-	movl	28(%eax), %eax
-	movl	%eax, %edx
-	movl	-84(%ebp), %eax
-	addl	%eax, %edx
-	movl	8(%ebp), %eax
-	movl	4(%eax), %eax
-	cmpl	%eax, %edx
-	jbe	.L129
-	.loc 3 534 0
-	movl	8(%ebp), %eax
-	movl	4(%eax), %eax
-	movl	%eax, %edx
-	movl	-84(%ebp), %eax
-	subl	%eax, %edx
-	movl	%edx, %eax
-	subl	$4, %eax
-	addl	%eax, %eax
-	movl	%eax, -36(%ebp)
+	ldr	r3, [sp, #148]
+	str	r3, [sp, #92]
+	b	.L130
 .L129:
+	.loc 3 527 0
+	ldr	r3, [sp, #12]
+	ldr	r2, [r3, #36]
+	ldr	r3, [sp, #12]
+	ldr	r3, [r3, #28]
+	add	r3, r2, r3
+	str	r3, [sp, #92]
+.L130:
+	.loc 3 530 0
+	ldr	r3, [sp, #12]
+	ldr	r2, [sp, #92]
+	str	r2, [r3, #36]
+	.loc 3 531 0
+	ldr	r3, [sp, #12]
+	ldr	r3, [r3, #24]
+	sub	r3, r3, #1
+	str	r3, [sp, #140]
+	.loc 3 532 0
+	ldr	r3, [sp, #12]
+	ldr	r3, [r3, #28]
+	ldr	r2, [sp, #92]
+	add	r2, r2, r3
+	ldr	r3, [sp, #12]
+	ldr	r3, [r3, #4]
+	cmp	r2, r3
+	bls	.L131
+	.loc 3 534 0
+	ldr	r3, [sp, #12]
+	ldr	r3, [r3, #4]
+	mov	r2, r3
+	ldr	r3, [sp, #92]
+	rsb	r3, r3, r2
+	sub	r3, r3, #4
+	mov	r3, r3, asl #1
+	str	r3, [sp, #140]
+.L131:
 	.loc 3 536 0
-	movl	-84(%ebp), %eax
-	addl	$4, %eax
-	movl	%eax, -28(%ebp)
+	ldr	r3, [sp, #92]
+	add	r3, r3, #4
+	str	r3, [sp, #148]
 	.loc 3 537 0
-	movl	-84(%ebp), %eax
-	movzwl	(%eax), %eax
-	movw	%ax, -40(%ebp)
+	ldr	r3, [sp, #92]
+	ldrh	r3, [r3]	@ movhi
+	strh	r3, [sp, #136]	@ movhi
 	.loc 3 538 0
-	movl	-84(%ebp), %eax
-	movzbl	2(%eax), %eax
-	movzbl	%al, %eax
-	movl	%eax, -44(%ebp)
+	ldr	r3, [sp, #92]
+	ldrb	r3, [r3, #2]	@ zero_extendqisi2
+	str	r3, [sp, #132]
 	.loc 3 539 0
-	movb	$0, -45(%ebp)
+	mov	r3, #0
+	strb	r3, [sp, #131]
 	.loc 3 540 0
-	movl	8(%ebp), %eax
-	movl	32(%eax), %edx
-	movl	8(%ebp), %eax
-	movl	24(%eax), %eax
-	subl	%eax, %edx
-	movl	8(%ebp), %eax
-	movl	%edx, 32(%eax)
+	ldr	r3, [sp, #12]
+	ldr	r2, [r3, #32]
+	ldr	r3, [sp, #12]
+	ldr	r3, [r3, #24]
+	rsb	r2, r3, r2
+	ldr	r3, [sp, #12]
+	str	r2, [r3, #32]
 .LBE41:
 .LBE28:
 	.loc 3 547 0
-	jmp	.L38
-.L29:
+	b	.L40
+.L31:
 .LBE27:
 .LBE11:
 	.loc 3 551 0
-	movl	8(%ebp), %eax
-	movl	-28(%ebp), %edx
-	movl	%edx, (%eax)
+	ldr	r3, [sp, #12]
+	ldr	r2, [sp, #148]
+	str	r2, [r3]
 	.loc 3 552 0
-	movl	8(%ebp), %eax
-	movl	-32(%ebp), %edx
-	movl	%edx, 8(%eax)
+	ldr	r3, [sp, #12]
+	ldr	r2, [sp, #144]
+	str	r2, [r3, #8]
 	.loc 3 553 0
-	movl	8(%ebp), %eax
-	movl	-36(%ebp), %edx
-	movl	%edx, 12(%eax)
+	ldr	r3, [sp, #12]
+	ldr	r2, [sp, #140]
+	str	r2, [r3, #12]
 	.loc 3 554 0
-	movl	8(%ebp), %eax
-	movzwl	-38(%ebp), %edx
-	movw	%dx, 16(%eax)
+	ldr	r3, [sp, #12]
+	ldrh	r2, [sp, #138]	@ movhi
+	strh	r2, [r3, #16]	@ movhi
 	.loc 3 555 0
-	movl	8(%ebp), %eax
-	movzwl	-40(%ebp), %edx
-	movw	%dx, 20(%eax)
+	ldr	r3, [sp, #12]
+	ldrh	r2, [sp, #136]	@ movhi
+	strh	r2, [r3, #20]	@ movhi
 	.loc 3 556 0
-	movl	8(%ebp), %eax
-	movzbl	-45(%ebp), %edx
-	movb	%dl, 23(%eax)
+	ldr	r3, [sp, #12]
+	ldrb	r2, [sp, #131]
+	strb	r2, [r3, #23]
 	.loc 3 557 0
-	movl	-44(%ebp), %eax
-	movl	%eax, %edx
-	movl	8(%ebp), %eax
-	movb	%dl, 22(%eax)
+	ldr	r3, [sp, #132]
+	uxtb	r2, r3
+	ldr	r3, [sp, #12]
+	strb	r2, [r3, #22]
 	.loc 3 559 0
-	movl	12(%ebp), %edx
-	movl	-88(%ebp), %eax
-	subl	%eax, %edx
-	movl	%edx, %eax
-	sarl	%eax
-.L19:
+	ldr	r2, [sp, #8]
+	ldr	r3, [sp, #88]
+	rsb	r3, r3, r2
+	mov	r3, r3, asr #1
+.L21:
 .LBE6:
 	.loc 3 560 0
-	leal	172(%esp), %esp
-	popl	%ebx
-	.cfi_restore 3
-	popl	%esi
-	.cfi_restore 6
-	popl	%edi
-	.cfi_restore 7
-	popl	%ebp
-	.cfi_restore 5
-	.cfi_def_cfa 4, 4
-	ret
+	mov	r0, r3
+	add	sp, sp, #156
+	@ sp needed
+	ldmfd	sp!, {r4, r5, pc}
+.L133:
+	.align	2
+.L132:
+	.word	.LC0-(.LPIC4+8)
+	.word	_ZZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPiE21_s_IwAssertIgnoreThis-(.LPIC5+8)
+	.word	.LC1-(.LPIC6+8)
+	.word	.LC2-(.LPIC7+8)
+	.word	323
+	.word	_ZZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPiE21_s_IwAssertIgnoreThis-(.LPIC8+8)
+	.word	_ZL6sTable-(.LPIC9+8)
+	.word	_ZL6sTable-(.LPIC10+8)
+	.word	.LC0-(.LPIC11+8)
+	.word	_ZZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPiE21_s_IwAssertIgnoreThis_0-(.LPIC12+8)
+	.word	.LC1-(.LPIC13+8)
+	.word	.LC2-(.LPIC14+8)
+	.word	354
+	.word	_ZZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPiE21_s_IwAssertIgnoreThis_0-(.LPIC15+8)
+	.word	_ZL6sTable-(.LPIC16+8)
+	.word	_ZL6sTable-(.LPIC17+8)
+	.word	.LC0-(.LPIC18+8)
+	.word	_ZZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPiE21_s_IwAssertIgnoreThis_1-(.LPIC19+8)
+	.word	.LC3-(.LPIC20+8)
+	.word	.LC2-(.LPIC21+8)
+	.word	398
+	.word	_ZZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPiE21_s_IwAssertIgnoreThis_1-(.LPIC22+8)
+	.word	.LC0-(.LPIC23+8)
+	.word	_ZZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPiE21_s_IwAssertIgnoreThis_2-(.LPIC24+8)
+	.word	.LC1-(.LPIC25+8)
+	.word	.LC2-(.LPIC26+8)
+	.word	439
+	.word	_ZZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPiE21_s_IwAssertIgnoreThis_2-(.LPIC27+8)
+	.word	_ZL6sTable-(.LPIC28+8)
+	.word	_ZL6sTable-(.LPIC29+8)
+	.word	.LC0-(.LPIC30+8)
+	.word	_ZZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPiE21_s_IwAssertIgnoreThis_3-(.LPIC31+8)
+	.word	.LC1-(.LPIC32+8)
+	.word	.LC2-(.LPIC33+8)
+	.word	471
+	.word	_ZZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPiE21_s_IwAssertIgnoreThis_3-(.LPIC34+8)
+	.word	_ZL6sTable-(.LPIC35+8)
+	.word	_ZL6sTable-(.LPIC36+8)
+	.word	.LC0-(.LPIC37+8)
+	.word	_ZZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPiE21_s_IwAssertIgnoreThis_4-(.LPIC38+8)
+	.word	.LC3-(.LPIC39+8)
+	.word	.LC2-(.LPIC40+8)
+	.word	518
+	.word	_ZZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPiE21_s_IwAssertIgnoreThis_4-(.LPIC41+8)
 	.cfi_endproc
-.LFE1432:
+.LFE1429:
 	.size	_ZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPi, .-_ZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPi
 	.section	.rodata
-	.align 4
+	.align	2
 .LC4:
-	.string	"c:/marmalade/7.5/examples/gametutorial/cpp/modules/soundengine/h/IwSoundPCM.h"
+	.ascii	"false\000"
+	.align	2
 .LC5:
-	.string	"false"
+	.ascii	"c:/stage4/modules/soundengine/h/IwSoundPCM.h\000"
+	.align	2
 .LC6:
-	.string	"sval >= minval"
+	.ascii	"sval >= minval\000"
+	.align	2
 .LC7:
-	.string	"sval <= maxval"
-	.section	.text._ZN13CIwChannelPCMItE13clip_to_int16Ei,"axG",@progbits,_ZN13CIwChannelPCMItE13clip_to_int16Ei,comdat
+	.ascii	"sval <= maxval\000"
+	.section	.text._ZN13CIwChannelPCMItE13clip_to_int16Ei,"axG",%progbits,_ZN13CIwChannelPCMItE13clip_to_int16Ei,comdat
+	.align	2
 	.weak	_ZN13CIwChannelPCMItE13clip_to_int16Ei
 	.hidden	_ZN13CIwChannelPCMItE13clip_to_int16Ei
-	.type	_ZN13CIwChannelPCMItE13clip_to_int16Ei, @function
+	.type	_ZN13CIwChannelPCMItE13clip_to_int16Ei, %function
 _ZN13CIwChannelPCMItE13clip_to_int16Ei:
-.LFB1502:
-	.file 4 "c:/marmalade/7.5/examples/gametutorial/cpp/modules/soundengine/h/IwSoundPCM.h"
+.LFB1499:
+	.file 4 "c:/stage4/modules/soundengine/h/IwSoundPCM.h"
 	.loc 4 63 0
 	.cfi_startproc
-	pushl	%ebp
-	.cfi_def_cfa_offset 8
-	.cfi_offset 5, -8
-	movl	%esp, %ebp
-	.cfi_def_cfa_register 5
-	pushl	%ebx
-	leal	-20(%esp), %esp
-	.cfi_offset 3, -12
-	call	__x86.get_pc_thunk.bx
-	addl	$_GLOBAL_OFFSET_TABLE_, %ebx
+	@ args = 0, pretend = 0, frame = 8
+	@ frame_needed = 0, uses_anonymous_args = 0
+	str	lr, [sp, #-4]!
+.LCFI9:
+	.cfi_def_cfa_offset 4
+	.cfi_offset 14, -4
+	sub	sp, sp, #12
+.LCFI10:
+	.cfi_def_cfa_offset 16
+	str	r0, [sp, #4]
 .LBB42:
 .LBB43:
 	.loc 4 69 0
-	movl	8(%ebp), %eax
-	addl	$32768, %eax
-	movw	$0, %ax
-	testl	%eax, %eax
-	je	.L131
+	ldr	r3, [sp, #4]
+	add	r3, r3, #32768
+	mov	r3, r3, lsr #16
+	mov	r3, r3, asl #16
+	cmp	r3, #0
+	beq	.L135
 .LBB44:
 .LBB45:
 	.loc 4 72 0
-	cmpl	$32767, 8(%ebp)
-	jle	.L132
+	ldr	r3, [sp, #4]
+	cmp	r3, #32768
+	blt	.L136
 	.loc 4 73 0
-	movl	$32767, 8(%ebp)
-	jmp	.L133
-.L132:
+	ldr	r3, .L163
+	str	r3, [sp, #4]
+	b	.L137
+.L136:
 .LBB46:
 .LBB47:
 	.loc 4 75 0
-	cmpl	$-32768, 8(%ebp)
-	jge	.L134
+	ldr	r3, [sp, #4]
+	cmn	r3, #32768
+	bge	.L138
 	.loc 4 76 0
-	movl	$-32768, 8(%ebp)
-	jmp	.L133
-.L134:
+	ldr	r3, .L163+4
+	str	r3, [sp, #4]
+	b	.L137
+.L138:
 .LBB48:
 .LBB49:
 .LBB50:
 	.loc 4 79 0
-	leal	.LC0@GOTOFF(%ebx), %eax
-	movl	%eax, (%esp)
-	call	IwDebugAssertIsChannelOn@PLT
-	testb	%al, %al
-	je	.L135
+	ldr	r3, .L163+8
+.LPIC42:
+	add	r3, pc, r3
+	mov	r0, r3
+	bl	IwDebugAssertIsChannelOn(PLT)
+	mov	r3, r0
+	cmp	r3, #0
+	beq	.L139
 	.loc 4 79 0 is_stmt 0 discriminator 1
-	movzbl	_ZZN13CIwChannelPCMItE13clip_to_int16EiE21_s_IwAssertIgnoreThis@GOTOFF(%ebx), %eax
-	testb	%al, %al
-	jne	.L135
+	ldr	r3, .L163+12
+.LPIC43:
+	add	r3, pc, r3
+	ldrb	r3, [r3]	@ zero_extendqisi2
+	cmp	r3, #0
+	bne	.L139
 	.loc 4 79 0 discriminator 3
-	movl	$1, %eax
-	jmp	.L136
-.L135:
+	mov	r3, #1
+	b	.L140
+.L139:
 	.loc 4 79 0 discriminator 2
-	movl	$0, %eax
-.L136:
-	.loc 4 79 0 discriminator 4
-	testb	%al, %al
-	je	.L133
-	.loc 4 79 0 discriminator 5
-	movl	$0, (%esp)
-	call	IwDebugAssertSetSolution@PLT
-	movl	$0, (%esp)
-	call	IwDebugAssertSetUID@PLT
-	movl	$0, (%esp)
-	call	IwDebugAssertSetMessage@PLT
-	movl	$1, 12(%esp)
-	movl	$79, 8(%esp)
-	leal	.LC4@GOTOFF(%ebx), %eax
-	movl	%eax, 4(%esp)
-	leal	.LC5@GOTOFF(%ebx), %eax
-	movl	%eax, (%esp)
-	call	IwDebugAssertShow@PLT
-	cmpl	$1, %eax
-	je	.L138
-	cmpl	$2, %eax
-	je	.L139
-	.loc 4 79 0
-	jmp	.L137
-.L138:
-	.loc 4 79 0 discriminator 2
-	call	s3eDebugIsDebuggerPresent@PLT
-	testb	%al, %al
-	setne	%al
-	testb	%al, %al
-	je	.L140
-	.loc 4 79 0 discriminator 1
-	call	s3eDebugIsDebuggerPresent@PLT
-	testb	%al, %al
-	setne	%al
-	testb	%al, %al
-	je	.L141
-#APP
-# 79 "c:/marmalade/7.5/examples/gametutorial/cpp/modules/soundengine/h/IwSoundPCM.h" 1
-	 int $3 
-# 0 "" 2
-#NO_APP
-	jmp	.L141
+	mov	r3, #0
 .L140:
+	.loc 4 79 0 discriminator 4
+	cmp	r3, #0
+	beq	.L137
+	.loc 4 79 0 discriminator 5
+	mov	r0, #0
+	bl	IwDebugAssertSetSolution(PLT)
+	mov	r0, #0
+	bl	IwDebugAssertSetUID(PLT)
+	mov	r0, #0
+	bl	IwDebugAssertSetMessage(PLT)
+	ldr	r3, .L163+16
+.LPIC44:
+	add	r3, pc, r3
+	mov	r0, r3
+	ldr	r3, .L163+20
+.LPIC45:
+	add	r3, pc, r3
+	mov	r1, r3
+	mov	r2, #79
+	mov	r3, #1
+	bl	IwDebugAssertShow(PLT)
+	mov	r3, r0
+	cmp	r3, #1
+	beq	.L142
+	cmp	r3, #2
+	beq	.L143
+	.loc 4 79 0
+	b	.L141
+.L142:
 	.loc 4 79 0 discriminator 2
-	call	_ZL11IwDebugExitv
-	jmp	.L137
+	bl	s3eDebugIsDebuggerPresent(PLT)
+	mov	r3, r0
+	cmp	r3, #0
+	moveq	r3, #0
+	movne	r3, #1
+	uxtb	r3, r3
+	cmp	r3, #0
+	beq	.L144
+	.loc 4 79 0 discriminator 1
+	bl	s3eDebugIsDebuggerPresent(PLT)
+	mov	r3, r0
+	cmp	r3, #0
+	moveq	r3, #0
+	movne	r3, #1
+	uxtb	r3, r3
+	cmp	r3, #0
+	beq	.L145
+	mvn	r3, #11
+	mov	r2, #0
+	str	r2, [r3]
+	b	.L145
+.L144:
+	.loc 4 79 0 discriminator 2
+	bl	_ZL11IwDebugExitv(PLT)
+	b	.L141
+.L145:
+	.loc 4 79 0 discriminator 1
+	b	.L141
+.L143:
+	.loc 4 79 0 discriminator 3
+	ldr	r3, .L163+24
+.LPIC46:
+	add	r3, pc, r3
+	mov	r2, #1
+	strb	r2, [r3]
+	mov	r0, r0	@ nop
 .L141:
 	.loc 4 79 0 discriminator 1
-	jmp	.L137
-.L139:
-	.loc 4 79 0 discriminator 3
-	movb	$1, _ZZN13CIwChannelPCMItE13clip_to_int16EiE21_s_IwAssertIgnoreThis@GOTOFF(%ebx)
-	nop
+	mov	r0, #0
+	bl	IwDebugAssertSetUID(PLT)
 .L137:
-	.loc 4 79 0 discriminator 1
-	movl	$0, (%esp)
-	call	IwDebugAssertSetUID@PLT
-.L133:
-.L131:
+.L135:
 .LBE50:
 .LBE49:
 .LBE48:
@@ -2148,238 +2513,279 @@ _ZN13CIwChannelPCMItE13clip_to_int16Ei:
 .LBB51:
 .LBB52:
 	.loc 4 83 0 is_stmt 1
-	cmpl	$-32768, 8(%ebp)
-	jge	.L142
+	ldr	r3, [sp, #4]
+	cmn	r3, #32768
+	bge	.L146
 	.loc 4 83 0 is_stmt 0 discriminator 1
-	leal	.LC0@GOTOFF(%ebx), %eax
-	movl	%eax, (%esp)
-	call	IwDebugAssertIsChannelOn@PLT
-	testb	%al, %al
-	je	.L142
+	ldr	r3, .L163+28
+.LPIC47:
+	add	r3, pc, r3
+	mov	r0, r3
+	bl	IwDebugAssertIsChannelOn(PLT)
+	mov	r3, r0
+	cmp	r3, #0
+	beq	.L146
 	.loc 4 83 0 discriminator 3
-	movzbl	_ZZN13CIwChannelPCMItE13clip_to_int16EiE21_s_IwAssertIgnoreThis_0@GOTOFF(%ebx), %eax
-	testb	%al, %al
-	jne	.L142
+	ldr	r3, .L163+32
+.LPIC48:
+	add	r3, pc, r3
+	ldrb	r3, [r3]	@ zero_extendqisi2
+	cmp	r3, #0
+	bne	.L146
 	.loc 4 83 0 discriminator 4
-	movl	$1, %eax
-	jmp	.L143
-.L142:
-	.loc 4 83 0 discriminator 2
-	movl	$0, %eax
-.L143:
-	.loc 4 83 0 discriminator 5
-	testb	%al, %al
-	je	.L144
-	.loc 4 83 0 discriminator 6
-	movl	$0, (%esp)
-	call	IwDebugAssertSetSolution@PLT
-	movl	$0, (%esp)
-	call	IwDebugAssertSetUID@PLT
-	movl	$0, (%esp)
-	call	IwDebugAssertSetMessage@PLT
-	movl	$1, 12(%esp)
-	movl	$83, 8(%esp)
-	leal	.LC4@GOTOFF(%ebx), %eax
-	movl	%eax, 4(%esp)
-	leal	.LC6@GOTOFF(%ebx), %eax
-	movl	%eax, (%esp)
-	call	IwDebugAssertShow@PLT
-	cmpl	$1, %eax
-	je	.L146
-	cmpl	$2, %eax
-	je	.L147
-	.loc 4 83 0
-	jmp	.L145
+	mov	r3, #1
+	b	.L147
 .L146:
 	.loc 4 83 0 discriminator 2
-	call	s3eDebugIsDebuggerPresent@PLT
-	testb	%al, %al
-	setne	%al
-	testb	%al, %al
-	je	.L148
-	.loc 4 83 0 discriminator 1
-	call	s3eDebugIsDebuggerPresent@PLT
-	testb	%al, %al
-	setne	%al
-	testb	%al, %al
-	je	.L149
-#APP
-# 83 "c:/marmalade/7.5/examples/gametutorial/cpp/modules/soundengine/h/IwSoundPCM.h" 1
-	 int $3 
-# 0 "" 2
-#NO_APP
-	jmp	.L149
-.L148:
+	mov	r3, #0
+.L147:
+	.loc 4 83 0 discriminator 5
+	cmp	r3, #0
+	beq	.L148
+	.loc 4 83 0 discriminator 6
+	mov	r0, #0
+	bl	IwDebugAssertSetSolution(PLT)
+	mov	r0, #0
+	bl	IwDebugAssertSetUID(PLT)
+	mov	r0, #0
+	bl	IwDebugAssertSetMessage(PLT)
+	ldr	r3, .L163+36
+.LPIC49:
+	add	r3, pc, r3
+	mov	r0, r3
+	ldr	r3, .L163+40
+.LPIC50:
+	add	r3, pc, r3
+	mov	r1, r3
+	mov	r2, #83
+	mov	r3, #1
+	bl	IwDebugAssertShow(PLT)
+	mov	r3, r0
+	cmp	r3, #1
+	beq	.L150
+	cmp	r3, #2
+	beq	.L151
+	.loc 4 83 0
+	b	.L149
+.L150:
 	.loc 4 83 0 discriminator 2
-	call	_ZL11IwDebugExitv
-	jmp	.L145
+	bl	s3eDebugIsDebuggerPresent(PLT)
+	mov	r3, r0
+	cmp	r3, #0
+	moveq	r3, #0
+	movne	r3, #1
+	uxtb	r3, r3
+	cmp	r3, #0
+	beq	.L152
+	.loc 4 83 0 discriminator 1
+	bl	s3eDebugIsDebuggerPresent(PLT)
+	mov	r3, r0
+	cmp	r3, #0
+	moveq	r3, #0
+	movne	r3, #1
+	uxtb	r3, r3
+	cmp	r3, #0
+	beq	.L153
+	mvn	r3, #11
+	mov	r2, #0
+	str	r2, [r3]
+	b	.L153
+.L152:
+	.loc 4 83 0 discriminator 2
+	bl	_ZL11IwDebugExitv(PLT)
+	b	.L149
+.L153:
+	.loc 4 83 0 discriminator 1
+	b	.L149
+.L151:
+	.loc 4 83 0 discriminator 3
+	ldr	r3, .L163+44
+.LPIC51:
+	add	r3, pc, r3
+	mov	r2, #1
+	strb	r2, [r3]
+	mov	r0, r0	@ nop
 .L149:
 	.loc 4 83 0 discriminator 1
-	jmp	.L145
-.L147:
-	.loc 4 83 0 discriminator 3
-	movb	$1, _ZZN13CIwChannelPCMItE13clip_to_int16EiE21_s_IwAssertIgnoreThis_0@GOTOFF(%ebx)
-	nop
-.L145:
-	.loc 4 83 0 discriminator 1
-	movl	$0, (%esp)
-	call	IwDebugAssertSetUID@PLT
-.L144:
+	mov	r0, #0
+	bl	IwDebugAssertSetUID(PLT)
+.L148:
 .LBE52:
 .LBE51:
 .LBB53:
 .LBB54:
 	.loc 4 84 0 is_stmt 1
-	cmpl	$32767, 8(%ebp)
-	jle	.L150
+	ldr	r3, [sp, #4]
+	cmp	r3, #32768
+	blt	.L154
 	.loc 4 84 0 is_stmt 0 discriminator 1
-	leal	.LC0@GOTOFF(%ebx), %eax
-	movl	%eax, (%esp)
-	call	IwDebugAssertIsChannelOn@PLT
-	testb	%al, %al
-	je	.L150
+	ldr	r3, .L163+48
+.LPIC52:
+	add	r3, pc, r3
+	mov	r0, r3
+	bl	IwDebugAssertIsChannelOn(PLT)
+	mov	r3, r0
+	cmp	r3, #0
+	beq	.L154
 	.loc 4 84 0 discriminator 3
-	movzbl	_ZZN13CIwChannelPCMItE13clip_to_int16EiE21_s_IwAssertIgnoreThis_1@GOTOFF(%ebx), %eax
-	testb	%al, %al
-	jne	.L150
+	ldr	r3, .L163+52
+.LPIC53:
+	add	r3, pc, r3
+	ldrb	r3, [r3]	@ zero_extendqisi2
+	cmp	r3, #0
+	bne	.L154
 	.loc 4 84 0 discriminator 4
-	movl	$1, %eax
-	jmp	.L151
-.L150:
-	.loc 4 84 0 discriminator 2
-	movl	$0, %eax
-.L151:
-	.loc 4 84 0 discriminator 5
-	testb	%al, %al
-	je	.L152
-	.loc 4 84 0 discriminator 6
-	movl	$0, (%esp)
-	call	IwDebugAssertSetSolution@PLT
-	movl	$0, (%esp)
-	call	IwDebugAssertSetUID@PLT
-	movl	$0, (%esp)
-	call	IwDebugAssertSetMessage@PLT
-	movl	$1, 12(%esp)
-	movl	$84, 8(%esp)
-	leal	.LC4@GOTOFF(%ebx), %eax
-	movl	%eax, 4(%esp)
-	leal	.LC7@GOTOFF(%ebx), %eax
-	movl	%eax, (%esp)
-	call	IwDebugAssertShow@PLT
-	cmpl	$1, %eax
-	je	.L154
-	cmpl	$2, %eax
-	je	.L155
-	.loc 4 84 0
-	jmp	.L153
+	mov	r3, #1
+	b	.L155
 .L154:
 	.loc 4 84 0 discriminator 2
-	call	s3eDebugIsDebuggerPresent@PLT
-	testb	%al, %al
-	setne	%al
-	testb	%al, %al
-	je	.L156
-	.loc 4 84 0 discriminator 1
-	call	s3eDebugIsDebuggerPresent@PLT
-	testb	%al, %al
-	setne	%al
-	testb	%al, %al
-	je	.L157
-#APP
-# 84 "c:/marmalade/7.5/examples/gametutorial/cpp/modules/soundengine/h/IwSoundPCM.h" 1
-	 int $3 
-# 0 "" 2
-#NO_APP
-	jmp	.L157
-.L156:
+	mov	r3, #0
+.L155:
+	.loc 4 84 0 discriminator 5
+	cmp	r3, #0
+	beq	.L156
+	.loc 4 84 0 discriminator 6
+	mov	r0, #0
+	bl	IwDebugAssertSetSolution(PLT)
+	mov	r0, #0
+	bl	IwDebugAssertSetUID(PLT)
+	mov	r0, #0
+	bl	IwDebugAssertSetMessage(PLT)
+	ldr	r3, .L163+56
+.LPIC54:
+	add	r3, pc, r3
+	mov	r0, r3
+	ldr	r3, .L163+60
+.LPIC55:
+	add	r3, pc, r3
+	mov	r1, r3
+	mov	r2, #84
+	mov	r3, #1
+	bl	IwDebugAssertShow(PLT)
+	mov	r3, r0
+	cmp	r3, #1
+	beq	.L158
+	cmp	r3, #2
+	beq	.L159
+	.loc 4 84 0
+	b	.L157
+.L158:
 	.loc 4 84 0 discriminator 2
-	call	_ZL11IwDebugExitv
-	jmp	.L153
+	bl	s3eDebugIsDebuggerPresent(PLT)
+	mov	r3, r0
+	cmp	r3, #0
+	moveq	r3, #0
+	movne	r3, #1
+	uxtb	r3, r3
+	cmp	r3, #0
+	beq	.L160
+	.loc 4 84 0 discriminator 1
+	bl	s3eDebugIsDebuggerPresent(PLT)
+	mov	r3, r0
+	cmp	r3, #0
+	moveq	r3, #0
+	movne	r3, #1
+	uxtb	r3, r3
+	cmp	r3, #0
+	beq	.L161
+	mvn	r3, #11
+	mov	r2, #0
+	str	r2, [r3]
+	b	.L161
+.L160:
+	.loc 4 84 0 discriminator 2
+	bl	_ZL11IwDebugExitv(PLT)
+	b	.L157
+.L161:
+	.loc 4 84 0 discriminator 1
+	b	.L157
+.L159:
+	.loc 4 84 0 discriminator 3
+	ldr	r3, .L163+64
+.LPIC56:
+	add	r3, pc, r3
+	mov	r2, #1
+	strb	r2, [r3]
+	mov	r0, r0	@ nop
 .L157:
 	.loc 4 84 0 discriminator 1
-	jmp	.L153
-.L155:
-	.loc 4 84 0 discriminator 3
-	movb	$1, _ZZN13CIwChannelPCMItE13clip_to_int16EiE21_s_IwAssertIgnoreThis_1@GOTOFF(%ebx)
-	nop
-.L153:
-	.loc 4 84 0 discriminator 1
-	movl	$0, (%esp)
-	call	IwDebugAssertSetUID@PLT
-.L152:
+	mov	r0, #0
+	bl	IwDebugAssertSetUID(PLT)
+.L156:
 .LBE54:
 .LBE53:
 	.loc 4 86 0 is_stmt 1
-	movl	8(%ebp), %eax
+	ldr	r3, [sp, #4]
+	uxth	r3, r3
+	sxth	r3, r3
 .LBE42:
 	.loc 4 87 0
-	leal	20(%esp), %esp
-	popl	%ebx
-	.cfi_restore 3
-	popl	%ebp
-	.cfi_restore 5
-	.cfi_def_cfa 4, 4
-	ret
+	mov	r0, r3
+	add	sp, sp, #12
+	@ sp needed
+	ldr	pc, [sp], #4
+.L164:
+	.align	2
+.L163:
+	.word	32767
+	.word	-32768
+	.word	.LC0-(.LPIC42+8)
+	.word	_ZZN13CIwChannelPCMItE13clip_to_int16EiE21_s_IwAssertIgnoreThis-(.LPIC43+8)
+	.word	.LC4-(.LPIC44+8)
+	.word	.LC5-(.LPIC45+8)
+	.word	_ZZN13CIwChannelPCMItE13clip_to_int16EiE21_s_IwAssertIgnoreThis-(.LPIC46+8)
+	.word	.LC0-(.LPIC47+8)
+	.word	_ZZN13CIwChannelPCMItE13clip_to_int16EiE21_s_IwAssertIgnoreThis_0-(.LPIC48+8)
+	.word	.LC6-(.LPIC49+8)
+	.word	.LC5-(.LPIC50+8)
+	.word	_ZZN13CIwChannelPCMItE13clip_to_int16EiE21_s_IwAssertIgnoreThis_0-(.LPIC51+8)
+	.word	.LC0-(.LPIC52+8)
+	.word	_ZZN13CIwChannelPCMItE13clip_to_int16EiE21_s_IwAssertIgnoreThis_1-(.LPIC53+8)
+	.word	.LC7-(.LPIC54+8)
+	.word	.LC5-(.LPIC55+8)
+	.word	_ZZN13CIwChannelPCMItE13clip_to_int16EiE21_s_IwAssertIgnoreThis_1-(.LPIC56+8)
 	.cfi_endproc
-.LFE1502:
+.LFE1499:
 	.size	_ZN13CIwChannelPCMItE13clip_to_int16Ei, .-_ZN13CIwChannelPCMItE13clip_to_int16Ei
-	.local	_ZZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPiE21_s_IwAssertIgnoreThis
-	.comm	_ZZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPiE21_s_IwAssertIgnoreThis,1,1
-	.local	_ZZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPiE21_s_IwAssertIgnoreThis_0
-	.comm	_ZZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPiE21_s_IwAssertIgnoreThis_0,1,1
-	.local	_ZZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPiE21_s_IwAssertIgnoreThis_1
-	.comm	_ZZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPiE21_s_IwAssertIgnoreThis_1,1,1
-	.local	_ZZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPiE21_s_IwAssertIgnoreThis_2
-	.comm	_ZZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPiE21_s_IwAssertIgnoreThis_2,1,1
-	.local	_ZZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPiE21_s_IwAssertIgnoreThis_3
-	.comm	_ZZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPiE21_s_IwAssertIgnoreThis_3,1,1
-	.local	_ZZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPiE21_s_IwAssertIgnoreThis_4
-	.comm	_ZZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPiE21_s_IwAssertIgnoreThis_4,1,1
+	.bss
+_ZZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPiE21_s_IwAssertIgnoreThis:
+	.space	1
+_ZZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPiE21_s_IwAssertIgnoreThis_0:
+	.space	1
+_ZZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPiE21_s_IwAssertIgnoreThis_1:
+	.space	1
+_ZZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPiE21_s_IwAssertIgnoreThis_2:
+	.space	1
+_ZZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPiE21_s_IwAssertIgnoreThis_3:
+	.space	1
+_ZZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPiE21_s_IwAssertIgnoreThis_4:
+	.space	1
 	.hidden	_ZZN13CIwChannelPCMItE13clip_to_int16EiE21_s_IwAssertIgnoreThis
 	.weak	_ZZN13CIwChannelPCMItE13clip_to_int16EiE21_s_IwAssertIgnoreThis
-	.section	.bss._ZZN13CIwChannelPCMItE13clip_to_int16EiE21_s_IwAssertIgnoreThis,"awG",@nobits,_ZZN13CIwChannelPCMItE13clip_to_int16EiE21_s_IwAssertIgnoreThis,comdat
-	.type	_ZZN13CIwChannelPCMItE13clip_to_int16EiE21_s_IwAssertIgnoreThis, @object
+	.section	.bss._ZZN13CIwChannelPCMItE13clip_to_int16EiE21_s_IwAssertIgnoreThis,"awG",%nobits,_ZZN13CIwChannelPCMItE13clip_to_int16EiE21_s_IwAssertIgnoreThis,comdat
+	.type	_ZZN13CIwChannelPCMItE13clip_to_int16EiE21_s_IwAssertIgnoreThis, %object
 	.size	_ZZN13CIwChannelPCMItE13clip_to_int16EiE21_s_IwAssertIgnoreThis, 1
 _ZZN13CIwChannelPCMItE13clip_to_int16EiE21_s_IwAssertIgnoreThis:
-	.zero	1
+	.space	1
 	.hidden	_ZZN13CIwChannelPCMItE13clip_to_int16EiE21_s_IwAssertIgnoreThis_0
 	.weak	_ZZN13CIwChannelPCMItE13clip_to_int16EiE21_s_IwAssertIgnoreThis_0
-	.section	.bss._ZZN13CIwChannelPCMItE13clip_to_int16EiE21_s_IwAssertIgnoreThis_0,"awG",@nobits,_ZZN13CIwChannelPCMItE13clip_to_int16EiE21_s_IwAssertIgnoreThis_0,comdat
-	.type	_ZZN13CIwChannelPCMItE13clip_to_int16EiE21_s_IwAssertIgnoreThis_0, @object
+	.section	.bss._ZZN13CIwChannelPCMItE13clip_to_int16EiE21_s_IwAssertIgnoreThis_0,"awG",%nobits,_ZZN13CIwChannelPCMItE13clip_to_int16EiE21_s_IwAssertIgnoreThis_0,comdat
+	.type	_ZZN13CIwChannelPCMItE13clip_to_int16EiE21_s_IwAssertIgnoreThis_0, %object
 	.size	_ZZN13CIwChannelPCMItE13clip_to_int16EiE21_s_IwAssertIgnoreThis_0, 1
 _ZZN13CIwChannelPCMItE13clip_to_int16EiE21_s_IwAssertIgnoreThis_0:
-	.zero	1
+	.space	1
 	.hidden	_ZZN13CIwChannelPCMItE13clip_to_int16EiE21_s_IwAssertIgnoreThis_1
 	.weak	_ZZN13CIwChannelPCMItE13clip_to_int16EiE21_s_IwAssertIgnoreThis_1
-	.section	.bss._ZZN13CIwChannelPCMItE13clip_to_int16EiE21_s_IwAssertIgnoreThis_1,"awG",@nobits,_ZZN13CIwChannelPCMItE13clip_to_int16EiE21_s_IwAssertIgnoreThis_1,comdat
-	.type	_ZZN13CIwChannelPCMItE13clip_to_int16EiE21_s_IwAssertIgnoreThis_1, @object
+	.section	.bss._ZZN13CIwChannelPCMItE13clip_to_int16EiE21_s_IwAssertIgnoreThis_1,"awG",%nobits,_ZZN13CIwChannelPCMItE13clip_to_int16EiE21_s_IwAssertIgnoreThis_1,comdat
+	.type	_ZZN13CIwChannelPCMItE13clip_to_int16EiE21_s_IwAssertIgnoreThis_1, %object
 	.size	_ZZN13CIwChannelPCMItE13clip_to_int16EiE21_s_IwAssertIgnoreThis_1, 1
 _ZZN13CIwChannelPCMItE13clip_to_int16EiE21_s_IwAssertIgnoreThis_1:
-	.zero	1
-	.section	.text.__x86.get_pc_thunk.bx,"axG",@progbits,__x86.get_pc_thunk.bx,comdat
-	.globl	__x86.get_pc_thunk.bx
-	.hidden	__x86.get_pc_thunk.bx
-	.type	__x86.get_pc_thunk.bx, @function
-__x86.get_pc_thunk.bx:
-.LFB1633:
-	.cfi_startproc
-	nop
-	nop
-	nop
-	nop
-	nop
-	nop
-	nop
-	nop
-	movl	(%esp), %ebx
-	ret
-	.cfi_endproc
-.LFE1633:
+	.space	1
 	.text
 .Letext0:
 	.file 5 "c:/marmalade/7.5/s3e/h/s3eTypes.h"
 	.file 6 "c:/marmalade/7.5/s3e/h/s3eSound.h"
-	.file 7 "c:/marmalade/7.5/examples/gametutorial/cpp/modules/soundengine/h/IwSoundADPCM.h"
+	.file 7 "c:/stage4/modules/soundengine/h/IwSoundADPCM.h"
 	.file 8 "c:/marmalade/7.5/s3e/h/s3eDebug.h"
 	.file 9 "c:/marmalade/7.5/s3e/h/std/stddef.h"
 	.file 10 "c:/marmalade/7.5/s3e/h/std/c++/typeinfo.h"
@@ -2397,7962 +2803,9033 @@ __x86.get_pc_thunk.bx:
 	.file 22 "c:/marmalade/7.5/modules/iwresmanager/h/IwResGroup.h"
 	.file 23 "c:/marmalade/7.5/modules/iwgeom/h/IwGeomCore.h"
 	.file 24 "c:/marmalade/7.5/modules/iwresmanager/h/IwResManagerClass.h"
-	.file 25 "c:/marmalade/7.5/examples/gametutorial/cpp/modules/soundengine/h/IwSoundInst.h"
+	.file 25 "c:/stage4/modules/soundengine/h/IwSoundInst.h"
 	.file 26 "c:/marmalade/7.5/modules/iwutil/h/IwMenu.h"
 	.file 27 "c:/marmalade/7.5/modules/iwgeom/h/IwGeomSqrt.h"
-	.file 28 "c:/marmalade/7.5/examples/gametutorial/cpp/modules/soundengine/h/IwSoundManager.h"
+	.file 28 "c:/stage4/modules/soundengine/h/IwSoundManager.h"
 	.file 29 "c:/marmalade/7.5/modules/iwutil/h/IwTextParserITX.h"
 	.file 30 "<built-in>"
 	.file 31 "c:/marmalade/7.5/modules/iwutil/h/IwTypes.h"
-	.section	.debug_info,"",@progbits
+	.section	.debug_info,"",%progbits
 .Ldebug_info0:
-	.long	0x48a3
-	.value	0x4
-	.long	.Ldebug_abbrev0
+	.4byte	0x4d24
+	.2byte	0x2
+	.4byte	.Ldebug_abbrev0
 	.byte	0x4
 	.uleb128 0x1
-	.long	.LASF787
+	.4byte	.LASF786
 	.byte	0x4
-	.long	.LASF788
-	.long	.LASF789
-	.long	.Ldebug_ranges0+0
-	.long	0
-	.long	.Ldebug_line0
+	.4byte	.LASF787
+	.4byte	.LASF788
+	.4byte	.Ldebug_ranges0+0
+	.4byte	0
+	.4byte	0
+	.4byte	.Ldebug_line0
 	.uleb128 0x2
 	.byte	0x1
 	.byte	0x8
-	.long	.LASF0
+	.4byte	.LASF0
 	.uleb128 0x2
 	.byte	0x1
 	.byte	0x6
-	.long	.LASF1
+	.4byte	.LASF1
 	.uleb128 0x3
-	.long	.LASF3
+	.4byte	.LASF3
 	.byte	0x5
 	.byte	0x25
-	.long	0x3e
+	.4byte	0x42
 	.uleb128 0x2
 	.byte	0x2
 	.byte	0x7
-	.long	.LASF2
+	.4byte	.LASF2
 	.uleb128 0x3
-	.long	.LASF4
+	.4byte	.LASF4
 	.byte	0x5
 	.byte	0x26
-	.long	0x50
+	.4byte	0x54
 	.uleb128 0x2
 	.byte	0x2
 	.byte	0x5
-	.long	.LASF5
+	.4byte	.LASF5
 	.uleb128 0x2
 	.byte	0x4
 	.byte	0x7
-	.long	.LASF6
+	.4byte	.LASF6
 	.uleb128 0x4
 	.byte	0x4
 	.byte	0x5
-	.string	"int"
+	.ascii	"int\000"
 	.uleb128 0x2
 	.byte	0x8
 	.byte	0x7
-	.long	.LASF7
+	.4byte	.LASF7
 	.uleb128 0x2
 	.byte	0x8
 	.byte	0x5
-	.long	.LASF8
+	.4byte	.LASF8
 	.uleb128 0x2
 	.byte	0x4
 	.byte	0x7
-	.long	.LASF9
+	.4byte	.LASF9
 	.uleb128 0x2
 	.byte	0x4
 	.byte	0x5
-	.long	.LASF10
+	.4byte	.LASF10
 	.uleb128 0x3
-	.long	.LASF11
+	.4byte	.LASF11
 	.byte	0x5
 	.byte	0x4e
-	.long	0x33
+	.4byte	0x37
 	.uleb128 0x3
-	.long	.LASF12
+	.4byte	.LASF12
 	.byte	0x5
 	.byte	0x4f
-	.long	0x45
+	.4byte	0x49
 	.uleb128 0x3
-	.long	.LASF13
+	.4byte	.LASF13
 	.byte	0x5
 	.byte	0x61
-	.long	0x57
+	.4byte	0x5b
 	.uleb128 0x3
-	.long	.LASF14
+	.4byte	.LASF14
 	.byte	0x5
 	.byte	0x7e
-	.long	0x25
+	.4byte	0x29
 	.uleb128 0x3
-	.long	.LASF15
+	.4byte	.LASF15
 	.byte	0x5
 	.byte	0x7f
-	.long	0x2c
+	.4byte	0x30
 	.uleb128 0x3
-	.long	.LASF16
+	.4byte	.LASF16
 	.byte	0x5
 	.byte	0x88
-	.long	0x57
+	.4byte	0x5b
 	.uleb128 0x3
-	.long	.LASF17
+	.4byte	.LASF17
 	.byte	0x5
 	.byte	0x8f
-	.long	0x5e
+	.4byte	0x62
 	.uleb128 0x3
-	.long	.LASF18
+	.4byte	.LASF18
 	.byte	0x5
 	.byte	0x96
-	.long	0x81
+	.4byte	0x85
 	.uleb128 0x3
-	.long	.LASF19
+	.4byte	.LASF19
 	.byte	0x5
 	.byte	0x9b
-	.long	0x8c
+	.4byte	0x90
 	.uleb128 0x3
-	.long	.LASF20
+	.4byte	.LASF20
 	.byte	0x5
 	.byte	0xf3
-	.long	0xa2
+	.4byte	0xa6
 	.uleb128 0x2
 	.byte	0x2
 	.byte	0x7
-	.long	.LASF21
+	.4byte	.LASF21
 	.uleb128 0x5
-	.long	.LASF30
+	.byte	0x4
+	.uleb128 0x6
+	.4byte	.LASF30
 	.byte	0x4
 	.byte	0x6
 	.byte	0x41
-	.long	0x133
-	.uleb128 0x6
-	.long	.LASF22
+	.4byte	0x139
+	.uleb128 0x7
+	.4byte	.LASF22
 	.sleb128 0
-	.uleb128 0x6
-	.long	.LASF23
+	.uleb128 0x7
+	.4byte	.LASF23
 	.sleb128 1
-	.uleb128 0x6
-	.long	.LASF24
+	.uleb128 0x7
+	.4byte	.LASF24
 	.sleb128 2
-	.uleb128 0x6
-	.long	.LASF25
+	.uleb128 0x7
+	.4byte	.LASF25
 	.sleb128 3
-	.uleb128 0x6
-	.long	.LASF26
+	.uleb128 0x7
+	.4byte	.LASF26
 	.sleb128 4
-	.uleb128 0x6
-	.long	.LASF27
+	.uleb128 0x7
+	.4byte	.LASF27
 	.sleb128 5
-	.uleb128 0x6
-	.long	.LASF28
+	.uleb128 0x7
+	.4byte	.LASF28
 	.sleb128 6
-	.uleb128 0x6
-	.long	.LASF29
+	.uleb128 0x7
+	.4byte	.LASF29
 	.sleb128 7
 	.byte	0
-	.uleb128 0x7
-	.long	.LASF31
+	.uleb128 0x8
+	.4byte	.LASF31
 	.byte	0x4
 	.byte	0x6
-	.value	0x121
-	.long	0x165
-	.uleb128 0x6
-	.long	.LASF32
+	.2byte	0x121
+	.4byte	0x16b
+	.uleb128 0x7
+	.4byte	.LASF32
 	.sleb128 0
-	.uleb128 0x6
-	.long	.LASF33
+	.uleb128 0x7
+	.4byte	.LASF33
 	.sleb128 1
-	.uleb128 0x6
-	.long	.LASF34
+	.uleb128 0x7
+	.4byte	.LASF34
 	.sleb128 2
-	.uleb128 0x6
-	.long	.LASF35
+	.uleb128 0x7
+	.4byte	.LASF35
 	.sleb128 3
-	.uleb128 0x6
-	.long	.LASF36
+	.uleb128 0x7
+	.4byte	.LASF36
 	.sleb128 4
-	.uleb128 0x6
-	.long	.LASF37
+	.uleb128 0x7
+	.4byte	.LASF37
 	.sleb128 5
 	.byte	0
-	.uleb128 0x8
-	.byte	0x4
-	.long	0xd9
 	.uleb128 0x9
-	.long	.LASF47
+	.byte	0x4
+	.4byte	0xdd
+	.uleb128 0xa
+	.4byte	.LASF47
 	.byte	0x20
 	.byte	0x6
-	.value	0x24a
-	.long	0x1ee
-	.uleb128 0xa
-	.long	.LASF38
-	.byte	0x6
-	.value	0x24c
-	.long	0xc3
-	.byte	0
-	.uleb128 0xa
-	.long	.LASF39
-	.byte	0x6
-	.value	0x24e
-	.long	0x165
-	.byte	0x4
-	.uleb128 0xa
-	.long	.LASF40
-	.byte	0x6
-	.value	0x24f
-	.long	0xb8
-	.byte	0x8
-	.uleb128 0xa
-	.long	.LASF41
-	.byte	0x6
-	.value	0x250
-	.long	0xc3
-	.byte	0xc
-	.uleb128 0xa
-	.long	.LASF42
-	.byte	0x6
-	.value	0x252
-	.long	0x165
-	.byte	0x10
-	.uleb128 0xa
-	.long	.LASF43
-	.byte	0x6
-	.value	0x253
-	.long	0x97
-	.byte	0x14
-	.uleb128 0xa
-	.long	.LASF44
-	.byte	0x6
-	.value	0x254
-	.long	0xb8
-	.byte	0x18
-	.uleb128 0xa
-	.long	.LASF45
-	.byte	0x6
-	.value	0x256
-	.long	0xe4
-	.byte	0x1c
-	.uleb128 0xa
-	.long	.LASF46
-	.byte	0x6
-	.value	0x257
-	.long	0xe4
-	.byte	0x1d
-	.byte	0
+	.2byte	0x24a
+	.4byte	0x206
 	.uleb128 0xb
-	.long	.LASF47
+	.4byte	.LASF38
 	.byte	0x6
-	.value	0x258
-	.long	0x16b
+	.2byte	0x24c
+	.4byte	0xc7
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0xb
+	.4byte	.LASF39
+	.byte	0x6
+	.2byte	0x24e
+	.4byte	0x16b
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x4
+	.uleb128 0xb
+	.4byte	.LASF40
+	.byte	0x6
+	.2byte	0x24f
+	.4byte	0xbc
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x8
+	.uleb128 0xb
+	.4byte	.LASF41
+	.byte	0x6
+	.2byte	0x250
+	.4byte	0xc7
+	.byte	0x2
+	.byte	0x23
 	.uleb128 0xc
-	.long	.LASF48
+	.uleb128 0xb
+	.4byte	.LASF42
+	.byte	0x6
+	.2byte	0x252
+	.4byte	0x16b
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x10
+	.uleb128 0xb
+	.4byte	.LASF43
+	.byte	0x6
+	.2byte	0x253
+	.4byte	0x9b
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x14
+	.uleb128 0xb
+	.4byte	.LASF44
+	.byte	0x6
+	.2byte	0x254
+	.4byte	0xbc
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x18
+	.uleb128 0xb
+	.4byte	.LASF45
+	.byte	0x6
+	.2byte	0x256
+	.4byte	0xe8
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x1c
+	.uleb128 0xb
+	.4byte	.LASF46
+	.byte	0x6
+	.2byte	0x257
+	.4byte	0xe8
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x1d
+	.byte	0
+	.uleb128 0xc
+	.4byte	.LASF47
+	.byte	0x6
+	.2byte	0x258
+	.4byte	0x171
+	.uleb128 0xd
+	.4byte	.LASF48
 	.byte	0x4
 	.byte	0x7
 	.byte	0x19
-	.long	0x22b
-	.uleb128 0xd
-	.long	.LASF49
+	.4byte	0x249
+	.uleb128 0xe
+	.4byte	.LASF49
 	.byte	0x7
 	.byte	0x1a
-	.long	0x50
-	.byte	0
-	.uleb128 0xd
-	.long	.LASF50
+	.4byte	0x54
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0xe
+	.4byte	.LASF50
 	.byte	0x7
 	.byte	0x1b
-	.long	0x25
+	.4byte	0x29
 	.byte	0x2
-	.uleb128 0xd
-	.long	.LASF51
+	.byte	0x23
+	.uleb128 0x2
+	.uleb128 0xe
+	.4byte	.LASF51
 	.byte	0x7
 	.byte	0x1c
-	.long	0x25
-	.byte	0x3
+	.4byte	0x29
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x3
 	.byte	0
-	.uleb128 0xe
-	.long	.LASF101
-	.value	0x52c
+	.uleb128 0xf
+	.4byte	.LASF61
+	.2byte	0x52c
 	.byte	0x7
 	.byte	0x1f
-	.long	0x3c6
-	.uleb128 0xf
-	.string	"pos"
+	.4byte	0x402
+	.uleb128 0x10
+	.ascii	"pos\000"
 	.byte	0x7
 	.byte	0x22
-	.long	0x165
-	.byte	0
-	.byte	0x1
-	.uleb128 0x10
-	.long	.LASF52
+	.4byte	0x16b
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0xe
+	.4byte	.LASF52
 	.byte	0x7
 	.byte	0x23
-	.long	0x165
-	.byte	0x4
-	.byte	0x1
-	.uleb128 0x10
-	.long	.LASF53
+	.4byte	0x16b
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x4
+	.uleb128 0xe
+	.4byte	.LASF53
 	.byte	0x7
 	.byte	0x24
-	.long	0x5e
-	.byte	0x8
-	.byte	0x1
-	.uleb128 0x10
-	.long	.LASF54
+	.4byte	0x62
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x8
+	.uleb128 0xe
+	.4byte	.LASF54
 	.byte	0x7
 	.byte	0x25
-	.long	0x5e
-	.byte	0xc
-	.byte	0x1
-	.uleb128 0xf
-	.string	"s_1"
+	.4byte	0x62
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0xc
+	.uleb128 0x10
+	.ascii	"s_1\000"
 	.byte	0x7
 	.byte	0x26
-	.long	0xd9
-	.byte	0x10
-	.byte	0x1
-	.uleb128 0xf
-	.string	"pad"
+	.4byte	0xdd
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x10
+	.uleb128 0x10
+	.ascii	"pad\000"
 	.byte	0x7
 	.byte	0x27
-	.long	0xd9
-	.byte	0x12
-	.byte	0x1
-	.uleb128 0xf
-	.string	"s_2"
+	.4byte	0xdd
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x12
+	.uleb128 0x10
+	.ascii	"s_2\000"
 	.byte	0x7
 	.byte	0x28
-	.long	0xd9
-	.byte	0x14
-	.byte	0x1
-	.uleb128 0x10
-	.long	.LASF50
+	.4byte	0xdd
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x14
+	.uleb128 0xe
+	.4byte	.LASF50
 	.byte	0x7
 	.byte	0x29
-	.long	0xad
-	.byte	0x16
-	.byte	0x1
-	.uleb128 0x10
-	.long	.LASF51
+	.4byte	0xb1
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x16
+	.uleb128 0xe
+	.4byte	.LASF51
 	.byte	0x7
 	.byte	0x2a
-	.long	0xa2
-	.byte	0x17
-	.byte	0x1
-	.uleb128 0x10
-	.long	.LASF55
+	.4byte	0xa6
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x17
+	.uleb128 0xe
+	.4byte	.LASF55
 	.byte	0x7
 	.byte	0x2c
-	.long	0xc3
-	.byte	0x18
-	.byte	0x1
-	.uleb128 0x10
-	.long	.LASF56
+	.4byte	0xc7
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x18
+	.uleb128 0xe
+	.4byte	.LASF56
 	.byte	0x7
 	.byte	0x2d
-	.long	0xc3
-	.byte	0x1c
-	.byte	0x1
-	.uleb128 0x10
-	.long	.LASF57
+	.4byte	0xc7
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x1c
+	.uleb128 0xe
+	.4byte	.LASF57
 	.byte	0x7
 	.byte	0x2e
-	.long	0xc3
-	.byte	0x20
-	.byte	0x1
-	.uleb128 0x10
-	.long	.LASF58
+	.4byte	0xc7
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x20
+	.uleb128 0xe
+	.4byte	.LASF58
 	.byte	0x7
 	.byte	0x2f
-	.long	0x3c6
-	.byte	0x24
-	.byte	0x1
-	.uleb128 0x10
-	.long	.LASF59
+	.4byte	0x402
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x24
+	.uleb128 0xe
+	.4byte	.LASF59
 	.byte	0x7
 	.byte	0x31
-	.long	0xc3
-	.byte	0x28
-	.byte	0x1
-	.uleb128 0x10
-	.long	.LASF60
+	.4byte	0xc7
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x28
+	.uleb128 0xe
+	.4byte	.LASF60
 	.byte	0x7
 	.byte	0x35
-	.long	0x3cc
-	.byte	0x2c
-	.byte	0x1
+	.4byte	0x408
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x2c
 	.uleb128 0x11
-	.long	.LASF790
+	.4byte	.LASF104
 	.byte	0x7
 	.byte	0x4a
-	.long	0x5e
+	.4byte	0x62
+	.byte	0x1
 	.byte	0x1
 	.uleb128 0x12
-	.long	.LASF101
+	.byte	0x1
+	.4byte	.LASF61
 	.byte	0x7
 	.byte	0x37
+	.4byte	0x420
 	.byte	0x1
-	.long	0x317
-	.long	0x31d
+	.4byte	0x34a
+	.4byte	0x351
 	.uleb128 0x13
-	.long	0x3e4
+	.4byte	0x420
+	.byte	0x1
 	.byte	0
 	.uleb128 0x14
-	.long	.LASF113
+	.byte	0x1
+	.4byte	.LASF62
 	.byte	0x7
 	.byte	0x3f
-	.long	.LASF115
-	.long	0x5e
+	.4byte	.LASF116
+	.4byte	0x62
 	.byte	0x1
-	.long	0x33c
+	.4byte	0x371
 	.uleb128 0x15
-	.long	0x3ea
+	.4byte	0x426
 	.uleb128 0x15
-	.long	0x3e4
+	.4byte	0x420
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF61
+	.byte	0x1
+	.4byte	.LASF63
 	.byte	0x7
 	.byte	0x44
-	.long	.LASF63
-	.long	0x5e
+	.4byte	.LASF65
+	.4byte	0x62
 	.byte	0x1
-	.long	0x354
-	.long	0x35f
+	.4byte	0x38a
+	.4byte	0x396
 	.uleb128 0x13
-	.long	0x3e4
+	.4byte	0x420
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x3ea
+	.4byte	0x426
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF62
+	.byte	0x1
+	.4byte	.LASF64
 	.byte	0x7
 	.byte	0x46
-	.long	.LASF64
-	.long	0x5e
+	.4byte	.LASF66
+	.4byte	0x62
 	.byte	0x1
-	.long	0x377
-	.long	0x39b
+	.4byte	0x3af
+	.4byte	0x3d4
 	.uleb128 0x13
-	.long	0x3e4
+	.4byte	0x420
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x165
+	.4byte	0x16b
 	.uleb128 0x15
-	.long	0x5e
+	.4byte	0x62
 	.uleb128 0x15
-	.long	0x5e
+	.4byte	0x62
 	.uleb128 0x15
-	.long	0x5e
+	.4byte	0x62
 	.uleb128 0x15
-	.long	0x5e
+	.4byte	0x62
 	.uleb128 0x15
-	.long	0x3f0
+	.4byte	0x42c
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF65
+	.byte	0x1
+	.4byte	.LASF67
 	.byte	0x7
 	.byte	0x48
-	.long	.LASF66
-	.long	0xd9
+	.4byte	.LASF68
+	.4byte	0xdd
 	.byte	0x1
-	.long	0x3b3
-	.long	0x3b9
+	.4byte	0x3ed
+	.4byte	0x3f4
 	.uleb128 0x13
-	.long	0x3e4
+	.4byte	0x420
+	.byte	0x1
 	.byte	0
 	.uleb128 0x17
-	.long	.LASF791
+	.byte	0x1
+	.4byte	.LASF789
 	.byte	0x7
 	.byte	0x4b
-	.long	.LASF792
+	.4byte	.LASF790
 	.byte	0x1
 	.byte	0
-	.uleb128 0x8
+	.uleb128 0x9
 	.byte	0x4
-	.long	0x1fa
+	.4byte	0x212
 	.uleb128 0x18
-	.long	0x25
-	.long	0x3dd
+	.4byte	0x29
+	.4byte	0x419
 	.uleb128 0x19
-	.long	0x3dd
-	.value	0x4ff
+	.4byte	0x419
+	.2byte	0x4ff
 	.byte	0
 	.uleb128 0x2
 	.byte	0x4
 	.byte	0x7
-	.long	.LASF67
-	.uleb128 0x8
+	.4byte	.LASF69
+	.uleb128 0x9
 	.byte	0x4
-	.long	0x22b
-	.uleb128 0x8
+	.4byte	0x249
+	.uleb128 0x9
 	.byte	0x4
-	.long	0x1ee
-	.uleb128 0x8
+	.4byte	0x206
+	.uleb128 0x9
 	.byte	0x4
-	.long	0x5e
-	.uleb128 0x7
-	.long	.LASF68
+	.4byte	0x62
+	.uleb128 0x8
+	.4byte	.LASF70
 	.byte	0x4
 	.byte	0x8
-	.value	0x103
-	.long	0x41c
-	.uleb128 0x6
-	.long	.LASF69
+	.2byte	0x103
+	.4byte	0x458
+	.uleb128 0x7
+	.4byte	.LASF71
 	.sleb128 0
-	.uleb128 0x6
-	.long	.LASF70
+	.uleb128 0x7
+	.4byte	.LASF72
 	.sleb128 1
-	.uleb128 0x6
-	.long	.LASF71
+	.uleb128 0x7
+	.4byte	.LASF73
 	.sleb128 2
-	.uleb128 0x6
-	.long	.LASF72
+	.uleb128 0x7
+	.4byte	.LASF74
 	.sleb128 3
 	.byte	0
 	.uleb128 0x3
-	.long	.LASF73
+	.4byte	.LASF75
 	.byte	0x9
 	.byte	0x13
-	.long	0x5e
+	.4byte	0x62
 	.uleb128 0x3
-	.long	.LASF74
+	.4byte	.LASF76
 	.byte	0x9
 	.byte	0x21
-	.long	0x57
+	.4byte	0x5b
 	.uleb128 0x18
-	.long	0x442
-	.long	0x442
+	.4byte	0x47e
+	.4byte	0x47e
 	.uleb128 0x1a
-	.long	0x3dd
+	.4byte	0x419
 	.byte	0x1f
 	.byte	0
 	.uleb128 0x2
 	.byte	0x1
 	.byte	0x8
-	.long	.LASF75
-	.uleb128 0x8
+	.4byte	.LASF77
+	.uleb128 0x9
 	.byte	0x4
-	.long	0x44f
+	.4byte	0x48b
 	.uleb128 0x1b
-	.long	0x442
+	.4byte	0x47e
 	.uleb128 0x1c
-	.string	"std"
+	.ascii	"std\000"
 	.byte	0x1e
 	.byte	0
-	.long	0x480
+	.4byte	0x4c1
 	.uleb128 0x1d
-	.long	.LASF76
+	.4byte	.LASF78
+	.byte	0x1
 	.uleb128 0x1d
-	.long	.LASF77
+	.4byte	.LASF79
+	.byte	0x1
 	.uleb128 0x1e
 	.byte	0xa
 	.byte	0x17
-	.long	0x45f
+	.4byte	0x49b
 	.uleb128 0x1d
-	.long	.LASF78
+	.4byte	.LASF80
+	.byte	0x1
 	.uleb128 0x1d
-	.long	.LASF79
+	.4byte	.LASF81
+	.byte	0x1
 	.uleb128 0x1d
-	.long	.LASF80
+	.4byte	.LASF82
+	.byte	0x1
 	.byte	0
 	.uleb128 0x1f
-	.long	.LASF82
+	.4byte	.LASF84
 	.byte	0xe
-	.value	0x1e9
-	.long	0x454
+	.2byte	0x1e9
+	.4byte	0x490
 	.uleb128 0x20
-	.long	.LASF81
+	.4byte	.LASF83
 	.byte	0xe
-	.value	0x222
-	.long	0x4e6
+	.2byte	0x222
+	.4byte	0x527
 	.uleb128 0x1e
 	.byte	0xb
 	.byte	0x4e
-	.long	0x45f
+	.4byte	0x49b
 	.uleb128 0x1e
 	.byte	0xb
 	.byte	0x4f
-	.long	0x464
+	.4byte	0x4a1
 	.uleb128 0x1e
 	.byte	0xb
 	.byte	0x4e
-	.long	0x45f
+	.4byte	0x49b
 	.uleb128 0x1e
 	.byte	0xb
 	.byte	0x4f
-	.long	0x464
+	.4byte	0x4a1
 	.uleb128 0x1e
 	.byte	0xc
 	.byte	0x2f
-	.long	0x470
+	.4byte	0x4ae
 	.uleb128 0x1e
 	.byte	0xc
 	.byte	0x33
-	.long	0x475
+	.4byte	0x4b4
 	.uleb128 0x1e
 	.byte	0xc
 	.byte	0x3d
-	.long	0x47a
+	.4byte	0x4ba
 	.uleb128 0x1e
 	.byte	0xd
 	.byte	0x2a
-	.long	0x41c
+	.4byte	0x458
 	.uleb128 0x1e
 	.byte	0xd
 	.byte	0x2b
-	.long	0x427
+	.4byte	0x463
 	.uleb128 0x1e
 	.byte	0xb
 	.byte	0x4e
-	.long	0x45f
+	.4byte	0x49b
 	.uleb128 0x1e
 	.byte	0xb
 	.byte	0x4f
-	.long	0x464
+	.4byte	0x4a1
 	.byte	0
 	.uleb128 0x1f
-	.long	.LASF83
+	.4byte	.LASF85
 	.byte	0xe
-	.value	0x224
-	.long	0x48c
+	.2byte	0x224
+	.4byte	0x4cd
 	.uleb128 0x3
-	.long	.LASF84
+	.4byte	.LASF86
 	.byte	0xf
 	.byte	0x34
-	.long	0x4fd
+	.4byte	0x53e
 	.uleb128 0x21
-	.long	.LASF84
+	.4byte	.LASF86
+	.byte	0x1
 	.uleb128 0x3
-	.long	.LASF85
+	.4byte	.LASF87
 	.byte	0x10
 	.byte	0x32
-	.long	0x50d
-	.uleb128 0x8
+	.4byte	0x54f
+	.uleb128 0x9
 	.byte	0x4
-	.long	0x513
+	.4byte	0x555
 	.uleb128 0x22
-	.uleb128 0xc
-	.long	.LASF86
+	.uleb128 0xd
+	.4byte	.LASF88
 	.byte	0xcc
 	.byte	0x10
 	.byte	0x38
-	.long	0x5b1
-	.uleb128 0xd
-	.long	.LASF87
+	.4byte	0x613
+	.uleb128 0xe
+	.4byte	.LASF89
 	.byte	0x10
 	.byte	0x3a
-	.long	0x5b1
-	.byte	0
-	.uleb128 0xd
-	.long	.LASF88
+	.4byte	0x613
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0xe
+	.4byte	.LASF90
 	.byte	0x10
 	.byte	0x3b
-	.long	0xb8
-	.byte	0x4
-	.uleb128 0xd
-	.long	.LASF89
+	.4byte	0xbc
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x4
+	.uleb128 0xe
+	.4byte	.LASF91
 	.byte	0x10
 	.byte	0x3c
-	.long	0x5b8
-	.byte	0x8
-	.uleb128 0xd
-	.long	.LASF90
+	.4byte	0x61a
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x8
+	.uleb128 0xe
+	.4byte	.LASF92
 	.byte	0x10
 	.byte	0x3d
-	.long	0x5be
-	.byte	0xc
-	.uleb128 0xd
-	.long	.LASF91
+	.4byte	0x620
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0xc
+	.uleb128 0xe
+	.4byte	.LASF93
 	.byte	0x10
 	.byte	0x3e
-	.long	0xb8
-	.byte	0xac
-	.uleb128 0xd
-	.long	.LASF92
+	.4byte	0xbc
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0xac
+	.uleb128 0xe
+	.4byte	.LASF94
 	.byte	0x10
 	.byte	0x3f
-	.long	0xb8
-	.byte	0xb0
-	.uleb128 0xd
-	.long	.LASF93
+	.4byte	0xbc
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0xb0
+	.uleb128 0xe
+	.4byte	.LASF95
 	.byte	0x10
 	.byte	0x40
-	.long	0x5ce
-	.byte	0xb4
-	.uleb128 0xd
-	.long	.LASF94
+	.4byte	0x630
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0xb4
+	.uleb128 0xe
+	.4byte	.LASF96
 	.byte	0x10
 	.byte	0x41
-	.long	0xc3
-	.byte	0xbc
-	.uleb128 0xd
-	.long	.LASF95
+	.4byte	0xc7
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0xbc
+	.uleb128 0xe
+	.4byte	.LASF97
 	.byte	0x10
 	.byte	0x42
-	.long	0xb8
-	.byte	0xc0
-	.uleb128 0xd
-	.long	.LASF96
+	.4byte	0xbc
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0xc0
+	.uleb128 0xe
+	.4byte	.LASF98
 	.byte	0x10
 	.byte	0x43
-	.long	0xce
-	.byte	0xc4
-	.uleb128 0x23
-	.string	"pad"
+	.4byte	0xd2
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0xc4
+	.uleb128 0x10
+	.ascii	"pad\000"
 	.byte	0x10
 	.byte	0x44
-	.long	0xce
-	.byte	0xc6
-	.uleb128 0xd
-	.long	.LASF97
+	.4byte	0xd2
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0xc6
+	.uleb128 0xe
+	.4byte	.LASF99
 	.byte	0x10
 	.byte	0x45
-	.long	0x502
-	.byte	0xc8
+	.4byte	0x544
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0xc8
 	.byte	0
 	.uleb128 0x2
 	.byte	0x1
 	.byte	0x2
-	.long	.LASF98
-	.uleb128 0x8
+	.4byte	.LASF100
+	.uleb128 0x9
 	.byte	0x4
-	.long	0x4f2
+	.4byte	0x533
 	.uleb128 0x18
-	.long	0x442
-	.long	0x5ce
+	.4byte	0x47e
+	.4byte	0x630
 	.uleb128 0x1a
-	.long	0x3dd
+	.4byte	0x419
 	.byte	0x9f
 	.byte	0
 	.uleb128 0x18
-	.long	0x25
-	.long	0x5de
+	.4byte	0x29
+	.4byte	0x640
 	.uleb128 0x1a
-	.long	0x3dd
+	.4byte	0x419
 	.byte	0x7
 	.byte	0
 	.uleb128 0x2
 	.byte	0x4
 	.byte	0x4
-	.long	.LASF99
-	.uleb128 0xb
-	.long	.LASF100
+	.4byte	.LASF101
+	.uleb128 0xc
+	.4byte	.LASF102
 	.byte	0x11
-	.value	0x10c
-	.long	0x5f1
-	.uleb128 0x24
-	.long	.LASF102
+	.2byte	0x10c
+	.4byte	0x653
+	.uleb128 0x23
+	.4byte	.LASF103
 	.byte	0x20
 	.byte	0x11
 	.byte	0x4b
-	.long	0x8c0
-	.uleb128 0xd
-	.long	.LASF103
+	.4byte	0x957
+	.uleb128 0x24
+	.4byte	.LASF105
 	.byte	0x11
 	.byte	0xfe
-	.long	0x432
-	.byte	0
+	.4byte	0x46e
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.byte	0x3
 	.uleb128 0x12
-	.long	.LASF104
+	.byte	0x1
+	.4byte	.LASF106
 	.byte	0x11
 	.byte	0x50
+	.4byte	0xcd6
 	.byte	0x1
-	.long	0x619
-	.long	0x61f
+	.4byte	0x683
+	.4byte	0x68a
 	.uleb128 0x13
-	.long	0xc0a
+	.4byte	0xcd6
+	.byte	0x1
 	.byte	0
 	.uleb128 0x12
-	.long	.LASF104
+	.byte	0x1
+	.4byte	.LASF106
 	.byte	0x11
 	.byte	0x55
+	.4byte	0xcd6
 	.byte	0x1
-	.long	0x62f
-	.long	0x63a
+	.4byte	0x69f
+	.4byte	0x6ab
 	.uleb128 0x13
-	.long	0xc0a
+	.4byte	0xcd6
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x449
+	.4byte	0x485
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF105
+	.byte	0x1
+	.4byte	.LASF107
 	.byte	0x11
 	.byte	0x68
-	.long	.LASF106
-	.long	0x449
+	.4byte	.LASF108
+	.4byte	0x485
 	.byte	0x1
-	.long	0x652
-	.long	0x658
+	.4byte	0x6c4
+	.4byte	0x6cb
 	.uleb128 0x13
-	.long	0xc10
+	.4byte	0xcdc
+	.byte	0x1
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF107
+	.byte	0x1
+	.4byte	.LASF109
 	.byte	0x11
 	.byte	0x71
-	.long	.LASF108
-	.long	0x5e
+	.4byte	.LASF110
+	.4byte	0x62
 	.byte	0x1
-	.long	0x670
-	.long	0x676
+	.4byte	0x6e4
+	.4byte	0x6eb
 	.uleb128 0x13
-	.long	0xc10
+	.4byte	0xcdc
+	.byte	0x1
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF109
+	.byte	0x1
+	.4byte	.LASF111
 	.byte	0x11
 	.byte	0x7a
-	.long	.LASF110
-	.long	0x5e
+	.4byte	.LASF112
+	.4byte	0x62
 	.byte	0x1
-	.long	0x68e
-	.long	0x694
+	.4byte	0x704
+	.4byte	0x70b
 	.uleb128 0x13
-	.long	0xc10
+	.4byte	0xcdc
+	.byte	0x1
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF111
+	.byte	0x1
+	.4byte	.LASF113
 	.byte	0x11
 	.byte	0x81
-	.long	.LASF112
-	.long	0x5e
+	.4byte	.LASF114
+	.4byte	0x62
 	.byte	0x1
-	.long	0x6ac
-	.long	0x6b2
+	.4byte	0x724
+	.4byte	0x72b
 	.uleb128 0x13
-	.long	0xc10
+	.4byte	0xcdc
+	.byte	0x1
 	.byte	0
 	.uleb128 0x25
-	.long	.LASF114
+	.byte	0x1
+	.4byte	.LASF115
 	.byte	0x11
 	.byte	0x88
-	.long	.LASF116
+	.4byte	.LASF117
 	.byte	0x1
-	.long	0x6c6
-	.long	0x6d1
+	.4byte	0x740
+	.4byte	0x74c
 	.uleb128 0x13
-	.long	0xc0a
+	.4byte	0xcd6
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x5e
+	.4byte	0x62
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF117
+	.byte	0x1
+	.4byte	.LASF118
 	.byte	0x11
 	.byte	0x8f
-	.long	.LASF118
-	.long	0x5e
+	.4byte	.LASF119
+	.4byte	0x62
 	.byte	0x1
-	.long	0x6e9
-	.long	0x6f4
+	.4byte	0x765
+	.4byte	0x771
 	.uleb128 0x13
-	.long	0xc0a
+	.4byte	0xcd6
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x449
+	.4byte	0x485
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF119
+	.byte	0x1
+	.4byte	.LASF120
 	.byte	0x11
 	.byte	0x97
-	.long	.LASF120
-	.long	0x5f1
+	.4byte	.LASF121
+	.4byte	0x653
 	.byte	0x1
-	.long	0x70c
-	.long	0x71c
+	.4byte	0x78a
+	.4byte	0x79b
 	.uleb128 0x13
-	.long	0xc10
+	.4byte	0xcdc
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x5e
+	.4byte	0x62
 	.uleb128 0x15
-	.long	0x5e
+	.4byte	0x62
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF121
+	.byte	0x1
+	.4byte	.LASF122
 	.byte	0x11
 	.byte	0xa1
-	.long	.LASF122
-	.long	0xc1b
+	.4byte	.LASF123
+	.4byte	0xce7
 	.byte	0x1
-	.long	0x734
-	.long	0x73f
+	.4byte	0x7b4
+	.4byte	0x7c0
 	.uleb128 0x13
-	.long	0xc0a
+	.4byte	0xcd6
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x5e
+	.4byte	0x62
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF121
+	.byte	0x1
+	.4byte	.LASF122
 	.byte	0x11
 	.byte	0xa8
-	.long	.LASF123
-	.long	0xc21
+	.4byte	.LASF124
+	.4byte	0xced
 	.byte	0x1
-	.long	0x757
-	.long	0x762
+	.4byte	0x7d9
+	.4byte	0x7e5
 	.uleb128 0x13
-	.long	0xc10
+	.4byte	0xcdc
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x5e
+	.4byte	0x62
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF124
+	.byte	0x1
+	.4byte	.LASF125
 	.byte	0x11
 	.byte	0xb4
-	.long	.LASF125
-	.long	0x449
+	.4byte	.LASF126
+	.4byte	0x485
 	.byte	0x1
-	.long	0x77a
-	.long	0x785
+	.4byte	0x7fe
+	.4byte	0x80a
 	.uleb128 0x13
-	.long	0xc0a
+	.4byte	0xcd6
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x449
+	.4byte	0x485
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF124
+	.byte	0x1
+	.4byte	.LASF125
 	.byte	0x11
 	.byte	0xbb
-	.long	.LASF126
-	.long	0x449
+	.4byte	.LASF127
+	.4byte	0x485
 	.byte	0x1
-	.long	0x79d
-	.long	0x7a8
+	.4byte	0x823
+	.4byte	0x82f
 	.uleb128 0x13
-	.long	0xc0a
+	.4byte	0xcd6
+	.byte	0x1
 	.uleb128 0x15
-	.long	0xc27
+	.4byte	0xcf3
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF127
+	.byte	0x1
+	.4byte	.LASF128
 	.byte	0x11
 	.byte	0xc2
-	.long	.LASF128
-	.long	0x449
+	.4byte	.LASF129
+	.4byte	0x485
 	.byte	0x1
-	.long	0x7c0
-	.long	0x7cb
+	.4byte	0x848
+	.4byte	0x854
 	.uleb128 0x13
-	.long	0xc0a
+	.4byte	0xcd6
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x449
+	.4byte	0x485
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF127
+	.byte	0x1
+	.4byte	.LASF128
 	.byte	0x11
 	.byte	0xc9
-	.long	.LASF129
-	.long	0x449
+	.4byte	.LASF130
+	.4byte	0x485
 	.byte	0x1
-	.long	0x7e3
-	.long	0x7ee
+	.4byte	0x86d
+	.4byte	0x879
 	.uleb128 0x13
-	.long	0xc0a
+	.4byte	0xcd6
+	.byte	0x1
 	.uleb128 0x15
-	.long	0xc27
+	.4byte	0xcf3
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF130
+	.byte	0x1
+	.4byte	.LASF131
 	.byte	0x11
 	.byte	0xd0
-	.long	.LASF131
-	.long	0x5f1
+	.4byte	.LASF132
+	.4byte	0x653
 	.byte	0x1
-	.long	0x806
-	.long	0x811
+	.4byte	0x892
+	.4byte	0x89e
 	.uleb128 0x13
-	.long	0xc0a
+	.4byte	0xcd6
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x449
+	.4byte	0x485
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF130
+	.byte	0x1
+	.4byte	.LASF131
 	.byte	0x11
 	.byte	0xd8
-	.long	.LASF132
-	.long	0x5f1
+	.4byte	.LASF133
+	.4byte	0x653
 	.byte	0x1
-	.long	0x829
-	.long	0x834
+	.4byte	0x8b7
+	.4byte	0x8c3
 	.uleb128 0x13
-	.long	0xc0a
+	.4byte	0xcd6
+	.byte	0x1
 	.uleb128 0x15
-	.long	0xc27
+	.4byte	0xcf3
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF127
+	.byte	0x1
+	.4byte	.LASF128
 	.byte	0x11
 	.byte	0xe0
-	.long	.LASF133
-	.long	0x449
+	.4byte	.LASF134
+	.4byte	0x485
 	.byte	0x1
-	.long	0x84c
-	.long	0x857
+	.4byte	0x8dc
+	.4byte	0x8e8
 	.uleb128 0x13
-	.long	0xc0a
+	.4byte	0xcd6
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x442
+	.4byte	0x47e
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF134
+	.byte	0x1
+	.4byte	.LASF135
 	.byte	0x11
 	.byte	0xe8
-	.long	.LASF135
-	.long	0x5b1
+	.4byte	.LASF136
+	.4byte	0x613
 	.byte	0x1
-	.long	0x86f
-	.long	0x87a
+	.4byte	0x901
+	.4byte	0x90d
 	.uleb128 0x13
-	.long	0xc10
+	.4byte	0xcdc
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x449
+	.4byte	0x485
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF134
+	.byte	0x1
+	.4byte	.LASF135
 	.byte	0x11
 	.byte	0xed
-	.long	.LASF136
-	.long	0x5b1
+	.4byte	.LASF137
+	.4byte	0x613
 	.byte	0x1
-	.long	0x892
-	.long	0x89d
+	.4byte	0x926
+	.4byte	0x932
 	.uleb128 0x13
-	.long	0xc10
+	.4byte	0xcdc
+	.byte	0x1
 	.uleb128 0x15
-	.long	0xc27
+	.4byte	0xcf3
 	.byte	0
 	.uleb128 0x25
-	.long	.LASF137
+	.byte	0x1
+	.4byte	.LASF138
 	.byte	0x11
 	.byte	0xf7
-	.long	.LASF138
+	.4byte	.LASF139
 	.byte	0x1
-	.long	0x8b1
-	.long	0x8b7
+	.4byte	0x947
+	.4byte	0x94e
 	.uleb128 0x13
-	.long	0xc0a
+	.4byte	0xcd6
+	.byte	0x1
 	.byte	0
 	.uleb128 0x26
-	.string	"N"
-	.long	0x5e
+	.ascii	"N\000"
+	.4byte	0x62
 	.byte	0x20
 	.byte	0
-	.uleb128 0xb
-	.long	.LASF139
+	.uleb128 0xc
+	.4byte	.LASF140
 	.byte	0x11
-	.value	0x111
-	.long	0x8cc
-	.uleb128 0x24
-	.long	.LASF140
+	.2byte	0x111
+	.4byte	0x963
+	.uleb128 0x23
+	.4byte	.LASF141
 	.byte	0xa0
 	.byte	0x11
 	.byte	0x4b
-	.long	0xb9b
-	.uleb128 0xd
-	.long	.LASF103
+	.4byte	0xc67
+	.uleb128 0x24
+	.4byte	.LASF105
 	.byte	0x11
 	.byte	0xfe
-	.long	0x5be
-	.byte	0
+	.4byte	0x620
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.byte	0x3
 	.uleb128 0x12
-	.long	.LASF104
+	.byte	0x1
+	.4byte	.LASF106
 	.byte	0x11
 	.byte	0x50
+	.4byte	0x1601
 	.byte	0x1
-	.long	0x8f4
-	.long	0x8fa
+	.4byte	0x993
+	.4byte	0x99a
 	.uleb128 0x13
-	.long	0x14aa
+	.4byte	0x1601
+	.byte	0x1
 	.byte	0
 	.uleb128 0x12
-	.long	.LASF104
+	.byte	0x1
+	.4byte	.LASF106
 	.byte	0x11
 	.byte	0x55
+	.4byte	0x1601
 	.byte	0x1
-	.long	0x90a
-	.long	0x915
+	.4byte	0x9af
+	.4byte	0x9bb
 	.uleb128 0x13
-	.long	0x14aa
+	.4byte	0x1601
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x449
+	.4byte	0x485
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF105
+	.byte	0x1
+	.4byte	.LASF107
 	.byte	0x11
 	.byte	0x68
-	.long	.LASF141
-	.long	0x449
+	.4byte	.LASF142
+	.4byte	0x485
 	.byte	0x1
-	.long	0x92d
-	.long	0x933
+	.4byte	0x9d4
+	.4byte	0x9db
 	.uleb128 0x13
-	.long	0x14b6
+	.4byte	0x160d
+	.byte	0x1
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF107
+	.byte	0x1
+	.4byte	.LASF109
 	.byte	0x11
 	.byte	0x71
-	.long	.LASF142
-	.long	0x5e
+	.4byte	.LASF143
+	.4byte	0x62
 	.byte	0x1
-	.long	0x94b
-	.long	0x951
+	.4byte	0x9f4
+	.4byte	0x9fb
 	.uleb128 0x13
-	.long	0x14b6
+	.4byte	0x160d
+	.byte	0x1
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF109
+	.byte	0x1
+	.4byte	.LASF111
 	.byte	0x11
 	.byte	0x7a
-	.long	.LASF143
-	.long	0x5e
+	.4byte	.LASF144
+	.4byte	0x62
 	.byte	0x1
-	.long	0x969
-	.long	0x96f
+	.4byte	0xa14
+	.4byte	0xa1b
 	.uleb128 0x13
-	.long	0x14b6
+	.4byte	0x160d
+	.byte	0x1
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF111
+	.byte	0x1
+	.4byte	.LASF113
 	.byte	0x11
 	.byte	0x81
-	.long	.LASF144
-	.long	0x5e
+	.4byte	.LASF145
+	.4byte	0x62
 	.byte	0x1
-	.long	0x987
-	.long	0x98d
+	.4byte	0xa34
+	.4byte	0xa3b
 	.uleb128 0x13
-	.long	0x14b6
+	.4byte	0x160d
+	.byte	0x1
 	.byte	0
 	.uleb128 0x25
-	.long	.LASF114
+	.byte	0x1
+	.4byte	.LASF115
 	.byte	0x11
 	.byte	0x88
-	.long	.LASF145
+	.4byte	.LASF146
 	.byte	0x1
-	.long	0x9a1
-	.long	0x9ac
+	.4byte	0xa50
+	.4byte	0xa5c
 	.uleb128 0x13
-	.long	0x14aa
+	.4byte	0x1601
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x5e
+	.4byte	0x62
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF117
+	.byte	0x1
+	.4byte	.LASF118
 	.byte	0x11
 	.byte	0x8f
-	.long	.LASF146
-	.long	0x5e
+	.4byte	.LASF147
+	.4byte	0x62
 	.byte	0x1
-	.long	0x9c4
-	.long	0x9cf
+	.4byte	0xa75
+	.4byte	0xa81
 	.uleb128 0x13
-	.long	0x14aa
+	.4byte	0x1601
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x449
+	.4byte	0x485
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF119
+	.byte	0x1
+	.4byte	.LASF120
 	.byte	0x11
 	.byte	0x97
-	.long	.LASF147
-	.long	0x8cc
+	.4byte	.LASF148
+	.4byte	0x963
 	.byte	0x1
-	.long	0x9e7
-	.long	0x9f7
+	.4byte	0xa9a
+	.4byte	0xaab
 	.uleb128 0x13
-	.long	0x14b6
+	.4byte	0x160d
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x5e
+	.4byte	0x62
 	.uleb128 0x15
-	.long	0x5e
+	.4byte	0x62
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF121
+	.byte	0x1
+	.4byte	.LASF122
 	.byte	0x11
 	.byte	0xa1
-	.long	.LASF148
-	.long	0xc1b
+	.4byte	.LASF149
+	.4byte	0xce7
 	.byte	0x1
-	.long	0xa0f
-	.long	0xa1a
+	.4byte	0xac4
+	.4byte	0xad0
 	.uleb128 0x13
-	.long	0x14aa
+	.4byte	0x1601
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x5e
+	.4byte	0x62
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF121
+	.byte	0x1
+	.4byte	.LASF122
 	.byte	0x11
 	.byte	0xa8
-	.long	.LASF149
-	.long	0xc21
+	.4byte	.LASF150
+	.4byte	0xced
 	.byte	0x1
-	.long	0xa32
-	.long	0xa3d
+	.4byte	0xae9
+	.4byte	0xaf5
 	.uleb128 0x13
-	.long	0x14b6
+	.4byte	0x160d
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x5e
+	.4byte	0x62
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF124
+	.byte	0x1
+	.4byte	.LASF125
 	.byte	0x11
 	.byte	0xb4
-	.long	.LASF150
-	.long	0x449
+	.4byte	.LASF151
+	.4byte	0x485
 	.byte	0x1
-	.long	0xa55
-	.long	0xa60
+	.4byte	0xb0e
+	.4byte	0xb1a
 	.uleb128 0x13
-	.long	0x14aa
+	.4byte	0x1601
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x449
+	.4byte	0x485
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF124
+	.byte	0x1
+	.4byte	.LASF125
 	.byte	0x11
 	.byte	0xbb
-	.long	.LASF151
-	.long	0x449
+	.4byte	.LASF152
+	.4byte	0x485
 	.byte	0x1
-	.long	0xa78
-	.long	0xa83
+	.4byte	0xb33
+	.4byte	0xb3f
 	.uleb128 0x13
-	.long	0x14aa
+	.4byte	0x1601
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x14c1
+	.4byte	0x1618
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF127
+	.byte	0x1
+	.4byte	.LASF128
 	.byte	0x11
 	.byte	0xc2
-	.long	.LASF152
-	.long	0x449
+	.4byte	.LASF153
+	.4byte	0x485
 	.byte	0x1
-	.long	0xa9b
-	.long	0xaa6
+	.4byte	0xb58
+	.4byte	0xb64
 	.uleb128 0x13
-	.long	0x14aa
+	.4byte	0x1601
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x449
+	.4byte	0x485
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF127
+	.byte	0x1
+	.4byte	.LASF128
 	.byte	0x11
 	.byte	0xc9
-	.long	.LASF153
-	.long	0x449
+	.4byte	.LASF154
+	.4byte	0x485
 	.byte	0x1
-	.long	0xabe
-	.long	0xac9
+	.4byte	0xb7d
+	.4byte	0xb89
 	.uleb128 0x13
-	.long	0x14aa
+	.4byte	0x1601
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x14c1
+	.4byte	0x1618
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF130
+	.byte	0x1
+	.4byte	.LASF131
 	.byte	0x11
 	.byte	0xd0
-	.long	.LASF154
-	.long	0x8cc
+	.4byte	.LASF155
+	.4byte	0x963
 	.byte	0x1
-	.long	0xae1
-	.long	0xaec
+	.4byte	0xba2
+	.4byte	0xbae
 	.uleb128 0x13
-	.long	0x14aa
+	.4byte	0x1601
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x449
+	.4byte	0x485
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF130
+	.byte	0x1
+	.4byte	.LASF131
 	.byte	0x11
 	.byte	0xd8
-	.long	.LASF155
-	.long	0x8cc
+	.4byte	.LASF156
+	.4byte	0x963
 	.byte	0x1
-	.long	0xb04
-	.long	0xb0f
+	.4byte	0xbc7
+	.4byte	0xbd3
 	.uleb128 0x13
-	.long	0x14aa
+	.4byte	0x1601
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x14c1
+	.4byte	0x1618
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF127
+	.byte	0x1
+	.4byte	.LASF128
 	.byte	0x11
 	.byte	0xe0
-	.long	.LASF156
-	.long	0x449
+	.4byte	.LASF157
+	.4byte	0x485
 	.byte	0x1
-	.long	0xb27
-	.long	0xb32
+	.4byte	0xbec
+	.4byte	0xbf8
 	.uleb128 0x13
-	.long	0x14aa
+	.4byte	0x1601
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x442
+	.4byte	0x47e
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF134
+	.byte	0x1
+	.4byte	.LASF135
 	.byte	0x11
 	.byte	0xe8
-	.long	.LASF157
-	.long	0x5b1
+	.4byte	.LASF158
+	.4byte	0x613
 	.byte	0x1
-	.long	0xb4a
-	.long	0xb55
+	.4byte	0xc11
+	.4byte	0xc1d
 	.uleb128 0x13
-	.long	0x14b6
+	.4byte	0x160d
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x449
+	.4byte	0x485
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF134
+	.byte	0x1
+	.4byte	.LASF135
 	.byte	0x11
 	.byte	0xed
-	.long	.LASF158
-	.long	0x5b1
+	.4byte	.LASF159
+	.4byte	0x613
 	.byte	0x1
-	.long	0xb6d
-	.long	0xb78
+	.4byte	0xc36
+	.4byte	0xc42
 	.uleb128 0x13
-	.long	0x14b6
+	.4byte	0x160d
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x14c1
+	.4byte	0x1618
 	.byte	0
 	.uleb128 0x25
-	.long	.LASF137
+	.byte	0x1
+	.4byte	.LASF138
 	.byte	0x11
 	.byte	0xf7
-	.long	.LASF159
+	.4byte	.LASF160
 	.byte	0x1
-	.long	0xb8c
-	.long	0xb92
+	.4byte	0xc57
+	.4byte	0xc5e
 	.uleb128 0x13
-	.long	0x14aa
+	.4byte	0x1601
+	.byte	0x1
 	.byte	0
 	.uleb128 0x26
-	.string	"N"
-	.long	0x5e
+	.ascii	"N\000"
+	.4byte	0x62
 	.byte	0xa0
 	.byte	0
 	.uleb128 0x27
 	.byte	0x4
 	.byte	0x1f
 	.byte	0x26
-	.long	0xc0a
-	.uleb128 0x6
-	.long	.LASF160
+	.4byte	0xcd6
+	.uleb128 0x7
+	.4byte	.LASF161
 	.sleb128 0
-	.uleb128 0x6
-	.long	.LASF161
+	.uleb128 0x7
+	.4byte	.LASF162
 	.sleb128 1
-	.uleb128 0x6
-	.long	.LASF162
+	.uleb128 0x7
+	.4byte	.LASF163
 	.sleb128 2
-	.uleb128 0x6
-	.long	.LASF163
+	.uleb128 0x7
+	.4byte	.LASF164
 	.sleb128 3
-	.uleb128 0x6
-	.long	.LASF164
+	.uleb128 0x7
+	.4byte	.LASF165
 	.sleb128 4
-	.uleb128 0x6
-	.long	.LASF165
+	.uleb128 0x7
+	.4byte	.LASF166
 	.sleb128 5
-	.uleb128 0x6
-	.long	.LASF166
+	.uleb128 0x7
+	.4byte	.LASF167
 	.sleb128 6
-	.uleb128 0x6
-	.long	.LASF167
+	.uleb128 0x7
+	.4byte	.LASF168
 	.sleb128 7
-	.uleb128 0x6
-	.long	.LASF168
+	.uleb128 0x7
+	.4byte	.LASF169
 	.sleb128 8
-	.uleb128 0x6
-	.long	.LASF169
+	.uleb128 0x7
+	.4byte	.LASF170
 	.sleb128 9
-	.uleb128 0x6
-	.long	.LASF170
+	.uleb128 0x7
+	.4byte	.LASF171
 	.sleb128 10
-	.uleb128 0x6
-	.long	.LASF171
+	.uleb128 0x7
+	.4byte	.LASF172
 	.sleb128 11
-	.uleb128 0x6
-	.long	.LASF172
+	.uleb128 0x7
+	.4byte	.LASF173
 	.sleb128 12
-	.uleb128 0x6
-	.long	.LASF173
+	.uleb128 0x7
+	.4byte	.LASF174
 	.sleb128 13
-	.uleb128 0x6
-	.long	.LASF174
+	.uleb128 0x7
+	.4byte	.LASF175
 	.sleb128 4
-	.uleb128 0x6
-	.long	.LASF175
+	.uleb128 0x7
+	.4byte	.LASF176
 	.sleb128 16
-	.uleb128 0x6
-	.long	.LASF176
+	.uleb128 0x7
+	.4byte	.LASF177
 	.sleb128 6
 	.byte	0
-	.uleb128 0x8
+	.uleb128 0x9
 	.byte	0x4
-	.long	0x5f1
-	.uleb128 0x8
+	.4byte	0x653
+	.uleb128 0x9
 	.byte	0x4
-	.long	0xc16
+	.4byte	0xce2
 	.uleb128 0x1b
-	.long	0x5f1
+	.4byte	0x653
 	.uleb128 0x28
 	.byte	0x4
-	.long	0x442
+	.4byte	0x47e
 	.uleb128 0x28
 	.byte	0x4
-	.long	0x44f
+	.4byte	0x48b
 	.uleb128 0x28
 	.byte	0x4
-	.long	0xc16
+	.4byte	0xce2
 	.uleb128 0x1d
-	.long	.LASF177
-	.uleb128 0x8
+	.4byte	.LASF178
+	.byte	0x1
+	.uleb128 0x9
 	.byte	0x4
-	.long	0xc2d
+	.4byte	0xcf9
 	.uleb128 0x1d
-	.long	.LASF178
-	.uleb128 0x24
-	.long	.LASF179
+	.4byte	.LASF179
+	.byte	0x1
+	.uleb128 0x23
+	.4byte	.LASF180
 	.byte	0x1
 	.byte	0x12
 	.byte	0x70
-	.long	0xcdf
-	.uleb128 0x29
-	.long	.LASF180
+	.4byte	0xdb1
+	.uleb128 0x3
+	.4byte	.LASF181
 	.byte	0x12
 	.byte	0x73
-	.long	0xb8
-	.byte	0x1
-	.uleb128 0x29
-	.long	.LASF181
+	.4byte	0xbc
+	.uleb128 0x3
+	.4byte	.LASF182
 	.byte	0x12
 	.byte	0x75
-	.long	0xcdf
-	.byte	0x1
+	.4byte	0xdb1
 	.uleb128 0x16
-	.long	.LASF182
+	.byte	0x1
+	.4byte	.LASF183
 	.byte	0x12
 	.byte	0x85
-	.long	.LASF183
-	.long	0xc55
+	.4byte	.LASF184
+	.4byte	0xd22
 	.byte	0x1
-	.long	0xc79
-	.long	0xc84
+	.4byte	0xd46
+	.4byte	0xd52
 	.uleb128 0x13
-	.long	0xd1e
+	.4byte	0xdef
+	.byte	0x1
 	.uleb128 0x15
-	.long	0xc49
+	.4byte	0xd17
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF184
+	.byte	0x1
+	.4byte	.LASF185
 	.byte	0x12
 	.byte	0x8e
-	.long	.LASF185
-	.long	0xc55
+	.4byte	.LASF186
+	.4byte	0xd22
 	.byte	0x1
-	.long	0xc9c
-	.long	0xcac
+	.4byte	0xd6b
+	.4byte	0xd7c
 	.uleb128 0x13
-	.long	0xd1e
+	.4byte	0xdef
+	.byte	0x1
 	.uleb128 0x15
-	.long	0xc55
+	.4byte	0xd22
 	.uleb128 0x15
-	.long	0xc49
+	.4byte	0xd17
 	.byte	0
 	.uleb128 0x25
-	.long	.LASF186
+	.byte	0x1
+	.4byte	.LASF187
 	.byte	0x12
 	.byte	0x93
-	.long	.LASF187
+	.4byte	.LASF188
 	.byte	0x1
-	.long	0xcc0
-	.long	0xcd0
+	.4byte	0xd91
+	.4byte	0xda2
 	.uleb128 0x13
-	.long	0xd1e
+	.4byte	0xdef
+	.byte	0x1
 	.uleb128 0x15
-	.long	0xc55
+	.4byte	0xd22
 	.uleb128 0x15
-	.long	0xc49
+	.4byte	0xd17
 	.byte	0
-	.uleb128 0x2a
-	.string	"T"
-	.long	0xce5
-	.uleb128 0x2a
-	.string	"M"
-	.long	0x4870
-	.byte	0
-	.uleb128 0x8
-	.byte	0x4
-	.long	0xce5
-	.uleb128 0x8
-	.byte	0x4
-	.long	0xceb
-	.uleb128 0x2b
-	.long	.LASF408
-	.long	0xd0d
 	.uleb128 0x29
-	.long	.LASF188
+	.ascii	"T\000"
+	.4byte	0xdb7
+	.uleb128 0x29
+	.ascii	"M\000"
+	.4byte	0x4ceb
+	.byte	0
+	.uleb128 0x9
+	.byte	0x4
+	.4byte	0xdb7
+	.uleb128 0x9
+	.byte	0x4
+	.4byte	0xdbd
+	.uleb128 0x2a
+	.4byte	.LASF408
+	.byte	0x1
+	.4byte	0xdde
+	.uleb128 0x3
+	.4byte	.LASF189
 	.byte	0x13
 	.byte	0x6f
-	.long	0xd24
-	.byte	0x1
-	.uleb128 0x29
-	.long	.LASF189
+	.4byte	0xdf5
+	.uleb128 0x3
+	.4byte	.LASF190
 	.byte	0x13
 	.byte	0x70
-	.long	0xd80
-	.byte	0x1
+	.4byte	0xe5e
 	.byte	0
 	.uleb128 0x1b
-	.long	0xce5
+	.4byte	0xdb7
 	.uleb128 0x28
 	.byte	0x4
-	.long	0xce5
+	.4byte	0xdb7
 	.uleb128 0x28
 	.byte	0x4
-	.long	0xd0d
-	.uleb128 0x8
+	.4byte	0xdde
+	.uleb128 0x9
 	.byte	0x4
-	.long	0xc3d
-	.uleb128 0x24
-	.long	.LASF190
+	.4byte	0xd0b
+	.uleb128 0x23
+	.4byte	.LASF191
 	.byte	0x10
 	.byte	0x14
 	.byte	0x51
-	.long	0x148d
-	.uleb128 0xf
-	.string	"p"
+	.4byte	0x15e4
+	.uleb128 0x2b
+	.ascii	"p\000"
 	.byte	0x14
 	.byte	0x54
-	.long	0xcdf
-	.byte	0
+	.4byte	0xdb1
 	.byte	0x2
-	.uleb128 0x10
-	.long	.LASF191
+	.byte	0x23
+	.uleb128 0
+	.byte	0x2
+	.uleb128 0x24
+	.4byte	.LASF192
 	.byte	0x14
 	.byte	0x55
-	.long	0xb8
-	.byte	0x4
+	.4byte	0xbc
 	.byte	0x2
-	.uleb128 0x10
-	.long	.LASF192
+	.byte	0x23
+	.uleb128 0x4
+	.byte	0x2
+	.uleb128 0x24
+	.4byte	.LASF193
 	.byte	0x14
 	.byte	0x56
-	.long	0xb8
-	.byte	0x8
+	.4byte	0xbc
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x8
 	.byte	0x2
 	.uleb128 0x2c
-	.long	.LASF193
+	.4byte	.LASF194
 	.byte	0x14
 	.byte	0x57
-	.long	0x5b1
+	.4byte	0x613
 	.byte	0x1
 	.byte	0x1
 	.byte	0x7
-	.byte	0xc
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0xc
 	.byte	0x2
 	.uleb128 0x2c
-	.long	.LASF194
+	.4byte	.LASF195
 	.byte	0x14
 	.byte	0x58
-	.long	0x5b1
+	.4byte	0x613
 	.byte	0x1
 	.byte	0x1
 	.byte	0x6
-	.byte	0xc
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0xc
 	.byte	0x2
 	.uleb128 0x2d
-	.string	"a"
+	.ascii	"a\000"
 	.byte	0x14
-	.value	0x332
-	.long	0xc3d
-	.byte	0xd
-	.uleb128 0x29
-	.long	.LASF195
+	.2byte	0x332
+	.4byte	0xd0b
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0xd
+	.byte	0x3
+	.uleb128 0x3
+	.4byte	.LASF196
 	.byte	0x14
 	.byte	0x5a
-	.long	0xcdf
-	.byte	0x1
+	.4byte	0xdb1
 	.uleb128 0x16
-	.long	.LASF196
+	.byte	0x1
+	.4byte	.LASF197
 	.byte	0x14
 	.byte	0x61
-	.long	.LASF197
-	.long	0xd80
+	.4byte	.LASF198
+	.4byte	0xe5e
 	.byte	0x1
-	.long	0xda4
-	.long	0xdaa
+	.4byte	0xe82
+	.4byte	0xe89
 	.uleb128 0x13
-	.long	0x148d
+	.4byte	0x15e4
+	.byte	0x1
 	.byte	0
 	.uleb128 0x2e
-	.string	"end"
+	.byte	0x1
+	.ascii	"end\000"
 	.byte	0x14
 	.byte	0x67
-	.long	.LASF353
-	.long	0xd80
+	.4byte	.LASF353
+	.4byte	0xe5e
 	.byte	0x1
-	.long	0xdc2
-	.long	0xdc8
+	.4byte	0xea2
+	.4byte	0xea9
 	.uleb128 0x13
-	.long	0x148d
+	.4byte	0x15e4
+	.byte	0x1
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF198
+	.byte	0x1
+	.4byte	.LASF199
 	.byte	0x14
 	.byte	0x6c
-	.long	.LASF199
-	.long	0x5b1
+	.4byte	.LASF200
+	.4byte	0x613
 	.byte	0x1
-	.long	0xde0
-	.long	0xde6
+	.4byte	0xec2
+	.4byte	0xec9
 	.uleb128 0x13
-	.long	0x148d
+	.4byte	0x15e4
+	.byte	0x1
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF107
+	.byte	0x1
+	.4byte	.LASF109
 	.byte	0x14
 	.byte	0x71
-	.long	.LASF200
-	.long	0xb8
+	.4byte	.LASF201
+	.4byte	0xbc
 	.byte	0x1
-	.long	0xdfe
-	.long	0xe04
+	.4byte	0xee2
+	.4byte	0xee9
 	.uleb128 0x13
-	.long	0x148d
+	.4byte	0x15e4
+	.byte	0x1
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF111
+	.byte	0x1
+	.4byte	.LASF113
 	.byte	0x14
 	.byte	0x77
-	.long	.LASF201
-	.long	0xb8
+	.4byte	.LASF202
+	.4byte	0xbc
 	.byte	0x1
-	.long	0xe1c
-	.long	0xe22
+	.4byte	0xf02
+	.4byte	0xf09
 	.uleb128 0x13
-	.long	0x148d
+	.4byte	0x15e4
+	.byte	0x1
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF202
+	.byte	0x1
+	.4byte	.LASF203
 	.byte	0x14
 	.byte	0x7d
-	.long	.LASF203
-	.long	0xcdf
+	.4byte	.LASF204
+	.4byte	0xdb1
 	.byte	0x1
-	.long	0xe3a
-	.long	0xe40
+	.4byte	0xf22
+	.4byte	0xf29
 	.uleb128 0x13
-	.long	0x1498
+	.4byte	0x15ef
+	.byte	0x1
 	.byte	0
 	.uleb128 0x2f
-	.long	.LASF204
+	.byte	0x1
+	.4byte	.LASF205
 	.byte	0x14
 	.byte	0x83
+	.4byte	0x15ef
 	.byte	0x1
-	.long	0xe50
-	.long	0xe5b
+	.byte	0x1
+	.4byte	0xf3f
+	.4byte	0xf4b
 	.uleb128 0x13
-	.long	0x1498
+	.4byte	0x15ef
+	.byte	0x1
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0xbc
 	.byte	0
 	.uleb128 0x12
-	.long	.LASF205
+	.byte	0x1
+	.4byte	.LASF206
 	.byte	0x14
 	.byte	0x89
+	.4byte	0xfa
 	.byte	0x1
-	.long	0xe6b
-	.long	0xe76
+	.4byte	0xf60
+	.4byte	0xf6d
 	.uleb128 0x13
-	.long	0x1498
+	.4byte	0x15ef
+	.byte	0x1
 	.uleb128 0x13
-	.long	0x5e
+	.4byte	0x62
+	.byte	0x1
 	.byte	0
 	.uleb128 0x12
-	.long	.LASF204
+	.byte	0x1
+	.4byte	.LASF205
 	.byte	0x14
 	.byte	0x99
+	.4byte	0x15ef
 	.byte	0x1
-	.long	0xe86
-	.long	0xe91
+	.4byte	0xf82
+	.4byte	0xf8e
 	.uleb128 0x13
-	.long	0x1498
+	.4byte	0x15ef
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x149e
+	.4byte	0x15f5
 	.byte	0
 	.uleb128 0x25
-	.long	.LASF206
+	.byte	0x1
+	.4byte	.LASF207
 	.byte	0x14
 	.byte	0xa4
-	.long	.LASF207
+	.4byte	.LASF208
 	.byte	0x1
-	.long	0xea5
-	.long	0xeab
+	.4byte	0xfa3
+	.4byte	0xfaa
 	.uleb128 0x13
-	.long	0x1498
+	.4byte	0x15ef
+	.byte	0x1
 	.byte	0
 	.uleb128 0x25
-	.long	.LASF124
+	.byte	0x1
+	.4byte	.LASF125
 	.byte	0x14
 	.byte	0xba
-	.long	.LASF208
+	.4byte	.LASF209
 	.byte	0x1
-	.long	0xebf
-	.long	0xeca
+	.4byte	0xfbf
+	.4byte	0xfcb
 	.uleb128 0x13
-	.long	0x1498
+	.4byte	0x15ef
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x149e
+	.4byte	0x15f5
 	.byte	0
 	.uleb128 0x25
-	.long	.LASF209
+	.byte	0x1
+	.4byte	.LASF210
 	.byte	0x14
 	.byte	0xc7
-	.long	.LASF210
+	.4byte	.LASF211
 	.byte	0x1
-	.long	0xede
-	.long	0xee4
+	.4byte	0xfe0
+	.4byte	0xfe7
 	.uleb128 0x13
-	.long	0x1498
+	.4byte	0x15ef
+	.byte	0x1
 	.byte	0
 	.uleb128 0x25
-	.long	.LASF211
+	.byte	0x1
+	.4byte	.LASF212
 	.byte	0x14
 	.byte	0xd1
-	.long	.LASF212
+	.4byte	.LASF213
 	.byte	0x1
-	.long	0xef8
-	.long	0xefe
+	.4byte	0xffc
+	.4byte	0x1003
 	.uleb128 0x13
-	.long	0x1498
+	.4byte	0x15ef
+	.byte	0x1
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF213
+	.byte	0x1
+	.4byte	.LASF214
 	.byte	0x14
 	.byte	0xda
-	.long	.LASF214
-	.long	0x5e
+	.4byte	.LASF215
+	.4byte	0x62
 	.byte	0x1
-	.long	0xf16
-	.long	0xf1c
+	.4byte	0x101c
+	.4byte	0x1023
 	.uleb128 0x13
-	.long	0x148d
+	.4byte	0x15e4
+	.byte	0x1
 	.byte	0
 	.uleb128 0x25
-	.long	.LASF215
+	.byte	0x1
+	.4byte	.LASF216
 	.byte	0x14
 	.byte	0xe5
-	.long	.LASF216
+	.4byte	.LASF217
 	.byte	0x1
-	.long	0xf30
-	.long	0xf3b
+	.4byte	0x1038
+	.4byte	0x1044
 	.uleb128 0x13
-	.long	0x1498
+	.4byte	0x15ef
+	.byte	0x1
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0xbc
 	.byte	0
 	.uleb128 0x25
-	.long	.LASF217
+	.byte	0x1
+	.4byte	.LASF218
 	.byte	0x14
 	.byte	0xf2
-	.long	.LASF218
+	.4byte	.LASF219
 	.byte	0x1
-	.long	0xf4f
-	.long	0xf55
+	.4byte	0x1059
+	.4byte	0x1060
 	.uleb128 0x13
-	.long	0x1498
+	.4byte	0x15ef
+	.byte	0x1
 	.byte	0
 	.uleb128 0x25
-	.long	.LASF219
+	.byte	0x1
+	.4byte	.LASF220
 	.byte	0x14
 	.byte	0xfd
-	.long	.LASF220
+	.4byte	.LASF221
 	.byte	0x1
-	.long	0xf69
-	.long	0xf74
+	.4byte	0x1075
+	.4byte	0x1081
 	.uleb128 0x13
-	.long	0x1498
+	.4byte	0x15ef
+	.byte	0x1
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0xbc
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF221
-	.byte	0x14
-	.value	0x10a
-	.long	.LASF223
 	.byte	0x1
-	.long	0xf89
-	.long	0xf94
+	.4byte	.LASF222
+	.byte	0x14
+	.2byte	0x10a
+	.4byte	.LASF224
+	.byte	0x1
+	.4byte	0x1097
+	.4byte	0x10a3
 	.uleb128 0x13
-	.long	0x1498
+	.4byte	0x15ef
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x5e
+	.4byte	0x62
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF222
-	.byte	0x14
-	.value	0x119
-	.long	.LASF224
 	.byte	0x1
-	.long	0xfa9
-	.long	0xfb4
+	.4byte	.LASF223
+	.byte	0x14
+	.2byte	0x119
+	.4byte	.LASF225
+	.byte	0x1
+	.4byte	0x10b9
+	.4byte	0x10c5
 	.uleb128 0x13
-	.long	0x1498
+	.4byte	0x15ef
+	.byte	0x1
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0xbc
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF225
-	.byte	0x14
-	.value	0x124
-	.long	.LASF226
 	.byte	0x1
-	.long	0xfc9
-	.long	0xfd4
+	.4byte	.LASF226
+	.byte	0x14
+	.2byte	0x124
+	.4byte	.LASF227
+	.byte	0x1
+	.4byte	0x10db
+	.4byte	0x10e7
 	.uleb128 0x13
-	.long	0x1498
+	.4byte	0x15ef
+	.byte	0x1
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0xbc
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF117
-	.byte	0x14
-	.value	0x134
-	.long	.LASF228
-	.long	0x5e
 	.byte	0x1
-	.long	0xfed
-	.long	0xff8
+	.4byte	.LASF118
+	.byte	0x14
+	.2byte	0x134
+	.4byte	.LASF229
+	.4byte	0x62
+	.byte	0x1
+	.4byte	0x1101
+	.4byte	0x110d
 	.uleb128 0x13
-	.long	0x148d
+	.4byte	0x15e4
+	.byte	0x1
 	.uleb128 0x15
-	.long	0xd18
+	.4byte	0xde9
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF227
-	.byte	0x14
-	.value	0x143
-	.long	.LASF229
-	.long	0x5b1
 	.byte	0x1
-	.long	0x1011
-	.long	0x101c
+	.4byte	.LASF228
+	.byte	0x14
+	.2byte	0x143
+	.4byte	.LASF230
+	.4byte	0x613
+	.byte	0x1
+	.4byte	0x1127
+	.4byte	0x1133
 	.uleb128 0x13
-	.long	0x148d
+	.4byte	0x15e4
+	.byte	0x1
 	.uleb128 0x15
-	.long	0xd18
+	.4byte	0xde9
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF230
-	.byte	0x14
-	.value	0x158
-	.long	.LASF231
-	.long	0x5b1
 	.byte	0x1
-	.long	0x1035
-	.long	0x1040
+	.4byte	.LASF231
+	.byte	0x14
+	.2byte	0x158
+	.4byte	.LASF232
+	.4byte	0x613
+	.byte	0x1
+	.4byte	0x114d
+	.4byte	0x1159
 	.uleb128 0x13
-	.long	0x1498
+	.4byte	0x15ef
+	.byte	0x1
 	.uleb128 0x15
-	.long	0xd18
+	.4byte	0xde9
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF232
-	.byte	0x14
-	.value	0x16e
-	.long	.LASF233
-	.long	0x5b1
 	.byte	0x1
-	.long	0x1059
-	.long	0x1064
+	.4byte	.LASF233
+	.byte	0x14
+	.2byte	0x16e
+	.4byte	.LASF234
+	.4byte	0x613
+	.byte	0x1
+	.4byte	0x1173
+	.4byte	0x117f
 	.uleb128 0x13
-	.long	0x1498
+	.4byte	0x15ef
+	.byte	0x1
 	.uleb128 0x15
-	.long	0xd18
+	.4byte	0xde9
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF234
-	.byte	0x14
-	.value	0x17f
-	.long	.LASF235
 	.byte	0x1
-	.long	0x1079
-	.long	0x107f
+	.4byte	.LASF235
+	.byte	0x14
+	.2byte	0x17f
+	.4byte	.LASF236
+	.byte	0x1
+	.4byte	0x1195
+	.4byte	0x119c
 	.uleb128 0x13
-	.long	0x1498
+	.4byte	0x15ef
+	.byte	0x1
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF236
-	.byte	0x14
-	.value	0x18a
-	.long	.LASF237
-	.long	0xce5
 	.byte	0x1
-	.long	0x1098
-	.long	0x109e
+	.4byte	.LASF237
+	.byte	0x14
+	.2byte	0x18a
+	.4byte	.LASF238
+	.4byte	0xdb7
+	.byte	0x1
+	.4byte	0x11b6
+	.4byte	0x11bd
 	.uleb128 0x13
-	.long	0x1498
+	.4byte	0x15ef
+	.byte	0x1
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF238
-	.byte	0x14
-	.value	0x19c
-	.long	.LASF239
-	.long	0x5e
 	.byte	0x1
-	.long	0x10b7
-	.long	0x10c2
+	.4byte	.LASF239
+	.byte	0x14
+	.2byte	0x19c
+	.4byte	.LASF240
+	.4byte	0x62
+	.byte	0x1
+	.4byte	0x11d7
+	.4byte	0x11e3
 	.uleb128 0x13
-	.long	0x1498
+	.4byte	0x15ef
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x5e
+	.4byte	0x62
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF238
-	.byte	0x14
-	.value	0x1ac
-	.long	.LASF240
-	.long	0x5e
 	.byte	0x1
-	.long	0x10db
-	.long	0x10eb
+	.4byte	.LASF239
+	.byte	0x14
+	.2byte	0x1ac
+	.4byte	.LASF241
+	.4byte	0x62
+	.byte	0x1
+	.4byte	0x11fd
+	.4byte	0x120e
 	.uleb128 0x13
-	.long	0x1498
+	.4byte	0x15ef
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x5e
+	.4byte	0x62
 	.uleb128 0x15
-	.long	0x5e
+	.4byte	0x62
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF238
-	.byte	0x14
-	.value	0x1be
-	.long	.LASF241
-	.long	0xd80
 	.byte	0x1
-	.long	0x1104
-	.long	0x110f
+	.4byte	.LASF239
+	.byte	0x14
+	.2byte	0x1be
+	.4byte	.LASF242
+	.4byte	0xe5e
+	.byte	0x1
+	.4byte	0x1228
+	.4byte	0x1234
 	.uleb128 0x13
-	.long	0x1498
+	.4byte	0x15ef
+	.byte	0x1
 	.uleb128 0x15
-	.long	0xd80
+	.4byte	0xe5e
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF238
-	.byte	0x14
-	.value	0x1c8
-	.long	.LASF242
-	.long	0xd80
 	.byte	0x1
-	.long	0x1128
-	.long	0x1138
+	.4byte	.LASF239
+	.byte	0x14
+	.2byte	0x1c8
+	.4byte	.LASF243
+	.4byte	0xe5e
+	.byte	0x1
+	.4byte	0x124e
+	.4byte	0x125f
 	.uleb128 0x13
-	.long	0x1498
+	.4byte	0x15ef
+	.byte	0x1
 	.uleb128 0x15
-	.long	0xd80
+	.4byte	0xe5e
 	.uleb128 0x15
-	.long	0xd80
+	.4byte	0xe5e
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF243
-	.byte	0x14
-	.value	0x1d6
-	.long	.LASF244
-	.long	0x5e
 	.byte	0x1
-	.long	0x1151
-	.long	0x115c
+	.4byte	.LASF244
+	.byte	0x14
+	.2byte	0x1d6
+	.4byte	.LASF245
+	.4byte	0x62
+	.byte	0x1
+	.4byte	0x1279
+	.4byte	0x1285
 	.uleb128 0x13
-	.long	0x1498
+	.4byte	0x15ef
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x5e
+	.4byte	0x62
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF243
-	.byte	0x14
-	.value	0x1e4
-	.long	.LASF245
-	.long	0x5e
 	.byte	0x1
-	.long	0x1175
-	.long	0x1185
+	.4byte	.LASF244
+	.byte	0x14
+	.2byte	0x1e4
+	.4byte	.LASF246
+	.4byte	0x62
+	.byte	0x1
+	.4byte	0x129f
+	.4byte	0x12b0
 	.uleb128 0x13
-	.long	0x1498
+	.4byte	0x15ef
+	.byte	0x1
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0xbc
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0xbc
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF243
-	.byte	0x14
-	.value	0x1f2
-	.long	.LASF246
-	.long	0xd80
 	.byte	0x1
-	.long	0x119e
-	.long	0x11a9
+	.4byte	.LASF244
+	.byte	0x14
+	.2byte	0x1f2
+	.4byte	.LASF247
+	.4byte	0xe5e
+	.byte	0x1
+	.4byte	0x12ca
+	.4byte	0x12d6
 	.uleb128 0x13
-	.long	0x1498
+	.4byte	0x15ef
+	.byte	0x1
 	.uleb128 0x15
-	.long	0xd80
+	.4byte	0xe5e
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF243
-	.byte	0x14
-	.value	0x1fc
-	.long	.LASF247
-	.long	0xd80
 	.byte	0x1
-	.long	0x11c2
-	.long	0x11d2
+	.4byte	.LASF244
+	.byte	0x14
+	.2byte	0x1fc
+	.4byte	.LASF248
+	.4byte	0xe5e
+	.byte	0x1
+	.4byte	0x12f0
+	.4byte	0x1301
 	.uleb128 0x13
-	.long	0x1498
+	.4byte	0x15ef
+	.byte	0x1
 	.uleb128 0x15
-	.long	0xd80
+	.4byte	0xe5e
 	.uleb128 0x15
-	.long	0xd80
+	.4byte	0xe5e
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF248
-	.byte	0x14
-	.value	0x207
-	.long	.LASF249
 	.byte	0x1
-	.long	0x11e7
-	.long	0x11f7
+	.4byte	.LASF249
+	.byte	0x14
+	.2byte	0x207
+	.4byte	.LASF250
+	.byte	0x1
+	.4byte	0x1317
+	.4byte	0x1328
 	.uleb128 0x13
-	.long	0x1498
+	.4byte	0x15ef
+	.byte	0x1
 	.uleb128 0x15
-	.long	0xd18
+	.4byte	0xde9
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0xbc
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF248
-	.byte	0x14
-	.value	0x222
-	.long	.LASF250
 	.byte	0x1
-	.long	0x120c
-	.long	0x121c
+	.4byte	.LASF249
+	.byte	0x14
+	.2byte	0x222
+	.4byte	.LASF251
+	.byte	0x1
+	.4byte	0x133e
+	.4byte	0x134f
 	.uleb128 0x13
-	.long	0x1498
+	.4byte	0x15ef
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x14a4
+	.4byte	0x15fb
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0xbc
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF251
-	.byte	0x14
-	.value	0x244
-	.long	.LASF252
-	.long	0xd18
 	.byte	0x1
-	.long	0x1235
-	.long	0x123b
+	.4byte	.LASF252
+	.byte	0x14
+	.2byte	0x244
+	.4byte	.LASF253
+	.4byte	0xde9
+	.byte	0x1
+	.4byte	0x1369
+	.4byte	0x1370
 	.uleb128 0x13
-	.long	0x148d
+	.4byte	0x15e4
+	.byte	0x1
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF251
-	.byte	0x14
-	.value	0x249
-	.long	.LASF253
-	.long	0xd12
 	.byte	0x1
-	.long	0x1254
-	.long	0x125a
+	.4byte	.LASF252
+	.byte	0x14
+	.2byte	0x249
+	.4byte	.LASF254
+	.4byte	0xde3
+	.byte	0x1
+	.4byte	0x138a
+	.4byte	0x1391
 	.uleb128 0x13
-	.long	0x1498
+	.4byte	0x15ef
+	.byte	0x1
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF254
-	.byte	0x14
-	.value	0x254
-	.long	.LASF255
-	.long	0xd18
 	.byte	0x1
-	.long	0x1273
-	.long	0x1279
+	.4byte	.LASF255
+	.byte	0x14
+	.2byte	0x254
+	.4byte	.LASF256
+	.4byte	0xde9
+	.byte	0x1
+	.4byte	0x13ab
+	.4byte	0x13b2
 	.uleb128 0x13
-	.long	0x148d
+	.4byte	0x15e4
+	.byte	0x1
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF254
-	.byte	0x14
-	.value	0x25a
-	.long	.LASF256
-	.long	0xd12
 	.byte	0x1
-	.long	0x1292
-	.long	0x1298
+	.4byte	.LASF255
+	.byte	0x14
+	.2byte	0x25a
+	.4byte	.LASF257
+	.4byte	0xde3
+	.byte	0x1
+	.4byte	0x13cc
+	.4byte	0x13d3
 	.uleb128 0x13
-	.long	0x1498
+	.4byte	0x15ef
+	.byte	0x1
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF257
-	.byte	0x14
-	.value	0x264
-	.long	.LASF258
-	.long	0x5e
 	.byte	0x1
-	.long	0x12b1
-	.long	0x12bc
+	.4byte	.LASF258
+	.byte	0x14
+	.2byte	0x264
+	.4byte	.LASF259
+	.4byte	0x62
+	.byte	0x1
+	.4byte	0x13ed
+	.4byte	0x13f9
 	.uleb128 0x13
-	.long	0x1498
+	.4byte	0x15ef
+	.byte	0x1
 	.uleb128 0x15
-	.long	0xd18
+	.4byte	0xde9
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF257
-	.byte	0x14
-	.value	0x26d
-	.long	.LASF259
-	.long	0x5e
 	.byte	0x1
-	.long	0x12d5
-	.long	0x12e0
+	.4byte	.LASF258
+	.byte	0x14
+	.2byte	0x26d
+	.4byte	.LASF260
+	.4byte	0x62
+	.byte	0x1
+	.4byte	0x1413
+	.4byte	0x141f
 	.uleb128 0x13
-	.long	0x1498
+	.4byte	0x15ef
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x14a4
+	.4byte	0x15fb
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF260
-	.byte	0x14
-	.value	0x27c
-	.long	.LASF261
-	.long	0x5e
 	.byte	0x1
-	.long	0x12f9
-	.long	0x1304
+	.4byte	.LASF261
+	.byte	0x14
+	.2byte	0x27c
+	.4byte	.LASF262
+	.4byte	0x62
+	.byte	0x1
+	.4byte	0x1439
+	.4byte	0x1445
 	.uleb128 0x13
-	.long	0x1498
+	.4byte	0x15ef
+	.byte	0x1
 	.uleb128 0x15
-	.long	0xd18
+	.4byte	0xde9
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF260
-	.byte	0x14
-	.value	0x297
-	.long	.LASF262
-	.long	0x5e
 	.byte	0x1
-	.long	0x131d
-	.long	0x1323
+	.4byte	.LASF261
+	.byte	0x14
+	.2byte	0x297
+	.4byte	.LASF263
+	.4byte	0x62
+	.byte	0x1
+	.4byte	0x145f
+	.4byte	0x1466
 	.uleb128 0x13
-	.long	0x1498
+	.4byte	0x15ef
+	.byte	0x1
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF263
-	.byte	0x14
-	.value	0x2a4
-	.long	.LASF264
 	.byte	0x1
-	.long	0x1338
-	.long	0x1348
+	.4byte	.LASF264
+	.byte	0x14
+	.2byte	0x2a4
+	.4byte	.LASF265
+	.byte	0x1
+	.4byte	0x147c
+	.4byte	0x148d
 	.uleb128 0x13
-	.long	0x1498
+	.4byte	0x15ef
+	.byte	0x1
 	.uleb128 0x15
-	.long	0xd18
+	.4byte	0xde9
 	.uleb128 0x15
-	.long	0x5e
+	.4byte	0x62
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF263
-	.byte	0x14
-	.value	0x2b9
-	.long	.LASF265
 	.byte	0x1
-	.long	0x135d
-	.long	0x1368
+	.4byte	.LASF264
+	.byte	0x14
+	.2byte	0x2b9
+	.4byte	.LASF266
+	.byte	0x1
+	.4byte	0x14a3
+	.4byte	0x14af
 	.uleb128 0x13
-	.long	0x1498
+	.4byte	0x15ef
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x5e
+	.4byte	0x62
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF121
-	.byte	0x14
-	.value	0x2c8
-	.long	.LASF266
-	.long	0xd12
 	.byte	0x1
-	.long	0x1381
-	.long	0x138c
+	.4byte	.LASF122
+	.byte	0x14
+	.2byte	0x2c8
+	.4byte	.LASF267
+	.4byte	0xde3
+	.byte	0x1
+	.4byte	0x14c9
+	.4byte	0x14d5
 	.uleb128 0x13
-	.long	0x148d
+	.4byte	0x15e4
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x5e
+	.4byte	0x62
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF267
-	.byte	0x14
-	.value	0x2d4
-	.long	.LASF268
 	.byte	0x1
-	.long	0x13a1
-	.long	0x13ac
+	.4byte	.LASF268
+	.byte	0x14
+	.2byte	0x2d4
+	.4byte	.LASF269
+	.byte	0x1
+	.4byte	0x14eb
+	.4byte	0x14f7
 	.uleb128 0x13
-	.long	0x1498
+	.4byte	0x15ef
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x149e
+	.4byte	0x15f5
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF267
-	.byte	0x14
-	.value	0x2e5
-	.long	.LASF269
 	.byte	0x1
-	.long	0x13c1
-	.long	0x13d6
+	.4byte	.LASF268
+	.byte	0x14
+	.2byte	0x2e5
+	.4byte	.LASF270
+	.byte	0x1
+	.4byte	0x150d
+	.4byte	0x1523
 	.uleb128 0x13
-	.long	0x1498
+	.4byte	0x15ef
+	.byte	0x1
 	.uleb128 0x15
-	.long	0xcdf
+	.4byte	0xdb1
 	.uleb128 0x15
-	.long	0x5e
+	.4byte	0x62
 	.uleb128 0x15
-	.long	0x5e
+	.4byte	0x62
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF270
-	.byte	0x14
-	.value	0x2f3
-	.long	.LASF271
-	.long	0x5b1
 	.byte	0x1
-	.long	0x13ef
-	.long	0x13f5
+	.4byte	.LASF271
+	.byte	0x14
+	.2byte	0x2f3
+	.4byte	.LASF272
+	.4byte	0x613
+	.byte	0x1
+	.4byte	0x153d
+	.4byte	0x1544
 	.uleb128 0x13
-	.long	0x1498
+	.4byte	0x15ef
+	.byte	0x1
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF272
-	.byte	0x14
-	.value	0x2ff
-	.long	.LASF273
 	.byte	0x1
-	.long	0x140a
-	.long	0x1415
+	.4byte	.LASF273
+	.byte	0x14
+	.2byte	0x2ff
+	.4byte	.LASF274
+	.byte	0x1
+	.4byte	0x155a
+	.4byte	0x1566
 	.uleb128 0x13
-	.long	0x1498
+	.4byte	0x15ef
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x5b1
+	.4byte	0x613
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF274
-	.byte	0x14
-	.value	0x336
-	.long	.LASF275
 	.byte	0x1
-	.long	0x142a
-	.long	0x1435
+	.4byte	.LASF275
+	.byte	0x14
+	.2byte	0x336
+	.4byte	.LASF276
+	.byte	0x1
+	.4byte	0x157c
+	.4byte	0x1588
 	.uleb128 0x13
-	.long	0x1498
+	.4byte	0x15ef
+	.byte	0x1
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0xbc
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF276
-	.byte	0x14
-	.value	0x30f
-	.long	.LASF277
 	.byte	0x1
-	.long	0x144a
-	.long	0x1455
+	.4byte	.LASF277
+	.byte	0x14
+	.2byte	0x30f
+	.4byte	.LASF278
+	.byte	0x1
+	.4byte	0x159e
+	.4byte	0x15aa
 	.uleb128 0x13
-	.long	0x1498
+	.4byte	0x15ef
+	.byte	0x1
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0xbc
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF278
-	.byte	0x14
-	.value	0x31c
-	.long	.LASF279
 	.byte	0x1
-	.long	0x146a
-	.long	0x1475
+	.4byte	.LASF279
+	.byte	0x14
+	.2byte	0x31c
+	.4byte	.LASF280
+	.byte	0x1
+	.4byte	0x15c0
+	.4byte	0x15cc
 	.uleb128 0x13
-	.long	0x1498
+	.4byte	0x15ef
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x14a4
+	.4byte	0x15fb
 	.byte	0
-	.uleb128 0x2a
-	.string	"X"
-	.long	0xce5
-	.uleb128 0x2a
-	.string	"A"
-	.long	0xc3d
+	.uleb128 0x29
+	.ascii	"X\000"
+	.4byte	0xdb7
+	.uleb128 0x29
+	.ascii	"A\000"
+	.4byte	0xd0b
 	.uleb128 0x32
-	.long	.LASF280
-	.long	0x198b
+	.4byte	.LASF281
+	.4byte	0x1b3b
 	.byte	0
-	.uleb128 0x8
+	.uleb128 0x9
 	.byte	0x4
-	.long	0x1493
+	.4byte	0x15ea
 	.uleb128 0x1b
-	.long	0xd24
-	.uleb128 0x8
+	.4byte	0xdf5
+	.uleb128 0x9
 	.byte	0x4
-	.long	0xd24
+	.4byte	0xdf5
 	.uleb128 0x28
 	.byte	0x4
-	.long	0x1493
+	.4byte	0x15ea
 	.uleb128 0x28
 	.byte	0x4
-	.long	0xd24
-	.uleb128 0x8
+	.4byte	0xdf5
+	.uleb128 0x9
 	.byte	0x4
-	.long	0x8cc
+	.4byte	0x963
 	.uleb128 0x28
 	.byte	0x4
-	.long	0x8cc
-	.uleb128 0x8
+	.4byte	0x963
+	.uleb128 0x9
 	.byte	0x4
-	.long	0x14bc
+	.4byte	0x1613
 	.uleb128 0x1b
-	.long	0x8cc
+	.4byte	0x963
 	.uleb128 0x28
 	.byte	0x4
-	.long	0x14bc
-	.uleb128 0x8
+	.4byte	0x1613
+	.uleb128 0x9
 	.byte	0x4
-	.long	0x14cd
+	.4byte	0x1624
 	.uleb128 0x1d
-	.long	.LASF281
-	.uleb128 0x24
-	.long	.LASF282
+	.4byte	.LASF282
+	.byte	0x1
+	.uleb128 0x23
+	.4byte	.LASF283
 	.byte	0x10
 	.byte	0x15
 	.byte	0x45
-	.long	0x1974
-	.uleb128 0xa
-	.long	.LASF283
-	.byte	0x15
-	.value	0x1c2
-	.long	0xcf4
-	.byte	0
+	.4byte	0x1b24
 	.uleb128 0x33
-	.long	.LASF284
+	.4byte	.LASF284
+	.byte	0x15
+	.2byte	0x1c2
+	.4byte	0xdc7
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.byte	0x3
+	.uleb128 0x34
+	.byte	0x1
+	.4byte	.LASF285
 	.byte	0x15
 	.byte	0x48
-	.long	.LASF286
-	.long	0x14fe
-	.long	0x150e
+	.4byte	.LASF286
+	.byte	0x3
+	.byte	0x1
+	.4byte	0x165c
+	.4byte	0x166d
 	.uleb128 0x13
-	.long	0x1974
+	.4byte	0x1b24
+	.byte	0x1
 	.uleb128 0x15
-	.long	0xce5
+	.4byte	0xdb7
 	.uleb128 0x15
-	.long	0x5b1
-	.byte	0
-	.uleb128 0x33
-	.long	.LASF285
-	.byte	0x15
-	.byte	0x5a
-	.long	.LASF287
-	.long	0x1521
-	.long	0x1531
-	.uleb128 0x13
-	.long	0x1974
-	.uleb128 0x15
-	.long	0xb8
-	.uleb128 0x15
-	.long	0x5b1
-	.byte	0
-	.uleb128 0x12
-	.long	.LASF282
-	.byte	0x15
-	.byte	0x73
-	.byte	0x1
-	.long	0x1541
-	.long	0x1547
-	.uleb128 0x13
-	.long	0x197f
-	.byte	0
-	.uleb128 0x12
-	.long	.LASF288
-	.byte	0x15
-	.byte	0x74
-	.byte	0x1
-	.long	0x1557
-	.long	0x1562
-	.uleb128 0x13
-	.long	0x197f
-	.uleb128 0x13
-	.long	0x5e
-	.byte	0
-	.uleb128 0x25
-	.long	.LASF137
-	.byte	0x15
-	.byte	0x81
-	.long	.LASF289
-	.byte	0x1
-	.long	0x1576
-	.long	0x157c
-	.uleb128 0x13
-	.long	0x197f
-	.byte	0
-	.uleb128 0x25
-	.long	.LASF290
-	.byte	0x15
-	.byte	0x8a
-	.long	.LASF291
-	.byte	0x1
-	.long	0x1590
-	.long	0x1596
-	.uleb128 0x13
-	.long	0x197f
-	.byte	0
-	.uleb128 0x25
-	.long	.LASF292
-	.byte	0x15
-	.byte	0x93
-	.long	.LASF293
-	.byte	0x1
-	.long	0x15aa
-	.long	0x15b0
-	.uleb128 0x13
-	.long	0x197f
-	.byte	0
-	.uleb128 0x25
-	.long	.LASF294
-	.byte	0x15
-	.byte	0x99
-	.long	.LASF295
-	.byte	0x1
-	.long	0x15c4
-	.long	0x15ca
-	.uleb128 0x13
-	.long	0x197f
-	.byte	0
-	.uleb128 0x25
-	.long	.LASF296
-	.byte	0x15
-	.byte	0xa2
-	.long	.LASF297
-	.byte	0x1
-	.long	0x15de
-	.long	0x15e9
-	.uleb128 0x13
-	.long	0x197f
-	.uleb128 0x15
-	.long	0x1985
-	.byte	0
-	.uleb128 0x25
-	.long	.LASF206
-	.byte	0x15
-	.byte	0xad
-	.long	.LASF298
-	.byte	0x1
-	.long	0x15fd
-	.long	0x1603
-	.uleb128 0x13
-	.long	0x197f
-	.byte	0
-	.uleb128 0x25
-	.long	.LASF299
-	.byte	0x15
-	.byte	0xb3
-	.long	.LASF300
-	.byte	0x1
-	.long	0x1617
-	.long	0x161d
-	.uleb128 0x13
-	.long	0x197f
-	.byte	0
-	.uleb128 0x25
-	.long	.LASF301
-	.byte	0x15
-	.byte	0xbb
-	.long	.LASF302
-	.byte	0x1
-	.long	0x1631
-	.long	0x1637
-	.uleb128 0x13
-	.long	0x197f
-	.byte	0
-	.uleb128 0x25
-	.long	.LASF303
-	.byte	0x15
-	.byte	0xc3
-	.long	.LASF304
-	.byte	0x1
-	.long	0x164b
-	.long	0x1651
-	.uleb128 0x13
-	.long	0x197f
-	.byte	0
-	.uleb128 0x16
-	.long	.LASF305
-	.byte	0x15
-	.byte	0xd0
-	.long	.LASF306
-	.long	0xce5
-	.byte	0x1
-	.long	0x1669
-	.long	0x1679
-	.uleb128 0x13
-	.long	0x1974
-	.uleb128 0x15
-	.long	0x449
-	.uleb128 0x15
-	.long	0x5b1
-	.byte	0
-	.uleb128 0x16
-	.long	.LASF307
-	.byte	0x15
-	.byte	0xe0
-	.long	.LASF308
-	.long	0xce5
-	.byte	0x1
-	.long	0x1691
-	.long	0x16a1
-	.uleb128 0x13
-	.long	0x1974
-	.uleb128 0x15
-	.long	0xb8
-	.uleb128 0x15
-	.long	0x5b1
-	.byte	0
-	.uleb128 0x16
-	.long	.LASF309
-	.byte	0x15
-	.byte	0xf0
-	.long	.LASF310
-	.long	0xd00
-	.byte	0x1
-	.long	0x16b9
-	.long	0x16ce
-	.uleb128 0x13
-	.long	0x1974
-	.uleb128 0x15
-	.long	0xb8
-	.uleb128 0x15
-	.long	0xd00
-	.uleb128 0x15
-	.long	0x5b1
+	.4byte	0x613
 	.byte	0
 	.uleb128 0x34
-	.string	"Add"
-	.byte	0x15
-	.byte	0xfc
-	.long	.LASF793
 	.byte	0x1
-	.long	0x16e2
-	.long	0x16f2
+	.4byte	.LASF287
+	.byte	0x15
+	.byte	0x5a
+	.4byte	.LASF288
+	.byte	0x3
+	.byte	0x1
+	.4byte	0x1683
+	.4byte	0x1694
 	.uleb128 0x13
-	.long	0x197f
+	.4byte	0x1b24
+	.byte	0x1
 	.uleb128 0x15
-	.long	0xce5
+	.4byte	0xbc
 	.uleb128 0x15
-	.long	0x5b1
+	.4byte	0x613
 	.byte	0
-	.uleb128 0x30
-	.long	.LASF311
-	.byte	0x15
-	.value	0x10a
-	.long	.LASF312
+	.uleb128 0x12
 	.byte	0x1
-	.long	0x1707
-	.long	0x171c
+	.4byte	.LASF283
+	.byte	0x15
+	.byte	0x73
+	.4byte	0x1b2f
+	.byte	0x1
+	.4byte	0x16a9
+	.4byte	0x16b0
 	.uleb128 0x13
-	.long	0x197f
-	.uleb128 0x15
-	.long	0xce5
-	.uleb128 0x15
-	.long	0xb8
-	.uleb128 0x15
-	.long	0x5b1
+	.4byte	0x1b2f
+	.byte	0x1
 	.byte	0
-	.uleb128 0x31
-	.long	.LASF313
-	.byte	0x15
-	.value	0x118
-	.long	.LASF314
-	.long	0x5b1
+	.uleb128 0x12
 	.byte	0x1
-	.long	0x1735
-	.long	0x1740
+	.4byte	.LASF289
+	.byte	0x15
+	.byte	0x74
+	.4byte	0xfa
+	.byte	0x1
+	.4byte	0x16c5
+	.4byte	0x16d2
 	.uleb128 0x13
-	.long	0x197f
-	.uleb128 0x15
-	.long	0xce5
+	.4byte	0x1b2f
+	.byte	0x1
+	.uleb128 0x13
+	.4byte	0x62
+	.byte	0x1
 	.byte	0
-	.uleb128 0x31
-	.long	.LASF315
-	.byte	0x15
-	.value	0x122
-	.long	.LASF316
-	.long	0x5b1
+	.uleb128 0x25
 	.byte	0x1
-	.long	0x1759
-	.long	0x1764
+	.4byte	.LASF138
+	.byte	0x15
+	.byte	0x81
+	.4byte	.LASF290
+	.byte	0x1
+	.4byte	0x16e7
+	.4byte	0x16ee
 	.uleb128 0x13
-	.long	0x197f
-	.uleb128 0x15
-	.long	0xce5
+	.4byte	0x1b2f
+	.byte	0x1
 	.byte	0
-	.uleb128 0x31
-	.long	.LASF317
-	.byte	0x15
-	.value	0x12c
-	.long	.LASF318
-	.long	0xcdf
+	.uleb128 0x25
 	.byte	0x1
-	.long	0x177d
-	.long	0x1788
+	.4byte	.LASF291
+	.byte	0x15
+	.byte	0x8a
+	.4byte	.LASF292
+	.byte	0x1
+	.4byte	0x1703
+	.4byte	0x170a
 	.uleb128 0x13
-	.long	0x197f
-	.uleb128 0x15
-	.long	0xcdf
+	.4byte	0x1b2f
+	.byte	0x1
 	.byte	0
-	.uleb128 0x31
-	.long	.LASF319
-	.byte	0x15
-	.value	0x136
-	.long	.LASF320
-	.long	0xb8
+	.uleb128 0x25
 	.byte	0x1
-	.long	0x17a1
-	.long	0x17ac
+	.4byte	.LASF293
+	.byte	0x15
+	.byte	0x93
+	.4byte	.LASF294
+	.byte	0x1
+	.4byte	0x171f
+	.4byte	0x1726
 	.uleb128 0x13
-	.long	0x197f
-	.uleb128 0x15
-	.long	0xb8
+	.4byte	0x1b2f
+	.byte	0x1
 	.byte	0
-	.uleb128 0x31
-	.long	.LASF321
-	.byte	0x15
-	.value	0x13f
-	.long	.LASF322
-	.long	0x5b1
+	.uleb128 0x25
 	.byte	0x1
-	.long	0x17c5
-	.long	0x17d0
+	.4byte	.LASF295
+	.byte	0x15
+	.byte	0x99
+	.4byte	.LASF296
+	.byte	0x1
+	.4byte	0x173b
+	.4byte	0x1742
 	.uleb128 0x13
-	.long	0x1974
-	.uleb128 0x15
-	.long	0xce5
+	.4byte	0x1b2f
+	.byte	0x1
 	.byte	0
-	.uleb128 0x31
-	.long	.LASF323
-	.byte	0x15
-	.value	0x14c
-	.long	.LASF324
-	.long	0xc3
+	.uleb128 0x25
 	.byte	0x1
-	.long	0x17e9
-	.long	0x17f4
+	.4byte	.LASF297
+	.byte	0x15
+	.byte	0xa2
+	.4byte	.LASF298
+	.byte	0x1
+	.4byte	0x1757
+	.4byte	0x1763
 	.uleb128 0x13
-	.long	0x1974
+	.4byte	0x1b2f
+	.byte	0x1
 	.uleb128 0x15
-	.long	0xd18
+	.4byte	0x1b35
 	.byte	0
-	.uleb128 0x30
-	.long	.LASF325
-	.byte	0x15
-	.value	0x158
-	.long	.LASF326
+	.uleb128 0x25
 	.byte	0x1
-	.long	0x1809
-	.long	0x1814
+	.4byte	.LASF207
+	.byte	0x15
+	.byte	0xad
+	.4byte	.LASF299
+	.byte	0x1
+	.4byte	0x1778
+	.4byte	0x177f
 	.uleb128 0x13
-	.long	0x197f
+	.4byte	0x1b2f
+	.byte	0x1
+	.byte	0
+	.uleb128 0x25
+	.byte	0x1
+	.4byte	.LASF300
+	.byte	0x15
+	.byte	0xb3
+	.4byte	.LASF301
+	.byte	0x1
+	.4byte	0x1794
+	.4byte	0x179b
+	.uleb128 0x13
+	.4byte	0x1b2f
+	.byte	0x1
+	.byte	0
+	.uleb128 0x25
+	.byte	0x1
+	.4byte	.LASF302
+	.byte	0x15
+	.byte	0xbb
+	.4byte	.LASF303
+	.byte	0x1
+	.4byte	0x17b0
+	.4byte	0x17b7
+	.uleb128 0x13
+	.4byte	0x1b2f
+	.byte	0x1
+	.byte	0
+	.uleb128 0x25
+	.byte	0x1
+	.4byte	.LASF304
+	.byte	0x15
+	.byte	0xc3
+	.4byte	.LASF305
+	.byte	0x1
+	.4byte	0x17cc
+	.4byte	0x17d3
+	.uleb128 0x13
+	.4byte	0x1b2f
+	.byte	0x1
+	.byte	0
+	.uleb128 0x16
+	.byte	0x1
+	.4byte	.LASF306
+	.byte	0x15
+	.byte	0xd0
+	.4byte	.LASF307
+	.4byte	0xdb7
+	.byte	0x1
+	.4byte	0x17ec
+	.4byte	0x17fd
+	.uleb128 0x13
+	.4byte	0x1b24
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x1985
-	.byte	0
-	.uleb128 0x31
-	.long	.LASF327
-	.byte	0x15
-	.value	0x160
-	.long	.LASF328
-	.long	0xb8
-	.byte	0x1
-	.long	0x182d
-	.long	0x1833
-	.uleb128 0x13
-	.long	0x1974
-	.byte	0
-	.uleb128 0x31
-	.long	.LASF329
-	.byte	0x15
-	.value	0x168
-	.long	.LASF330
-	.long	0xb8
-	.byte	0x1
-	.long	0x184c
-	.long	0x1852
-	.uleb128 0x13
-	.long	0x1974
-	.byte	0
-	.uleb128 0x30
-	.long	.LASF331
-	.byte	0x15
-	.value	0x173
-	.long	.LASF332
-	.byte	0x1
-	.long	0x1867
-	.long	0x1877
-	.uleb128 0x13
-	.long	0x197f
+	.4byte	0x485
 	.uleb128 0x15
-	.long	0xce5
+	.4byte	0x613
+	.byte	0
+	.uleb128 0x16
+	.byte	0x1
+	.4byte	.LASF308
+	.byte	0x15
+	.byte	0xe0
+	.4byte	.LASF309
+	.4byte	0xdb7
+	.byte	0x1
+	.4byte	0x1816
+	.4byte	0x1827
+	.uleb128 0x13
+	.4byte	0x1b24
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x5b1
+	.4byte	0xbc
+	.uleb128 0x15
+	.4byte	0x613
+	.byte	0
+	.uleb128 0x16
+	.byte	0x1
+	.4byte	.LASF310
+	.byte	0x15
+	.byte	0xf0
+	.4byte	.LASF311
+	.4byte	0xdd2
+	.byte	0x1
+	.4byte	0x1840
+	.4byte	0x1856
+	.uleb128 0x13
+	.4byte	0x1b24
+	.byte	0x1
+	.uleb128 0x15
+	.4byte	0xbc
+	.uleb128 0x15
+	.4byte	0xdd2
+	.uleb128 0x15
+	.4byte	0x613
 	.byte	0
 	.uleb128 0x35
-	.string	"Pop"
-	.byte	0x15
-	.value	0x180
-	.long	.LASF794
-	.long	0xce5
 	.byte	0x1
-	.long	0x1890
-	.long	0x1896
-	.uleb128 0x13
-	.long	0x197f
-	.byte	0
-	.uleb128 0x31
-	.long	.LASF333
+	.ascii	"Add\000"
 	.byte	0x15
-	.value	0x189
-	.long	.LASF334
-	.long	0xce5
+	.byte	0xfc
+	.4byte	.LASF791
 	.byte	0x1
-	.long	0x18af
-	.long	0x18b5
+	.4byte	0x186b
+	.4byte	0x187c
 	.uleb128 0x13
-	.long	0x197f
-	.byte	0
-	.uleb128 0x31
-	.long	.LASF121
-	.byte	0x15
-	.value	0x191
-	.long	.LASF335
-	.long	0xd12
+	.4byte	0x1b2f
 	.byte	0x1
-	.long	0x18ce
-	.long	0x18d9
-	.uleb128 0x13
-	.long	0x1974
 	.uleb128 0x15
-	.long	0x5e
-	.byte	0
-	.uleb128 0x31
-	.long	.LASF336
-	.byte	0x15
-	.value	0x19e
-	.long	.LASF337
-	.long	0xcdf
-	.byte	0x1
-	.long	0x18f2
-	.long	0x18f8
-	.uleb128 0x13
-	.long	0x1974
-	.byte	0
-	.uleb128 0x31
-	.long	.LASF338
-	.byte	0x15
-	.value	0x1a8
-	.long	.LASF339
-	.long	0xcdf
-	.byte	0x1
-	.long	0x1911
-	.long	0x1917
-	.uleb128 0x13
-	.long	0x1974
+	.4byte	0xdb7
+	.uleb128 0x15
+	.4byte	0x613
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF340
-	.byte	0x15
-	.value	0x1b2
-	.long	.LASF341
 	.byte	0x1
-	.long	0x192c
-	.long	0x1937
+	.4byte	.LASF312
+	.byte	0x15
+	.2byte	0x10a
+	.4byte	.LASF313
+	.byte	0x1
+	.4byte	0x1892
+	.4byte	0x18a8
 	.uleb128 0x13
-	.long	0x197f
+	.4byte	0x1b2f
+	.byte	0x1
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0xdb7
+	.uleb128 0x15
+	.4byte	0xbc
+	.uleb128 0x15
+	.4byte	0x613
+	.byte	0
+	.uleb128 0x31
+	.byte	0x1
+	.4byte	.LASF314
+	.byte	0x15
+	.2byte	0x118
+	.4byte	.LASF315
+	.4byte	0x613
+	.byte	0x1
+	.4byte	0x18c2
+	.4byte	0x18ce
+	.uleb128 0x13
+	.4byte	0x1b2f
+	.byte	0x1
+	.uleb128 0x15
+	.4byte	0xdb7
+	.byte	0
+	.uleb128 0x31
+	.byte	0x1
+	.4byte	.LASF316
+	.byte	0x15
+	.2byte	0x122
+	.4byte	.LASF317
+	.4byte	0x613
+	.byte	0x1
+	.4byte	0x18e8
+	.4byte	0x18f4
+	.uleb128 0x13
+	.4byte	0x1b2f
+	.byte	0x1
+	.uleb128 0x15
+	.4byte	0xdb7
+	.byte	0
+	.uleb128 0x31
+	.byte	0x1
+	.4byte	.LASF318
+	.byte	0x15
+	.2byte	0x12c
+	.4byte	.LASF319
+	.4byte	0xdb1
+	.byte	0x1
+	.4byte	0x190e
+	.4byte	0x191a
+	.uleb128 0x13
+	.4byte	0x1b2f
+	.byte	0x1
+	.uleb128 0x15
+	.4byte	0xdb1
+	.byte	0
+	.uleb128 0x31
+	.byte	0x1
+	.4byte	.LASF320
+	.byte	0x15
+	.2byte	0x136
+	.4byte	.LASF321
+	.4byte	0xbc
+	.byte	0x1
+	.4byte	0x1934
+	.4byte	0x1940
+	.uleb128 0x13
+	.4byte	0x1b2f
+	.byte	0x1
+	.uleb128 0x15
+	.4byte	0xbc
+	.byte	0
+	.uleb128 0x31
+	.byte	0x1
+	.4byte	.LASF322
+	.byte	0x15
+	.2byte	0x13f
+	.4byte	.LASF323
+	.4byte	0x613
+	.byte	0x1
+	.4byte	0x195a
+	.4byte	0x1966
+	.uleb128 0x13
+	.4byte	0x1b24
+	.byte	0x1
+	.uleb128 0x15
+	.4byte	0xdb7
+	.byte	0
+	.uleb128 0x31
+	.byte	0x1
+	.4byte	.LASF324
+	.byte	0x15
+	.2byte	0x14c
+	.4byte	.LASF325
+	.4byte	0xc7
+	.byte	0x1
+	.4byte	0x1980
+	.4byte	0x198c
+	.uleb128 0x13
+	.4byte	0x1b24
+	.byte	0x1
+	.uleb128 0x15
+	.4byte	0xde9
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF272
-	.byte	0x15
-	.value	0x1bb
-	.long	.LASF342
 	.byte	0x1
-	.long	0x194c
-	.long	0x1957
+	.4byte	.LASF326
+	.byte	0x15
+	.2byte	0x158
+	.4byte	.LASF327
+	.byte	0x1
+	.4byte	0x19a2
+	.4byte	0x19ae
 	.uleb128 0x13
-	.long	0x197f
+	.4byte	0x1b2f
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x5b1
+	.4byte	0x1b35
+	.byte	0
+	.uleb128 0x31
+	.byte	0x1
+	.4byte	.LASF328
+	.byte	0x15
+	.2byte	0x160
+	.4byte	.LASF329
+	.4byte	0xbc
+	.byte	0x1
+	.4byte	0x19c8
+	.4byte	0x19cf
+	.uleb128 0x13
+	.4byte	0x1b24
+	.byte	0x1
+	.byte	0
+	.uleb128 0x31
+	.byte	0x1
+	.4byte	.LASF330
+	.byte	0x15
+	.2byte	0x168
+	.4byte	.LASF331
+	.4byte	0xbc
+	.byte	0x1
+	.4byte	0x19e9
+	.4byte	0x19f0
+	.uleb128 0x13
+	.4byte	0x1b24
+	.byte	0x1
+	.byte	0
+	.uleb128 0x30
+	.byte	0x1
+	.4byte	.LASF332
+	.byte	0x15
+	.2byte	0x173
+	.4byte	.LASF333
+	.byte	0x1
+	.4byte	0x1a06
+	.4byte	0x1a17
+	.uleb128 0x13
+	.4byte	0x1b2f
+	.byte	0x1
+	.uleb128 0x15
+	.4byte	0xdb7
+	.uleb128 0x15
+	.4byte	0x613
 	.byte	0
 	.uleb128 0x36
-	.long	.LASF343
-	.byte	0x15
-	.value	0x1c0
-	.long	.LASF570
 	.byte	0x1
-	.long	0x1968
+	.ascii	"Pop\000"
+	.byte	0x15
+	.2byte	0x180
+	.4byte	.LASF792
+	.4byte	0xdb7
+	.byte	0x1
+	.4byte	0x1a31
+	.4byte	0x1a38
 	.uleb128 0x13
-	.long	0x197f
+	.4byte	0x1b2f
+	.byte	0x1
+	.byte	0
+	.uleb128 0x31
+	.byte	0x1
+	.4byte	.LASF334
+	.byte	0x15
+	.2byte	0x189
+	.4byte	.LASF335
+	.4byte	0xdb7
+	.byte	0x1
+	.4byte	0x1a52
+	.4byte	0x1a59
+	.uleb128 0x13
+	.4byte	0x1b2f
+	.byte	0x1
+	.byte	0
+	.uleb128 0x31
+	.byte	0x1
+	.4byte	.LASF122
+	.byte	0x15
+	.2byte	0x191
+	.4byte	.LASF336
+	.4byte	0xde3
+	.byte	0x1
+	.4byte	0x1a73
+	.4byte	0x1a7f
+	.uleb128 0x13
+	.4byte	0x1b24
+	.byte	0x1
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0x62
+	.byte	0
+	.uleb128 0x31
+	.byte	0x1
+	.4byte	.LASF337
+	.byte	0x15
+	.2byte	0x19e
+	.4byte	.LASF338
+	.4byte	0xdb1
+	.byte	0x1
+	.4byte	0x1a99
+	.4byte	0x1aa0
+	.uleb128 0x13
+	.4byte	0x1b24
+	.byte	0x1
+	.byte	0
+	.uleb128 0x31
+	.byte	0x1
+	.4byte	.LASF339
+	.byte	0x15
+	.2byte	0x1a8
+	.4byte	.LASF340
+	.4byte	0xdb1
+	.byte	0x1
+	.4byte	0x1aba
+	.4byte	0x1ac1
+	.uleb128 0x13
+	.4byte	0x1b24
+	.byte	0x1
+	.byte	0
+	.uleb128 0x30
+	.byte	0x1
+	.4byte	.LASF341
+	.byte	0x15
+	.2byte	0x1b2
+	.4byte	.LASF342
+	.byte	0x1
+	.4byte	0x1ad7
+	.4byte	0x1ae3
+	.uleb128 0x13
+	.4byte	0x1b2f
+	.byte	0x1
+	.uleb128 0x15
+	.4byte	0xbc
+	.byte	0
+	.uleb128 0x30
+	.byte	0x1
+	.4byte	.LASF273
+	.byte	0x15
+	.2byte	0x1bb
+	.4byte	.LASF343
+	.byte	0x1
+	.4byte	0x1af9
+	.4byte	0x1b05
+	.uleb128 0x13
+	.4byte	0x1b2f
+	.byte	0x1
+	.uleb128 0x15
+	.4byte	0x613
+	.byte	0
+	.uleb128 0x37
+	.byte	0x1
+	.4byte	.LASF568
+	.byte	0x15
+	.2byte	0x1c0
+	.4byte	.LASF570
+	.byte	0x1
+	.4byte	0x1b17
+	.uleb128 0x13
+	.4byte	0x1b2f
+	.byte	0x1
+	.uleb128 0x15
+	.4byte	0xbc
 	.byte	0
 	.byte	0
-	.uleb128 0x8
+	.uleb128 0x9
 	.byte	0x4
-	.long	0x197a
+	.4byte	0x1b2a
 	.uleb128 0x1b
-	.long	0x14d2
-	.uleb128 0x8
+	.4byte	0x162a
+	.uleb128 0x9
 	.byte	0x4
-	.long	0x14d2
+	.4byte	0x162a
 	.uleb128 0x28
 	.byte	0x4
-	.long	0x197a
-	.uleb128 0x24
-	.long	.LASF344
+	.4byte	0x1b2a
+	.uleb128 0x23
+	.4byte	.LASF344
 	.byte	0x1
 	.byte	0x14
 	.byte	0x31
-	.long	0x19d4
+	.4byte	0x1b85
 	.uleb128 0x14
-	.long	.LASF345
+	.byte	0x1
+	.4byte	.LASF345
 	.byte	0x14
 	.byte	0x34
-	.long	.LASF346
-	.long	0xcdf
+	.4byte	.LASF346
+	.4byte	0xdb1
 	.byte	0x1
-	.long	0x19c5
+	.4byte	0x1b76
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0xbc
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0xbc
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0xbc
 	.uleb128 0x15
-	.long	0xcdf
+	.4byte	0xdb1
 	.uleb128 0x15
-	.long	0x19d4
+	.4byte	0x1b85
 	.byte	0
-	.uleb128 0x2a
-	.string	"X"
-	.long	0xce5
-	.uleb128 0x2a
-	.string	"A"
-	.long	0xc3d
+	.uleb128 0x29
+	.ascii	"X\000"
+	.4byte	0xdb7
+	.uleb128 0x29
+	.ascii	"A\000"
+	.4byte	0xd0b
 	.byte	0
 	.uleb128 0x28
 	.byte	0x4
-	.long	0xc3d
-	.uleb128 0x24
-	.long	.LASF347
+	.4byte	0xd0b
+	.uleb128 0x23
+	.4byte	.LASF347
 	.byte	0x1
 	.byte	0x12
 	.byte	0x70
-	.long	0x1a7c
-	.uleb128 0x29
-	.long	.LASF180
+	.4byte	0x1c31
+	.uleb128 0x3
+	.4byte	.LASF181
 	.byte	0x12
 	.byte	0x73
-	.long	0xb8
-	.byte	0x1
-	.uleb128 0x29
-	.long	.LASF181
+	.4byte	0xbc
+	.uleb128 0x3
+	.4byte	.LASF182
 	.byte	0x12
 	.byte	0x75
-	.long	0x14aa
-	.byte	0x1
+	.4byte	0x1601
 	.uleb128 0x16
-	.long	.LASF182
+	.byte	0x1
+	.4byte	.LASF183
 	.byte	0x12
 	.byte	0x85
-	.long	.LASF348
-	.long	0x19f2
+	.4byte	.LASF348
+	.4byte	0x1ba2
 	.byte	0x1
-	.long	0x1a16
-	.long	0x1a21
+	.4byte	0x1bc6
+	.4byte	0x1bd2
 	.uleb128 0x13
-	.long	0x1a7c
+	.4byte	0x1c31
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x19e6
+	.4byte	0x1b97
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF184
+	.byte	0x1
+	.4byte	.LASF185
 	.byte	0x12
 	.byte	0x8e
-	.long	.LASF349
-	.long	0x19f2
+	.4byte	.LASF349
+	.4byte	0x1ba2
 	.byte	0x1
-	.long	0x1a39
-	.long	0x1a49
+	.4byte	0x1beb
+	.4byte	0x1bfc
 	.uleb128 0x13
-	.long	0x1a7c
+	.4byte	0x1c31
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x19f2
+	.4byte	0x1ba2
 	.uleb128 0x15
-	.long	0x19e6
+	.4byte	0x1b97
 	.byte	0
 	.uleb128 0x25
-	.long	.LASF186
+	.byte	0x1
+	.4byte	.LASF187
 	.byte	0x12
 	.byte	0x93
-	.long	.LASF350
+	.4byte	.LASF350
 	.byte	0x1
-	.long	0x1a5d
-	.long	0x1a6d
+	.4byte	0x1c11
+	.4byte	0x1c22
 	.uleb128 0x13
-	.long	0x1a7c
+	.4byte	0x1c31
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x19f2
+	.4byte	0x1ba2
 	.uleb128 0x15
-	.long	0x19e6
+	.4byte	0x1b97
 	.byte	0
-	.uleb128 0x2a
-	.string	"T"
-	.long	0x8cc
-	.uleb128 0x2a
-	.string	"M"
-	.long	0x4881
+	.uleb128 0x29
+	.ascii	"T\000"
+	.4byte	0x963
+	.uleb128 0x29
+	.ascii	"M\000"
+	.4byte	0x4cfd
 	.byte	0
-	.uleb128 0x8
+	.uleb128 0x9
 	.byte	0x4
-	.long	0x19da
-	.uleb128 0x24
-	.long	.LASF351
+	.4byte	0x1b8b
+	.uleb128 0x23
+	.4byte	.LASF351
 	.byte	0x10
 	.byte	0x14
 	.byte	0x51
-	.long	0x21eb
-	.uleb128 0xf
-	.string	"p"
+	.4byte	0x2426
+	.uleb128 0x2b
+	.ascii	"p\000"
 	.byte	0x14
 	.byte	0x54
-	.long	0x14aa
-	.byte	0
+	.4byte	0x1601
 	.byte	0x2
-	.uleb128 0x10
-	.long	.LASF191
+	.byte	0x23
+	.uleb128 0
+	.byte	0x2
+	.uleb128 0x24
+	.4byte	.LASF192
 	.byte	0x14
 	.byte	0x55
-	.long	0xb8
-	.byte	0x4
+	.4byte	0xbc
 	.byte	0x2
-	.uleb128 0x10
-	.long	.LASF192
+	.byte	0x23
+	.uleb128 0x4
+	.byte	0x2
+	.uleb128 0x24
+	.4byte	.LASF193
 	.byte	0x14
 	.byte	0x56
-	.long	0xb8
-	.byte	0x8
+	.4byte	0xbc
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x8
 	.byte	0x2
 	.uleb128 0x2c
-	.long	.LASF193
+	.4byte	.LASF194
 	.byte	0x14
 	.byte	0x57
-	.long	0x5b1
+	.4byte	0x613
 	.byte	0x1
 	.byte	0x1
 	.byte	0x7
-	.byte	0xc
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0xc
 	.byte	0x2
 	.uleb128 0x2c
-	.long	.LASF194
+	.4byte	.LASF195
 	.byte	0x14
 	.byte	0x58
-	.long	0x5b1
+	.4byte	0x613
 	.byte	0x1
 	.byte	0x1
 	.byte	0x6
-	.byte	0xc
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0xc
 	.byte	0x2
 	.uleb128 0x2d
-	.string	"a"
+	.ascii	"a\000"
 	.byte	0x14
-	.value	0x332
-	.long	0x19da
-	.byte	0xd
-	.uleb128 0x29
-	.long	.LASF195
+	.2byte	0x332
+	.4byte	0x1b8b
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0xd
+	.byte	0x3
+	.uleb128 0x3
+	.4byte	.LASF196
 	.byte	0x14
 	.byte	0x5a
-	.long	0x14aa
-	.byte	0x1
+	.4byte	0x1601
 	.uleb128 0x16
-	.long	.LASF196
+	.byte	0x1
+	.4byte	.LASF197
 	.byte	0x14
 	.byte	0x61
-	.long	.LASF352
-	.long	0x1ade
+	.4byte	.LASF352
+	.4byte	0x1ca0
 	.byte	0x1
-	.long	0x1b02
-	.long	0x1b08
+	.4byte	0x1cc4
+	.4byte	0x1ccb
 	.uleb128 0x13
-	.long	0x21eb
+	.4byte	0x2426
+	.byte	0x1
 	.byte	0
 	.uleb128 0x2e
-	.string	"end"
+	.byte	0x1
+	.ascii	"end\000"
 	.byte	0x14
 	.byte	0x67
-	.long	.LASF354
-	.long	0x1ade
+	.4byte	.LASF354
+	.4byte	0x1ca0
 	.byte	0x1
-	.long	0x1b20
-	.long	0x1b26
+	.4byte	0x1ce4
+	.4byte	0x1ceb
 	.uleb128 0x13
-	.long	0x21eb
+	.4byte	0x2426
+	.byte	0x1
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF198
+	.byte	0x1
+	.4byte	.LASF199
 	.byte	0x14
 	.byte	0x6c
-	.long	.LASF355
-	.long	0x5b1
+	.4byte	.LASF355
+	.4byte	0x613
 	.byte	0x1
-	.long	0x1b3e
-	.long	0x1b44
+	.4byte	0x1d04
+	.4byte	0x1d0b
 	.uleb128 0x13
-	.long	0x21eb
+	.4byte	0x2426
+	.byte	0x1
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF107
+	.byte	0x1
+	.4byte	.LASF109
 	.byte	0x14
 	.byte	0x71
-	.long	.LASF356
-	.long	0xb8
+	.4byte	.LASF356
+	.4byte	0xbc
 	.byte	0x1
-	.long	0x1b5c
-	.long	0x1b62
+	.4byte	0x1d24
+	.4byte	0x1d2b
 	.uleb128 0x13
-	.long	0x21eb
+	.4byte	0x2426
+	.byte	0x1
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF111
+	.byte	0x1
+	.4byte	.LASF113
 	.byte	0x14
 	.byte	0x77
-	.long	.LASF357
-	.long	0xb8
+	.4byte	.LASF357
+	.4byte	0xbc
 	.byte	0x1
-	.long	0x1b7a
-	.long	0x1b80
+	.4byte	0x1d44
+	.4byte	0x1d4b
 	.uleb128 0x13
-	.long	0x21eb
+	.4byte	0x2426
+	.byte	0x1
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF202
+	.byte	0x1
+	.4byte	.LASF203
 	.byte	0x14
 	.byte	0x7d
-	.long	.LASF358
-	.long	0x14aa
+	.4byte	.LASF358
+	.4byte	0x1601
 	.byte	0x1
-	.long	0x1b98
-	.long	0x1b9e
+	.4byte	0x1d64
+	.4byte	0x1d6b
 	.uleb128 0x13
-	.long	0x21f6
+	.4byte	0x2431
+	.byte	0x1
 	.byte	0
 	.uleb128 0x2f
-	.long	.LASF204
+	.byte	0x1
+	.4byte	.LASF205
 	.byte	0x14
 	.byte	0x83
+	.4byte	0x2431
 	.byte	0x1
-	.long	0x1bae
-	.long	0x1bb9
+	.byte	0x1
+	.4byte	0x1d81
+	.4byte	0x1d8d
 	.uleb128 0x13
-	.long	0x21f6
+	.4byte	0x2431
+	.byte	0x1
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0xbc
 	.byte	0
 	.uleb128 0x12
-	.long	.LASF205
+	.byte	0x1
+	.4byte	.LASF206
 	.byte	0x14
 	.byte	0x89
+	.4byte	0xfa
 	.byte	0x1
-	.long	0x1bc9
-	.long	0x1bd4
+	.4byte	0x1da2
+	.4byte	0x1daf
 	.uleb128 0x13
-	.long	0x21f6
+	.4byte	0x2431
+	.byte	0x1
 	.uleb128 0x13
-	.long	0x5e
+	.4byte	0x62
+	.byte	0x1
 	.byte	0
 	.uleb128 0x12
-	.long	.LASF204
+	.byte	0x1
+	.4byte	.LASF205
 	.byte	0x14
 	.byte	0x99
+	.4byte	0x2431
 	.byte	0x1
-	.long	0x1be4
-	.long	0x1bef
+	.4byte	0x1dc4
+	.4byte	0x1dd0
 	.uleb128 0x13
-	.long	0x21f6
+	.4byte	0x2431
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x21fc
+	.4byte	0x2437
 	.byte	0
 	.uleb128 0x25
-	.long	.LASF206
+	.byte	0x1
+	.4byte	.LASF207
 	.byte	0x14
 	.byte	0xa4
-	.long	.LASF359
+	.4byte	.LASF359
 	.byte	0x1
-	.long	0x1c03
-	.long	0x1c09
+	.4byte	0x1de5
+	.4byte	0x1dec
 	.uleb128 0x13
-	.long	0x21f6
+	.4byte	0x2431
+	.byte	0x1
 	.byte	0
 	.uleb128 0x25
-	.long	.LASF124
+	.byte	0x1
+	.4byte	.LASF125
 	.byte	0x14
 	.byte	0xba
-	.long	.LASF360
+	.4byte	.LASF360
 	.byte	0x1
-	.long	0x1c1d
-	.long	0x1c28
+	.4byte	0x1e01
+	.4byte	0x1e0d
 	.uleb128 0x13
-	.long	0x21f6
+	.4byte	0x2431
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x21fc
+	.4byte	0x2437
 	.byte	0
 	.uleb128 0x25
-	.long	.LASF209
+	.byte	0x1
+	.4byte	.LASF210
 	.byte	0x14
 	.byte	0xc7
-	.long	.LASF361
+	.4byte	.LASF361
 	.byte	0x1
-	.long	0x1c3c
-	.long	0x1c42
+	.4byte	0x1e22
+	.4byte	0x1e29
 	.uleb128 0x13
-	.long	0x21f6
+	.4byte	0x2431
+	.byte	0x1
 	.byte	0
 	.uleb128 0x25
-	.long	.LASF211
+	.byte	0x1
+	.4byte	.LASF212
 	.byte	0x14
 	.byte	0xd1
-	.long	.LASF362
+	.4byte	.LASF362
 	.byte	0x1
-	.long	0x1c56
-	.long	0x1c5c
+	.4byte	0x1e3e
+	.4byte	0x1e45
 	.uleb128 0x13
-	.long	0x21f6
+	.4byte	0x2431
+	.byte	0x1
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF213
+	.byte	0x1
+	.4byte	.LASF214
 	.byte	0x14
 	.byte	0xda
-	.long	.LASF363
-	.long	0x5e
+	.4byte	.LASF363
+	.4byte	0x62
 	.byte	0x1
-	.long	0x1c74
-	.long	0x1c7a
+	.4byte	0x1e5e
+	.4byte	0x1e65
 	.uleb128 0x13
-	.long	0x21eb
+	.4byte	0x2426
+	.byte	0x1
 	.byte	0
 	.uleb128 0x25
-	.long	.LASF215
+	.byte	0x1
+	.4byte	.LASF216
 	.byte	0x14
 	.byte	0xe5
-	.long	.LASF364
+	.4byte	.LASF364
 	.byte	0x1
-	.long	0x1c8e
-	.long	0x1c99
+	.4byte	0x1e7a
+	.4byte	0x1e86
 	.uleb128 0x13
-	.long	0x21f6
+	.4byte	0x2431
+	.byte	0x1
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0xbc
 	.byte	0
 	.uleb128 0x25
-	.long	.LASF217
+	.byte	0x1
+	.4byte	.LASF218
 	.byte	0x14
 	.byte	0xf2
-	.long	.LASF365
+	.4byte	.LASF365
 	.byte	0x1
-	.long	0x1cad
-	.long	0x1cb3
+	.4byte	0x1e9b
+	.4byte	0x1ea2
 	.uleb128 0x13
-	.long	0x21f6
+	.4byte	0x2431
+	.byte	0x1
 	.byte	0
 	.uleb128 0x25
-	.long	.LASF219
+	.byte	0x1
+	.4byte	.LASF220
 	.byte	0x14
 	.byte	0xfd
-	.long	.LASF366
+	.4byte	.LASF366
 	.byte	0x1
-	.long	0x1cc7
-	.long	0x1cd2
+	.4byte	0x1eb7
+	.4byte	0x1ec3
 	.uleb128 0x13
-	.long	0x21f6
+	.4byte	0x2431
+	.byte	0x1
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0xbc
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF221
-	.byte	0x14
-	.value	0x10a
-	.long	.LASF367
 	.byte	0x1
-	.long	0x1ce7
-	.long	0x1cf2
+	.4byte	.LASF222
+	.byte	0x14
+	.2byte	0x10a
+	.4byte	.LASF367
+	.byte	0x1
+	.4byte	0x1ed9
+	.4byte	0x1ee5
 	.uleb128 0x13
-	.long	0x21f6
+	.4byte	0x2431
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x5e
+	.4byte	0x62
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF222
-	.byte	0x14
-	.value	0x119
-	.long	.LASF368
 	.byte	0x1
-	.long	0x1d07
-	.long	0x1d12
+	.4byte	.LASF223
+	.byte	0x14
+	.2byte	0x119
+	.4byte	.LASF368
+	.byte	0x1
+	.4byte	0x1efb
+	.4byte	0x1f07
 	.uleb128 0x13
-	.long	0x21f6
+	.4byte	0x2431
+	.byte	0x1
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0xbc
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF225
-	.byte	0x14
-	.value	0x124
-	.long	.LASF369
 	.byte	0x1
-	.long	0x1d27
-	.long	0x1d32
+	.4byte	.LASF226
+	.byte	0x14
+	.2byte	0x124
+	.4byte	.LASF369
+	.byte	0x1
+	.4byte	0x1f1d
+	.4byte	0x1f29
 	.uleb128 0x13
-	.long	0x21f6
+	.4byte	0x2431
+	.byte	0x1
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0xbc
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF117
-	.byte	0x14
-	.value	0x134
-	.long	.LASF370
-	.long	0x5e
 	.byte	0x1
-	.long	0x1d4b
-	.long	0x1d56
+	.4byte	.LASF118
+	.byte	0x14
+	.2byte	0x134
+	.4byte	.LASF370
+	.4byte	0x62
+	.byte	0x1
+	.4byte	0x1f43
+	.4byte	0x1f4f
 	.uleb128 0x13
-	.long	0x21eb
+	.4byte	0x2426
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x14c1
+	.4byte	0x1618
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF227
-	.byte	0x14
-	.value	0x143
-	.long	.LASF371
-	.long	0x5b1
 	.byte	0x1
-	.long	0x1d6f
-	.long	0x1d7a
+	.4byte	.LASF228
+	.byte	0x14
+	.2byte	0x143
+	.4byte	.LASF371
+	.4byte	0x613
+	.byte	0x1
+	.4byte	0x1f69
+	.4byte	0x1f75
 	.uleb128 0x13
-	.long	0x21eb
+	.4byte	0x2426
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x14c1
+	.4byte	0x1618
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF230
-	.byte	0x14
-	.value	0x158
-	.long	.LASF372
-	.long	0x5b1
 	.byte	0x1
-	.long	0x1d93
-	.long	0x1d9e
+	.4byte	.LASF231
+	.byte	0x14
+	.2byte	0x158
+	.4byte	.LASF372
+	.4byte	0x613
+	.byte	0x1
+	.4byte	0x1f8f
+	.4byte	0x1f9b
 	.uleb128 0x13
-	.long	0x21f6
+	.4byte	0x2431
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x14c1
+	.4byte	0x1618
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF232
-	.byte	0x14
-	.value	0x16e
-	.long	.LASF373
-	.long	0x5b1
 	.byte	0x1
-	.long	0x1db7
-	.long	0x1dc2
+	.4byte	.LASF233
+	.byte	0x14
+	.2byte	0x16e
+	.4byte	.LASF373
+	.4byte	0x613
+	.byte	0x1
+	.4byte	0x1fb5
+	.4byte	0x1fc1
 	.uleb128 0x13
-	.long	0x21f6
+	.4byte	0x2431
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x14c1
+	.4byte	0x1618
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF234
-	.byte	0x14
-	.value	0x17f
-	.long	.LASF374
 	.byte	0x1
-	.long	0x1dd7
-	.long	0x1ddd
+	.4byte	.LASF235
+	.byte	0x14
+	.2byte	0x17f
+	.4byte	.LASF374
+	.byte	0x1
+	.4byte	0x1fd7
+	.4byte	0x1fde
 	.uleb128 0x13
-	.long	0x21f6
+	.4byte	0x2431
+	.byte	0x1
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF236
-	.byte	0x14
-	.value	0x18a
-	.long	.LASF375
-	.long	0x8cc
 	.byte	0x1
-	.long	0x1df6
-	.long	0x1dfc
+	.4byte	.LASF237
+	.byte	0x14
+	.2byte	0x18a
+	.4byte	.LASF375
+	.4byte	0x963
+	.byte	0x1
+	.4byte	0x1ff8
+	.4byte	0x1fff
 	.uleb128 0x13
-	.long	0x21f6
+	.4byte	0x2431
+	.byte	0x1
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF238
-	.byte	0x14
-	.value	0x19c
-	.long	.LASF376
-	.long	0x5e
 	.byte	0x1
-	.long	0x1e15
-	.long	0x1e20
+	.4byte	.LASF239
+	.byte	0x14
+	.2byte	0x19c
+	.4byte	.LASF376
+	.4byte	0x62
+	.byte	0x1
+	.4byte	0x2019
+	.4byte	0x2025
 	.uleb128 0x13
-	.long	0x21f6
+	.4byte	0x2431
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x5e
+	.4byte	0x62
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF238
-	.byte	0x14
-	.value	0x1ac
-	.long	.LASF377
-	.long	0x5e
 	.byte	0x1
-	.long	0x1e39
-	.long	0x1e49
+	.4byte	.LASF239
+	.byte	0x14
+	.2byte	0x1ac
+	.4byte	.LASF377
+	.4byte	0x62
+	.byte	0x1
+	.4byte	0x203f
+	.4byte	0x2050
 	.uleb128 0x13
-	.long	0x21f6
+	.4byte	0x2431
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x5e
+	.4byte	0x62
 	.uleb128 0x15
-	.long	0x5e
+	.4byte	0x62
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF238
-	.byte	0x14
-	.value	0x1be
-	.long	.LASF378
-	.long	0x1ade
 	.byte	0x1
-	.long	0x1e62
-	.long	0x1e6d
+	.4byte	.LASF239
+	.byte	0x14
+	.2byte	0x1be
+	.4byte	.LASF378
+	.4byte	0x1ca0
+	.byte	0x1
+	.4byte	0x206a
+	.4byte	0x2076
 	.uleb128 0x13
-	.long	0x21f6
+	.4byte	0x2431
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x1ade
+	.4byte	0x1ca0
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF238
-	.byte	0x14
-	.value	0x1c8
-	.long	.LASF379
-	.long	0x1ade
 	.byte	0x1
-	.long	0x1e86
-	.long	0x1e96
+	.4byte	.LASF239
+	.byte	0x14
+	.2byte	0x1c8
+	.4byte	.LASF379
+	.4byte	0x1ca0
+	.byte	0x1
+	.4byte	0x2090
+	.4byte	0x20a1
 	.uleb128 0x13
-	.long	0x21f6
+	.4byte	0x2431
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x1ade
+	.4byte	0x1ca0
 	.uleb128 0x15
-	.long	0x1ade
+	.4byte	0x1ca0
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF243
-	.byte	0x14
-	.value	0x1d6
-	.long	.LASF380
-	.long	0x5e
 	.byte	0x1
-	.long	0x1eaf
-	.long	0x1eba
+	.4byte	.LASF244
+	.byte	0x14
+	.2byte	0x1d6
+	.4byte	.LASF380
+	.4byte	0x62
+	.byte	0x1
+	.4byte	0x20bb
+	.4byte	0x20c7
 	.uleb128 0x13
-	.long	0x21f6
+	.4byte	0x2431
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x5e
+	.4byte	0x62
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF243
-	.byte	0x14
-	.value	0x1e4
-	.long	.LASF381
-	.long	0x5e
 	.byte	0x1
-	.long	0x1ed3
-	.long	0x1ee3
+	.4byte	.LASF244
+	.byte	0x14
+	.2byte	0x1e4
+	.4byte	.LASF381
+	.4byte	0x62
+	.byte	0x1
+	.4byte	0x20e1
+	.4byte	0x20f2
 	.uleb128 0x13
-	.long	0x21f6
+	.4byte	0x2431
+	.byte	0x1
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0xbc
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0xbc
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF243
-	.byte	0x14
-	.value	0x1f2
-	.long	.LASF382
-	.long	0x1ade
 	.byte	0x1
-	.long	0x1efc
-	.long	0x1f07
+	.4byte	.LASF244
+	.byte	0x14
+	.2byte	0x1f2
+	.4byte	.LASF382
+	.4byte	0x1ca0
+	.byte	0x1
+	.4byte	0x210c
+	.4byte	0x2118
 	.uleb128 0x13
-	.long	0x21f6
+	.4byte	0x2431
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x1ade
+	.4byte	0x1ca0
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF243
-	.byte	0x14
-	.value	0x1fc
-	.long	.LASF383
-	.long	0x1ade
 	.byte	0x1
-	.long	0x1f20
-	.long	0x1f30
+	.4byte	.LASF244
+	.byte	0x14
+	.2byte	0x1fc
+	.4byte	.LASF383
+	.4byte	0x1ca0
+	.byte	0x1
+	.4byte	0x2132
+	.4byte	0x2143
 	.uleb128 0x13
-	.long	0x21f6
+	.4byte	0x2431
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x1ade
+	.4byte	0x1ca0
 	.uleb128 0x15
-	.long	0x1ade
+	.4byte	0x1ca0
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF248
-	.byte	0x14
-	.value	0x207
-	.long	.LASF384
 	.byte	0x1
-	.long	0x1f45
-	.long	0x1f55
+	.4byte	.LASF249
+	.byte	0x14
+	.2byte	0x207
+	.4byte	.LASF384
+	.byte	0x1
+	.4byte	0x2159
+	.4byte	0x216a
 	.uleb128 0x13
-	.long	0x21f6
+	.4byte	0x2431
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x14c1
+	.4byte	0x1618
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0xbc
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF248
-	.byte	0x14
-	.value	0x222
-	.long	.LASF385
 	.byte	0x1
-	.long	0x1f6a
-	.long	0x1f7a
+	.4byte	.LASF249
+	.byte	0x14
+	.2byte	0x222
+	.4byte	.LASF385
+	.byte	0x1
+	.4byte	0x2180
+	.4byte	0x2191
 	.uleb128 0x13
-	.long	0x21f6
+	.4byte	0x2431
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x2202
+	.4byte	0x243d
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0xbc
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF251
-	.byte	0x14
-	.value	0x244
-	.long	.LASF386
-	.long	0x14c1
 	.byte	0x1
-	.long	0x1f93
-	.long	0x1f99
+	.4byte	.LASF252
+	.byte	0x14
+	.2byte	0x244
+	.4byte	.LASF386
+	.4byte	0x1618
+	.byte	0x1
+	.4byte	0x21ab
+	.4byte	0x21b2
 	.uleb128 0x13
-	.long	0x21eb
+	.4byte	0x2426
+	.byte	0x1
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF251
-	.byte	0x14
-	.value	0x249
-	.long	.LASF387
-	.long	0x14b0
 	.byte	0x1
-	.long	0x1fb2
-	.long	0x1fb8
+	.4byte	.LASF252
+	.byte	0x14
+	.2byte	0x249
+	.4byte	.LASF387
+	.4byte	0x1607
+	.byte	0x1
+	.4byte	0x21cc
+	.4byte	0x21d3
 	.uleb128 0x13
-	.long	0x21f6
+	.4byte	0x2431
+	.byte	0x1
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF254
-	.byte	0x14
-	.value	0x254
-	.long	.LASF388
-	.long	0x14c1
 	.byte	0x1
-	.long	0x1fd1
-	.long	0x1fd7
+	.4byte	.LASF255
+	.byte	0x14
+	.2byte	0x254
+	.4byte	.LASF388
+	.4byte	0x1618
+	.byte	0x1
+	.4byte	0x21ed
+	.4byte	0x21f4
 	.uleb128 0x13
-	.long	0x21eb
+	.4byte	0x2426
+	.byte	0x1
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF254
-	.byte	0x14
-	.value	0x25a
-	.long	.LASF389
-	.long	0x14b0
 	.byte	0x1
-	.long	0x1ff0
-	.long	0x1ff6
+	.4byte	.LASF255
+	.byte	0x14
+	.2byte	0x25a
+	.4byte	.LASF389
+	.4byte	0x1607
+	.byte	0x1
+	.4byte	0x220e
+	.4byte	0x2215
 	.uleb128 0x13
-	.long	0x21f6
+	.4byte	0x2431
+	.byte	0x1
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF257
-	.byte	0x14
-	.value	0x264
-	.long	.LASF390
-	.long	0x5e
 	.byte	0x1
-	.long	0x200f
-	.long	0x201a
+	.4byte	.LASF258
+	.byte	0x14
+	.2byte	0x264
+	.4byte	.LASF390
+	.4byte	0x62
+	.byte	0x1
+	.4byte	0x222f
+	.4byte	0x223b
 	.uleb128 0x13
-	.long	0x21f6
+	.4byte	0x2431
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x14c1
+	.4byte	0x1618
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF257
-	.byte	0x14
-	.value	0x26d
-	.long	.LASF391
-	.long	0x5e
 	.byte	0x1
-	.long	0x2033
-	.long	0x203e
+	.4byte	.LASF258
+	.byte	0x14
+	.2byte	0x26d
+	.4byte	.LASF391
+	.4byte	0x62
+	.byte	0x1
+	.4byte	0x2255
+	.4byte	0x2261
 	.uleb128 0x13
-	.long	0x21f6
+	.4byte	0x2431
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x2202
+	.4byte	0x243d
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF260
-	.byte	0x14
-	.value	0x27c
-	.long	.LASF392
-	.long	0x5e
 	.byte	0x1
-	.long	0x2057
-	.long	0x2062
+	.4byte	.LASF261
+	.byte	0x14
+	.2byte	0x27c
+	.4byte	.LASF392
+	.4byte	0x62
+	.byte	0x1
+	.4byte	0x227b
+	.4byte	0x2287
 	.uleb128 0x13
-	.long	0x21f6
+	.4byte	0x2431
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x14c1
+	.4byte	0x1618
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF260
-	.byte	0x14
-	.value	0x297
-	.long	.LASF393
-	.long	0x5e
 	.byte	0x1
-	.long	0x207b
-	.long	0x2081
+	.4byte	.LASF261
+	.byte	0x14
+	.2byte	0x297
+	.4byte	.LASF393
+	.4byte	0x62
+	.byte	0x1
+	.4byte	0x22a1
+	.4byte	0x22a8
 	.uleb128 0x13
-	.long	0x21f6
+	.4byte	0x2431
+	.byte	0x1
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF263
-	.byte	0x14
-	.value	0x2a4
-	.long	.LASF394
 	.byte	0x1
-	.long	0x2096
-	.long	0x20a6
+	.4byte	.LASF264
+	.byte	0x14
+	.2byte	0x2a4
+	.4byte	.LASF394
+	.byte	0x1
+	.4byte	0x22be
+	.4byte	0x22cf
 	.uleb128 0x13
-	.long	0x21f6
+	.4byte	0x2431
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x14c1
+	.4byte	0x1618
 	.uleb128 0x15
-	.long	0x5e
+	.4byte	0x62
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF263
-	.byte	0x14
-	.value	0x2b9
-	.long	.LASF395
 	.byte	0x1
-	.long	0x20bb
-	.long	0x20c6
+	.4byte	.LASF264
+	.byte	0x14
+	.2byte	0x2b9
+	.4byte	.LASF395
+	.byte	0x1
+	.4byte	0x22e5
+	.4byte	0x22f1
 	.uleb128 0x13
-	.long	0x21f6
+	.4byte	0x2431
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x5e
+	.4byte	0x62
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF121
-	.byte	0x14
-	.value	0x2c8
-	.long	.LASF396
-	.long	0x14b0
 	.byte	0x1
-	.long	0x20df
-	.long	0x20ea
+	.4byte	.LASF122
+	.byte	0x14
+	.2byte	0x2c8
+	.4byte	.LASF396
+	.4byte	0x1607
+	.byte	0x1
+	.4byte	0x230b
+	.4byte	0x2317
 	.uleb128 0x13
-	.long	0x21eb
+	.4byte	0x2426
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x5e
+	.4byte	0x62
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF267
-	.byte	0x14
-	.value	0x2d4
-	.long	.LASF397
 	.byte	0x1
-	.long	0x20ff
-	.long	0x210a
+	.4byte	.LASF268
+	.byte	0x14
+	.2byte	0x2d4
+	.4byte	.LASF397
+	.byte	0x1
+	.4byte	0x232d
+	.4byte	0x2339
 	.uleb128 0x13
-	.long	0x21f6
+	.4byte	0x2431
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x21fc
+	.4byte	0x2437
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF267
-	.byte	0x14
-	.value	0x2e5
-	.long	.LASF398
 	.byte	0x1
-	.long	0x211f
-	.long	0x2134
+	.4byte	.LASF268
+	.byte	0x14
+	.2byte	0x2e5
+	.4byte	.LASF398
+	.byte	0x1
+	.4byte	0x234f
+	.4byte	0x2365
 	.uleb128 0x13
-	.long	0x21f6
+	.4byte	0x2431
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x14aa
+	.4byte	0x1601
 	.uleb128 0x15
-	.long	0x5e
+	.4byte	0x62
 	.uleb128 0x15
-	.long	0x5e
+	.4byte	0x62
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF270
-	.byte	0x14
-	.value	0x2f3
-	.long	.LASF399
-	.long	0x5b1
 	.byte	0x1
-	.long	0x214d
-	.long	0x2153
+	.4byte	.LASF271
+	.byte	0x14
+	.2byte	0x2f3
+	.4byte	.LASF399
+	.4byte	0x613
+	.byte	0x1
+	.4byte	0x237f
+	.4byte	0x2386
 	.uleb128 0x13
-	.long	0x21f6
+	.4byte	0x2431
+	.byte	0x1
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF272
-	.byte	0x14
-	.value	0x2ff
-	.long	.LASF400
 	.byte	0x1
-	.long	0x2168
-	.long	0x2173
+	.4byte	.LASF273
+	.byte	0x14
+	.2byte	0x2ff
+	.4byte	.LASF400
+	.byte	0x1
+	.4byte	0x239c
+	.4byte	0x23a8
 	.uleb128 0x13
-	.long	0x21f6
+	.4byte	0x2431
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x5b1
+	.4byte	0x613
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF274
-	.byte	0x14
-	.value	0x336
-	.long	.LASF401
 	.byte	0x1
-	.long	0x2188
-	.long	0x2193
+	.4byte	.LASF275
+	.byte	0x14
+	.2byte	0x336
+	.4byte	.LASF401
+	.byte	0x1
+	.4byte	0x23be
+	.4byte	0x23ca
 	.uleb128 0x13
-	.long	0x21f6
+	.4byte	0x2431
+	.byte	0x1
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0xbc
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF276
-	.byte	0x14
-	.value	0x30f
-	.long	.LASF402
 	.byte	0x1
-	.long	0x21a8
-	.long	0x21b3
+	.4byte	.LASF277
+	.byte	0x14
+	.2byte	0x30f
+	.4byte	.LASF402
+	.byte	0x1
+	.4byte	0x23e0
+	.4byte	0x23ec
 	.uleb128 0x13
-	.long	0x21f6
+	.4byte	0x2431
+	.byte	0x1
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0xbc
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF278
-	.byte	0x14
-	.value	0x31c
-	.long	.LASF403
 	.byte	0x1
-	.long	0x21c8
-	.long	0x21d3
+	.4byte	.LASF279
+	.byte	0x14
+	.2byte	0x31c
+	.4byte	.LASF403
+	.byte	0x1
+	.4byte	0x2402
+	.4byte	0x240e
 	.uleb128 0x13
-	.long	0x21f6
+	.4byte	0x2431
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x2202
+	.4byte	0x243d
 	.byte	0
-	.uleb128 0x2a
-	.string	"X"
-	.long	0x8cc
-	.uleb128 0x2a
-	.string	"A"
-	.long	0x19da
+	.uleb128 0x29
+	.ascii	"X\000"
+	.4byte	0x963
+	.uleb128 0x29
+	.ascii	"A\000"
+	.4byte	0x1b8b
 	.uleb128 0x32
-	.long	.LASF280
-	.long	0x4120
+	.4byte	.LASF281
+	.4byte	0x456a
 	.byte	0
-	.uleb128 0x8
+	.uleb128 0x9
 	.byte	0x4
-	.long	0x21f1
+	.4byte	0x242c
 	.uleb128 0x1b
-	.long	0x1a82
-	.uleb128 0x8
+	.4byte	0x1c37
+	.uleb128 0x9
 	.byte	0x4
-	.long	0x1a82
+	.4byte	0x1c37
 	.uleb128 0x28
 	.byte	0x4
-	.long	0x21f1
+	.4byte	0x242c
 	.uleb128 0x28
 	.byte	0x4
-	.long	0x1a82
-	.uleb128 0x24
-	.long	.LASF404
+	.4byte	0x1c37
+	.uleb128 0x23
+	.4byte	.LASF404
 	.byte	0x1
 	.byte	0x12
 	.byte	0x70
-	.long	0x22aa
-	.uleb128 0x29
-	.long	.LASF180
+	.4byte	0x24e9
+	.uleb128 0x3
+	.4byte	.LASF181
 	.byte	0x12
 	.byte	0x73
-	.long	0xb8
-	.byte	0x1
-	.uleb128 0x29
-	.long	.LASF181
+	.4byte	0xbc
+	.uleb128 0x3
+	.4byte	.LASF182
 	.byte	0x12
 	.byte	0x75
-	.long	0x22aa
-	.byte	0x1
+	.4byte	0x24e9
 	.uleb128 0x16
-	.long	.LASF182
+	.byte	0x1
+	.4byte	.LASF183
 	.byte	0x12
 	.byte	0x85
-	.long	.LASF405
-	.long	0x2220
+	.4byte	.LASF405
+	.4byte	0x245a
 	.byte	0x1
-	.long	0x2244
-	.long	0x224f
+	.4byte	0x247e
+	.4byte	0x248a
 	.uleb128 0x13
-	.long	0x22dd
+	.4byte	0x251c
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x2214
+	.4byte	0x244f
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF184
+	.byte	0x1
+	.4byte	.LASF185
 	.byte	0x12
 	.byte	0x8e
-	.long	.LASF406
-	.long	0x2220
+	.4byte	.LASF406
+	.4byte	0x245a
 	.byte	0x1
-	.long	0x2267
-	.long	0x2277
+	.4byte	0x24a3
+	.4byte	0x24b4
 	.uleb128 0x13
-	.long	0x22dd
+	.4byte	0x251c
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x2220
+	.4byte	0x245a
 	.uleb128 0x15
-	.long	0x2214
+	.4byte	0x244f
 	.byte	0
 	.uleb128 0x25
-	.long	.LASF186
+	.byte	0x1
+	.4byte	.LASF187
 	.byte	0x12
 	.byte	0x93
-	.long	.LASF407
+	.4byte	.LASF407
 	.byte	0x1
-	.long	0x228b
-	.long	0x229b
+	.4byte	0x24c9
+	.4byte	0x24da
 	.uleb128 0x13
-	.long	0x22dd
+	.4byte	0x251c
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x2220
+	.4byte	0x245a
 	.uleb128 0x15
-	.long	0x2214
+	.4byte	0x244f
 	.byte	0
-	.uleb128 0x2a
-	.string	"T"
-	.long	0x22b0
-	.uleb128 0x2a
-	.string	"M"
-	.long	0x4892
-	.byte	0
-	.uleb128 0x8
-	.byte	0x4
-	.long	0x22b0
-	.uleb128 0x8
-	.byte	0x4
-	.long	0x22b6
-	.uleb128 0x2b
-	.long	.LASF409
-	.long	0x22cc
 	.uleb128 0x29
-	.long	.LASF189
+	.ascii	"T\000"
+	.4byte	0x24ef
+	.uleb128 0x29
+	.ascii	"M\000"
+	.4byte	0x4d0f
+	.byte	0
+	.uleb128 0x9
+	.byte	0x4
+	.4byte	0x24ef
+	.uleb128 0x9
+	.byte	0x4
+	.4byte	0x24f5
+	.uleb128 0x2a
+	.4byte	.LASF409
+	.byte	0x1
+	.4byte	0x250b
+	.uleb128 0x3
+	.4byte	.LASF190
 	.byte	0x16
 	.byte	0xb7
-	.long	0x233f
-	.byte	0x1
+	.4byte	0x258b
 	.byte	0
 	.uleb128 0x1b
-	.long	0x22b0
+	.4byte	0x24ef
 	.uleb128 0x28
 	.byte	0x4
-	.long	0x22b0
+	.4byte	0x24ef
 	.uleb128 0x28
 	.byte	0x4
-	.long	0x22cc
-	.uleb128 0x8
+	.4byte	0x250b
+	.uleb128 0x9
 	.byte	0x4
-	.long	0x2208
-	.uleb128 0x24
-	.long	.LASF410
+	.4byte	0x2443
+	.uleb128 0x23
+	.4byte	.LASF410
 	.byte	0x10
 	.byte	0x14
 	.byte	0x51
-	.long	0x2a4c
-	.uleb128 0xf
-	.string	"p"
+	.4byte	0x2d11
+	.uleb128 0x2b
+	.ascii	"p\000"
 	.byte	0x14
 	.byte	0x54
-	.long	0x22aa
-	.byte	0
+	.4byte	0x24e9
 	.byte	0x2
-	.uleb128 0x10
-	.long	.LASF191
+	.byte	0x23
+	.uleb128 0
+	.byte	0x2
+	.uleb128 0x24
+	.4byte	.LASF192
 	.byte	0x14
 	.byte	0x55
-	.long	0xb8
-	.byte	0x4
+	.4byte	0xbc
 	.byte	0x2
-	.uleb128 0x10
-	.long	.LASF192
+	.byte	0x23
+	.uleb128 0x4
+	.byte	0x2
+	.uleb128 0x24
+	.4byte	.LASF193
 	.byte	0x14
 	.byte	0x56
-	.long	0xb8
-	.byte	0x8
+	.4byte	0xbc
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x8
 	.byte	0x2
 	.uleb128 0x2c
-	.long	.LASF193
+	.4byte	.LASF194
 	.byte	0x14
 	.byte	0x57
-	.long	0x5b1
+	.4byte	0x613
 	.byte	0x1
 	.byte	0x1
 	.byte	0x7
-	.byte	0xc
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0xc
 	.byte	0x2
 	.uleb128 0x2c
-	.long	.LASF194
+	.4byte	.LASF195
 	.byte	0x14
 	.byte	0x58
-	.long	0x5b1
+	.4byte	0x613
 	.byte	0x1
 	.byte	0x1
 	.byte	0x6
-	.byte	0xc
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0xc
 	.byte	0x2
 	.uleb128 0x2d
-	.string	"a"
+	.ascii	"a\000"
 	.byte	0x14
-	.value	0x332
-	.long	0x2208
-	.byte	0xd
-	.uleb128 0x29
-	.long	.LASF195
+	.2byte	0x332
+	.4byte	0x2443
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0xd
+	.byte	0x3
+	.uleb128 0x3
+	.4byte	.LASF196
 	.byte	0x14
 	.byte	0x5a
-	.long	0x22aa
-	.byte	0x1
+	.4byte	0x24e9
 	.uleb128 0x16
-	.long	.LASF196
+	.byte	0x1
+	.4byte	.LASF197
 	.byte	0x14
 	.byte	0x61
-	.long	.LASF411
-	.long	0x233f
+	.4byte	.LASF411
+	.4byte	0x258b
 	.byte	0x1
-	.long	0x2363
-	.long	0x2369
+	.4byte	0x25af
+	.4byte	0x25b6
 	.uleb128 0x13
-	.long	0x2a4c
+	.4byte	0x2d11
+	.byte	0x1
 	.byte	0
 	.uleb128 0x2e
-	.string	"end"
+	.byte	0x1
+	.ascii	"end\000"
 	.byte	0x14
 	.byte	0x67
-	.long	.LASF412
-	.long	0x233f
+	.4byte	.LASF412
+	.4byte	0x258b
 	.byte	0x1
-	.long	0x2381
-	.long	0x2387
+	.4byte	0x25cf
+	.4byte	0x25d6
 	.uleb128 0x13
-	.long	0x2a4c
+	.4byte	0x2d11
+	.byte	0x1
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF198
+	.byte	0x1
+	.4byte	.LASF199
 	.byte	0x14
 	.byte	0x6c
-	.long	.LASF413
-	.long	0x5b1
+	.4byte	.LASF413
+	.4byte	0x613
 	.byte	0x1
-	.long	0x239f
-	.long	0x23a5
+	.4byte	0x25ef
+	.4byte	0x25f6
 	.uleb128 0x13
-	.long	0x2a4c
+	.4byte	0x2d11
+	.byte	0x1
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF107
+	.byte	0x1
+	.4byte	.LASF109
 	.byte	0x14
 	.byte	0x71
-	.long	.LASF414
-	.long	0xb8
+	.4byte	.LASF414
+	.4byte	0xbc
 	.byte	0x1
-	.long	0x23bd
-	.long	0x23c3
+	.4byte	0x260f
+	.4byte	0x2616
 	.uleb128 0x13
-	.long	0x2a4c
+	.4byte	0x2d11
+	.byte	0x1
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF111
+	.byte	0x1
+	.4byte	.LASF113
 	.byte	0x14
 	.byte	0x77
-	.long	.LASF415
-	.long	0xb8
+	.4byte	.LASF415
+	.4byte	0xbc
 	.byte	0x1
-	.long	0x23db
-	.long	0x23e1
+	.4byte	0x262f
+	.4byte	0x2636
 	.uleb128 0x13
-	.long	0x2a4c
+	.4byte	0x2d11
+	.byte	0x1
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF202
+	.byte	0x1
+	.4byte	.LASF203
 	.byte	0x14
 	.byte	0x7d
-	.long	.LASF416
-	.long	0x22aa
+	.4byte	.LASF416
+	.4byte	0x24e9
 	.byte	0x1
-	.long	0x23f9
-	.long	0x23ff
+	.4byte	0x264f
+	.4byte	0x2656
 	.uleb128 0x13
-	.long	0x2a57
+	.4byte	0x2d1c
+	.byte	0x1
 	.byte	0
 	.uleb128 0x2f
-	.long	.LASF204
+	.byte	0x1
+	.4byte	.LASF205
 	.byte	0x14
 	.byte	0x83
+	.4byte	0x2d1c
 	.byte	0x1
-	.long	0x240f
-	.long	0x241a
+	.byte	0x1
+	.4byte	0x266c
+	.4byte	0x2678
 	.uleb128 0x13
-	.long	0x2a57
+	.4byte	0x2d1c
+	.byte	0x1
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0xbc
 	.byte	0
 	.uleb128 0x12
-	.long	.LASF205
+	.byte	0x1
+	.4byte	.LASF206
 	.byte	0x14
 	.byte	0x89
+	.4byte	0xfa
 	.byte	0x1
-	.long	0x242a
-	.long	0x2435
+	.4byte	0x268d
+	.4byte	0x269a
 	.uleb128 0x13
-	.long	0x2a57
+	.4byte	0x2d1c
+	.byte	0x1
 	.uleb128 0x13
-	.long	0x5e
+	.4byte	0x62
+	.byte	0x1
 	.byte	0
 	.uleb128 0x12
-	.long	.LASF204
+	.byte	0x1
+	.4byte	.LASF205
 	.byte	0x14
 	.byte	0x99
+	.4byte	0x2d1c
 	.byte	0x1
-	.long	0x2445
-	.long	0x2450
+	.4byte	0x26af
+	.4byte	0x26bb
 	.uleb128 0x13
-	.long	0x2a57
+	.4byte	0x2d1c
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x2a5d
+	.4byte	0x2d22
 	.byte	0
 	.uleb128 0x25
-	.long	.LASF206
+	.byte	0x1
+	.4byte	.LASF207
 	.byte	0x14
 	.byte	0xa4
-	.long	.LASF417
+	.4byte	.LASF417
 	.byte	0x1
-	.long	0x2464
-	.long	0x246a
+	.4byte	0x26d0
+	.4byte	0x26d7
 	.uleb128 0x13
-	.long	0x2a57
+	.4byte	0x2d1c
+	.byte	0x1
 	.byte	0
 	.uleb128 0x25
-	.long	.LASF124
+	.byte	0x1
+	.4byte	.LASF125
 	.byte	0x14
 	.byte	0xba
-	.long	.LASF418
+	.4byte	.LASF418
 	.byte	0x1
-	.long	0x247e
-	.long	0x2489
+	.4byte	0x26ec
+	.4byte	0x26f8
 	.uleb128 0x13
-	.long	0x2a57
+	.4byte	0x2d1c
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x2a5d
+	.4byte	0x2d22
 	.byte	0
 	.uleb128 0x25
-	.long	.LASF209
+	.byte	0x1
+	.4byte	.LASF210
 	.byte	0x14
 	.byte	0xc7
-	.long	.LASF419
+	.4byte	.LASF419
 	.byte	0x1
-	.long	0x249d
-	.long	0x24a3
+	.4byte	0x270d
+	.4byte	0x2714
 	.uleb128 0x13
-	.long	0x2a57
+	.4byte	0x2d1c
+	.byte	0x1
 	.byte	0
 	.uleb128 0x25
-	.long	.LASF211
+	.byte	0x1
+	.4byte	.LASF212
 	.byte	0x14
 	.byte	0xd1
-	.long	.LASF420
+	.4byte	.LASF420
 	.byte	0x1
-	.long	0x24b7
-	.long	0x24bd
+	.4byte	0x2729
+	.4byte	0x2730
 	.uleb128 0x13
-	.long	0x2a57
+	.4byte	0x2d1c
+	.byte	0x1
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF213
+	.byte	0x1
+	.4byte	.LASF214
 	.byte	0x14
 	.byte	0xda
-	.long	.LASF421
-	.long	0x5e
+	.4byte	.LASF421
+	.4byte	0x62
 	.byte	0x1
-	.long	0x24d5
-	.long	0x24db
+	.4byte	0x2749
+	.4byte	0x2750
 	.uleb128 0x13
-	.long	0x2a4c
+	.4byte	0x2d11
+	.byte	0x1
 	.byte	0
 	.uleb128 0x25
-	.long	.LASF215
+	.byte	0x1
+	.4byte	.LASF216
 	.byte	0x14
 	.byte	0xe5
-	.long	.LASF422
+	.4byte	.LASF422
 	.byte	0x1
-	.long	0x24ef
-	.long	0x24fa
+	.4byte	0x2765
+	.4byte	0x2771
 	.uleb128 0x13
-	.long	0x2a57
+	.4byte	0x2d1c
+	.byte	0x1
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0xbc
 	.byte	0
 	.uleb128 0x25
-	.long	.LASF217
+	.byte	0x1
+	.4byte	.LASF218
 	.byte	0x14
 	.byte	0xf2
-	.long	.LASF423
+	.4byte	.LASF423
 	.byte	0x1
-	.long	0x250e
-	.long	0x2514
+	.4byte	0x2786
+	.4byte	0x278d
 	.uleb128 0x13
-	.long	0x2a57
+	.4byte	0x2d1c
+	.byte	0x1
 	.byte	0
 	.uleb128 0x25
-	.long	.LASF219
+	.byte	0x1
+	.4byte	.LASF220
 	.byte	0x14
 	.byte	0xfd
-	.long	.LASF424
+	.4byte	.LASF424
 	.byte	0x1
-	.long	0x2528
-	.long	0x2533
+	.4byte	0x27a2
+	.4byte	0x27ae
 	.uleb128 0x13
-	.long	0x2a57
+	.4byte	0x2d1c
+	.byte	0x1
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0xbc
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF221
-	.byte	0x14
-	.value	0x10a
-	.long	.LASF425
 	.byte	0x1
-	.long	0x2548
-	.long	0x2553
+	.4byte	.LASF222
+	.byte	0x14
+	.2byte	0x10a
+	.4byte	.LASF425
+	.byte	0x1
+	.4byte	0x27c4
+	.4byte	0x27d0
 	.uleb128 0x13
-	.long	0x2a57
+	.4byte	0x2d1c
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x5e
+	.4byte	0x62
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF222
-	.byte	0x14
-	.value	0x119
-	.long	.LASF426
 	.byte	0x1
-	.long	0x2568
-	.long	0x2573
+	.4byte	.LASF223
+	.byte	0x14
+	.2byte	0x119
+	.4byte	.LASF426
+	.byte	0x1
+	.4byte	0x27e6
+	.4byte	0x27f2
 	.uleb128 0x13
-	.long	0x2a57
+	.4byte	0x2d1c
+	.byte	0x1
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0xbc
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF225
-	.byte	0x14
-	.value	0x124
-	.long	.LASF427
 	.byte	0x1
-	.long	0x2588
-	.long	0x2593
+	.4byte	.LASF226
+	.byte	0x14
+	.2byte	0x124
+	.4byte	.LASF427
+	.byte	0x1
+	.4byte	0x2808
+	.4byte	0x2814
 	.uleb128 0x13
-	.long	0x2a57
+	.4byte	0x2d1c
+	.byte	0x1
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0xbc
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF117
-	.byte	0x14
-	.value	0x134
-	.long	.LASF428
-	.long	0x5e
 	.byte	0x1
-	.long	0x25ac
-	.long	0x25b7
+	.4byte	.LASF118
+	.byte	0x14
+	.2byte	0x134
+	.4byte	.LASF428
+	.4byte	0x62
+	.byte	0x1
+	.4byte	0x282e
+	.4byte	0x283a
 	.uleb128 0x13
-	.long	0x2a4c
+	.4byte	0x2d11
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x22d7
+	.4byte	0x2516
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF227
-	.byte	0x14
-	.value	0x143
-	.long	.LASF429
-	.long	0x5b1
 	.byte	0x1
-	.long	0x25d0
-	.long	0x25db
+	.4byte	.LASF228
+	.byte	0x14
+	.2byte	0x143
+	.4byte	.LASF429
+	.4byte	0x613
+	.byte	0x1
+	.4byte	0x2854
+	.4byte	0x2860
 	.uleb128 0x13
-	.long	0x2a4c
+	.4byte	0x2d11
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x22d7
+	.4byte	0x2516
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF230
-	.byte	0x14
-	.value	0x158
-	.long	.LASF430
-	.long	0x5b1
 	.byte	0x1
-	.long	0x25f4
-	.long	0x25ff
+	.4byte	.LASF231
+	.byte	0x14
+	.2byte	0x158
+	.4byte	.LASF430
+	.4byte	0x613
+	.byte	0x1
+	.4byte	0x287a
+	.4byte	0x2886
 	.uleb128 0x13
-	.long	0x2a57
+	.4byte	0x2d1c
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x22d7
+	.4byte	0x2516
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF232
-	.byte	0x14
-	.value	0x16e
-	.long	.LASF431
-	.long	0x5b1
 	.byte	0x1
-	.long	0x2618
-	.long	0x2623
+	.4byte	.LASF233
+	.byte	0x14
+	.2byte	0x16e
+	.4byte	.LASF431
+	.4byte	0x613
+	.byte	0x1
+	.4byte	0x28a0
+	.4byte	0x28ac
 	.uleb128 0x13
-	.long	0x2a57
+	.4byte	0x2d1c
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x22d7
+	.4byte	0x2516
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF234
-	.byte	0x14
-	.value	0x17f
-	.long	.LASF432
 	.byte	0x1
-	.long	0x2638
-	.long	0x263e
+	.4byte	.LASF235
+	.byte	0x14
+	.2byte	0x17f
+	.4byte	.LASF432
+	.byte	0x1
+	.4byte	0x28c2
+	.4byte	0x28c9
 	.uleb128 0x13
-	.long	0x2a57
+	.4byte	0x2d1c
+	.byte	0x1
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF236
-	.byte	0x14
-	.value	0x18a
-	.long	.LASF433
-	.long	0x22b0
 	.byte	0x1
-	.long	0x2657
-	.long	0x265d
+	.4byte	.LASF237
+	.byte	0x14
+	.2byte	0x18a
+	.4byte	.LASF433
+	.4byte	0x24ef
+	.byte	0x1
+	.4byte	0x28e3
+	.4byte	0x28ea
 	.uleb128 0x13
-	.long	0x2a57
+	.4byte	0x2d1c
+	.byte	0x1
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF238
-	.byte	0x14
-	.value	0x19c
-	.long	.LASF434
-	.long	0x5e
 	.byte	0x1
-	.long	0x2676
-	.long	0x2681
+	.4byte	.LASF239
+	.byte	0x14
+	.2byte	0x19c
+	.4byte	.LASF434
+	.4byte	0x62
+	.byte	0x1
+	.4byte	0x2904
+	.4byte	0x2910
 	.uleb128 0x13
-	.long	0x2a57
+	.4byte	0x2d1c
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x5e
+	.4byte	0x62
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF238
-	.byte	0x14
-	.value	0x1ac
-	.long	.LASF435
-	.long	0x5e
 	.byte	0x1
-	.long	0x269a
-	.long	0x26aa
+	.4byte	.LASF239
+	.byte	0x14
+	.2byte	0x1ac
+	.4byte	.LASF435
+	.4byte	0x62
+	.byte	0x1
+	.4byte	0x292a
+	.4byte	0x293b
 	.uleb128 0x13
-	.long	0x2a57
+	.4byte	0x2d1c
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x5e
+	.4byte	0x62
 	.uleb128 0x15
-	.long	0x5e
+	.4byte	0x62
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF238
-	.byte	0x14
-	.value	0x1be
-	.long	.LASF436
-	.long	0x233f
 	.byte	0x1
-	.long	0x26c3
-	.long	0x26ce
+	.4byte	.LASF239
+	.byte	0x14
+	.2byte	0x1be
+	.4byte	.LASF436
+	.4byte	0x258b
+	.byte	0x1
+	.4byte	0x2955
+	.4byte	0x2961
 	.uleb128 0x13
-	.long	0x2a57
+	.4byte	0x2d1c
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x233f
+	.4byte	0x258b
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF238
-	.byte	0x14
-	.value	0x1c8
-	.long	.LASF437
-	.long	0x233f
 	.byte	0x1
-	.long	0x26e7
-	.long	0x26f7
+	.4byte	.LASF239
+	.byte	0x14
+	.2byte	0x1c8
+	.4byte	.LASF437
+	.4byte	0x258b
+	.byte	0x1
+	.4byte	0x297b
+	.4byte	0x298c
 	.uleb128 0x13
-	.long	0x2a57
+	.4byte	0x2d1c
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x233f
+	.4byte	0x258b
 	.uleb128 0x15
-	.long	0x233f
+	.4byte	0x258b
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF243
-	.byte	0x14
-	.value	0x1d6
-	.long	.LASF438
-	.long	0x5e
 	.byte	0x1
-	.long	0x2710
-	.long	0x271b
+	.4byte	.LASF244
+	.byte	0x14
+	.2byte	0x1d6
+	.4byte	.LASF438
+	.4byte	0x62
+	.byte	0x1
+	.4byte	0x29a6
+	.4byte	0x29b2
 	.uleb128 0x13
-	.long	0x2a57
+	.4byte	0x2d1c
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x5e
+	.4byte	0x62
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF243
-	.byte	0x14
-	.value	0x1e4
-	.long	.LASF439
-	.long	0x5e
 	.byte	0x1
-	.long	0x2734
-	.long	0x2744
+	.4byte	.LASF244
+	.byte	0x14
+	.2byte	0x1e4
+	.4byte	.LASF439
+	.4byte	0x62
+	.byte	0x1
+	.4byte	0x29cc
+	.4byte	0x29dd
 	.uleb128 0x13
-	.long	0x2a57
+	.4byte	0x2d1c
+	.byte	0x1
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0xbc
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0xbc
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF243
-	.byte	0x14
-	.value	0x1f2
-	.long	.LASF440
-	.long	0x233f
 	.byte	0x1
-	.long	0x275d
-	.long	0x2768
+	.4byte	.LASF244
+	.byte	0x14
+	.2byte	0x1f2
+	.4byte	.LASF440
+	.4byte	0x258b
+	.byte	0x1
+	.4byte	0x29f7
+	.4byte	0x2a03
 	.uleb128 0x13
-	.long	0x2a57
+	.4byte	0x2d1c
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x233f
+	.4byte	0x258b
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF243
-	.byte	0x14
-	.value	0x1fc
-	.long	.LASF441
-	.long	0x233f
 	.byte	0x1
-	.long	0x2781
-	.long	0x2791
+	.4byte	.LASF244
+	.byte	0x14
+	.2byte	0x1fc
+	.4byte	.LASF441
+	.4byte	0x258b
+	.byte	0x1
+	.4byte	0x2a1d
+	.4byte	0x2a2e
 	.uleb128 0x13
-	.long	0x2a57
+	.4byte	0x2d1c
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x233f
+	.4byte	0x258b
 	.uleb128 0x15
-	.long	0x233f
+	.4byte	0x258b
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF248
-	.byte	0x14
-	.value	0x207
-	.long	.LASF442
 	.byte	0x1
-	.long	0x27a6
-	.long	0x27b6
+	.4byte	.LASF249
+	.byte	0x14
+	.2byte	0x207
+	.4byte	.LASF442
+	.byte	0x1
+	.4byte	0x2a44
+	.4byte	0x2a55
 	.uleb128 0x13
-	.long	0x2a57
+	.4byte	0x2d1c
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x22d7
+	.4byte	0x2516
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0xbc
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF248
-	.byte	0x14
-	.value	0x222
-	.long	.LASF443
 	.byte	0x1
-	.long	0x27cb
-	.long	0x27db
+	.4byte	.LASF249
+	.byte	0x14
+	.2byte	0x222
+	.4byte	.LASF443
+	.byte	0x1
+	.4byte	0x2a6b
+	.4byte	0x2a7c
 	.uleb128 0x13
-	.long	0x2a57
+	.4byte	0x2d1c
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x2a63
+	.4byte	0x2d28
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0xbc
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF251
-	.byte	0x14
-	.value	0x244
-	.long	.LASF444
-	.long	0x22d7
 	.byte	0x1
-	.long	0x27f4
-	.long	0x27fa
+	.4byte	.LASF252
+	.byte	0x14
+	.2byte	0x244
+	.4byte	.LASF444
+	.4byte	0x2516
+	.byte	0x1
+	.4byte	0x2a96
+	.4byte	0x2a9d
 	.uleb128 0x13
-	.long	0x2a4c
+	.4byte	0x2d11
+	.byte	0x1
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF251
-	.byte	0x14
-	.value	0x249
-	.long	.LASF445
-	.long	0x22d1
 	.byte	0x1
-	.long	0x2813
-	.long	0x2819
+	.4byte	.LASF252
+	.byte	0x14
+	.2byte	0x249
+	.4byte	.LASF445
+	.4byte	0x2510
+	.byte	0x1
+	.4byte	0x2ab7
+	.4byte	0x2abe
 	.uleb128 0x13
-	.long	0x2a57
+	.4byte	0x2d1c
+	.byte	0x1
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF254
-	.byte	0x14
-	.value	0x254
-	.long	.LASF446
-	.long	0x22d7
 	.byte	0x1
-	.long	0x2832
-	.long	0x2838
+	.4byte	.LASF255
+	.byte	0x14
+	.2byte	0x254
+	.4byte	.LASF446
+	.4byte	0x2516
+	.byte	0x1
+	.4byte	0x2ad8
+	.4byte	0x2adf
 	.uleb128 0x13
-	.long	0x2a4c
+	.4byte	0x2d11
+	.byte	0x1
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF254
-	.byte	0x14
-	.value	0x25a
-	.long	.LASF447
-	.long	0x22d1
 	.byte	0x1
-	.long	0x2851
-	.long	0x2857
+	.4byte	.LASF255
+	.byte	0x14
+	.2byte	0x25a
+	.4byte	.LASF447
+	.4byte	0x2510
+	.byte	0x1
+	.4byte	0x2af9
+	.4byte	0x2b00
 	.uleb128 0x13
-	.long	0x2a57
+	.4byte	0x2d1c
+	.byte	0x1
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF257
-	.byte	0x14
-	.value	0x264
-	.long	.LASF448
-	.long	0x5e
 	.byte	0x1
-	.long	0x2870
-	.long	0x287b
+	.4byte	.LASF258
+	.byte	0x14
+	.2byte	0x264
+	.4byte	.LASF448
+	.4byte	0x62
+	.byte	0x1
+	.4byte	0x2b1a
+	.4byte	0x2b26
 	.uleb128 0x13
-	.long	0x2a57
+	.4byte	0x2d1c
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x22d7
+	.4byte	0x2516
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF257
-	.byte	0x14
-	.value	0x26d
-	.long	.LASF449
-	.long	0x5e
 	.byte	0x1
-	.long	0x2894
-	.long	0x289f
+	.4byte	.LASF258
+	.byte	0x14
+	.2byte	0x26d
+	.4byte	.LASF449
+	.4byte	0x62
+	.byte	0x1
+	.4byte	0x2b40
+	.4byte	0x2b4c
 	.uleb128 0x13
-	.long	0x2a57
+	.4byte	0x2d1c
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x2a63
+	.4byte	0x2d28
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF260
-	.byte	0x14
-	.value	0x27c
-	.long	.LASF450
-	.long	0x5e
 	.byte	0x1
-	.long	0x28b8
-	.long	0x28c3
+	.4byte	.LASF261
+	.byte	0x14
+	.2byte	0x27c
+	.4byte	.LASF450
+	.4byte	0x62
+	.byte	0x1
+	.4byte	0x2b66
+	.4byte	0x2b72
 	.uleb128 0x13
-	.long	0x2a57
+	.4byte	0x2d1c
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x22d7
+	.4byte	0x2516
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF260
-	.byte	0x14
-	.value	0x297
-	.long	.LASF451
-	.long	0x5e
 	.byte	0x1
-	.long	0x28dc
-	.long	0x28e2
+	.4byte	.LASF261
+	.byte	0x14
+	.2byte	0x297
+	.4byte	.LASF451
+	.4byte	0x62
+	.byte	0x1
+	.4byte	0x2b8c
+	.4byte	0x2b93
 	.uleb128 0x13
-	.long	0x2a57
+	.4byte	0x2d1c
+	.byte	0x1
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF263
-	.byte	0x14
-	.value	0x2a4
-	.long	.LASF452
 	.byte	0x1
-	.long	0x28f7
-	.long	0x2907
+	.4byte	.LASF264
+	.byte	0x14
+	.2byte	0x2a4
+	.4byte	.LASF452
+	.byte	0x1
+	.4byte	0x2ba9
+	.4byte	0x2bba
 	.uleb128 0x13
-	.long	0x2a57
+	.4byte	0x2d1c
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x22d7
+	.4byte	0x2516
 	.uleb128 0x15
-	.long	0x5e
+	.4byte	0x62
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF263
-	.byte	0x14
-	.value	0x2b9
-	.long	.LASF453
 	.byte	0x1
-	.long	0x291c
-	.long	0x2927
+	.4byte	.LASF264
+	.byte	0x14
+	.2byte	0x2b9
+	.4byte	.LASF453
+	.byte	0x1
+	.4byte	0x2bd0
+	.4byte	0x2bdc
 	.uleb128 0x13
-	.long	0x2a57
+	.4byte	0x2d1c
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x5e
+	.4byte	0x62
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF121
-	.byte	0x14
-	.value	0x2c8
-	.long	.LASF454
-	.long	0x22d1
 	.byte	0x1
-	.long	0x2940
-	.long	0x294b
+	.4byte	.LASF122
+	.byte	0x14
+	.2byte	0x2c8
+	.4byte	.LASF454
+	.4byte	0x2510
+	.byte	0x1
+	.4byte	0x2bf6
+	.4byte	0x2c02
 	.uleb128 0x13
-	.long	0x2a4c
+	.4byte	0x2d11
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x5e
+	.4byte	0x62
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF267
-	.byte	0x14
-	.value	0x2d4
-	.long	.LASF455
 	.byte	0x1
-	.long	0x2960
-	.long	0x296b
+	.4byte	.LASF268
+	.byte	0x14
+	.2byte	0x2d4
+	.4byte	.LASF455
+	.byte	0x1
+	.4byte	0x2c18
+	.4byte	0x2c24
 	.uleb128 0x13
-	.long	0x2a57
+	.4byte	0x2d1c
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x2a5d
+	.4byte	0x2d22
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF267
-	.byte	0x14
-	.value	0x2e5
-	.long	.LASF456
 	.byte	0x1
-	.long	0x2980
-	.long	0x2995
+	.4byte	.LASF268
+	.byte	0x14
+	.2byte	0x2e5
+	.4byte	.LASF456
+	.byte	0x1
+	.4byte	0x2c3a
+	.4byte	0x2c50
 	.uleb128 0x13
-	.long	0x2a57
+	.4byte	0x2d1c
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x22aa
+	.4byte	0x24e9
 	.uleb128 0x15
-	.long	0x5e
+	.4byte	0x62
 	.uleb128 0x15
-	.long	0x5e
+	.4byte	0x62
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF270
-	.byte	0x14
-	.value	0x2f3
-	.long	.LASF457
-	.long	0x5b1
 	.byte	0x1
-	.long	0x29ae
-	.long	0x29b4
+	.4byte	.LASF271
+	.byte	0x14
+	.2byte	0x2f3
+	.4byte	.LASF457
+	.4byte	0x613
+	.byte	0x1
+	.4byte	0x2c6a
+	.4byte	0x2c71
 	.uleb128 0x13
-	.long	0x2a57
+	.4byte	0x2d1c
+	.byte	0x1
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF272
-	.byte	0x14
-	.value	0x2ff
-	.long	.LASF458
 	.byte	0x1
-	.long	0x29c9
-	.long	0x29d4
+	.4byte	.LASF273
+	.byte	0x14
+	.2byte	0x2ff
+	.4byte	.LASF458
+	.byte	0x1
+	.4byte	0x2c87
+	.4byte	0x2c93
 	.uleb128 0x13
-	.long	0x2a57
+	.4byte	0x2d1c
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x5b1
+	.4byte	0x613
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF274
-	.byte	0x14
-	.value	0x336
-	.long	.LASF459
 	.byte	0x1
-	.long	0x29e9
-	.long	0x29f4
+	.4byte	.LASF275
+	.byte	0x14
+	.2byte	0x336
+	.4byte	.LASF459
+	.byte	0x1
+	.4byte	0x2ca9
+	.4byte	0x2cb5
 	.uleb128 0x13
-	.long	0x2a57
+	.4byte	0x2d1c
+	.byte	0x1
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0xbc
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF276
-	.byte	0x14
-	.value	0x30f
-	.long	.LASF460
 	.byte	0x1
-	.long	0x2a09
-	.long	0x2a14
+	.4byte	.LASF277
+	.byte	0x14
+	.2byte	0x30f
+	.4byte	.LASF460
+	.byte	0x1
+	.4byte	0x2ccb
+	.4byte	0x2cd7
 	.uleb128 0x13
-	.long	0x2a57
+	.4byte	0x2d1c
+	.byte	0x1
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0xbc
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF278
-	.byte	0x14
-	.value	0x31c
-	.long	.LASF461
 	.byte	0x1
-	.long	0x2a29
-	.long	0x2a34
+	.4byte	.LASF279
+	.byte	0x14
+	.2byte	0x31c
+	.4byte	.LASF461
+	.byte	0x1
+	.4byte	0x2ced
+	.4byte	0x2cf9
 	.uleb128 0x13
-	.long	0x2a57
+	.4byte	0x2d1c
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x2a63
+	.4byte	0x2d28
 	.byte	0
-	.uleb128 0x2a
-	.string	"X"
-	.long	0x22b0
-	.uleb128 0x2a
-	.string	"A"
-	.long	0x2208
+	.uleb128 0x29
+	.ascii	"X\000"
+	.4byte	0x24ef
+	.uleb128 0x29
+	.ascii	"A\000"
+	.4byte	0x2443
 	.uleb128 0x32
-	.long	.LASF280
-	.long	0x4897
+	.4byte	.LASF281
+	.4byte	0x4d15
 	.byte	0
-	.uleb128 0x8
+	.uleb128 0x9
 	.byte	0x4
-	.long	0x2a52
+	.4byte	0x2d17
 	.uleb128 0x1b
-	.long	0x22e3
-	.uleb128 0x8
+	.4byte	0x2522
+	.uleb128 0x9
 	.byte	0x4
-	.long	0x22e3
+	.4byte	0x2522
 	.uleb128 0x28
 	.byte	0x4
-	.long	0x2a52
+	.4byte	0x2d17
 	.uleb128 0x28
 	.byte	0x4
-	.long	0x22e3
-	.uleb128 0x8
+	.4byte	0x2522
+	.uleb128 0x9
 	.byte	0x4
-	.long	0x2a6f
+	.4byte	0x2d34
 	.uleb128 0x1d
-	.long	.LASF462
+	.4byte	.LASF462
+	.byte	0x1
 	.uleb128 0x3
-	.long	.LASF463
+	.4byte	.LASF463
 	.byte	0x17
 	.byte	0xab
-	.long	0xd9
-	.uleb128 0xe
-	.long	.LASF464
-	.value	0x148
+	.4byte	0xdd
+	.uleb128 0xf
+	.4byte	.LASF464
+	.2byte	0x148
 	.byte	0x18
 	.byte	0x90
-	.long	0x33d7
-	.uleb128 0x37
-	.long	.LASF795
+	.4byte	0x3731
+	.uleb128 0x6
+	.4byte	.LASF465
 	.byte	0x4
 	.byte	0x18
 	.byte	0x96
-	.byte	0x1
-	.long	0x2aa6
-	.uleb128 0x6
-	.long	.LASF465
+	.4byte	0x2d6b
+	.uleb128 0x7
+	.4byte	.LASF466
 	.sleb128 0
-	.uleb128 0x6
-	.long	.LASF466
+	.uleb128 0x7
+	.4byte	.LASF467
 	.sleb128 1
 	.byte	0
-	.uleb128 0x7
-	.long	.LASF467
+	.uleb128 0x38
+	.4byte	.LASF793
 	.byte	0x4
 	.byte	0x18
-	.value	0x279
-	.long	0x2ac6
-	.uleb128 0x6
-	.long	.LASF468
+	.2byte	0x279
+	.byte	0x3
+	.4byte	0x2d8c
+	.uleb128 0x7
+	.4byte	.LASF468
 	.sleb128 0
-	.uleb128 0x6
-	.long	.LASF469
+	.uleb128 0x7
+	.4byte	.LASF469
 	.sleb128 1
-	.uleb128 0x6
-	.long	.LASF470
+	.uleb128 0x7
+	.4byte	.LASF470
 	.sleb128 2
 	.byte	0
-	.uleb128 0x9
-	.long	.LASF471
+	.uleb128 0x39
+	.4byte	.LASF794
 	.byte	0x8
 	.byte	0x18
-	.value	0x298
-	.long	0x2aee
-	.uleb128 0xa
-	.long	.LASF472
+	.2byte	0x298
+	.byte	0x3
+	.4byte	0x2db9
+	.uleb128 0xb
+	.4byte	.LASF471
 	.byte	0x18
-	.value	0x29a
-	.long	0xc3
-	.byte	0
-	.uleb128 0xa
-	.long	.LASF473
+	.2byte	0x29a
+	.4byte	0xc7
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0xb
+	.4byte	.LASF472
 	.byte	0x18
-	.value	0x29b
-	.long	0x22b0
-	.byte	0x4
+	.2byte	0x29b
+	.4byte	0x24ef
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x4
 	.byte	0
 	.uleb128 0x1b
-	.long	0x2ac6
-	.uleb128 0x38
-	.long	.LASF474
+	.4byte	0x2d8c
+	.uleb128 0xb
+	.4byte	.LASF473
 	.byte	0x18
-	.value	0x267
-	.long	0xb8
-	.byte	0
-	.byte	0x1
-	.uleb128 0x38
-	.long	.LASF475
+	.2byte	0x267
+	.4byte	0xbc
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0xb
+	.4byte	.LASF474
 	.byte	0x18
-	.value	0x268
-	.long	0x1a82
-	.byte	0x4
-	.byte	0x1
-	.uleb128 0x38
-	.long	.LASF476
+	.2byte	0x268
+	.4byte	0x1c37
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x4
+	.uleb128 0xb
+	.4byte	.LASF475
 	.byte	0x18
-	.value	0x269
-	.long	0x449
-	.byte	0x14
-	.byte	0x1
-	.uleb128 0x38
-	.long	.LASF477
+	.2byte	0x269
+	.4byte	0x485
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x14
+	.uleb128 0xb
+	.4byte	.LASF476
 	.byte	0x18
-	.value	0x26a
-	.long	0x449
+	.2byte	0x26a
+	.4byte	0x485
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x18
+	.uleb128 0xb
+	.4byte	.LASF477
 	.byte	0x18
-	.byte	0x1
-	.uleb128 0x38
-	.long	.LASF478
+	.2byte	0x26b
+	.4byte	0x162a
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x1c
+	.uleb128 0xb
+	.4byte	.LASF478
 	.byte	0x18
-	.value	0x26b
-	.long	0x14d2
-	.byte	0x1c
-	.byte	0x1
-	.uleb128 0x38
-	.long	.LASF479
+	.2byte	0x26c
+	.4byte	0xc7
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x2c
+	.uleb128 0x33
+	.4byte	.LASF479
 	.byte	0x18
-	.value	0x26c
-	.long	0xc3
-	.byte	0x2c
-	.byte	0x1
-	.uleb128 0xa
-	.long	.LASF480
+	.2byte	0x28c
+	.4byte	0x24ef
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x30
+	.byte	0x3
+	.uleb128 0x33
+	.4byte	.LASF480
 	.byte	0x18
-	.value	0x28c
-	.long	0x22b0
-	.byte	0x30
-	.uleb128 0xa
-	.long	.LASF481
+	.2byte	0x28d
+	.4byte	0x162a
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x34
+	.byte	0x3
+	.uleb128 0x33
+	.4byte	.LASF481
 	.byte	0x18
-	.value	0x28d
-	.long	0x14d2
-	.byte	0x34
-	.uleb128 0xa
-	.long	.LASF482
+	.2byte	0x28e
+	.4byte	0x162a
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x44
+	.byte	0x3
+	.uleb128 0x33
+	.4byte	.LASF482
 	.byte	0x18
-	.value	0x28e
-	.long	0x14d2
-	.byte	0x44
-	.uleb128 0xa
-	.long	.LASF483
+	.2byte	0x28f
+	.4byte	0x162a
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x54
+	.byte	0x3
+	.uleb128 0x33
+	.4byte	.LASF483
 	.byte	0x18
-	.value	0x28f
-	.long	0x14d2
-	.byte	0x54
-	.uleb128 0xa
-	.long	.LASF484
+	.2byte	0x290
+	.4byte	0x24ef
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x64
+	.byte	0x3
+	.uleb128 0x33
+	.4byte	.LASF484
 	.byte	0x18
-	.value	0x290
-	.long	0x22b0
-	.byte	0x64
-	.uleb128 0xa
-	.long	.LASF485
+	.2byte	0x291
+	.4byte	0x485
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x68
+	.byte	0x3
+	.uleb128 0x33
+	.4byte	.LASF485
 	.byte	0x18
-	.value	0x291
-	.long	0x449
-	.byte	0x68
-	.uleb128 0xa
-	.long	.LASF486
+	.2byte	0x292
+	.4byte	0x957
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x6c
+	.byte	0x3
+	.uleb128 0x33
+	.4byte	.LASF486
 	.byte	0x18
-	.value	0x292
-	.long	0x8c0
-	.byte	0x6c
-	.uleb128 0x39
-	.long	.LASF487
+	.2byte	0x293
+	.4byte	0x162a
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0x10c
+	.byte	0x3
+	.uleb128 0x33
+	.4byte	.LASF487
 	.byte	0x18
-	.value	0x293
-	.long	0x14d2
-	.value	0x10c
-	.uleb128 0x39
-	.long	.LASF488
+	.2byte	0x294
+	.4byte	0x4001
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0x11c
+	.byte	0x3
+	.uleb128 0x33
+	.4byte	.LASF488
 	.byte	0x18
-	.value	0x294
-	.long	0x3c1c
-	.value	0x11c
-	.uleb128 0x39
-	.long	.LASF489
+	.2byte	0x295
+	.4byte	0xbc
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0x120
+	.byte	0x3
+	.uleb128 0x33
+	.4byte	.LASF489
 	.byte	0x18
-	.value	0x295
-	.long	0xb8
-	.value	0x120
-	.uleb128 0x39
-	.long	.LASF490
+	.2byte	0x296
+	.4byte	0x613
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0x124
+	.byte	0x3
+	.uleb128 0x33
+	.4byte	.LASF490
 	.byte	0x18
-	.value	0x296
-	.long	0x5b1
-	.value	0x124
-	.uleb128 0x39
-	.long	.LASF491
+	.2byte	0x29d
+	.4byte	0x37ef
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0x128
+	.byte	0x3
+	.uleb128 0x33
+	.4byte	.LASF491
 	.byte	0x18
-	.value	0x29d
-	.long	0x3491
-	.value	0x128
-	.uleb128 0x39
-	.long	.LASF492
-	.byte	0x18
-	.value	0x29f
-	.long	0x1a82
-	.value	0x138
-	.uleb128 0x29
-	.long	.LASF493
+	.2byte	0x29f
+	.4byte	0x1c37
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0x138
+	.byte	0x3
+	.uleb128 0x3
+	.4byte	.LASF492
 	.byte	0x18
 	.byte	0xa1
-	.long	0x50d
-	.byte	0x1
-	.uleb128 0x29
-	.long	.LASF494
+	.4byte	0x54f
+	.uleb128 0x3
+	.4byte	.LASF493
 	.byte	0x18
 	.byte	0xa8
-	.long	0x50d
-	.byte	0x1
+	.4byte	0x54f
 	.uleb128 0x25
-	.long	.LASF495
+	.byte	0x1
+	.4byte	.LASF494
 	.byte	0x18
 	.byte	0xb5
-	.long	.LASF496
+	.4byte	.LASF495
 	.byte	0x1
-	.long	0x2c22
-	.long	0x2c2d
+	.4byte	0x2f19
+	.4byte	0x2f25
 	.uleb128 0x13
-	.long	0x3c22
+	.4byte	0x4007
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x2a8c
+	.4byte	0x2d52
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF497
+	.byte	0x1
+	.4byte	.LASF496
 	.byte	0x18
 	.byte	0xc4
-	.long	.LASF498
-	.long	0x2a8c
+	.4byte	.LASF497
+	.4byte	0x2d52
 	.byte	0x1
-	.long	0x2c45
-	.long	0x2c4b
+	.4byte	0x2f3e
+	.4byte	0x2f45
 	.uleb128 0x13
-	.long	0x3c28
+	.4byte	0x400d
+	.byte	0x1
 	.byte	0
 	.uleb128 0x25
-	.long	.LASF499
+	.byte	0x1
+	.4byte	.LASF498
 	.byte	0x18
 	.byte	0xdb
-	.long	.LASF500
+	.4byte	.LASF499
 	.byte	0x1
-	.long	0x2c5f
-	.long	0x2c6a
+	.4byte	0x2f5a
+	.4byte	0x2f66
 	.uleb128 0x13
-	.long	0x3c22
+	.4byte	0x4007
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x2a69
+	.4byte	0x2d2e
 	.byte	0
 	.uleb128 0x25
-	.long	.LASF501
+	.byte	0x1
+	.4byte	.LASF500
 	.byte	0x18
 	.byte	0xe3
-	.long	.LASF502
+	.4byte	.LASF501
 	.byte	0x1
-	.long	0x2c7e
-	.long	0x2c89
+	.4byte	0x2f7b
+	.4byte	0x2f87
 	.uleb128 0x13
-	.long	0x3c22
+	.4byte	0x4007
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x449
+	.4byte	0x485
 	.byte	0
 	.uleb128 0x25
-	.long	.LASF503
+	.byte	0x1
+	.4byte	.LASF502
 	.byte	0x18
 	.byte	0xec
-	.long	.LASF504
+	.4byte	.LASF503
 	.byte	0x1
-	.long	0x2c9d
-	.long	0x2ca8
+	.4byte	0x2f9c
+	.4byte	0x2fa8
 	.uleb128 0x13
-	.long	0x3c22
+	.4byte	0x4007
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x22b0
+	.4byte	0x24ef
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF505
+	.byte	0x1
+	.4byte	.LASF504
 	.byte	0x18
 	.byte	0xf4
-	.long	.LASF506
-	.long	0x22bf
+	.4byte	.LASF505
+	.4byte	0x24ff
 	.byte	0x1
-	.long	0x2cc0
-	.long	0x2ccb
+	.4byte	0x2fc1
+	.4byte	0x2fcd
 	.uleb128 0x13
-	.long	0x3c22
+	.4byte	0x4007
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x449
+	.4byte	0x485
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF505
+	.byte	0x1
+	.4byte	.LASF504
 	.byte	0x18
 	.byte	0xfc
-	.long	.LASF507
-	.long	0x22bf
+	.4byte	.LASF506
+	.4byte	0x24ff
 	.byte	0x1
-	.long	0x2ce3
-	.long	0x2cee
+	.4byte	0x2fe6
+	.4byte	0x2ff2
 	.uleb128 0x13
-	.long	0x3c22
+	.4byte	0x4007
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x22b0
+	.4byte	0x24ef
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF508
-	.byte	0x18
-	.value	0x107
-	.long	.LASF509
 	.byte	0x1
-	.long	0x2d03
-	.long	0x2d0e
+	.4byte	.LASF507
+	.byte	0x18
+	.2byte	0x107
+	.4byte	.LASF508
+	.byte	0x1
+	.4byte	0x3008
+	.4byte	0x3014
 	.uleb128 0x13
-	.long	0x3c22
+	.4byte	0x4007
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x5e
+	.4byte	0x62
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF510
-	.byte	0x18
-	.value	0x112
-	.long	.LASF511
 	.byte	0x1
-	.long	0x2d23
-	.long	0x2d2e
+	.4byte	.LASF509
+	.byte	0x18
+	.2byte	0x112
+	.4byte	.LASF510
+	.byte	0x1
+	.4byte	0x302a
+	.4byte	0x3036
 	.uleb128 0x13
-	.long	0x3c22
+	.4byte	0x4007
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x5e
+	.4byte	0x62
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF512
-	.byte	0x18
-	.value	0x11d
-	.long	.LASF513
-	.long	0x22b0
 	.byte	0x1
-	.long	0x2d47
-	.long	0x2d57
+	.4byte	.LASF511
+	.byte	0x18
+	.2byte	0x11d
+	.4byte	.LASF512
+	.4byte	0x24ef
+	.byte	0x1
+	.4byte	0x3050
+	.4byte	0x3061
 	.uleb128 0x13
-	.long	0x3c28
+	.4byte	0x400d
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x449
+	.4byte	0x485
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0xbc
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF514
-	.byte	0x18
-	.value	0x128
-	.long	.LASF515
-	.long	0x22b0
 	.byte	0x1
-	.long	0x2d70
-	.long	0x2d80
+	.4byte	.LASF513
+	.byte	0x18
+	.2byte	0x128
+	.4byte	.LASF514
+	.4byte	0x24ef
+	.byte	0x1
+	.4byte	0x307b
+	.4byte	0x308c
 	.uleb128 0x13
-	.long	0x3c28
+	.4byte	0x400d
+	.byte	0x1
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0xbc
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0xbc
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF516
-	.byte	0x18
-	.value	0x130
-	.long	.LASF517
-	.long	0xb8
 	.byte	0x1
-	.long	0x2d99
-	.long	0x2d9f
+	.4byte	.LASF515
+	.byte	0x18
+	.2byte	0x130
+	.4byte	.LASF516
+	.4byte	0xbc
+	.byte	0x1
+	.4byte	0x30a6
+	.4byte	0x30ad
 	.uleb128 0x13
-	.long	0x3c28
+	.4byte	0x400d
+	.byte	0x1
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF518
-	.byte	0x18
-	.value	0x13b
-	.long	.LASF519
-	.long	0x22b0
 	.byte	0x1
-	.long	0x2db8
-	.long	0x2dc3
+	.4byte	.LASF517
+	.byte	0x18
+	.2byte	0x13b
+	.4byte	.LASF518
+	.4byte	0x24ef
+	.byte	0x1
+	.4byte	0x30c7
+	.4byte	0x30d3
 	.uleb128 0x13
-	.long	0x3c28
+	.4byte	0x400d
+	.byte	0x1
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0xbc
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF520
-	.byte	0x18
-	.value	0x146
-	.long	.LASF521
-	.long	0x2a69
 	.byte	0x1
-	.long	0x2ddc
-	.long	0x2dec
+	.4byte	.LASF519
+	.byte	0x18
+	.2byte	0x146
+	.4byte	.LASF520
+	.4byte	0x2d2e
+	.byte	0x1
+	.4byte	0x30ed
+	.4byte	0x30fe
 	.uleb128 0x13
-	.long	0x3c28
+	.4byte	0x400d
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x449
+	.4byte	0x485
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0xbc
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF522
-	.byte	0x18
-	.value	0x151
-	.long	.LASF523
-	.long	0x449
 	.byte	0x1
-	.long	0x2e05
-	.long	0x2e15
+	.4byte	.LASF521
+	.byte	0x18
+	.2byte	0x151
+	.4byte	.LASF522
+	.4byte	0x485
+	.byte	0x1
+	.4byte	0x3118
+	.4byte	0x3129
 	.uleb128 0x13
-	.long	0x3c28
+	.4byte	0x400d
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x449
+	.4byte	0x485
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0xbc
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF524
-	.byte	0x18
-	.value	0x166
-	.long	.LASF525
 	.byte	0x1
-	.long	0x2e2a
-	.long	0x2e44
+	.4byte	.LASF523
+	.byte	0x18
+	.2byte	0x166
+	.4byte	.LASF524
+	.byte	0x1
+	.4byte	0x313f
+	.4byte	0x315a
 	.uleb128 0x13
-	.long	0x3c22
+	.4byte	0x4007
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x449
+	.4byte	0x485
 	.uleb128 0x15
-	.long	0x3c33
+	.4byte	0x4018
 	.uleb128 0x15
-	.long	0x3c33
+	.4byte	0x4018
 	.uleb128 0x15
-	.long	0x3c39
+	.4byte	0x401e
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF524
-	.byte	0x18
-	.value	0x167
-	.long	.LASF526
 	.byte	0x1
-	.long	0x2e59
-	.long	0x2e73
+	.4byte	.LASF523
+	.byte	0x18
+	.2byte	0x167
+	.4byte	.LASF525
+	.byte	0x1
+	.4byte	0x3170
+	.4byte	0x318b
 	.uleb128 0x13
-	.long	0x3c22
+	.4byte	0x4007
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x449
+	.4byte	0x485
 	.uleb128 0x15
-	.long	0x3c33
+	.4byte	0x4018
 	.uleb128 0x15
-	.long	0x3c39
+	.4byte	0x401e
 	.uleb128 0x15
-	.long	0x3c39
+	.4byte	0x401e
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF527
-	.byte	0x18
-	.value	0x177
-	.long	.LASF528
-	.long	0x14c7
 	.byte	0x1
-	.long	0x2e8c
-	.long	0x2ea1
+	.4byte	.LASF526
+	.byte	0x18
+	.2byte	0x177
+	.4byte	.LASF527
+	.4byte	0x161e
+	.byte	0x1
+	.4byte	0x31a5
+	.4byte	0x31bb
 	.uleb128 0x13
-	.long	0x3c28
+	.4byte	0x400d
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x449
+	.4byte	0x485
 	.uleb128 0x15
-	.long	0x449
+	.4byte	0x485
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0xbc
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF529
-	.byte	0x18
-	.value	0x182
-	.long	.LASF530
-	.long	0x14c7
 	.byte	0x1
-	.long	0x2eba
-	.long	0x2ecf
+	.4byte	.LASF528
+	.byte	0x18
+	.2byte	0x182
+	.4byte	.LASF529
+	.4byte	0x161e
+	.byte	0x1
+	.4byte	0x31d5
+	.4byte	0x31eb
 	.uleb128 0x13
-	.long	0x3c28
+	.4byte	0x400d
+	.byte	0x1
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0xbc
 	.uleb128 0x15
-	.long	0x449
+	.4byte	0x485
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0xbc
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF531
-	.byte	0x18
-	.value	0x18d
-	.long	.LASF532
 	.byte	0x1
-	.long	0x2ee4
-	.long	0x2ef4
+	.4byte	.LASF530
+	.byte	0x18
+	.2byte	0x18d
+	.4byte	.LASF531
+	.byte	0x1
+	.4byte	0x3201
+	.4byte	0x3212
 	.uleb128 0x13
-	.long	0x3c22
+	.4byte	0x4007
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x449
+	.4byte	0x485
 	.uleb128 0x15
-	.long	0x14c7
+	.4byte	0x161e
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF533
-	.byte	0x18
-	.value	0x196
-	.long	.LASF534
 	.byte	0x1
-	.long	0x2f09
-	.long	0x2f14
+	.4byte	.LASF532
+	.byte	0x18
+	.2byte	0x196
+	.4byte	.LASF533
+	.byte	0x1
+	.4byte	0x3228
+	.4byte	0x3234
 	.uleb128 0x13
-	.long	0x3c22
+	.4byte	0x4007
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x22b0
+	.4byte	0x24ef
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF535
-	.byte	0x18
-	.value	0x1a3
-	.long	.LASF536
-	.long	0x22b0
 	.byte	0x1
-	.long	0x2f2d
-	.long	0x2f33
+	.4byte	.LASF534
+	.byte	0x18
+	.2byte	0x1a3
+	.4byte	.LASF535
+	.4byte	0x24ef
+	.byte	0x1
+	.4byte	0x324e
+	.4byte	0x3255
 	.uleb128 0x13
-	.long	0x3c28
+	.4byte	0x400d
+	.byte	0x1
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF537
-	.byte	0x18
-	.value	0x1ac
-	.long	.LASF538
-	.long	0x22b0
 	.byte	0x1
-	.long	0x2f4c
-	.long	0x2f52
+	.4byte	.LASF536
+	.byte	0x18
+	.2byte	0x1ac
+	.4byte	.LASF537
+	.4byte	0x24ef
+	.byte	0x1
+	.4byte	0x326f
+	.4byte	0x3276
 	.uleb128 0x13
-	.long	0x3c28
+	.4byte	0x400d
+	.byte	0x1
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF539
-	.byte	0x18
-	.value	0x1b6
-	.long	.LASF540
-	.long	0x22b0
 	.byte	0x1
-	.long	0x2f6b
-	.long	0x2f7b
+	.4byte	.LASF538
+	.byte	0x18
+	.2byte	0x1b6
+	.4byte	.LASF539
+	.4byte	0x24ef
+	.byte	0x1
+	.4byte	0x3290
+	.4byte	0x32a1
 	.uleb128 0x13
-	.long	0x3c22
+	.4byte	0x4007
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x449
+	.4byte	0x485
 	.uleb128 0x15
-	.long	0x5b1
+	.4byte	0x613
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF541
-	.byte	0x18
-	.value	0x1c1
-	.long	.LASF542
-	.long	0x22b0
 	.byte	0x1
-	.long	0x2f94
-	.long	0x2fa4
+	.4byte	.LASF540
+	.byte	0x18
+	.2byte	0x1c1
+	.4byte	.LASF541
+	.4byte	0x24ef
+	.byte	0x1
+	.4byte	0x32bb
+	.4byte	0x32cc
 	.uleb128 0x13
-	.long	0x3c22
+	.4byte	0x4007
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x3c3f
+	.4byte	0x4024
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0xbc
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF543
-	.byte	0x18
-	.value	0x1cc
-	.long	.LASF544
-	.long	0x22b0
 	.byte	0x1
-	.long	0x2fbd
-	.long	0x2fcd
+	.4byte	.LASF542
+	.byte	0x18
+	.2byte	0x1cc
+	.4byte	.LASF543
+	.4byte	0x24ef
+	.byte	0x1
+	.4byte	0x32e6
+	.4byte	0x32f7
 	.uleb128 0x13
-	.long	0x3c22
+	.4byte	0x4007
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x449
+	.4byte	0x485
 	.uleb128 0x15
-	.long	0x5b1
+	.4byte	0x613
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF545
-	.byte	0x18
-	.value	0x1cf
-	.long	.LASF546
-	.long	0x22b0
 	.byte	0x1
-	.long	0x2fe6
-	.long	0x2ff6
+	.4byte	.LASF544
+	.byte	0x18
+	.2byte	0x1cf
+	.4byte	.LASF545
+	.4byte	0x24ef
+	.byte	0x1
+	.4byte	0x3311
+	.4byte	0x3322
 	.uleb128 0x13
-	.long	0x3c22
+	.4byte	0x4007
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x449
+	.4byte	0x485
 	.uleb128 0x15
-	.long	0x5b1
+	.4byte	0x613
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF547
-	.byte	0x18
-	.value	0x1d7
-	.long	.LASF548
 	.byte	0x1
-	.long	0x300b
-	.long	0x3016
+	.4byte	.LASF546
+	.byte	0x18
+	.2byte	0x1d7
+	.4byte	.LASF547
+	.byte	0x1
+	.4byte	0x3338
+	.4byte	0x3344
 	.uleb128 0x13
-	.long	0x3c22
+	.4byte	0x4007
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x2bf6
+	.4byte	0x2eee
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF549
-	.byte	0x18
-	.value	0x1df
-	.long	.LASF550
 	.byte	0x1
-	.long	0x302b
-	.long	0x3036
+	.4byte	.LASF548
+	.byte	0x18
+	.2byte	0x1df
+	.4byte	.LASF549
+	.byte	0x1
+	.4byte	0x335a
+	.4byte	0x3366
 	.uleb128 0x13
-	.long	0x3c22
+	.4byte	0x4007
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x2c02
+	.4byte	0x2ef9
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF551
-	.byte	0x18
-	.value	0x1ef
-	.long	.LASF552
 	.byte	0x1
-	.long	0x304b
-	.long	0x3060
+	.4byte	.LASF550
+	.byte	0x18
+	.2byte	0x1ef
+	.4byte	.LASF551
+	.byte	0x1
+	.4byte	0x337c
+	.4byte	0x3392
 	.uleb128 0x13
-	.long	0x3c22
+	.4byte	0x4007
+	.byte	0x1
 	.uleb128 0x15
-	.long	0xd12
+	.4byte	0xde3
 	.uleb128 0x15
-	.long	0x449
+	.4byte	0x485
 	.uleb128 0x15
-	.long	0x5b1
+	.4byte	0x613
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF553
-	.byte	0x18
-	.value	0x1fa
-	.long	.LASF554
 	.byte	0x1
-	.long	0x3075
-	.long	0x3085
+	.4byte	.LASF552
+	.byte	0x18
+	.2byte	0x1fa
+	.4byte	.LASF553
+	.byte	0x1
+	.4byte	0x33a8
+	.4byte	0x33b9
 	.uleb128 0x13
-	.long	0x3c22
+	.4byte	0x4007
+	.byte	0x1
 	.uleb128 0x15
-	.long	0xd12
+	.4byte	0xde3
 	.uleb128 0x15
-	.long	0x449
+	.4byte	0x485
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF555
-	.byte	0x18
-	.value	0x204
-	.long	.LASF556
-	.long	0x3c4f
 	.byte	0x1
-	.long	0x309e
-	.long	0x30ae
+	.4byte	.LASF554
+	.byte	0x18
+	.2byte	0x204
+	.4byte	.LASF555
+	.4byte	0x4035
+	.byte	0x1
+	.4byte	0x33d3
+	.4byte	0x33e4
 	.uleb128 0x13
-	.long	0x3c22
+	.4byte	0x4007
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x3c4f
+	.4byte	0x4035
 	.uleb128 0x15
-	.long	0x3c55
+	.4byte	0x403b
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF557
-	.byte	0x18
-	.value	0x20e
-	.long	.LASF558
 	.byte	0x1
-	.long	0x30c3
-	.long	0x30ce
+	.4byte	.LASF556
+	.byte	0x18
+	.2byte	0x20e
+	.4byte	.LASF557
+	.byte	0x1
+	.4byte	0x33fa
+	.4byte	0x3406
 	.uleb128 0x13
-	.long	0x3c22
+	.4byte	0x4007
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x449
+	.4byte	0x485
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF559
-	.byte	0x18
-	.value	0x215
-	.long	.LASF560
-	.long	0x8c0
 	.byte	0x1
-	.long	0x30e7
-	.long	0x30ed
+	.4byte	.LASF558
+	.byte	0x18
+	.2byte	0x215
+	.4byte	.LASF559
+	.4byte	0x957
+	.byte	0x1
+	.4byte	0x3420
+	.4byte	0x3427
 	.uleb128 0x13
-	.long	0x3c28
+	.4byte	0x400d
+	.byte	0x1
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF561
-	.byte	0x18
-	.value	0x237
-	.long	.LASF562
-	.long	0x14c7
 	.byte	0x1
-	.long	0x3106
-	.long	0x311b
+	.4byte	.LASF560
+	.byte	0x18
+	.2byte	0x237
+	.4byte	.LASF561
+	.4byte	0x161e
+	.byte	0x1
+	.4byte	0x3441
+	.4byte	0x3457
 	.uleb128 0x13
-	.long	0x3c22
+	.4byte	0x4007
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x449
+	.4byte	0x485
 	.uleb128 0x15
-	.long	0x449
+	.4byte	0x485
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0xbc
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF563
-	.byte	0x18
-	.value	0x23a
-	.long	.LASF564
 	.byte	0x1
-	.long	0x3130
-	.long	0x313b
+	.4byte	.LASF562
+	.byte	0x18
+	.2byte	0x23a
+	.4byte	.LASF563
+	.byte	0x1
+	.4byte	0x346d
+	.4byte	0x3479
 	.uleb128 0x13
-	.long	0x3c22
+	.4byte	0x4007
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x3c60
+	.4byte	0x4047
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF565
-	.byte	0x18
-	.value	0x23d
-	.long	.LASF566
 	.byte	0x1
-	.long	0x3150
-	.long	0x3156
+	.4byte	.LASF564
+	.byte	0x18
+	.2byte	0x23d
+	.4byte	.LASF565
+	.byte	0x1
+	.4byte	0x348f
+	.4byte	0x3496
 	.uleb128 0x13
-	.long	0x3c22
+	.4byte	0x4007
+	.byte	0x1
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF567
-	.byte	0x18
-	.value	0x240
-	.long	.LASF568
-	.long	0x449
 	.byte	0x1
-	.long	0x316f
-	.long	0x3175
+	.4byte	.LASF566
+	.byte	0x18
+	.2byte	0x240
+	.4byte	.LASF567
+	.4byte	0x485
+	.byte	0x1
+	.4byte	0x34b0
+	.4byte	0x34b7
 	.uleb128 0x13
-	.long	0x3c28
+	.4byte	0x400d
+	.byte	0x1
 	.byte	0
 	.uleb128 0x3a
-	.long	.LASF569
-	.byte	0x18
-	.value	0x248
-	.long	.LASF571
 	.byte	0x1
-	.long	0x3191
+	.4byte	.LASF569
+	.byte	0x18
+	.2byte	0x248
+	.4byte	.LASF571
+	.byte	0x1
+	.4byte	0x34d4
 	.uleb128 0x15
-	.long	0x3c33
+	.4byte	0x4018
 	.uleb128 0x15
-	.long	0x449
+	.4byte	0x485
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF572
-	.byte	0x18
-	.value	0x24b
-	.long	.LASF573
 	.byte	0x1
-	.long	0x31a6
-	.long	0x31b1
-	.uleb128 0x13
-	.long	0x3c22
-	.uleb128 0x15
-	.long	0xc32
-	.byte	0
-	.uleb128 0x31
-	.long	.LASF574
+	.4byte	.LASF572
 	.byte	0x18
-	.value	0x24f
-	.long	.LASF575
-	.long	0x449
+	.2byte	0x24b
+	.4byte	.LASF573
 	.byte	0x1
-	.long	0x31ca
-	.long	0x31d5
+	.4byte	0x34ea
+	.4byte	0x34f6
 	.uleb128 0x13
-	.long	0x3c22
+	.4byte	0x4007
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x14c7
+	.4byte	0xcff
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF576
-	.byte	0x18
-	.value	0x253
-	.long	.LASF577
 	.byte	0x1
-	.long	0x31ea
-	.long	0x31f5
+	.4byte	.LASF574
+	.byte	0x18
+	.2byte	0x253
+	.4byte	.LASF575
+	.byte	0x1
+	.4byte	0x350c
+	.4byte	0x3518
 	.uleb128 0x13
-	.long	0x3c22
+	.4byte	0x4007
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x449
+	.4byte	0x485
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF578
-	.byte	0x18
-	.value	0x259
-	.long	.LASF579
 	.byte	0x1
-	.long	0x320a
-	.long	0x3215
+	.4byte	.LASF576
+	.byte	0x18
+	.2byte	0x259
+	.4byte	.LASF577
+	.byte	0x1
+	.4byte	0x352e
+	.4byte	0x353a
 	.uleb128 0x13
-	.long	0x3c22
+	.4byte	0x4007
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x3c1c
+	.4byte	0x4001
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF580
-	.byte	0x18
-	.value	0x25a
-	.long	.LASF581
-	.long	0x3c1c
 	.byte	0x1
-	.long	0x322e
-	.long	0x3239
+	.4byte	.LASF578
+	.byte	0x18
+	.2byte	0x25a
+	.4byte	.LASF579
+	.4byte	0x4001
+	.byte	0x1
+	.4byte	0x3554
+	.4byte	0x3560
 	.uleb128 0x13
-	.long	0x3c28
+	.4byte	0x400d
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x449
+	.4byte	0x485
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF582
-	.byte	0x18
-	.value	0x25b
-	.long	.LASF583
-	.long	0x3c1c
 	.byte	0x1
-	.long	0x3252
-	.long	0x3258
+	.4byte	.LASF580
+	.byte	0x18
+	.2byte	0x25b
+	.4byte	.LASF581
+	.4byte	0x4001
+	.byte	0x1
+	.4byte	0x357a
+	.4byte	0x3581
 	.uleb128 0x13
-	.long	0x3c28
+	.4byte	0x400d
+	.byte	0x1
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF584
-	.byte	0x18
-	.value	0x25e
-	.long	.LASF585
-	.long	0x5b1
 	.byte	0x1
-	.long	0x3271
-	.long	0x3277
+	.4byte	.LASF582
+	.byte	0x18
+	.2byte	0x25e
+	.4byte	.LASF583
+	.4byte	0x613
+	.byte	0x1
+	.4byte	0x359b
+	.4byte	0x35a2
 	.uleb128 0x13
-	.long	0x3c22
+	.4byte	0x4007
+	.byte	0x1
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF586
-	.byte	0x18
-	.value	0x261
-	.long	.LASF587
 	.byte	0x1
-	.long	0x328c
-	.long	0x3297
+	.4byte	.LASF584
+	.byte	0x18
+	.2byte	0x261
+	.4byte	.LASF585
+	.byte	0x1
+	.4byte	0x35b8
+	.4byte	0x35c4
 	.uleb128 0x13
-	.long	0x3c28
+	.4byte	0x400d
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x449
+	.4byte	0x485
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF588
-	.byte	0x18
-	.value	0x26f
-	.long	.LASF589
 	.byte	0x1
-	.long	0x32ac
-	.long	0x32b2
+	.4byte	.LASF586
+	.byte	0x18
+	.2byte	0x26f
+	.4byte	.LASF587
+	.byte	0x1
+	.4byte	0x35da
+	.4byte	0x35e1
 	.uleb128 0x13
-	.long	0x3c22
+	.4byte	0x4007
+	.byte	0x1
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF590
-	.byte	0x18
-	.value	0x270
-	.long	.LASF591
 	.byte	0x1
-	.long	0x32c7
-	.long	0x32d2
+	.4byte	.LASF588
+	.byte	0x18
+	.2byte	0x270
+	.4byte	.LASF589
+	.byte	0x1
+	.4byte	0x35f7
+	.4byte	0x3603
 	.uleb128 0x13
-	.long	0x3c22
+	.4byte	0x4007
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x22b0
+	.4byte	0x24ef
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF592
-	.byte	0x18
-	.value	0x271
-	.long	.LASF593
-	.long	0x22b0
 	.byte	0x1
-	.long	0x32eb
-	.long	0x32f1
+	.4byte	.LASF590
+	.byte	0x18
+	.2byte	0x271
+	.4byte	.LASF591
+	.4byte	0x24ef
+	.byte	0x1
+	.4byte	0x361d
+	.4byte	0x3624
 	.uleb128 0x13
-	.long	0x3c22
+	.4byte	0x4007
+	.byte	0x1
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF594
-	.byte	0x18
-	.value	0x272
-	.long	.LASF595
-	.long	0xb8
 	.byte	0x1
-	.long	0x330a
-	.long	0x3310
+	.4byte	.LASF592
+	.byte	0x18
+	.2byte	0x272
+	.4byte	.LASF593
+	.4byte	0xbc
+	.byte	0x1
+	.4byte	0x363e
+	.4byte	0x3645
 	.uleb128 0x13
-	.long	0x3c22
+	.4byte	0x4007
+	.byte	0x1
 	.byte	0
 	.uleb128 0x3b
-	.long	.LASF596
+	.byte	0x1
+	.4byte	.LASF594
 	.byte	0x18
-	.value	0x276
-	.long	.LASF597
-	.long	0x3324
-	.long	0x332f
+	.2byte	0x276
+	.4byte	.LASF595
+	.byte	0x3
+	.byte	0x1
+	.4byte	0x365c
+	.4byte	0x3668
 	.uleb128 0x13
-	.long	0x3c22
+	.4byte	0x4007
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x22b0
+	.4byte	0x24ef
 	.byte	0
 	.uleb128 0x3c
-	.long	.LASF598
+	.byte	0x1
+	.4byte	.LASF598
 	.byte	0x18
-	.value	0x277
-	.long	.LASF599
-	.long	0x8c0
-	.long	0x3347
-	.long	0x3352
+	.2byte	0x277
+	.4byte	.LASF600
+	.4byte	0x957
+	.byte	0x3
+	.byte	0x1
+	.4byte	0x3683
+	.4byte	0x368f
 	.uleb128 0x13
-	.long	0x3c22
+	.4byte	0x4007
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x449
+	.4byte	0x485
 	.byte	0
 	.uleb128 0x3b
-	.long	.LASF600
+	.byte	0x1
+	.4byte	.LASF596
 	.byte	0x18
-	.value	0x280
-	.long	.LASF601
-	.long	0x3366
-	.long	0x3371
+	.2byte	0x280
+	.4byte	.LASF597
+	.byte	0x3
+	.byte	0x1
+	.4byte	0x36a6
+	.4byte	0x36b2
 	.uleb128 0x13
-	.long	0x3c22
+	.4byte	0x4007
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x2aa6
+	.4byte	0x2d6b
 	.byte	0
 	.uleb128 0x3c
-	.long	.LASF602
+	.byte	0x1
+	.4byte	.LASF599
 	.byte	0x18
-	.value	0x285
-	.long	.LASF603
-	.long	0x2aa6
-	.long	0x3389
-	.long	0x338f
+	.2byte	0x285
+	.4byte	.LASF601
+	.4byte	0x2d6b
+	.byte	0x3
+	.byte	0x1
+	.4byte	0x36cd
+	.4byte	0x36d4
 	.uleb128 0x13
-	.long	0x3c22
+	.4byte	0x4007
+	.byte	0x1
 	.byte	0
 	.uleb128 0x3b
-	.long	.LASF604
+	.byte	0x1
+	.4byte	.LASF602
 	.byte	0x18
-	.value	0x28a
-	.long	.LASF605
-	.long	0x33a3
-	.long	0x33a9
+	.2byte	0x28a
+	.4byte	.LASF603
+	.byte	0x3
+	.byte	0x1
+	.4byte	0x36eb
+	.4byte	0x36f2
 	.uleb128 0x13
-	.long	0x3c22
+	.4byte	0x4007
+	.byte	0x1
 	.byte	0
 	.uleb128 0x3d
-	.long	.LASF464
+	.byte	0x1
+	.4byte	.LASF464
 	.byte	0x18
-	.value	0x2a1
-	.long	0x33b9
-	.long	0x33bf
+	.2byte	0x2a1
+	.4byte	0x4007
+	.byte	0x3
+	.byte	0x1
+	.4byte	0x3709
+	.4byte	0x3710
 	.uleb128 0x13
-	.long	0x3c22
+	.4byte	0x4007
+	.byte	0x1
 	.byte	0
 	.uleb128 0x3e
-	.long	.LASF796
+	.byte	0x1
+	.4byte	.LASF604
 	.byte	0x18
-	.value	0x2a2
-	.long	0x33cb
+	.2byte	0x2a2
+	.4byte	0xfa
+	.byte	0x3
+	.byte	0x1
+	.4byte	0x3723
 	.uleb128 0x13
-	.long	0x3c22
+	.4byte	0x4007
+	.byte	0x1
 	.uleb128 0x13
-	.long	0x5e
+	.4byte	0x62
+	.byte	0x1
 	.byte	0
 	.byte	0
-	.uleb128 0x24
-	.long	.LASF606
+	.uleb128 0x23
+	.4byte	.LASF605
 	.byte	0x1
 	.byte	0x12
 	.byte	0x70
-	.long	0x3479
-	.uleb128 0x29
-	.long	.LASF180
+	.4byte	0x37d7
+	.uleb128 0x3
+	.4byte	.LASF181
 	.byte	0x12
 	.byte	0x73
-	.long	0xb8
-	.byte	0x1
-	.uleb128 0x29
-	.long	.LASF181
+	.4byte	0xbc
+	.uleb128 0x3
+	.4byte	.LASF182
 	.byte	0x12
 	.byte	0x75
-	.long	0x3479
-	.byte	0x1
+	.4byte	0x37d7
 	.uleb128 0x16
-	.long	.LASF182
+	.byte	0x1
+	.4byte	.LASF183
 	.byte	0x12
 	.byte	0x85
-	.long	.LASF607
-	.long	0x33ef
+	.4byte	.LASF606
+	.4byte	0x3748
 	.byte	0x1
-	.long	0x3413
-	.long	0x341e
+	.4byte	0x376c
+	.4byte	0x3778
 	.uleb128 0x13
-	.long	0x348b
+	.4byte	0x37e9
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x33e3
+	.4byte	0x373d
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF184
+	.byte	0x1
+	.4byte	.LASF185
 	.byte	0x12
 	.byte	0x8e
-	.long	.LASF608
-	.long	0x33ef
+	.4byte	.LASF607
+	.4byte	0x3748
 	.byte	0x1
-	.long	0x3436
-	.long	0x3446
+	.4byte	0x3791
+	.4byte	0x37a2
 	.uleb128 0x13
-	.long	0x348b
+	.4byte	0x37e9
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x33ef
+	.4byte	0x3748
 	.uleb128 0x15
-	.long	0x33e3
+	.4byte	0x373d
 	.byte	0
 	.uleb128 0x25
-	.long	.LASF186
+	.byte	0x1
+	.4byte	.LASF187
 	.byte	0x12
 	.byte	0x93
-	.long	.LASF609
+	.4byte	.LASF608
 	.byte	0x1
-	.long	0x345a
-	.long	0x346a
+	.4byte	0x37b7
+	.4byte	0x37c8
 	.uleb128 0x13
-	.long	0x348b
+	.4byte	0x37e9
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x33ef
+	.4byte	0x3748
 	.uleb128 0x15
-	.long	0x33e3
+	.4byte	0x373d
 	.byte	0
-	.uleb128 0x2a
-	.string	"T"
-	.long	0x2ac6
-	.uleb128 0x2a
-	.string	"M"
-	.long	0x489c
+	.uleb128 0x29
+	.ascii	"T\000"
+	.4byte	0x2d8c
+	.uleb128 0x29
+	.ascii	"M\000"
+	.4byte	0x4d1b
 	.byte	0
-	.uleb128 0x8
+	.uleb128 0x9
 	.byte	0x4
-	.long	0x2ac6
+	.4byte	0x2d8c
 	.uleb128 0x28
 	.byte	0x4
-	.long	0x2ac6
+	.4byte	0x2d8c
 	.uleb128 0x28
 	.byte	0x4
-	.long	0x2aee
-	.uleb128 0x8
+	.4byte	0x2db9
+	.uleb128 0x9
 	.byte	0x4
-	.long	0x33d7
-	.uleb128 0x24
-	.long	.LASF610
+	.4byte	0x3731
+	.uleb128 0x23
+	.4byte	.LASF609
 	.byte	0x10
 	.byte	0x14
 	.byte	0x51
-	.long	0x3bfa
-	.uleb128 0xf
-	.string	"p"
+	.4byte	0x3fde
+	.uleb128 0x2b
+	.ascii	"p\000"
 	.byte	0x14
 	.byte	0x54
-	.long	0x3479
-	.byte	0
+	.4byte	0x37d7
 	.byte	0x2
-	.uleb128 0x10
-	.long	.LASF191
+	.byte	0x23
+	.uleb128 0
+	.byte	0x2
+	.uleb128 0x24
+	.4byte	.LASF192
 	.byte	0x14
 	.byte	0x55
-	.long	0xb8
-	.byte	0x4
+	.4byte	0xbc
 	.byte	0x2
-	.uleb128 0x10
-	.long	.LASF192
+	.byte	0x23
+	.uleb128 0x4
+	.byte	0x2
+	.uleb128 0x24
+	.4byte	.LASF193
 	.byte	0x14
 	.byte	0x56
-	.long	0xb8
-	.byte	0x8
+	.4byte	0xbc
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x8
 	.byte	0x2
 	.uleb128 0x2c
-	.long	.LASF193
+	.4byte	.LASF194
 	.byte	0x14
 	.byte	0x57
-	.long	0x5b1
+	.4byte	0x613
 	.byte	0x1
 	.byte	0x1
 	.byte	0x7
-	.byte	0xc
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0xc
 	.byte	0x2
 	.uleb128 0x2c
-	.long	.LASF194
+	.4byte	.LASF195
 	.byte	0x14
 	.byte	0x58
-	.long	0x5b1
+	.4byte	0x613
 	.byte	0x1
 	.byte	0x1
 	.byte	0x6
-	.byte	0xc
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0xc
 	.byte	0x2
 	.uleb128 0x2d
-	.string	"a"
+	.ascii	"a\000"
 	.byte	0x14
-	.value	0x332
-	.long	0x33d7
-	.byte	0xd
-	.uleb128 0x29
-	.long	.LASF195
+	.2byte	0x332
+	.4byte	0x3731
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0xd
+	.byte	0x3
+	.uleb128 0x3
+	.4byte	.LASF196
 	.byte	0x14
 	.byte	0x5a
-	.long	0x3479
-	.byte	0x1
+	.4byte	0x37d7
 	.uleb128 0x16
-	.long	.LASF196
+	.byte	0x1
+	.4byte	.LASF197
 	.byte	0x14
 	.byte	0x61
-	.long	.LASF611
-	.long	0x34ed
+	.4byte	.LASF610
+	.4byte	0x3858
 	.byte	0x1
-	.long	0x3511
-	.long	0x3517
+	.4byte	0x387c
+	.4byte	0x3883
 	.uleb128 0x13
-	.long	0x3bfa
+	.4byte	0x3fde
+	.byte	0x1
 	.byte	0
 	.uleb128 0x2e
-	.string	"end"
+	.byte	0x1
+	.ascii	"end\000"
 	.byte	0x14
 	.byte	0x67
-	.long	.LASF612
-	.long	0x34ed
+	.4byte	.LASF611
+	.4byte	0x3858
 	.byte	0x1
-	.long	0x352f
-	.long	0x3535
+	.4byte	0x389c
+	.4byte	0x38a3
 	.uleb128 0x13
-	.long	0x3bfa
+	.4byte	0x3fde
+	.byte	0x1
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF198
+	.byte	0x1
+	.4byte	.LASF199
 	.byte	0x14
 	.byte	0x6c
-	.long	.LASF613
-	.long	0x5b1
+	.4byte	.LASF612
+	.4byte	0x613
 	.byte	0x1
-	.long	0x354d
-	.long	0x3553
+	.4byte	0x38bc
+	.4byte	0x38c3
 	.uleb128 0x13
-	.long	0x3bfa
+	.4byte	0x3fde
+	.byte	0x1
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF107
+	.byte	0x1
+	.4byte	.LASF109
 	.byte	0x14
 	.byte	0x71
-	.long	.LASF614
-	.long	0xb8
+	.4byte	.LASF613
+	.4byte	0xbc
 	.byte	0x1
-	.long	0x356b
-	.long	0x3571
+	.4byte	0x38dc
+	.4byte	0x38e3
 	.uleb128 0x13
-	.long	0x3bfa
+	.4byte	0x3fde
+	.byte	0x1
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF111
+	.byte	0x1
+	.4byte	.LASF113
 	.byte	0x14
 	.byte	0x77
-	.long	.LASF615
-	.long	0xb8
+	.4byte	.LASF614
+	.4byte	0xbc
 	.byte	0x1
-	.long	0x3589
-	.long	0x358f
+	.4byte	0x38fc
+	.4byte	0x3903
 	.uleb128 0x13
-	.long	0x3bfa
+	.4byte	0x3fde
+	.byte	0x1
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF202
+	.byte	0x1
+	.4byte	.LASF203
 	.byte	0x14
 	.byte	0x7d
-	.long	.LASF616
-	.long	0x3479
+	.4byte	.LASF615
+	.4byte	0x37d7
 	.byte	0x1
-	.long	0x35a7
-	.long	0x35ad
+	.4byte	0x391c
+	.4byte	0x3923
 	.uleb128 0x13
-	.long	0x3c05
+	.4byte	0x3fe9
+	.byte	0x1
 	.byte	0
 	.uleb128 0x2f
-	.long	.LASF204
+	.byte	0x1
+	.4byte	.LASF205
 	.byte	0x14
 	.byte	0x83
+	.4byte	0x3fe9
 	.byte	0x1
-	.long	0x35bd
-	.long	0x35c8
+	.byte	0x1
+	.4byte	0x3939
+	.4byte	0x3945
 	.uleb128 0x13
-	.long	0x3c05
+	.4byte	0x3fe9
+	.byte	0x1
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0xbc
 	.byte	0
 	.uleb128 0x12
-	.long	.LASF205
+	.byte	0x1
+	.4byte	.LASF206
 	.byte	0x14
 	.byte	0x89
+	.4byte	0xfa
 	.byte	0x1
-	.long	0x35d8
-	.long	0x35e3
+	.4byte	0x395a
+	.4byte	0x3967
 	.uleb128 0x13
-	.long	0x3c05
+	.4byte	0x3fe9
+	.byte	0x1
 	.uleb128 0x13
-	.long	0x5e
+	.4byte	0x62
+	.byte	0x1
 	.byte	0
 	.uleb128 0x12
-	.long	.LASF204
+	.byte	0x1
+	.4byte	.LASF205
 	.byte	0x14
 	.byte	0x99
+	.4byte	0x3fe9
 	.byte	0x1
-	.long	0x35f3
-	.long	0x35fe
+	.4byte	0x397c
+	.4byte	0x3988
 	.uleb128 0x13
-	.long	0x3c05
+	.4byte	0x3fe9
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x3c0b
+	.4byte	0x3fef
 	.byte	0
 	.uleb128 0x25
-	.long	.LASF206
+	.byte	0x1
+	.4byte	.LASF207
 	.byte	0x14
 	.byte	0xa4
-	.long	.LASF617
+	.4byte	.LASF616
 	.byte	0x1
-	.long	0x3612
-	.long	0x3618
+	.4byte	0x399d
+	.4byte	0x39a4
 	.uleb128 0x13
-	.long	0x3c05
+	.4byte	0x3fe9
+	.byte	0x1
 	.byte	0
 	.uleb128 0x25
-	.long	.LASF124
+	.byte	0x1
+	.4byte	.LASF125
 	.byte	0x14
 	.byte	0xba
-	.long	.LASF618
+	.4byte	.LASF617
 	.byte	0x1
-	.long	0x362c
-	.long	0x3637
+	.4byte	0x39b9
+	.4byte	0x39c5
 	.uleb128 0x13
-	.long	0x3c05
+	.4byte	0x3fe9
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x3c0b
+	.4byte	0x3fef
 	.byte	0
 	.uleb128 0x25
-	.long	.LASF209
+	.byte	0x1
+	.4byte	.LASF210
 	.byte	0x14
 	.byte	0xc7
-	.long	.LASF619
+	.4byte	.LASF618
 	.byte	0x1
-	.long	0x364b
-	.long	0x3651
+	.4byte	0x39da
+	.4byte	0x39e1
 	.uleb128 0x13
-	.long	0x3c05
+	.4byte	0x3fe9
+	.byte	0x1
 	.byte	0
 	.uleb128 0x25
-	.long	.LASF211
+	.byte	0x1
+	.4byte	.LASF212
 	.byte	0x14
 	.byte	0xd1
-	.long	.LASF620
+	.4byte	.LASF619
 	.byte	0x1
-	.long	0x3665
-	.long	0x366b
+	.4byte	0x39f6
+	.4byte	0x39fd
 	.uleb128 0x13
-	.long	0x3c05
+	.4byte	0x3fe9
+	.byte	0x1
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF213
+	.byte	0x1
+	.4byte	.LASF214
 	.byte	0x14
 	.byte	0xda
-	.long	.LASF621
-	.long	0x5e
+	.4byte	.LASF620
+	.4byte	0x62
 	.byte	0x1
-	.long	0x3683
-	.long	0x3689
+	.4byte	0x3a16
+	.4byte	0x3a1d
 	.uleb128 0x13
-	.long	0x3bfa
+	.4byte	0x3fde
+	.byte	0x1
 	.byte	0
 	.uleb128 0x25
-	.long	.LASF215
+	.byte	0x1
+	.4byte	.LASF216
 	.byte	0x14
 	.byte	0xe5
-	.long	.LASF622
+	.4byte	.LASF621
 	.byte	0x1
-	.long	0x369d
-	.long	0x36a8
+	.4byte	0x3a32
+	.4byte	0x3a3e
 	.uleb128 0x13
-	.long	0x3c05
+	.4byte	0x3fe9
+	.byte	0x1
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0xbc
 	.byte	0
 	.uleb128 0x25
-	.long	.LASF217
+	.byte	0x1
+	.4byte	.LASF218
 	.byte	0x14
 	.byte	0xf2
-	.long	.LASF623
+	.4byte	.LASF622
 	.byte	0x1
-	.long	0x36bc
-	.long	0x36c2
+	.4byte	0x3a53
+	.4byte	0x3a5a
 	.uleb128 0x13
-	.long	0x3c05
+	.4byte	0x3fe9
+	.byte	0x1
 	.byte	0
 	.uleb128 0x25
-	.long	.LASF219
+	.byte	0x1
+	.4byte	.LASF220
 	.byte	0x14
 	.byte	0xfd
-	.long	.LASF624
+	.4byte	.LASF623
 	.byte	0x1
-	.long	0x36d6
-	.long	0x36e1
+	.4byte	0x3a6f
+	.4byte	0x3a7b
 	.uleb128 0x13
-	.long	0x3c05
+	.4byte	0x3fe9
+	.byte	0x1
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0xbc
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF221
-	.byte	0x14
-	.value	0x10a
-	.long	.LASF625
 	.byte	0x1
-	.long	0x36f6
-	.long	0x3701
+	.4byte	.LASF222
+	.byte	0x14
+	.2byte	0x10a
+	.4byte	.LASF624
+	.byte	0x1
+	.4byte	0x3a91
+	.4byte	0x3a9d
 	.uleb128 0x13
-	.long	0x3c05
+	.4byte	0x3fe9
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x5e
+	.4byte	0x62
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF222
-	.byte	0x14
-	.value	0x119
-	.long	.LASF626
 	.byte	0x1
-	.long	0x3716
-	.long	0x3721
+	.4byte	.LASF223
+	.byte	0x14
+	.2byte	0x119
+	.4byte	.LASF625
+	.byte	0x1
+	.4byte	0x3ab3
+	.4byte	0x3abf
 	.uleb128 0x13
-	.long	0x3c05
+	.4byte	0x3fe9
+	.byte	0x1
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0xbc
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF225
-	.byte	0x14
-	.value	0x124
-	.long	.LASF627
 	.byte	0x1
-	.long	0x3736
-	.long	0x3741
+	.4byte	.LASF226
+	.byte	0x14
+	.2byte	0x124
+	.4byte	.LASF626
+	.byte	0x1
+	.4byte	0x3ad5
+	.4byte	0x3ae1
 	.uleb128 0x13
-	.long	0x3c05
+	.4byte	0x3fe9
+	.byte	0x1
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0xbc
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF117
-	.byte	0x14
-	.value	0x134
-	.long	.LASF628
-	.long	0x5e
 	.byte	0x1
-	.long	0x375a
-	.long	0x3765
+	.4byte	.LASF118
+	.byte	0x14
+	.2byte	0x134
+	.4byte	.LASF627
+	.4byte	0x62
+	.byte	0x1
+	.4byte	0x3afb
+	.4byte	0x3b07
 	.uleb128 0x13
-	.long	0x3bfa
+	.4byte	0x3fde
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x3485
+	.4byte	0x37e3
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF227
-	.byte	0x14
-	.value	0x143
-	.long	.LASF629
-	.long	0x5b1
 	.byte	0x1
-	.long	0x377e
-	.long	0x3789
+	.4byte	.LASF228
+	.byte	0x14
+	.2byte	0x143
+	.4byte	.LASF628
+	.4byte	0x613
+	.byte	0x1
+	.4byte	0x3b21
+	.4byte	0x3b2d
 	.uleb128 0x13
-	.long	0x3bfa
+	.4byte	0x3fde
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x3485
+	.4byte	0x37e3
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF230
-	.byte	0x14
-	.value	0x158
-	.long	.LASF630
-	.long	0x5b1
 	.byte	0x1
-	.long	0x37a2
-	.long	0x37ad
+	.4byte	.LASF231
+	.byte	0x14
+	.2byte	0x158
+	.4byte	.LASF629
+	.4byte	0x613
+	.byte	0x1
+	.4byte	0x3b47
+	.4byte	0x3b53
 	.uleb128 0x13
-	.long	0x3c05
+	.4byte	0x3fe9
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x3485
+	.4byte	0x37e3
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF232
-	.byte	0x14
-	.value	0x16e
-	.long	.LASF631
-	.long	0x5b1
 	.byte	0x1
-	.long	0x37c6
-	.long	0x37d1
+	.4byte	.LASF233
+	.byte	0x14
+	.2byte	0x16e
+	.4byte	.LASF630
+	.4byte	0x613
+	.byte	0x1
+	.4byte	0x3b6d
+	.4byte	0x3b79
 	.uleb128 0x13
-	.long	0x3c05
+	.4byte	0x3fe9
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x3485
+	.4byte	0x37e3
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF234
-	.byte	0x14
-	.value	0x17f
-	.long	.LASF632
 	.byte	0x1
-	.long	0x37e6
-	.long	0x37ec
+	.4byte	.LASF235
+	.byte	0x14
+	.2byte	0x17f
+	.4byte	.LASF631
+	.byte	0x1
+	.4byte	0x3b8f
+	.4byte	0x3b96
 	.uleb128 0x13
-	.long	0x3c05
+	.4byte	0x3fe9
+	.byte	0x1
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF236
-	.byte	0x14
-	.value	0x18a
-	.long	.LASF633
-	.long	0x2ac6
 	.byte	0x1
-	.long	0x3805
-	.long	0x380b
+	.4byte	.LASF237
+	.byte	0x14
+	.2byte	0x18a
+	.4byte	.LASF632
+	.4byte	0x2d8c
+	.byte	0x1
+	.4byte	0x3bb0
+	.4byte	0x3bb7
 	.uleb128 0x13
-	.long	0x3c05
+	.4byte	0x3fe9
+	.byte	0x1
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF238
-	.byte	0x14
-	.value	0x19c
-	.long	.LASF634
-	.long	0x5e
 	.byte	0x1
-	.long	0x3824
-	.long	0x382f
+	.4byte	.LASF239
+	.byte	0x14
+	.2byte	0x19c
+	.4byte	.LASF633
+	.4byte	0x62
+	.byte	0x1
+	.4byte	0x3bd1
+	.4byte	0x3bdd
 	.uleb128 0x13
-	.long	0x3c05
+	.4byte	0x3fe9
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x5e
+	.4byte	0x62
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF238
-	.byte	0x14
-	.value	0x1ac
-	.long	.LASF635
-	.long	0x5e
 	.byte	0x1
-	.long	0x3848
-	.long	0x3858
+	.4byte	.LASF239
+	.byte	0x14
+	.2byte	0x1ac
+	.4byte	.LASF634
+	.4byte	0x62
+	.byte	0x1
+	.4byte	0x3bf7
+	.4byte	0x3c08
 	.uleb128 0x13
-	.long	0x3c05
+	.4byte	0x3fe9
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x5e
+	.4byte	0x62
 	.uleb128 0x15
-	.long	0x5e
+	.4byte	0x62
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF238
-	.byte	0x14
-	.value	0x1be
-	.long	.LASF636
-	.long	0x34ed
 	.byte	0x1
-	.long	0x3871
-	.long	0x387c
+	.4byte	.LASF239
+	.byte	0x14
+	.2byte	0x1be
+	.4byte	.LASF635
+	.4byte	0x3858
+	.byte	0x1
+	.4byte	0x3c22
+	.4byte	0x3c2e
 	.uleb128 0x13
-	.long	0x3c05
+	.4byte	0x3fe9
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x34ed
+	.4byte	0x3858
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF238
-	.byte	0x14
-	.value	0x1c8
-	.long	.LASF637
-	.long	0x34ed
 	.byte	0x1
-	.long	0x3895
-	.long	0x38a5
+	.4byte	.LASF239
+	.byte	0x14
+	.2byte	0x1c8
+	.4byte	.LASF636
+	.4byte	0x3858
+	.byte	0x1
+	.4byte	0x3c48
+	.4byte	0x3c59
 	.uleb128 0x13
-	.long	0x3c05
+	.4byte	0x3fe9
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x34ed
+	.4byte	0x3858
 	.uleb128 0x15
-	.long	0x34ed
+	.4byte	0x3858
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF243
-	.byte	0x14
-	.value	0x1d6
-	.long	.LASF638
-	.long	0x5e
 	.byte	0x1
-	.long	0x38be
-	.long	0x38c9
+	.4byte	.LASF244
+	.byte	0x14
+	.2byte	0x1d6
+	.4byte	.LASF637
+	.4byte	0x62
+	.byte	0x1
+	.4byte	0x3c73
+	.4byte	0x3c7f
 	.uleb128 0x13
-	.long	0x3c05
+	.4byte	0x3fe9
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x5e
+	.4byte	0x62
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF243
-	.byte	0x14
-	.value	0x1e4
-	.long	.LASF639
-	.long	0x5e
 	.byte	0x1
-	.long	0x38e2
-	.long	0x38f2
+	.4byte	.LASF244
+	.byte	0x14
+	.2byte	0x1e4
+	.4byte	.LASF638
+	.4byte	0x62
+	.byte	0x1
+	.4byte	0x3c99
+	.4byte	0x3caa
 	.uleb128 0x13
-	.long	0x3c05
+	.4byte	0x3fe9
+	.byte	0x1
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0xbc
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0xbc
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF243
-	.byte	0x14
-	.value	0x1f2
-	.long	.LASF640
-	.long	0x34ed
 	.byte	0x1
-	.long	0x390b
-	.long	0x3916
+	.4byte	.LASF244
+	.byte	0x14
+	.2byte	0x1f2
+	.4byte	.LASF639
+	.4byte	0x3858
+	.byte	0x1
+	.4byte	0x3cc4
+	.4byte	0x3cd0
 	.uleb128 0x13
-	.long	0x3c05
+	.4byte	0x3fe9
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x34ed
+	.4byte	0x3858
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF243
-	.byte	0x14
-	.value	0x1fc
-	.long	.LASF641
-	.long	0x34ed
 	.byte	0x1
-	.long	0x392f
-	.long	0x393f
+	.4byte	.LASF244
+	.byte	0x14
+	.2byte	0x1fc
+	.4byte	.LASF640
+	.4byte	0x3858
+	.byte	0x1
+	.4byte	0x3cea
+	.4byte	0x3cfb
 	.uleb128 0x13
-	.long	0x3c05
+	.4byte	0x3fe9
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x34ed
+	.4byte	0x3858
 	.uleb128 0x15
-	.long	0x34ed
+	.4byte	0x3858
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF248
-	.byte	0x14
-	.value	0x207
-	.long	.LASF642
 	.byte	0x1
-	.long	0x3954
-	.long	0x3964
+	.4byte	.LASF249
+	.byte	0x14
+	.2byte	0x207
+	.4byte	.LASF641
+	.byte	0x1
+	.4byte	0x3d11
+	.4byte	0x3d22
 	.uleb128 0x13
-	.long	0x3c05
+	.4byte	0x3fe9
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x3485
+	.4byte	0x37e3
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0xbc
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF248
-	.byte	0x14
-	.value	0x222
-	.long	.LASF643
 	.byte	0x1
-	.long	0x3979
-	.long	0x3989
+	.4byte	.LASF249
+	.byte	0x14
+	.2byte	0x222
+	.4byte	.LASF642
+	.byte	0x1
+	.4byte	0x3d38
+	.4byte	0x3d49
 	.uleb128 0x13
-	.long	0x3c05
+	.4byte	0x3fe9
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x3c11
+	.4byte	0x3ff5
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0xbc
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF251
-	.byte	0x14
-	.value	0x244
-	.long	.LASF644
-	.long	0x3485
 	.byte	0x1
-	.long	0x39a2
-	.long	0x39a8
+	.4byte	.LASF252
+	.byte	0x14
+	.2byte	0x244
+	.4byte	.LASF643
+	.4byte	0x37e3
+	.byte	0x1
+	.4byte	0x3d63
+	.4byte	0x3d6a
 	.uleb128 0x13
-	.long	0x3bfa
+	.4byte	0x3fde
+	.byte	0x1
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF251
-	.byte	0x14
-	.value	0x249
-	.long	.LASF645
-	.long	0x347f
 	.byte	0x1
-	.long	0x39c1
-	.long	0x39c7
+	.4byte	.LASF252
+	.byte	0x14
+	.2byte	0x249
+	.4byte	.LASF644
+	.4byte	0x37dd
+	.byte	0x1
+	.4byte	0x3d84
+	.4byte	0x3d8b
 	.uleb128 0x13
-	.long	0x3c05
+	.4byte	0x3fe9
+	.byte	0x1
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF254
-	.byte	0x14
-	.value	0x254
-	.long	.LASF646
-	.long	0x3485
 	.byte	0x1
-	.long	0x39e0
-	.long	0x39e6
+	.4byte	.LASF255
+	.byte	0x14
+	.2byte	0x254
+	.4byte	.LASF645
+	.4byte	0x37e3
+	.byte	0x1
+	.4byte	0x3da5
+	.4byte	0x3dac
 	.uleb128 0x13
-	.long	0x3bfa
+	.4byte	0x3fde
+	.byte	0x1
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF254
-	.byte	0x14
-	.value	0x25a
-	.long	.LASF647
-	.long	0x347f
 	.byte	0x1
-	.long	0x39ff
-	.long	0x3a05
+	.4byte	.LASF255
+	.byte	0x14
+	.2byte	0x25a
+	.4byte	.LASF646
+	.4byte	0x37dd
+	.byte	0x1
+	.4byte	0x3dc6
+	.4byte	0x3dcd
 	.uleb128 0x13
-	.long	0x3c05
+	.4byte	0x3fe9
+	.byte	0x1
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF257
-	.byte	0x14
-	.value	0x264
-	.long	.LASF648
-	.long	0x5e
 	.byte	0x1
-	.long	0x3a1e
-	.long	0x3a29
+	.4byte	.LASF258
+	.byte	0x14
+	.2byte	0x264
+	.4byte	.LASF647
+	.4byte	0x62
+	.byte	0x1
+	.4byte	0x3de7
+	.4byte	0x3df3
 	.uleb128 0x13
-	.long	0x3c05
+	.4byte	0x3fe9
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x3485
+	.4byte	0x37e3
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF257
-	.byte	0x14
-	.value	0x26d
-	.long	.LASF649
-	.long	0x5e
 	.byte	0x1
-	.long	0x3a42
-	.long	0x3a4d
+	.4byte	.LASF258
+	.byte	0x14
+	.2byte	0x26d
+	.4byte	.LASF648
+	.4byte	0x62
+	.byte	0x1
+	.4byte	0x3e0d
+	.4byte	0x3e19
 	.uleb128 0x13
-	.long	0x3c05
+	.4byte	0x3fe9
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x3c11
+	.4byte	0x3ff5
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF260
-	.byte	0x14
-	.value	0x27c
-	.long	.LASF650
-	.long	0x5e
 	.byte	0x1
-	.long	0x3a66
-	.long	0x3a71
+	.4byte	.LASF261
+	.byte	0x14
+	.2byte	0x27c
+	.4byte	.LASF649
+	.4byte	0x62
+	.byte	0x1
+	.4byte	0x3e33
+	.4byte	0x3e3f
 	.uleb128 0x13
-	.long	0x3c05
+	.4byte	0x3fe9
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x3485
+	.4byte	0x37e3
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF260
-	.byte	0x14
-	.value	0x297
-	.long	.LASF651
-	.long	0x5e
 	.byte	0x1
-	.long	0x3a8a
-	.long	0x3a90
+	.4byte	.LASF261
+	.byte	0x14
+	.2byte	0x297
+	.4byte	.LASF650
+	.4byte	0x62
+	.byte	0x1
+	.4byte	0x3e59
+	.4byte	0x3e60
 	.uleb128 0x13
-	.long	0x3c05
+	.4byte	0x3fe9
+	.byte	0x1
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF263
-	.byte	0x14
-	.value	0x2a4
-	.long	.LASF652
 	.byte	0x1
-	.long	0x3aa5
-	.long	0x3ab5
+	.4byte	.LASF264
+	.byte	0x14
+	.2byte	0x2a4
+	.4byte	.LASF651
+	.byte	0x1
+	.4byte	0x3e76
+	.4byte	0x3e87
 	.uleb128 0x13
-	.long	0x3c05
+	.4byte	0x3fe9
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x3485
+	.4byte	0x37e3
 	.uleb128 0x15
-	.long	0x5e
+	.4byte	0x62
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF263
-	.byte	0x14
-	.value	0x2b9
-	.long	.LASF653
 	.byte	0x1
-	.long	0x3aca
-	.long	0x3ad5
+	.4byte	.LASF264
+	.byte	0x14
+	.2byte	0x2b9
+	.4byte	.LASF652
+	.byte	0x1
+	.4byte	0x3e9d
+	.4byte	0x3ea9
 	.uleb128 0x13
-	.long	0x3c05
+	.4byte	0x3fe9
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x5e
+	.4byte	0x62
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF121
-	.byte	0x14
-	.value	0x2c8
-	.long	.LASF654
-	.long	0x347f
 	.byte	0x1
-	.long	0x3aee
-	.long	0x3af9
+	.4byte	.LASF122
+	.byte	0x14
+	.2byte	0x2c8
+	.4byte	.LASF653
+	.4byte	0x37dd
+	.byte	0x1
+	.4byte	0x3ec3
+	.4byte	0x3ecf
 	.uleb128 0x13
-	.long	0x3bfa
+	.4byte	0x3fde
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x5e
+	.4byte	0x62
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF267
-	.byte	0x14
-	.value	0x2d4
-	.long	.LASF655
 	.byte	0x1
-	.long	0x3b0e
-	.long	0x3b19
+	.4byte	.LASF268
+	.byte	0x14
+	.2byte	0x2d4
+	.4byte	.LASF654
+	.byte	0x1
+	.4byte	0x3ee5
+	.4byte	0x3ef1
 	.uleb128 0x13
-	.long	0x3c05
+	.4byte	0x3fe9
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x3c0b
+	.4byte	0x3fef
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF267
-	.byte	0x14
-	.value	0x2e5
-	.long	.LASF656
 	.byte	0x1
-	.long	0x3b2e
-	.long	0x3b43
+	.4byte	.LASF268
+	.byte	0x14
+	.2byte	0x2e5
+	.4byte	.LASF655
+	.byte	0x1
+	.4byte	0x3f07
+	.4byte	0x3f1d
 	.uleb128 0x13
-	.long	0x3c05
+	.4byte	0x3fe9
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x3479
+	.4byte	0x37d7
 	.uleb128 0x15
-	.long	0x5e
+	.4byte	0x62
 	.uleb128 0x15
-	.long	0x5e
+	.4byte	0x62
 	.byte	0
 	.uleb128 0x31
-	.long	.LASF270
-	.byte	0x14
-	.value	0x2f3
-	.long	.LASF657
-	.long	0x5b1
 	.byte	0x1
-	.long	0x3b5c
-	.long	0x3b62
+	.4byte	.LASF271
+	.byte	0x14
+	.2byte	0x2f3
+	.4byte	.LASF656
+	.4byte	0x613
+	.byte	0x1
+	.4byte	0x3f37
+	.4byte	0x3f3e
 	.uleb128 0x13
-	.long	0x3c05
+	.4byte	0x3fe9
+	.byte	0x1
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF272
-	.byte	0x14
-	.value	0x2ff
-	.long	.LASF658
 	.byte	0x1
-	.long	0x3b77
-	.long	0x3b82
+	.4byte	.LASF273
+	.byte	0x14
+	.2byte	0x2ff
+	.4byte	.LASF657
+	.byte	0x1
+	.4byte	0x3f54
+	.4byte	0x3f60
 	.uleb128 0x13
-	.long	0x3c05
+	.4byte	0x3fe9
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x5b1
+	.4byte	0x613
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF274
-	.byte	0x14
-	.value	0x336
-	.long	.LASF659
 	.byte	0x1
-	.long	0x3b97
-	.long	0x3ba2
+	.4byte	.LASF275
+	.byte	0x14
+	.2byte	0x336
+	.4byte	.LASF658
+	.byte	0x1
+	.4byte	0x3f76
+	.4byte	0x3f82
 	.uleb128 0x13
-	.long	0x3c05
+	.4byte	0x3fe9
+	.byte	0x1
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0xbc
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF276
-	.byte	0x14
-	.value	0x30f
-	.long	.LASF660
 	.byte	0x1
-	.long	0x3bb7
-	.long	0x3bc2
+	.4byte	.LASF277
+	.byte	0x14
+	.2byte	0x30f
+	.4byte	.LASF659
+	.byte	0x1
+	.4byte	0x3f98
+	.4byte	0x3fa4
 	.uleb128 0x13
-	.long	0x3c05
+	.4byte	0x3fe9
+	.byte	0x1
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0xbc
 	.byte	0
 	.uleb128 0x30
-	.long	.LASF278
-	.byte	0x14
-	.value	0x31c
-	.long	.LASF661
 	.byte	0x1
-	.long	0x3bd7
-	.long	0x3be2
+	.4byte	.LASF279
+	.byte	0x14
+	.2byte	0x31c
+	.4byte	.LASF660
+	.byte	0x1
+	.4byte	0x3fba
+	.4byte	0x3fc6
 	.uleb128 0x13
-	.long	0x3c05
+	.4byte	0x3fe9
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x3c11
+	.4byte	0x3ff5
 	.byte	0
-	.uleb128 0x2a
-	.string	"X"
-	.long	0x2ac6
-	.uleb128 0x2a
-	.string	"A"
-	.long	0x33d7
+	.uleb128 0x29
+	.ascii	"X\000"
+	.4byte	0x2d8c
+	.uleb128 0x29
+	.ascii	"A\000"
+	.4byte	0x3731
 	.uleb128 0x32
-	.long	.LASF280
-	.long	0x48a1
+	.4byte	.LASF281
+	.4byte	0x4d21
 	.byte	0
-	.uleb128 0x8
+	.uleb128 0x9
 	.byte	0x4
-	.long	0x3c00
+	.4byte	0x3fe4
 	.uleb128 0x1b
-	.long	0x3491
-	.uleb128 0x8
+	.4byte	0x37ef
+	.uleb128 0x9
 	.byte	0x4
-	.long	0x3491
+	.4byte	0x37ef
 	.uleb128 0x28
 	.byte	0x4
-	.long	0x3c00
+	.4byte	0x3fe4
 	.uleb128 0x28
 	.byte	0x4
-	.long	0x3491
+	.4byte	0x37ef
 	.uleb128 0x1d
-	.long	.LASF662
-	.uleb128 0x8
+	.4byte	.LASF661
+	.byte	0x1
+	.uleb128 0x9
 	.byte	0x4
-	.long	0x3c17
-	.uleb128 0x8
+	.4byte	0x3ffb
+	.uleb128 0x9
 	.byte	0x4
-	.long	0x2a7f
-	.uleb128 0x8
+	.4byte	0x2d45
+	.uleb128 0x9
 	.byte	0x4
-	.long	0x3c2e
+	.4byte	0x4013
 	.uleb128 0x1b
-	.long	0x2a7f
+	.4byte	0x2d45
 	.uleb128 0x28
 	.byte	0x4
-	.long	0x8c0
+	.4byte	0x957
 	.uleb128 0x28
 	.byte	0x4
-	.long	0x5e5
-	.uleb128 0x8
+	.4byte	0x647
+	.uleb128 0x9
 	.byte	0x4
-	.long	0x3c45
+	.4byte	0x402a
 	.uleb128 0x1b
-	.long	0xa2
+	.4byte	0xa6
 	.uleb128 0x1d
-	.long	.LASF663
-	.uleb128 0x8
+	.4byte	.LASF662
+	.byte	0x1
+	.uleb128 0x9
 	.byte	0x4
-	.long	0x3c4a
+	.4byte	0x402f
 	.uleb128 0x28
 	.byte	0x4
-	.long	0x3c5b
+	.4byte	0x4041
 	.uleb128 0x1d
-	.long	.LASF664
+	.4byte	.LASF663
+	.byte	0x1
 	.uleb128 0x28
 	.byte	0x4
-	.long	0x3c66
+	.4byte	0x404d
 	.uleb128 0x1b
-	.long	0x8c0
-	.uleb128 0x2b
-	.long	.LASF665
-	.long	0x3c8f
+	.4byte	0x957
+	.uleb128 0x2a
+	.4byte	.LASF664
+	.byte	0x1
+	.4byte	0x4079
 	.uleb128 0x3f
-	.long	.LASF666
+	.byte	0x1
+	.4byte	.LASF665
 	.byte	0x2
 	.byte	0x2d
-	.long	.LASF667
-	.long	0xb8
+	.4byte	.LASF666
+	.4byte	0xbc
 	.byte	0x1
-	.long	0x3c88
+	.4byte	0x4071
 	.uleb128 0x13
-	.long	0x3c8f
+	.4byte	0x4079
+	.byte	0x1
 	.byte	0
 	.byte	0
-	.uleb128 0x8
+	.uleb128 0x9
 	.byte	0x4
-	.long	0x3c6b
+	.4byte	0x4052
 	.uleb128 0x1d
-	.long	.LASF668
-	.uleb128 0x8
+	.4byte	.LASF667
+	.byte	0x1
+	.uleb128 0x9
 	.byte	0x4
-	.long	0x3c95
+	.4byte	0x407f
 	.uleb128 0x1d
-	.long	.LASF669
+	.4byte	.LASF668
+	.byte	0x1
 	.uleb128 0x1d
-	.long	.LASF670
-	.uleb128 0x24
-	.long	.LASF671
+	.4byte	.LASF669
+	.byte	0x1
+	.uleb128 0x23
+	.4byte	.LASF670
 	.byte	0x18
 	.byte	0x19
 	.byte	0x1f
-	.long	0x3f37
-	.uleb128 0xd
-	.long	.LASF672
+	.4byte	0x4366
+	.uleb128 0x24
+	.4byte	.LASF671
 	.byte	0x19
 	.byte	0x6a
-	.long	0x3c9a
-	.byte	0
-	.uleb128 0xd
-	.long	.LASF673
+	.4byte	0x4085
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.byte	0x3
+	.uleb128 0x24
+	.4byte	.LASF672
 	.byte	0x19
 	.byte	0x6b
-	.long	0x2a74
-	.byte	0x4
-	.uleb128 0xd
-	.long	.LASF674
+	.4byte	0x2d3a
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x4
+	.byte	0x3
+	.uleb128 0x24
+	.4byte	.LASF673
 	.byte	0x19
 	.byte	0x6c
-	.long	0x2a74
-	.byte	0x6
-	.uleb128 0xd
-	.long	.LASF675
+	.4byte	0x2d3a
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x6
+	.byte	0x3
+	.uleb128 0x24
+	.4byte	.LASF674
 	.byte	0x19
 	.byte	0x6d
-	.long	0x2a74
-	.byte	0x8
-	.uleb128 0xd
-	.long	.LASF474
+	.4byte	0x2d3a
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x8
+	.byte	0x3
+	.uleb128 0x24
+	.4byte	.LASF473
 	.byte	0x19
 	.byte	0x6e
-	.long	0xce
-	.byte	0xa
-	.uleb128 0xd
-	.long	.LASF676
+	.4byte	0xd2
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0xa
+	.byte	0x3
+	.uleb128 0x24
+	.4byte	.LASF675
 	.byte	0x19
 	.byte	0x6f
-	.long	0xce
-	.byte	0xc
-	.uleb128 0xd
-	.long	.LASF677
+	.4byte	0xd2
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0xc
+	.byte	0x3
+	.uleb128 0x24
+	.4byte	.LASF676
 	.byte	0x19
 	.byte	0x70
-	.long	0xce
-	.byte	0xe
-	.uleb128 0xd
-	.long	.LASF678
+	.4byte	0xd2
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0xe
+	.byte	0x3
+	.uleb128 0x24
+	.4byte	.LASF677
 	.byte	0x19
 	.byte	0x71
-	.long	0xce
-	.byte	0x10
-	.uleb128 0x29
-	.long	.LASF679
+	.4byte	0xd2
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x10
+	.byte	0x3
+	.uleb128 0x3
+	.4byte	.LASF678
 	.byte	0x19
 	.byte	0x23
-	.long	0x3f37
-	.byte	0x1
-	.uleb128 0xd
-	.long	.LASF680
+	.4byte	0x4366
+	.uleb128 0x24
+	.4byte	.LASF679
 	.byte	0x19
 	.byte	0x72
-	.long	0x3d16
-	.byte	0x14
+	.4byte	0x411b
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x14
+	.byte	0x3
 	.uleb128 0x12
-	.long	.LASF671
+	.byte	0x1
+	.4byte	.LASF670
 	.byte	0x19
 	.byte	0x2d
+	.4byte	0x4377
 	.byte	0x1
-	.long	0x3d3e
-	.long	0x3d44
+	.4byte	0x414a
+	.4byte	0x4151
 	.uleb128 0x13
-	.long	0x3f48
+	.4byte	0x4377
+	.byte	0x1
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF681
+	.byte	0x1
+	.4byte	.LASF680
 	.byte	0x19
 	.byte	0x33
-	.long	.LASF682
-	.long	0xce
+	.4byte	.LASF681
+	.4byte	0xd2
 	.byte	0x1
-	.long	0x3d5c
-	.long	0x3d62
+	.4byte	0x416a
+	.4byte	0x4171
 	.uleb128 0x13
-	.long	0x3f4e
+	.4byte	0x437d
+	.byte	0x1
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF683
+	.byte	0x1
+	.4byte	.LASF682
 	.byte	0x19
 	.byte	0x36
-	.long	.LASF684
-	.long	0x3f59
+	.4byte	.LASF683
+	.4byte	0x4388
 	.byte	0x1
-	.long	0x3d7a
-	.long	0x3d80
+	.4byte	0x418a
+	.4byte	0x4191
 	.uleb128 0x13
-	.long	0x3f4e
+	.4byte	0x437d
+	.byte	0x1
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF685
+	.byte	0x1
+	.4byte	.LASF684
 	.byte	0x19
 	.byte	0x39
-	.long	.LASF686
-	.long	0x3f64
+	.4byte	.LASF685
+	.4byte	0x4393
 	.byte	0x1
-	.long	0x3d98
-	.long	0x3d9e
+	.4byte	0x41aa
+	.4byte	0x41b1
 	.uleb128 0x13
-	.long	0x3f4e
+	.4byte	0x437d
+	.byte	0x1
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF687
+	.byte	0x1
+	.4byte	.LASF686
 	.byte	0x19
 	.byte	0x3c
-	.long	.LASF688
-	.long	0x2a74
+	.4byte	.LASF687
+	.4byte	0x2d3a
 	.byte	0x1
-	.long	0x3db6
-	.long	0x3dbc
+	.4byte	0x41ca
+	.4byte	0x41d1
 	.uleb128 0x13
-	.long	0x3f4e
+	.4byte	0x437d
+	.byte	0x1
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF689
+	.byte	0x1
+	.4byte	.LASF688
 	.byte	0x19
 	.byte	0x3f
-	.long	.LASF690
-	.long	0x2a74
+	.4byte	.LASF689
+	.4byte	0x2d3a
 	.byte	0x1
-	.long	0x3dd4
-	.long	0x3dda
+	.4byte	0x41ea
+	.4byte	0x41f1
 	.uleb128 0x13
-	.long	0x3f4e
+	.4byte	0x437d
+	.byte	0x1
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF691
+	.byte	0x1
+	.4byte	.LASF690
 	.byte	0x19
 	.byte	0x42
-	.long	.LASF692
-	.long	0x2a74
+	.4byte	.LASF691
+	.4byte	0x2d3a
 	.byte	0x1
-	.long	0x3df2
-	.long	0x3df8
+	.4byte	0x420a
+	.4byte	0x4211
 	.uleb128 0x13
-	.long	0x3f4e
+	.4byte	0x437d
+	.byte	0x1
 	.byte	0
 	.uleb128 0x25
-	.long	.LASF693
+	.byte	0x1
+	.4byte	.LASF692
 	.byte	0x19
 	.byte	0x45
-	.long	.LASF694
+	.4byte	.LASF693
 	.byte	0x1
-	.long	0x3e0c
-	.long	0x3e17
+	.4byte	0x4226
+	.4byte	0x4232
 	.uleb128 0x13
-	.long	0x3f48
+	.4byte	0x4377
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x2a74
+	.4byte	0x2d3a
 	.byte	0
 	.uleb128 0x25
-	.long	.LASF695
+	.byte	0x1
+	.4byte	.LASF694
 	.byte	0x19
 	.byte	0x48
-	.long	.LASF696
+	.4byte	.LASF695
 	.byte	0x1
-	.long	0x3e2b
-	.long	0x3e36
+	.4byte	0x4247
+	.4byte	0x4253
 	.uleb128 0x13
-	.long	0x3f48
+	.4byte	0x4377
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x2a74
+	.4byte	0x2d3a
 	.byte	0
 	.uleb128 0x25
-	.long	.LASF697
+	.byte	0x1
+	.4byte	.LASF696
 	.byte	0x19
 	.byte	0x4b
-	.long	.LASF698
+	.4byte	.LASF697
 	.byte	0x1
-	.long	0x3e4a
-	.long	0x3e55
+	.4byte	0x4268
+	.4byte	0x4274
 	.uleb128 0x13
-	.long	0x3f48
+	.4byte	0x4377
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x2a74
+	.4byte	0x2d3a
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF699
+	.byte	0x1
+	.4byte	.LASF698
 	.byte	0x19
 	.byte	0x4e
-	.long	.LASF700
-	.long	0xce
+	.4byte	.LASF699
+	.4byte	0xd2
 	.byte	0x1
-	.long	0x3e6d
-	.long	0x3e73
+	.4byte	0x428d
+	.4byte	0x4294
 	.uleb128 0x13
-	.long	0x3f4e
+	.4byte	0x437d
+	.byte	0x1
 	.byte	0
 	.uleb128 0x25
-	.long	.LASF701
+	.byte	0x1
+	.4byte	.LASF700
 	.byte	0x19
 	.byte	0x51
-	.long	.LASF702
+	.4byte	.LASF701
 	.byte	0x1
-	.long	0x3e87
-	.long	0x3e8d
+	.4byte	0x42a9
+	.4byte	0x42b0
 	.uleb128 0x13
-	.long	0x3f48
+	.4byte	0x4377
+	.byte	0x1
 	.byte	0
 	.uleb128 0x25
-	.long	.LASF703
+	.byte	0x1
+	.4byte	.LASF702
 	.byte	0x19
 	.byte	0x54
-	.long	.LASF704
+	.4byte	.LASF703
 	.byte	0x1
-	.long	0x3ea1
-	.long	0x3ea7
+	.4byte	0x42c5
+	.4byte	0x42cc
 	.uleb128 0x13
-	.long	0x3f48
+	.4byte	0x4377
+	.byte	0x1
 	.byte	0
 	.uleb128 0x25
-	.long	.LASF705
+	.byte	0x1
+	.4byte	.LASF704
 	.byte	0x19
 	.byte	0x57
-	.long	.LASF706
+	.4byte	.LASF705
 	.byte	0x1
-	.long	0x3ebb
-	.long	0x3ec1
+	.4byte	0x42e1
+	.4byte	0x42e8
 	.uleb128 0x13
-	.long	0x3f48
+	.4byte	0x4377
+	.byte	0x1
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF707
+	.byte	0x1
+	.4byte	.LASF706
 	.byte	0x19
 	.byte	0x5a
-	.long	.LASF708
-	.long	0x5b1
+	.4byte	.LASF707
+	.4byte	0x613
 	.byte	0x1
-	.long	0x3ed9
-	.long	0x3edf
+	.4byte	0x4301
+	.4byte	0x4308
 	.uleb128 0x13
-	.long	0x3f4e
+	.4byte	0x437d
+	.byte	0x1
 	.byte	0
 	.uleb128 0x25
-	.long	.LASF709
+	.byte	0x1
+	.4byte	.LASF708
 	.byte	0x19
 	.byte	0x5d
-	.long	.LASF710
+	.4byte	.LASF709
 	.byte	0x1
-	.long	0x3ef3
-	.long	0x3efe
+	.4byte	0x431d
+	.4byte	0x4329
 	.uleb128 0x13
-	.long	0x3f48
+	.4byte	0x4377
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x3d16
+	.4byte	0x411b
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF711
+	.byte	0x1
+	.4byte	.LASF710
 	.byte	0x19
 	.byte	0x60
-	.long	.LASF712
-	.long	0x3d16
+	.4byte	.LASF711
+	.4byte	0x411b
 	.byte	0x1
-	.long	0x3f16
-	.long	0x3f1c
+	.4byte	0x4342
+	.4byte	0x4349
 	.uleb128 0x13
-	.long	0x3f4e
+	.4byte	0x437d
+	.byte	0x1
 	.byte	0
 	.uleb128 0x3f
-	.long	.LASF713
+	.byte	0x1
+	.4byte	.LASF712
 	.byte	0x19
 	.byte	0x62
-	.long	.LASF714
-	.long	0xce
+	.4byte	.LASF713
+	.4byte	0xd2
 	.byte	0x1
-	.long	0x3f30
+	.4byte	0x435e
 	.uleb128 0x13
-	.long	0x3f48
+	.4byte	0x4377
+	.byte	0x1
 	.byte	0
 	.byte	0
-	.uleb128 0x8
+	.uleb128 0x9
 	.byte	0x4
-	.long	0x3f3d
+	.4byte	0x436c
 	.uleb128 0x40
-	.long	0x3f48
+	.4byte	0x4377
 	.uleb128 0x15
-	.long	0x3f48
+	.4byte	0x4377
 	.byte	0
-	.uleb128 0x8
+	.uleb128 0x9
 	.byte	0x4
-	.long	0x3caa
-	.uleb128 0x8
+	.4byte	0x4097
+	.uleb128 0x9
 	.byte	0x4
-	.long	0x3f54
+	.4byte	0x4383
 	.uleb128 0x1b
-	.long	0x3caa
-	.uleb128 0x8
+	.4byte	0x4097
+	.uleb128 0x9
 	.byte	0x4
-	.long	0x3f5f
+	.4byte	0x438e
 	.uleb128 0x1b
-	.long	0x3c95
+	.4byte	0x407f
 	.uleb128 0x1b
-	.long	0xce
+	.4byte	0xd2
 	.uleb128 0x1b
-	.long	0x3c8f
-	.uleb128 0x8
+	.4byte	0x4079
+	.uleb128 0x9
 	.byte	0x4
-	.long	0x3f74
-	.uleb128 0x2b
-	.long	.LASF715
-	.long	0x3fb6
+	.4byte	0x43a3
+	.uleb128 0x2a
+	.4byte	.LASF714
+	.byte	0x1
+	.4byte	0x43ea
 	.uleb128 0x16
-	.long	.LASF716
+	.byte	0x1
+	.4byte	.LASF715
 	.byte	0x2
 	.byte	0x61
-	.long	.LASF717
-	.long	0xb8
+	.4byte	.LASF716
+	.4byte	0xbc
 	.byte	0x1
-	.long	0x3f95
-	.long	0x3f9b
+	.4byte	0x43c6
+	.4byte	0x43cd
 	.uleb128 0x13
-	.long	0x3f6e
+	.4byte	0x439d
+	.byte	0x1
 	.byte	0
 	.uleb128 0x3f
-	.long	.LASF718
+	.byte	0x1
+	.4byte	.LASF717
 	.byte	0x2
 	.byte	0x63
-	.long	.LASF719
-	.long	0xb8
+	.4byte	.LASF718
+	.4byte	0xbc
 	.byte	0x1
-	.long	0x3faf
+	.4byte	0x43e2
 	.uleb128 0x13
-	.long	0x3f6e
+	.4byte	0x439d
+	.byte	0x1
 	.byte	0
 	.byte	0
 	.uleb128 0x1b
-	.long	0x3f6e
+	.4byte	0x439d
 	.uleb128 0x41
-	.long	.LASF720
-	.value	0xb60
+	.4byte	.LASF719
+	.2byte	0xb60
 	.byte	0x3
 	.byte	0x5a
-	.long	0x3fe1
-	.uleb128 0xd
-	.long	.LASF721
+	.4byte	0x4419
+	.uleb128 0xe
+	.4byte	.LASF720
 	.byte	0x3
 	.byte	0x5c
-	.long	0x3fe1
-	.byte	0
-	.uleb128 0xd
-	.long	.LASF722
+	.4byte	0x4419
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0xe
+	.4byte	.LASF721
 	.byte	0x3
 	.byte	0x5d
-	.long	0x3ff1
-	.byte	0x40
+	.4byte	0x4429
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x40
 	.byte	0
 	.uleb128 0x18
-	.long	0x5e
-	.long	0x3ff1
+	.4byte	0x62
+	.4byte	0x4429
 	.uleb128 0x1a
-	.long	0x3dd
+	.4byte	0x419
 	.byte	0xf
 	.byte	0
 	.uleb128 0x18
-	.long	0x5e
-	.long	0x4002
+	.4byte	0x62
+	.4byte	0x443a
 	.uleb128 0x19
-	.long	0x3dd
-	.value	0x2c7
+	.4byte	0x419
+	.2byte	0x2c7
 	.byte	0
-	.uleb128 0x24
-	.long	.LASF723
+	.uleb128 0x23
+	.4byte	.LASF722
 	.byte	0x18
 	.byte	0x4
 	.byte	0x20
-	.long	0x4114
-	.uleb128 0xf
-	.string	"pos"
+	.4byte	0x455e
+	.uleb128 0x10
+	.ascii	"pos\000"
 	.byte	0x4
 	.byte	0x27
-	.long	0x4114
-	.byte	0
-	.byte	0x1
-	.uleb128 0x10
-	.long	.LASF724
+	.4byte	0x455e
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0xe
+	.4byte	.LASF723
 	.byte	0x4
 	.byte	0x28
-	.long	0x4114
-	.byte	0x4
-	.byte	0x1
-	.uleb128 0x10
-	.long	.LASF52
+	.4byte	0x455e
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x4
+	.uleb128 0xe
+	.4byte	.LASF52
 	.byte	0x4
 	.byte	0x29
-	.long	0x4114
-	.byte	0x8
-	.byte	0x1
-	.uleb128 0x10
-	.long	.LASF725
+	.4byte	0x455e
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x8
+	.uleb128 0xe
+	.4byte	.LASF724
 	.byte	0x4
 	.byte	0x2a
-	.long	0xc3
-	.byte	0xc
-	.byte	0x1
-	.uleb128 0x10
-	.long	.LASF726
+	.4byte	0xc7
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0xc
+	.uleb128 0xe
+	.4byte	.LASF725
 	.byte	0x4
 	.byte	0x2c
-	.long	0x5e
-	.byte	0x10
-	.byte	0x1
+	.4byte	0x62
+	.byte	0x2
+	.byte	0x23
 	.uleb128 0x10
-	.long	.LASF727
+	.uleb128 0xe
+	.4byte	.LASF726
 	.byte	0x4
 	.byte	0x2d
-	.long	0x3f48
-	.byte	0x14
-	.byte	0x1
+	.4byte	0x4377
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x14
 	.uleb128 0x12
-	.long	.LASF728
+	.byte	0x1
+	.4byte	.LASF727
 	.byte	0x4
 	.byte	0x65
+	.4byte	0x4564
 	.byte	0x1
-	.long	0x406c
-	.long	0x4072
+	.4byte	0x44af
+	.4byte	0x44b6
 	.uleb128 0x13
-	.long	0x411a
+	.4byte	0x4564
+	.byte	0x1
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF61
+	.byte	0x1
+	.4byte	.LASF63
 	.byte	0x4
 	.byte	0x70
-	.long	.LASF729
-	.long	0x5e
+	.4byte	.LASF728
+	.4byte	0x62
 	.byte	0x1
-	.long	0x408a
-	.long	0x4095
+	.4byte	0x44cf
+	.4byte	0x44db
 	.uleb128 0x13
-	.long	0x411a
+	.4byte	0x4564
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x3ea
+	.4byte	0x426
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF730
+	.byte	0x1
+	.4byte	.LASF729
 	.byte	0x4
 	.byte	0xb5
-	.long	.LASF731
-	.long	0x5e
+	.4byte	.LASF730
+	.4byte	0x62
 	.byte	0x1
-	.long	0x40ad
-	.long	0x40d1
+	.4byte	0x44f4
+	.4byte	0x4519
 	.uleb128 0x13
-	.long	0x411a
+	.4byte	0x4564
+	.byte	0x1
 	.uleb128 0x15
-	.long	0x165
+	.4byte	0x16b
 	.uleb128 0x15
-	.long	0x5e
+	.4byte	0x62
 	.uleb128 0x15
-	.long	0x5e
+	.4byte	0x62
 	.uleb128 0x15
-	.long	0x5e
+	.4byte	0x62
 	.uleb128 0x15
-	.long	0x5e
+	.4byte	0x62
 	.uleb128 0x15
-	.long	0x3f0
+	.4byte	0x42c
 	.byte	0
 	.uleb128 0x14
-	.long	.LASF113
+	.byte	0x1
+	.4byte	.LASF62
 	.byte	0x4
 	.byte	0x39
-	.long	.LASF732
-	.long	0x5e
+	.4byte	.LASF731
+	.4byte	0x62
 	.byte	0x1
-	.long	0x40f0
+	.4byte	0x4539
 	.uleb128 0x15
-	.long	0x3ea
+	.4byte	0x426
 	.uleb128 0x15
-	.long	0x411a
+	.4byte	0x4564
 	.byte	0
 	.uleb128 0x14
-	.long	.LASF733
+	.byte	0x1
+	.4byte	.LASF732
 	.byte	0x4
 	.byte	0x3f
-	.long	.LASF734
-	.long	0xd9
+	.4byte	.LASF733
+	.4byte	0xdd
 	.byte	0x1
-	.long	0x410a
+	.4byte	0x4554
 	.uleb128 0x15
-	.long	0xc3
+	.4byte	0xc7
 	.byte	0
 	.uleb128 0x32
-	.long	.LASF735
-	.long	0x3e
+	.4byte	.LASF734
+	.4byte	0x42
 	.byte	0
-	.uleb128 0x8
+	.uleb128 0x9
 	.byte	0x4
-	.long	0x3e
-	.uleb128 0x8
+	.4byte	0x42
+	.uleb128 0x9
 	.byte	0x4
-	.long	0x4002
-	.uleb128 0x24
-	.long	.LASF736
+	.4byte	0x443a
+	.uleb128 0x23
+	.4byte	.LASF735
 	.byte	0x1
 	.byte	0x14
 	.byte	0x31
-	.long	0x4169
+	.4byte	0x45b4
 	.uleb128 0x14
-	.long	.LASF345
+	.byte	0x1
+	.4byte	.LASF345
 	.byte	0x14
 	.byte	0x34
-	.long	.LASF737
-	.long	0x14aa
+	.4byte	.LASF736
+	.4byte	0x1601
 	.byte	0x1
-	.long	0x415a
+	.4byte	0x45a5
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0xbc
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0xbc
 	.uleb128 0x15
-	.long	0xb8
+	.4byte	0xbc
 	.uleb128 0x15
-	.long	0x14aa
+	.4byte	0x1601
 	.uleb128 0x15
-	.long	0x4169
+	.4byte	0x45b4
 	.byte	0
-	.uleb128 0x2a
-	.string	"X"
-	.long	0x8cc
-	.uleb128 0x2a
-	.string	"A"
-	.long	0x19da
+	.uleb128 0x29
+	.ascii	"X\000"
+	.4byte	0x963
+	.uleb128 0x29
+	.ascii	"A\000"
+	.4byte	0x1b8b
 	.byte	0
 	.uleb128 0x28
 	.byte	0x4
-	.long	0x19da
-	.uleb128 0x8
+	.4byte	0x1b8b
+	.uleb128 0x9
 	.byte	0x4
-	.long	0xa2
-	.uleb128 0x8
+	.4byte	0xa6
+	.uleb128 0x9
 	.byte	0x4
-	.long	0x3ca5
+	.4byte	0x4091
 	.uleb128 0x42
-	.long	.LASF797
+	.4byte	.LASF795
 	.byte	0x1
-	.value	0x15b
-	.long	.LFB4
-	.long	.LFE4-.LFB4
-	.uleb128 0x1
-	.byte	0x9c
+	.2byte	0x15b
+	.4byte	.LFB4
+	.4byte	.LFE4
+	.4byte	.LLST0
+	.byte	0x1
 	.uleb128 0x43
-	.long	0x3c74
-	.long	.LFB1424
-	.long	.LFE1424-.LFB1424
-	.uleb128 0x1
-	.byte	0x9c
-	.long	0x41a4
-	.long	0x41b1
+	.4byte	0x405c
+	.4byte	.LFB1421
+	.4byte	.LFE1421
+	.4byte	.LLST1
+	.4byte	0x45f5
+	.byte	0x1
+	.4byte	0x4603
 	.uleb128 0x44
-	.long	.LASF738
-	.long	0x3f69
-	.uleb128 0x2
+	.4byte	.LASF737
+	.4byte	0x4398
+	.byte	0x1
+	.byte	0x2
 	.byte	0x91
-	.sleb128 0
+	.sleb128 -4
 	.byte	0
 	.uleb128 0x43
-	.long	0x3f7d
-	.long	.LFB1428
-	.long	.LFE1428-.LFB1428
-	.uleb128 0x1
-	.byte	0x9c
-	.long	0x41c8
-	.long	0x41d5
+	.4byte	0x43ad
+	.4byte	.LFB1425
+	.4byte	.LFE1425
+	.4byte	.LLST2
+	.4byte	0x461d
+	.byte	0x1
+	.4byte	0x462b
 	.uleb128 0x44
-	.long	.LASF738
-	.long	0x3fb6
-	.uleb128 0x2
+	.4byte	.LASF737
+	.4byte	0x43ea
+	.byte	0x1
+	.byte	0x2
 	.byte	0x91
-	.sleb128 0
+	.sleb128 -4
 	.byte	0
 	.uleb128 0x43
-	.long	0x3f9b
-	.long	.LFB1429
-	.long	.LFE1429-.LFB1429
-	.uleb128 0x1
-	.byte	0x9c
-	.long	0x41ec
-	.long	0x41f9
+	.4byte	0x43cd
+	.4byte	.LFB1426
+	.4byte	.LFE1426
+	.4byte	.LLST3
+	.4byte	0x4645
+	.byte	0x1
+	.4byte	0x4653
 	.uleb128 0x44
-	.long	.LASF738
-	.long	0x3fb6
-	.uleb128 0x2
+	.4byte	.LASF737
+	.4byte	0x43ea
+	.byte	0x1
+	.byte	0x2
 	.byte	0x91
-	.sleb128 0
+	.sleb128 -4
 	.byte	0
 	.uleb128 0x45
-	.long	0x33c
+	.4byte	0x371
 	.byte	0x3
 	.byte	0x1b
-	.long	.LFB1430
-	.long	.LFE1430-.LFB1430
-	.uleb128 0x1
-	.byte	0x9c
-	.long	0x4212
-	.long	0x42b1
+	.4byte	.LFB1427
+	.4byte	.LFE1427
+	.4byte	.LLST4
+	.4byte	0x466f
+	.byte	0x1
+	.4byte	0x470f
 	.uleb128 0x44
-	.long	.LASF738
-	.long	0x42b1
-	.uleb128 0x2
+	.4byte	.LASF737
+	.4byte	0x470f
+	.byte	0x1
+	.byte	0x2
 	.byte	0x91
-	.sleb128 0
+	.sleb128 -44
 	.uleb128 0x46
-	.long	.LASF745
+	.4byte	.LASF744
 	.byte	0x3
 	.byte	0x1b
-	.long	0x3ea
-	.uleb128 0x2
+	.4byte	0x426
+	.byte	0x2
 	.byte	0x91
-	.sleb128 4
+	.sleb128 -48
 	.uleb128 0x47
-	.long	.LBB2
-	.long	.LBE2-.LBB2
+	.4byte	.LBB2
+	.4byte	.LBE2
 	.uleb128 0x48
-	.long	.LASF739
+	.4byte	.LASF738
 	.byte	0x3
 	.byte	0x1d
-	.long	0x165
-	.uleb128 0x2
+	.4byte	0x16b
+	.byte	0x2
+	.byte	0x91
+	.sleb128 -12
+	.uleb128 0x48
+	.4byte	.LASF739
+	.byte	0x3
+	.byte	0x1e
+	.4byte	0x62
+	.byte	0x2
+	.byte	0x91
+	.sleb128 -16
+	.uleb128 0x49
+	.ascii	"mix\000"
+	.byte	0x3
+	.byte	0x1f
+	.4byte	0x62
+	.byte	0x2
 	.byte	0x91
 	.sleb128 -20
 	.uleb128 0x48
-	.long	.LASF740
+	.4byte	.LASF740
 	.byte	0x3
-	.byte	0x1e
-	.long	0x5e
-	.uleb128 0x2
-	.byte	0x91
-	.sleb128 -24
-	.uleb128 0x49
-	.string	"mix"
-	.byte	0x3
-	.byte	0x1f
-	.long	0x5e
-	.uleb128 0x2
+	.byte	0x40
+	.4byte	0x62
+	.byte	0x2
 	.byte	0x91
 	.sleb128 -28
 	.uleb128 0x48
-	.long	.LASF741
-	.byte	0x3
-	.byte	0x40
-	.long	0x5e
-	.uleb128 0x2
-	.byte	0x91
-	.sleb128 -36
-	.uleb128 0x48
-	.long	.LASF742
+	.4byte	.LASF741
 	.byte	0x3
 	.byte	0x41
-	.long	0x5e
-	.uleb128 0x2
-	.byte	0x91
-	.sleb128 -40
-	.uleb128 0x48
-	.long	.LASF743
-	.byte	0x3
-	.byte	0x43
-	.long	0x5e
-	.uleb128 0x2
-	.byte	0x91
-	.sleb128 -48
-	.uleb128 0x49
-	.string	"ret"
-	.byte	0x3
-	.byte	0x44
-	.long	0x5e
-	.uleb128 0x2
-	.byte	0x91
-	.sleb128 -44
-	.uleb128 0x47
-	.long	.LBB4
-	.long	.LBE4-.LBB4
-	.uleb128 0x48
-	.long	.LASF744
-	.byte	0x3
-	.byte	0x2b
-	.long	0x3f6e
-	.uleb128 0x2
+	.4byte	0x62
+	.byte	0x2
 	.byte	0x91
 	.sleb128 -32
+	.uleb128 0x48
+	.4byte	.LASF742
+	.byte	0x3
+	.byte	0x43
+	.4byte	0x62
+	.byte	0x2
+	.byte	0x91
+	.sleb128 -40
+	.uleb128 0x49
+	.ascii	"ret\000"
+	.byte	0x3
+	.byte	0x44
+	.4byte	0x62
+	.byte	0x2
+	.byte	0x91
+	.sleb128 -36
+	.uleb128 0x47
+	.4byte	.LBB4
+	.4byte	.LBE4
+	.uleb128 0x48
+	.4byte	.LASF743
+	.byte	0x3
+	.byte	0x2b
+	.4byte	0x439d
+	.byte	0x2
+	.byte	0x91
+	.sleb128 -24
 	.byte	0
 	.byte	0
 	.byte	0
 	.uleb128 0x1b
-	.long	0x3e4
+	.4byte	0x420
 	.uleb128 0x4a
-	.long	0x3b9
+	.4byte	0x3f4
 	.byte	0x3
 	.byte	0x6f
-	.long	.LFB1431
-	.long	.LFE1431-.LFB1431
-	.uleb128 0x1
-	.byte	0x9c
-	.long	0x42ee
+	.4byte	.LFB1428
+	.4byte	.LFE1428
+	.4byte	.LLST5
+	.byte	0x1
+	.4byte	0x474f
 	.uleb128 0x47
-	.long	.LBB5
-	.long	.LBE5-.LBB5
+	.4byte	.LBB5
+	.4byte	.LBE5
 	.uleb128 0x49
-	.string	"i"
+	.ascii	"i\000"
 	.byte	0x3
 	.byte	0x72
-	.long	0x5e
-	.uleb128 0x2
+	.4byte	0x62
+	.byte	0x2
 	.byte	0x91
-	.sleb128 -16
+	.sleb128 -4
 	.uleb128 0x49
-	.string	"j"
+	.ascii	"j\000"
 	.byte	0x3
 	.byte	0x72
-	.long	0x5e
-	.uleb128 0x2
+	.4byte	0x62
+	.byte	0x2
 	.byte	0x91
-	.sleb128 -20
+	.sleb128 -8
 	.byte	0
 	.byte	0
 	.uleb128 0x45
-	.long	0x35f
+	.4byte	0x396
 	.byte	0x3
 	.byte	0xd0
-	.long	.LFB1432
-	.long	.LFE1432-.LFB1432
-	.uleb128 0x1
-	.byte	0x9c
-	.long	0x4307
-	.long	0x472a
+	.4byte	.LFB1429
+	.4byte	.LFE1429
+	.4byte	.LLST6
+	.4byte	0x476b
+	.byte	0x1
+	.4byte	0x4b8f
 	.uleb128 0x44
-	.long	.LASF738
-	.long	0x42b1
-	.uleb128 0x2
+	.4byte	.LASF737
+	.4byte	0x470f
+	.byte	0x1
+	.byte	0x3
+	.byte	0x91
+	.sleb128 -156
+	.uleb128 0x46
+	.4byte	.LASF738
+	.byte	0x3
+	.byte	0xd0
+	.4byte	0x16b
+	.byte	0x3
+	.byte	0x91
+	.sleb128 -160
+	.uleb128 0x46
+	.4byte	.LASF739
+	.byte	0x3
+	.byte	0xd0
+	.4byte	0x62
+	.byte	0x3
+	.byte	0x91
+	.sleb128 -164
+	.uleb128 0x46
+	.4byte	.LASF740
+	.byte	0x3
+	.byte	0xd0
+	.4byte	0x62
+	.byte	0x3
+	.byte	0x91
+	.sleb128 -168
+	.uleb128 0x46
+	.4byte	.LASF741
+	.byte	0x3
+	.byte	0xd0
+	.4byte	0x62
+	.byte	0x2
 	.byte	0x91
 	.sleb128 0
-	.uleb128 0x46
-	.long	.LASF739
+	.uleb128 0x4b
+	.ascii	"mix\000"
 	.byte	0x3
 	.byte	0xd0
-	.long	0x165
-	.uleb128 0x2
+	.4byte	0x62
+	.byte	0x2
 	.byte	0x91
 	.sleb128 4
 	.uleb128 0x46
-	.long	.LASF740
+	.4byte	.LASF745
 	.byte	0x3
 	.byte	0xd0
-	.long	0x5e
-	.uleb128 0x2
+	.4byte	0x42c
+	.byte	0x2
 	.byte	0x91
 	.sleb128 8
-	.uleb128 0x46
-	.long	.LASF741
-	.byte	0x3
-	.byte	0xd0
-	.long	0x5e
-	.uleb128 0x2
-	.byte	0x91
-	.sleb128 12
-	.uleb128 0x46
-	.long	.LASF742
-	.byte	0x3
-	.byte	0xd0
-	.long	0x5e
-	.uleb128 0x2
-	.byte	0x91
-	.sleb128 16
-	.uleb128 0x4b
-	.string	"mix"
-	.byte	0x3
-	.byte	0xd0
-	.long	0x5e
-	.uleb128 0x2
-	.byte	0x91
-	.sleb128 20
-	.uleb128 0x46
-	.long	.LASF746
-	.byte	0x3
-	.byte	0xd0
-	.long	0x3f0
-	.uleb128 0x2
-	.byte	0x91
-	.sleb128 24
 	.uleb128 0x4c
-	.long	.LASF747
+	.4byte	.LASF746
 	.byte	0x3
-	.value	0x1cb
-	.long	.L87
+	.2byte	0x155
+	.4byte	.L43
 	.uleb128 0x4c
-	.long	.LASF748
+	.4byte	.LASF747
 	.byte	0x3
-	.value	0x225
-	.long	.L29
+	.2byte	0x1cb
+	.4byte	.L89
 	.uleb128 0x4c
-	.long	.LASF749
+	.4byte	.LASF748
 	.byte	0x3
-	.value	0x100
-	.long	.L26
+	.2byte	0x225
+	.4byte	.L31
 	.uleb128 0x4c
-	.long	.LASF750
+	.4byte	.LASF749
 	.byte	0x3
-	.value	0x155
-	.long	.L41
+	.2byte	0x100
+	.4byte	.L28
 	.uleb128 0x47
-	.long	.LBB6
-	.long	.LBE6-.LBB6
+	.4byte	.LBB6
+	.4byte	.LBE6
 	.uleb128 0x48
-	.long	.LASF751
+	.4byte	.LASF750
 	.byte	0x3
 	.byte	0xe0
-	.long	0x165
-	.uleb128 0x3
+	.4byte	0x16b
+	.byte	0x3
 	.byte	0x91
-	.sleb128 -96
+	.sleb128 -80
 	.uleb128 0x49
-	.string	"src"
+	.ascii	"src\000"
 	.byte	0x3
 	.byte	0xe1
-	.long	0x416f
-	.uleb128 0x2
+	.4byte	0x45ba
+	.byte	0x2
+	.byte	0x91
+	.sleb128 -20
+	.uleb128 0x48
+	.4byte	.LASF751
+	.byte	0x3
+	.byte	0xe2
+	.4byte	0x62
+	.byte	0x2
+	.byte	0x91
+	.sleb128 -24
+	.uleb128 0x48
+	.4byte	.LASF752
+	.byte	0x3
+	.byte	0xe3
+	.4byte	0x62
+	.byte	0x2
+	.byte	0x91
+	.sleb128 -28
+	.uleb128 0x48
+	.4byte	.LASF753
+	.byte	0x3
+	.byte	0xe4
+	.4byte	0xdd
+	.byte	0x2
+	.byte	0x91
+	.sleb128 -30
+	.uleb128 0x48
+	.4byte	.LASF754
+	.byte	0x3
+	.byte	0xe5
+	.4byte	0xdd
+	.byte	0x2
+	.byte	0x91
+	.sleb128 -32
+	.uleb128 0x48
+	.4byte	.LASF755
+	.byte	0x3
+	.byte	0xe6
+	.4byte	0xc7
+	.byte	0x2
 	.byte	0x91
 	.sleb128 -36
 	.uleb128 0x48
-	.long	.LASF752
-	.byte	0x3
-	.byte	0xe2
-	.long	0x5e
-	.uleb128 0x2
-	.byte	0x91
-	.sleb128 -40
-	.uleb128 0x48
-	.long	.LASF753
-	.byte	0x3
-	.byte	0xe3
-	.long	0x5e
-	.uleb128 0x2
-	.byte	0x91
-	.sleb128 -44
-	.uleb128 0x48
-	.long	.LASF754
-	.byte	0x3
-	.byte	0xe4
-	.long	0xd9
-	.uleb128 0x2
-	.byte	0x91
-	.sleb128 -46
-	.uleb128 0x48
-	.long	.LASF755
-	.byte	0x3
-	.byte	0xe5
-	.long	0xd9
-	.uleb128 0x2
-	.byte	0x91
-	.sleb128 -48
-	.uleb128 0x48
-	.long	.LASF756
-	.byte	0x3
-	.byte	0xe6
-	.long	0xc3
-	.uleb128 0x2
-	.byte	0x91
-	.sleb128 -52
-	.uleb128 0x48
-	.long	.LASF757
+	.4byte	.LASF756
 	.byte	0x3
 	.byte	0xe7
-	.long	0xa2
-	.uleb128 0x2
+	.4byte	0xa6
+	.byte	0x2
 	.byte	0x91
-	.sleb128 -53
+	.sleb128 -37
 	.uleb128 0x4d
-	.long	.LBB8
-	.long	.LBE8-.LBB8
-	.long	0x4446
+	.4byte	.LBB8
+	.4byte	.LBE8
+	.4byte	0x48af
 	.uleb128 0x48
-	.long	.LASF758
+	.4byte	.LASF757
 	.byte	0x3
 	.byte	0xf0
-	.long	0x5e
-	.uleb128 0x2
+	.4byte	0x62
+	.byte	0x2
 	.byte	0x91
-	.sleb128 -60
+	.sleb128 -44
 	.uleb128 0x47
-	.long	.LBB10
-	.long	.LBE10-.LBB10
+	.4byte	.LBB10
+	.4byte	.LBE10
 	.uleb128 0x4e
-	.long	.LASF759
+	.4byte	.LASF758
 	.byte	0x3
-	.value	0x118
-	.long	0x3c6
-	.uleb128 0x2
+	.2byte	0x118
+	.4byte	0x402
+	.byte	0x2
 	.byte	0x91
-	.sleb128 -64
+	.sleb128 -48
 	.byte	0
 	.byte	0
 	.uleb128 0x4d
-	.long	.LBB15
-	.long	.LBE15-.LBB15
-	.long	0x458a
+	.4byte	.LBB15
+	.4byte	.LBE15
+	.4byte	0x49f1
 	.uleb128 0x4e
-	.long	.LASF760
+	.4byte	.LASF759
 	.byte	0x3
-	.value	0x139
-	.long	0xa2
-	.uleb128 0x1
-	.byte	0x56
+	.2byte	0x139
+	.4byte	0xa6
+	.byte	0x1
+	.byte	0x54
 	.uleb128 0x47
-	.long	.LBB16
-	.long	.LBE16-.LBB16
+	.4byte	.LBB16
+	.4byte	.LBE16
 	.uleb128 0x4e
-	.long	.LASF761
+	.4byte	.LASF760
 	.byte	0x3
-	.value	0x164
-	.long	0x5e
-	.uleb128 0x3
+	.2byte	0x164
+	.4byte	0x62
+	.byte	0x3
 	.byte	0x91
-	.sleb128 -108
+	.sleb128 -92
 	.uleb128 0x4e
-	.long	.LASF762
+	.4byte	.LASF761
 	.byte	0x3
-	.value	0x165
-	.long	0x5e
-	.uleb128 0x3
+	.2byte	0x165
+	.4byte	0x62
+	.byte	0x3
+	.byte	0x91
+	.sleb128 -96
+	.uleb128 0x4e
+	.4byte	.LASF762
+	.byte	0x3
+	.2byte	0x167
+	.4byte	0x62
+	.byte	0x3
+	.byte	0x91
+	.sleb128 -100
+	.uleb128 0x4f
+	.ascii	"s\000"
+	.byte	0x3
+	.2byte	0x169
+	.4byte	0x62
+	.byte	0x2
+	.byte	0x91
+	.sleb128 -56
+	.uleb128 0x4d
+	.4byte	.LBB17
+	.4byte	.LBE17
+	.4byte	0x4977
+	.uleb128 0x4e
+	.4byte	.LASF760
+	.byte	0x3
+	.2byte	0x144
+	.4byte	0x62
+	.byte	0x3
 	.byte	0x91
 	.sleb128 -112
 	.uleb128 0x4e
-	.long	.LASF763
+	.4byte	.LASF761
 	.byte	0x3
-	.value	0x167
-	.long	0x5e
-	.uleb128 0x3
+	.2byte	0x145
+	.4byte	0x62
+	.byte	0x3
 	.byte	0x91
 	.sleb128 -116
-	.uleb128 0x4f
-	.string	"s"
-	.byte	0x3
-	.value	0x169
-	.long	0x5e
-	.uleb128 0x3
-	.byte	0x91
-	.sleb128 -72
-	.uleb128 0x4d
-	.long	.LBB17
-	.long	.LBE17-.LBB17
-	.long	0x4510
 	.uleb128 0x4e
-	.long	.LASF761
+	.4byte	.LASF762
 	.byte	0x3
-	.value	0x144
-	.long	0x5e
-	.uleb128 0x3
+	.2byte	0x146
+	.4byte	0x62
+	.byte	0x3
+	.byte	0x91
+	.sleb128 -120
+	.uleb128 0x4f
+	.ascii	"s\000"
+	.byte	0x3
+	.2byte	0x147
+	.4byte	0x62
+	.byte	0x2
+	.byte	0x91
+	.sleb128 -52
+	.uleb128 0x47
+	.4byte	.LBB19
+	.4byte	.LBE19
+	.uleb128 0x4e
+	.4byte	.LASF763
+	.byte	0x3
+	.2byte	0x143
+	.4byte	0xa6
+	.byte	0x5
+	.byte	0x3
+	.4byte	_ZZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPiE21_s_IwAssertIgnoreThis
+	.byte	0
+	.byte	0
+	.uleb128 0x4d
+	.4byte	.LBB20
+	.4byte	.LBE20
+	.4byte	0x49a5
+	.uleb128 0x4e
+	.4byte	.LASF764
+	.byte	0x3
+	.2byte	0x159
+	.4byte	0xc7
+	.byte	0x3
+	.byte	0x91
+	.sleb128 -84
+	.uleb128 0x4e
+	.4byte	.LASF765
+	.byte	0x3
+	.2byte	0x15a
+	.4byte	0xc7
+	.byte	0x3
+	.byte	0x91
+	.sleb128 -88
+	.byte	0
+	.uleb128 0x4d
+	.4byte	.LBB22
+	.4byte	.LBE22
+	.4byte	0x49c5
+	.uleb128 0x4e
+	.4byte	.LASF763
+	.byte	0x3
+	.2byte	0x162
+	.4byte	0xa6
+	.byte	0x5
+	.byte	0x3
+	.4byte	_ZZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPiE21_s_IwAssertIgnoreThis_0
+	.byte	0
+	.uleb128 0x47
+	.4byte	.LBB23
+	.4byte	.LBE23
+	.uleb128 0x4e
+	.4byte	.LASF764
+	.byte	0x3
+	.2byte	0x17a
+	.4byte	0xc7
+	.byte	0x3
+	.byte	0x91
+	.sleb128 -104
+	.uleb128 0x4e
+	.4byte	.LASF765
+	.byte	0x3
+	.2byte	0x17b
+	.4byte	0xc7
+	.byte	0x3
+	.byte	0x91
+	.sleb128 -108
+	.byte	0
+	.byte	0
+	.byte	0
+	.uleb128 0x4d
+	.4byte	.LBB25
+	.4byte	.LBE25
+	.4byte	0x4a11
+	.uleb128 0x4e
+	.4byte	.LASF763
+	.byte	0x3
+	.2byte	0x18e
+	.4byte	0xa6
+	.byte	0x5
+	.byte	0x3
+	.4byte	_ZZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPiE21_s_IwAssertIgnoreThis_1
+	.byte	0
+	.uleb128 0x4d
+	.4byte	.LBB26
+	.4byte	.LBE26
+	.4byte	0x4a2e
+	.uleb128 0x4e
+	.4byte	.LASF758
+	.byte	0x3
+	.2byte	0x190
+	.4byte	0x402
+	.byte	0x2
+	.byte	0x91
+	.sleb128 -60
+	.byte	0
+	.uleb128 0x4d
+	.4byte	.LBB30
+	.4byte	.LBE30
+	.4byte	0x4b53
+	.uleb128 0x4e
+	.4byte	.LASF759
+	.byte	0x3
+	.2byte	0x1ad
+	.4byte	0xa6
+	.byte	0x2
+	.byte	0x91
+	.sleb128 -61
+	.uleb128 0x47
+	.4byte	.LBB31
+	.4byte	.LBE31
+	.uleb128 0x4e
+	.4byte	.LASF760
+	.byte	0x3
+	.2byte	0x1d9
+	.4byte	0x62
+	.byte	0x3
 	.byte	0x91
 	.sleb128 -128
 	.uleb128 0x4e
-	.long	.LASF762
+	.4byte	.LASF761
 	.byte	0x3
-	.value	0x145
-	.long	0x5e
-	.uleb128 0x3
+	.2byte	0x1da
+	.4byte	0x62
+	.byte	0x3
 	.byte	0x91
 	.sleb128 -132
 	.uleb128 0x4e
-	.long	.LASF763
+	.4byte	.LASF762
 	.byte	0x3
-	.value	0x146
-	.long	0x5e
-	.uleb128 0x3
+	.2byte	0x1dc
+	.4byte	0x62
+	.byte	0x3
 	.byte	0x91
 	.sleb128 -136
 	.uleb128 0x4f
-	.string	"s"
+	.ascii	"s\000"
 	.byte	0x3
-	.value	0x147
-	.long	0x5e
-	.uleb128 0x3
+	.2byte	0x1de
+	.4byte	0x62
+	.byte	0x3
 	.byte	0x91
-	.sleb128 -68
-	.uleb128 0x47
-	.long	.LBB19
-	.long	.LBE19-.LBB19
-	.uleb128 0x4e
-	.long	.LASF764
-	.byte	0x3
-	.value	0x143
-	.long	0xa2
-	.uleb128 0x5
-	.byte	0x3
-	.long	_ZZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPiE21_s_IwAssertIgnoreThis
-	.byte	0
-	.byte	0
+	.sleb128 -72
 	.uleb128 0x4d
-	.long	.LBB20
-	.long	.LBE20-.LBB20
-	.long	0x453e
+	.4byte	.LBB32
+	.4byte	.LBE32
+	.4byte	0x4af9
 	.uleb128 0x4e
-	.long	.LASF765
+	.4byte	.LASF760
 	.byte	0x3
-	.value	0x159
-	.long	0xc3
-	.uleb128 0x3
-	.byte	0x91
-	.sleb128 -100
-	.uleb128 0x4e
-	.long	.LASF766
+	.2byte	0x1b8
+	.4byte	0x62
 	.byte	0x3
-	.value	0x15a
-	.long	0xc3
-	.uleb128 0x3
-	.byte	0x91
-	.sleb128 -104
-	.byte	0
-	.uleb128 0x4d
-	.long	.LBB22
-	.long	.LBE22-.LBB22
-	.long	0x455e
-	.uleb128 0x4e
-	.long	.LASF764
-	.byte	0x3
-	.value	0x162
-	.long	0xa2
-	.uleb128 0x5
-	.byte	0x3
-	.long	_ZZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPiE21_s_IwAssertIgnoreThis_0
-	.byte	0
-	.uleb128 0x47
-	.long	.LBB23
-	.long	.LBE23-.LBB23
-	.uleb128 0x4e
-	.long	.LASF765
-	.byte	0x3
-	.value	0x17a
-	.long	0xc3
-	.uleb128 0x3
-	.byte	0x91
-	.sleb128 -120
-	.uleb128 0x4e
-	.long	.LASF766
-	.byte	0x3
-	.value	0x17b
-	.long	0xc3
-	.uleb128 0x3
-	.byte	0x91
-	.sleb128 -124
-	.byte	0
-	.byte	0
-	.byte	0
-	.uleb128 0x4d
-	.long	.LBB25
-	.long	.LBE25-.LBB25
-	.long	0x45aa
-	.uleb128 0x4e
-	.long	.LASF764
-	.byte	0x3
-	.value	0x18e
-	.long	0xa2
-	.uleb128 0x5
-	.byte	0x3
-	.long	_ZZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPiE21_s_IwAssertIgnoreThis_1
-	.byte	0
-	.uleb128 0x4d
-	.long	.LBB26
-	.long	.LBE26-.LBB26
-	.long	0x45c8
-	.uleb128 0x4e
-	.long	.LASF759
-	.byte	0x3
-	.value	0x190
-	.long	0x3c6
-	.uleb128 0x3
-	.byte	0x91
-	.sleb128 -76
-	.byte	0
-	.uleb128 0x4d
-	.long	.LBB30
-	.long	.LBE30-.LBB30
-	.long	0x46ee
-	.uleb128 0x4e
-	.long	.LASF760
-	.byte	0x3
-	.value	0x1ad
-	.long	0xa2
-	.uleb128 0x3
-	.byte	0x91
-	.sleb128 -77
-	.uleb128 0x47
-	.long	.LBB31
-	.long	.LBE31-.LBB31
-	.uleb128 0x4e
-	.long	.LASF761
-	.byte	0x3
-	.value	0x1d9
-	.long	0x5e
-	.uleb128 0x3
 	.byte	0x91
 	.sleb128 -144
 	.uleb128 0x4e
-	.long	.LASF762
+	.4byte	.LASF761
 	.byte	0x3
-	.value	0x1da
-	.long	0x5e
-	.uleb128 0x3
+	.2byte	0x1b9
+	.4byte	0x62
+	.byte	0x3
 	.byte	0x91
 	.sleb128 -148
 	.uleb128 0x4e
-	.long	.LASF763
+	.4byte	.LASF762
 	.byte	0x3
-	.value	0x1dc
-	.long	0x5e
-	.uleb128 0x3
+	.2byte	0x1ba
+	.4byte	0x62
+	.byte	0x3
 	.byte	0x91
 	.sleb128 -152
 	.uleb128 0x4f
-	.string	"s"
+	.ascii	"s\000"
 	.byte	0x3
-	.value	0x1de
-	.long	0x5e
-	.uleb128 0x3
-	.byte	0x91
-	.sleb128 -88
-	.uleb128 0x4d
-	.long	.LBB32
-	.long	.LBE32-.LBB32
-	.long	0x4694
-	.uleb128 0x4e
-	.long	.LASF761
+	.2byte	0x1bb
+	.4byte	0x62
 	.byte	0x3
-	.value	0x1b8
-	.long	0x5e
-	.uleb128 0x3
 	.byte	0x91
-	.sleb128 -160
-	.uleb128 0x4e
-	.long	.LASF762
-	.byte	0x3
-	.value	0x1b9
-	.long	0x5e
-	.uleb128 0x3
-	.byte	0x91
-	.sleb128 -164
-	.uleb128 0x4e
-	.long	.LASF763
-	.byte	0x3
-	.value	0x1ba
-	.long	0x5e
-	.uleb128 0x3
-	.byte	0x91
-	.sleb128 -168
-	.uleb128 0x4f
-	.string	"s"
-	.byte	0x3
-	.value	0x1bb
-	.long	0x5e
-	.uleb128 0x3
-	.byte	0x91
-	.sleb128 -84
+	.sleb128 -68
 	.uleb128 0x47
-	.long	.LBB34
-	.long	.LBE34-.LBB34
+	.4byte	.LBB34
+	.4byte	.LBE34
 	.uleb128 0x4e
-	.long	.LASF764
+	.4byte	.LASF763
 	.byte	0x3
-	.value	0x1b7
-	.long	0xa2
-	.uleb128 0x5
+	.2byte	0x1b7
+	.4byte	0xa6
+	.byte	0x5
 	.byte	0x3
-	.long	_ZZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPiE21_s_IwAssertIgnoreThis_2
+	.4byte	_ZZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPiE21_s_IwAssertIgnoreThis_2
 	.byte	0
 	.byte	0
 	.uleb128 0x4d
-	.long	.LBB35
-	.long	.LBE35-.LBB35
-	.long	0x46b2
+	.4byte	.LBB35
+	.4byte	.LBE35
+	.4byte	0x4b17
 	.uleb128 0x4e
-	.long	.LASF765
+	.4byte	.LASF764
 	.byte	0x3
-	.value	0x1ce
-	.long	0xc3
-	.uleb128 0x3
+	.2byte	0x1ce
+	.4byte	0xc7
+	.byte	0x3
+	.byte	0x91
+	.sleb128 -124
+	.byte	0
+	.uleb128 0x4d
+	.4byte	.LBB37
+	.4byte	.LBE37
+	.4byte	0x4b37
+	.uleb128 0x4e
+	.4byte	.LASF763
+	.byte	0x3
+	.2byte	0x1d7
+	.4byte	0xa6
+	.byte	0x5
+	.byte	0x3
+	.4byte	_ZZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPiE21_s_IwAssertIgnoreThis_3
+	.byte	0
+	.uleb128 0x47
+	.4byte	.LBB38
+	.4byte	.LBE38
+	.uleb128 0x4e
+	.4byte	.LASF764
+	.byte	0x3
+	.2byte	0x1ee
+	.4byte	0xc7
+	.byte	0x3
 	.byte	0x91
 	.sleb128 -140
 	.byte	0
-	.uleb128 0x4d
-	.long	.LBB37
-	.long	.LBE37-.LBB37
-	.long	0x46d2
-	.uleb128 0x4e
-	.long	.LASF764
-	.byte	0x3
-	.value	0x1d7
-	.long	0xa2
-	.uleb128 0x5
-	.byte	0x3
-	.long	_ZZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPiE21_s_IwAssertIgnoreThis_3
-	.byte	0
-	.uleb128 0x47
-	.long	.LBB38
-	.long	.LBE38-.LBB38
-	.uleb128 0x4e
-	.long	.LASF765
-	.byte	0x3
-	.value	0x1ee
-	.long	0xc3
-	.uleb128 0x3
-	.byte	0x91
-	.sleb128 -156
-	.byte	0
 	.byte	0
 	.byte	0
 	.uleb128 0x4d
-	.long	.LBB40
-	.long	.LBE40-.LBB40
-	.long	0x470e
+	.4byte	.LBB40
+	.4byte	.LBE40
+	.4byte	0x4b73
 	.uleb128 0x4e
-	.long	.LASF764
+	.4byte	.LASF763
 	.byte	0x3
-	.value	0x206
-	.long	0xa2
-	.uleb128 0x5
+	.2byte	0x206
+	.4byte	0xa6
+	.byte	0x5
 	.byte	0x3
-	.long	_ZZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPiE21_s_IwAssertIgnoreThis_4
+	.4byte	_ZZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPiE21_s_IwAssertIgnoreThis_4
 	.byte	0
 	.uleb128 0x47
-	.long	.LBB41
-	.long	.LBE41-.LBB41
+	.4byte	.LBB41
+	.4byte	.LBE41
 	.uleb128 0x4e
-	.long	.LASF759
+	.4byte	.LASF758
 	.byte	0x3
-	.value	0x208
-	.long	0x3c6
-	.uleb128 0x3
+	.2byte	0x208
+	.4byte	0x402
+	.byte	0x3
 	.byte	0x91
-	.sleb128 -92
+	.sleb128 -76
 	.byte	0
 	.byte	0
 	.byte	0
 	.uleb128 0x50
-	.long	0x40f0
-	.long	.LFB1502
-	.long	.LFE1502-.LFB1502
-	.uleb128 0x1
-	.byte	0x9c
-	.long	0x47bb
+	.4byte	0x4539
+	.4byte	.LFB1499
+	.4byte	.LFE1499
+	.4byte	.LLST7
+	.byte	0x1
+	.4byte	0x4c26
 	.uleb128 0x46
-	.long	.LASF767
+	.4byte	.LASF766
 	.byte	0x4
 	.byte	0x3f
-	.long	0xc3
-	.uleb128 0x2
+	.4byte	0xc7
+	.byte	0x2
 	.byte	0x91
-	.sleb128 0
+	.sleb128 -12
 	.uleb128 0x47
-	.long	.LBB42
-	.long	.LBE42-.LBB42
+	.4byte	.LBB42
+	.4byte	.LBE42
 	.uleb128 0x4d
-	.long	.LBB50
-	.long	.LBE50-.LBB50
-	.long	0x4777
+	.4byte	.LBB50
+	.4byte	.LBE50
+	.4byte	0x4be0
 	.uleb128 0x51
-	.long	.LASF764
+	.4byte	.LASF763
 	.byte	0x4
 	.byte	0x4f
-	.long	.LASF768
-	.long	0xa2
-	.uleb128 0x5
+	.4byte	.LASF767
+	.4byte	0xa6
+	.byte	0x1
+	.byte	0x5
 	.byte	0x3
-	.long	_ZZN13CIwChannelPCMItE13clip_to_int16EiE21_s_IwAssertIgnoreThis
+	.4byte	_ZZN13CIwChannelPCMItE13clip_to_int16EiE21_s_IwAssertIgnoreThis
 	.byte	0
 	.uleb128 0x4d
-	.long	.LBB52
-	.long	.LBE52-.LBB52
-	.long	0x479a
+	.4byte	.LBB52
+	.4byte	.LBE52
+	.4byte	0x4c04
 	.uleb128 0x51
-	.long	.LASF764
+	.4byte	.LASF763
 	.byte	0x4
 	.byte	0x53
-	.long	.LASF769
-	.long	0xa2
-	.uleb128 0x5
+	.4byte	.LASF768
+	.4byte	0xa6
+	.byte	0x1
+	.byte	0x5
 	.byte	0x3
-	.long	_ZZN13CIwChannelPCMItE13clip_to_int16EiE21_s_IwAssertIgnoreThis_0
+	.4byte	_ZZN13CIwChannelPCMItE13clip_to_int16EiE21_s_IwAssertIgnoreThis_0
 	.byte	0
 	.uleb128 0x47
-	.long	.LBB54
-	.long	.LBE54-.LBB54
+	.4byte	.LBB54
+	.4byte	.LBE54
 	.uleb128 0x51
-	.long	.LASF764
+	.4byte	.LASF763
 	.byte	0x4
 	.byte	0x54
-	.long	.LASF770
-	.long	0xa2
-	.uleb128 0x5
+	.4byte	.LASF769
+	.4byte	0xa6
+	.byte	0x1
+	.byte	0x5
 	.byte	0x3
-	.long	_ZZN13CIwChannelPCMItE13clip_to_int16EiE21_s_IwAssertIgnoreThis_1
+	.4byte	_ZZN13CIwChannelPCMItE13clip_to_int16EiE21_s_IwAssertIgnoreThis_1
 	.byte	0
 	.byte	0
 	.byte	0
 	.uleb128 0x52
-	.long	.LASF771
+	.4byte	.LASF770
 	.byte	0x10
 	.byte	0x47
-	.long	0x514
+	.4byte	0x556
+	.byte	0x1
+	.byte	0x1
 	.uleb128 0x52
-	.long	.LASF772
+	.4byte	.LASF771
 	.byte	0x10
 	.byte	0x48
-	.long	0x5e
+	.4byte	0x62
+	.byte	0x1
+	.byte	0x1
 	.uleb128 0x53
-	.long	.LASF773
+	.4byte	.LASF772
 	.byte	0x1a
-	.value	0x1d4
-	.long	0x47dd
-	.uleb128 0x8
+	.2byte	0x1d4
+	.4byte	0x4c4e
+	.byte	0x1
+	.byte	0x1
+	.uleb128 0x9
 	.byte	0x4
-	.long	0xc38
+	.4byte	0xd05
 	.uleb128 0x18
-	.long	0x5e
-	.long	0x47ee
+	.4byte	0x62
+	.4byte	0x4c5f
 	.uleb128 0x54
 	.byte	0
 	.uleb128 0x52
-	.long	.LASF774
+	.4byte	.LASF773
 	.byte	0x1b
 	.byte	0x4f
-	.long	0x47e3
+	.4byte	0x4c54
+	.byte	0x1
+	.byte	0x1
 	.uleb128 0x52
-	.long	.LASF775
+	.4byte	.LASF774
 	.byte	0x1b
 	.byte	0xc5
-	.long	0x47e3
+	.4byte	0x4c54
+	.byte	0x1
+	.byte	0x1
 	.uleb128 0x53
-	.long	.LASF776
+	.4byte	.LASF775
 	.byte	0x18
-	.value	0x2ae
-	.long	0x3c22
+	.2byte	0x2ae
+	.4byte	0x4007
+	.byte	0x1
+	.byte	0x1
 	.uleb128 0x52
-	.long	.LASF777
+	.4byte	.LASF776
 	.byte	0x1c
 	.byte	0xc1
-	.long	0x481b
-	.uleb128 0x8
+	.4byte	0x4c94
+	.byte	0x1
+	.byte	0x1
+	.uleb128 0x9
 	.byte	0x4
-	.long	0x3ca0
+	.4byte	0x408b
 	.uleb128 0x53
-	.long	.LASF778
+	.4byte	.LASF777
 	.byte	0x1d
-	.value	0x256
-	.long	0x4175
+	.2byte	0x256
+	.4byte	0x45c0
+	.byte	0x1
+	.byte	0x1
 	.uleb128 0x18
-	.long	0x5e
-	.long	0x483d
+	.4byte	0x62
+	.4byte	0x4cb8
 	.uleb128 0x1a
-	.long	0x3dd
+	.4byte	0x419
 	.byte	0x58
 	.byte	0
 	.uleb128 0x48
-	.long	.LASF779
+	.4byte	.LASF778
 	.byte	0x3
 	.byte	0x4d
-	.long	0x482d
-	.uleb128 0x5
+	.4byte	0x4ca8
+	.byte	0x5
 	.byte	0x3
-	.long	_ZL13stepsizeTable
+	.4byte	_ZL13stepsizeTable
 	.uleb128 0x48
-	.long	.LASF780
+	.4byte	.LASF779
 	.byte	0x3
 	.byte	0x60
-	.long	0x3fbb
-	.uleb128 0x5
+	.4byte	0x43ef
+	.byte	0x5
 	.byte	0x3
-	.long	_ZL6sTable
+	.4byte	_ZL6sTable
 	.uleb128 0x55
-	.long	0x2fb
+	.4byte	0x328
 	.byte	0x3
 	.byte	0x19
-	.long	.LASF798
-	.uleb128 0x5
+	.4byte	.LASF796
+	.byte	0x5
 	.byte	0x3
-	.long	_ZN15CIwChannelADPCM13isInitializedE
-	.uleb128 0x2b
-	.long	.LASF781
-	.long	0x4881
+	.4byte	_ZN15CIwChannelADPCM13isInitializedE
 	.uleb128 0x2a
-	.string	"T"
-	.long	0xce5
+	.4byte	.LASF780
+	.byte	0x1
+	.4byte	0x4cfd
+	.uleb128 0x29
+	.ascii	"T\000"
+	.4byte	0xdb7
 	.byte	0
-	.uleb128 0x2b
-	.long	.LASF782
-	.long	0x4892
 	.uleb128 0x2a
-	.string	"T"
-	.long	0x8cc
+	.4byte	.LASF781
+	.byte	0x1
+	.4byte	0x4d0f
+	.uleb128 0x29
+	.ascii	"T\000"
+	.4byte	0x963
 	.byte	0
 	.uleb128 0x1d
-	.long	.LASF783
+	.4byte	.LASF782
+	.byte	0x1
 	.uleb128 0x1d
-	.long	.LASF784
+	.4byte	.LASF783
+	.byte	0x1
 	.uleb128 0x1d
-	.long	.LASF785
+	.4byte	.LASF784
+	.byte	0x1
 	.uleb128 0x1d
-	.long	.LASF786
+	.4byte	.LASF785
+	.byte	0x1
 	.byte	0
-	.section	.debug_abbrev,"",@progbits
+	.section	.debug_abbrev,"",%progbits
 .Ldebug_abbrev0:
 	.uleb128 0x1
 	.uleb128 0x11
@@ -10366,11 +11843,13 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x1b
 	.uleb128 0xe
 	.uleb128 0x55
-	.uleb128 0x17
+	.uleb128 0x6
 	.uleb128 0x11
 	.uleb128 0x1
+	.uleb128 0x52
+	.uleb128 0x1
 	.uleb128 0x10
-	.uleb128 0x17
+	.uleb128 0x6
 	.byte	0
 	.byte	0
 	.uleb128 0x2
@@ -10409,6 +11888,13 @@ __x86.get_pc_thunk.bx:
 	.byte	0
 	.byte	0
 	.uleb128 0x5
+	.uleb128 0xf
+	.byte	0
+	.uleb128 0xb
+	.uleb128 0xb
+	.byte	0
+	.byte	0
+	.uleb128 0x6
 	.uleb128 0x4
 	.byte	0x1
 	.uleb128 0x3
@@ -10423,7 +11909,7 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x13
 	.byte	0
 	.byte	0
-	.uleb128 0x6
+	.uleb128 0x7
 	.uleb128 0x28
 	.byte	0
 	.uleb128 0x3
@@ -10432,7 +11918,7 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0xd
 	.byte	0
 	.byte	0
-	.uleb128 0x7
+	.uleb128 0x8
 	.uleb128 0x4
 	.byte	0x1
 	.uleb128 0x3
@@ -10447,7 +11933,7 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x13
 	.byte	0
 	.byte	0
-	.uleb128 0x8
+	.uleb128 0x9
 	.uleb128 0xf
 	.byte	0
 	.uleb128 0xb
@@ -10456,7 +11942,7 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x13
 	.byte	0
 	.byte	0
-	.uleb128 0x9
+	.uleb128 0xa
 	.uleb128 0x13
 	.byte	0x1
 	.uleb128 0x3
@@ -10471,7 +11957,7 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x13
 	.byte	0
 	.byte	0
-	.uleb128 0xa
+	.uleb128 0xb
 	.uleb128 0xd
 	.byte	0
 	.uleb128 0x3
@@ -10483,10 +11969,10 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x49
 	.uleb128 0x13
 	.uleb128 0x38
-	.uleb128 0xb
+	.uleb128 0xa
 	.byte	0
 	.byte	0
-	.uleb128 0xb
+	.uleb128 0xc
 	.uleb128 0x16
 	.byte	0
 	.uleb128 0x3
@@ -10499,7 +11985,7 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x13
 	.byte	0
 	.byte	0
-	.uleb128 0xc
+	.uleb128 0xd
 	.uleb128 0x13
 	.byte	0x1
 	.uleb128 0x3
@@ -10514,7 +12000,7 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x13
 	.byte	0
 	.byte	0
-	.uleb128 0xd
+	.uleb128 0xe
 	.uleb128 0xd
 	.byte	0
 	.uleb128 0x3
@@ -10526,10 +12012,10 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x49
 	.uleb128 0x13
 	.uleb128 0x38
-	.uleb128 0xb
+	.uleb128 0xa
 	.byte	0
 	.byte	0
-	.uleb128 0xe
+	.uleb128 0xf
 	.uleb128 0x2
 	.byte	0x1
 	.uleb128 0x3
@@ -10544,7 +12030,7 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x13
 	.byte	0
 	.byte	0
-	.uleb128 0xf
+	.uleb128 0x10
 	.uleb128 0xd
 	.byte	0
 	.uleb128 0x3
@@ -10556,26 +12042,7 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x49
 	.uleb128 0x13
 	.uleb128 0x38
-	.uleb128 0xb
-	.uleb128 0x32
-	.uleb128 0xb
-	.byte	0
-	.byte	0
-	.uleb128 0x10
-	.uleb128 0xd
-	.byte	0
-	.uleb128 0x3
-	.uleb128 0xe
-	.uleb128 0x3a
-	.uleb128 0xb
-	.uleb128 0x3b
-	.uleb128 0xb
-	.uleb128 0x49
-	.uleb128 0x13
-	.uleb128 0x38
-	.uleb128 0xb
-	.uleb128 0x32
-	.uleb128 0xb
+	.uleb128 0xa
 	.byte	0
 	.byte	0
 	.uleb128 0x11
@@ -10590,28 +12057,26 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x49
 	.uleb128 0x13
 	.uleb128 0x3f
-	.uleb128 0x19
-	.uleb128 0x32
-	.uleb128 0xb
+	.uleb128 0xc
 	.uleb128 0x3c
-	.uleb128 0x19
+	.uleb128 0xc
 	.byte	0
 	.byte	0
 	.uleb128 0x12
 	.uleb128 0x2e
 	.byte	0x1
 	.uleb128 0x3f
-	.uleb128 0x19
+	.uleb128 0xc
 	.uleb128 0x3
 	.uleb128 0xe
 	.uleb128 0x3a
 	.uleb128 0xb
 	.uleb128 0x3b
 	.uleb128 0xb
-	.uleb128 0x32
-	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
 	.uleb128 0x3c
-	.uleb128 0x19
+	.uleb128 0xc
 	.uleb128 0x64
 	.uleb128 0x13
 	.uleb128 0x1
@@ -10624,28 +12089,26 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x49
 	.uleb128 0x13
 	.uleb128 0x34
-	.uleb128 0x19
+	.uleb128 0xc
 	.byte	0
 	.byte	0
 	.uleb128 0x14
 	.uleb128 0x2e
 	.byte	0x1
 	.uleb128 0x3f
-	.uleb128 0x19
+	.uleb128 0xc
 	.uleb128 0x3
 	.uleb128 0xe
 	.uleb128 0x3a
 	.uleb128 0xb
 	.uleb128 0x3b
 	.uleb128 0xb
-	.uleb128 0x6e
+	.uleb128 0x2007
 	.uleb128 0xe
 	.uleb128 0x49
 	.uleb128 0x13
-	.uleb128 0x32
-	.uleb128 0xb
 	.uleb128 0x3c
-	.uleb128 0x19
+	.uleb128 0xc
 	.uleb128 0x1
 	.uleb128 0x13
 	.byte	0
@@ -10661,21 +12124,19 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x2e
 	.byte	0x1
 	.uleb128 0x3f
-	.uleb128 0x19
+	.uleb128 0xc
 	.uleb128 0x3
 	.uleb128 0xe
 	.uleb128 0x3a
 	.uleb128 0xb
 	.uleb128 0x3b
 	.uleb128 0xb
-	.uleb128 0x6e
+	.uleb128 0x2007
 	.uleb128 0xe
 	.uleb128 0x49
 	.uleb128 0x13
-	.uleb128 0x32
-	.uleb128 0xb
 	.uleb128 0x3c
-	.uleb128 0x19
+	.uleb128 0xc
 	.uleb128 0x64
 	.uleb128 0x13
 	.uleb128 0x1
@@ -10686,19 +12147,17 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x2e
 	.byte	0
 	.uleb128 0x3f
-	.uleb128 0x19
+	.uleb128 0xc
 	.uleb128 0x3
 	.uleb128 0xe
 	.uleb128 0x3a
 	.uleb128 0xb
 	.uleb128 0x3b
 	.uleb128 0xb
-	.uleb128 0x6e
+	.uleb128 0x2007
 	.uleb128 0xe
-	.uleb128 0x32
-	.uleb128 0xb
 	.uleb128 0x3c
-	.uleb128 0x19
+	.uleb128 0xc
 	.byte	0
 	.byte	0
 	.uleb128 0x18
@@ -10754,7 +12213,7 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x3
 	.uleb128 0xe
 	.uleb128 0x3c
-	.uleb128 0x19
+	.uleb128 0xc
 	.byte	0
 	.byte	0
 	.uleb128 0x1e
@@ -10800,7 +12259,7 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x3
 	.uleb128 0xe
 	.uleb128 0x3c
-	.uleb128 0x19
+	.uleb128 0xc
 	.byte	0
 	.byte	0
 	.uleb128 0x22
@@ -10809,21 +12268,6 @@ __x86.get_pc_thunk.bx:
 	.byte	0
 	.byte	0
 	.uleb128 0x23
-	.uleb128 0xd
-	.byte	0
-	.uleb128 0x3
-	.uleb128 0x8
-	.uleb128 0x3a
-	.uleb128 0xb
-	.uleb128 0x3b
-	.uleb128 0xb
-	.uleb128 0x49
-	.uleb128 0x13
-	.uleb128 0x38
-	.uleb128 0xb
-	.byte	0
-	.byte	0
-	.uleb128 0x24
 	.uleb128 0x2
 	.byte	0x1
 	.uleb128 0x3
@@ -10838,23 +12282,38 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x13
 	.byte	0
 	.byte	0
-	.uleb128 0x25
-	.uleb128 0x2e
-	.byte	0x1
-	.uleb128 0x3f
-	.uleb128 0x19
+	.uleb128 0x24
+	.uleb128 0xd
+	.byte	0
 	.uleb128 0x3
 	.uleb128 0xe
 	.uleb128 0x3a
 	.uleb128 0xb
 	.uleb128 0x3b
 	.uleb128 0xb
-	.uleb128 0x6e
-	.uleb128 0xe
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x38
+	.uleb128 0xa
 	.uleb128 0x32
 	.uleb128 0xb
+	.byte	0
+	.byte	0
+	.uleb128 0x25
+	.uleb128 0x2e
+	.byte	0x1
+	.uleb128 0x3f
+	.uleb128 0xc
+	.uleb128 0x3
+	.uleb128 0xe
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x2007
+	.uleb128 0xe
 	.uleb128 0x3c
-	.uleb128 0x19
+	.uleb128 0xc
 	.uleb128 0x64
 	.uleb128 0x13
 	.uleb128 0x1
@@ -10895,21 +12354,6 @@ __x86.get_pc_thunk.bx:
 	.byte	0
 	.byte	0
 	.uleb128 0x29
-	.uleb128 0x16
-	.byte	0
-	.uleb128 0x3
-	.uleb128 0xe
-	.uleb128 0x3a
-	.uleb128 0xb
-	.uleb128 0x3b
-	.uleb128 0xb
-	.uleb128 0x49
-	.uleb128 0x13
-	.uleb128 0x32
-	.uleb128 0xb
-	.byte	0
-	.byte	0
-	.uleb128 0x2a
 	.uleb128 0x2f
 	.byte	0
 	.uleb128 0x3
@@ -10918,15 +12362,32 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x13
 	.byte	0
 	.byte	0
-	.uleb128 0x2b
+	.uleb128 0x2a
 	.uleb128 0x2
 	.byte	0x1
 	.uleb128 0x3
 	.uleb128 0xe
 	.uleb128 0x3c
-	.uleb128 0x19
+	.uleb128 0xc
 	.uleb128 0x1
 	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x2b
+	.uleb128 0xd
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x38
+	.uleb128 0xa
+	.uleb128 0x32
+	.uleb128 0xb
 	.byte	0
 	.byte	0
 	.uleb128 0x2c
@@ -10947,7 +12408,7 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0xc
 	.uleb128 0xb
 	.uleb128 0x38
-	.uleb128 0xb
+	.uleb128 0xa
 	.uleb128 0x32
 	.uleb128 0xb
 	.byte	0
@@ -10964,6 +12425,8 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x49
 	.uleb128 0x13
 	.uleb128 0x38
+	.uleb128 0xa
+	.uleb128 0x32
 	.uleb128 0xb
 	.byte	0
 	.byte	0
@@ -10971,21 +12434,19 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x2e
 	.byte	0x1
 	.uleb128 0x3f
-	.uleb128 0x19
+	.uleb128 0xc
 	.uleb128 0x3
 	.uleb128 0x8
 	.uleb128 0x3a
 	.uleb128 0xb
 	.uleb128 0x3b
 	.uleb128 0xb
-	.uleb128 0x6e
+	.uleb128 0x2007
 	.uleb128 0xe
 	.uleb128 0x49
 	.uleb128 0x13
-	.uleb128 0x32
-	.uleb128 0xb
 	.uleb128 0x3c
-	.uleb128 0x19
+	.uleb128 0xc
 	.uleb128 0x64
 	.uleb128 0x13
 	.uleb128 0x1
@@ -10996,19 +12457,19 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x2e
 	.byte	0x1
 	.uleb128 0x3f
-	.uleb128 0x19
+	.uleb128 0xc
 	.uleb128 0x3
 	.uleb128 0xe
 	.uleb128 0x3a
 	.uleb128 0xb
 	.uleb128 0x3b
 	.uleb128 0xb
-	.uleb128 0x32
-	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
 	.uleb128 0x3c
-	.uleb128 0x19
+	.uleb128 0xc
 	.uleb128 0x63
-	.uleb128 0x19
+	.uleb128 0xc
 	.uleb128 0x64
 	.uleb128 0x13
 	.uleb128 0x1
@@ -11019,19 +12480,17 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x2e
 	.byte	0x1
 	.uleb128 0x3f
-	.uleb128 0x19
+	.uleb128 0xc
 	.uleb128 0x3
 	.uleb128 0xe
 	.uleb128 0x3a
 	.uleb128 0xb
 	.uleb128 0x3b
 	.uleb128 0x5
-	.uleb128 0x6e
+	.uleb128 0x2007
 	.uleb128 0xe
-	.uleb128 0x32
-	.uleb128 0xb
 	.uleb128 0x3c
-	.uleb128 0x19
+	.uleb128 0xc
 	.uleb128 0x64
 	.uleb128 0x13
 	.uleb128 0x1
@@ -11042,21 +12501,19 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x2e
 	.byte	0x1
 	.uleb128 0x3f
-	.uleb128 0x19
+	.uleb128 0xc
 	.uleb128 0x3
 	.uleb128 0xe
 	.uleb128 0x3a
 	.uleb128 0xb
 	.uleb128 0x3b
 	.uleb128 0x5
-	.uleb128 0x6e
+	.uleb128 0x2007
 	.uleb128 0xe
 	.uleb128 0x49
 	.uleb128 0x13
-	.uleb128 0x32
-	.uleb128 0xb
 	.uleb128 0x3c
-	.uleb128 0x19
+	.uleb128 0xc
 	.uleb128 0x64
 	.uleb128 0x13
 	.uleb128 0x1
@@ -11073,43 +12530,39 @@ __x86.get_pc_thunk.bx:
 	.byte	0
 	.byte	0
 	.uleb128 0x33
-	.uleb128 0x2e
-	.byte	0x1
-	.uleb128 0x3f
-	.uleb128 0x19
+	.uleb128 0xd
+	.byte	0
 	.uleb128 0x3
 	.uleb128 0xe
 	.uleb128 0x3a
 	.uleb128 0xb
 	.uleb128 0x3b
+	.uleb128 0x5
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x38
+	.uleb128 0xa
+	.uleb128 0x32
 	.uleb128 0xb
-	.uleb128 0x6e
-	.uleb128 0xe
-	.uleb128 0x3c
-	.uleb128 0x19
-	.uleb128 0x64
-	.uleb128 0x13
-	.uleb128 0x1
-	.uleb128 0x13
 	.byte	0
 	.byte	0
 	.uleb128 0x34
 	.uleb128 0x2e
 	.byte	0x1
 	.uleb128 0x3f
-	.uleb128 0x19
+	.uleb128 0xc
 	.uleb128 0x3
-	.uleb128 0x8
+	.uleb128 0xe
 	.uleb128 0x3a
 	.uleb128 0xb
 	.uleb128 0x3b
 	.uleb128 0xb
-	.uleb128 0x6e
+	.uleb128 0x2007
 	.uleb128 0xe
 	.uleb128 0x32
 	.uleb128 0xb
 	.uleb128 0x3c
-	.uleb128 0x19
+	.uleb128 0xc
 	.uleb128 0x64
 	.uleb128 0x13
 	.uleb128 0x1
@@ -11120,21 +12573,17 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x2e
 	.byte	0x1
 	.uleb128 0x3f
-	.uleb128 0x19
+	.uleb128 0xc
 	.uleb128 0x3
 	.uleb128 0x8
 	.uleb128 0x3a
 	.uleb128 0xb
 	.uleb128 0x3b
-	.uleb128 0x5
-	.uleb128 0x6e
-	.uleb128 0xe
-	.uleb128 0x49
-	.uleb128 0x13
-	.uleb128 0x32
 	.uleb128 0xb
+	.uleb128 0x2007
+	.uleb128 0xe
 	.uleb128 0x3c
-	.uleb128 0x19
+	.uleb128 0xc
 	.uleb128 0x64
 	.uleb128 0x13
 	.uleb128 0x1
@@ -11145,24 +12594,45 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x2e
 	.byte	0x1
 	.uleb128 0x3f
-	.uleb128 0x19
+	.uleb128 0xc
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0x5
+	.uleb128 0x2007
+	.uleb128 0xe
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x3c
+	.uleb128 0xc
+	.uleb128 0x64
+	.uleb128 0x13
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x37
+	.uleb128 0x2e
+	.byte	0x1
+	.uleb128 0x3f
+	.uleb128 0xc
 	.uleb128 0x3
 	.uleb128 0xe
 	.uleb128 0x3a
 	.uleb128 0xb
 	.uleb128 0x3b
 	.uleb128 0x5
-	.uleb128 0x6e
+	.uleb128 0x2007
 	.uleb128 0xe
-	.uleb128 0x32
-	.uleb128 0xb
 	.uleb128 0x3c
-	.uleb128 0x19
+	.uleb128 0xc
 	.uleb128 0x64
 	.uleb128 0x13
 	.byte	0
 	.byte	0
-	.uleb128 0x37
+	.uleb128 0x38
 	.uleb128 0x4
 	.byte	0x1
 	.uleb128 0x3
@@ -11172,62 +12642,45 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x3a
 	.uleb128 0xb
 	.uleb128 0x3b
-	.uleb128 0xb
+	.uleb128 0x5
 	.uleb128 0x32
 	.uleb128 0xb
 	.uleb128 0x1
 	.uleb128 0x13
-	.byte	0
-	.byte	0
-	.uleb128 0x38
-	.uleb128 0xd
-	.byte	0
-	.uleb128 0x3
-	.uleb128 0xe
-	.uleb128 0x3a
-	.uleb128 0xb
-	.uleb128 0x3b
-	.uleb128 0x5
-	.uleb128 0x49
-	.uleb128 0x13
-	.uleb128 0x38
-	.uleb128 0xb
-	.uleb128 0x32
-	.uleb128 0xb
 	.byte	0
 	.byte	0
 	.uleb128 0x39
-	.uleb128 0xd
-	.byte	0
+	.uleb128 0x13
+	.byte	0x1
 	.uleb128 0x3
 	.uleb128 0xe
+	.uleb128 0xb
+	.uleb128 0xb
 	.uleb128 0x3a
 	.uleb128 0xb
 	.uleb128 0x3b
 	.uleb128 0x5
-	.uleb128 0x49
+	.uleb128 0x32
+	.uleb128 0xb
+	.uleb128 0x1
 	.uleb128 0x13
-	.uleb128 0x38
-	.uleb128 0x5
 	.byte	0
 	.byte	0
 	.uleb128 0x3a
 	.uleb128 0x2e
 	.byte	0x1
 	.uleb128 0x3f
-	.uleb128 0x19
+	.uleb128 0xc
 	.uleb128 0x3
 	.uleb128 0xe
 	.uleb128 0x3a
 	.uleb128 0xb
 	.uleb128 0x3b
 	.uleb128 0x5
-	.uleb128 0x6e
+	.uleb128 0x2007
 	.uleb128 0xe
-	.uleb128 0x32
-	.uleb128 0xb
 	.uleb128 0x3c
-	.uleb128 0x19
+	.uleb128 0xc
 	.uleb128 0x1
 	.uleb128 0x13
 	.byte	0
@@ -11236,17 +12689,19 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x2e
 	.byte	0x1
 	.uleb128 0x3f
-	.uleb128 0x19
+	.uleb128 0xc
 	.uleb128 0x3
 	.uleb128 0xe
 	.uleb128 0x3a
 	.uleb128 0xb
 	.uleb128 0x3b
 	.uleb128 0x5
-	.uleb128 0x6e
+	.uleb128 0x2007
 	.uleb128 0xe
+	.uleb128 0x32
+	.uleb128 0xb
 	.uleb128 0x3c
-	.uleb128 0x19
+	.uleb128 0xc
 	.uleb128 0x64
 	.uleb128 0x13
 	.uleb128 0x1
@@ -11257,19 +12712,21 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x2e
 	.byte	0x1
 	.uleb128 0x3f
-	.uleb128 0x19
+	.uleb128 0xc
 	.uleb128 0x3
 	.uleb128 0xe
 	.uleb128 0x3a
 	.uleb128 0xb
 	.uleb128 0x3b
 	.uleb128 0x5
-	.uleb128 0x6e
+	.uleb128 0x2007
 	.uleb128 0xe
 	.uleb128 0x49
 	.uleb128 0x13
+	.uleb128 0x32
+	.uleb128 0xb
 	.uleb128 0x3c
-	.uleb128 0x19
+	.uleb128 0xc
 	.uleb128 0x64
 	.uleb128 0x13
 	.uleb128 0x1
@@ -11280,15 +12737,19 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x2e
 	.byte	0x1
 	.uleb128 0x3f
-	.uleb128 0x19
+	.uleb128 0xc
 	.uleb128 0x3
 	.uleb128 0xe
 	.uleb128 0x3a
 	.uleb128 0xb
 	.uleb128 0x3b
 	.uleb128 0x5
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x32
+	.uleb128 0xb
 	.uleb128 0x3c
-	.uleb128 0x19
+	.uleb128 0xc
 	.uleb128 0x64
 	.uleb128 0x13
 	.uleb128 0x1
@@ -11299,15 +12760,19 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x2e
 	.byte	0x1
 	.uleb128 0x3f
-	.uleb128 0x19
+	.uleb128 0xc
 	.uleb128 0x3
 	.uleb128 0xe
 	.uleb128 0x3a
 	.uleb128 0xb
 	.uleb128 0x3b
 	.uleb128 0x5
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x32
+	.uleb128 0xb
 	.uleb128 0x3c
-	.uleb128 0x19
+	.uleb128 0xc
 	.uleb128 0x64
 	.uleb128 0x13
 	.byte	0
@@ -11316,21 +12781,19 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x2e
 	.byte	0x1
 	.uleb128 0x3f
-	.uleb128 0x19
+	.uleb128 0xc
 	.uleb128 0x3
 	.uleb128 0xe
 	.uleb128 0x3a
 	.uleb128 0xb
 	.uleb128 0x3b
 	.uleb128 0xb
-	.uleb128 0x6e
+	.uleb128 0x2007
 	.uleb128 0xe
 	.uleb128 0x49
 	.uleb128 0x13
-	.uleb128 0x32
-	.uleb128 0xb
 	.uleb128 0x3c
-	.uleb128 0x19
+	.uleb128 0xc
 	.uleb128 0x64
 	.uleb128 0x13
 	.byte	0
@@ -11369,11 +12832,11 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x11
 	.uleb128 0x1
 	.uleb128 0x12
-	.uleb128 0x6
+	.uleb128 0x1
 	.uleb128 0x40
-	.uleb128 0x18
+	.uleb128 0x6
 	.uleb128 0x2116
-	.uleb128 0x19
+	.uleb128 0xc
 	.byte	0
 	.byte	0
 	.uleb128 0x43
@@ -11384,13 +12847,13 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x11
 	.uleb128 0x1
 	.uleb128 0x12
-	.uleb128 0x6
+	.uleb128 0x1
 	.uleb128 0x40
-	.uleb128 0x18
+	.uleb128 0x6
 	.uleb128 0x64
 	.uleb128 0x13
 	.uleb128 0x2117
-	.uleb128 0x19
+	.uleb128 0xc
 	.uleb128 0x1
 	.uleb128 0x13
 	.byte	0
@@ -11403,9 +12866,9 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x49
 	.uleb128 0x13
 	.uleb128 0x34
-	.uleb128 0x19
+	.uleb128 0xc
 	.uleb128 0x2
-	.uleb128 0x18
+	.uleb128 0xa
 	.byte	0
 	.byte	0
 	.uleb128 0x45
@@ -11420,13 +12883,13 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x11
 	.uleb128 0x1
 	.uleb128 0x12
-	.uleb128 0x6
+	.uleb128 0x1
 	.uleb128 0x40
-	.uleb128 0x18
+	.uleb128 0x6
 	.uleb128 0x64
 	.uleb128 0x13
 	.uleb128 0x2116
-	.uleb128 0x19
+	.uleb128 0xc
 	.uleb128 0x1
 	.uleb128 0x13
 	.byte	0
@@ -11443,7 +12906,7 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x49
 	.uleb128 0x13
 	.uleb128 0x2
-	.uleb128 0x18
+	.uleb128 0xa
 	.byte	0
 	.byte	0
 	.uleb128 0x47
@@ -11452,7 +12915,7 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x11
 	.uleb128 0x1
 	.uleb128 0x12
-	.uleb128 0x6
+	.uleb128 0x1
 	.byte	0
 	.byte	0
 	.uleb128 0x48
@@ -11467,7 +12930,7 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x49
 	.uleb128 0x13
 	.uleb128 0x2
-	.uleb128 0x18
+	.uleb128 0xa
 	.byte	0
 	.byte	0
 	.uleb128 0x49
@@ -11482,7 +12945,7 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x49
 	.uleb128 0x13
 	.uleb128 0x2
-	.uleb128 0x18
+	.uleb128 0xa
 	.byte	0
 	.byte	0
 	.uleb128 0x4a
@@ -11497,11 +12960,11 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x11
 	.uleb128 0x1
 	.uleb128 0x12
-	.uleb128 0x6
+	.uleb128 0x1
 	.uleb128 0x40
-	.uleb128 0x18
+	.uleb128 0x6
 	.uleb128 0x2117
-	.uleb128 0x19
+	.uleb128 0xc
 	.uleb128 0x1
 	.uleb128 0x13
 	.byte	0
@@ -11518,7 +12981,7 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x49
 	.uleb128 0x13
 	.uleb128 0x2
-	.uleb128 0x18
+	.uleb128 0xa
 	.byte	0
 	.byte	0
 	.uleb128 0x4c
@@ -11540,7 +13003,7 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x11
 	.uleb128 0x1
 	.uleb128 0x12
-	.uleb128 0x6
+	.uleb128 0x1
 	.uleb128 0x1
 	.uleb128 0x13
 	.byte	0
@@ -11557,7 +13020,7 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x49
 	.uleb128 0x13
 	.uleb128 0x2
-	.uleb128 0x18
+	.uleb128 0xa
 	.byte	0
 	.byte	0
 	.uleb128 0x4f
@@ -11572,7 +13035,7 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x49
 	.uleb128 0x13
 	.uleb128 0x2
-	.uleb128 0x18
+	.uleb128 0xa
 	.byte	0
 	.byte	0
 	.uleb128 0x50
@@ -11583,11 +13046,11 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x11
 	.uleb128 0x1
 	.uleb128 0x12
-	.uleb128 0x6
+	.uleb128 0x1
 	.uleb128 0x40
-	.uleb128 0x18
+	.uleb128 0x6
 	.uleb128 0x2116
-	.uleb128 0x19
+	.uleb128 0xc
 	.uleb128 0x1
 	.uleb128 0x13
 	.byte	0
@@ -11601,14 +13064,14 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0xb
 	.uleb128 0x3b
 	.uleb128 0xb
-	.uleb128 0x6e
+	.uleb128 0x2007
 	.uleb128 0xe
 	.uleb128 0x49
 	.uleb128 0x13
 	.uleb128 0x3f
-	.uleb128 0x19
+	.uleb128 0xc
 	.uleb128 0x2
-	.uleb128 0x18
+	.uleb128 0xa
 	.byte	0
 	.byte	0
 	.uleb128 0x52
@@ -11623,9 +13086,9 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x49
 	.uleb128 0x13
 	.uleb128 0x3f
-	.uleb128 0x19
+	.uleb128 0xc
 	.uleb128 0x3c
-	.uleb128 0x19
+	.uleb128 0xc
 	.byte	0
 	.byte	0
 	.uleb128 0x53
@@ -11640,9 +13103,9 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x49
 	.uleb128 0x13
 	.uleb128 0x3f
-	.uleb128 0x19
+	.uleb128 0xc
 	.uleb128 0x3c
-	.uleb128 0x19
+	.uleb128 0xc
 	.byte	0
 	.byte	0
 	.uleb128 0x54
@@ -11659,1649 +13122,2249 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0xb
 	.uleb128 0x3b
 	.uleb128 0xb
-	.uleb128 0x6e
+	.uleb128 0x2007
 	.uleb128 0xe
 	.uleb128 0x2
-	.uleb128 0x18
+	.uleb128 0xa
 	.byte	0
 	.byte	0
 	.byte	0
-	.section	.debug_aranges,"",@progbits
-	.long	0x3c
-	.value	0x2
-	.long	.Ldebug_info0
+	.section	.debug_loc,"",%progbits
+.Ldebug_loc0:
+.LLST0:
+	.4byte	.LFB4
+	.4byte	.LCFI0
+	.2byte	0x2
+	.byte	0x7d
+	.sleb128 0
+	.4byte	.LCFI0
+	.4byte	.LFE4
+	.2byte	0x2
+	.byte	0x7d
+	.sleb128 8
+	.4byte	0
+	.4byte	0
+.LLST1:
+	.4byte	.LFB1421
+	.4byte	.LCFI1
+	.2byte	0x2
+	.byte	0x7d
+	.sleb128 0
+	.4byte	.LCFI1
+	.4byte	.LFE1421
+	.2byte	0x2
+	.byte	0x7d
+	.sleb128 8
+	.4byte	0
+	.4byte	0
+.LLST2:
+	.4byte	.LFB1425
+	.4byte	.LCFI2
+	.2byte	0x2
+	.byte	0x7d
+	.sleb128 0
+	.4byte	.LCFI2
+	.4byte	.LFE1425
+	.2byte	0x2
+	.byte	0x7d
+	.sleb128 8
+	.4byte	0
+	.4byte	0
+.LLST3:
+	.4byte	.LFB1426
+	.4byte	.LCFI3
+	.2byte	0x2
+	.byte	0x7d
+	.sleb128 0
+	.4byte	.LCFI3
+	.4byte	.LFE1426
+	.2byte	0x2
+	.byte	0x7d
+	.sleb128 8
+	.4byte	0
+	.4byte	0
+.LLST4:
+	.4byte	.LFB1427
+	.4byte	.LCFI4
+	.2byte	0x2
+	.byte	0x7d
+	.sleb128 0
+	.4byte	.LCFI4
+	.4byte	.LCFI5
+	.2byte	0x2
+	.byte	0x7d
+	.sleb128 8
+	.4byte	.LCFI5
+	.4byte	.LFE1427
+	.2byte	0x3
+	.byte	0x7d
+	.sleb128 64
+	.4byte	0
+	.4byte	0
+.LLST5:
+	.4byte	.LFB1428
+	.4byte	.LCFI6
+	.2byte	0x2
+	.byte	0x7d
+	.sleb128 0
+	.4byte	.LCFI6
+	.4byte	.LFE1428
+	.2byte	0x2
+	.byte	0x7d
+	.sleb128 8
+	.4byte	0
+	.4byte	0
+.LLST6:
+	.4byte	.LFB1429
+	.4byte	.LCFI7
+	.2byte	0x2
+	.byte	0x7d
+	.sleb128 0
+	.4byte	.LCFI7
+	.4byte	.LCFI8
+	.2byte	0x2
+	.byte	0x7d
+	.sleb128 12
+	.4byte	.LCFI8
+	.4byte	.LFE1429
+	.2byte	0x3
+	.byte	0x7d
+	.sleb128 168
+	.4byte	0
+	.4byte	0
+.LLST7:
+	.4byte	.LFB1499
+	.4byte	.LCFI9
+	.2byte	0x2
+	.byte	0x7d
+	.sleb128 0
+	.4byte	.LCFI9
+	.4byte	.LCFI10
+	.2byte	0x2
+	.byte	0x7d
+	.sleb128 4
+	.4byte	.LCFI10
+	.4byte	.LFE1499
+	.2byte	0x2
+	.byte	0x7d
+	.sleb128 16
+	.4byte	0
+	.4byte	0
+	.section	.debug_aranges,"",%progbits
+	.4byte	0x54
+	.2byte	0x2
+	.4byte	.Ldebug_info0
 	.byte	0x4
 	.byte	0
-	.value	0
-	.value	0
-	.long	.Ltext0
-	.long	.Letext0-.Ltext0
-	.long	.LFB1424
-	.long	.LFE1424-.LFB1424
-	.long	.LFB1428
-	.long	.LFE1428-.LFB1428
-	.long	.LFB1429
-	.long	.LFE1429-.LFB1429
-	.long	.LFB1502
-	.long	.LFE1502-.LFB1502
-	.long	0
-	.long	0
-	.section	.debug_ranges,"",@progbits
+	.2byte	0
+	.2byte	0
+	.4byte	.LFB4
+	.4byte	.LFE4-.LFB4
+	.4byte	.LFB1421
+	.4byte	.LFE1421-.LFB1421
+	.4byte	.LFB1425
+	.4byte	.LFE1425-.LFB1425
+	.4byte	.LFB1426
+	.4byte	.LFE1426-.LFB1426
+	.4byte	.LFB1427
+	.4byte	.LFE1427-.LFB1427
+	.4byte	.LFB1428
+	.4byte	.LFE1428-.LFB1428
+	.4byte	.LFB1429
+	.4byte	.LFE1429-.LFB1429
+	.4byte	.LFB1499
+	.4byte	.LFE1499-.LFB1499
+	.4byte	0
+	.4byte	0
+	.section	.debug_ranges,"",%progbits
 .Ldebug_ranges0:
-	.long	.Ltext0
-	.long	.Letext0
-	.long	.LFB1424
-	.long	.LFE1424
-	.long	.LFB1428
-	.long	.LFE1428
-	.long	.LFB1429
-	.long	.LFE1429
-	.long	.LFB1502
-	.long	.LFE1502
-	.long	0
-	.long	0
-	.section	.debug_line,"",@progbits
+	.4byte	.LFB4
+	.4byte	.LFE4
+	.4byte	.LFB1421
+	.4byte	.LFE1421
+	.4byte	.LFB1425
+	.4byte	.LFE1425
+	.4byte	.LFB1426
+	.4byte	.LFE1426
+	.4byte	.LFB1427
+	.4byte	.LFE1427
+	.4byte	.LFB1428
+	.4byte	.LFE1428
+	.4byte	.LFB1429
+	.4byte	.LFE1429
+	.4byte	.LFB1499
+	.4byte	.LFE1499
+	.4byte	0
+	.4byte	0
+	.section	.debug_line,"",%progbits
 .Ldebug_line0:
-	.section	.debug_str,"MS",@progbits,1
-.LASF123:
-	.string	"_ZNK9CIwStringILi32EEixEi"
-.LASF212:
-	.string	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE15clear_optimisedEv"
-.LASF131:
-	.string	"_ZN9CIwStringILi32EEplEPKc"
-.LASF467:
-	.string	"IwResGroupCollisionHandling"
-.LASF562:
-	.string	"_ZN13CIwResManager7LoadResEPKcS1_j"
-.LASF614:
-	.string	"_ZNK8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE4sizeEv"
-.LASF434:
-	.string	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE10erase_fastEi"
-.LASF573:
-	.string	"_ZN13CIwResManager17DebugAddMenuItemsEP7CIwMenu"
-.LASF74:
-	.string	"size_t"
-.LASF400:
-	.string	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE8LockSizeEb"
-.LASF338:
-	.string	"GetEnd"
-.LASF762:
-	.string	"vpdiff"
-.LASF67:
-	.string	"sizetype"
-.LASF252:
-	.string	"_ZNK8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE4backEv"
-.LASF63:
-	.string	"_ZN15CIwChannelADPCM13GenerateAudioEP20s3eSoundGenAudioInfo"
-.LASF228:
-	.string	"_ZNK8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE4findERKS1_"
-.LASF71:
-	.string	"S3E_ERROR_SHOW_IGNORE"
-.LASF626:
-	.string	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE12resize_quickEj"
-.LASF56:
-	.string	"m_BlockAlign"
-.LASF450:
-	.string	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE9push_backERKS1_"
-.LASF173:
-	.string	"IW_TYPE_MAX"
-.LASF61:
-	.string	"GenerateAudio"
-.LASF380:
-	.string	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5eraseEi"
-.LASF620:
-	.string	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE15clear_optimisedEv"
-.LASF647:
-	.string	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5frontEv"
-.LASF789:
-	.string	"c:\\\\Marmalade\\\\7.5\\\\examples\\\\GameTutorial\\\\CPP\\\\Stage4\\\\build_stage4_vc12"
-.LASF184:
-	.string	"reallocate"
-.LASF183:
-	.string	"_ZN12CIwAllocatorIP10CIwManaged15CIwMallocRouterIS1_EE8allocateEj"
-.LASF125:
-	.string	"_ZN9CIwStringILi32EEaSEPKc"
-.LASF674:
-	.string	"m_Pan"
-.LASF166:
-	.string	"IW_TYPE_UINT16"
-.LASF683:
-	.string	"GetSpec"
-.LASF378:
-	.string	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE10erase_fastEPS1_"
-.LASF661:
-	.string	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE4swapERS8_"
-.LASF641:
-	.string	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5eraseEPS1_S9_"
-.LASF716:
-	.string	"GetSamplesPerBlock"
-.LASF559:
-	.string	"GetBuildStyleCurrName"
-.LASF605:
-	.string	"_ZN13CIwResManager22OptimisedMountedGroupsEv"
-.LASF155:
-	.string	"_ZN9CIwStringILi160EEplERKS0_"
-.LASF651:
-	.string	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE9push_backEv"
-.LASF474:
-	.string	"m_Flags"
-.LASF350:
-	.string	"_ZN12CIwAllocatorI9CIwStringILi160EE15CIwMallocRouterIS1_EE10deallocateEPS1_j"
-.LASF477:
-	.string	"m_DebugGroupBinCopyPath"
-.LASF629:
-	.string	"_ZNK8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE8containsERKS1_"
-.LASF455:
-	.string	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5ShareERKS8_"
-.LASF783:
-	.string	"CIwMallocRouter<CIwResGroup*>"
-.LASF16:
-	.string	"uint32"
-.LASF292:
-	.string	"SerialisePtrs"
-.LASF334:
-	.string	"_ZN14CIwManagedList6GetTopEv"
-.LASF489:
-	.string	"m_UniqueRunStamp"
-.LASF608:
-	.string	"_ZN12CIwAllocatorIN13CIwResManager13CRemovedGroupE15CIwMallocRouterIS1_EE10reallocateEPS1_j"
-.LASF410:
-	.string	"CIwArray<CIwResGroup*, CIwAllocator<CIwResGroup*, CIwMallocRouter<CIwResGroup*> >, ReallocateDefault<CIwResGroup*, CIwAllocator<CIwResGroup*, CIwMallocRouter<CIwResGroup*> > > >"
-.LASF542:
-	.string	"_ZN13CIwResManager19LoadGroupFromMemoryEPKhj"
-.LASF276:
-	.string	"truncate"
-.LASF526:
-	.string	"_ZN13CIwResManager13SplitPathNameEPKcR9CIwStringILi160EERS2_ILi32EES6_"
-.LASF145:
-	.string	"_ZN9CIwStringILi160EE9setLengthEi"
-.LASF553:
-	.string	"ResolveResPtr"
-.LASF742:
-	.string	"volume"
-.LASF701:
-	.string	"Stop"
-.LASF581:
-	.string	"_ZNK13CIwResManager18GetBuildStyleNamedEPKc"
-.LASF695:
-	.string	"SetPan"
-.LASF424:
-	.string	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE7reserveEj"
-.LASF164:
-	.string	"IW_TYPE_UINT8"
-.LASF339:
-	.string	"_ZNK14CIwManagedList6GetEndEv"
-.LASF544:
-	.string	"_ZN13CIwResManager10MountGroupEPKcb"
-.LASF379:
-	.string	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE10erase_fastEPS1_S9_"
-.LASF362:
-	.string	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE15clear_optimisedEv"
-.LASF270:
-	.string	"CanResize"
-.LASF778:
-	.string	"g_IwTextParserITX"
-.LASF69:
-	.string	"S3E_ERROR_SHOW_CONTINUE"
-.LASF723:
-	.string	"CIwChannelPCM<short unsigned int>"
-.LASF333:
-	.string	"GetTop"
-.LASF102:
-	.string	"CIwString<32>"
-.LASF531:
-	.string	"AddRes"
-.LASF686:
-	.string	"_ZNK12CIwSoundInst9GetChanIDEv"
-.LASF597:
-	.string	"_ZN13CIwResManager16_TempRemoveGroupEP11CIwResGroup"
-.LASF394:
-	.string	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE13push_back_qtyERKS1_i"
-.LASF547:
-	.string	"SetBuildGroupCallbackPre"
-.LASF226:
-	.string	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE6resizeEj"
-.LASF697:
-	.string	"SetPitch"
-.LASF53:
-	.string	"bres_accum"
-.LASF645:
-	.string	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE4backEv"
-.LASF580:
-	.string	"GetBuildStyleNamed"
-.LASF79:
-	.string	"bad_typeid"
-.LASF335:
-	.string	"_ZNK14CIwManagedListixEi"
-.LASF62:
-	.string	"GenerateADPCMAudioFast"
-.LASF773:
-	.string	"g_IwMenuManager"
-.LASF449:
-	.string	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE6appendERS8_"
-.LASF168:
-	.string	"IW_TYPE_UINT32"
-.LASF45:
-	.string	"m_EndSample"
-.LASF759:
-	.string	"pState"
-.LASF435:
-	.string	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE10erase_fastEii"
-.LASF70:
-	.string	"S3E_ERROR_SHOW_STOP"
-.LASF101:
-	.string	"CIwChannelADPCM"
-.LASF20:
-	.string	"s3eBool"
-.LASF51:
-	.string	"bufferstep"
-.LASF356:
-	.string	"_ZNK8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE4sizeEv"
-.LASF639:
-	.string	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5eraseEjj"
-.LASF763:
-	.string	"indexAdd"
-.LASF192:
-	.string	"max_p"
-.LASF15:
-	.string	"int8"
-.LASF676:
-	.string	"m_ChanID"
-.LASF734:
-	.string	"_ZN13CIwChannelPCMItE13clip_to_int16Ei"
-.LASF440:
-	.string	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5eraseEPS1_"
-.LASF97:
-	.string	"callback"
-.LASF730:
-	.string	"GenerateAudioFast"
-.LASF619:
-	.string	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5clearEv"
-.LASF606:
-	.string	"CIwAllocator<CIwResManager::CRemovedGroup, CIwMallocRouter<CIwResManager::CRemovedGroup> >"
-.LASF266:
-	.string	"_ZNK8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EEixEi"
-.LASF340:
-	.string	"Reserve"
-.LASF590:
-	.string	"SetAltasOwner"
-.LASF54:
-	.string	"count"
-.LASF203:
-	.string	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE4dataEv"
-.LASF790:
-	.string	"isInitialized"
-.LASF564:
-	.string	"_ZN13CIwResManager11AddLoadPathERK9CIwStringILi160EE"
-.LASF484:
-	.string	"m_GroupCurr"
-.LASF77:
-	.string	"bad_exception"
-.LASF691:
-	.string	"GetPitch"
-.LASF240:
-	.string	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE10erase_fastEii"
-.LASF565:
-	.string	"ClearLoadPaths"
-.LASF298:
-	.string	"_ZN14CIwManagedList15SerialiseHeaderEv"
-.LASF782:
-	.string	"CIwMallocRouter<CIwString<160> >"
-.LASF78:
-	.string	"type_info"
-.LASF472:
-	.string	"m_Index"
-.LASF520:
-	.string	"GetHandler"
-.LASF492:
-	.string	"m_GroupsMounted"
-.LASF401:
-	.string	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE12set_capacityEj"
-.LASF648:
-	.string	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE6appendERKS1_"
-.LASF188:
-	.string	"Array"
-.LASF214:
-	.string	"_ZNK8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE11MemoryUsageEv"
-.LASF737:
-	.string	"_ZN17ReallocateDefaultI9CIwStringILi160EE12CIwAllocatorIS1_15CIwMallocRouterIS1_EEE10ReallocateEjjjPS1_RS5_"
-.LASF509:
-	.string	"_ZN13CIwResManager13ReserveGroupsEi"
-.LASF459:
-	.string	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE12set_capacityEj"
-.LASF625:
-	.string	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE17reserve_optimisedEi"
-.LASF10:
-	.string	"long int"
-.LASF157:
-	.string	"_ZNK9CIwStringILi160EEeqEPKc"
-.LASF346:
-	.string	"_ZN17ReallocateDefaultIP10CIwManaged12CIwAllocatorIS1_15CIwMallocRouterIS1_EEE10ReallocateEjjjPS1_RS5_"
-.LASF175:
-	.string	"IW_TYPE_PAD_F"
-.LASF420:
-	.string	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE15clear_optimisedEv"
-.LASF535:
-	.string	"GetCurrentGroup"
-.LASF4:
-	.string	"s3e_int16_t"
-.LASF146:
-	.string	"_ZN9CIwStringILi160EE4findEPKc"
-.LASF693:
-	.string	"SetVol"
-.LASF196:
-	.string	"begin"
-.LASF190:
-	.string	"CIwArray<CIwManaged*, CIwAllocator<CIwManaged*, CIwMallocRouter<CIwManaged*> >, ReallocateDefault<CIwManaged*, CIwAllocator<CIwManaged*, CIwMallocRouter<CIwManaged*> > > >"
-.LASF621:
-	.string	"_ZNK8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE11MemoryUsageEv"
-.LASF499:
-	.string	"AddHandler"
-.LASF248:
-	.string	"insert_slow"
-.LASF794:
-	.string	"_ZN14CIwManagedList3PopEv"
-.LASF741:
-	.string	"relative_rate"
-.LASF555:
-	.string	"GetAtlasMaterial"
-.LASF373:
-	.string	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE20find_and_remove_fastERKS1_"
-.LASF681:
-	.string	"GetFlags"
-.LASF83:
-	.string	"stlport"
-.LASF194:
-	.string	"no_grow"
-.LASF704:
-	.string	"_ZN12CIwSoundInst5PauseEv"
-.LASF514:
-	.string	"GetGroupHashed"
-.LASF588:
-	.string	"ClearAtlasOwner"
-.LASF724:
-	.string	"loop_pos"
-.LASF255:
-	.string	"_ZNK8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5frontEv"
-.LASF507:
-	.string	"_ZN13CIwResManager12DestroyGroupEP11CIwResGroup"
-.LASF396:
-	.string	"_ZNK8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EEixEi"
-.LASF306:
-	.string	"_ZNK14CIwManagedList11GetObjNamedEPKcb"
-.LASF245:
-	.string	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5eraseEjj"
-.LASF202:
-	.string	"data"
-.LASF47:
-	.string	"s3eSoundGenAudioInfo"
-.LASF120:
-	.string	"_ZNK9CIwStringILi32EE6substrEii"
-.LASF666:
-	.string	"GetSampleCount"
-.LASF720:
-	.string	"_statTable"
-.LASF692:
-	.string	"_ZNK12CIwSoundInst8GetPitchEv"
-.LASF82:
-	.string	"__std_alias"
-.LASF504:
-	.string	"_ZN13CIwResManager8AddGroupEP11CIwResGroup"
-.LASF682:
-	.string	"_ZNK12CIwSoundInst8GetFlagsEv"
-.LASF136:
-	.string	"_ZNK9CIwStringILi32EEeqERKS0_"
-.LASF383:
-	.string	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5eraseEPS1_S9_"
-.LASF44:
-	.string	"m_OrigRepeat"
-.LASF729:
-	.string	"_ZN13CIwChannelPCMItE13GenerateAudioEP20s3eSoundGenAudioInfo"
-.LASF473:
-	.string	"m_Group"
-.LASF460:
-	.string	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE8truncateEj"
-.LASF38:
-	.string	"m_Channel"
-.LASF628:
-	.string	"_ZNK8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE4findERKS1_"
-.LASF786:
-	.string	"ReallocateDefault<CIwResManager::CRemovedGroup, CIwAllocator<CIwResManager::CRemovedGroup, CIwMallocRouter<CIwResManager::CRemovedGroup> > >"
-.LASF533:
-	.string	"SetCurrentGroup"
-.LASF1:
-	.string	"signed char"
-.LASF784:
-	.string	"ReallocateDefault<CIwResGroup*, CIwAllocator<CIwResGroup*, CIwMallocRouter<CIwResGroup*> > >"
-.LASF130:
-	.string	"operator+"
-.LASF776:
-	.string	"g_IwResManager"
-.LASF616:
-	.string	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE4dataEv"
-.LASF592:
-	.string	"GetAtlasOwner"
-.LASF90:
-	.string	"filename"
-.LASF707:
-	.string	"IsPlaying"
-.LASF528:
-	.string	"_ZNK13CIwResManager11GetResNamedEPKcS1_j"
-.LASF705:
-	.string	"Resume"
-.LASF487:
-	.string	"m_BuildStyles"
-.LASF442:
-	.string	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE11insert_slowERKS1_j"
-.LASF438:
-	.string	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5eraseEi"
-.LASF479:
-	.string	"m_ChildBuildScale"
-.LASF501:
-	.string	"RemoveHandler"
-.LASF296:
-	.string	"ResolvePtrs"
-.LASF632:
-	.string	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE8pop_backEv"
-.LASF0:
-	.string	"unsigned char"
-.LASF235:
-	.string	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE8pop_backEv"
-.LASF753:
-	.string	"_count"
-.LASF151:
-	.string	"_ZN9CIwStringILi160EEaSERKS0_"
-.LASF133:
-	.string	"_ZN9CIwStringILi32EEpLEc"
-.LASF618:
-	.string	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EEaSERKS8_"
-.LASF144:
-	.string	"_ZNK9CIwStringILi160EE8capacityEv"
-.LASF323:
-	.string	"Find"
-.LASF694:
-	.string	"_ZN12CIwSoundInst6SetVolEs"
-.LASF690:
-	.string	"_ZNK12CIwSoundInst6GetPanEv"
-.LASF513:
-	.string	"_ZNK13CIwResManager13GetGroupNamedEPKcj"
-.LASF662:
-	.string	"CIwResBuildStyle"
-.LASF249:
-	.string	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE11insert_slowERKS1_j"
-.LASF211:
-	.string	"clear_optimised"
-.LASF430:
-	.string	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE15find_and_removeERKS1_"
-.LASF572:
-	.string	"DebugAddMenuItems"
-.LASF287:
-	.string	"_ZNK14CIwManagedList9_CheckGetEjb"
-.LASF65:
-	.string	"GetNextSample"
-.LASF43:
-	.string	"m_OrigNumSamples"
-.LASF116:
-	.string	"_ZN9CIwStringILi32EE9setLengthEi"
-.LASF206:
-	.string	"SerialiseHeader"
-.LASF311:
-	.string	"Insert"
-.LASF105:
-	.string	"c_str"
-.LASF585:
-	.string	"_ZN13CIwResManager14BuildResourcesEv"
-.LASF22:
-	.string	"S3E_SOUND_VOLUME"
-.LASF321:
-	.string	"Contains"
-.LASF719:
-	.string	"_ZN17CIwSoundDataADPCM17GetBlockAlignmentEv"
-.LASF143:
-	.string	"_ZNK9CIwStringILi160EE6lengthEv"
-.LASF122:
-	.string	"_ZN9CIwStringILi32EEixEi"
-.LASF178:
-	.string	"CIwMenuManager"
-.LASF75:
-	.string	"char"
-.LASF569:
-	.string	"ChangeExtension"
-.LASF177:
-	.string	"CIwMenu"
-.LASF200:
-	.string	"_ZNK8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE4sizeEv"
-.LASF409:
-	.string	"CIwResGroup"
-.LASF152:
-	.string	"_ZN9CIwStringILi160EEpLEPKc"
-.LASF416:
-	.string	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE4dataEv"
-.LASF370:
-	.string	"_ZNK8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE4findERKS1_"
-.LASF649:
-	.string	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE6appendERS8_"
-.LASF552:
-	.string	"_ZN13CIwResManager15SerialiseResPtrERP10CIwManagedPKcb"
-.LASF250:
-	.string	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE11insert_slowERS8_j"
-.LASF176:
-	.string	"IW_TYPE_FREE_BIT"
-.LASF425:
-	.string	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE17reserve_optimisedEi"
-.LASF523:
-	.string	"_ZNK13CIwResManager10GetResTypeEPKcj"
-.LASF677:
-	.string	"m_Count"
-.LASF205:
-	.string	"~CIwArray"
-.LASF111:
-	.string	"capacity"
-.LASF225:
-	.string	"resize"
-.LASF541:
-	.string	"LoadGroupFromMemory"
-.LASF426:
-	.string	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE12resize_quickEj"
-.LASF32:
-	.string	"S3E_CHANNEL_PITCH"
-.LASF462:
-	.string	"CIwResHandler"
-.LASF7:
-	.string	"long long unsigned int"
-.LASF140:
-	.string	"CIwString<160>"
-.LASF364:
-	.string	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE16resize_optimisedEj"
-.LASF415:
-	.string	"_ZNK8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE8capacityEv"
-.LASF222:
-	.string	"resize_quick"
-.LASF182:
-	.string	"allocate"
-.LASF162:
-	.string	"IW_TYPE_BOOL"
-.LASF700:
-	.string	"_ZNK12CIwSoundInst8GetCountEv"
-.LASF156:
-	.string	"_ZN9CIwStringILi160EEpLEc"
-.LASF327:
-	.string	"GetSize"
-.LASF253:
-	.string	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE4backEv"
-.LASF154:
-	.string	"_ZN9CIwStringILi160EEplEPKc"
-.LASF189:
-	.string	"ArrayIt"
-.LASF314:
-	.string	"_ZN14CIwManagedList10RemoveSlowEP10CIwManaged"
-.LASF186:
-	.string	"deallocate"
-.LASF217:
-	.string	"optimise_capacity"
-.LASF637:
-	.string	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE10erase_fastEPS1_S9_"
-.LASF55:
-	.string	"m_SamplesPerBlock"
-.LASF610:
-	.ascii	"CIwArray<CIwResMa"
-	.string	"nager::CRemovedGroup, CIwAllocator<CIwResManager::CRemovedGroup, CIwMallocRouter<CIwResManager::CRemovedGroup> >, ReallocateDefault<CIwResManager::CRemovedGroup, CIwAllocator<CIwResManager::CRemovedGroup, CIwMallocRouter<CIwResManager::CRemovedGroup> > > >"
-.LASF273:
-	.string	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE8LockSizeEb"
-.LASF315:
-	.string	"RemoveFast"
-.LASF436:
-	.string	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE10erase_fastEPS1_"
-.LASF678:
-	.string	"m_PlayID"
-.LASF355:
-	.string	"_ZNK8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5emptyEv"
-.LASF115:
-	.string	"_ZN15CIwChannelADPCM15GenerateAudioCBEP20s3eSoundGenAudioInfoPS_"
-.LASF518:
-	.string	"GetGroup"
-.LASF543:
-	.string	"MountGroup"
-.LASF29:
-	.string	"S3E_SOUND_STEREO_ENABLED"
-.LASF160:
-	.string	"IW_TYPE_NONE"
-.LASF40:
-	.string	"m_NumSamples"
-.LASF103:
-	.string	"m_Buffer"
-.LASF181:
-	.string	"pointer"
-.LASF279:
-	.string	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE4swapERS8_"
-.LASF150:
-	.string	"_ZN9CIwStringILi160EEaSEPKc"
-.LASF246:
-	.string	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5eraseEPS1_"
-.LASF257:
-	.string	"append"
-.LASF180:
-	.string	"size_type"
-.LASF310:
-	.string	"_ZNK14CIwManagedList18GetObjHashedNextItEjPP10CIwManagedb"
-.LASF301:
-	.string	"Clear"
-.LASF392:
-	.string	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE9push_backERKS1_"
-.LASF464:
-	.string	"CIwResManager"
-.LASF634:
-	.string	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE10erase_fastEi"
-.LASF342:
-	.string	"_ZN14CIwManagedList8LockSizeEb"
-.LASF229:
-	.string	"_ZNK8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE8containsERKS1_"
-.LASF412:
-	.string	"_ZNK8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE3endEv"
-.LASF85:
-	.string	"IwSerialiseUserCallback"
-.LASF220:
-	.string	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE7reserveEj"
-.LASF646:
-	.string	"_ZNK8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5frontEv"
-.LASF611:
-	.string	"_ZNK8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5beginEv"
-.LASF428:
-	.string	"_ZNK8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE4findERKS1_"
-.LASF320:
-	.string	"_ZN14CIwManagedList9EraseFastEj"
-.LASF195:
-	.string	"iterator"
-.LASF93:
-	.string	"buffer"
-.LASF613:
-	.string	"_ZNK8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5emptyEv"
-.LASF785:
-	.string	"CIwMallocRouter<CIwResManager::CRemovedGroup>"
-.LASF739:
-	.string	"aTarget"
-.LASF630:
-	.string	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE15find_and_removeERKS1_"
-.LASF754:
-	.string	"_s_1"
-.LASF755:
-	.string	"_s_2"
-.LASF598:
-	.string	"GetBinaryPath"
-.LASF169:
-	.string	"IW_TYPE_FLOAT"
-.LASF238:
-	.string	"erase_fast"
-.LASF348:
-	.string	"_ZN12CIwAllocatorI9CIwStringILi160EE15CIwMallocRouterIS1_EE8allocateEj"
-.LASF72:
-	.string	"S3E_ERROR_SHOW_AGAIN"
-.LASF795:
-	.string	"GlobalMode"
-.LASF236:
-	.string	"pop_back_get"
-.LASF209:
-	.string	"clear"
-.LASF244:
-	.string	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5eraseEi"
-.LASF500:
-	.string	"_ZN13CIwResManager10AddHandlerEP13CIwResHandler"
-.LASF457:
-	.string	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE9CanResizeEv"
-.LASF368:
-	.string	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE12resize_quickEj"
-.LASF254:
-	.string	"front"
-.LASF733:
-	.string	"clip_to_int16"
-.LASF114:
-	.string	"setLength"
-.LASF50:
-	.string	"index"
-.LASF601:
-	.string	"_ZN13CIwResManager25SetGroupCollisionHandlingENS_27IwResGroupCollisionHandlingE"
-.LASF746:
-	.string	"endOfSample"
-.LASF86:
-	.string	"IwSerialiseContext"
-.LASF308:
-	.string	"_ZNK14CIwManagedList12GetObjHashedEjb"
-.LASF471:
-	.string	"CRemovedGroup"
-.LASF563:
-	.string	"AddLoadPath"
-.LASF497:
-	.string	"GetMode"
-.LASF261:
-	.string	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE9push_backERKS1_"
-.LASF359:
-	.string	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE15SerialiseHeaderEv"
-.LASF117:
-	.string	"find"
-.LASF554:
-	.string	"_ZN13CIwResManager13ResolveResPtrERP10CIwManagedPKc"
-.LASF36:
-	.string	"S3E_CHANNEL_STATUS"
-.LASF538:
-	.string	"_ZNK13CIwResManager18GetLastSearchGroupEv"
-.LASF660:
-	.string	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE8truncateEj"
-.LASF76:
-	.string	"exception"
-.LASF699:
-	.string	"GetCount"
-.LASF251:
-	.string	"back"
-.LASF239:
-	.string	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE10erase_fastEi"
-.LASF9:
-	.string	"long unsigned int"
-.LASF439:
-	.string	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5eraseEjj"
-.LASF198:
-	.string	"empty"
-.LASF515:
-	.string	"_ZNK13CIwResManager14GetGroupHashedEjj"
-.LASF502:
-	.string	"_ZN13CIwResManager13RemoveHandlerEPKc"
-.LASF787:
-	.ascii	"GNU C++ 4.8 -fpreprocessed -mstackrealign -msse3 -m"
-	.string	"bionic -m32 -mtune=atom -march=i686 -g -O0 -funsigned-char -fno-strict-aliasing -fno-stack-protector -fno-short-enums -fshort-wchar -fmessage-length=0 -fasynchronous-unwind-tables -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fno-exceptions -frtti"
-.LASF525:
-	.string	"_ZN13CIwResManager13SplitPathNameEPKcR9CIwStringILi160EES4_RS2_ILi32EE"
-.LASF688:
-	.string	"_ZNK12CIwSoundInst6GetVolEv"
-.LASF443:
-	.string	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE11insert_slowERS8_j"
-.LASF517:
-	.string	"_ZNK13CIwResManager12GetNumGroupsEv"
-.LASF33:
-	.string	"S3E_CHANNEL_RATE"
-.LASF134:
-	.string	"operator=="
-.LASF121:
-	.string	"operator[]"
-.LASF664:
-	.string	"CIwRect"
-.LASF418:
-	.string	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EEaSERKS8_"
-.LASF627:
-	.string	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE6resizeEj"
-.LASF330:
-	.string	"_ZNK14CIwManagedList11GetCapacityEv"
-.LASF24:
-	.string	"S3E_SOUND_DEFAULT_FREQ"
-.LASF260:
-	.string	"push_back"
-.LASF721:
-	.string	"indexTable"
-.LASF498:
-	.string	"_ZNK13CIwResManager7GetModeEv"
-.LASF139:
-	.string	"CIwStringL"
-.LASF738:
-	.string	"this"
-.LASF751:
-	.string	"aTarget_orig"
-.LASF100:
-	.string	"CIwStringS"
-.LASF283:
-	.string	"m_List"
-.LASF299:
-	.string	"Delete"
-.LASF224:
-	.string	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE12resize_quickEj"
-.LASF493:
-	.string	"BuildGroupCallbackPre"
-.LASF216:
-	.string	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE16resize_optimisedEj"
-.LASF414:
-	.string	"_ZNK8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE4sizeEv"
-.LASF780:
-	.string	"sTable"
-.LASF482:
-	.string	"m_Groups"
-.LASF13:
-	.string	"uintptr_t"
-.LASF491:
-	.string	"m_RemovedGroups"
-.LASF576:
-	.string	"DebugSetGroupBinCopyPath"
-.LASF332:
-	.string	"_ZN14CIwManagedList4PushEP10CIwManagedb"
-.LASF727:
-	.string	"m_Instance"
-.LASF68:
-	.string	"s3eErrorShowResult"
-.LASF366:
-	.string	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE7reserveEj"
+	.section	.debug_str,"MS",%progbits,1
 .LASF124:
-	.string	"operator="
-.LASF510:
-	.string	"ReserveHandlers"
-.LASF524:
-	.string	"SplitPathName"
-.LASF582:
-	.string	"GetBuildStyleCurr"
-.LASF669:
-	.string	"CIwSoundManager"
-.LASF708:
-	.string	"_ZNK12CIwSoundInst9IsPlayingEv"
-.LASF714:
-	.string	"_ZN12CIwSoundInst9GetPlayIDEv"
-.LASF445:
-	.string	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE4backEv"
-.LASF475:
-	.string	"m_LoadPaths"
-.LASF623:
-	.string	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE17optimise_capacityEv"
-.LASF432:
-	.string	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE8pop_backEv"
-.LASF655:
-	.string	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5ShareERKS8_"
-.LASF280:
-	.string	"REALLOCATE"
-.LASF775:
-	.string	"g_InverseSqrtTable"
-.LASF687:
-	.string	"GetVol"
-.LASF269:
-	.string	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5ShareEPS1_ii"
-.LASF797:
-	.string	"IwDebugExit"
-.LASF262:
-	.string	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE9push_backEv"
-.LASF294:
-	.string	"OptimizeCapacity"
-.LASF453:
-	.string	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE13push_back_qtyEi"
-.LASF768:
-	.string	"_ZZN13CIwChannelPCMItE13clip_to_int16EiE21_s_IwAssertIgnoreThis"
-.LASF138:
-	.string	"_ZN9CIwStringILi32EE9SerialiseEv"
-.LASF46:
-	.string	"m_Stereo"
-.LASF382:
-	.string	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5eraseEPS1_"
-.LASF600:
-	.string	"SetGroupCollisionHandling"
-.LASF642:
-	.string	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE11insert_slowERKS1_j"
-.LASF312:
-	.string	"_ZN14CIwManagedList6InsertEP10CIwManagedjb"
-.LASF657:
-	.string	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE9CanResizeEv"
-.LASF767:
-	.string	"sval"
-.LASF679:
-	.string	"IwSoundInstEndSampleCB"
-.LASF170:
-	.string	"IW_TYPE_DOUBLE"
-.LASF8:
-	.string	"long long int"
-.LASF385:
-	.string	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE11insert_slowERS8_j"
-.LASF546:
-	.string	"_ZN13CIwResManager11ReloadGroupEPKcb"
-.LASF371:
-	.string	"_ZNK8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE8containsERKS1_"
-.LASF300:
-	.string	"_ZN14CIwManagedList6DeleteEv"
-.LASF696:
-	.string	"_ZN12CIwSoundInst6SetPanEs"
-.LASF376:
-	.string	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE10erase_fastEi"
-.LASF545:
-	.string	"ReloadGroup"
-.LASF437:
-	.string	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE10erase_fastEPS1_S9_"
-.LASF752:
-	.string	"_bres_accum"
-.LASF512:
-	.string	"GetGroupNamed"
-.LASF496:
-	.string	"_ZN13CIwResManager7SetModeENS_10GlobalModeE"
-.LASF165:
-	.string	"IW_TYPE_INT16"
-.LASF422:
-	.string	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE16resize_optimisedEj"
-.LASF227:
-	.string	"contains"
-.LASF607:
-	.string	"_ZN12CIwAllocatorIN13CIwResManager13CRemovedGroupE15CIwMallocRouterIS1_EE8allocateEj"
-.LASF766:
-	.string	"curntsamp"
-.LASF486:
-	.string	"m_GroupPathNameCurr"
-.LASF23:
-	.string	"S3E_SOUND_OUTPUT_FREQ"
-.LASF35:
-	.string	"S3E_CHANNEL_VOLUME"
-.LASF615:
-	.string	"_ZNK8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE8capacityEv"
-.LASF275:
-	.string	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE12set_capacityEj"
-.LASF66:
-	.string	"_ZN15CIwChannelADPCM13GetNextSampleEv"
-.LASF757:
-	.string	"_bufferstep"
-.LASF636:
-	.string	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE10erase_fastEPS1_"
-.LASF336:
-	.string	"GetBegin"
-.LASF736:
-	.string	"ReallocateDefault<CIwString<160>, CIwAllocator<CIwString<160>, CIwMallocRouter<CIwString<160> > > >"
-.LASF304:
-	.string	"_ZN14CIwManagedList12ClearAndFreeEv"
-.LASF360:
-	.string	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EEaSERKS8_"
-.LASF550:
-	.string	"_ZN13CIwResManager25SetBuildGroupCallbackPostEPFvvE"
-.LASF174:
-	.string	"IW_TYPE_MAX_BIT"
-.LASF171:
-	.string	"IW_TYPE_STRING"
-.LASF112:
-	.string	"_ZNK9CIwStringILi32EE8capacityEv"
-.LASF680:
-	.string	"m_EndSampleCB"
-.LASF599:
-	.string	"_ZN13CIwResManager13GetBinaryPathEPKc"
-.LASF119:
-	.string	"substr"
-.LASF456:
-	.string	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5ShareEPS1_ii"
-.LASF764:
-	.string	"_s_IwAssertIgnoreThis"
-.LASF99:
-	.string	"float"
-.LASF570:
-	.string	"_ZN14CIwManagedList17_AddHashAsPointerEj"
-.LASF221:
-	.string	"reserve_optimised"
-.LASF527:
-	.string	"GetResNamed"
-.LASF318:
-	.string	"_ZN14CIwManagedList5EraseEPP10CIwManaged"
-.LASF421:
-	.string	"_ZNK8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE11MemoryUsageEv"
-.LASF37:
-	.string	"S3E_CHANNEL_PAUSED"
-.LASF593:
-	.string	"_ZN13CIwResManager13GetAtlasOwnerEv"
-.LASF313:
-	.string	"RemoveSlow"
-.LASF60:
-	.string	"m_FrameBuf"
-.LASF579:
-	.string	"_ZN13CIwResManager13AddBuildStyleEP16CIwResBuildStyle"
-.LASF87:
-	.string	"read"
-.LASF193:
-	.string	"block_delete"
-.LASF132:
-	.string	"_ZN9CIwStringILi32EEplERKS0_"
-.LASF52:
-	.string	"end_pos"
-.LASF411:
-	.string	"_ZNK8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5beginEv"
-.LASF59:
-	.string	"paused"
-.LASF429:
-	.string	"_ZNK8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE8containsERKS1_"
-.LASF42:
-	.string	"m_OrigStart"
-.LASF560:
-	.string	"_ZNK13CIwResManager21GetBuildStyleCurrNameEv"
-.LASF711:
-	.string	"GetEndSampleCB"
-.LASF167:
-	.string	"IW_TYPE_INT32"
-.LASF274:
-	.string	"set_capacity"
-.LASF322:
-	.string	"_ZNK14CIwManagedList8ContainsEP10CIwManaged"
-.LASF505:
-	.string	"DestroyGroup"
-.LASF703:
-	.string	"Pause"
-.LASF771:
-	.string	"g_IwSerialiseContext"
-.LASF96:
-	.string	"versionUser"
-.LASF118:
-	.string	"_ZN9CIwStringILi32EE4findEPKc"
-.LASF631:
-	.string	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE20find_and_remove_fastERKS1_"
-.LASF267:
-	.string	"Share"
-.LASF481:
-	.string	"m_Handlers"
-.LASF567:
-	.string	"GetPathName"
-.LASF282:
-	.string	"CIwManagedList"
-.LASF351:
-	.string	"CIwArray<CIwString<160>, CIwAllocator<CIwString<160>, CIwMallocRouter<CIwString<160> > >, ReallocateDefault<CIwString<160>, CIwAllocator<CIwString<160>, CIwMallocRouter<CIwString<160> > > > >"
-.LASF57:
-	.string	"m_SamplesRemaining"
-.LASF30:
-	.string	"s3eSoundProperty"
-.LASF769:
-	.string	"_ZZN13CIwChannelPCMItE13clip_to_int16EiE21_s_IwAssertIgnoreThis_0"
-.LASF770:
-	.string	"_ZZN13CIwChannelPCMItE13clip_to_int16EiE21_s_IwAssertIgnoreThis_1"
-.LASF357:
-	.string	"_ZNK8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE8capacityEv"
-.LASF654:
-	.string	"_ZNK8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EEixEi"
-.LASF281:
-	.string	"CIwResource"
-.LASF537:
-	.string	"GetLastSearchGroup"
-.LASF297:
-	.string	"_ZN14CIwManagedList11ResolvePtrsERKS_"
-.LASF325:
-	.string	"CopyList"
-.LASF779:
-	.string	"stepsizeTable"
-.LASF302:
-	.string	"_ZN14CIwManagedList5ClearEv"
-.LASF108:
-	.string	"_ZNK9CIwStringILi32EE4sizeEv"
-.LASF215:
-	.string	"resize_optimised"
-.LASF58:
-	.string	"m_LastBlock"
-.LASF725:
-	.string	"offset"
-.LASF774:
-	.string	"g_SqrtTable"
-.LASF341:
-	.string	"_ZN14CIwManagedList7ReserveEj"
-.LASF791:
-	.string	"Init"
-.LASF612:
-	.string	"_ZNK8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE3endEv"
-.LASF750:
-	.string	"entry"
-.LASF49:
-	.string	"valprev"
-.LASF199:
-	.string	"_ZNK8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5emptyEv"
-.LASF81:
-	.string	"_STL"
-.LASF758:
-	.string	"myLength"
-.LASF447:
-	.string	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5frontEv"
-.LASF307:
-	.string	"GetObjHashed"
-.LASF309:
-	.string	"GetObjHashedNextIt"
-.LASF363:
-	.string	"_ZNK8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE11MemoryUsageEv"
-.LASF263:
-	.string	"push_back_qty"
-.LASF259:
-	.string	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE6appendERS8_"
-.LASF6:
-	.string	"unsigned int"
-.LASF141:
-	.string	"_ZNK9CIwStringILi160EE5c_strEv"
-.LASF534:
-	.string	"_ZN13CIwResManager15SetCurrentGroupEP11CIwResGroup"
-.LASF98:
-	.string	"bool"
-.LASF596:
-	.string	"_TempRemoveGroup"
-.LASF258:
-	.string	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE6appendERKS1_"
-.LASF25:
-	.string	"S3E_SOUND_NUM_CHANNELS"
-.LASF478:
-	.string	"m_GroupBuildData"
-.LASF740:
-	.string	"aLength"
-.LASF110:
-	.string	"_ZNK9CIwStringILi32EE6lengthEv"
-.LASF638:
-	.string	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5eraseEi"
-.LASF521:
-	.string	"_ZNK13CIwResManager10GetHandlerEPKcj"
-.LASF390:
-	.string	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE6appendERKS1_"
-.LASF604:
-	.string	"OptimisedMountedGroups"
-.LASF91:
-	.string	"bytesRead"
-.LASF772:
-	.string	"g_IwSerialiseContextValid"
-.LASF561:
-	.string	"LoadRes"
-.LASF539:
-	.string	"LoadGroup"
-.LASF148:
-	.string	"_ZN9CIwStringILi160EEixEi"
-.LASF793:
-	.string	"_ZN14CIwManagedList3AddEP10CIwManagedb"
-.LASF219:
-	.string	"reserve"
-.LASF765:
-	.string	"samp"
-.LASF305:
-	.string	"GetObjNamed"
-.LASF201:
-	.string	"_ZNK8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE8capacityEv"
-.LASF735:
-	.string	"SAMPLE"
-.LASF530:
-	.string	"_ZNK13CIwResManager12GetResHashedEjPKcj"
-.LASF480:
-	.string	"m_AtlasParentGroup"
-.LASF483:
-	.string	"m_ReplacingGroups"
-.LASF745:
-	.string	"pInfo"
-.LASF231:
-	.string	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE15find_and_removeERKS1_"
-.LASF433:
-	.string	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE12pop_back_getEv"
-.LASF663:
-	.string	"CIwMaterial"
-.LASF702:
-	.string	"_ZN12CIwSoundInst4StopEv"
-.LASF393:
-	.string	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE9push_backEv"
-.LASF675:
-	.string	"m_Pitch"
-.LASF242:
-	.string	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE10erase_fastEPS1_S9_"
-.LASF291:
-	.string	"_ZN14CIwManagedList7ResolveEv"
-.LASF591:
-	.string	"_ZN13CIwResManager13SetAltasOwnerEP11CIwResGroup"
-.LASF574:
-	.string	"DebugGetResName"
-.LASF427:
-	.string	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE6resizeEj"
-.LASF408:
-	.string	"CIwManaged"
-.LASF748:
-	.string	"myreturn"
-.LASF324:
-	.string	"_ZNK14CIwManagedList4FindERKP10CIwManaged"
-.LASF653:
-	.string	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE13push_back_qtyEi"
-.LASF197:
-	.string	"_ZNK8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5beginEv"
-.LASF107:
-	.string	"size"
-.LASF468:
-	.string	"IW_RES_GROUP_COLLISION_ERROR_F"
-.LASF41:
-	.string	"m_Mix"
-.LASF419:
-	.string	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5clearEv"
-.LASF278:
-	.string	"swap"
-.LASF31:
-	.string	"s3eSoundChannelProperty"
-.LASF673:
-	.string	"m_Vol"
-.LASF387:
-	.string	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE4backEv"
-.LASF142:
-	.string	"_ZNK9CIwStringILi160EE4sizeEv"
-.LASF388:
-	.string	"_ZNK8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5frontEv"
-.LASF454:
-	.string	"_ZNK8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EEixEi"
-.LASF109:
-	.string	"length"
-.LASF11:
-	.string	"uint16_t"
-.LASF352:
-	.string	"_ZNK8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5beginEv"
-.LASF788:
-	.string	"c:/Marmalade/7.5/examples/GameTutorial/CPP/modules/soundengine/source/IwSoundADPCM.cpp"
-.LASF389:
-	.string	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5frontEv"
-.LASF583:
-	.string	"_ZNK13CIwResManager17GetBuildStyleCurrEv"
-.LASF728:
-	.string	"CIwChannelPCM"
-.LASF284:
-	.string	"_CheckAdd"
-.LASF48:
-	.string	"adpcm_state"
-.LASF129:
-	.string	"_ZN9CIwStringILi32EEpLERKS0_"
-.LASF761:
-	.string	"delta"
-.LASF398:
-	.string	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5ShareEPS1_ii"
-.LASF722:
-	.string	"vpdiffTable"
-.LASF715:
-	.string	"CIwSoundDataADPCM"
-.LASF39:
-	.string	"m_Target"
-.LASF656:
-	.string	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5ShareEPS1_ii"
-.LASF64:
-	.string	"_ZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiiiPi"
-.LASF94:
-	.string	"headBit"
-.LASF241:
-	.string	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE10erase_fastEPS1_"
-.LASF587:
-	.string	"_ZNK13CIwResManager13DumpCatalogueEPKc"
-.LASF749:
-	.string	"entry0"
-.LASF747:
-	.string	"entry2"
-.LASF448:
-	.string	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE6appendERKS1_"
-.LASF578:
-	.string	"AddBuildStyle"
-.LASF277:
-	.string	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE8truncateEj"
-.LASF568:
-	.string	"_ZNK13CIwResManager11GetPathNameEv"
-.LASF652:
-	.string	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE13push_back_qtyERKS1_i"
-.LASF288:
-	.string	"~CIwManagedList"
-.LASF286:
-	.string	"_ZNK14CIwManagedList9_CheckAddEP10CIwManagedb"
-.LASF508:
-	.string	"ReserveGroups"
-.LASF223:
-	.string	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE17reserve_optimisedEi"
-.LASF431:
-	.string	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE20find_and_remove_fastERKS1_"
-.LASF185:
-	.string	"_ZN12CIwAllocatorIP10CIwManaged15CIwMallocRouterIS1_EE10reallocateEPS1_j"
-.LASF494:
-	.string	"BuildGroupCallbackPost"
-.LASF95:
-	.string	"version"
-.LASF506:
-	.string	"_ZN13CIwResManager12DestroyGroupEPKc"
-.LASF329:
-	.string	"GetCapacity"
-.LASF417:
-	.string	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE15SerialiseHeaderEv"
-.LASF577:
-	.string	"_ZN13CIwResManager24DebugSetGroupBinCopyPathEPKc"
-.LASF153:
-	.string	"_ZN9CIwStringILi160EEpLERKS0_"
-.LASF644:
-	.string	"_ZNK8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE4backEv"
-.LASF640:
-	.string	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5eraseEPS1_"
-.LASF343:
-	.string	"_AddHashAsPointer"
-.LASF264:
-	.string	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE13push_back_qtyERKS1_i"
-.LASF163:
-	.string	"IW_TYPE_INT8"
-.LASF384:
-	.string	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE11insert_slowERKS1_j"
-.LASF706:
-	.string	"_ZN12CIwSoundInst6ResumeEv"
-.LASF470:
-	.string	"IW_RES_GROUP_COLLISION_PATCH_F"
-.LASF191:
-	.string	"num_p"
-.LASF159:
-	.string	"_ZN9CIwStringILi160EE9SerialiseEv"
-.LASF406:
-	.string	"_ZN12CIwAllocatorIP11CIwResGroup15CIwMallocRouterIS1_EE10reallocateEPS1_j"
-.LASF603:
-	.string	"_ZN13CIwResManager25GetGroupCollisionHandlingEv"
-.LASF404:
-	.string	"CIwAllocator<CIwResGroup*, CIwMallocRouter<CIwResGroup*> >"
-.LASF566:
-	.string	"_ZN13CIwResManager14ClearLoadPathsEv"
-.LASF529:
-	.string	"GetResHashed"
-.LASF256:
-	.string	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5frontEv"
-.LASF622:
-	.string	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE16resize_optimisedEj"
-.LASF28:
-	.string	"S3E_SOUND_VOLUME_DEFAULT"
-.LASF316:
-	.string	"_ZN14CIwManagedList10RemoveFastEP10CIwManaged"
-.LASF595:
-	.string	"_ZN13CIwResManager17GetUniqueRunStampEv"
-.LASF536:
-	.string	"_ZNK13CIwResManager15GetCurrentGroupEv"
-.LASF458:
-	.string	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE8LockSizeEb"
-.LASF732:
-	.string	"_ZN13CIwChannelPCMItE15GenerateAudioCBEP20s3eSoundGenAudioInfoPS0_"
-.LASF511:
-	.string	"_ZN13CIwResManager15ReserveHandlersEi"
-.LASF532:
-	.string	"_ZN13CIwResManager6AddResEPKcP11CIwResource"
-.LASF233:
-	.string	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE20find_and_remove_fastERKS1_"
-.LASF361:
-	.string	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5clearEv"
-.LASF602:
-	.string	"GetGroupCollisionHandling"
-.LASF463:
-	.string	"iwsfixed"
-.LASF685:
-	.string	"GetChanID"
-.LASF126:
-	.string	"_ZN9CIwStringILi32EEaSERKS0_"
-.LASF367:
-	.string	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE17reserve_optimisedEi"
-.LASF14:
-	.string	"uint8"
-.LASF469:
-	.string	"IW_RES_GROUP_COLLISION_REPLACE_F"
-.LASF689:
-	.string	"GetPan"
-.LASF84:
-	.string	"s3eFile"
-.LASF26:
-	.string	"S3E_SOUND_USED_CHANNELS"
-.LASF208:
-	.string	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EEaSERKS8_"
-.LASF777:
-	.string	"g_IwSoundManager"
-.LASF381:
-	.string	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5eraseEjj"
-.LASF5:
-	.string	"short int"
-.LASF549:
-	.string	"SetBuildGroupCallbackPost"
-.LASF272:
-	.string	"LockSize"
-.LASF452:
-	.string	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE13push_back_qtyERKS1_i"
-.LASF247:
-	.string	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5eraseEPS1_S9_"
-.LASF358:
-	.string	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE4dataEv"
-.LASF395:
-	.string	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE13push_back_qtyEi"
-.LASF402:
-	.string	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE8truncateEj"
-.LASF731:
-	.string	"_ZN13CIwChannelPCMItE17GenerateAudioFastEPsiiiiPi"
-.LASF372:
-	.string	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE15find_and_removeERKS1_"
-.LASF519:
-	.string	"_ZNK13CIwResManager8GetGroupEj"
-.LASF12:
-	.string	"int16_t"
-.LASF106:
-	.string	"_ZNK9CIwStringILi32EE5c_strEv"
-.LASF665:
-	.string	"CIwSoundData"
-.LASF317:
-	.string	"Erase"
-.LASF127:
-	.string	"operator+="
-.LASF319:
-	.string	"EraseFast"
-.LASF476:
-	.string	"m_OwnerResName"
-.LASF369:
-	.string	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE6resizeEj"
-.LASF377:
-	.string	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE10erase_fastEii"
-.LASF781:
-	.string	"CIwMallocRouter<CIwManaged*>"
-.LASF743:
-	.string	"endSample"
-.LASF744:
-	.string	"pSData"
-.LASF386:
-	.string	"_ZNK8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE4backEv"
-.LASF423:
-	.string	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE17optimise_capacityEv"
-.LASF485:
-	.string	"m_PathName"
-.LASF234:
-	.string	"pop_back"
-.LASF718:
-	.string	"GetBlockAlignment"
-.LASF337:
-	.string	"_ZNK14CIwManagedList8GetBeginEv"
-.LASF353:
-	.string	"_ZNK8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE3endEv"
-.LASF3:
-	.string	"s3e_uint16_t"
-.LASF522:
-	.string	"GetResType"
-.LASF548:
-	.string	"_ZN13CIwResManager24SetBuildGroupCallbackPreEPFvvE"
-.LASF717:
-	.string	"_ZN17CIwSoundDataADPCM18GetSamplesPerBlockEv"
-.LASF709:
-	.string	"SetEndSampleCB"
-.LASF210:
-	.string	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5clearEv"
-.LASF135:
-	.string	"_ZNK9CIwStringILi32EEeqEPKc"
-.LASF344:
-	.string	"ReallocateDefault<CIwManaged*, CIwAllocator<CIwManaged*, CIwMallocRouter<CIwManaged*> > >"
-.LASF488:
-	.string	"m_BuildStyleCurr"
-.LASF207:
-	.string	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE15SerialiseHeaderEv"
-.LASF726:
-	.string	"m_ChannelID"
-.LASF328:
-	.string	"_ZNK14CIwManagedList7GetSizeEv"
-.LASF557:
-	.string	"SetBuildStyle"
-.LASF798:
-	.string	"_ZN15CIwChannelADPCM13isInitializedE"
-.LASF444:
-	.string	"_ZNK8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE4backEv"
-.LASF556:
-	.string	"_ZN13CIwResManager16GetAtlasMaterialEP11CIwMaterialR7CIwRect"
-.LASF19:
-	.string	"int16"
-.LASF331:
-	.string	"Push"
-.LASF397:
-	.string	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5ShareERKS8_"
-.LASF243:
-	.string	"erase"
-.LASF446:
-	.string	"_ZNK8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5frontEv"
-.LASF617:
-	.string	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE15SerialiseHeaderEv"
-.LASF405:
-	.string	"_ZN12CIwAllocatorIP11CIwResGroup15CIwMallocRouterIS1_EE8allocateEj"
-.LASF265:
-	.string	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE13push_back_qtyEi"
-.LASF345:
-	.string	"Reallocate"
-.LASF609:
-	.string	"_ZN12CIwAllocatorIN13CIwResManager13CRemovedGroupE15CIwMallocRouterIS1_EE10deallocateEPS1_j"
-.LASF575:
-	.string	"_ZN13CIwResManager15DebugGetResNameEP11CIwResource"
-.LASF633:
-	.string	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE12pop_back_getEv"
-.LASF349:
-	.string	"_ZN12CIwAllocatorI9CIwStringILi160EE15CIwMallocRouterIS1_EE10reallocateEPS1_j"
-.LASF399:
-	.string	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE9CanResizeEv"
-.LASF403:
-	.string	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE4swapERS8_"
-.LASF187:
-	.string	"_ZN12CIwAllocatorIP10CIwManaged15CIwMallocRouterIS1_EE10deallocateEPS1_j"
-.LASF204:
-	.string	"CIwArray"
-.LASF354:
-	.string	"_ZNK8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE3endEv"
-.LASF490:
-	.string	"m_LoadingPatch"
-.LASF268:
-	.string	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5ShareERKS8_"
-.LASF586:
-	.string	"DumpCatalogue"
-.LASF230:
-	.string	"find_and_remove"
-.LASF218:
-	.string	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE17optimise_capacityEv"
-.LASF92:
-	.string	"callbackPeriod"
-.LASF407:
-	.string	"_ZN12CIwAllocatorIP11CIwResGroup15CIwMallocRouterIS1_EE10deallocateEPS1_j"
-.LASF158:
-	.string	"_ZNK9CIwStringILi160EEeqERKS0_"
+	.ascii	"_ZNK9CIwStringILi32EEixEi\000"
 .LASF213:
-	.string	"MemoryUsage"
-.LASF710:
-	.string	"_ZN12CIwSoundInst14SetEndSampleCBEPFvPS_E"
-.LASF624:
-	.string	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE7reserveEj"
-.LASF466:
-	.string	"MODE_LOAD"
-.LASF375:
-	.string	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE12pop_back_getEv"
-.LASF374:
-	.string	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE8pop_backEv"
-.LASF271:
-	.string	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE9CanResizeEv"
-.LASF347:
-	.string	"CIwAllocator<CIwString<160>, CIwMallocRouter<CIwString<160> > >"
-.LASF672:
-	.string	"m_Spec"
-.LASF670:
-	.string	"CIwTextParserITX"
-.LASF712:
-	.string	"_ZNK12CIwSoundInst14GetEndSampleCBEv"
-.LASF558:
-	.string	"_ZN13CIwResManager13SetBuildStyleEPKc"
-.LASF792:
-	.string	"_ZN15CIwChannelADPCM4InitEv"
-.LASF289:
-	.string	"_ZN14CIwManagedList9SerialiseEv"
-.LASF2:
-	.string	"short unsigned int"
-.LASF760:
-	.string	"srcVal"
-.LASF441:
-	.string	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5eraseEPS1_S9_"
-.LASF88:
-	.string	"base"
-.LASF149:
-	.string	"_ZNK9CIwStringILi160EEixEi"
-.LASF551:
-	.string	"SerialiseResPtr"
-.LASF295:
-	.string	"_ZN14CIwManagedList16OptimizeCapacityEv"
-.LASF326:
-	.string	"_ZN14CIwManagedList8CopyListERKS_"
-.LASF17:
-	.string	"int32"
-.LASF161:
-	.string	"IW_TYPE_CHAR"
-.LASF89:
-	.string	"handle"
-.LASF668:
-	.string	"CIwSoundSpec"
-.LASF571:
-	.string	"_ZN13CIwResManager15ChangeExtensionER9CIwStringILi160EEPKc"
-.LASF27:
-	.string	"S3E_SOUND_AVAILABLE"
-.LASF451:
-	.string	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE9push_backEv"
-.LASF80:
-	.string	"bad_cast"
-.LASF594:
-	.string	"GetUniqueRunStamp"
-.LASF290:
-	.string	"Resolve"
-.LASF285:
-	.string	"_CheckGet"
-.LASF671:
-	.string	"CIwSoundInst"
-.LASF756:
-	.string	"_index"
-.LASF589:
-	.string	"_ZN13CIwResManager15ClearAtlasOwnerEv"
-.LASF303:
-	.string	"ClearAndFree"
-.LASF137:
-	.string	"Serialise"
-.LASF635:
-	.string	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE10erase_fastEii"
+	.ascii	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMa"
+	.ascii	"llocRouterIS1_EE17ReallocateDefaultIS1_S5_EE15clear"
+	.ascii	"_optimisedEv\000"
+.LASF132:
+	.ascii	"_ZN9CIwStringILi32EEplEPKc\000"
+.LASF793:
+	.ascii	"IwResGroupCollisionHandling\000"
+.LASF561:
+	.ascii	"_ZN13CIwResManager7LoadResEPKcS1_j\000"
+.LASF613:
+	.ascii	"_ZNK8CIwArrayIN13CIwResManager13CRemovedGroupE12CIw"
+	.ascii	"AllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDef"
+	.ascii	"aultIS1_S5_EE4sizeEv\000"
+.LASF434:
+	.ascii	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwM"
+	.ascii	"allocRouterIS1_EE17ReallocateDefaultIS1_S5_EE10eras"
+	.ascii	"e_fastEi\000"
+.LASF573:
+	.ascii	"_ZN13CIwResManager17DebugAddMenuItemsEP7CIwMenu\000"
+.LASF76:
+	.ascii	"size_t\000"
+.LASF400:
+	.ascii	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15"
+	.ascii	"CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE8L"
+	.ascii	"ockSizeEb\000"
+.LASF339:
+	.ascii	"GetEnd\000"
+.LASF761:
+	.ascii	"vpdiff\000"
+.LASF69:
+	.ascii	"sizetype\000"
+.LASF253:
+	.ascii	"_ZNK8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwM"
+	.ascii	"allocRouterIS1_EE17ReallocateDefaultIS1_S5_EE4backE"
+	.ascii	"v\000"
+.LASF65:
+	.ascii	"_ZN15CIwChannelADPCM13GenerateAudioEP20s3eSoundGenA"
+	.ascii	"udioInfo\000"
+.LASF229:
+	.ascii	"_ZNK8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwM"
+	.ascii	"allocRouterIS1_EE17ReallocateDefaultIS1_S5_EE4findE"
+	.ascii	"RKS1_\000"
 .LASF73:
-	.string	"ptrdiff_t"
-.LASF796:
-	.string	"~CIwResManager"
-.LASF128:
-	.string	"_ZN9CIwStringILi32EEpLEPKc"
-.LASF232:
-	.string	"find_and_remove_fast"
+	.ascii	"S3E_ERROR_SHOW_IGNORE\000"
+.LASF625:
+	.ascii	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwA"
+	.ascii	"llocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefa"
+	.ascii	"ultIS1_S5_EE12resize_quickEj\000"
+.LASF56:
+	.ascii	"m_BlockAlign\000"
+.LASF450:
+	.ascii	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwM"
+	.ascii	"allocRouterIS1_EE17ReallocateDefaultIS1_S5_EE9push_"
+	.ascii	"backERKS1_\000"
+.LASF174:
+	.ascii	"IW_TYPE_MAX\000"
+.LASF63:
+	.ascii	"GenerateAudio\000"
+.LASF380:
+	.ascii	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15"
+	.ascii	"CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5e"
+	.ascii	"raseEi\000"
+.LASF619:
+	.ascii	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwA"
+	.ascii	"llocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefa"
+	.ascii	"ultIS1_S5_EE15clear_optimisedEv\000"
+.LASF646:
+	.ascii	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwA"
+	.ascii	"llocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefa"
+	.ascii	"ultIS1_S5_EE5frontEv\000"
+.LASF185:
+	.ascii	"reallocate\000"
+.LASF184:
+	.ascii	"_ZN12CIwAllocatorIP10CIwManaged15CIwMallocRouterIS1"
+	.ascii	"_EE8allocateEj\000"
+.LASF126:
+	.ascii	"_ZN9CIwStringILi32EEaSEPKc\000"
+.LASF673:
+	.ascii	"m_Pan\000"
+.LASF167:
+	.ascii	"IW_TYPE_UINT16\000"
+.LASF682:
+	.ascii	"GetSpec\000"
+.LASF378:
+	.ascii	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15"
+	.ascii	"CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE10"
+	.ascii	"erase_fastEPS1_\000"
+.LASF660:
+	.ascii	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwA"
+	.ascii	"llocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefa"
+	.ascii	"ultIS1_S5_EE4swapERS8_\000"
+.LASF640:
+	.ascii	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwA"
+	.ascii	"llocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefa"
+	.ascii	"ultIS1_S5_EE5eraseEPS1_S9_\000"
+.LASF715:
+	.ascii	"GetSamplesPerBlock\000"
+.LASF558:
+	.ascii	"GetBuildStyleCurrName\000"
+.LASF603:
+	.ascii	"_ZN13CIwResManager22OptimisedMountedGroupsEv\000"
+.LASF156:
+	.ascii	"_ZN9CIwStringILi160EEplERKS0_\000"
 .LASF650:
-	.string	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE9push_backERKS1_"
-.LASF365:
-	.string	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE17optimise_capacityEv"
-.LASF172:
-	.string	"IW_TYPE_COMPOUND"
-.LASF34:
-	.string	"S3E_CHANNEL_USERVAR"
-.LASF643:
-	.string	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE11insert_slowERS8_j"
-.LASF495:
-	.string	"SetMode"
-.LASF391:
-	.string	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE6appendERS8_"
-.LASF147:
-	.string	"_ZNK9CIwStringILi160EE6substrEii"
-.LASF540:
-	.string	"_ZN13CIwResManager9LoadGroupEPKcb"
-.LASF465:
-	.string	"MODE_BUILD"
-.LASF659:
-	.string	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE12set_capacityEj"
-.LASF237:
-	.string	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE12pop_back_getEv"
-.LASF461:
-	.string	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE4swapERS8_"
-.LASF584:
-	.string	"BuildResources"
-.LASF113:
-	.string	"GenerateAudioCB"
-.LASF18:
-	.string	"uint16"
-.LASF21:
-	.string	"wchar_t"
-.LASF503:
-	.string	"AddGroup"
-.LASF413:
-	.string	"_ZNK8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5emptyEv"
-.LASF667:
-	.string	"_ZN12CIwSoundData14GetSampleCountEv"
-.LASF713:
-	.string	"GetPlayID"
-.LASF658:
-	.string	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwAllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE8LockSizeEb"
-.LASF698:
-	.string	"_ZN12CIwSoundInst8SetPitchEs"
-.LASF104:
-	.string	"CIwString"
-.LASF179:
-	.string	"CIwAllocator<CIwManaged*, CIwMallocRouter<CIwManaged*> >"
-.LASF684:
-	.string	"_ZNK12CIwSoundInst7GetSpecEv"
-.LASF516:
-	.string	"GetNumGroups"
+	.ascii	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwA"
+	.ascii	"llocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefa"
+	.ascii	"ultIS1_S5_EE9push_backEv\000"
+.LASF473:
+	.ascii	"m_Flags\000"
+.LASF350:
+	.ascii	"_ZN12CIwAllocatorI9CIwStringILi160EE15CIwMallocRout"
+	.ascii	"erIS1_EE10deallocateEPS1_j\000"
+.LASF476:
+	.ascii	"m_DebugGroupBinCopyPath\000"
+.LASF628:
+	.ascii	"_ZNK8CIwArrayIN13CIwResManager13CRemovedGroupE12CIw"
+	.ascii	"AllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDef"
+	.ascii	"aultIS1_S5_EE8containsERKS1_\000"
+.LASF455:
+	.ascii	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwM"
+	.ascii	"allocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5Share"
+	.ascii	"ERKS8_\000"
+.LASF782:
+	.ascii	"CIwMallocRouter<CIwResGroup*>\000"
+.LASF16:
+	.ascii	"uint32\000"
 .LASF293:
-	.string	"_ZN14CIwManagedList13SerialisePtrsEv"
-	.ident	"GCC: (GNU) 4.8"
-	.section	.note.GNU-stack,"",@progbits
+	.ascii	"SerialisePtrs\000"
+.LASF335:
+	.ascii	"_ZN14CIwManagedList6GetTopEv\000"
+.LASF488:
+	.ascii	"m_UniqueRunStamp\000"
+.LASF607:
+	.ascii	"_ZN12CIwAllocatorIN13CIwResManager13CRemovedGroupE1"
+	.ascii	"5CIwMallocRouterIS1_EE10reallocateEPS1_j\000"
+.LASF410:
+	.ascii	"CIwArray<CIwResGroup*, CIwAllocator<CIwResGroup*, C"
+	.ascii	"IwMallocRouter<CIwResGroup*> >, ReallocateDefault<C"
+	.ascii	"IwResGroup*, CIwAllocator<CIwResGroup*, CIwMallocRo"
+	.ascii	"uter<CIwResGroup*> > > >\000"
+.LASF541:
+	.ascii	"_ZN13CIwResManager19LoadGroupFromMemoryEPKhj\000"
+.LASF277:
+	.ascii	"truncate\000"
+.LASF525:
+	.ascii	"_ZN13CIwResManager13SplitPathNameEPKcR9CIwStringILi"
+	.ascii	"160EERS2_ILi32EES6_\000"
+.LASF146:
+	.ascii	"_ZN9CIwStringILi160EE9setLengthEi\000"
+.LASF552:
+	.ascii	"ResolveResPtr\000"
+.LASF741:
+	.ascii	"volume\000"
+.LASF700:
+	.ascii	"Stop\000"
+.LASF579:
+	.ascii	"_ZNK13CIwResManager18GetBuildStyleNamedEPKc\000"
+.LASF694:
+	.ascii	"SetPan\000"
+.LASF424:
+	.ascii	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwM"
+	.ascii	"allocRouterIS1_EE17ReallocateDefaultIS1_S5_EE7reser"
+	.ascii	"veEj\000"
+.LASF165:
+	.ascii	"IW_TYPE_UINT8\000"
+.LASF340:
+	.ascii	"_ZNK14CIwManagedList6GetEndEv\000"
+.LASF543:
+	.ascii	"_ZN13CIwResManager10MountGroupEPKcb\000"
+.LASF379:
+	.ascii	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15"
+	.ascii	"CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE10"
+	.ascii	"erase_fastEPS1_S9_\000"
+.LASF362:
+	.ascii	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15"
+	.ascii	"CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE15"
+	.ascii	"clear_optimisedEv\000"
+.LASF271:
+	.ascii	"CanResize\000"
+.LASF777:
+	.ascii	"g_IwTextParserITX\000"
+.LASF71:
+	.ascii	"S3E_ERROR_SHOW_CONTINUE\000"
+.LASF722:
+	.ascii	"CIwChannelPCM<short unsigned int>\000"
+.LASF334:
+	.ascii	"GetTop\000"
+.LASF103:
+	.ascii	"CIwString<32>\000"
+.LASF530:
+	.ascii	"AddRes\000"
+.LASF685:
+	.ascii	"_ZNK12CIwSoundInst9GetChanIDEv\000"
+.LASF595:
+	.ascii	"_ZN13CIwResManager16_TempRemoveGroupEP11CIwResGroup"
+	.ascii	"\000"
+.LASF394:
+	.ascii	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15"
+	.ascii	"CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE13"
+	.ascii	"push_back_qtyERKS1_i\000"
+.LASF546:
+	.ascii	"SetBuildGroupCallbackPre\000"
+.LASF227:
+	.ascii	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMa"
+	.ascii	"llocRouterIS1_EE17ReallocateDefaultIS1_S5_EE6resize"
+	.ascii	"Ej\000"
+.LASF696:
+	.ascii	"SetPitch\000"
+.LASF53:
+	.ascii	"bres_accum\000"
+.LASF644:
+	.ascii	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwA"
+	.ascii	"llocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefa"
+	.ascii	"ultIS1_S5_EE4backEv\000"
+.LASF578:
+	.ascii	"GetBuildStyleNamed\000"
+.LASF81:
+	.ascii	"bad_typeid\000"
+.LASF336:
+	.ascii	"_ZNK14CIwManagedListixEi\000"
+.LASF64:
+	.ascii	"GenerateADPCMAudioFast\000"
+.LASF772:
+	.ascii	"g_IwMenuManager\000"
+.LASF449:
+	.ascii	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwM"
+	.ascii	"allocRouterIS1_EE17ReallocateDefaultIS1_S5_EE6appen"
+	.ascii	"dERS8_\000"
+.LASF169:
+	.ascii	"IW_TYPE_UINT32\000"
+.LASF45:
+	.ascii	"m_EndSample\000"
+.LASF758:
+	.ascii	"pState\000"
+.LASF435:
+	.ascii	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwM"
+	.ascii	"allocRouterIS1_EE17ReallocateDefaultIS1_S5_EE10eras"
+	.ascii	"e_fastEii\000"
+.LASF72:
+	.ascii	"S3E_ERROR_SHOW_STOP\000"
+.LASF61:
+	.ascii	"CIwChannelADPCM\000"
+.LASF20:
+	.ascii	"s3eBool\000"
+.LASF51:
+	.ascii	"bufferstep\000"
+.LASF356:
+	.ascii	"_ZNK8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_1"
+	.ascii	"5CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE4"
+	.ascii	"sizeEv\000"
+.LASF638:
+	.ascii	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwA"
+	.ascii	"llocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefa"
+	.ascii	"ultIS1_S5_EE5eraseEjj\000"
+.LASF762:
+	.ascii	"indexAdd\000"
+.LASF193:
+	.ascii	"max_p\000"
+.LASF15:
+	.ascii	"int8\000"
+.LASF675:
+	.ascii	"m_ChanID\000"
+.LASF733:
+	.ascii	"_ZN13CIwChannelPCMItE13clip_to_int16Ei\000"
+.LASF440:
+	.ascii	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwM"
+	.ascii	"allocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5erase"
+	.ascii	"EPS1_\000"
+.LASF99:
+	.ascii	"callback\000"
+.LASF729:
+	.ascii	"GenerateAudioFast\000"
+.LASF139:
+	.ascii	"_ZN9CIwStringILi32EE9SerialiseEv\000"
+.LASF618:
+	.ascii	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwA"
+	.ascii	"llocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefa"
+	.ascii	"ultIS1_S5_EE5clearEv\000"
+.LASF605:
+	.ascii	"CIwAllocator<CIwResManager::CRemovedGroup, CIwMallo"
+	.ascii	"cRouter<CIwResManager::CRemovedGroup> >\000"
+.LASF267:
+	.ascii	"_ZNK8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwM"
+	.ascii	"allocRouterIS1_EE17ReallocateDefaultIS1_S5_EEixEi\000"
+.LASF341:
+	.ascii	"Reserve\000"
+.LASF588:
+	.ascii	"SetAltasOwner\000"
+.LASF54:
+	.ascii	"count\000"
+.LASF204:
+	.ascii	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMa"
+	.ascii	"llocRouterIS1_EE17ReallocateDefaultIS1_S5_EE4dataEv"
+	.ascii	"\000"
+.LASF104:
+	.ascii	"isInitialized\000"
+.LASF563:
+	.ascii	"_ZN13CIwResManager11AddLoadPathERK9CIwStringILi160E"
+	.ascii	"E\000"
+.LASF483:
+	.ascii	"m_GroupCurr\000"
+.LASF79:
+	.ascii	"bad_exception\000"
+.LASF690:
+	.ascii	"GetPitch\000"
+.LASF241:
+	.ascii	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMa"
+	.ascii	"llocRouterIS1_EE17ReallocateDefaultIS1_S5_EE10erase"
+	.ascii	"_fastEii\000"
+.LASF564:
+	.ascii	"ClearLoadPaths\000"
+.LASF299:
+	.ascii	"_ZN14CIwManagedList15SerialiseHeaderEv\000"
+.LASF781:
+	.ascii	"CIwMallocRouter<CIwString<160> >\000"
+.LASF80:
+	.ascii	"type_info\000"
+.LASF471:
+	.ascii	"m_Index\000"
+.LASF519:
+	.ascii	"GetHandler\000"
+.LASF491:
+	.ascii	"m_GroupsMounted\000"
+.LASF401:
+	.ascii	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15"
+	.ascii	"CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE12"
+	.ascii	"set_capacityEj\000"
+.LASF647:
+	.ascii	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwA"
+	.ascii	"llocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefa"
+	.ascii	"ultIS1_S5_EE6appendERKS1_\000"
+.LASF189:
+	.ascii	"Array\000"
+.LASF215:
+	.ascii	"_ZNK8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwM"
+	.ascii	"allocRouterIS1_EE17ReallocateDefaultIS1_S5_EE11Memo"
+	.ascii	"ryUsageEv\000"
+.LASF736:
+	.ascii	"_ZN17ReallocateDefaultI9CIwStringILi160EE12CIwAlloc"
+	.ascii	"atorIS1_15CIwMallocRouterIS1_EEE10ReallocateEjjjPS1"
+	.ascii	"_RS5_\000"
+.LASF508:
+	.ascii	"_ZN13CIwResManager13ReserveGroupsEi\000"
+.LASF459:
+	.ascii	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwM"
+	.ascii	"allocRouterIS1_EE17ReallocateDefaultIS1_S5_EE12set_"
+	.ascii	"capacityEj\000"
+.LASF624:
+	.ascii	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwA"
+	.ascii	"llocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefa"
+	.ascii	"ultIS1_S5_EE17reserve_optimisedEi\000"
+.LASF10:
+	.ascii	"long int\000"
+.LASF158:
+	.ascii	"_ZNK9CIwStringILi160EEeqEPKc\000"
+.LASF346:
+	.ascii	"_ZN17ReallocateDefaultIP10CIwManaged12CIwAllocatorI"
+	.ascii	"S1_15CIwMallocRouterIS1_EEE10ReallocateEjjjPS1_RS5_"
+	.ascii	"\000"
+.LASF176:
+	.ascii	"IW_TYPE_PAD_F\000"
+.LASF420:
+	.ascii	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwM"
+	.ascii	"allocRouterIS1_EE17ReallocateDefaultIS1_S5_EE15clea"
+	.ascii	"r_optimisedEv\000"
+.LASF534:
+	.ascii	"GetCurrentGroup\000"
+.LASF4:
+	.ascii	"s3e_int16_t\000"
+.LASF147:
+	.ascii	"_ZN9CIwStringILi160EE4findEPKc\000"
+.LASF692:
+	.ascii	"SetVol\000"
+.LASF197:
+	.ascii	"begin\000"
+.LASF191:
+	.ascii	"CIwArray<CIwManaged*, CIwAllocator<CIwManaged*, CIw"
+	.ascii	"MallocRouter<CIwManaged*> >, ReallocateDefault<CIwM"
+	.ascii	"anaged*, CIwAllocator<CIwManaged*, CIwMallocRouter<"
+	.ascii	"CIwManaged*> > > >\000"
+.LASF620:
+	.ascii	"_ZNK8CIwArrayIN13CIwResManager13CRemovedGroupE12CIw"
+	.ascii	"AllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDef"
+	.ascii	"aultIS1_S5_EE11MemoryUsageEv\000"
+.LASF498:
+	.ascii	"AddHandler\000"
+.LASF249:
+	.ascii	"insert_slow\000"
+.LASF792:
+	.ascii	"_ZN14CIwManagedList3PopEv\000"
+.LASF740:
+	.ascii	"relative_rate\000"
+.LASF554:
+	.ascii	"GetAtlasMaterial\000"
+.LASF373:
+	.ascii	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15"
+	.ascii	"CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE20"
+	.ascii	"find_and_remove_fastERKS1_\000"
+.LASF680:
+	.ascii	"GetFlags\000"
+.LASF85:
+	.ascii	"stlport\000"
+.LASF195:
+	.ascii	"no_grow\000"
+.LASF703:
+	.ascii	"_ZN12CIwSoundInst5PauseEv\000"
+.LASF513:
+	.ascii	"GetGroupHashed\000"
+.LASF586:
+	.ascii	"ClearAtlasOwner\000"
+.LASF723:
+	.ascii	"loop_pos\000"
+.LASF256:
+	.ascii	"_ZNK8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwM"
+	.ascii	"allocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5front"
+	.ascii	"Ev\000"
+.LASF506:
+	.ascii	"_ZN13CIwResManager12DestroyGroupEP11CIwResGroup\000"
+.LASF396:
+	.ascii	"_ZNK8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_1"
+	.ascii	"5CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EEi"
+	.ascii	"xEi\000"
+.LASF307:
+	.ascii	"_ZNK14CIwManagedList11GetObjNamedEPKcb\000"
+.LASF246:
+	.ascii	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMa"
+	.ascii	"llocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5eraseE"
+	.ascii	"jj\000"
+.LASF203:
+	.ascii	"data\000"
+.LASF47:
+	.ascii	"s3eSoundGenAudioInfo\000"
+.LASF121:
+	.ascii	"_ZNK9CIwStringILi32EE6substrEii\000"
+.LASF665:
+	.ascii	"GetSampleCount\000"
+.LASF719:
+	.ascii	"_statTable\000"
+.LASF691:
+	.ascii	"_ZNK12CIwSoundInst8GetPitchEv\000"
+.LASF84:
+	.ascii	"__std_alias\000"
+.LASF503:
+	.ascii	"_ZN13CIwResManager8AddGroupEP11CIwResGroup\000"
+.LASF681:
+	.ascii	"_ZNK12CIwSoundInst8GetFlagsEv\000"
+.LASF137:
+	.ascii	"_ZNK9CIwStringILi32EEeqERKS0_\000"
+.LASF383:
+	.ascii	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15"
+	.ascii	"CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5e"
+	.ascii	"raseEPS1_S9_\000"
+.LASF44:
+	.ascii	"m_OrigRepeat\000"
+.LASF728:
+	.ascii	"_ZN13CIwChannelPCMItE13GenerateAudioEP20s3eSoundGen"
+	.ascii	"AudioInfo\000"
+.LASF472:
+	.ascii	"m_Group\000"
+.LASF460:
+	.ascii	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwM"
+	.ascii	"allocRouterIS1_EE17ReallocateDefaultIS1_S5_EE8trunc"
+	.ascii	"ateEj\000"
+.LASF38:
+	.ascii	"m_Channel\000"
+.LASF627:
+	.ascii	"_ZNK8CIwArrayIN13CIwResManager13CRemovedGroupE12CIw"
+	.ascii	"AllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDef"
+	.ascii	"aultIS1_S5_EE4findERKS1_\000"
+.LASF785:
+	.ascii	"ReallocateDefault<CIwResManager::CRemovedGroup, CIw"
+	.ascii	"Allocator<CIwResManager::CRemovedGroup, CIwMallocRo"
+	.ascii	"uter<CIwResManager::CRemovedGroup> > >\000"
+.LASF532:
+	.ascii	"SetCurrentGroup\000"
+.LASF1:
+	.ascii	"signed char\000"
+.LASF783:
+	.ascii	"ReallocateDefault<CIwResGroup*, CIwAllocator<CIwRes"
+	.ascii	"Group*, CIwMallocRouter<CIwResGroup*> > >\000"
+.LASF131:
+	.ascii	"operator+\000"
+.LASF775:
+	.ascii	"g_IwResManager\000"
+.LASF615:
+	.ascii	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwA"
+	.ascii	"llocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefa"
+	.ascii	"ultIS1_S5_EE4dataEv\000"
+.LASF590:
+	.ascii	"GetAtlasOwner\000"
+.LASF92:
+	.ascii	"filename\000"
+.LASF706:
+	.ascii	"IsPlaying\000"
+.LASF527:
+	.ascii	"_ZNK13CIwResManager11GetResNamedEPKcS1_j\000"
+.LASF704:
+	.ascii	"Resume\000"
+.LASF486:
+	.ascii	"m_BuildStyles\000"
+.LASF442:
+	.ascii	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwM"
+	.ascii	"allocRouterIS1_EE17ReallocateDefaultIS1_S5_EE11inse"
+	.ascii	"rt_slowERKS1_j\000"
+.LASF438:
+	.ascii	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwM"
+	.ascii	"allocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5erase"
+	.ascii	"Ei\000"
+.LASF478:
+	.ascii	"m_ChildBuildScale\000"
+.LASF500:
+	.ascii	"RemoveHandler\000"
+.LASF297:
+	.ascii	"ResolvePtrs\000"
+.LASF631:
+	.ascii	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwA"
+	.ascii	"llocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefa"
+	.ascii	"ultIS1_S5_EE8pop_backEv\000"
+.LASF0:
+	.ascii	"unsigned char\000"
+.LASF236:
+	.ascii	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMa"
+	.ascii	"llocRouterIS1_EE17ReallocateDefaultIS1_S5_EE8pop_ba"
+	.ascii	"ckEv\000"
+.LASF752:
+	.ascii	"_count\000"
+.LASF152:
+	.ascii	"_ZN9CIwStringILi160EEaSERKS0_\000"
+.LASF134:
+	.ascii	"_ZN9CIwStringILi32EEpLEc\000"
+.LASF617:
+	.ascii	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwA"
+	.ascii	"llocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefa"
+	.ascii	"ultIS1_S5_EEaSERKS8_\000"
+.LASF145:
+	.ascii	"_ZNK9CIwStringILi160EE8capacityEv\000"
+.LASF324:
+	.ascii	"Find\000"
+.LASF693:
+	.ascii	"_ZN12CIwSoundInst6SetVolEs\000"
+.LASF689:
+	.ascii	"_ZNK12CIwSoundInst6GetPanEv\000"
+.LASF512:
+	.ascii	"_ZNK13CIwResManager13GetGroupNamedEPKcj\000"
+.LASF661:
+	.ascii	"CIwResBuildStyle\000"
+.LASF250:
+	.ascii	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMa"
+	.ascii	"llocRouterIS1_EE17ReallocateDefaultIS1_S5_EE11inser"
+	.ascii	"t_slowERKS1_j\000"
+.LASF212:
+	.ascii	"clear_optimised\000"
+.LASF430:
+	.ascii	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwM"
+	.ascii	"allocRouterIS1_EE17ReallocateDefaultIS1_S5_EE15find"
+	.ascii	"_and_removeERKS1_\000"
+.LASF572:
+	.ascii	"DebugAddMenuItems\000"
+.LASF288:
+	.ascii	"_ZNK14CIwManagedList9_CheckGetEjb\000"
+.LASF67:
+	.ascii	"GetNextSample\000"
+.LASF43:
+	.ascii	"m_OrigNumSamples\000"
+.LASF117:
+	.ascii	"_ZN9CIwStringILi32EE9setLengthEi\000"
+.LASF207:
+	.ascii	"SerialiseHeader\000"
+.LASF312:
+	.ascii	"Insert\000"
+.LASF107:
+	.ascii	"c_str\000"
+.LASF583:
+	.ascii	"_ZN13CIwResManager14BuildResourcesEv\000"
+.LASF22:
+	.ascii	"S3E_SOUND_VOLUME\000"
+.LASF322:
+	.ascii	"Contains\000"
+.LASF718:
+	.ascii	"_ZN17CIwSoundDataADPCM17GetBlockAlignmentEv\000"
+.LASF144:
+	.ascii	"_ZNK9CIwStringILi160EE6lengthEv\000"
+.LASF123:
+	.ascii	"_ZN9CIwStringILi32EEixEi\000"
+.LASF179:
+	.ascii	"CIwMenuManager\000"
+.LASF77:
+	.ascii	"char\000"
+.LASF569:
+	.ascii	"ChangeExtension\000"
+.LASF178:
+	.ascii	"CIwMenu\000"
+.LASF201:
+	.ascii	"_ZNK8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwM"
+	.ascii	"allocRouterIS1_EE17ReallocateDefaultIS1_S5_EE4sizeE"
+	.ascii	"v\000"
+.LASF409:
+	.ascii	"CIwResGroup\000"
+.LASF153:
+	.ascii	"_ZN9CIwStringILi160EEpLEPKc\000"
+.LASF416:
+	.ascii	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwM"
+	.ascii	"allocRouterIS1_EE17ReallocateDefaultIS1_S5_EE4dataE"
+	.ascii	"v\000"
+.LASF370:
+	.ascii	"_ZNK8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_1"
+	.ascii	"5CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE4"
+	.ascii	"findERKS1_\000"
+.LASF648:
+	.ascii	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwA"
+	.ascii	"llocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefa"
+	.ascii	"ultIS1_S5_EE6appendERS8_\000"
+.LASF551:
+	.ascii	"_ZN13CIwResManager15SerialiseResPtrERP10CIwManagedP"
+	.ascii	"Kcb\000"
+.LASF251:
+	.ascii	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMa"
+	.ascii	"llocRouterIS1_EE17ReallocateDefaultIS1_S5_EE11inser"
+	.ascii	"t_slowERS8_j\000"
+.LASF177:
+	.ascii	"IW_TYPE_FREE_BIT\000"
+.LASF425:
+	.ascii	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwM"
+	.ascii	"allocRouterIS1_EE17ReallocateDefaultIS1_S5_EE17rese"
+	.ascii	"rve_optimisedEi\000"
+.LASF522:
+	.ascii	"_ZNK13CIwResManager10GetResTypeEPKcj\000"
+.LASF676:
+	.ascii	"m_Count\000"
+.LASF206:
+	.ascii	"~CIwArray\000"
+.LASF113:
+	.ascii	"capacity\000"
+.LASF226:
+	.ascii	"resize\000"
+.LASF540:
+	.ascii	"LoadGroupFromMemory\000"
+.LASF426:
+	.ascii	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwM"
+	.ascii	"allocRouterIS1_EE17ReallocateDefaultIS1_S5_EE12resi"
+	.ascii	"ze_quickEj\000"
+.LASF787:
+	.ascii	"c:/Stage4/modules/soundengine/source/IwSoundADPCM.c"
+	.ascii	"pp\000"
+.LASF462:
+	.ascii	"CIwResHandler\000"
+.LASF7:
+	.ascii	"long long unsigned int\000"
+.LASF141:
+	.ascii	"CIwString<160>\000"
+.LASF364:
+	.ascii	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15"
+	.ascii	"CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE16"
+	.ascii	"resize_optimisedEj\000"
+.LASF415:
+	.ascii	"_ZNK8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIw"
+	.ascii	"MallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE8capa"
+	.ascii	"cityEv\000"
+.LASF223:
+	.ascii	"resize_quick\000"
+.LASF183:
+	.ascii	"allocate\000"
+.LASF163:
+	.ascii	"IW_TYPE_BOOL\000"
+.LASF699:
+	.ascii	"_ZNK12CIwSoundInst8GetCountEv\000"
+.LASF157:
+	.ascii	"_ZN9CIwStringILi160EEpLEc\000"
+.LASF328:
+	.ascii	"GetSize\000"
+.LASF254:
+	.ascii	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMa"
+	.ascii	"llocRouterIS1_EE17ReallocateDefaultIS1_S5_EE4backEv"
+	.ascii	"\000"
+.LASF155:
+	.ascii	"_ZN9CIwStringILi160EEplEPKc\000"
+.LASF190:
+	.ascii	"ArrayIt\000"
+.LASF315:
+	.ascii	"_ZN14CIwManagedList10RemoveSlowEP10CIwManaged\000"
+.LASF187:
+	.ascii	"deallocate\000"
+.LASF218:
+	.ascii	"optimise_capacity\000"
+.LASF636:
+	.ascii	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwA"
+	.ascii	"llocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefa"
+	.ascii	"ultIS1_S5_EE10erase_fastEPS1_S9_\000"
+.LASF55:
+	.ascii	"m_SamplesPerBlock\000"
+.LASF609:
+	.ascii	"CIwArray<CIwResManager::CRemovedGroup, CIwAllocator"
+	.ascii	"<CIwResManager::CRemovedGroup, CIwMallocRouter<CIwR"
+	.ascii	"esManager::CRemovedGroup> >, ReallocateDefault<CIwR"
+	.ascii	"esManager::CRemovedGroup, CIwAllocator<CIwResManage"
+	.ascii	"r::CRemovedGroup, CIwMallocRouter<CIwResManager::CR"
+	.ascii	"emovedGroup> > > >\000"
+.LASF274:
+	.ascii	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMa"
+	.ascii	"llocRouterIS1_EE17ReallocateDefaultIS1_S5_EE8LockSi"
+	.ascii	"zeEb\000"
+.LASF316:
+	.ascii	"RemoveFast\000"
+.LASF436:
+	.ascii	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwM"
+	.ascii	"allocRouterIS1_EE17ReallocateDefaultIS1_S5_EE10eras"
+	.ascii	"e_fastEPS1_\000"
+.LASF677:
+	.ascii	"m_PlayID\000"
+.LASF355:
+	.ascii	"_ZNK8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_1"
+	.ascii	"5CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5"
+	.ascii	"emptyEv\000"
+.LASF116:
+	.ascii	"_ZN15CIwChannelADPCM15GenerateAudioCBEP20s3eSoundGe"
+	.ascii	"nAudioInfoPS_\000"
+.LASF517:
+	.ascii	"GetGroup\000"
+.LASF542:
+	.ascii	"MountGroup\000"
+.LASF29:
+	.ascii	"S3E_SOUND_STEREO_ENABLED\000"
+.LASF161:
+	.ascii	"IW_TYPE_NONE\000"
+.LASF40:
+	.ascii	"m_NumSamples\000"
+.LASF105:
+	.ascii	"m_Buffer\000"
+.LASF182:
+	.ascii	"pointer\000"
+.LASF280:
+	.ascii	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMa"
+	.ascii	"llocRouterIS1_EE17ReallocateDefaultIS1_S5_EE4swapER"
+	.ascii	"S8_\000"
+.LASF151:
+	.ascii	"_ZN9CIwStringILi160EEaSEPKc\000"
+.LASF247:
+	.ascii	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMa"
+	.ascii	"llocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5eraseE"
+	.ascii	"PS1_\000"
+.LASF258:
+	.ascii	"append\000"
+.LASF181:
+	.ascii	"size_type\000"
+.LASF311:
+	.ascii	"_ZNK14CIwManagedList18GetObjHashedNextItEjPP10CIwMa"
+	.ascii	"nagedb\000"
+.LASF302:
+	.ascii	"Clear\000"
+.LASF392:
+	.ascii	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15"
+	.ascii	"CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE9p"
+	.ascii	"ush_backERKS1_\000"
+.LASF464:
+	.ascii	"CIwResManager\000"
+.LASF633:
+	.ascii	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwA"
+	.ascii	"llocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefa"
+	.ascii	"ultIS1_S5_EE10erase_fastEi\000"
+.LASF343:
+	.ascii	"_ZN14CIwManagedList8LockSizeEb\000"
+.LASF230:
+	.ascii	"_ZNK8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwM"
+	.ascii	"allocRouterIS1_EE17ReallocateDefaultIS1_S5_EE8conta"
+	.ascii	"insERKS1_\000"
+.LASF412:
+	.ascii	"_ZNK8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIw"
+	.ascii	"MallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE3endE"
+	.ascii	"v\000"
+.LASF87:
+	.ascii	"IwSerialiseUserCallback\000"
+.LASF221:
+	.ascii	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMa"
+	.ascii	"llocRouterIS1_EE17ReallocateDefaultIS1_S5_EE7reserv"
+	.ascii	"eEj\000"
+.LASF645:
+	.ascii	"_ZNK8CIwArrayIN13CIwResManager13CRemovedGroupE12CIw"
+	.ascii	"AllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDef"
+	.ascii	"aultIS1_S5_EE5frontEv\000"
+.LASF610:
+	.ascii	"_ZNK8CIwArrayIN13CIwResManager13CRemovedGroupE12CIw"
+	.ascii	"AllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDef"
+	.ascii	"aultIS1_S5_EE5beginEv\000"
+.LASF428:
+	.ascii	"_ZNK8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIw"
+	.ascii	"MallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE4find"
+	.ascii	"ERKS1_\000"
+.LASF321:
+	.ascii	"_ZN14CIwManagedList9EraseFastEj\000"
+.LASF196:
+	.ascii	"iterator\000"
+.LASF95:
+	.ascii	"buffer\000"
+.LASF612:
+	.ascii	"_ZNK8CIwArrayIN13CIwResManager13CRemovedGroupE12CIw"
+	.ascii	"AllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDef"
+	.ascii	"aultIS1_S5_EE5emptyEv\000"
+.LASF784:
+	.ascii	"CIwMallocRouter<CIwResManager::CRemovedGroup>\000"
+.LASF738:
+	.ascii	"aTarget\000"
+.LASF629:
+	.ascii	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwA"
+	.ascii	"llocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefa"
+	.ascii	"ultIS1_S5_EE15find_and_removeERKS1_\000"
+.LASF753:
+	.ascii	"_s_1\000"
+.LASF754:
+	.ascii	"_s_2\000"
+.LASF598:
+	.ascii	"GetBinaryPath\000"
+.LASF170:
+	.ascii	"IW_TYPE_FLOAT\000"
+.LASF239:
+	.ascii	"erase_fast\000"
+.LASF348:
+	.ascii	"_ZN12CIwAllocatorI9CIwStringILi160EE15CIwMallocRout"
+	.ascii	"erIS1_EE8allocateEj\000"
+.LASF74:
+	.ascii	"S3E_ERROR_SHOW_AGAIN\000"
+.LASF465:
+	.ascii	"GlobalMode\000"
+.LASF237:
+	.ascii	"pop_back_get\000"
+.LASF210:
+	.ascii	"clear\000"
+.LASF245:
+	.ascii	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMa"
+	.ascii	"llocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5eraseE"
+	.ascii	"i\000"
+.LASF499:
+	.ascii	"_ZN13CIwResManager10AddHandlerEP13CIwResHandler\000"
+.LASF457:
+	.ascii	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwM"
+	.ascii	"allocRouterIS1_EE17ReallocateDefaultIS1_S5_EE9CanRe"
+	.ascii	"sizeEv\000"
+.LASF368:
+	.ascii	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15"
+	.ascii	"CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE12"
+	.ascii	"resize_quickEj\000"
+.LASF255:
+	.ascii	"front\000"
+.LASF732:
+	.ascii	"clip_to_int16\000"
+.LASF115:
+	.ascii	"setLength\000"
+.LASF50:
+	.ascii	"index\000"
+.LASF597:
+	.ascii	"_ZN13CIwResManager25SetGroupCollisionHandlingENS_27"
+	.ascii	"IwResGroupCollisionHandlingE\000"
+.LASF745:
+	.ascii	"endOfSample\000"
+.LASF88:
+	.ascii	"IwSerialiseContext\000"
+.LASF309:
+	.ascii	"_ZNK14CIwManagedList12GetObjHashedEjb\000"
+.LASF794:
+	.ascii	"CRemovedGroup\000"
+.LASF562:
+	.ascii	"AddLoadPath\000"
+.LASF496:
+	.ascii	"GetMode\000"
+.LASF262:
+	.ascii	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMa"
+	.ascii	"llocRouterIS1_EE17ReallocateDefaultIS1_S5_EE9push_b"
+	.ascii	"ackERKS1_\000"
+.LASF359:
+	.ascii	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15"
+	.ascii	"CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE15"
+	.ascii	"SerialiseHeaderEv\000"
+.LASF118:
+	.ascii	"find\000"
+.LASF553:
+	.ascii	"_ZN13CIwResManager13ResolveResPtrERP10CIwManagedPKc"
+	.ascii	"\000"
+.LASF36:
+	.ascii	"S3E_CHANNEL_STATUS\000"
+.LASF537:
+	.ascii	"_ZNK13CIwResManager18GetLastSearchGroupEv\000"
+.LASF659:
+	.ascii	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwA"
+	.ascii	"llocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefa"
+	.ascii	"ultIS1_S5_EE8truncateEj\000"
+.LASF78:
+	.ascii	"exception\000"
+.LASF698:
+	.ascii	"GetCount\000"
+.LASF252:
+	.ascii	"back\000"
+.LASF240:
+	.ascii	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMa"
+	.ascii	"llocRouterIS1_EE17ReallocateDefaultIS1_S5_EE10erase"
+	.ascii	"_fastEi\000"
+.LASF9:
+	.ascii	"long unsigned int\000"
+.LASF439:
+	.ascii	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwM"
+	.ascii	"allocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5erase"
+	.ascii	"Ejj\000"
+.LASF199:
+	.ascii	"empty\000"
+.LASF514:
+	.ascii	"_ZNK13CIwResManager14GetGroupHashedEjj\000"
+.LASF786:
+	.ascii	"GNU C++ 4.8.3 20140228 (release) [ARM/embedded-4_8-"
+	.ascii	"branch revision 208322] -fpreprocessed -mstructure-"
+	.ascii	"size-boundary=8 -march=armv6 -mfloat-abi=soft -mthu"
+	.ascii	"mb-interwork -mword-relocations -g -gdwarf-2 -O0 -f"
+	.ascii	"unsigned-char -fno-strict-aliasing -fno-stack-prote"
+	.ascii	"ctor -fno-short-enums -fshort-wchar -fomit-frame-po"
+	.ascii	"inter -fmessage-length=0 -ffunction-sections -fvisi"
+	.ascii	"bility=hidden -fPIC -fvisibility-inlines-hidden -fn"
+	.ascii	"o-exceptions\000"
+.LASF501:
+	.ascii	"_ZN13CIwResManager13RemoveHandlerEPKc\000"
+.LASF406:
+	.ascii	"_ZN12CIwAllocatorIP11CIwResGroup15CIwMallocRouterIS"
+	.ascii	"1_EE10reallocateEPS1_j\000"
+.LASF524:
+	.ascii	"_ZN13CIwResManager13SplitPathNameEPKcR9CIwStringILi"
+	.ascii	"160EES4_RS2_ILi32EE\000"
+.LASF687:
+	.ascii	"_ZNK12CIwSoundInst6GetVolEv\000"
+.LASF443:
+	.ascii	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwM"
+	.ascii	"allocRouterIS1_EE17ReallocateDefaultIS1_S5_EE11inse"
+	.ascii	"rt_slowERS8_j\000"
+.LASF516:
+	.ascii	"_ZNK13CIwResManager12GetNumGroupsEv\000"
+.LASF33:
+	.ascii	"S3E_CHANNEL_RATE\000"
+.LASF135:
+	.ascii	"operator==\000"
+.LASF122:
+	.ascii	"operator[]\000"
+.LASF663:
+	.ascii	"CIwRect\000"
+.LASF418:
+	.ascii	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwM"
+	.ascii	"allocRouterIS1_EE17ReallocateDefaultIS1_S5_EEaSERKS"
+	.ascii	"8_\000"
+.LASF626:
+	.ascii	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwA"
+	.ascii	"llocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefa"
+	.ascii	"ultIS1_S5_EE6resizeEj\000"
+.LASF331:
+	.ascii	"_ZNK14CIwManagedList11GetCapacityEv\000"
+.LASF24:
+	.ascii	"S3E_SOUND_DEFAULT_FREQ\000"
+.LASF261:
+	.ascii	"push_back\000"
+.LASF720:
+	.ascii	"indexTable\000"
+.LASF497:
+	.ascii	"_ZNK13CIwResManager7GetModeEv\000"
+.LASF140:
+	.ascii	"CIwStringL\000"
+.LASF737:
+	.ascii	"this\000"
+.LASF750:
+	.ascii	"aTarget_orig\000"
+.LASF102:
+	.ascii	"CIwStringS\000"
+.LASF284:
+	.ascii	"m_List\000"
+.LASF300:
+	.ascii	"Delete\000"
+.LASF225:
+	.ascii	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMa"
+	.ascii	"llocRouterIS1_EE17ReallocateDefaultIS1_S5_EE12resiz"
+	.ascii	"e_quickEj\000"
+.LASF492:
+	.ascii	"BuildGroupCallbackPre\000"
+.LASF217:
+	.ascii	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMa"
+	.ascii	"llocRouterIS1_EE17ReallocateDefaultIS1_S5_EE16resiz"
+	.ascii	"e_optimisedEj\000"
+.LASF414:
+	.ascii	"_ZNK8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIw"
+	.ascii	"MallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE4size"
+	.ascii	"Ev\000"
+.LASF779:
+	.ascii	"sTable\000"
+.LASF481:
+	.ascii	"m_Groups\000"
+.LASF13:
+	.ascii	"uintptr_t\000"
+.LASF490:
+	.ascii	"m_RemovedGroups\000"
+.LASF574:
+	.ascii	"DebugSetGroupBinCopyPath\000"
+.LASF333:
+	.ascii	"_ZN14CIwManagedList4PushEP10CIwManagedb\000"
+.LASF726:
+	.ascii	"m_Instance\000"
+.LASF70:
+	.ascii	"s3eErrorShowResult\000"
+.LASF366:
+	.ascii	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15"
+	.ascii	"CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE7r"
+	.ascii	"eserveEj\000"
+.LASF125:
+	.ascii	"operator=\000"
+.LASF509:
+	.ascii	"ReserveHandlers\000"
+.LASF523:
+	.ascii	"SplitPathName\000"
+.LASF580:
+	.ascii	"GetBuildStyleCurr\000"
+.LASF668:
+	.ascii	"CIwSoundManager\000"
+.LASF707:
+	.ascii	"_ZNK12CIwSoundInst9IsPlayingEv\000"
+.LASF713:
+	.ascii	"_ZN12CIwSoundInst9GetPlayIDEv\000"
+.LASF445:
+	.ascii	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwM"
+	.ascii	"allocRouterIS1_EE17ReallocateDefaultIS1_S5_EE4backE"
+	.ascii	"v\000"
+.LASF474:
+	.ascii	"m_LoadPaths\000"
+.LASF622:
+	.ascii	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwA"
+	.ascii	"llocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefa"
+	.ascii	"ultIS1_S5_EE17optimise_capacityEv\000"
+.LASF432:
+	.ascii	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwM"
+	.ascii	"allocRouterIS1_EE17ReallocateDefaultIS1_S5_EE8pop_b"
+	.ascii	"ackEv\000"
+.LASF654:
+	.ascii	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwA"
+	.ascii	"llocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefa"
+	.ascii	"ultIS1_S5_EE5ShareERKS8_\000"
+.LASF281:
+	.ascii	"REALLOCATE\000"
+.LASF774:
+	.ascii	"g_InverseSqrtTable\000"
+.LASF686:
+	.ascii	"GetVol\000"
+.LASF270:
+	.ascii	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMa"
+	.ascii	"llocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5ShareE"
+	.ascii	"PS1_ii\000"
+.LASF795:
+	.ascii	"IwDebugExit\000"
+.LASF263:
+	.ascii	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMa"
+	.ascii	"llocRouterIS1_EE17ReallocateDefaultIS1_S5_EE9push_b"
+	.ascii	"ackEv\000"
+.LASF295:
+	.ascii	"OptimizeCapacity\000"
+.LASF453:
+	.ascii	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwM"
+	.ascii	"allocRouterIS1_EE17ReallocateDefaultIS1_S5_EE13push"
+	.ascii	"_back_qtyEi\000"
+.LASF767:
+	.ascii	"_ZZN13CIwChannelPCMItE13clip_to_int16EiE21_s_IwAsse"
+	.ascii	"rtIgnoreThis\000"
+.LASF788:
+	.ascii	"c:\\\\Stage4\\\\build_stage4_vc12\000"
+.LASF46:
+	.ascii	"m_Stereo\000"
+.LASF382:
+	.ascii	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15"
+	.ascii	"CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5e"
+	.ascii	"raseEPS1_\000"
+.LASF596:
+	.ascii	"SetGroupCollisionHandling\000"
+.LASF641:
+	.ascii	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwA"
+	.ascii	"llocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefa"
+	.ascii	"ultIS1_S5_EE11insert_slowERKS1_j\000"
+.LASF313:
+	.ascii	"_ZN14CIwManagedList6InsertEP10CIwManagedjb\000"
+.LASF656:
+	.ascii	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwA"
+	.ascii	"llocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefa"
+	.ascii	"ultIS1_S5_EE9CanResizeEv\000"
+.LASF766:
+	.ascii	"sval\000"
+.LASF678:
+	.ascii	"IwSoundInstEndSampleCB\000"
+.LASF171:
+	.ascii	"IW_TYPE_DOUBLE\000"
+.LASF8:
+	.ascii	"long long int\000"
+.LASF385:
+	.ascii	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15"
+	.ascii	"CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE11"
+	.ascii	"insert_slowERS8_j\000"
+.LASF545:
+	.ascii	"_ZN13CIwResManager11ReloadGroupEPKcb\000"
+.LASF371:
+	.ascii	"_ZNK8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_1"
+	.ascii	"5CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE8"
+	.ascii	"containsERKS1_\000"
+.LASF301:
+	.ascii	"_ZN14CIwManagedList6DeleteEv\000"
+.LASF695:
+	.ascii	"_ZN12CIwSoundInst6SetPanEs\000"
+.LASF376:
+	.ascii	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15"
+	.ascii	"CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE10"
+	.ascii	"erase_fastEi\000"
+.LASF544:
+	.ascii	"ReloadGroup\000"
+.LASF437:
+	.ascii	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwM"
+	.ascii	"allocRouterIS1_EE17ReallocateDefaultIS1_S5_EE10eras"
+	.ascii	"e_fastEPS1_S9_\000"
+.LASF751:
+	.ascii	"_bres_accum\000"
+.LASF511:
+	.ascii	"GetGroupNamed\000"
+.LASF495:
+	.ascii	"_ZN13CIwResManager7SetModeENS_10GlobalModeE\000"
+.LASF166:
+	.ascii	"IW_TYPE_INT16\000"
+.LASF422:
+	.ascii	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwM"
+	.ascii	"allocRouterIS1_EE17ReallocateDefaultIS1_S5_EE16resi"
+	.ascii	"ze_optimisedEj\000"
+.LASF228:
+	.ascii	"contains\000"
+.LASF606:
+	.ascii	"_ZN12CIwAllocatorIN13CIwResManager13CRemovedGroupE1"
+	.ascii	"5CIwMallocRouterIS1_EE8allocateEj\000"
+.LASF765:
+	.ascii	"curntsamp\000"
+.LASF485:
+	.ascii	"m_GroupPathNameCurr\000"
+.LASF23:
+	.ascii	"S3E_SOUND_OUTPUT_FREQ\000"
+.LASF35:
+	.ascii	"S3E_CHANNEL_VOLUME\000"
+.LASF614:
+	.ascii	"_ZNK8CIwArrayIN13CIwResManager13CRemovedGroupE12CIw"
+	.ascii	"AllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDef"
+	.ascii	"aultIS1_S5_EE8capacityEv\000"
+.LASF276:
+	.ascii	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMa"
+	.ascii	"llocRouterIS1_EE17ReallocateDefaultIS1_S5_EE12set_c"
+	.ascii	"apacityEj\000"
+.LASF756:
+	.ascii	"_bufferstep\000"
+.LASF635:
+	.ascii	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwA"
+	.ascii	"llocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefa"
+	.ascii	"ultIS1_S5_EE10erase_fastEPS1_\000"
+.LASF337:
+	.ascii	"GetBegin\000"
+.LASF735:
+	.ascii	"ReallocateDefault<CIwString<160>, CIwAllocator<CIwS"
+	.ascii	"tring<160>, CIwMallocRouter<CIwString<160> > > >\000"
+.LASF305:
+	.ascii	"_ZN14CIwManagedList12ClearAndFreeEv\000"
+.LASF360:
+	.ascii	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15"
+	.ascii	"CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EEaS"
+	.ascii	"ERKS8_\000"
+.LASF549:
+	.ascii	"_ZN13CIwResManager25SetBuildGroupCallbackPostEPFvvE"
+	.ascii	"\000"
+.LASF175:
+	.ascii	"IW_TYPE_MAX_BIT\000"
+.LASF172:
+	.ascii	"IW_TYPE_STRING\000"
+.LASF114:
+	.ascii	"_ZNK9CIwStringILi32EE8capacityEv\000"
+.LASF679:
+	.ascii	"m_EndSampleCB\000"
+.LASF600:
+	.ascii	"_ZN13CIwResManager13GetBinaryPathEPKc\000"
+.LASF120:
+	.ascii	"substr\000"
+.LASF456:
+	.ascii	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwM"
+	.ascii	"allocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5Share"
+	.ascii	"EPS1_ii\000"
+.LASF763:
+	.ascii	"_s_IwAssertIgnoreThis\000"
+.LASF101:
+	.ascii	"float\000"
+.LASF570:
+	.ascii	"_ZN14CIwManagedList17_AddHashAsPointerEj\000"
+.LASF222:
+	.ascii	"reserve_optimised\000"
+.LASF526:
+	.ascii	"GetResNamed\000"
+.LASF319:
+	.ascii	"_ZN14CIwManagedList5EraseEPP10CIwManaged\000"
+.LASF421:
+	.ascii	"_ZNK8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIw"
+	.ascii	"MallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE11Mem"
+	.ascii	"oryUsageEv\000"
+.LASF37:
+	.ascii	"S3E_CHANNEL_PAUSED\000"
+.LASF591:
+	.ascii	"_ZN13CIwResManager13GetAtlasOwnerEv\000"
+.LASF314:
+	.ascii	"RemoveSlow\000"
+.LASF60:
+	.ascii	"m_FrameBuf\000"
+.LASF577:
+	.ascii	"_ZN13CIwResManager13AddBuildStyleEP16CIwResBuildSty"
+	.ascii	"le\000"
+.LASF89:
+	.ascii	"read\000"
+.LASF194:
+	.ascii	"block_delete\000"
+.LASF133:
+	.ascii	"_ZN9CIwStringILi32EEplERKS0_\000"
+.LASF52:
+	.ascii	"end_pos\000"
+.LASF411:
+	.ascii	"_ZNK8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIw"
+	.ascii	"MallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5begi"
+	.ascii	"nEv\000"
+.LASF59:
+	.ascii	"paused\000"
+.LASF429:
+	.ascii	"_ZNK8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIw"
+	.ascii	"MallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE8cont"
+	.ascii	"ainsERKS1_\000"
+.LASF42:
+	.ascii	"m_OrigStart\000"
+.LASF559:
+	.ascii	"_ZNK13CIwResManager21GetBuildStyleCurrNameEv\000"
+.LASF710:
+	.ascii	"GetEndSampleCB\000"
+.LASF168:
+	.ascii	"IW_TYPE_INT32\000"
+.LASF275:
+	.ascii	"set_capacity\000"
+.LASF323:
+	.ascii	"_ZNK14CIwManagedList8ContainsEP10CIwManaged\000"
+.LASF504:
+	.ascii	"DestroyGroup\000"
+.LASF702:
+	.ascii	"Pause\000"
+.LASF770:
+	.ascii	"g_IwSerialiseContext\000"
+.LASF98:
+	.ascii	"versionUser\000"
+.LASF119:
+	.ascii	"_ZN9CIwStringILi32EE4findEPKc\000"
+.LASF630:
+	.ascii	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwA"
+	.ascii	"llocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefa"
+	.ascii	"ultIS1_S5_EE20find_and_remove_fastERKS1_\000"
+.LASF268:
+	.ascii	"Share\000"
+.LASF480:
+	.ascii	"m_Handlers\000"
+.LASF566:
+	.ascii	"GetPathName\000"
+.LASF283:
+	.ascii	"CIwManagedList\000"
+.LASF351:
+	.ascii	"CIwArray<CIwString<160>, CIwAllocator<CIwString<160"
+	.ascii	">, CIwMallocRouter<CIwString<160> > >, ReallocateDe"
+	.ascii	"fault<CIwString<160>, CIwAllocator<CIwString<160>, "
+	.ascii	"CIwMallocRouter<CIwString<160> > > > >\000"
+.LASF57:
+	.ascii	"m_SamplesRemaining\000"
+.LASF30:
+	.ascii	"s3eSoundProperty\000"
+.LASF768:
+	.ascii	"_ZZN13CIwChannelPCMItE13clip_to_int16EiE21_s_IwAsse"
+	.ascii	"rtIgnoreThis_0\000"
+.LASF769:
+	.ascii	"_ZZN13CIwChannelPCMItE13clip_to_int16EiE21_s_IwAsse"
+	.ascii	"rtIgnoreThis_1\000"
+.LASF357:
+	.ascii	"_ZNK8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_1"
+	.ascii	"5CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE8"
+	.ascii	"capacityEv\000"
+.LASF653:
+	.ascii	"_ZNK8CIwArrayIN13CIwResManager13CRemovedGroupE12CIw"
+	.ascii	"AllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDef"
+	.ascii	"aultIS1_S5_EEixEi\000"
+.LASF282:
+	.ascii	"CIwResource\000"
+.LASF536:
+	.ascii	"GetLastSearchGroup\000"
+.LASF298:
+	.ascii	"_ZN14CIwManagedList11ResolvePtrsERKS_\000"
+.LASF326:
+	.ascii	"CopyList\000"
+.LASF778:
+	.ascii	"stepsizeTable\000"
+.LASF303:
+	.ascii	"_ZN14CIwManagedList5ClearEv\000"
+.LASF110:
+	.ascii	"_ZNK9CIwStringILi32EE4sizeEv\000"
+.LASF216:
+	.ascii	"resize_optimised\000"
+.LASF58:
+	.ascii	"m_LastBlock\000"
+.LASF724:
+	.ascii	"offset\000"
+.LASF773:
+	.ascii	"g_SqrtTable\000"
+.LASF342:
+	.ascii	"_ZN14CIwManagedList7ReserveEj\000"
+.LASF789:
+	.ascii	"Init\000"
+.LASF611:
+	.ascii	"_ZNK8CIwArrayIN13CIwResManager13CRemovedGroupE12CIw"
+	.ascii	"AllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDef"
+	.ascii	"aultIS1_S5_EE3endEv\000"
+.LASF746:
+	.ascii	"entry\000"
+.LASF49:
+	.ascii	"valprev\000"
+.LASF200:
+	.ascii	"_ZNK8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwM"
+	.ascii	"allocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5empty"
+	.ascii	"Ev\000"
+.LASF83:
+	.ascii	"_STL\000"
+.LASF757:
+	.ascii	"myLength\000"
+.LASF447:
+	.ascii	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwM"
+	.ascii	"allocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5front"
+	.ascii	"Ev\000"
+.LASF308:
+	.ascii	"GetObjHashed\000"
+.LASF310:
+	.ascii	"GetObjHashedNextIt\000"
+.LASF363:
+	.ascii	"_ZNK8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_1"
+	.ascii	"5CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE1"
+	.ascii	"1MemoryUsageEv\000"
+.LASF264:
+	.ascii	"push_back_qty\000"
+.LASF260:
+	.ascii	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMa"
+	.ascii	"llocRouterIS1_EE17ReallocateDefaultIS1_S5_EE6append"
+	.ascii	"ERS8_\000"
+.LASF6:
+	.ascii	"unsigned int\000"
+.LASF142:
+	.ascii	"_ZNK9CIwStringILi160EE5c_strEv\000"
+.LASF533:
+	.ascii	"_ZN13CIwResManager15SetCurrentGroupEP11CIwResGroup\000"
+.LASF100:
+	.ascii	"bool\000"
+.LASF594:
+	.ascii	"_TempRemoveGroup\000"
+.LASF259:
+	.ascii	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMa"
+	.ascii	"llocRouterIS1_EE17ReallocateDefaultIS1_S5_EE6append"
+	.ascii	"ERKS1_\000"
+.LASF25:
+	.ascii	"S3E_SOUND_NUM_CHANNELS\000"
+.LASF477:
+	.ascii	"m_GroupBuildData\000"
+.LASF739:
+	.ascii	"aLength\000"
+.LASF112:
+	.ascii	"_ZNK9CIwStringILi32EE6lengthEv\000"
+.LASF637:
+	.ascii	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwA"
+	.ascii	"llocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefa"
+	.ascii	"ultIS1_S5_EE5eraseEi\000"
+.LASF520:
+	.ascii	"_ZNK13CIwResManager10GetHandlerEPKcj\000"
+.LASF390:
+	.ascii	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15"
+	.ascii	"CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE6a"
+	.ascii	"ppendERKS1_\000"
+.LASF602:
+	.ascii	"OptimisedMountedGroups\000"
+.LASF93:
+	.ascii	"bytesRead\000"
+.LASF771:
+	.ascii	"g_IwSerialiseContextValid\000"
+.LASF560:
+	.ascii	"LoadRes\000"
+.LASF538:
+	.ascii	"LoadGroup\000"
+.LASF149:
+	.ascii	"_ZN9CIwStringILi160EEixEi\000"
+.LASF32:
+	.ascii	"S3E_CHANNEL_PITCH\000"
+.LASF791:
+	.ascii	"_ZN14CIwManagedList3AddEP10CIwManagedb\000"
+.LASF220:
+	.ascii	"reserve\000"
+.LASF764:
+	.ascii	"samp\000"
+.LASF306:
+	.ascii	"GetObjNamed\000"
+.LASF202:
+	.ascii	"_ZNK8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwM"
+	.ascii	"allocRouterIS1_EE17ReallocateDefaultIS1_S5_EE8capac"
+	.ascii	"ityEv\000"
+.LASF734:
+	.ascii	"SAMPLE\000"
+.LASF529:
+	.ascii	"_ZNK13CIwResManager12GetResHashedEjPKcj\000"
+.LASF479:
+	.ascii	"m_AtlasParentGroup\000"
+.LASF482:
+	.ascii	"m_ReplacingGroups\000"
+.LASF744:
+	.ascii	"pInfo\000"
+.LASF232:
+	.ascii	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMa"
+	.ascii	"llocRouterIS1_EE17ReallocateDefaultIS1_S5_EE15find_"
+	.ascii	"and_removeERKS1_\000"
+.LASF433:
+	.ascii	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwM"
+	.ascii	"allocRouterIS1_EE17ReallocateDefaultIS1_S5_EE12pop_"
+	.ascii	"back_getEv\000"
+.LASF662:
+	.ascii	"CIwMaterial\000"
+.LASF701:
+	.ascii	"_ZN12CIwSoundInst4StopEv\000"
+.LASF393:
+	.ascii	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15"
+	.ascii	"CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE9p"
+	.ascii	"ush_backEv\000"
+.LASF674:
+	.ascii	"m_Pitch\000"
+.LASF243:
+	.ascii	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMa"
+	.ascii	"llocRouterIS1_EE17ReallocateDefaultIS1_S5_EE10erase"
+	.ascii	"_fastEPS1_S9_\000"
+.LASF292:
+	.ascii	"_ZN14CIwManagedList7ResolveEv\000"
+.LASF589:
+	.ascii	"_ZN13CIwResManager13SetAltasOwnerEP11CIwResGroup\000"
+.LASF427:
+	.ascii	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwM"
+	.ascii	"allocRouterIS1_EE17ReallocateDefaultIS1_S5_EE6resiz"
+	.ascii	"eEj\000"
+.LASF408:
+	.ascii	"CIwManaged\000"
+.LASF748:
+	.ascii	"myreturn\000"
+.LASF325:
+	.ascii	"_ZNK14CIwManagedList4FindERKP10CIwManaged\000"
+.LASF652:
+	.ascii	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwA"
+	.ascii	"llocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefa"
+	.ascii	"ultIS1_S5_EE13push_back_qtyEi\000"
+.LASF198:
+	.ascii	"_ZNK8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwM"
+	.ascii	"allocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5begin"
+	.ascii	"Ev\000"
+.LASF109:
+	.ascii	"size\000"
+.LASF468:
+	.ascii	"IW_RES_GROUP_COLLISION_ERROR_F\000"
+.LASF41:
+	.ascii	"m_Mix\000"
+.LASF419:
+	.ascii	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwM"
+	.ascii	"allocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5clear"
+	.ascii	"Ev\000"
+.LASF279:
+	.ascii	"swap\000"
+.LASF31:
+	.ascii	"s3eSoundChannelProperty\000"
+.LASF672:
+	.ascii	"m_Vol\000"
+.LASF387:
+	.ascii	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15"
+	.ascii	"CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE4b"
+	.ascii	"ackEv\000"
+.LASF143:
+	.ascii	"_ZNK9CIwStringILi160EE4sizeEv\000"
+.LASF388:
+	.ascii	"_ZNK8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_1"
+	.ascii	"5CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5"
+	.ascii	"frontEv\000"
+.LASF454:
+	.ascii	"_ZNK8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIw"
+	.ascii	"MallocRouterIS1_EE17ReallocateDefaultIS1_S5_EEixEi\000"
+.LASF111:
+	.ascii	"length\000"
+.LASF11:
+	.ascii	"uint16_t\000"
+.LASF352:
+	.ascii	"_ZNK8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_1"
+	.ascii	"5CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5"
+	.ascii	"beginEv\000"
+.LASF68:
+	.ascii	"_ZN15CIwChannelADPCM13GetNextSampleEv\000"
+.LASF389:
+	.ascii	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15"
+	.ascii	"CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5f"
+	.ascii	"rontEv\000"
+.LASF581:
+	.ascii	"_ZNK13CIwResManager17GetBuildStyleCurrEv\000"
+.LASF727:
+	.ascii	"CIwChannelPCM\000"
+.LASF285:
+	.ascii	"_CheckAdd\000"
+.LASF48:
+	.ascii	"adpcm_state\000"
+.LASF130:
+	.ascii	"_ZN9CIwStringILi32EEpLERKS0_\000"
+.LASF760:
+	.ascii	"delta\000"
+.LASF398:
+	.ascii	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15"
+	.ascii	"CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5S"
+	.ascii	"hareEPS1_ii\000"
+.LASF721:
+	.ascii	"vpdiffTable\000"
+.LASF714:
+	.ascii	"CIwSoundDataADPCM\000"
+.LASF39:
+	.ascii	"m_Target\000"
+.LASF655:
+	.ascii	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwA"
+	.ascii	"llocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefa"
+	.ascii	"ultIS1_S5_EE5ShareEPS1_ii\000"
+.LASF66:
+	.ascii	"_ZN15CIwChannelADPCM22GenerateADPCMAudioFastEPsiiii"
+	.ascii	"Pi\000"
+.LASF96:
+	.ascii	"headBit\000"
+.LASF242:
+	.ascii	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMa"
+	.ascii	"llocRouterIS1_EE17ReallocateDefaultIS1_S5_EE10erase"
+	.ascii	"_fastEPS1_\000"
+.LASF585:
+	.ascii	"_ZNK13CIwResManager13DumpCatalogueEPKc\000"
+.LASF749:
+	.ascii	"entry0\000"
+.LASF747:
+	.ascii	"entry2\000"
+.LASF448:
+	.ascii	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwM"
+	.ascii	"allocRouterIS1_EE17ReallocateDefaultIS1_S5_EE6appen"
+	.ascii	"dERKS1_\000"
+.LASF576:
+	.ascii	"AddBuildStyle\000"
+.LASF278:
+	.ascii	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMa"
+	.ascii	"llocRouterIS1_EE17ReallocateDefaultIS1_S5_EE8trunca"
+	.ascii	"teEj\000"
+.LASF567:
+	.ascii	"_ZNK13CIwResManager11GetPathNameEv\000"
+.LASF651:
+	.ascii	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwA"
+	.ascii	"llocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefa"
+	.ascii	"ultIS1_S5_EE13push_back_qtyERKS1_i\000"
+.LASF289:
+	.ascii	"~CIwManagedList\000"
+.LASF286:
+	.ascii	"_ZNK14CIwManagedList9_CheckAddEP10CIwManagedb\000"
+.LASF507:
+	.ascii	"ReserveGroups\000"
+.LASF224:
+	.ascii	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMa"
+	.ascii	"llocRouterIS1_EE17ReallocateDefaultIS1_S5_EE17reser"
+	.ascii	"ve_optimisedEi\000"
+.LASF431:
+	.ascii	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwM"
+	.ascii	"allocRouterIS1_EE17ReallocateDefaultIS1_S5_EE20find"
+	.ascii	"_and_remove_fastERKS1_\000"
+.LASF186:
+	.ascii	"_ZN12CIwAllocatorIP10CIwManaged15CIwMallocRouterIS1"
+	.ascii	"_EE10reallocateEPS1_j\000"
+.LASF493:
+	.ascii	"BuildGroupCallbackPost\000"
+.LASF97:
+	.ascii	"version\000"
+.LASF505:
+	.ascii	"_ZN13CIwResManager12DestroyGroupEPKc\000"
+.LASF330:
+	.ascii	"GetCapacity\000"
+.LASF417:
+	.ascii	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwM"
+	.ascii	"allocRouterIS1_EE17ReallocateDefaultIS1_S5_EE15Seri"
+	.ascii	"aliseHeaderEv\000"
+.LASF575:
+	.ascii	"_ZN13CIwResManager24DebugSetGroupBinCopyPathEPKc\000"
+.LASF154:
+	.ascii	"_ZN9CIwStringILi160EEpLERKS0_\000"
+.LASF643:
+	.ascii	"_ZNK8CIwArrayIN13CIwResManager13CRemovedGroupE12CIw"
+	.ascii	"AllocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDef"
+	.ascii	"aultIS1_S5_EE4backEv\000"
+.LASF639:
+	.ascii	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwA"
+	.ascii	"llocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefa"
+	.ascii	"ultIS1_S5_EE5eraseEPS1_\000"
+.LASF568:
+	.ascii	"_AddHashAsPointer\000"
+.LASF265:
+	.ascii	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMa"
+	.ascii	"llocRouterIS1_EE17ReallocateDefaultIS1_S5_EE13push_"
+	.ascii	"back_qtyERKS1_i\000"
+.LASF164:
+	.ascii	"IW_TYPE_INT8\000"
+.LASF384:
+	.ascii	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15"
+	.ascii	"CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE11"
+	.ascii	"insert_slowERKS1_j\000"
+.LASF705:
+	.ascii	"_ZN12CIwSoundInst6ResumeEv\000"
+.LASF470:
+	.ascii	"IW_RES_GROUP_COLLISION_PATCH_F\000"
+.LASF192:
+	.ascii	"num_p\000"
+.LASF160:
+	.ascii	"_ZN9CIwStringILi160EE9SerialiseEv\000"
+.LASF601:
+	.ascii	"_ZN13CIwResManager25GetGroupCollisionHandlingEv\000"
+.LASF404:
+	.ascii	"CIwAllocator<CIwResGroup*, CIwMallocRouter<CIwResGr"
+	.ascii	"oup*> >\000"
+.LASF565:
+	.ascii	"_ZN13CIwResManager14ClearLoadPathsEv\000"
+.LASF528:
+	.ascii	"GetResHashed\000"
+.LASF257:
+	.ascii	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMa"
+	.ascii	"llocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5frontE"
+	.ascii	"v\000"
+.LASF621:
+	.ascii	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwA"
+	.ascii	"llocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefa"
+	.ascii	"ultIS1_S5_EE16resize_optimisedEj\000"
+.LASF28:
+	.ascii	"S3E_SOUND_VOLUME_DEFAULT\000"
+.LASF317:
+	.ascii	"_ZN14CIwManagedList10RemoveFastEP10CIwManaged\000"
+.LASF593:
+	.ascii	"_ZN13CIwResManager17GetUniqueRunStampEv\000"
+.LASF535:
+	.ascii	"_ZNK13CIwResManager15GetCurrentGroupEv\000"
+.LASF458:
+	.ascii	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwM"
+	.ascii	"allocRouterIS1_EE17ReallocateDefaultIS1_S5_EE8LockS"
+	.ascii	"izeEb\000"
+.LASF731:
+	.ascii	"_ZN13CIwChannelPCMItE15GenerateAudioCBEP20s3eSoundG"
+	.ascii	"enAudioInfoPS0_\000"
+.LASF510:
+	.ascii	"_ZN13CIwResManager15ReserveHandlersEi\000"
+.LASF531:
+	.ascii	"_ZN13CIwResManager6AddResEPKcP11CIwResource\000"
+.LASF234:
+	.ascii	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMa"
+	.ascii	"llocRouterIS1_EE17ReallocateDefaultIS1_S5_EE20find_"
+	.ascii	"and_remove_fastERKS1_\000"
+.LASF361:
+	.ascii	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15"
+	.ascii	"CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5c"
+	.ascii	"learEv\000"
+.LASF599:
+	.ascii	"GetGroupCollisionHandling\000"
+.LASF463:
+	.ascii	"iwsfixed\000"
+.LASF684:
+	.ascii	"GetChanID\000"
+.LASF127:
+	.ascii	"_ZN9CIwStringILi32EEaSERKS0_\000"
+.LASF367:
+	.ascii	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15"
+	.ascii	"CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE17"
+	.ascii	"reserve_optimisedEi\000"
+.LASF14:
+	.ascii	"uint8\000"
+.LASF469:
+	.ascii	"IW_RES_GROUP_COLLISION_REPLACE_F\000"
+.LASF688:
+	.ascii	"GetPan\000"
+.LASF86:
+	.ascii	"s3eFile\000"
+.LASF26:
+	.ascii	"S3E_SOUND_USED_CHANNELS\000"
+.LASF209:
+	.ascii	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMa"
+	.ascii	"llocRouterIS1_EE17ReallocateDefaultIS1_S5_EEaSERKS8"
+	.ascii	"_\000"
+.LASF776:
+	.ascii	"g_IwSoundManager\000"
+.LASF381:
+	.ascii	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15"
+	.ascii	"CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5e"
+	.ascii	"raseEjj\000"
+.LASF5:
+	.ascii	"short int\000"
+.LASF548:
+	.ascii	"SetBuildGroupCallbackPost\000"
+.LASF273:
+	.ascii	"LockSize\000"
+.LASF452:
+	.ascii	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwM"
+	.ascii	"allocRouterIS1_EE17ReallocateDefaultIS1_S5_EE13push"
+	.ascii	"_back_qtyERKS1_i\000"
+.LASF248:
+	.ascii	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMa"
+	.ascii	"llocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5eraseE"
+	.ascii	"PS1_S9_\000"
+.LASF358:
+	.ascii	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15"
+	.ascii	"CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE4d"
+	.ascii	"ataEv\000"
+.LASF395:
+	.ascii	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15"
+	.ascii	"CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE13"
+	.ascii	"push_back_qtyEi\000"
+.LASF402:
+	.ascii	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15"
+	.ascii	"CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE8t"
+	.ascii	"runcateEj\000"
+.LASF730:
+	.ascii	"_ZN13CIwChannelPCMItE17GenerateAudioFastEPsiiiiPi\000"
+.LASF372:
+	.ascii	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15"
+	.ascii	"CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE15"
+	.ascii	"find_and_removeERKS1_\000"
+.LASF518:
+	.ascii	"_ZNK13CIwResManager8GetGroupEj\000"
+.LASF12:
+	.ascii	"int16_t\000"
+.LASF108:
+	.ascii	"_ZNK9CIwStringILi32EE5c_strEv\000"
+.LASF664:
+	.ascii	"CIwSoundData\000"
+.LASF318:
+	.ascii	"Erase\000"
+.LASF128:
+	.ascii	"operator+=\000"
+.LASF320:
+	.ascii	"EraseFast\000"
+.LASF475:
+	.ascii	"m_OwnerResName\000"
+.LASF369:
+	.ascii	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15"
+	.ascii	"CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE6r"
+	.ascii	"esizeEj\000"
+.LASF377:
+	.ascii	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15"
+	.ascii	"CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE10"
+	.ascii	"erase_fastEii\000"
+.LASF780:
+	.ascii	"CIwMallocRouter<CIwManaged*>\000"
+.LASF742:
+	.ascii	"endSample\000"
+.LASF743:
+	.ascii	"pSData\000"
+.LASF386:
+	.ascii	"_ZNK8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_1"
+	.ascii	"5CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE4"
+	.ascii	"backEv\000"
+.LASF423:
+	.ascii	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwM"
+	.ascii	"allocRouterIS1_EE17ReallocateDefaultIS1_S5_EE17opti"
+	.ascii	"mise_capacityEv\000"
+.LASF484:
+	.ascii	"m_PathName\000"
+.LASF235:
+	.ascii	"pop_back\000"
+.LASF717:
+	.ascii	"GetBlockAlignment\000"
+.LASF338:
+	.ascii	"_ZNK14CIwManagedList8GetBeginEv\000"
+.LASF353:
+	.ascii	"_ZNK8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwM"
+	.ascii	"allocRouterIS1_EE17ReallocateDefaultIS1_S5_EE3endEv"
+	.ascii	"\000"
+.LASF3:
+	.ascii	"s3e_uint16_t\000"
+.LASF521:
+	.ascii	"GetResType\000"
+.LASF547:
+	.ascii	"_ZN13CIwResManager24SetBuildGroupCallbackPreEPFvvE\000"
+.LASF716:
+	.ascii	"_ZN17CIwSoundDataADPCM18GetSamplesPerBlockEv\000"
+.LASF708:
+	.ascii	"SetEndSampleCB\000"
+.LASF211:
+	.ascii	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMa"
+	.ascii	"llocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5clearE"
+	.ascii	"v\000"
+.LASF136:
+	.ascii	"_ZNK9CIwStringILi32EEeqEPKc\000"
+.LASF344:
+	.ascii	"ReallocateDefault<CIwManaged*, CIwAllocator<CIwMana"
+	.ascii	"ged*, CIwMallocRouter<CIwManaged*> > >\000"
+.LASF487:
+	.ascii	"m_BuildStyleCurr\000"
+.LASF208:
+	.ascii	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMa"
+	.ascii	"llocRouterIS1_EE17ReallocateDefaultIS1_S5_EE15Seria"
+	.ascii	"liseHeaderEv\000"
+.LASF725:
+	.ascii	"m_ChannelID\000"
+.LASF329:
+	.ascii	"_ZNK14CIwManagedList7GetSizeEv\000"
+.LASF556:
+	.ascii	"SetBuildStyle\000"
+.LASF796:
+	.ascii	"_ZN15CIwChannelADPCM13isInitializedE\000"
+.LASF444:
+	.ascii	"_ZNK8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIw"
+	.ascii	"MallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE4back"
+	.ascii	"Ev\000"
+.LASF555:
+	.ascii	"_ZN13CIwResManager16GetAtlasMaterialEP11CIwMaterial"
+	.ascii	"R7CIwRect\000"
+.LASF19:
+	.ascii	"int16\000"
+.LASF332:
+	.ascii	"Push\000"
+.LASF397:
+	.ascii	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15"
+	.ascii	"CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5S"
+	.ascii	"hareERKS8_\000"
+.LASF244:
+	.ascii	"erase\000"
+.LASF446:
+	.ascii	"_ZNK8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIw"
+	.ascii	"MallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5fron"
+	.ascii	"tEv\000"
+.LASF616:
+	.ascii	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwA"
+	.ascii	"llocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefa"
+	.ascii	"ultIS1_S5_EE15SerialiseHeaderEv\000"
+.LASF405:
+	.ascii	"_ZN12CIwAllocatorIP11CIwResGroup15CIwMallocRouterIS"
+	.ascii	"1_EE8allocateEj\000"
+.LASF266:
+	.ascii	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMa"
+	.ascii	"llocRouterIS1_EE17ReallocateDefaultIS1_S5_EE13push_"
+	.ascii	"back_qtyEi\000"
+.LASF345:
+	.ascii	"Reallocate\000"
+.LASF608:
+	.ascii	"_ZN12CIwAllocatorIN13CIwResManager13CRemovedGroupE1"
+	.ascii	"5CIwMallocRouterIS1_EE10deallocateEPS1_j\000"
+.LASF632:
+	.ascii	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwA"
+	.ascii	"llocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefa"
+	.ascii	"ultIS1_S5_EE12pop_back_getEv\000"
+.LASF349:
+	.ascii	"_ZN12CIwAllocatorI9CIwStringILi160EE15CIwMallocRout"
+	.ascii	"erIS1_EE10reallocateEPS1_j\000"
+.LASF399:
+	.ascii	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15"
+	.ascii	"CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE9C"
+	.ascii	"anResizeEv\000"
+.LASF403:
+	.ascii	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15"
+	.ascii	"CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE4s"
+	.ascii	"wapERS8_\000"
+.LASF188:
+	.ascii	"_ZN12CIwAllocatorIP10CIwManaged15CIwMallocRouterIS1"
+	.ascii	"_EE10deallocateEPS1_j\000"
+.LASF205:
+	.ascii	"CIwArray\000"
+.LASF354:
+	.ascii	"_ZNK8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_1"
+	.ascii	"5CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE3"
+	.ascii	"endEv\000"
+.LASF489:
+	.ascii	"m_LoadingPatch\000"
+.LASF269:
+	.ascii	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMa"
+	.ascii	"llocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5ShareE"
+	.ascii	"RKS8_\000"
+.LASF584:
+	.ascii	"DumpCatalogue\000"
+.LASF231:
+	.ascii	"find_and_remove\000"
+.LASF219:
+	.ascii	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMa"
+	.ascii	"llocRouterIS1_EE17ReallocateDefaultIS1_S5_EE17optim"
+	.ascii	"ise_capacityEv\000"
+.LASF94:
+	.ascii	"callbackPeriod\000"
+.LASF407:
+	.ascii	"_ZN12CIwAllocatorIP11CIwResGroup15CIwMallocRouterIS"
+	.ascii	"1_EE10deallocateEPS1_j\000"
+.LASF159:
+	.ascii	"_ZNK9CIwStringILi160EEeqERKS0_\000"
+.LASF214:
+	.ascii	"MemoryUsage\000"
+.LASF709:
+	.ascii	"_ZN12CIwSoundInst14SetEndSampleCBEPFvPS_E\000"
+.LASF623:
+	.ascii	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwA"
+	.ascii	"llocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefa"
+	.ascii	"ultIS1_S5_EE7reserveEj\000"
+.LASF467:
+	.ascii	"MODE_LOAD\000"
+.LASF375:
+	.ascii	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15"
+	.ascii	"CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE12"
+	.ascii	"pop_back_getEv\000"
+.LASF374:
+	.ascii	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15"
+	.ascii	"CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE8p"
+	.ascii	"op_backEv\000"
+.LASF272:
+	.ascii	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMa"
+	.ascii	"llocRouterIS1_EE17ReallocateDefaultIS1_S5_EE9CanRes"
+	.ascii	"izeEv\000"
+.LASF347:
+	.ascii	"CIwAllocator<CIwString<160>, CIwMallocRouter<CIwStr"
+	.ascii	"ing<160> > >\000"
+.LASF671:
+	.ascii	"m_Spec\000"
+.LASF669:
+	.ascii	"CIwTextParserITX\000"
+.LASF711:
+	.ascii	"_ZNK12CIwSoundInst14GetEndSampleCBEv\000"
+.LASF557:
+	.ascii	"_ZN13CIwResManager13SetBuildStyleEPKc\000"
+.LASF790:
+	.ascii	"_ZN15CIwChannelADPCM4InitEv\000"
+.LASF290:
+	.ascii	"_ZN14CIwManagedList9SerialiseEv\000"
+.LASF2:
+	.ascii	"short unsigned int\000"
+.LASF759:
+	.ascii	"srcVal\000"
+.LASF441:
+	.ascii	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwM"
+	.ascii	"allocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5erase"
+	.ascii	"EPS1_S9_\000"
+.LASF90:
+	.ascii	"base\000"
+.LASF150:
+	.ascii	"_ZNK9CIwStringILi160EEixEi\000"
+.LASF550:
+	.ascii	"SerialiseResPtr\000"
+.LASF296:
+	.ascii	"_ZN14CIwManagedList16OptimizeCapacityEv\000"
+.LASF327:
+	.ascii	"_ZN14CIwManagedList8CopyListERKS_\000"
+.LASF17:
+	.ascii	"int32\000"
+.LASF162:
+	.ascii	"IW_TYPE_CHAR\000"
+.LASF91:
+	.ascii	"handle\000"
+.LASF667:
+	.ascii	"CIwSoundSpec\000"
+.LASF571:
+	.ascii	"_ZN13CIwResManager15ChangeExtensionER9CIwStringILi1"
+	.ascii	"60EEPKc\000"
+.LASF27:
+	.ascii	"S3E_SOUND_AVAILABLE\000"
+.LASF451:
+	.ascii	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwM"
+	.ascii	"allocRouterIS1_EE17ReallocateDefaultIS1_S5_EE9push_"
+	.ascii	"backEv\000"
+.LASF82:
+	.ascii	"bad_cast\000"
+.LASF592:
+	.ascii	"GetUniqueRunStamp\000"
+.LASF291:
+	.ascii	"Resolve\000"
+.LASF287:
+	.ascii	"_CheckGet\000"
+.LASF670:
+	.ascii	"CIwSoundInst\000"
+.LASF755:
+	.ascii	"_index\000"
+.LASF587:
+	.ascii	"_ZN13CIwResManager15ClearAtlasOwnerEv\000"
+.LASF304:
+	.ascii	"ClearAndFree\000"
+.LASF138:
+	.ascii	"Serialise\000"
+.LASF634:
+	.ascii	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwA"
+	.ascii	"llocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefa"
+	.ascii	"ultIS1_S5_EE10erase_fastEii\000"
+.LASF75:
+	.ascii	"ptrdiff_t\000"
+.LASF604:
+	.ascii	"~CIwResManager\000"
+.LASF129:
+	.ascii	"_ZN9CIwStringILi32EEpLEPKc\000"
+.LASF233:
+	.ascii	"find_and_remove_fast\000"
+.LASF649:
+	.ascii	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwA"
+	.ascii	"llocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefa"
+	.ascii	"ultIS1_S5_EE9push_backERKS1_\000"
+.LASF365:
+	.ascii	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15"
+	.ascii	"CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE17"
+	.ascii	"optimise_capacityEv\000"
+.LASF173:
+	.ascii	"IW_TYPE_COMPOUND\000"
+.LASF34:
+	.ascii	"S3E_CHANNEL_USERVAR\000"
+.LASF642:
+	.ascii	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwA"
+	.ascii	"llocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefa"
+	.ascii	"ultIS1_S5_EE11insert_slowERS8_j\000"
+.LASF494:
+	.ascii	"SetMode\000"
+.LASF391:
+	.ascii	"_ZN8CIwArrayI9CIwStringILi160EE12CIwAllocatorIS1_15"
+	.ascii	"CIwMallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE6a"
+	.ascii	"ppendERS8_\000"
+.LASF148:
+	.ascii	"_ZNK9CIwStringILi160EE6substrEii\000"
+.LASF539:
+	.ascii	"_ZN13CIwResManager9LoadGroupEPKcb\000"
+.LASF466:
+	.ascii	"MODE_BUILD\000"
+.LASF658:
+	.ascii	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwA"
+	.ascii	"llocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefa"
+	.ascii	"ultIS1_S5_EE12set_capacityEj\000"
+.LASF238:
+	.ascii	"_ZN8CIwArrayIP10CIwManaged12CIwAllocatorIS1_15CIwMa"
+	.ascii	"llocRouterIS1_EE17ReallocateDefaultIS1_S5_EE12pop_b"
+	.ascii	"ack_getEv\000"
+.LASF461:
+	.ascii	"_ZN8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIwM"
+	.ascii	"allocRouterIS1_EE17ReallocateDefaultIS1_S5_EE4swapE"
+	.ascii	"RS8_\000"
+.LASF582:
+	.ascii	"BuildResources\000"
+.LASF62:
+	.ascii	"GenerateAudioCB\000"
+.LASF18:
+	.ascii	"uint16\000"
+.LASF21:
+	.ascii	"wchar_t\000"
+.LASF502:
+	.ascii	"AddGroup\000"
+.LASF413:
+	.ascii	"_ZNK8CIwArrayIP11CIwResGroup12CIwAllocatorIS1_15CIw"
+	.ascii	"MallocRouterIS1_EE17ReallocateDefaultIS1_S5_EE5empt"
+	.ascii	"yEv\000"
+.LASF666:
+	.ascii	"_ZN12CIwSoundData14GetSampleCountEv\000"
+.LASF712:
+	.ascii	"GetPlayID\000"
+.LASF657:
+	.ascii	"_ZN8CIwArrayIN13CIwResManager13CRemovedGroupE12CIwA"
+	.ascii	"llocatorIS1_15CIwMallocRouterIS1_EE17ReallocateDefa"
+	.ascii	"ultIS1_S5_EE8LockSizeEb\000"
+.LASF697:
+	.ascii	"_ZN12CIwSoundInst8SetPitchEs\000"
+.LASF106:
+	.ascii	"CIwString\000"
+.LASF180:
+	.ascii	"CIwAllocator<CIwManaged*, CIwMallocRouter<CIwManage"
+	.ascii	"d*> >\000"
+.LASF683:
+	.ascii	"_ZNK12CIwSoundInst7GetSpecEv\000"
+.LASF515:
+	.ascii	"GetNumGroups\000"
+.LASF294:
+	.ascii	"_ZN14CIwManagedList13SerialisePtrsEv\000"
+	.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.3 20140228 (release) [ARM/embedded-4_8-branch revision 208322]"

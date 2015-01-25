@@ -1,841 +1,952 @@
+	.arch armv6
+	.fpu softvfp
+	.eabi_attribute 20, 1
+	.eabi_attribute 21, 1
+	.eabi_attribute 23, 3
+	.eabi_attribute 24, 1
+	.eabi_attribute 25, 1
+	.eabi_attribute 26, 2
+	.eabi_attribute 30, 6
+	.eabi_attribute 34, 1
+	.eabi_attribute 18, 2
 	.file	"input.cpp"
 	.text
 .Ltext0:
+	.cfi_sections	.debug_frame
 	.hidden	g_pInput
-	.globl	g_pInput
+	.global	g_pInput
 	.bss
-	.align 4
-	.type	g_pInput, @object
+	.align	2
+	.type	g_pInput, %object
 	.size	g_pInput, 4
 g_pInput:
-	.zero	4
-	.text
-	.align 2
-	.globl	_ZN5Input13TouchButtonCBEP15s3ePointerEvent
+	.space	4
+	.section	.text._ZN5Input13TouchButtonCBEP15s3ePointerEvent,"ax",%progbits
+	.align	2
+	.global	_ZN5Input13TouchButtonCBEP15s3ePointerEvent
 	.hidden	_ZN5Input13TouchButtonCBEP15s3ePointerEvent
-	.type	_ZN5Input13TouchButtonCBEP15s3ePointerEvent, @function
+	.type	_ZN5Input13TouchButtonCBEP15s3ePointerEvent, %function
 _ZN5Input13TouchButtonCBEP15s3ePointerEvent:
 .LFB0:
-	.file 1 "c:/Marmalade/7.5/examples/GameTutorial/CPP/Stage4/source/input.cpp"
+	.file 1 "c:/Stage4/source/input.cpp"
 	.loc 1 25 0
 	.cfi_startproc
-	pushl	%ebp
+	@ args = 0, pretend = 0, frame = 8
+	@ frame_needed = 0, uses_anonymous_args = 0
+	@ link register save eliminated.
+	sub	sp, sp, #8
+.LCFI0:
 	.cfi_def_cfa_offset 8
-	.cfi_offset 5, -8
-	movl	%esp, %ebp
-	.cfi_def_cfa_register 5
-	call	__x86.get_pc_thunk.cx
-	addl	$_GLOBAL_OFFSET_TABLE_, %ecx
+	str	r0, [sp, #4]
 	.loc 1 26 0
-	movl	g_pInput@GOTOFF(%ecx), %eax
-	movl	g_pInput@GOTOFF(%ecx), %edx
-	movzbl	8(%edx), %edx
-	movb	%dl, 9(%eax)
+	ldr	r3, .L2
+.LPIC0:
+	add	r3, pc, r3
+	ldr	r3, [r3]
+	ldr	r2, .L2+4
+.LPIC1:
+	add	r2, pc, r2
+	ldr	r2, [r2]
+	ldrb	r2, [r2, #8]	@ zero_extendqisi2
+	strb	r2, [r3, #9]
 	.loc 1 27 0
-	movl	g_pInput@GOTOFF(%ecx), %eax
-	movl	8(%ebp), %edx
-	movl	4(%edx), %edx
-	testl	%edx, %edx
-	setne	%dl
-	movb	%dl, 8(%eax)
+	ldr	r3, .L2+8
+.LPIC2:
+	add	r3, pc, r3
+	ldr	r3, [r3]
+	ldr	r2, [sp, #4]
+	ldr	r2, [r2, #4]
+	cmp	r2, #0
+	moveq	r2, #0
+	movne	r2, #1
+	uxtb	r2, r2
+	strb	r2, [r3, #8]
 	.loc 1 28 0
-	movl	g_pInput@GOTOFF(%ecx), %eax
-	movl	8(%ebp), %edx
-	movl	8(%edx), %edx
-	movl	%edx, (%eax)
+	ldr	r3, .L2+12
+.LPIC3:
+	add	r3, pc, r3
+	ldr	r3, [r3]
+	ldr	r2, [sp, #4]
+	ldr	r2, [r2, #8]
+	str	r2, [r3]
 	.loc 1 29 0
-	movl	g_pInput@GOTOFF(%ecx), %eax
-	movl	8(%ebp), %edx
-	movl	12(%edx), %edx
-	movl	%edx, 4(%eax)
+	ldr	r3, .L2+16
+.LPIC4:
+	add	r3, pc, r3
+	ldr	r3, [r3]
+	ldr	r2, [sp, #4]
+	ldr	r2, [r2, #12]
+	str	r2, [r3, #4]
 	.loc 1 30 0
-	popl	%ebp
-	.cfi_restore 5
-	.cfi_def_cfa 4, 4
-	ret
+	add	sp, sp, #8
+	@ sp needed
+	bx	lr
+.L3:
+	.align	2
+.L2:
+	.word	g_pInput-(.LPIC0+8)
+	.word	g_pInput-(.LPIC1+8)
+	.word	g_pInput-(.LPIC2+8)
+	.word	g_pInput-(.LPIC3+8)
+	.word	g_pInput-(.LPIC4+8)
 	.cfi_endproc
 .LFE0:
 	.size	_ZN5Input13TouchButtonCBEP15s3ePointerEvent, .-_ZN5Input13TouchButtonCBEP15s3ePointerEvent
-	.align 2
-	.globl	_ZN5Input13TouchMotionCBEP21s3ePointerMotionEvent
+	.section	.text._ZN5Input13TouchMotionCBEP21s3ePointerMotionEvent,"ax",%progbits
+	.align	2
+	.global	_ZN5Input13TouchMotionCBEP21s3ePointerMotionEvent
 	.hidden	_ZN5Input13TouchMotionCBEP21s3ePointerMotionEvent
-	.type	_ZN5Input13TouchMotionCBEP21s3ePointerMotionEvent, @function
+	.type	_ZN5Input13TouchMotionCBEP21s3ePointerMotionEvent, %function
 _ZN5Input13TouchMotionCBEP21s3ePointerMotionEvent:
 .LFB1:
 	.loc 1 40 0
 	.cfi_startproc
-	pushl	%ebp
+	@ args = 0, pretend = 0, frame = 8
+	@ frame_needed = 0, uses_anonymous_args = 0
+	@ link register save eliminated.
+	sub	sp, sp, #8
+.LCFI1:
 	.cfi_def_cfa_offset 8
-	.cfi_offset 5, -8
-	movl	%esp, %ebp
-	.cfi_def_cfa_register 5
-	call	__x86.get_pc_thunk.cx
-	addl	$_GLOBAL_OFFSET_TABLE_, %ecx
+	str	r0, [sp, #4]
 	.loc 1 41 0
-	movl	g_pInput@GOTOFF(%ecx), %eax
-	movl	8(%ebp), %edx
-	movl	(%edx), %edx
-	movl	%edx, (%eax)
+	ldr	r3, .L5
+.LPIC5:
+	add	r3, pc, r3
+	ldr	r3, [r3]
+	ldr	r2, [sp, #4]
+	ldr	r2, [r2]
+	str	r2, [r3]
 	.loc 1 42 0
-	movl	g_pInput@GOTOFF(%ecx), %eax
-	movl	8(%ebp), %edx
-	movl	4(%edx), %edx
-	movl	%edx, 4(%eax)
+	ldr	r3, .L5+4
+.LPIC6:
+	add	r3, pc, r3
+	ldr	r3, [r3]
+	ldr	r2, [sp, #4]
+	ldr	r2, [r2, #4]
+	str	r2, [r3, #4]
 	.loc 1 43 0
-	popl	%ebp
-	.cfi_restore 5
-	.cfi_def_cfa 4, 4
-	ret
+	add	sp, sp, #8
+	@ sp needed
+	bx	lr
+.L6:
+	.align	2
+.L5:
+	.word	g_pInput-(.LPIC5+8)
+	.word	g_pInput-(.LPIC6+8)
 	.cfi_endproc
 .LFE1:
 	.size	_ZN5Input13TouchMotionCBEP21s3ePointerMotionEvent, .-_ZN5Input13TouchMotionCBEP21s3ePointerMotionEvent
-	.align 2
-	.globl	_ZN5Input18MultiTouchButtonCBEP20s3ePointerTouchEvent
+	.section	.text._ZN5Input18MultiTouchButtonCBEP20s3ePointerTouchEvent,"ax",%progbits
+	.align	2
+	.global	_ZN5Input18MultiTouchButtonCBEP20s3ePointerTouchEvent
 	.hidden	_ZN5Input18MultiTouchButtonCBEP20s3ePointerTouchEvent
-	.type	_ZN5Input18MultiTouchButtonCBEP20s3ePointerTouchEvent, @function
+	.type	_ZN5Input18MultiTouchButtonCBEP20s3ePointerTouchEvent, %function
 _ZN5Input18MultiTouchButtonCBEP20s3ePointerTouchEvent:
 .LFB2:
 	.loc 1 53 0
 	.cfi_startproc
-	pushl	%ebp
+	@ args = 0, pretend = 0, frame = 8
+	@ frame_needed = 0, uses_anonymous_args = 0
+	@ link register save eliminated.
+	sub	sp, sp, #8
+.LCFI2:
 	.cfi_def_cfa_offset 8
-	.cfi_offset 5, -8
-	movl	%esp, %ebp
-	.cfi_def_cfa_register 5
-	call	__x86.get_pc_thunk.cx
-	addl	$_GLOBAL_OFFSET_TABLE_, %ecx
+	str	r0, [sp, #4]
 	.loc 1 54 0
-	movl	g_pInput@GOTOFF(%ecx), %eax
-	movl	g_pInput@GOTOFF(%ecx), %edx
-	movzbl	8(%edx), %edx
-	movb	%dl, 9(%eax)
+	ldr	r3, .L8
+.LPIC7:
+	add	r3, pc, r3
+	ldr	r3, [r3]
+	ldr	r2, .L8+4
+.LPIC8:
+	add	r2, pc, r2
+	ldr	r2, [r2]
+	ldrb	r2, [r2, #8]	@ zero_extendqisi2
+	strb	r2, [r3, #9]
 	.loc 1 55 0
-	movl	g_pInput@GOTOFF(%ecx), %eax
-	movl	8(%ebp), %edx
-	movl	4(%edx), %edx
-	testl	%edx, %edx
-	setne	%dl
-	movb	%dl, 8(%eax)
+	ldr	r3, .L8+8
+.LPIC9:
+	add	r3, pc, r3
+	ldr	r3, [r3]
+	ldr	r2, [sp, #4]
+	ldr	r2, [r2, #4]
+	cmp	r2, #0
+	moveq	r2, #0
+	movne	r2, #1
+	uxtb	r2, r2
+	strb	r2, [r3, #8]
 	.loc 1 56 0
-	movl	g_pInput@GOTOFF(%ecx), %eax
-	movl	8(%ebp), %edx
-	movl	8(%edx), %edx
-	movl	%edx, (%eax)
+	ldr	r3, .L8+12
+.LPIC10:
+	add	r3, pc, r3
+	ldr	r3, [r3]
+	ldr	r2, [sp, #4]
+	ldr	r2, [r2, #8]
+	str	r2, [r3]
 	.loc 1 57 0
-	movl	g_pInput@GOTOFF(%ecx), %eax
-	movl	8(%ebp), %edx
-	movl	12(%edx), %edx
-	movl	%edx, 4(%eax)
+	ldr	r3, .L8+16
+.LPIC11:
+	add	r3, pc, r3
+	ldr	r3, [r3]
+	ldr	r2, [sp, #4]
+	ldr	r2, [r2, #12]
+	str	r2, [r3, #4]
 	.loc 1 58 0
-	popl	%ebp
-	.cfi_restore 5
-	.cfi_def_cfa 4, 4
-	ret
+	add	sp, sp, #8
+	@ sp needed
+	bx	lr
+.L9:
+	.align	2
+.L8:
+	.word	g_pInput-(.LPIC7+8)
+	.word	g_pInput-(.LPIC8+8)
+	.word	g_pInput-(.LPIC9+8)
+	.word	g_pInput-(.LPIC10+8)
+	.word	g_pInput-(.LPIC11+8)
 	.cfi_endproc
 .LFE2:
 	.size	_ZN5Input18MultiTouchButtonCBEP20s3ePointerTouchEvent, .-_ZN5Input18MultiTouchButtonCBEP20s3ePointerTouchEvent
-	.align 2
-	.globl	_ZN5Input18MultiTouchMotionCBEP26s3ePointerTouchMotionEvent
+	.section	.text._ZN5Input18MultiTouchMotionCBEP26s3ePointerTouchMotionEvent,"ax",%progbits
+	.align	2
+	.global	_ZN5Input18MultiTouchMotionCBEP26s3ePointerTouchMotionEvent
 	.hidden	_ZN5Input18MultiTouchMotionCBEP26s3ePointerTouchMotionEvent
-	.type	_ZN5Input18MultiTouchMotionCBEP26s3ePointerTouchMotionEvent, @function
+	.type	_ZN5Input18MultiTouchMotionCBEP26s3ePointerTouchMotionEvent, %function
 _ZN5Input18MultiTouchMotionCBEP26s3ePointerTouchMotionEvent:
 .LFB3:
 	.loc 1 68 0
 	.cfi_startproc
-	pushl	%ebp
+	@ args = 0, pretend = 0, frame = 8
+	@ frame_needed = 0, uses_anonymous_args = 0
+	@ link register save eliminated.
+	sub	sp, sp, #8
+.LCFI3:
 	.cfi_def_cfa_offset 8
-	.cfi_offset 5, -8
-	movl	%esp, %ebp
-	.cfi_def_cfa_register 5
-	call	__x86.get_pc_thunk.cx
-	addl	$_GLOBAL_OFFSET_TABLE_, %ecx
+	str	r0, [sp, #4]
 	.loc 1 69 0
-	movl	g_pInput@GOTOFF(%ecx), %eax
-	movl	8(%ebp), %edx
-	movl	4(%edx), %edx
-	movl	%edx, (%eax)
+	ldr	r3, .L11
+.LPIC12:
+	add	r3, pc, r3
+	ldr	r3, [r3]
+	ldr	r2, [sp, #4]
+	ldr	r2, [r2, #4]
+	str	r2, [r3]
 	.loc 1 70 0
-	movl	g_pInput@GOTOFF(%ecx), %eax
-	movl	8(%ebp), %edx
-	movl	8(%edx), %edx
-	movl	%edx, 4(%eax)
+	ldr	r3, .L11+4
+.LPIC13:
+	add	r3, pc, r3
+	ldr	r3, [r3]
+	ldr	r2, [sp, #4]
+	ldr	r2, [r2, #8]
+	str	r2, [r3, #4]
 	.loc 1 71 0
-	popl	%ebp
-	.cfi_restore 5
-	.cfi_def_cfa 4, 4
-	ret
+	add	sp, sp, #8
+	@ sp needed
+	bx	lr
+.L12:
+	.align	2
+.L11:
+	.word	g_pInput-(.LPIC12+8)
+	.word	g_pInput-(.LPIC13+8)
 	.cfi_endproc
 .LFE3:
 	.size	_ZN5Input18MultiTouchMotionCBEP26s3ePointerTouchMotionEvent, .-_ZN5Input18MultiTouchMotionCBEP26s3ePointerTouchMotionEvent
-	.align 2
-	.globl	_ZN5InputC2Ev
+	.section	.text._ZN5InputC2Ev,"ax",%progbits
+	.align	2
+	.global	_ZN5InputC2Ev
 	.hidden	_ZN5InputC2Ev
-	.type	_ZN5InputC2Ev, @function
+	.type	_ZN5InputC2Ev, %function
 _ZN5InputC2Ev:
 .LFB5:
 	.loc 1 73 0
 	.cfi_startproc
-	pushl	%ebp
-	.cfi_def_cfa_offset 8
-	.cfi_offset 5, -8
-	movl	%esp, %ebp
-	.cfi_def_cfa_register 5
-	pushl	%ebx
-	leal	-20(%esp), %esp
-	.cfi_offset 3, -12
-	call	__x86.get_pc_thunk.bx
-	addl	$_GLOBAL_OFFSET_TABLE_, %ebx
+	@ args = 0, pretend = 0, frame = 8
+	@ frame_needed = 0, uses_anonymous_args = 0
+	str	lr, [sp, #-4]!
+.LCFI4:
+	.cfi_def_cfa_offset 4
+	.cfi_offset 14, -4
+	sub	sp, sp, #12
+.LCFI5:
+	.cfi_def_cfa_offset 16
+	str	r0, [sp, #4]
 .LBB2:
 	.loc 1 73 0
-	movl	8(%ebp), %eax
-	movb	$0, 8(%eax)
-	movl	8(%ebp), %eax
-	movb	$0, 9(%eax)
+	ldr	r3, [sp, #4]
+	mov	r2, #0
+	strb	r2, [r3, #8]
+	ldr	r3, [sp, #4]
+	mov	r2, #0
+	strb	r2, [r3, #9]
 	.loc 1 76 0
-	movl	$4, (%esp)
-	call	s3ePointerGetInt@PLT
-	testl	%eax, %eax
-	setne	%al
-	testb	%al, %al
-	je	.L6
+	mov	r0, #4
+	bl	s3ePointerGetInt(PLT)
+	mov	r3, r0
+	cmp	r3, #0
+	moveq	r3, #0
+	movne	r3, #1
+	uxtb	r3, r3
+	cmp	r3, #0
+	beq	.L14
 	.loc 1 78 0
-	movl	$0, 8(%esp)
-	leal	_ZN5Input18MultiTouchButtonCBEP20s3ePointerTouchEvent@GOTOFF(%ebx), %eax
-	movl	%eax, 4(%esp)
-	movl	$2, (%esp)
-	call	s3ePointerRegister@PLT
+	mov	r0, #2
+	ldr	r3, .L17
+.LPIC14:
+	add	r3, pc, r3
+	mov	r1, r3
+	mov	r2, #0
+	bl	s3ePointerRegister(PLT)
 	.loc 1 79 0
-	movl	$0, 8(%esp)
-	leal	_ZN5Input18MultiTouchMotionCBEP26s3ePointerTouchMotionEvent@GOTOFF(%ebx), %eax
-	movl	%eax, 4(%esp)
-	movl	$3, (%esp)
-	call	s3ePointerRegister@PLT
-	jmp	.L5
-.L6:
+	mov	r0, #3
+	ldr	r3, .L17+4
+.LPIC15:
+	add	r3, pc, r3
+	mov	r1, r3
+	mov	r2, #0
+	bl	s3ePointerRegister(PLT)
+	b	.L15
+.L14:
 	.loc 1 83 0
-	movl	$0, 8(%esp)
-	leal	_ZN5Input13TouchButtonCBEP15s3ePointerEvent@GOTOFF(%ebx), %eax
-	movl	%eax, 4(%esp)
-	movl	$0, (%esp)
-	call	s3ePointerRegister@PLT
+	mov	r0, #0
+	ldr	r3, .L17+8
+.LPIC16:
+	add	r3, pc, r3
+	mov	r1, r3
+	mov	r2, #0
+	bl	s3ePointerRegister(PLT)
 	.loc 1 84 0
-	movl	$0, 8(%esp)
-	leal	_ZN5Input13TouchMotionCBEP21s3ePointerMotionEvent@GOTOFF(%ebx), %eax
-	movl	%eax, 4(%esp)
-	movl	$1, (%esp)
-	call	s3ePointerRegister@PLT
-.L5:
+	mov	r0, #1
+	ldr	r3, .L17+12
+.LPIC17:
+	add	r3, pc, r3
+	mov	r1, r3
+	mov	r2, #0
+	bl	s3ePointerRegister(PLT)
+.L15:
 .LBE2:
 	.loc 1 86 0
-	leal	20(%esp), %esp
-	popl	%ebx
-	.cfi_restore 3
-	popl	%ebp
-	.cfi_restore 5
-	.cfi_def_cfa 4, 4
-	ret
+	ldr	r3, [sp, #4]
+	mov	r0, r3
+	add	sp, sp, #12
+	@ sp needed
+	ldr	pc, [sp], #4
+.L18:
+	.align	2
+.L17:
+	.word	_ZN5Input18MultiTouchButtonCBEP20s3ePointerTouchEvent-(.LPIC14+8)
+	.word	_ZN5Input18MultiTouchMotionCBEP26s3ePointerTouchMotionEvent-(.LPIC15+8)
+	.word	_ZN5Input13TouchButtonCBEP15s3ePointerEvent-(.LPIC16+8)
+	.word	_ZN5Input13TouchMotionCBEP21s3ePointerMotionEvent-(.LPIC17+8)
 	.cfi_endproc
 .LFE5:
 	.size	_ZN5InputC2Ev, .-_ZN5InputC2Ev
-	.globl	_ZN5InputC1Ev
+	.global	_ZN5InputC1Ev
 	.hidden	_ZN5InputC1Ev
 	.set	_ZN5InputC1Ev,_ZN5InputC2Ev
-	.align 2
-	.globl	_ZN5Input6UpdateEv
+	.section	.text._ZN5Input6UpdateEv,"ax",%progbits
+	.align	2
+	.global	_ZN5Input6UpdateEv
 	.hidden	_ZN5Input6UpdateEv
-	.type	_ZN5Input6UpdateEv, @function
+	.type	_ZN5Input6UpdateEv, %function
 _ZN5Input6UpdateEv:
 .LFB7:
 	.loc 1 89 0
 	.cfi_startproc
-	pushl	%ebp
-	.cfi_def_cfa_offset 8
-	.cfi_offset 5, -8
-	movl	%esp, %ebp
-	.cfi_def_cfa_register 5
-	pushl	%ebx
-	leal	-4(%esp), %esp
-	.cfi_offset 3, -12
-	call	__x86.get_pc_thunk.bx
-	addl	$_GLOBAL_OFFSET_TABLE_, %ebx
+	@ args = 0, pretend = 0, frame = 8
+	@ frame_needed = 0, uses_anonymous_args = 0
+	str	lr, [sp, #-4]!
+.LCFI6:
+	.cfi_def_cfa_offset 4
+	.cfi_offset 14, -4
+	sub	sp, sp, #12
+.LCFI7:
+	.cfi_def_cfa_offset 16
+	str	r0, [sp, #4]
 	.loc 1 90 0
-	call	s3ePointerUpdate@PLT
+	bl	s3ePointerUpdate(PLT)
 	.loc 1 91 0
-	leal	4(%esp), %esp
-	popl	%ebx
-	.cfi_restore 3
-	popl	%ebp
-	.cfi_restore 5
-	.cfi_def_cfa 4, 4
-	ret
+	add	sp, sp, #12
+	@ sp needed
+	ldr	pc, [sp], #4
 	.cfi_endproc
 .LFE7:
 	.size	_ZN5Input6UpdateEv, .-_ZN5Input6UpdateEv
-	.align 2
-	.globl	_ZN5Input5ResetEv
+	.section	.text._ZN5Input5ResetEv,"ax",%progbits
+	.align	2
+	.global	_ZN5Input5ResetEv
 	.hidden	_ZN5Input5ResetEv
-	.type	_ZN5Input5ResetEv, @function
+	.type	_ZN5Input5ResetEv, %function
 _ZN5Input5ResetEv:
 .LFB8:
 	.loc 1 94 0
 	.cfi_startproc
-	pushl	%ebp
+	@ args = 0, pretend = 0, frame = 8
+	@ frame_needed = 0, uses_anonymous_args = 0
+	@ link register save eliminated.
+	sub	sp, sp, #8
+.LCFI8:
 	.cfi_def_cfa_offset 8
-	.cfi_offset 5, -8
-	leal	(%esp), %ebp
-	.cfi_def_cfa_register 5
+	str	r0, [sp, #4]
 	.loc 1 95 0
-	movl	8(%ebp), %eax
-	movb	$0, 9(%eax)
+	ldr	r3, [sp, #4]
+	mov	r2, #0
+	strb	r2, [r3, #9]
 	.loc 1 96 0
-	movl	8(%ebp), %eax
-	movb	$0, 8(%eax)
+	ldr	r3, [sp, #4]
+	mov	r2, #0
+	strb	r2, [r3, #8]
 	.loc 1 97 0
-	popl	%ebp
-	.cfi_restore 5
-	.cfi_def_cfa 4, 4
-	ret
+	add	sp, sp, #8
+	@ sp needed
+	bx	lr
 	.cfi_endproc
 .LFE8:
 	.size	_ZN5Input5ResetEv, .-_ZN5Input5ResetEv
-	.section	.text.__x86.get_pc_thunk.cx,"axG",@progbits,__x86.get_pc_thunk.cx,comdat
-	.globl	__x86.get_pc_thunk.cx
-	.hidden	__x86.get_pc_thunk.cx
-	.type	__x86.get_pc_thunk.cx, @function
-__x86.get_pc_thunk.cx:
-.LFB9:
-	.cfi_startproc
-	nop
-	nop
-	nop
-	nop
-	nop
-	nop
-	nop
-	nop
-	movl	(%esp), %ecx
-	ret
-	.cfi_endproc
-.LFE9:
-	.section	.text.__x86.get_pc_thunk.bx,"axG",@progbits,__x86.get_pc_thunk.bx,comdat
-	.globl	__x86.get_pc_thunk.bx
-	.hidden	__x86.get_pc_thunk.bx
-	.type	__x86.get_pc_thunk.bx, @function
-__x86.get_pc_thunk.bx:
-.LFB10:
-	.cfi_startproc
-	nop
-	nop
-	nop
-	nop
-	nop
-	nop
-	nop
-	nop
-	movl	(%esp), %ebx
-	ret
-	.cfi_endproc
-.LFE10:
 	.text
 .Letext0:
 	.file 2 "c:/marmalade/7.5/s3e/h/s3eTypes.h"
 	.file 3 "c:/marmalade/7.5/s3e/h/s3ePointer.h"
-	.file 4 "c:/Marmalade/7.5/examples/GameTutorial/CPP/Stage4/source/Input.h"
-	.section	.debug_info,"",@progbits
+	.file 4 "c:/Stage4/source/Input.h"
+	.section	.debug_info,"",%progbits
 .Ldebug_info0:
-	.long	0x40a
-	.value	0x4
-	.long	.Ldebug_abbrev0
+	.4byte	0x453
+	.2byte	0x2
+	.4byte	.Ldebug_abbrev0
 	.byte	0x4
 	.uleb128 0x1
-	.long	.LASF43
+	.4byte	.LASF43
 	.byte	0x4
-	.long	.LASF44
-	.long	.Ltext0
-	.long	.Letext0-.Ltext0
-	.long	.Ldebug_line0
+	.4byte	.LASF44
+	.4byte	.Ldebug_ranges0+0
+	.4byte	0
+	.4byte	0
+	.4byte	.Ldebug_line0
 	.uleb128 0x2
 	.byte	0x1
 	.byte	0x8
-	.long	.LASF0
+	.4byte	.LASF0
 	.uleb128 0x2
 	.byte	0x1
 	.byte	0x6
-	.long	.LASF1
+	.4byte	.LASF1
 	.uleb128 0x2
 	.byte	0x2
 	.byte	0x7
-	.long	.LASF2
+	.4byte	.LASF2
 	.uleb128 0x2
 	.byte	0x2
 	.byte	0x5
-	.long	.LASF3
+	.4byte	.LASF3
 	.uleb128 0x2
 	.byte	0x4
 	.byte	0x7
-	.long	.LASF4
+	.4byte	.LASF4
 	.uleb128 0x3
 	.byte	0x4
 	.byte	0x5
-	.string	"int"
+	.ascii	"int\000"
 	.uleb128 0x2
 	.byte	0x8
 	.byte	0x7
-	.long	.LASF5
+	.4byte	.LASF5
 	.uleb128 0x2
 	.byte	0x8
 	.byte	0x5
-	.long	.LASF6
+	.4byte	.LASF6
 	.uleb128 0x2
 	.byte	0x4
 	.byte	0x7
-	.long	.LASF7
+	.4byte	.LASF7
 	.uleb128 0x2
 	.byte	0x4
 	.byte	0x5
-	.long	.LASF8
+	.4byte	.LASF8
 	.uleb128 0x4
-	.long	.LASF9
+	.4byte	.LASF9
 	.byte	0x2
 	.byte	0x88
-	.long	0x3d
+	.4byte	0x41
 	.uleb128 0x4
-	.long	.LASF10
+	.4byte	.LASF10
 	.byte	0x2
 	.byte	0x8f
-	.long	0x44
+	.4byte	0x48
 	.uleb128 0x2
 	.byte	0x2
 	.byte	0x7
-	.long	.LASF11
+	.4byte	.LASF11
 	.uleb128 0x5
-	.long	.LASF19
+	.4byte	.LASF19
 	.byte	0x4
 	.byte	0x3
-	.value	0x167
-	.long	0xbc
+	.2byte	0x167
+	.4byte	0xc0
 	.uleb128 0x6
-	.long	.LASF12
+	.4byte	.LASF12
 	.sleb128 0
 	.uleb128 0x6
-	.long	.LASF13
+	.4byte	.LASF13
 	.sleb128 0
 	.uleb128 0x6
-	.long	.LASF14
+	.4byte	.LASF14
 	.sleb128 1
 	.uleb128 0x6
-	.long	.LASF15
+	.4byte	.LASF15
 	.sleb128 2
 	.uleb128 0x6
-	.long	.LASF16
+	.4byte	.LASF16
 	.sleb128 3
 	.uleb128 0x6
-	.long	.LASF17
+	.4byte	.LASF17
 	.sleb128 4
 	.uleb128 0x6
-	.long	.LASF18
+	.4byte	.LASF18
 	.sleb128 5
 	.byte	0
 	.uleb128 0x7
-	.long	.LASF19
+	.4byte	.LASF19
 	.byte	0x3
-	.value	0x17d
-	.long	0x84
+	.2byte	0x17d
+	.4byte	0x88
 	.uleb128 0x8
-	.long	.LASF22
+	.4byte	.LASF22
 	.byte	0x10
 	.byte	0x3
-	.value	0x182
-	.long	0x10a
+	.2byte	0x182
+	.4byte	0x116
 	.uleb128 0x9
-	.long	.LASF20
+	.4byte	.LASF20
 	.byte	0x3
-	.value	0x185
-	.long	0xbc
-	.byte	0
+	.2byte	0x185
+	.4byte	0xc0
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
 	.uleb128 0x9
-	.long	.LASF21
+	.4byte	.LASF21
 	.byte	0x3
-	.value	0x187
-	.long	0x67
-	.byte	0x4
+	.2byte	0x187
+	.4byte	0x6b
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x4
 	.uleb128 0xa
-	.string	"m_x"
+	.ascii	"m_x\000"
 	.byte	0x3
-	.value	0x189
-	.long	0x72
-	.byte	0x8
+	.2byte	0x189
+	.4byte	0x76
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x8
 	.uleb128 0xa
-	.string	"m_y"
+	.ascii	"m_y\000"
 	.byte	0x3
-	.value	0x18b
-	.long	0x72
-	.byte	0xc
+	.2byte	0x18b
+	.4byte	0x76
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0xc
 	.byte	0
 	.uleb128 0x7
-	.long	.LASF22
+	.4byte	.LASF22
 	.byte	0x3
-	.value	0x18c
-	.long	0xc8
+	.2byte	0x18c
+	.4byte	0xcc
 	.uleb128 0x8
-	.long	.LASF23
+	.4byte	.LASF23
 	.byte	0x8
 	.byte	0x3
-	.value	0x191
-	.long	0x13e
+	.2byte	0x191
+	.4byte	0x14e
 	.uleb128 0xa
-	.string	"m_x"
+	.ascii	"m_x\000"
 	.byte	0x3
-	.value	0x194
-	.long	0x72
-	.byte	0
+	.2byte	0x194
+	.4byte	0x76
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
 	.uleb128 0xa
-	.string	"m_y"
+	.ascii	"m_y\000"
 	.byte	0x3
-	.value	0x196
-	.long	0x72
-	.byte	0x4
+	.2byte	0x196
+	.4byte	0x76
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x4
 	.byte	0
 	.uleb128 0x7
-	.long	.LASF23
+	.4byte	.LASF23
 	.byte	0x3
-	.value	0x197
-	.long	0x116
+	.2byte	0x197
+	.4byte	0x122
 	.uleb128 0x8
-	.long	.LASF24
+	.4byte	.LASF24
 	.byte	0x10
 	.byte	0x3
-	.value	0x19c
-	.long	0x18c
+	.2byte	0x19c
+	.4byte	0x1a4
 	.uleb128 0x9
-	.long	.LASF25
+	.4byte	.LASF25
 	.byte	0x3
-	.value	0x1a3
-	.long	0x67
-	.byte	0
+	.2byte	0x1a3
+	.4byte	0x6b
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
 	.uleb128 0x9
-	.long	.LASF21
+	.4byte	.LASF21
 	.byte	0x3
-	.value	0x1a5
-	.long	0x67
-	.byte	0x4
+	.2byte	0x1a5
+	.4byte	0x6b
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x4
 	.uleb128 0xa
-	.string	"m_x"
+	.ascii	"m_x\000"
 	.byte	0x3
-	.value	0x1a7
-	.long	0x72
-	.byte	0x8
-	.uleb128 0xa
-	.string	"m_y"
-	.byte	0x3
-	.value	0x1a9
-	.long	0x72
-	.byte	0xc
-	.byte	0
-	.uleb128 0x7
-	.long	.LASF24
-	.byte	0x3
-	.value	0x1aa
-	.long	0x14a
+	.2byte	0x1a7
+	.4byte	0x76
+	.byte	0x2
+	.byte	0x23
 	.uleb128 0x8
-	.long	.LASF26
-	.byte	0xc
-	.byte	0x3
-	.value	0x1af
-	.long	0x1cd
-	.uleb128 0x9
-	.long	.LASF25
-	.byte	0x3
-	.value	0x1b6
-	.long	0x67
-	.byte	0
 	.uleb128 0xa
-	.string	"m_x"
+	.ascii	"m_y\000"
 	.byte	0x3
-	.value	0x1b8
-	.long	0x72
-	.byte	0x4
-	.uleb128 0xa
-	.string	"m_y"
-	.byte	0x3
-	.value	0x1ba
-	.long	0x72
-	.byte	0x8
+	.2byte	0x1a9
+	.4byte	0x76
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0xc
 	.byte	0
 	.uleb128 0x7
-	.long	.LASF26
+	.4byte	.LASF24
 	.byte	0x3
-	.value	0x1bb
-	.long	0x198
+	.2byte	0x1aa
+	.4byte	0x15a
+	.uleb128 0x8
+	.4byte	.LASF26
+	.byte	0xc
+	.byte	0x3
+	.2byte	0x1af
+	.4byte	0x1eb
+	.uleb128 0x9
+	.4byte	.LASF25
+	.byte	0x3
+	.2byte	0x1b6
+	.4byte	0x6b
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0xa
+	.ascii	"m_x\000"
+	.byte	0x3
+	.2byte	0x1b8
+	.4byte	0x76
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x4
+	.uleb128 0xa
+	.ascii	"m_y\000"
+	.byte	0x3
+	.2byte	0x1ba
+	.4byte	0x76
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x8
+	.byte	0
+	.uleb128 0x7
+	.4byte	.LASF26
+	.byte	0x3
+	.2byte	0x1bb
+	.4byte	0x1b0
 	.uleb128 0xb
-	.long	.LASF33
+	.4byte	.LASF29
 	.byte	0xc
 	.byte	0x4
 	.byte	0x2a
-	.long	0x2b8
+	.4byte	0x2e8
 	.uleb128 0xc
-	.string	"m_X"
+	.ascii	"m_X\000"
 	.byte	0x4
 	.byte	0x2d
-	.long	0x44
-	.byte	0
-	.byte	0x1
+	.4byte	0x48
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
 	.uleb128 0xc
-	.string	"m_Y"
+	.ascii	"m_Y\000"
 	.byte	0x4
 	.byte	0x2d
-	.long	0x44
-	.byte	0x4
-	.byte	0x1
+	.4byte	0x48
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x4
 	.uleb128 0xd
-	.long	.LASF27
+	.4byte	.LASF27
 	.byte	0x4
 	.byte	0x2e
-	.long	0x2b8
-	.byte	0x8
-	.byte	0x1
+	.4byte	0x2e8
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x8
 	.uleb128 0xd
-	.long	.LASF28
+	.4byte	.LASF28
 	.byte	0x4
 	.byte	0x2f
-	.long	0x2b8
-	.byte	0x9
-	.byte	0x1
+	.4byte	0x2e8
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x9
 	.uleb128 0xe
-	.long	.LASF33
+	.byte	0x1
+	.4byte	.LASF29
 	.byte	0x4
 	.byte	0x32
+	.4byte	0x2ef
 	.byte	0x1
-	.long	0x229
-	.long	0x22f
+	.4byte	0x250
+	.4byte	0x257
 	.uleb128 0xf
-	.long	0x2bf
+	.4byte	0x2ef
+	.byte	0x1
 	.byte	0
 	.uleb128 0x10
-	.long	.LASF29
+	.byte	0x1
+	.4byte	.LASF30
 	.byte	0x4
 	.byte	0x39
-	.long	.LASF31
+	.4byte	.LASF32
 	.byte	0x1
-	.long	0x243
-	.long	0x249
+	.4byte	0x26c
+	.4byte	0x273
 	.uleb128 0xf
-	.long	0x2bf
+	.4byte	0x2ef
+	.byte	0x1
 	.byte	0
 	.uleb128 0x10
-	.long	.LASF30
+	.byte	0x1
+	.4byte	.LASF31
 	.byte	0x4
 	.byte	0x3f
-	.long	.LASF32
+	.4byte	.LASF33
 	.byte	0x1
-	.long	0x25d
-	.long	0x263
+	.4byte	0x288
+	.4byte	0x28f
 	.uleb128 0xf
-	.long	0x2bf
+	.4byte	0x2ef
+	.byte	0x1
 	.byte	0
 	.uleb128 0x11
-	.long	.LASF34
+	.byte	0x1
+	.4byte	.LASF34
 	.byte	0x4
 	.byte	0x42
-	.long	.LASF36
+	.4byte	.LASF36
 	.byte	0x1
-	.long	0x279
+	.4byte	0x2a6
 	.uleb128 0x12
-	.long	0x2c5
+	.4byte	0x2f5
 	.byte	0
 	.uleb128 0x11
-	.long	.LASF35
+	.byte	0x1
+	.4byte	.LASF35
 	.byte	0x4
 	.byte	0x43
-	.long	.LASF37
+	.4byte	.LASF37
 	.byte	0x1
-	.long	0x28f
+	.4byte	0x2bd
 	.uleb128 0x12
-	.long	0x2cb
+	.4byte	0x2fb
 	.byte	0
 	.uleb128 0x11
-	.long	.LASF38
+	.byte	0x1
+	.4byte	.LASF38
 	.byte	0x4
 	.byte	0x44
-	.long	.LASF39
+	.4byte	.LASF39
 	.byte	0x1
-	.long	0x2a5
+	.4byte	0x2d4
 	.uleb128 0x12
-	.long	0x2d1
+	.4byte	0x301
 	.byte	0
 	.uleb128 0x13
-	.long	.LASF45
+	.byte	0x1
+	.4byte	.LASF45
 	.byte	0x4
 	.byte	0x45
-	.long	.LASF46
+	.4byte	.LASF46
 	.byte	0x1
 	.uleb128 0x12
-	.long	0x2d7
+	.4byte	0x307
 	.byte	0
 	.byte	0
 	.uleb128 0x2
 	.byte	0x1
 	.byte	0x2
-	.long	.LASF40
+	.4byte	.LASF40
 	.uleb128 0x14
 	.byte	0x4
-	.long	0x1d9
+	.4byte	0x1f7
 	.uleb128 0x14
 	.byte	0x4
-	.long	0x10a
+	.4byte	0x116
 	.uleb128 0x14
 	.byte	0x4
-	.long	0x13e
+	.4byte	0x14e
 	.uleb128 0x14
 	.byte	0x4
-	.long	0x18c
+	.4byte	0x1a4
 	.uleb128 0x14
 	.byte	0x4
-	.long	0x1cd
+	.4byte	0x1eb
 	.uleb128 0x15
-	.long	0x263
+	.4byte	0x28f
 	.byte	0x1
 	.byte	0x18
-	.long	.LFB0
-	.long	.LFE0-.LFB0
-	.uleb128 0x1
-	.byte	0x9c
-	.long	0x301
+	.4byte	.LFB0
+	.4byte	.LFE0
+	.4byte	.LLST0
+	.byte	0x1
+	.4byte	0x334
 	.uleb128 0x16
-	.long	.LASF41
+	.4byte	.LASF41
 	.byte	0x1
 	.byte	0x18
-	.long	0x2c5
-	.uleb128 0x2
+	.4byte	0x2f5
+	.byte	0x2
 	.byte	0x91
-	.sleb128 0
+	.sleb128 -4
 	.byte	0
 	.uleb128 0x15
-	.long	0x279
+	.4byte	0x2a6
 	.byte	0x1
 	.byte	0x27
-	.long	.LFB1
-	.long	.LFE1-.LFB1
-	.uleb128 0x1
-	.byte	0x9c
-	.long	0x325
+	.4byte	.LFB1
+	.4byte	.LFE1
+	.4byte	.LLST1
+	.byte	0x1
+	.4byte	0x35b
 	.uleb128 0x16
-	.long	.LASF41
+	.4byte	.LASF41
 	.byte	0x1
 	.byte	0x27
-	.long	0x2cb
-	.uleb128 0x2
+	.4byte	0x2fb
+	.byte	0x2
 	.byte	0x91
-	.sleb128 0
+	.sleb128 -4
 	.byte	0
 	.uleb128 0x15
-	.long	0x28f
+	.4byte	0x2bd
 	.byte	0x1
 	.byte	0x34
-	.long	.LFB2
-	.long	.LFE2-.LFB2
-	.uleb128 0x1
-	.byte	0x9c
-	.long	0x349
+	.4byte	.LFB2
+	.4byte	.LFE2
+	.4byte	.LLST2
+	.byte	0x1
+	.4byte	0x382
 	.uleb128 0x16
-	.long	.LASF41
+	.4byte	.LASF41
 	.byte	0x1
 	.byte	0x34
-	.long	0x2d1
-	.uleb128 0x2
+	.4byte	0x301
+	.byte	0x2
 	.byte	0x91
-	.sleb128 0
+	.sleb128 -4
 	.byte	0
 	.uleb128 0x15
-	.long	0x2a5
+	.4byte	0x2d4
 	.byte	0x1
 	.byte	0x43
-	.long	.LFB3
-	.long	.LFE3-.LFB3
-	.uleb128 0x1
-	.byte	0x9c
-	.long	0x36d
+	.4byte	.LFB3
+	.4byte	.LFE3
+	.4byte	.LLST3
+	.byte	0x1
+	.4byte	0x3a9
 	.uleb128 0x16
-	.long	.LASF41
+	.4byte	.LASF41
 	.byte	0x1
 	.byte	0x43
-	.long	0x2d7
-	.uleb128 0x2
+	.4byte	0x307
+	.byte	0x2
 	.byte	0x91
-	.sleb128 0
+	.sleb128 -4
 	.byte	0
 	.uleb128 0x17
-	.long	0x219
+	.4byte	0x23b
 	.byte	0x1
 	.byte	0x49
 	.byte	0
-	.long	0x37d
-	.long	0x387
+	.4byte	0x3b9
+	.4byte	0x3c4
 	.uleb128 0x18
-	.long	.LASF42
-	.long	0x387
+	.4byte	.LASF42
+	.4byte	0x3c4
+	.byte	0x1
 	.byte	0
 	.uleb128 0x19
-	.long	0x2bf
+	.4byte	0x2ef
 	.uleb128 0x1a
-	.long	0x36d
-	.long	.LASF47
-	.long	.LFB5
-	.long	.LFE5-.LFB5
-	.uleb128 0x1
-	.byte	0x9c
-	.long	0x3a7
-	.long	0x3b0
+	.4byte	0x3a9
+	.4byte	.LASF47
+	.4byte	.LFB5
+	.4byte	.LFE5
+	.4byte	.LLST4
+	.4byte	0x3e7
+	.byte	0x1
+	.4byte	0x3f0
 	.uleb128 0x1b
-	.long	0x37d
-	.uleb128 0x2
+	.4byte	0x3b9
+	.byte	0x2
 	.byte	0x91
-	.sleb128 0
+	.sleb128 -12
 	.byte	0
 	.uleb128 0x1c
-	.long	0x22f
+	.4byte	0x257
 	.byte	0x1
 	.byte	0x58
-	.long	.LFB7
-	.long	.LFE7-.LFB7
-	.uleb128 0x1
-	.byte	0x9c
-	.long	0x3c9
-	.long	0x3d6
+	.4byte	.LFB7
+	.4byte	.LFE7
+	.4byte	.LLST5
+	.4byte	0x40c
+	.byte	0x1
+	.4byte	0x41a
 	.uleb128 0x1d
-	.long	.LASF42
-	.long	0x387
-	.uleb128 0x2
+	.4byte	.LASF42
+	.4byte	0x3c4
+	.byte	0x1
+	.byte	0x2
 	.byte	0x91
-	.sleb128 0
+	.sleb128 -12
 	.byte	0
 	.uleb128 0x1e
-	.long	0x249
+	.4byte	0x273
 	.byte	0x1
 	.byte	0x5d
-	.long	.LFB8
-	.long	.LFE8-.LFB8
-	.uleb128 0x1
-	.byte	0x9c
-	.long	0x3ef
-	.long	0x3fc
+	.4byte	.LFB8
+	.4byte	.LFE8
+	.4byte	.LLST6
+	.4byte	0x436
+	.byte	0x1
+	.4byte	0x444
 	.uleb128 0x1d
-	.long	.LASF42
-	.long	0x387
-	.uleb128 0x2
+	.4byte	.LASF42
+	.4byte	0x3c4
+	.byte	0x1
+	.byte	0x2
 	.byte	0x91
-	.sleb128 0
+	.sleb128 -4
 	.byte	0
 	.uleb128 0x1f
-	.long	.LASF48
+	.4byte	.LASF48
 	.byte	0x1
 	.byte	0xf
-	.long	0x2bf
-	.uleb128 0x5
+	.4byte	0x2ef
+	.byte	0x1
+	.byte	0x5
 	.byte	0x3
-	.long	g_pInput
+	.4byte	g_pInput
 	.byte	0
-	.section	.debug_abbrev,"",@progbits
+	.section	.debug_abbrev,"",%progbits
 .Ldebug_abbrev0:
 	.uleb128 0x1
 	.uleb128 0x11
@@ -846,12 +957,14 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0xb
 	.uleb128 0x3
 	.uleb128 0xe
+	.uleb128 0x55
+	.uleb128 0x6
 	.uleb128 0x11
 	.uleb128 0x1
-	.uleb128 0x12
-	.uleb128 0x6
+	.uleb128 0x52
+	.uleb128 0x1
 	.uleb128 0x10
-	.uleb128 0x17
+	.uleb128 0x6
 	.byte	0
 	.byte	0
 	.uleb128 0x2
@@ -953,7 +1066,7 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x49
 	.uleb128 0x13
 	.uleb128 0x38
-	.uleb128 0xb
+	.uleb128 0xa
 	.byte	0
 	.byte	0
 	.uleb128 0xa
@@ -968,7 +1081,7 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x49
 	.uleb128 0x13
 	.uleb128 0x38
-	.uleb128 0xb
+	.uleb128 0xa
 	.byte	0
 	.byte	0
 	.uleb128 0xb
@@ -998,9 +1111,7 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x49
 	.uleb128 0x13
 	.uleb128 0x38
-	.uleb128 0xb
-	.uleb128 0x32
-	.uleb128 0xb
+	.uleb128 0xa
 	.byte	0
 	.byte	0
 	.uleb128 0xd
@@ -1015,26 +1126,24 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x49
 	.uleb128 0x13
 	.uleb128 0x38
-	.uleb128 0xb
-	.uleb128 0x32
-	.uleb128 0xb
+	.uleb128 0xa
 	.byte	0
 	.byte	0
 	.uleb128 0xe
 	.uleb128 0x2e
 	.byte	0x1
 	.uleb128 0x3f
-	.uleb128 0x19
+	.uleb128 0xc
 	.uleb128 0x3
 	.uleb128 0xe
 	.uleb128 0x3a
 	.uleb128 0xb
 	.uleb128 0x3b
 	.uleb128 0xb
-	.uleb128 0x32
-	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
 	.uleb128 0x3c
-	.uleb128 0x19
+	.uleb128 0xc
 	.uleb128 0x64
 	.uleb128 0x13
 	.uleb128 0x1
@@ -1047,26 +1156,24 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x49
 	.uleb128 0x13
 	.uleb128 0x34
-	.uleb128 0x19
+	.uleb128 0xc
 	.byte	0
 	.byte	0
 	.uleb128 0x10
 	.uleb128 0x2e
 	.byte	0x1
 	.uleb128 0x3f
-	.uleb128 0x19
+	.uleb128 0xc
 	.uleb128 0x3
 	.uleb128 0xe
 	.uleb128 0x3a
 	.uleb128 0xb
 	.uleb128 0x3b
 	.uleb128 0xb
-	.uleb128 0x6e
+	.uleb128 0x2007
 	.uleb128 0xe
-	.uleb128 0x32
-	.uleb128 0xb
 	.uleb128 0x3c
-	.uleb128 0x19
+	.uleb128 0xc
 	.uleb128 0x64
 	.uleb128 0x13
 	.uleb128 0x1
@@ -1077,19 +1184,17 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x2e
 	.byte	0x1
 	.uleb128 0x3f
-	.uleb128 0x19
+	.uleb128 0xc
 	.uleb128 0x3
 	.uleb128 0xe
 	.uleb128 0x3a
 	.uleb128 0xb
 	.uleb128 0x3b
 	.uleb128 0xb
-	.uleb128 0x6e
+	.uleb128 0x2007
 	.uleb128 0xe
-	.uleb128 0x32
-	.uleb128 0xb
 	.uleb128 0x3c
-	.uleb128 0x19
+	.uleb128 0xc
 	.uleb128 0x1
 	.uleb128 0x13
 	.byte	0
@@ -1105,19 +1210,17 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x2e
 	.byte	0x1
 	.uleb128 0x3f
-	.uleb128 0x19
+	.uleb128 0xc
 	.uleb128 0x3
 	.uleb128 0xe
 	.uleb128 0x3a
 	.uleb128 0xb
 	.uleb128 0x3b
 	.uleb128 0xb
-	.uleb128 0x6e
+	.uleb128 0x2007
 	.uleb128 0xe
-	.uleb128 0x32
-	.uleb128 0xb
 	.uleb128 0x3c
-	.uleb128 0x19
+	.uleb128 0xc
 	.byte	0
 	.byte	0
 	.uleb128 0x14
@@ -1141,11 +1244,11 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x11
 	.uleb128 0x1
 	.uleb128 0x12
-	.uleb128 0x6
+	.uleb128 0x1
 	.uleb128 0x40
-	.uleb128 0x18
+	.uleb128 0x6
 	.uleb128 0x2117
-	.uleb128 0x19
+	.uleb128 0xc
 	.uleb128 0x1
 	.uleb128 0x13
 	.byte	0
@@ -1162,7 +1265,7 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x49
 	.uleb128 0x13
 	.uleb128 0x2
-	.uleb128 0x18
+	.uleb128 0xa
 	.byte	0
 	.byte	0
 	.uleb128 0x17
@@ -1190,7 +1293,7 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x49
 	.uleb128 0x13
 	.uleb128 0x34
-	.uleb128 0x19
+	.uleb128 0xc
 	.byte	0
 	.byte	0
 	.uleb128 0x19
@@ -1205,18 +1308,18 @@ __x86.get_pc_thunk.bx:
 	.byte	0x1
 	.uleb128 0x31
 	.uleb128 0x13
-	.uleb128 0x6e
+	.uleb128 0x2007
 	.uleb128 0xe
 	.uleb128 0x11
 	.uleb128 0x1
 	.uleb128 0x12
-	.uleb128 0x6
+	.uleb128 0x1
 	.uleb128 0x40
-	.uleb128 0x18
+	.uleb128 0x6
 	.uleb128 0x64
 	.uleb128 0x13
 	.uleb128 0x2116
-	.uleb128 0x19
+	.uleb128 0xc
 	.uleb128 0x1
 	.uleb128 0x13
 	.byte	0
@@ -1227,7 +1330,7 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x31
 	.uleb128 0x13
 	.uleb128 0x2
-	.uleb128 0x18
+	.uleb128 0xa
 	.byte	0
 	.byte	0
 	.uleb128 0x1c
@@ -1242,13 +1345,13 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x11
 	.uleb128 0x1
 	.uleb128 0x12
-	.uleb128 0x6
+	.uleb128 0x1
 	.uleb128 0x40
-	.uleb128 0x18
+	.uleb128 0x6
 	.uleb128 0x64
 	.uleb128 0x13
 	.uleb128 0x2116
-	.uleb128 0x19
+	.uleb128 0xc
 	.uleb128 0x1
 	.uleb128 0x13
 	.byte	0
@@ -1261,9 +1364,9 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x49
 	.uleb128 0x13
 	.uleb128 0x34
-	.uleb128 0x19
+	.uleb128 0xc
 	.uleb128 0x2
-	.uleb128 0x18
+	.uleb128 0xa
 	.byte	0
 	.byte	0
 	.uleb128 0x1e
@@ -1278,13 +1381,13 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x11
 	.uleb128 0x1
 	.uleb128 0x12
-	.uleb128 0x6
+	.uleb128 0x1
 	.uleb128 0x40
-	.uleb128 0x18
+	.uleb128 0x6
 	.uleb128 0x64
 	.uleb128 0x13
 	.uleb128 0x2117
-	.uleb128 0x19
+	.uleb128 0xc
 	.uleb128 0x1
 	.uleb128 0x13
 	.byte	0
@@ -1301,125 +1404,266 @@ __x86.get_pc_thunk.bx:
 	.uleb128 0x49
 	.uleb128 0x13
 	.uleb128 0x3f
-	.uleb128 0x19
+	.uleb128 0xc
 	.uleb128 0x2
-	.uleb128 0x18
+	.uleb128 0xa
 	.byte	0
 	.byte	0
 	.byte	0
-	.section	.debug_aranges,"",@progbits
-	.long	0x1c
-	.value	0x2
-	.long	.Ldebug_info0
+	.section	.debug_loc,"",%progbits
+.Ldebug_loc0:
+.LLST0:
+	.4byte	.LFB0
+	.4byte	.LCFI0
+	.2byte	0x2
+	.byte	0x7d
+	.sleb128 0
+	.4byte	.LCFI0
+	.4byte	.LFE0
+	.2byte	0x2
+	.byte	0x7d
+	.sleb128 8
+	.4byte	0
+	.4byte	0
+.LLST1:
+	.4byte	.LFB1
+	.4byte	.LCFI1
+	.2byte	0x2
+	.byte	0x7d
+	.sleb128 0
+	.4byte	.LCFI1
+	.4byte	.LFE1
+	.2byte	0x2
+	.byte	0x7d
+	.sleb128 8
+	.4byte	0
+	.4byte	0
+.LLST2:
+	.4byte	.LFB2
+	.4byte	.LCFI2
+	.2byte	0x2
+	.byte	0x7d
+	.sleb128 0
+	.4byte	.LCFI2
+	.4byte	.LFE2
+	.2byte	0x2
+	.byte	0x7d
+	.sleb128 8
+	.4byte	0
+	.4byte	0
+.LLST3:
+	.4byte	.LFB3
+	.4byte	.LCFI3
+	.2byte	0x2
+	.byte	0x7d
+	.sleb128 0
+	.4byte	.LCFI3
+	.4byte	.LFE3
+	.2byte	0x2
+	.byte	0x7d
+	.sleb128 8
+	.4byte	0
+	.4byte	0
+.LLST4:
+	.4byte	.LFB5
+	.4byte	.LCFI4
+	.2byte	0x2
+	.byte	0x7d
+	.sleb128 0
+	.4byte	.LCFI4
+	.4byte	.LCFI5
+	.2byte	0x2
+	.byte	0x7d
+	.sleb128 4
+	.4byte	.LCFI5
+	.4byte	.LFE5
+	.2byte	0x2
+	.byte	0x7d
+	.sleb128 16
+	.4byte	0
+	.4byte	0
+.LLST5:
+	.4byte	.LFB7
+	.4byte	.LCFI6
+	.2byte	0x2
+	.byte	0x7d
+	.sleb128 0
+	.4byte	.LCFI6
+	.4byte	.LCFI7
+	.2byte	0x2
+	.byte	0x7d
+	.sleb128 4
+	.4byte	.LCFI7
+	.4byte	.LFE7
+	.2byte	0x2
+	.byte	0x7d
+	.sleb128 16
+	.4byte	0
+	.4byte	0
+.LLST6:
+	.4byte	.LFB8
+	.4byte	.LCFI8
+	.2byte	0x2
+	.byte	0x7d
+	.sleb128 0
+	.4byte	.LCFI8
+	.4byte	.LFE8
+	.2byte	0x2
+	.byte	0x7d
+	.sleb128 8
+	.4byte	0
+	.4byte	0
+	.section	.debug_aranges,"",%progbits
+	.4byte	0x4c
+	.2byte	0x2
+	.4byte	.Ldebug_info0
 	.byte	0x4
 	.byte	0
-	.value	0
-	.value	0
-	.long	.Ltext0
-	.long	.Letext0-.Ltext0
-	.long	0
-	.long	0
-	.section	.debug_line,"",@progbits
+	.2byte	0
+	.2byte	0
+	.4byte	.LFB0
+	.4byte	.LFE0-.LFB0
+	.4byte	.LFB1
+	.4byte	.LFE1-.LFB1
+	.4byte	.LFB2
+	.4byte	.LFE2-.LFB2
+	.4byte	.LFB3
+	.4byte	.LFE3-.LFB3
+	.4byte	.LFB5
+	.4byte	.LFE5-.LFB5
+	.4byte	.LFB7
+	.4byte	.LFE7-.LFB7
+	.4byte	.LFB8
+	.4byte	.LFE8-.LFB8
+	.4byte	0
+	.4byte	0
+	.section	.debug_ranges,"",%progbits
+.Ldebug_ranges0:
+	.4byte	.LFB0
+	.4byte	.LFE0
+	.4byte	.LFB1
+	.4byte	.LFE1
+	.4byte	.LFB2
+	.4byte	.LFE2
+	.4byte	.LFB3
+	.4byte	.LFE3
+	.4byte	.LFB5
+	.4byte	.LFE5
+	.4byte	.LFB7
+	.4byte	.LFE7
+	.4byte	.LFB8
+	.4byte	.LFE8
+	.4byte	0
+	.4byte	0
+	.section	.debug_line,"",%progbits
 .Ldebug_line0:
-	.section	.debug_str,"MS",@progbits,1
+	.section	.debug_str,"MS",%progbits,1
 .LASF27:
-	.string	"m_Touched"
+	.ascii	"m_Touched\000"
 .LASF28:
-	.string	"m_PrevTouched"
+	.ascii	"m_PrevTouched\000"
 .LASF46:
-	.string	"_ZN5Input18MultiTouchMotionCBEP26s3ePointerTouchMotionEvent"
+	.ascii	"_ZN5Input18MultiTouchMotionCBEP26s3ePointerTouchMot"
+	.ascii	"ionEvent\000"
 .LASF22:
-	.string	"s3ePointerEvent"
+	.ascii	"s3ePointerEvent\000"
 .LASF21:
-	.string	"m_Pressed"
-.LASF30:
-	.string	"Reset"
-.LASF3:
-	.string	"short int"
-.LASF32:
-	.string	"_ZN5Input5ResetEv"
+	.ascii	"m_Pressed\000"
 .LASF31:
-	.string	"_ZN5Input6UpdateEv"
-.LASF44:
-	.string	"c:/Marmalade/7.5/examples/GameTutorial/CPP/Stage4/source/input.cpp"
-.LASF40:
-	.string	"bool"
-.LASF41:
-	.string	"event"
-.LASF48:
-	.string	"g_pInput"
-.LASF6:
-	.string	"long long int"
-.LASF43:
-	.ascii	"GNU C++ 4.8 -fpreprocessed -mstackrealign -msse3 -m"
-	.string	"bionic -m32 -mtune=atom -march=i686 -g -O0 -funsigned-char -fno-strict-aliasing -fno-stack-protector -fno-short-enums -fshort-wchar -fmessage-length=0 -fasynchronous-unwind-tables -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fno-exceptions -frtti"
-.LASF8:
-	.string	"long int"
-.LASF25:
-	.string	"m_TouchID"
-.LASF19:
-	.string	"s3ePointerButton"
-.LASF20:
-	.string	"m_Button"
-.LASF26:
-	.string	"s3ePointerTouchMotionEvent"
-.LASF0:
-	.string	"unsigned char"
-.LASF24:
-	.string	"s3ePointerTouchEvent"
-.LASF39:
-	.string	"_ZN5Input18MultiTouchButtonCBEP20s3ePointerTouchEvent"
-.LASF1:
-	.string	"signed char"
-.LASF5:
-	.string	"long long unsigned int"
-.LASF36:
-	.string	"_ZN5Input13TouchButtonCBEP15s3ePointerEvent"
-.LASF4:
-	.string	"unsigned int"
-.LASF29:
-	.string	"Update"
-.LASF18:
-	.string	"S3E_POINTER_BUTTON_MAX"
-.LASF2:
-	.string	"short unsigned int"
-.LASF15:
-	.string	"S3E_POINTER_BUTTON_MIDDLEMOUSE"
-.LASF11:
-	.string	"wchar_t"
-.LASF23:
-	.string	"s3ePointerMotionEvent"
-.LASF16:
-	.string	"S3E_POINTER_BUTTON_MOUSEWHEELUP"
-.LASF42:
-	.string	"this"
-.LASF14:
-	.string	"S3E_POINTER_BUTTON_RIGHTMOUSE"
-.LASF12:
-	.string	"S3E_POINTER_BUTTON_SELECT"
-.LASF9:
-	.string	"uint32"
-.LASF38:
-	.string	"MultiTouchButtonCB"
-.LASF7:
-	.string	"long unsigned int"
-.LASF10:
-	.string	"int32"
-.LASF34:
-	.string	"TouchButtonCB"
-.LASF37:
-	.string	"_ZN5Input13TouchMotionCBEP21s3ePointerMotionEvent"
-.LASF47:
-	.string	"_ZN5InputC2Ev"
-.LASF13:
-	.string	"S3E_POINTER_BUTTON_LEFTMOUSE"
+	.ascii	"Reset\000"
+.LASF3:
+	.ascii	"short int\000"
 .LASF33:
-	.string	"Input"
+	.ascii	"_ZN5Input5ResetEv\000"
+.LASF32:
+	.ascii	"_ZN5Input6UpdateEv\000"
+.LASF40:
+	.ascii	"bool\000"
+.LASF41:
+	.ascii	"event\000"
+.LASF48:
+	.ascii	"g_pInput\000"
+.LASF6:
+	.ascii	"long long int\000"
+.LASF39:
+	.ascii	"_ZN5Input18MultiTouchButtonCBEP20s3ePointerTouchEve"
+	.ascii	"nt\000"
+.LASF8:
+	.ascii	"long int\000"
+.LASF25:
+	.ascii	"m_TouchID\000"
+.LASF19:
+	.ascii	"s3ePointerButton\000"
+.LASF20:
+	.ascii	"m_Button\000"
+.LASF26:
+	.ascii	"s3ePointerTouchMotionEvent\000"
+.LASF0:
+	.ascii	"unsigned char\000"
+.LASF24:
+	.ascii	"s3ePointerTouchEvent\000"
+.LASF1:
+	.ascii	"signed char\000"
+.LASF5:
+	.ascii	"long long unsigned int\000"
+.LASF36:
+	.ascii	"_ZN5Input13TouchButtonCBEP15s3ePointerEvent\000"
+.LASF4:
+	.ascii	"unsigned int\000"
+.LASF30:
+	.ascii	"Update\000"
+.LASF18:
+	.ascii	"S3E_POINTER_BUTTON_MAX\000"
+.LASF2:
+	.ascii	"short unsigned int\000"
+.LASF15:
+	.ascii	"S3E_POINTER_BUTTON_MIDDLEMOUSE\000"
+.LASF11:
+	.ascii	"wchar_t\000"
+.LASF23:
+	.ascii	"s3ePointerMotionEvent\000"
+.LASF16:
+	.ascii	"S3E_POINTER_BUTTON_MOUSEWHEELUP\000"
+.LASF42:
+	.ascii	"this\000"
+.LASF14:
+	.ascii	"S3E_POINTER_BUTTON_RIGHTMOUSE\000"
+.LASF43:
+	.ascii	"GNU C++ 4.8.3 20140228 (release) [ARM/embedded-4_8-"
+	.ascii	"branch revision 208322] -fpreprocessed -mstructure-"
+	.ascii	"size-boundary=8 -march=armv6 -mfloat-abi=soft -mthu"
+	.ascii	"mb-interwork -mword-relocations -g -gdwarf-2 -O0 -f"
+	.ascii	"unsigned-char -fno-strict-aliasing -fno-stack-prote"
+	.ascii	"ctor -fno-short-enums -fshort-wchar -fomit-frame-po"
+	.ascii	"inter -fmessage-length=0 -ffunction-sections -fvisi"
+	.ascii	"bility=hidden -fPIC -fvisibility-inlines-hidden -fn"
+	.ascii	"o-exceptions\000"
+.LASF12:
+	.ascii	"S3E_POINTER_BUTTON_SELECT\000"
+.LASF9:
+	.ascii	"uint32\000"
+.LASF44:
+	.ascii	"c:/Stage4/source/input.cpp\000"
+.LASF38:
+	.ascii	"MultiTouchButtonCB\000"
+.LASF7:
+	.ascii	"long unsigned int\000"
+.LASF10:
+	.ascii	"int32\000"
+.LASF34:
+	.ascii	"TouchButtonCB\000"
+.LASF37:
+	.ascii	"_ZN5Input13TouchMotionCBEP21s3ePointerMotionEvent\000"
+.LASF47:
+	.ascii	"_ZN5InputC2Ev\000"
+.LASF13:
+	.ascii	"S3E_POINTER_BUTTON_LEFTMOUSE\000"
+.LASF29:
+	.ascii	"Input\000"
 .LASF45:
-	.string	"MultiTouchMotionCB"
+	.ascii	"MultiTouchMotionCB\000"
 .LASF35:
-	.string	"TouchMotionCB"
+	.ascii	"TouchMotionCB\000"
 .LASF17:
-	.string	"S3E_POINTER_BUTTON_MOUSEWHEELDOWN"
-	.ident	"GCC: (GNU) 4.8"
-	.section	.note.GNU-stack,"",@progbits
+	.ascii	"S3E_POINTER_BUTTON_MOUSEWHEELDOWN\000"
+	.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.3 20140228 (release) [ARM/embedded-4_8-branch revision 208322]"

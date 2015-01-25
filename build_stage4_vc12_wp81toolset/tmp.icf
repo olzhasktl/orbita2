@@ -8,9 +8,3 @@ DataCacheSize=131072
 [s3e]
 SysAppVersion=0.0.1
 SysAppCaption="Stage4"
-SplashScreenFile=s3e_splash.jpg
-SplashScreenWidth=320
-SplashScreenHeight=320
-SplashScreenBkR=0xFF
-SplashScreenBkG=0xFF
-SplashScreenBkB=0xFF

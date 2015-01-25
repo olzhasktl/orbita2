@@ -1,5 +1,5 @@
 -c
-c:/Marmalade/7.5/examples/GameTutorial/CPP/Stage4/source/timer.cpp
+c:/Stage4/source/timer.cpp
 -o
 Debug_Stage4_vc12_gcc_x86_android//timer.obj
 -Ic:/marmalade/7.5/modules/iw2d/h
@@ -17,8 +17,8 @@ Debug_Stage4_vc12_gcc_x86_android//timer.obj
 -Ic:/marmalade/7.5/modules/iw2dscenegraph/h
 -Ic:/marmalade/7.5/modules/iw2dscenegraphcore/h
 -Ic:/marmalade/7.5/modules/iwtween/h
--Ic:/marmalade/7.5/examples/gametutorial/cpp/modules/soundengine/h
--Ic:/marmalade/7.5/examples/gametutorial/cpp/modules/soundengine/source
+-Ic:/stage4/modules/soundengine/h
+-Ic:/stage4/modules/soundengine/source
 -Ic:/marmalade/7.5/s3e/h
 -Ic:/marmalade/7.5/s3e/h/ext
 -Ic:/marmalade/7.5/s3e/h/std
@@ -46,7 +46,7 @@ Debug_Stage4_vc12_gcc_x86_android//timer.obj
 -O0
 -D__S3E_CL_WRAPPER
 -include
-c:/Marmalade/7.5/examples/GameTutorial/CPP/Stage4/build_stage4_vc12/temp_defines_debug.h
+c:/Stage4/build_stage4_vc12/temp_defines_debug.h
 -Wno-reorder
 -fvisibility-inlines-hidden
 -fno-exceptions

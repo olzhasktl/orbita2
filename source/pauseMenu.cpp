@@ -81,39 +81,40 @@ void PauseMenu::Init()
     background->m_AnchorY = 0.5;
     // Fit background to screen size
     background->m_ScaleX = (float)IwGxGetScreenWidth() / background->GetImage()->GetWidth();
-    background->m_ScaleY = (float)IwGxGetScreenHeight() / background->GetImage()->GetHeight();
+	background->m_ScaleY = (float)IwGxGetScreenHeight() / background->GetImage()->GetHeight();
     AddChild(background);
+	int y_pos = (float)IwGxGetScreenHeight() / 2;
 
     // Create Continue Game button
     continueGameButton = new CSprite();
     continueGameButton->SetImage(g_pResources->getMenuButton());
     int button_height = (int)(continueGameButton->GetImage()->GetHeight());
-    int y_pos = button_height * 2;
+    //int y_pos = button_height * 2;
     continueGameButton->m_X = (float)IwGxGetScreenWidth() / 2;
-    continueGameButton->m_Y = (float)y_pos;
+	continueGameButton->m_Y = (float)y_pos - button_height;
     continueGameButton->m_AnchorX = 0.5f;
     continueGameButton->m_AnchorY = 0;
     AddChild(continueGameButton);
 
     // Create Continue Game button text
-    CLabel* label = new CLabel();
-    label->m_X = continueGameButton->m_W / 2;
-    label->m_Y = continueGameButton->m_H / 2;
-    label->m_W = continueGameButton->m_W;
-    label->m_H = continueGameButton->m_H;
-    label->m_AnchorX = 0.5f;
-    label->m_AnchorY = 0.5f;
-    label->m_AlignHor = IW_2D_FONT_ALIGN_CENTRE;
-    label->m_AlignVer = IW_2D_FONT_ALIGN_CENTRE;
-    label->m_Font = g_pResources->getFont();
-    label->m_Text = "Continue",
-    label->m_Color = CColor(0xff, 0xff, 0xff, 0xff);
-    continueGameButton->AddChild(label);
-    y_pos += button_height;
+    //CLabel* label = new CLabel();
+    //label->m_X = continueGameButton->m_W / 2;
+    //label->m_Y = continueGameButton->m_H / 2;
+    //label->m_W = continueGameButton->m_W;
+    //label->m_H = continueGameButton->m_H;
+    //label->m_AnchorX = 0.5f;
+    //label->m_AnchorY = 0.5f;
+    //label->m_AlignHor = IW_2D_FONT_ALIGN_CENTRE;
+    //label->m_AlignVer = IW_2D_FONT_ALIGN_CENTRE;
+    //label->m_Font = g_pResources->getFont();
+    //label->m_Text = "Continue",
+    //label->m_Color = CColor(0xff, 0xff, 0xff, 0xff);
+    //continueGameButton->AddChild(label);
+    //y_pos += button_height;
 
     // Create New  Game button
     newGameButton = new CSprite();
-    newGameButton->SetImage(g_pResources->getMenuButton());
+    newGameButton->SetImage(g_pResources->getPlacard());
     newGameButton->m_X = (float)IwGxGetScreenWidth() / 2;
     newGameButton->m_Y = (float)y_pos;
     newGameButton->m_W = newGameButton->GetImage()->GetWidth();
@@ -123,19 +124,19 @@ void PauseMenu::Init()
     AddChild(newGameButton);
 
     // Create Continue Game button text
-    label = new CLabel();
-    label->m_X = newGameButton->m_W / 2;
-    label->m_Y = newGameButton->m_H / 2;
-    label->m_W = newGameButton->m_W;
-    label->m_H = newGameButton->m_H;
-    label->m_AnchorX = 0.5f;
-    label->m_AnchorY = 0.5f;
-    label->m_AlignHor = IW_2D_FONT_ALIGN_CENTRE;
-    label->m_AlignVer = IW_2D_FONT_ALIGN_CENTRE;
-    label->m_Font = g_pResources->getFont();
-    label->m_Text = "New Game",
-    label->m_Color = CColor(0xff, 0xff, 0xff, 0xff);
-    newGameButton->AddChild(label);
+    //label = new CLabel();
+    //label->m_X = newGameButton->m_W / 2;
+    //label->m_Y = newGameButton->m_H / 2;
+    //label->m_W = newGameButton->m_W;
+    //label->m_H = newGameButton->m_H;
+    //label->m_AnchorX = 0.5f;
+    //label->m_AnchorY = 0.5f;
+    //label->m_AlignHor = IW_2D_FONT_ALIGN_CENTRE;
+    //label->m_AlignVer = IW_2D_FONT_ALIGN_CENTRE;
+    //label->m_Font = g_pResources->getFont();
+    //label->m_Text = "New Game",
+    //label->m_Color = CColor(0xff, 0xff, 0xff, 0xff);
+    //newGameButton->AddChild(label);
     y_pos += button_height;
 
 }

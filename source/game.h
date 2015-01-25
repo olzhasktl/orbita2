@@ -13,6 +13,8 @@
 #if !defined(__GAME_H__)
 #define __GAME_H__
 #include <iostream>
+#include <cstdio>
+#include <ctime>
 #include "scene.h"
 #include "timer.h"
 
@@ -22,7 +24,11 @@ protected:
     int             currentRoundScore;              // Current round score
 	int p1, p2, p3, p4;
 	bool pl1, pl2, pl3, pl4;
-
+	std::clock_t start;
+	double duration;
+	std::vector<CSprite*> bonuses;
+	std::vector<bool> bonuses_deleted;
+	int cx, cy;
     // UI components
     CLabel*         scoreLabel;
     //CSprite*        pauseSprite;
@@ -42,7 +48,7 @@ protected:
 private:
 	void            initUI();
 	void            GameInitPlayers();
-	void			addBonus(Timer* timer, void* userData);
+	static void		addBonus(Timer* timer, void* userData);
 public:
     Game() {}
     ~Game();
@@ -52,7 +58,7 @@ public:
 
     // Update the game
     void            Update(float deltaTime = 0.0f, float alphaMul = 1.0f);
-
+	void            setTargetGem(int type);
     // Render the game
     void            Render();
 
@@ -65,7 +71,7 @@ public:
 	void			updatePlayer2();
 	void			updatePlayer3();
 	void			updatePlayer4();
-
+	bool			checkColision(CSprite* cs1, CSprite* cs2);
 };
 
 

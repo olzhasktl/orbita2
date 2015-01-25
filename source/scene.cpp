@@ -48,7 +48,7 @@ void Scene::Update(float deltaTime, float alphaMul)
         return;
 
     m_Tweener.Update(deltaTime);
-
+	//m_Timers.Update(deltaTime);
     CNode::Update(deltaTime, alphaMul);
 }
 

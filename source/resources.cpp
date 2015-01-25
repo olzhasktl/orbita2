@@ -25,7 +25,7 @@ Resources::Resources()
 	player4 = Iw2DCreateImage("textures/active_player4.png");
     MenuBG = Iw2DCreateImage("textures/menu_bkg.jpg");
     GameBG = Iw2DCreateImage("textures/bkg.jpg");
-    MenuButton = Iw2DCreateImage("textures/button_bg.png");
+    MenuButton = Iw2DCreateImage("textures/continue.png");
     Placard = Iw2DCreateImage("textures/placard.png");
     PauseIcon = Iw2DCreateImage("textures/pause_icon.png");
     PlayButton = Iw2DCreateImage("textures/play.png");
@@ -37,7 +37,7 @@ Resources::Resources()
 	PlayerImage4 = Iw2DCreateImage("textures/player4.png");
     // Load fonts
     Font = Iw2DCreateFont("fonts/arial8.gxfont");
-
+	boomImage = Iw2DCreateImage("textures/smoke_animation.png");
     // Create gem atlas
     int frame_w = (int)(Gem->GetWidth() / 5);
     int frame_h = (int)(Gem->GetHeight() / 3);
@@ -51,6 +51,18 @@ Resources::Resources()
 	player2Atlas = new CAtlas(frame_w, frame_h, 8, player2);
 	player3Atlas = new CAtlas(frame_w, frame_h, 8, player3);
 	player4Atlas = new CAtlas(frame_w, frame_h, 8, player4);
+
+	frame_w = (int)(PlayerImage1->GetWidth() / 3);
+	frame_h = (int)PlayerImage1->GetHeight();
+	rocket1Atlas = new CAtlas(frame_w, frame_h, 3, PlayerImage1);
+	rocket2Atlas = new CAtlas(frame_w, frame_h, 3, PlayerImage2);
+	rocket3Atlas = new CAtlas(frame_w, frame_h, 3, PlayerImage3);
+	rocket4Atlas = new CAtlas(frame_w, frame_h, 3, PlayerImage4);
+
+	frame_w = (int)(boomImage->GetWidth() / 4);
+	frame_h = (int)(boomImage->GetHeight() / 4);
+
+	boomAtlas = new CAtlas(frame_w, frame_h, 16, boomImage);
 }
 
 Resources::~Resources()
@@ -79,6 +91,12 @@ Resources::~Resources()
 	delete PlayerImage2;
 	delete PlayerImage3;
 	delete PlayerImage4;
+	delete rocket1Atlas;
+	delete rocket2Atlas;
+	delete rocket3Atlas;
+	delete rocket4Atlas;
+	delete boomImage;
+	delete boomAtlas;
 }
 
 // Global resources

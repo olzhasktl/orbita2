@@ -59,6 +59,13 @@ protected:
 	CIw2DImage*     PlayerImage3;
 	CIw2DImage*     PlayerImage4;
 
+	CAtlas*         rocket1Atlas;
+	CAtlas*         rocket2Atlas;
+	CAtlas*         rocket3Atlas;
+	CAtlas*         rocket4Atlas;
+	CAtlas*         boomAtlas;
+	CIw2DImage*		boomImage;
+
 public:
 	CIw2DImage*     getGem()                    { return Gem; }
 	CIw2DImage*     getInactivePlayer()			{ return inactive_player; }
@@ -85,6 +92,14 @@ public:
 	CIw2DImage*     getPlayerImage2()              { return PlayerImage2; }
 	CIw2DImage*     getPlayerImage3()              { return PlayerImage3; }
 	CIw2DImage*     getPlayerImage4()              { return PlayerImage4; }
+
+	CAtlas*         getRocket1Atlas()			{ return rocket1Atlas; }
+	CAtlas*         getRocket2Atlas()			{ return rocket2Atlas; }
+	CAtlas*         getRocket3Atlas()			{ return rocket3Atlas; }
+	CAtlas*         getRocket4Atlas()			{ return rocket4Atlas; }
+
+	CAtlas*         getBoomAtlas()				{ return boomAtlas; }
+	CIw2DImage*     getBoomImage()              { return boomImage; }	
 
 
 public:

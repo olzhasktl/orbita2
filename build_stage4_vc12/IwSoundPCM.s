@@ -1,6 +1,18 @@
+	.arch armv6
+	.fpu softvfp
+	.eabi_attribute 20, 1
+	.eabi_attribute 21, 1
+	.eabi_attribute 23, 3
+	.eabi_attribute 24, 1
+	.eabi_attribute 25, 1
+	.eabi_attribute 26, 2
+	.eabi_attribute 30, 6
+	.eabi_attribute 34, 1
+	.eabi_attribute 18, 2
 	.file	"IwSoundPCM.cpp"
 	.text
 .Ltext0:
+	.cfi_sections	.debug_frame
 .Letext0:
 	.file 1 "c:/marmalade/7.5/s3e/h/s3eTypes.h"
 	.file 2 "c:/marmalade/7.5/s3e/h/std/stddef.h"
@@ -15,399 +27,440 @@
 	.file 11 "c:/marmalade/7.5/modules/iwutil/h/IwMenu.h"
 	.file 12 "<built-in>"
 	.file 13 "c:/marmalade/7.5/modules/iwutil/h/IwTypes.h"
-	.section	.debug_info,"",@progbits
+	.section	.debug_info,"",%progbits
 .Ldebug_info0:
-	.long	0x310
-	.value	0x4
-	.long	.Ldebug_abbrev0
+	.4byte	0x341
+	.2byte	0x2
+	.4byte	.Ldebug_abbrev0
 	.byte	0x4
 	.uleb128 0x1
-	.long	.LASF65
+	.4byte	.LASF65
 	.byte	0x4
-	.long	.LASF66
-	.long	.LASF67
-	.long	.Ldebug_line0
+	.4byte	.LASF66
+	.4byte	.LASF67
+	.4byte	.Ldebug_line0
 	.uleb128 0x2
 	.byte	0x1
 	.byte	0x8
-	.long	.LASF0
+	.4byte	.LASF0
 	.uleb128 0x2
 	.byte	0x1
 	.byte	0x6
-	.long	.LASF1
+	.4byte	.LASF1
 	.uleb128 0x3
-	.long	.LASF9
+	.4byte	.LASF9
 	.byte	0x1
 	.byte	0x25
-	.long	0x36
+	.4byte	0x36
 	.uleb128 0x2
 	.byte	0x2
 	.byte	0x7
-	.long	.LASF2
+	.4byte	.LASF2
 	.uleb128 0x2
 	.byte	0x2
 	.byte	0x5
-	.long	.LASF3
+	.4byte	.LASF3
 	.uleb128 0x2
 	.byte	0x4
 	.byte	0x7
-	.long	.LASF4
+	.4byte	.LASF4
 	.uleb128 0x4
 	.byte	0x4
 	.byte	0x5
-	.string	"int"
+	.ascii	"int\000"
 	.uleb128 0x2
 	.byte	0x8
 	.byte	0x7
-	.long	.LASF5
+	.4byte	.LASF5
 	.uleb128 0x2
 	.byte	0x8
 	.byte	0x5
-	.long	.LASF6
+	.4byte	.LASF6
 	.uleb128 0x2
 	.byte	0x4
 	.byte	0x7
-	.long	.LASF7
+	.4byte	.LASF7
 	.uleb128 0x2
 	.byte	0x4
 	.byte	0x5
-	.long	.LASF8
+	.4byte	.LASF8
 	.uleb128 0x3
-	.long	.LASF10
+	.4byte	.LASF10
 	.byte	0x1
 	.byte	0x4e
-	.long	0x2b
+	.4byte	0x2b
 	.uleb128 0x3
-	.long	.LASF11
+	.4byte	.LASF11
 	.byte	0x1
 	.byte	0x88
-	.long	0x44
+	.4byte	0x44
 	.uleb128 0x3
-	.long	.LASF12
+	.4byte	.LASF12
 	.byte	0x1
 	.byte	0x8f
-	.long	0x4b
+	.4byte	0x4b
 	.uleb128 0x3
-	.long	.LASF13
+	.4byte	.LASF13
 	.byte	0x1
 	.byte	0x96
-	.long	0x6e
+	.4byte	0x6e
 	.uleb128 0x2
 	.byte	0x2
 	.byte	0x7
-	.long	.LASF14
+	.4byte	.LASF14
 	.uleb128 0x3
-	.long	.LASF15
+	.4byte	.LASF15
 	.byte	0x2
 	.byte	0x13
-	.long	0x4b
+	.4byte	0x4b
 	.uleb128 0x3
-	.long	.LASF16
+	.4byte	.LASF16
 	.byte	0x2
 	.byte	0x21
-	.long	0x44
+	.4byte	0x44
 	.uleb128 0x2
 	.byte	0x4
 	.byte	0x7
-	.long	.LASF17
+	.4byte	.LASF17
 	.uleb128 0x2
 	.byte	0x1
 	.byte	0x8
-	.long	.LASF18
+	.4byte	.LASF18
 	.uleb128 0x5
-	.string	"std"
+	.ascii	"std\000"
 	.byte	0xc
 	.byte	0
-	.long	0xf1
+	.4byte	0xf6
 	.uleb128 0x6
-	.long	.LASF19
+	.4byte	.LASF19
+	.byte	0x1
 	.uleb128 0x6
-	.long	.LASF20
+	.4byte	.LASF20
+	.byte	0x1
 	.uleb128 0x7
 	.byte	0x3
 	.byte	0x17
-	.long	0xd0
+	.4byte	0xd0
 	.uleb128 0x6
-	.long	.LASF21
+	.4byte	.LASF21
+	.byte	0x1
 	.uleb128 0x6
-	.long	.LASF22
+	.4byte	.LASF22
+	.byte	0x1
 	.uleb128 0x6
-	.long	.LASF23
+	.4byte	.LASF23
+	.byte	0x1
 	.byte	0
 	.uleb128 0x8
-	.long	.LASF25
+	.4byte	.LASF25
 	.byte	0x7
-	.value	0x1e9
-	.long	0xc5
+	.2byte	0x1e9
+	.4byte	0xc5
 	.uleb128 0x9
-	.long	.LASF24
+	.4byte	.LASF24
 	.byte	0x7
-	.value	0x222
-	.long	0x157
+	.2byte	0x222
+	.4byte	0x15c
 	.uleb128 0x7
 	.byte	0x4
 	.byte	0x4e
-	.long	0xd0
+	.4byte	0xd0
 	.uleb128 0x7
 	.byte	0x4
 	.byte	0x4f
-	.long	0xd5
+	.4byte	0xd6
 	.uleb128 0x7
 	.byte	0x4
 	.byte	0x4e
-	.long	0xd0
+	.4byte	0xd0
 	.uleb128 0x7
 	.byte	0x4
 	.byte	0x4f
-	.long	0xd5
+	.4byte	0xd6
 	.uleb128 0x7
 	.byte	0x5
 	.byte	0x2f
-	.long	0xe1
+	.4byte	0xe3
 	.uleb128 0x7
 	.byte	0x5
 	.byte	0x33
-	.long	0xe6
+	.4byte	0xe9
 	.uleb128 0x7
 	.byte	0x5
 	.byte	0x3d
-	.long	0xeb
+	.4byte	0xef
 	.uleb128 0x7
 	.byte	0x6
 	.byte	0x2a
-	.long	0xa1
+	.4byte	0xa1
 	.uleb128 0x7
 	.byte	0x6
 	.byte	0x2b
-	.long	0xac
+	.4byte	0xac
 	.uleb128 0x7
 	.byte	0x4
 	.byte	0x4e
-	.long	0xd0
+	.4byte	0xd0
 	.uleb128 0x7
 	.byte	0x4
 	.byte	0x4f
-	.long	0xd5
+	.4byte	0xd6
 	.byte	0
 	.uleb128 0x8
-	.long	.LASF26
+	.4byte	.LASF26
 	.byte	0x7
-	.value	0x224
-	.long	0xfd
+	.2byte	0x224
+	.4byte	0x102
 	.uleb128 0x2
 	.byte	0x4
 	.byte	0x4
-	.long	.LASF27
+	.4byte	.LASF27
 	.uleb128 0x2
 	.byte	0x1
 	.byte	0x2
-	.long	.LASF28
+	.4byte	.LASF28
 	.uleb128 0x3
-	.long	.LASF29
+	.4byte	.LASF29
 	.byte	0x8
 	.byte	0x34
-	.long	0x17c
+	.4byte	0x181
 	.uleb128 0xa
-	.long	.LASF29
+	.4byte	.LASF29
+	.byte	0x1
 	.uleb128 0x3
-	.long	.LASF30
+	.4byte	.LASF30
 	.byte	0x9
 	.byte	0x32
-	.long	0x18c
+	.4byte	0x192
 	.uleb128 0xb
 	.byte	0x4
-	.long	0x192
+	.4byte	0x198
 	.uleb128 0xc
 	.uleb128 0xd
-	.long	.LASF68
+	.4byte	.LASF68
 	.byte	0xcc
 	.byte	0x9
 	.byte	0x38
-	.long	0x230
+	.4byte	0x256
 	.uleb128 0xe
-	.long	.LASF31
+	.4byte	.LASF31
 	.byte	0x9
 	.byte	0x3a
-	.long	0x16a
-	.byte	0
+	.4byte	0x16f
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
 	.uleb128 0xe
-	.long	.LASF32
+	.4byte	.LASF32
 	.byte	0x9
 	.byte	0x3b
-	.long	0x79
-	.byte	0x4
+	.4byte	0x79
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x4
 	.uleb128 0xe
-	.long	.LASF33
+	.4byte	.LASF33
 	.byte	0x9
 	.byte	0x3c
-	.long	0x230
-	.byte	0x8
+	.4byte	0x256
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x8
 	.uleb128 0xe
-	.long	.LASF34
+	.4byte	.LASF34
 	.byte	0x9
 	.byte	0x3d
-	.long	0x236
-	.byte	0xc
+	.4byte	0x25c
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0xc
 	.uleb128 0xe
-	.long	.LASF35
+	.4byte	.LASF35
 	.byte	0x9
 	.byte	0x3e
-	.long	0x79
-	.byte	0xac
+	.4byte	0x79
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0xac
 	.uleb128 0xe
-	.long	.LASF36
+	.4byte	.LASF36
 	.byte	0x9
 	.byte	0x3f
-	.long	0x79
-	.byte	0xb0
+	.4byte	0x79
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0xb0
 	.uleb128 0xe
-	.long	.LASF37
+	.4byte	.LASF37
 	.byte	0x9
 	.byte	0x40
-	.long	0x246
-	.byte	0xb4
+	.4byte	0x26c
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0xb4
 	.uleb128 0xe
-	.long	.LASF38
+	.4byte	.LASF38
 	.byte	0x9
 	.byte	0x41
-	.long	0x84
-	.byte	0xbc
+	.4byte	0x84
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0xbc
 	.uleb128 0xe
-	.long	.LASF39
+	.4byte	.LASF39
 	.byte	0x9
 	.byte	0x42
-	.long	0x79
-	.byte	0xc0
+	.4byte	0x79
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0xc0
 	.uleb128 0xe
-	.long	.LASF40
+	.4byte	.LASF40
 	.byte	0x9
 	.byte	0x43
-	.long	0x8f
-	.byte	0xc4
+	.4byte	0x8f
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0xc4
 	.uleb128 0xf
-	.string	"pad"
+	.ascii	"pad\000"
 	.byte	0x9
 	.byte	0x44
-	.long	0x8f
-	.byte	0xc6
+	.4byte	0x8f
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0xc6
 	.uleb128 0xe
-	.long	.LASF41
+	.4byte	.LASF41
 	.byte	0x9
 	.byte	0x45
-	.long	0x181
-	.byte	0xc8
+	.4byte	0x187
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0xc8
 	.byte	0
 	.uleb128 0xb
 	.byte	0x4
-	.long	0x171
+	.4byte	0x176
 	.uleb128 0x10
-	.long	0xbe
-	.long	0x246
+	.4byte	0xbe
+	.4byte	0x26c
 	.uleb128 0x11
-	.long	0xb7
+	.4byte	0xb7
 	.byte	0x9f
 	.byte	0
 	.uleb128 0x10
-	.long	0x1d
-	.long	0x256
+	.4byte	0x1d
+	.4byte	0x27c
 	.uleb128 0x11
-	.long	0xb7
+	.4byte	0xb7
 	.byte	0x7
 	.byte	0
 	.uleb128 0x12
 	.byte	0x4
 	.byte	0xd
 	.byte	0x26
-	.long	0x2c5
+	.4byte	0x2eb
 	.uleb128 0x13
-	.long	.LASF42
+	.4byte	.LASF42
 	.sleb128 0
 	.uleb128 0x13
-	.long	.LASF43
+	.4byte	.LASF43
 	.sleb128 1
 	.uleb128 0x13
-	.long	.LASF44
+	.4byte	.LASF44
 	.sleb128 2
 	.uleb128 0x13
-	.long	.LASF45
+	.4byte	.LASF45
 	.sleb128 3
 	.uleb128 0x13
-	.long	.LASF46
+	.4byte	.LASF46
 	.sleb128 4
 	.uleb128 0x13
-	.long	.LASF47
+	.4byte	.LASF47
 	.sleb128 5
 	.uleb128 0x13
-	.long	.LASF48
+	.4byte	.LASF48
 	.sleb128 6
 	.uleb128 0x13
-	.long	.LASF49
+	.4byte	.LASF49
 	.sleb128 7
 	.uleb128 0x13
-	.long	.LASF50
+	.4byte	.LASF50
 	.sleb128 8
 	.uleb128 0x13
-	.long	.LASF51
+	.4byte	.LASF51
 	.sleb128 9
 	.uleb128 0x13
-	.long	.LASF52
+	.4byte	.LASF52
 	.sleb128 10
 	.uleb128 0x13
-	.long	.LASF53
+	.4byte	.LASF53
 	.sleb128 11
 	.uleb128 0x13
-	.long	.LASF54
+	.4byte	.LASF54
 	.sleb128 12
 	.uleb128 0x13
-	.long	.LASF55
+	.4byte	.LASF55
 	.sleb128 13
 	.uleb128 0x13
-	.long	.LASF56
+	.4byte	.LASF56
 	.sleb128 4
 	.uleb128 0x13
-	.long	.LASF57
+	.4byte	.LASF57
 	.sleb128 16
 	.uleb128 0x13
-	.long	.LASF58
+	.4byte	.LASF58
 	.sleb128 6
 	.byte	0
 	.uleb128 0x6
-	.long	.LASF59
+	.4byte	.LASF59
+	.byte	0x1
 	.uleb128 0x10
-	.long	0x4b
-	.long	0x2d5
+	.4byte	0x4b
+	.4byte	0x2fc
 	.uleb128 0x14
 	.byte	0
 	.uleb128 0x15
-	.long	.LASF60
+	.4byte	.LASF60
 	.byte	0xa
 	.byte	0x4f
-	.long	0x2ca
+	.4byte	0x2f1
+	.byte	0x1
+	.byte	0x1
 	.uleb128 0x15
-	.long	.LASF61
+	.4byte	.LASF61
 	.byte	0xa
 	.byte	0xc5
-	.long	0x2ca
+	.4byte	0x2f1
+	.byte	0x1
+	.byte	0x1
 	.uleb128 0x15
-	.long	.LASF62
+	.4byte	.LASF62
 	.byte	0x9
 	.byte	0x47
-	.long	0x193
+	.4byte	0x199
+	.byte	0x1
+	.byte	0x1
 	.uleb128 0x15
-	.long	.LASF63
+	.4byte	.LASF63
 	.byte	0x9
 	.byte	0x48
-	.long	0x4b
+	.4byte	0x4b
+	.byte	0x1
+	.byte	0x1
 	.uleb128 0x16
-	.long	.LASF64
+	.4byte	.LASF64
 	.byte	0xb
-	.value	0x1d4
-	.long	0x30d
+	.2byte	0x1d4
+	.4byte	0x33e
+	.byte	0x1
+	.byte	0x1
 	.uleb128 0xb
 	.byte	0x4
-	.long	0x2c5
+	.4byte	0x2eb
 	.byte	0
-	.section	.debug_abbrev,"",@progbits
+	.section	.debug_abbrev,"",%progbits
 .Ldebug_abbrev0:
 	.uleb128 0x1
 	.uleb128 0x11
@@ -421,7 +474,7 @@
 	.uleb128 0x1b
 	.uleb128 0xe
 	.uleb128 0x10
-	.uleb128 0x17
+	.uleb128 0x6
 	.byte	0
 	.byte	0
 	.uleb128 0x2
@@ -478,7 +531,7 @@
 	.uleb128 0x3
 	.uleb128 0xe
 	.uleb128 0x3c
-	.uleb128 0x19
+	.uleb128 0xc
 	.byte	0
 	.byte	0
 	.uleb128 0x7
@@ -524,7 +577,7 @@
 	.uleb128 0x3
 	.uleb128 0xe
 	.uleb128 0x3c
-	.uleb128 0x19
+	.uleb128 0xc
 	.byte	0
 	.byte	0
 	.uleb128 0xb
@@ -568,7 +621,7 @@
 	.uleb128 0x49
 	.uleb128 0x13
 	.uleb128 0x38
-	.uleb128 0xb
+	.uleb128 0xa
 	.byte	0
 	.byte	0
 	.uleb128 0xf
@@ -583,7 +636,7 @@
 	.uleb128 0x49
 	.uleb128 0x13
 	.uleb128 0x38
-	.uleb128 0xb
+	.uleb128 0xa
 	.byte	0
 	.byte	0
 	.uleb128 0x10
@@ -643,9 +696,9 @@
 	.uleb128 0x49
 	.uleb128 0x13
 	.uleb128 0x3f
-	.uleb128 0x19
+	.uleb128 0xc
 	.uleb128 0x3c
-	.uleb128 0x19
+	.uleb128 0xc
 	.byte	0
 	.byte	0
 	.uleb128 0x16
@@ -660,163 +713,170 @@
 	.uleb128 0x49
 	.uleb128 0x13
 	.uleb128 0x3f
-	.uleb128 0x19
+	.uleb128 0xc
 	.uleb128 0x3c
-	.uleb128 0x19
+	.uleb128 0xc
 	.byte	0
 	.byte	0
 	.byte	0
-	.section	.debug_aranges,"",@progbits
-	.long	0x14
-	.value	0x2
-	.long	.Ldebug_info0
+	.section	.debug_aranges,"",%progbits
+	.4byte	0x14
+	.2byte	0x2
+	.4byte	.Ldebug_info0
 	.byte	0x4
 	.byte	0
-	.value	0
-	.value	0
-	.long	0
-	.long	0
-	.section	.debug_line,"",@progbits
+	.2byte	0
+	.2byte	0
+	.4byte	0
+	.4byte	0
+	.section	.debug_line,"",%progbits
 .Ldebug_line0:
-	.section	.debug_str,"MS",@progbits,1
+	.section	.debug_str,"MS",%progbits,1
 .LASF50:
-	.string	"IW_TYPE_UINT32"
+	.ascii	"IW_TYPE_UINT32\000"
 .LASF38:
-	.string	"headBit"
+	.ascii	"headBit\000"
 .LASF36:
-	.string	"callbackPeriod"
+	.ascii	"callbackPeriod\000"
 .LASF39:
-	.string	"version"
+	.ascii	"version\000"
 .LASF47:
-	.string	"IW_TYPE_INT16"
+	.ascii	"IW_TYPE_INT16\000"
 .LASF42:
-	.string	"IW_TYPE_NONE"
+	.ascii	"IW_TYPE_NONE\000"
 .LASF45:
-	.string	"IW_TYPE_INT8"
+	.ascii	"IW_TYPE_INT8\000"
 .LASF3:
-	.string	"short int"
+	.ascii	"short int\000"
 .LASF16:
-	.string	"size_t"
-.LASF66:
-	.string	"c:/Marmalade/7.5/examples/GameTutorial/CPP/modules/soundengine/source/IwSoundPCM.cpp"
+	.ascii	"size_t\000"
 .LASF56:
-	.string	"IW_TYPE_MAX_BIT"
+	.ascii	"IW_TYPE_MAX_BIT\000"
 .LASF17:
-	.string	"sizetype"
+	.ascii	"sizetype\000"
 .LASF34:
-	.string	"filename"
+	.ascii	"filename\000"
 .LASF60:
-	.string	"g_SqrtTable"
+	.ascii	"g_SqrtTable\000"
 .LASF62:
-	.string	"g_IwSerialiseContext"
+	.ascii	"g_IwSerialiseContext\000"
 .LASF20:
-	.string	"bad_exception"
+	.ascii	"bad_exception\000"
 .LASF19:
-	.string	"exception"
+	.ascii	"exception\000"
 .LASF28:
-	.string	"bool"
+	.ascii	"bool\000"
 .LASF63:
-	.string	"g_IwSerialiseContextValid"
+	.ascii	"g_IwSerialiseContextValid\000"
 .LASF27:
-	.string	"float"
+	.ascii	"float\000"
 .LASF57:
-	.string	"IW_TYPE_PAD_F"
+	.ascii	"IW_TYPE_PAD_F\000"
 .LASF31:
-	.string	"read"
-.LASF67:
-	.string	"c:\\\\Marmalade\\\\7.5\\\\examples\\\\GameTutorial\\\\CPP\\\\Stage4\\\\build_stage4_vc12"
-.LASF6:
-	.string	"long long int"
+	.ascii	"read\000"
 .LASF65:
-	.ascii	"GNU C++ 4.8 -fpreprocessed -mstackrealign -msse3 -m"
-	.string	"bionic -m32 -mtune=atom -march=i686 -g -O0 -funsigned-char -fno-strict-aliasing -fno-stack-protector -fno-short-enums -fshort-wchar -fmessage-length=0 -fasynchronous-unwind-tables -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fno-exceptions -frtti"
+	.ascii	"GNU C++ 4.8.3 20140228 (release) [ARM/embedded-4_8-"
+	.ascii	"branch revision 208322] -fpreprocessed -mstructure-"
+	.ascii	"size-boundary=8 -march=armv6 -mfloat-abi=soft -mthu"
+	.ascii	"mb-interwork -mword-relocations -g -gdwarf-2 -O0 -f"
+	.ascii	"unsigned-char -fno-strict-aliasing -fno-stack-prote"
+	.ascii	"ctor -fno-short-enums -fshort-wchar -fomit-frame-po"
+	.ascii	"inter -fmessage-length=0 -ffunction-sections -fvisi"
+	.ascii	"bility=hidden -fPIC -fvisibility-inlines-hidden -fn"
+	.ascii	"o-exceptions\000"
+.LASF6:
+	.ascii	"long long int\000"
 .LASF8:
-	.string	"long int"
+	.ascii	"long int\000"
 .LASF52:
-	.string	"IW_TYPE_DOUBLE"
+	.ascii	"IW_TYPE_DOUBLE\000"
 .LASF64:
-	.string	"g_IwMenuManager"
+	.ascii	"g_IwMenuManager\000"
 .LASF24:
-	.string	"_STL"
+	.ascii	"_STL\000"
 .LASF30:
-	.string	"IwSerialiseUserCallback"
+	.ascii	"IwSerialiseUserCallback\000"
 .LASF51:
-	.string	"IW_TYPE_FLOAT"
+	.ascii	"IW_TYPE_FLOAT\000"
 .LASF58:
-	.string	"IW_TYPE_FREE_BIT"
+	.ascii	"IW_TYPE_FREE_BIT\000"
 .LASF35:
-	.string	"bytesRead"
+	.ascii	"bytesRead\000"
 .LASF44:
-	.string	"IW_TYPE_BOOL"
+	.ascii	"IW_TYPE_BOOL\000"
 .LASF0:
-	.string	"unsigned char"
+	.ascii	"unsigned char\000"
 .LASF59:
-	.string	"CIwMenuManager"
+	.ascii	"CIwMenuManager\000"
 .LASF48:
-	.string	"IW_TYPE_UINT16"
+	.ascii	"IW_TYPE_UINT16\000"
 .LASF1:
-	.string	"signed char"
+	.ascii	"signed char\000"
 .LASF54:
-	.string	"IW_TYPE_COMPOUND"
+	.ascii	"IW_TYPE_COMPOUND\000"
 .LASF5:
-	.string	"long long unsigned int"
+	.ascii	"long long unsigned int\000"
 .LASF4:
-	.string	"unsigned int"
+	.ascii	"unsigned int\000"
 .LASF49:
-	.string	"IW_TYPE_INT32"
+	.ascii	"IW_TYPE_INT32\000"
 .LASF26:
-	.string	"stlport"
+	.ascii	"stlport\000"
 .LASF43:
-	.string	"IW_TYPE_CHAR"
+	.ascii	"IW_TYPE_CHAR\000"
 .LASF2:
-	.string	"short unsigned int"
+	.ascii	"short unsigned int\000"
 .LASF14:
-	.string	"wchar_t"
+	.ascii	"wchar_t\000"
 .LASF18:
-	.string	"char"
+	.ascii	"char\000"
 .LASF10:
-	.string	"uint16_t"
+	.ascii	"uint16_t\000"
 .LASF55:
-	.string	"IW_TYPE_MAX"
+	.ascii	"IW_TYPE_MAX\000"
 .LASF29:
-	.string	"s3eFile"
+	.ascii	"s3eFile\000"
 .LASF23:
-	.string	"bad_cast"
+	.ascii	"bad_cast\000"
 .LASF13:
-	.string	"uint16"
+	.ascii	"uint16\000"
 .LASF37:
-	.string	"buffer"
+	.ascii	"buffer\000"
 .LASF11:
-	.string	"uint32"
+	.ascii	"uint32\000"
 .LASF7:
-	.string	"long unsigned int"
+	.ascii	"long unsigned int\000"
 .LASF12:
-	.string	"int32"
+	.ascii	"int32\000"
 .LASF33:
-	.string	"handle"
+	.ascii	"handle\000"
 .LASF40:
-	.string	"versionUser"
+	.ascii	"versionUser\000"
+.LASF66:
+	.ascii	"c:/Stage4/modules/soundengine/source/IwSoundPCM.cpp"
+	.ascii	"\000"
 .LASF22:
-	.string	"bad_typeid"
+	.ascii	"bad_typeid\000"
 .LASF9:
-	.string	"s3e_uint16_t"
+	.ascii	"s3e_uint16_t\000"
+.LASF67:
+	.ascii	"c:\\\\Stage4\\\\build_stage4_vc12\000"
 .LASF21:
-	.string	"type_info"
+	.ascii	"type_info\000"
 .LASF61:
-	.string	"g_InverseSqrtTable"
+	.ascii	"g_InverseSqrtTable\000"
 .LASF25:
-	.string	"__std_alias"
+	.ascii	"__std_alias\000"
 .LASF32:
-	.string	"base"
+	.ascii	"base\000"
 .LASF15:
-	.string	"ptrdiff_t"
+	.ascii	"ptrdiff_t\000"
 .LASF68:
-	.string	"IwSerialiseContext"
+	.ascii	"IwSerialiseContext\000"
 .LASF53:
-	.string	"IW_TYPE_STRING"
+	.ascii	"IW_TYPE_STRING\000"
 .LASF41:
-	.string	"callback"
+	.ascii	"callback\000"
 .LASF46:
-	.string	"IW_TYPE_UINT8"
-	.ident	"GCC: (GNU) 4.8"
-	.section	.note.GNU-stack,"",@progbits
+	.ascii	"IW_TYPE_UINT8\000"
+	.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.3 20140228 (release) [ARM/embedded-4_8-branch revision 208322]"

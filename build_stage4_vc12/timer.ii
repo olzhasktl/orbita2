@@ -1,12 +1,12 @@
-# 1 "c:/Marmalade/7.5/examples/GameTutorial/CPP/Stage4/source/timer.cpp"
-# 1 "c:\\Marmalade\\7.5\\examples\\GameTutorial\\CPP\\Stage4\\build_stage4_vc12//"
+# 1 "c:/Stage4/source/timer.cpp"
+# 1 "c:\\Stage4\\build_stage4_vc12//"
 # 1 "<command-line>"
-# 1 "c:/Marmalade/7.5/examples/GameTutorial/CPP/Stage4/build_stage4_vc12/temp_defines_debug.h" 1
+# 1 "c:/Stage4/build_stage4_vc12/temp_defines_debug.h" 1
 # 1 "<command-line>" 2
-# 1 "c:/Marmalade/7.5/examples/GameTutorial/CPP/Stage4/source/timer.cpp"
-# 13 "c:/Marmalade/7.5/examples/GameTutorial/CPP/Stage4/source/timer.cpp"
-# 1 "c:/Marmalade/7.5/examples/GameTutorial/CPP/Stage4/source/timer.h" 1
-# 16 "c:/Marmalade/7.5/examples/GameTutorial/CPP/Stage4/source/timer.h"
+# 1 "c:/Stage4/source/timer.cpp"
+# 13 "c:/Stage4/source/timer.cpp"
+# 1 "c:/Stage4/source/timer.h" 1
+# 16 "c:/Stage4/source/timer.h"
 # 1 "c:/marmalade/7.5/s3e/h/std/c++/list" 1
 # 31 "c:/marmalade/7.5/s3e/h/std/c++/list"
 # 1 "c:/marmalade/7.5/s3e/h/std/c++/stl/_prolog.h" 1
@@ -2113,15 +2113,10 @@ typedef struct __XXFILE FILE;
 typedef uint32 fpos_t;
 # 38 "c:/marmalade/7.5/s3e/h/ext/../std/stdio.h"
 extern "C" {
-
-
-
-struct _reent
-{
-  int _errno;
-  void *_stdin, *_stdout, *_stderr;
-};
-extern struct _reent *_impure_ptr;
+# 54 "c:/marmalade/7.5/s3e/h/ext/../std/stdio.h"
+extern FILE *__aeabi_stdin;
+extern FILE *__aeabi_stdout;
+extern FILE *__aeabi_stderr;
 # 73 "c:/marmalade/7.5/s3e/h/ext/../std/stdio.h"
 FILE *fopen(const char *path, const char *mode);
 int fclose(FILE *fp);
@@ -2302,7 +2297,10 @@ using ::vsprintf;
 # 1 "c:/marmalade/7.5/s3e/h/ext/../std/c++/exception.h" 1
 # 18 "c:/marmalade/7.5/s3e/h/ext/../std/c++/exception.h"
 # 1 "c:/marmalade/7.5/s3e/h/std/c++/exception_gcc" 1
-# 44 "c:/marmalade/7.5/s3e/h/std/c++/exception_gcc"
+# 41 "c:/marmalade/7.5/s3e/h/std/c++/exception_gcc"
+#pragma GCC visibility push(default)
+
+
 extern "C++" {
 
 namespace std
@@ -2356,6 +2354,9 @@ namespace __gnu_cxx
 }
 
 }
+
+
+#pragma GCC visibility pop
 # 19 "c:/marmalade/7.5/s3e/h/ext/../std/c++/exception.h" 2
 # 59 "c:/marmalade/7.5/s3e/h/std/c++/exception" 2
 # 75 "c:/marmalade/7.5/s3e/h/std/c++/exception"
@@ -3663,10 +3664,10 @@ void _S_sort(list<_Tp, _Alloc>& __that, _StrictWeakOrdering __comp) {
 # 1 "c:/marmalade/7.5/s3e/h/std/c++/stl/_config_compat_post.h" 1
 # 15 "c:/marmalade/7.5/s3e/h/std/c++/stl/_epilog.h" 2
 # 48 "c:/marmalade/7.5/s3e/h/std/c++/list" 2
-# 17 "c:/Marmalade/7.5/examples/GameTutorial/CPP/Stage4/source/timer.h" 2
+# 17 "c:/Stage4/source/timer.h" 2
 
 class TimerManager;
-# 40 "c:/Marmalade/7.5/examples/GameTutorial/CPP/Stage4/source/timer.h"
+# 40 "c:/Stage4/source/timer.h"
 class Timer
 {
 public:
@@ -3695,7 +3696,7 @@ public:
 public:
     Timer() : m_Manager(0), m_Length(0), m_TimeLeft(0), m_OnTimeout(0), m_UserData(0), m_RepeatCount(1), m_Paused(false) {}
     Timer(float length, int repeat_count = 1, Callback on_timeout = 0, void* user_data = 0);
-# 78 "c:/Marmalade/7.5/examples/GameTutorial/CPP/Stage4/source/timer.h"
+# 78 "c:/Stage4/source/timer.h"
     bool Update(float deltaTime = 0.0f);
 
 
@@ -3713,7 +3714,7 @@ public:
     void Resume();
 
 };
-# 103 "c:/Marmalade/7.5/examples/GameTutorial/CPP/Stage4/source/timer.h"
+# 103 "c:/Stage4/source/timer.h"
 class TimerManager
 {
 protected:
@@ -3722,7 +3723,7 @@ protected:
 public:
     TimerManager();
     ~TimerManager();
-# 119 "c:/Marmalade/7.5/examples/GameTutorial/CPP/Stage4/source/timer.h"
+# 119 "c:/Stage4/source/timer.h"
     void Update(float deltaTime = 0.0f);
 
 
@@ -3732,7 +3733,7 @@ public:
 
 
     void Add(Timer* timer);
-# 136 "c:/Marmalade/7.5/examples/GameTutorial/CPP/Stage4/source/timer.h"
+# 136 "c:/Stage4/source/timer.h"
     void Cancel(Timer* timer);
 
 
@@ -3741,7 +3742,7 @@ public:
 
 
     void Clear();
-# 154 "c:/Marmalade/7.5/examples/GameTutorial/CPP/Stage4/source/timer.h"
+# 154 "c:/Stage4/source/timer.h"
     Timer* Find(const char* name);
 
 
@@ -3758,7 +3759,7 @@ public:
 
     void Resume();
 };
-# 14 "c:/Marmalade/7.5/examples/GameTutorial/CPP/Stage4/source/timer.cpp" 2
+# 14 "c:/Stage4/source/timer.cpp" 2
 # 1 "c:/marmalade/7.5/modules/iwutil/h/IwHashString.h" 1
        
 # 17 "c:/marmalade/7.5/modules/iwutil/h/IwHashString.h"
@@ -4787,12 +4788,14 @@ namespace std
 
 
     const char* name() const;
-# 133 "c:/marmalade/7.5/s3e/h/std/c++/typeinfo_gcc"
-    bool before(const type_info& __arg) const
-    { return __name < __arg.__name; }
-    bool operator==(const type_info& __arg) const
-    { return __name == __arg.__name; }
 
+
+    bool before(const type_info& __arg) const;
+
+
+
+    bool operator==(const type_info& __arg) const;
+# 138 "c:/marmalade/7.5/s3e/h/std/c++/typeinfo_gcc"
     bool operator!=(const type_info& __arg) const
     { return !operator==(__arg); }
 
@@ -4896,7 +4899,7 @@ _To IwSafeCast(_From from)
             ,
  594
 # 593 "c:/marmalade/7.5/modules/iwutil/h/IwDebug.h"
-            , (1))) { case S3E_ERROR_SHOW_STOP: do { if (s3eDebugIsDebuggerPresent()) do { if (s3eDebugIsDebuggerPresent()) __asm__ (" int $3 "); } while(0); else IwDebugExit(); } while(0); break; case S3E_ERROR_SHOW_IGNORE: _s_IwAssertIgnoreThis = 1;; break; default:; } IwDebugAssertSetUID(0); } } while (0); } while (0)
+            , (1))) { case S3E_ERROR_SHOW_STOP: do { if (s3eDebugIsDebuggerPresent()) do {if (s3eDebugIsDebuggerPresent()) *(int*)0xfffffff4 = 0; } while(0); else IwDebugExit(); } while(0); break; case S3E_ERROR_SHOW_IGNORE: _s_IwAssertIgnoreThis = 1;; break; default:; } IwDebugAssertSetUID(0); } } while (0); } while (0)
                                ;
     }
 
@@ -5414,7 +5417,7 @@ public:
     CIwString(const char* pText)
     {
         m_Buffer[0] = '\0';
-        do { do { static uint8 _s_IwAssertIgnoreThis = 0;; if ((!(strlen(pText) < N)) && (IwDebugAssertIsChannelOn("CORE")) && (_s_IwAssertIgnoreThis==0)) { IwDebugAssertSetSolution (__null); IwDebugAssertSetUID(276); IwDebugAssertSetMessage ("String '%s' too long - maximum size (including terminator character) is %d characters", pText, N); switch (IwDebugAssertShow("strlen(pText) < N", "c:/marmalade/7.5/modules/iwutil/h/IwString.h", 88, (1))) { case S3E_ERROR_SHOW_STOP: do { if (s3eDebugIsDebuggerPresent()) do { if (s3eDebugIsDebuggerPresent()) __asm__ (" int $3 "); } while(0); else IwDebugExit(); } while(0); break; case S3E_ERROR_SHOW_IGNORE: _s_IwAssertIgnoreThis = 1;; break; default:; } IwDebugAssertSetUID(0); } } while (0); } while (0);
+        do { do { static uint8 _s_IwAssertIgnoreThis = 0;; if ((!(strlen(pText) < N)) && (IwDebugAssertIsChannelOn("CORE")) && (_s_IwAssertIgnoreThis==0)) { IwDebugAssertSetSolution (__null); IwDebugAssertSetUID(276); IwDebugAssertSetMessage ("String '%s' too long - maximum size (including terminator character) is %d characters", pText, N); switch (IwDebugAssertShow("strlen(pText) < N", "c:/marmalade/7.5/modules/iwutil/h/IwString.h", 88, (1))) { case S3E_ERROR_SHOW_STOP: do { if (s3eDebugIsDebuggerPresent()) do {if (s3eDebugIsDebuggerPresent()) *(int*)0xfffffff4 = 0; } while(0); else IwDebugExit(); } while(0); break; case S3E_ERROR_SHOW_IGNORE: _s_IwAssertIgnoreThis = 1;; break; default:; } IwDebugAssertSetUID(0); } } while (0); } while (0);
         strcpy(m_Buffer, pText);
     };
 # 104 "c:/marmalade/7.5/modules/iwutil/h/IwString.h"
@@ -5438,8 +5441,8 @@ public:
 
     inline void setLength(int len)
     {
-        do { do { static uint8 _s_IwAssertIgnoreThis = 0;; if ((!(len >= 0)) && (IwDebugAssertIsChannelOn("CORE")) && (_s_IwAssertIgnoreThis==0)) { IwDebugAssertSetSolution (__null); IwDebugAssertSetUID(277); IwDebugAssertSetMessage ("Length must be >= 0"); switch (IwDebugAssertShow("len >= 0", "c:/marmalade/7.5/modules/iwutil/h/IwString.h", 138, (1))) { case S3E_ERROR_SHOW_STOP: do { if (s3eDebugIsDebuggerPresent()) do { if (s3eDebugIsDebuggerPresent()) __asm__ (" int $3 "); } while(0); else IwDebugExit(); } while(0); break; case S3E_ERROR_SHOW_IGNORE: _s_IwAssertIgnoreThis = 1;; break; default:; } IwDebugAssertSetUID(0); } } while (0); } while (0);
-        do { do { static uint8 _s_IwAssertIgnoreThis = 0;; if ((!(len < N)) && (IwDebugAssertIsChannelOn("CORE")) && (_s_IwAssertIgnoreThis==0)) { IwDebugAssertSetSolution (__null); IwDebugAssertSetUID(278); IwDebugAssertSetMessage ("Length too long - maximum size (including terminator character) is %d characters", N); switch (IwDebugAssertShow("len < N", "c:/marmalade/7.5/modules/iwutil/h/IwString.h", 139, (1))) { case S3E_ERROR_SHOW_STOP: do { if (s3eDebugIsDebuggerPresent()) do { if (s3eDebugIsDebuggerPresent()) __asm__ (" int $3 "); } while(0); else IwDebugExit(); } while(0); break; case S3E_ERROR_SHOW_IGNORE: _s_IwAssertIgnoreThis = 1;; break; default:; } IwDebugAssertSetUID(0); } } while (0); } while (0);
+        do { do { static uint8 _s_IwAssertIgnoreThis = 0;; if ((!(len >= 0)) && (IwDebugAssertIsChannelOn("CORE")) && (_s_IwAssertIgnoreThis==0)) { IwDebugAssertSetSolution (__null); IwDebugAssertSetUID(277); IwDebugAssertSetMessage ("Length must be >= 0"); switch (IwDebugAssertShow("len >= 0", "c:/marmalade/7.5/modules/iwutil/h/IwString.h", 138, (1))) { case S3E_ERROR_SHOW_STOP: do { if (s3eDebugIsDebuggerPresent()) do {if (s3eDebugIsDebuggerPresent()) *(int*)0xfffffff4 = 0; } while(0); else IwDebugExit(); } while(0); break; case S3E_ERROR_SHOW_IGNORE: _s_IwAssertIgnoreThis = 1;; break; default:; } IwDebugAssertSetUID(0); } } while (0); } while (0);
+        do { do { static uint8 _s_IwAssertIgnoreThis = 0;; if ((!(len < N)) && (IwDebugAssertIsChannelOn("CORE")) && (_s_IwAssertIgnoreThis==0)) { IwDebugAssertSetSolution (__null); IwDebugAssertSetUID(278); IwDebugAssertSetMessage ("Length too long - maximum size (including terminator character) is %d characters", N); switch (IwDebugAssertShow("len < N", "c:/marmalade/7.5/modules/iwutil/h/IwString.h", 139, (1))) { case S3E_ERROR_SHOW_STOP: do { if (s3eDebugIsDebuggerPresent()) do {if (s3eDebugIsDebuggerPresent()) *(int*)0xfffffff4 = 0; } while(0); else IwDebugExit(); } while(0); break; case S3E_ERROR_SHOW_IGNORE: _s_IwAssertIgnoreThis = 1;; break; default:; } IwDebugAssertSetUID(0); } } while (0); } while (0);
         m_Buffer[len] = '\0';
     }
 
@@ -5463,15 +5466,15 @@ public:
 
     inline char & operator [] (int i)
     {
-        do { do { static uint8 _s_IwAssertIgnoreThis = 0;; if ((!(i >= 0)) && (IwDebugAssertIsChannelOn("CORE")) && (_s_IwAssertIgnoreThis==0)) { IwDebugAssertSetSolution (__null); IwDebugAssertSetUID(279); IwDebugAssertSetMessage ("Index must be >= 0"); switch (IwDebugAssertShow("i >= 0", "c:/marmalade/7.5/modules/iwutil/h/IwString.h", 163, (1))) { case S3E_ERROR_SHOW_STOP: do { if (s3eDebugIsDebuggerPresent()) do { if (s3eDebugIsDebuggerPresent()) __asm__ (" int $3 "); } while(0); else IwDebugExit(); } while(0); break; case S3E_ERROR_SHOW_IGNORE: _s_IwAssertIgnoreThis = 1;; break; default:; } IwDebugAssertSetUID(0); } } while (0); } while (0);
-        do { do { static uint8 _s_IwAssertIgnoreThis = 0;; if ((!(i < length())) && (IwDebugAssertIsChannelOn("CORE")) && (_s_IwAssertIgnoreThis==0)) { IwDebugAssertSetSolution (__null); IwDebugAssertSetUID(280); IwDebugAssertSetMessage ("Index is %d, but length of string is only %d characters", i, length()); switch (IwDebugAssertShow("i < length()", "c:/marmalade/7.5/modules/iwutil/h/IwString.h", 164, (1))) { case S3E_ERROR_SHOW_STOP: do { if (s3eDebugIsDebuggerPresent()) do { if (s3eDebugIsDebuggerPresent()) __asm__ (" int $3 "); } while(0); else IwDebugExit(); } while(0); break; case S3E_ERROR_SHOW_IGNORE: _s_IwAssertIgnoreThis = 1;; break; default:; } IwDebugAssertSetUID(0); } } while (0); } while (0);
+        do { do { static uint8 _s_IwAssertIgnoreThis = 0;; if ((!(i >= 0)) && (IwDebugAssertIsChannelOn("CORE")) && (_s_IwAssertIgnoreThis==0)) { IwDebugAssertSetSolution (__null); IwDebugAssertSetUID(279); IwDebugAssertSetMessage ("Index must be >= 0"); switch (IwDebugAssertShow("i >= 0", "c:/marmalade/7.5/modules/iwutil/h/IwString.h", 163, (1))) { case S3E_ERROR_SHOW_STOP: do { if (s3eDebugIsDebuggerPresent()) do {if (s3eDebugIsDebuggerPresent()) *(int*)0xfffffff4 = 0; } while(0); else IwDebugExit(); } while(0); break; case S3E_ERROR_SHOW_IGNORE: _s_IwAssertIgnoreThis = 1;; break; default:; } IwDebugAssertSetUID(0); } } while (0); } while (0);
+        do { do { static uint8 _s_IwAssertIgnoreThis = 0;; if ((!(i < length())) && (IwDebugAssertIsChannelOn("CORE")) && (_s_IwAssertIgnoreThis==0)) { IwDebugAssertSetSolution (__null); IwDebugAssertSetUID(280); IwDebugAssertSetMessage ("Index is %d, but length of string is only %d characters", i, length()); switch (IwDebugAssertShow("i < length()", "c:/marmalade/7.5/modules/iwutil/h/IwString.h", 164, (1))) { case S3E_ERROR_SHOW_STOP: do { if (s3eDebugIsDebuggerPresent()) do {if (s3eDebugIsDebuggerPresent()) *(int*)0xfffffff4 = 0; } while(0); else IwDebugExit(); } while(0); break; case S3E_ERROR_SHOW_IGNORE: _s_IwAssertIgnoreThis = 1;; break; default:; } IwDebugAssertSetUID(0); } } while (0); } while (0);
         return m_Buffer[i];
     }
 
     inline const char & operator [] (int i) const
     {
-        do { do { static uint8 _s_IwAssertIgnoreThis = 0;; if ((!(i >= 0)) && (IwDebugAssertIsChannelOn("CORE")) && (_s_IwAssertIgnoreThis==0)) { IwDebugAssertSetSolution (__null); IwDebugAssertSetUID(281); IwDebugAssertSetMessage ("Index must be >= 0"); switch (IwDebugAssertShow("i >= 0", "c:/marmalade/7.5/modules/iwutil/h/IwString.h", 170, (1))) { case S3E_ERROR_SHOW_STOP: do { if (s3eDebugIsDebuggerPresent()) do { if (s3eDebugIsDebuggerPresent()) __asm__ (" int $3 "); } while(0); else IwDebugExit(); } while(0); break; case S3E_ERROR_SHOW_IGNORE: _s_IwAssertIgnoreThis = 1;; break; default:; } IwDebugAssertSetUID(0); } } while (0); } while (0);
-        do { do { static uint8 _s_IwAssertIgnoreThis = 0;; if ((!(i < length())) && (IwDebugAssertIsChannelOn("CORE")) && (_s_IwAssertIgnoreThis==0)) { IwDebugAssertSetSolution (__null); IwDebugAssertSetUID(282); IwDebugAssertSetMessage ("Index is %d, but length of string is only %d characters", i, length()); switch (IwDebugAssertShow("i < length()", "c:/marmalade/7.5/modules/iwutil/h/IwString.h", 171, (1))) { case S3E_ERROR_SHOW_STOP: do { if (s3eDebugIsDebuggerPresent()) do { if (s3eDebugIsDebuggerPresent()) __asm__ (" int $3 "); } while(0); else IwDebugExit(); } while(0); break; case S3E_ERROR_SHOW_IGNORE: _s_IwAssertIgnoreThis = 1;; break; default:; } IwDebugAssertSetUID(0); } } while (0); } while (0);
+        do { do { static uint8 _s_IwAssertIgnoreThis = 0;; if ((!(i >= 0)) && (IwDebugAssertIsChannelOn("CORE")) && (_s_IwAssertIgnoreThis==0)) { IwDebugAssertSetSolution (__null); IwDebugAssertSetUID(281); IwDebugAssertSetMessage ("Index must be >= 0"); switch (IwDebugAssertShow("i >= 0", "c:/marmalade/7.5/modules/iwutil/h/IwString.h", 170, (1))) { case S3E_ERROR_SHOW_STOP: do { if (s3eDebugIsDebuggerPresent()) do {if (s3eDebugIsDebuggerPresent()) *(int*)0xfffffff4 = 0; } while(0); else IwDebugExit(); } while(0); break; case S3E_ERROR_SHOW_IGNORE: _s_IwAssertIgnoreThis = 1;; break; default:; } IwDebugAssertSetUID(0); } } while (0); } while (0);
+        do { do { static uint8 _s_IwAssertIgnoreThis = 0;; if ((!(i < length())) && (IwDebugAssertIsChannelOn("CORE")) && (_s_IwAssertIgnoreThis==0)) { IwDebugAssertSetSolution (__null); IwDebugAssertSetUID(282); IwDebugAssertSetMessage ("Index is %d, but length of string is only %d characters", i, length()); switch (IwDebugAssertShow("i < length()", "c:/marmalade/7.5/modules/iwutil/h/IwString.h", 171, (1))) { case S3E_ERROR_SHOW_STOP: do { if (s3eDebugIsDebuggerPresent()) do {if (s3eDebugIsDebuggerPresent()) *(int*)0xfffffff4 = 0; } while(0); else IwDebugExit(); } while(0); break; case S3E_ERROR_SHOW_IGNORE: _s_IwAssertIgnoreThis = 1;; break; default:; } IwDebugAssertSetUID(0); } } while (0); } while (0);
         return m_Buffer[i];
     }
 
@@ -5482,35 +5485,35 @@ public:
 
     const char* operator = (const char* pText)
     {
-        do { do { static uint8 _s_IwAssertIgnoreThis = 0;; if ((!(strlen(pText) < N)) && (IwDebugAssertIsChannelOn("CORE")) && (_s_IwAssertIgnoreThis==0)) { IwDebugAssertSetSolution (__null); IwDebugAssertSetUID(283); IwDebugAssertSetMessage ("String '%s' too long - maximum size (including terminator character) is %d characters", pText, N); switch (IwDebugAssertShow("strlen(pText) < N", "c:/marmalade/7.5/modules/iwutil/h/IwString.h", 182, (1))) { case S3E_ERROR_SHOW_STOP: do { if (s3eDebugIsDebuggerPresent()) do { if (s3eDebugIsDebuggerPresent()) __asm__ (" int $3 "); } while(0); else IwDebugExit(); } while(0); break; case S3E_ERROR_SHOW_IGNORE: _s_IwAssertIgnoreThis = 1;; break; default:; } IwDebugAssertSetUID(0); } } while (0); } while (0);
+        do { do { static uint8 _s_IwAssertIgnoreThis = 0;; if ((!(strlen(pText) < N)) && (IwDebugAssertIsChannelOn("CORE")) && (_s_IwAssertIgnoreThis==0)) { IwDebugAssertSetSolution (__null); IwDebugAssertSetUID(283); IwDebugAssertSetMessage ("String '%s' too long - maximum size (including terminator character) is %d characters", pText, N); switch (IwDebugAssertShow("strlen(pText) < N", "c:/marmalade/7.5/modules/iwutil/h/IwString.h", 182, (1))) { case S3E_ERROR_SHOW_STOP: do { if (s3eDebugIsDebuggerPresent()) do {if (s3eDebugIsDebuggerPresent()) *(int*)0xfffffff4 = 0; } while(0); else IwDebugExit(); } while(0); break; case S3E_ERROR_SHOW_IGNORE: _s_IwAssertIgnoreThis = 1;; break; default:; } IwDebugAssertSetUID(0); } } while (0); } while (0);
         strcpy(m_Buffer, pText);
         return m_Buffer;
     };
 
     const char* operator = ( CIwString const& str)
     {
-        do { do { static uint8 _s_IwAssertIgnoreThis = 0;; if ((!(str.length() < N)) && (IwDebugAssertIsChannelOn("CORE")) && (_s_IwAssertIgnoreThis==0)) { IwDebugAssertSetSolution (__null); IwDebugAssertSetUID(284); IwDebugAssertSetMessage ("String '%s' too long - maximum size (including terminator character) is %d characters", str.c_str(), N); switch (IwDebugAssertShow("str.length() < N", "c:/marmalade/7.5/modules/iwutil/h/IwString.h", 189, (1))) { case S3E_ERROR_SHOW_STOP: do { if (s3eDebugIsDebuggerPresent()) do { if (s3eDebugIsDebuggerPresent()) __asm__ (" int $3 "); } while(0); else IwDebugExit(); } while(0); break; case S3E_ERROR_SHOW_IGNORE: _s_IwAssertIgnoreThis = 1;; break; default:; } IwDebugAssertSetUID(0); } } while (0); } while (0);
+        do { do { static uint8 _s_IwAssertIgnoreThis = 0;; if ((!(str.length() < N)) && (IwDebugAssertIsChannelOn("CORE")) && (_s_IwAssertIgnoreThis==0)) { IwDebugAssertSetSolution (__null); IwDebugAssertSetUID(284); IwDebugAssertSetMessage ("String '%s' too long - maximum size (including terminator character) is %d characters", str.c_str(), N); switch (IwDebugAssertShow("str.length() < N", "c:/marmalade/7.5/modules/iwutil/h/IwString.h", 189, (1))) { case S3E_ERROR_SHOW_STOP: do { if (s3eDebugIsDebuggerPresent()) do {if (s3eDebugIsDebuggerPresent()) *(int*)0xfffffff4 = 0; } while(0); else IwDebugExit(); } while(0); break; case S3E_ERROR_SHOW_IGNORE: _s_IwAssertIgnoreThis = 1;; break; default:; } IwDebugAssertSetUID(0); } } while (0); } while (0);
         strcpy(m_Buffer, str.c_str());
         return m_Buffer;
     };
 
     const char* operator += (const char* pText)
     {
-        do { do { static uint8 _s_IwAssertIgnoreThis = 0;; if ((!(strlen(m_Buffer) + strlen(pText) < N)) && (IwDebugAssertIsChannelOn("CORE")) && (_s_IwAssertIgnoreThis==0)) { IwDebugAssertSetSolution (__null); IwDebugAssertSetUID(285); IwDebugAssertSetMessage ("Combined string '%s%s' too long - maximum size (including terminator character) is %d characters", m_Buffer, pText, N); switch (IwDebugAssertShow("strlen(m_Buffer) + strlen(pText) < N", "c:/marmalade/7.5/modules/iwutil/h/IwString.h", 196, (1))) { case S3E_ERROR_SHOW_STOP: do { if (s3eDebugIsDebuggerPresent()) do { if (s3eDebugIsDebuggerPresent()) __asm__ (" int $3 "); } while(0); else IwDebugExit(); } while(0); break; case S3E_ERROR_SHOW_IGNORE: _s_IwAssertIgnoreThis = 1;; break; default:; } IwDebugAssertSetUID(0); } } while (0); } while (0);
+        do { do { static uint8 _s_IwAssertIgnoreThis = 0;; if ((!(strlen(m_Buffer) + strlen(pText) < N)) && (IwDebugAssertIsChannelOn("CORE")) && (_s_IwAssertIgnoreThis==0)) { IwDebugAssertSetSolution (__null); IwDebugAssertSetUID(285); IwDebugAssertSetMessage ("Combined string '%s%s' too long - maximum size (including terminator character) is %d characters", m_Buffer, pText, N); switch (IwDebugAssertShow("strlen(m_Buffer) + strlen(pText) < N", "c:/marmalade/7.5/modules/iwutil/h/IwString.h", 196, (1))) { case S3E_ERROR_SHOW_STOP: do { if (s3eDebugIsDebuggerPresent()) do {if (s3eDebugIsDebuggerPresent()) *(int*)0xfffffff4 = 0; } while(0); else IwDebugExit(); } while(0); break; case S3E_ERROR_SHOW_IGNORE: _s_IwAssertIgnoreThis = 1;; break; default:; } IwDebugAssertSetUID(0); } } while (0); } while (0);
         strcat(m_Buffer, pText);
         return m_Buffer;
     };
 
     const char* operator += (CIwString const& str)
     {
-        do { do { static uint8 _s_IwAssertIgnoreThis = 0;; if ((!(strlen(m_Buffer) + str.length() < N)) && (IwDebugAssertIsChannelOn("CORE")) && (_s_IwAssertIgnoreThis==0)) { IwDebugAssertSetSolution (__null); IwDebugAssertSetUID(286); IwDebugAssertSetMessage ("Combined string '%s%s' too long - maximum size (including terminator character) is %d characters", m_Buffer, str.c_str(), N); switch (IwDebugAssertShow("strlen(m_Buffer) + str.length() < N", "c:/marmalade/7.5/modules/iwutil/h/IwString.h", 203, (1))) { case S3E_ERROR_SHOW_STOP: do { if (s3eDebugIsDebuggerPresent()) do { if (s3eDebugIsDebuggerPresent()) __asm__ (" int $3 "); } while(0); else IwDebugExit(); } while(0); break; case S3E_ERROR_SHOW_IGNORE: _s_IwAssertIgnoreThis = 1;; break; default:; } IwDebugAssertSetUID(0); } } while (0); } while (0);
+        do { do { static uint8 _s_IwAssertIgnoreThis = 0;; if ((!(strlen(m_Buffer) + str.length() < N)) && (IwDebugAssertIsChannelOn("CORE")) && (_s_IwAssertIgnoreThis==0)) { IwDebugAssertSetSolution (__null); IwDebugAssertSetUID(286); IwDebugAssertSetMessage ("Combined string '%s%s' too long - maximum size (including terminator character) is %d characters", m_Buffer, str.c_str(), N); switch (IwDebugAssertShow("strlen(m_Buffer) + str.length() < N", "c:/marmalade/7.5/modules/iwutil/h/IwString.h", 203, (1))) { case S3E_ERROR_SHOW_STOP: do { if (s3eDebugIsDebuggerPresent()) do {if (s3eDebugIsDebuggerPresent()) *(int*)0xfffffff4 = 0; } while(0); else IwDebugExit(); } while(0); break; case S3E_ERROR_SHOW_IGNORE: _s_IwAssertIgnoreThis = 1;; break; default:; } IwDebugAssertSetUID(0); } } while (0); } while (0);
         strcat(m_Buffer, str.c_str());
         return m_Buffer;
     };
 
     CIwString operator + (const char* pText)
     {
-        do { do { static uint8 _s_IwAssertIgnoreThis = 0;; if ((!(strlen(m_Buffer) + strlen(pText) < N)) && (IwDebugAssertIsChannelOn("CORE")) && (_s_IwAssertIgnoreThis==0)) { IwDebugAssertSetSolution (__null); IwDebugAssertSetUID(287); IwDebugAssertSetMessage ("Combined string '%s%s' too long - maximum size (including terminator character) is %d characters", m_Buffer, pText, N); switch (IwDebugAssertShow("strlen(m_Buffer) + strlen(pText) < N", "c:/marmalade/7.5/modules/iwutil/h/IwString.h", 210, (1))) { case S3E_ERROR_SHOW_STOP: do { if (s3eDebugIsDebuggerPresent()) do { if (s3eDebugIsDebuggerPresent()) __asm__ (" int $3 "); } while(0); else IwDebugExit(); } while(0); break; case S3E_ERROR_SHOW_IGNORE: _s_IwAssertIgnoreThis = 1;; break; default:; } IwDebugAssertSetUID(0); } } while (0); } while (0);
+        do { do { static uint8 _s_IwAssertIgnoreThis = 0;; if ((!(strlen(m_Buffer) + strlen(pText) < N)) && (IwDebugAssertIsChannelOn("CORE")) && (_s_IwAssertIgnoreThis==0)) { IwDebugAssertSetSolution (__null); IwDebugAssertSetUID(287); IwDebugAssertSetMessage ("Combined string '%s%s' too long - maximum size (including terminator character) is %d characters", m_Buffer, pText, N); switch (IwDebugAssertShow("strlen(m_Buffer) + strlen(pText) < N", "c:/marmalade/7.5/modules/iwutil/h/IwString.h", 210, (1))) { case S3E_ERROR_SHOW_STOP: do { if (s3eDebugIsDebuggerPresent()) do {if (s3eDebugIsDebuggerPresent()) *(int*)0xfffffff4 = 0; } while(0); else IwDebugExit(); } while(0); break; case S3E_ERROR_SHOW_IGNORE: _s_IwAssertIgnoreThis = 1;; break; default:; } IwDebugAssertSetUID(0); } } while (0); } while (0);
         CIwString ns = *this;
         strcat(ns.m_Buffer, pText);
         return ns;
@@ -5518,7 +5521,7 @@ public:
 
     CIwString operator + (const CIwString& str)
     {
-        do { do { static uint8 _s_IwAssertIgnoreThis = 0;; if ((!(strlen(m_Buffer) + str.length() < N)) && (IwDebugAssertIsChannelOn("CORE")) && (_s_IwAssertIgnoreThis==0)) { IwDebugAssertSetSolution (__null); IwDebugAssertSetUID(288); IwDebugAssertSetMessage ("Combined string '%s%s' too long - maximum size (including terminator character) is %d characters", m_Buffer, str.c_str(), N); switch (IwDebugAssertShow("strlen(m_Buffer) + str.length() < N", "c:/marmalade/7.5/modules/iwutil/h/IwString.h", 218, (1))) { case S3E_ERROR_SHOW_STOP: do { if (s3eDebugIsDebuggerPresent()) do { if (s3eDebugIsDebuggerPresent()) __asm__ (" int $3 "); } while(0); else IwDebugExit(); } while(0); break; case S3E_ERROR_SHOW_IGNORE: _s_IwAssertIgnoreThis = 1;; break; default:; } IwDebugAssertSetUID(0); } } while (0); } while (0);
+        do { do { static uint8 _s_IwAssertIgnoreThis = 0;; if ((!(strlen(m_Buffer) + str.length() < N)) && (IwDebugAssertIsChannelOn("CORE")) && (_s_IwAssertIgnoreThis==0)) { IwDebugAssertSetSolution (__null); IwDebugAssertSetUID(288); IwDebugAssertSetMessage ("Combined string '%s%s' too long - maximum size (including terminator character) is %d characters", m_Buffer, str.c_str(), N); switch (IwDebugAssertShow("strlen(m_Buffer) + str.length() < N", "c:/marmalade/7.5/modules/iwutil/h/IwString.h", 218, (1))) { case S3E_ERROR_SHOW_STOP: do { if (s3eDebugIsDebuggerPresent()) do {if (s3eDebugIsDebuggerPresent()) *(int*)0xfffffff4 = 0; } while(0); else IwDebugExit(); } while(0); break; case S3E_ERROR_SHOW_IGNORE: _s_IwAssertIgnoreThis = 1;; break; default:; } IwDebugAssertSetUID(0); } } while (0); } while (0);
         CIwString ns = *this;
         strcat(ns.m_Buffer, str.c_str());
         return ns;
@@ -5526,7 +5529,7 @@ public:
 
     const char* operator += (char c)
     {
-        do { do { static uint8 _s_IwAssertIgnoreThis = 0;; if ((!(strlen(m_Buffer) + 1 < N)) && (IwDebugAssertIsChannelOn("CORE")) && (_s_IwAssertIgnoreThis==0)) { IwDebugAssertSetSolution (__null); IwDebugAssertSetUID(289); IwDebugAssertSetMessage ("String '%s%c' too long - maximum size (including terminator character) is %d characters", m_Buffer, c, N); switch (IwDebugAssertShow("strlen(m_Buffer) + 1 < N", "c:/marmalade/7.5/modules/iwutil/h/IwString.h", 226, (1))) { case S3E_ERROR_SHOW_STOP: do { if (s3eDebugIsDebuggerPresent()) do { if (s3eDebugIsDebuggerPresent()) __asm__ (" int $3 "); } while(0); else IwDebugExit(); } while(0); break; case S3E_ERROR_SHOW_IGNORE: _s_IwAssertIgnoreThis = 1;; break; default:; } IwDebugAssertSetUID(0); } } while (0); } while (0);
+        do { do { static uint8 _s_IwAssertIgnoreThis = 0;; if ((!(strlen(m_Buffer) + 1 < N)) && (IwDebugAssertIsChannelOn("CORE")) && (_s_IwAssertIgnoreThis==0)) { IwDebugAssertSetSolution (__null); IwDebugAssertSetUID(289); IwDebugAssertSetMessage ("String '%s%c' too long - maximum size (including terminator character) is %d characters", m_Buffer, c, N); switch (IwDebugAssertShow("strlen(m_Buffer) + 1 < N", "c:/marmalade/7.5/modules/iwutil/h/IwString.h", 226, (1))) { case S3E_ERROR_SHOW_STOP: do { if (s3eDebugIsDebuggerPresent()) do {if (s3eDebugIsDebuggerPresent()) *(int*)0xfffffff4 = 0; } while(0); else IwDebugExit(); } while(0); break; case S3E_ERROR_SHOW_IGNORE: _s_IwAssertIgnoreThis = 1;; break; default:; } IwDebugAssertSetUID(0); } } while (0); } while (0);
         char str[2] = {c, '\0'};
         strcat(m_Buffer, str);
         return m_Buffer;
@@ -5839,7 +5842,7 @@ template<int N> uint32 IwHashString(const CIwString<N>& sz)
 }
 # 65 "c:/marmalade/7.5/modules/iwutil/h/IwHashString.h"
 uint32 IwHashString(const char* pChar, uint32 hash);
-# 15 "c:/Marmalade/7.5/examples/GameTutorial/CPP/Stage4/source/timer.cpp" 2
+# 15 "c:/Stage4/source/timer.cpp" 2
 
 Timer::Timer(float length, int repeat_count, Callback on_timeout, void* user_data) : m_Manager(0)
 {

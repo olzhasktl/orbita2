@@ -96,7 +96,7 @@
     <None Include="c:/marmalade/7.5/s3e/h/std/c++/algorithm">
       <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
     </None>
-    <None Include="c:/Users/User/Desktop/Stage4/data/app.icf">
+    <None Include="c:/Stage4/data/app.icf">
       <Filter></Filter>
     </None>
     <None Include="c:/marmalade/7.5/s3e/h/std/c++/bitset">
@@ -246,7 +246,7 @@
     <None Include="c:/marmalade/7.5/modules/iwresmanager/iwresmanager.mkf">
       <Filter>'Marmalade Studio'\iwresmanager</Filter>
     </None>
-    <None Include="c:/users/user/desktop/stage4/modules/soundengine/docs/iwsound.config.txt">
+    <None Include="c:/stage4/modules/soundengine/docs/iwsound.config.txt">
       <Filter>(SoundEngine)\Docs</Filter>
     </None>
     <None Include="c:/marmalade/7.5/modules/iwtween/iwtween.mkf">
@@ -318,7 +318,7 @@
     <None Include="c:/marmalade/7.5/s3e/h/std/c++/slist">
       <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
     </None>
-    <None Include="c:/users/user/desktop/stage4/modules/soundengine/soundengine.mkf">
+    <None Include="c:/stage4/modules/soundengine/soundengine.mkf">
       <Filter>(SoundEngine)</Filter>
     </None>
     <None Include="c:/marmalade/7.5/s3e/h/std/c++/sstream">
@@ -360,7 +360,7 @@
     <None Include="c:/marmalade/7.5/modules/third_party/zlib/zlib.mkf">
       <Filter>(zlib)</Filter>
     </None>
-    <CustomBuild Include="c:/Users/User/Desktop/Stage4/Stage4.mkb">
+    <CustomBuild Include="c:/Stage4/Stage4.mkb">
       <Filter></Filter>
     </CustomBuild>
   </ItemGroup>
@@ -665,7 +665,7 @@
     <ClInclude Include="c:/marmalade/7.5/modules/iwgx/h/IwResHandlerMTL.h">
       <Filter>'Marmalade Studio'\iwgx</Filter>
     </ClInclude>
-    <ClInclude Include="c:/users/user/desktop/stage4/modules/soundengine/h/IwResHandlerWAV.h">
+    <ClInclude Include="c:/stage4/modules/soundengine/h/IwResHandlerWAV.h">
       <Filter>(SoundEngine)</Filter>
     </ClInclude>
     <ClInclude Include="c:/marmalade/7.5/modules/iwresmanager/h/IwResManager.h">
@@ -689,34 +689,34 @@
     <ClInclude Include="c:/marmalade/7.5/modules/iwutil/h/IwSingleton.h">
       <Filter>'Marmalade Studio'\iwutil</Filter>
     </ClInclude>
-    <ClInclude Include="c:/users/user/desktop/stage4/modules/soundengine/h/IwSound.h">
+    <ClInclude Include="c:/stage4/modules/soundengine/h/IwSound.h">
       <Filter>(SoundEngine)</Filter>
     </ClInclude>
-    <ClInclude Include="c:/users/user/desktop/stage4/modules/soundengine/h/IwSoundADPCM.h">
+    <ClInclude Include="c:/stage4/modules/soundengine/h/IwSoundADPCM.h">
       <Filter>(SoundEngine)</Filter>
     </ClInclude>
-    <ClInclude Include="c:/users/user/desktop/stage4/modules/soundengine/h/IwSoundData.h">
+    <ClInclude Include="c:/stage4/modules/soundengine/h/IwSoundData.h">
       <Filter>(SoundEngine)</Filter>
     </ClInclude>
-    <ClInclude Include="c:/users/user/desktop/stage4/modules/soundengine/h/IwSoundGroup.h">
+    <ClInclude Include="c:/stage4/modules/soundengine/h/IwSoundGroup.h">
       <Filter>(SoundEngine)</Filter>
     </ClInclude>
-    <ClInclude Include="c:/users/user/desktop/stage4/modules/soundengine/h/IwSoundInst.h">
+    <ClInclude Include="c:/stage4/modules/soundengine/h/IwSoundInst.h">
       <Filter>(SoundEngine)</Filter>
     </ClInclude>
-    <ClInclude Include="c:/users/user/desktop/stage4/modules/soundengine/h/IwSoundManager.h">
+    <ClInclude Include="c:/stage4/modules/soundengine/h/IwSoundManager.h">
       <Filter>(SoundEngine)</Filter>
     </ClInclude>
-    <ClInclude Include="c:/users/user/desktop/stage4/modules/soundengine/h/IwSoundPCM.h">
+    <ClInclude Include="c:/stage4/modules/soundengine/h/IwSoundPCM.h">
       <Filter>(SoundEngine)</Filter>
     </ClInclude>
-    <ClInclude Include="c:/users/user/desktop/stage4/modules/soundengine/h/IwSoundParams.h">
+    <ClInclude Include="c:/stage4/modules/soundengine/h/IwSoundParams.h">
       <Filter>(SoundEngine)</Filter>
     </ClInclude>
-    <ClInclude Include="c:/users/user/desktop/stage4/modules/soundengine/h/IwSoundSpec.h">
+    <ClInclude Include="c:/stage4/modules/soundengine/h/IwSoundSpec.h">
       <Filter>(SoundEngine)</Filter>
     </ClInclude>
-    <ClInclude Include="c:/users/user/desktop/stage4/modules/soundengine/h/IwSoundWAV.h">
+    <ClInclude Include="c:/stage4/modules/soundengine/h/IwSoundWAV.h">
       <Filter>(SoundEngine)</Filter>
     </ClInclude>
     <ClInclude Include="c:/marmalade/7.5/modules/iwutil/h/IwString.h">
@@ -770,7 +770,7 @@
     <ClInclude Include="c:/marmalade/7.5/s3e/h/std/assert.h">
       <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
     </ClInclude>
-    <ClInclude Include="c:/Users/User/Desktop/Stage4/source/audio.h">
+    <ClInclude Include="c:/Stage4/source/audio.h">
       <Filter>source</Filter>
     </ClInclude>
     <ClInclude Include="c:/marmalade/7.5/s3e/h/std/byteswap.h">
@@ -830,7 +830,7 @@
     <ClInclude Include="c:/marmalade/7.5/s3e/h/std/c++/fstream.h">
       <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
     </ClInclude>
-    <ClInclude Include="c:/Users/User/Desktop/Stage4/source/game.h">
+    <ClInclude Include="c:/Stage4/source/game.h">
       <Filter>source</Filter>
     </ClInclude>
     <ClInclude Include="c:/marmalade/7.5/s3e/h/std/getopt.h">
@@ -878,7 +878,7 @@
     <ClInclude Include="c:/marmalade/7.5/s3e/h/std/ifaddrs.h">
       <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
     </ClInclude>
-    <ClInclude Include="c:/Users/User/Desktop/Stage4/source/input.h">
+    <ClInclude Include="c:/Stage4/source/input.h">
       <Filter>source</Filter>
     </ClInclude>
     <ClInclude Include="c:/marmalade/7.5/s3e/h/std/inttypes.h">
@@ -947,10 +947,10 @@
     <ClInclude Include="c:/marmalade/7.5/s3e/h/std/locale.h">
       <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
     </ClInclude>
-    <ClInclude Include="c:/Users/User/Desktop/Stage4/source/main.h">
+    <ClInclude Include="c:/Stage4/source/main.h">
       <Filter>source</Filter>
     </ClInclude>
-    <ClInclude Include="c:/Users/User/Desktop/Stage4/source/mainMenu.h">
+    <ClInclude Include="c:/Stage4/source/mainMenu.h">
       <Filter>source</Filter>
     </ClInclude>
     <ClInclude Include="c:/marmalade/7.5/s3e/h/std/malloc.h">
@@ -989,7 +989,7 @@
     <ClInclude Include="c:/marmalade/7.5/s3e/h/std/sys/param.h">
       <Filter>'Marmalade System (S3E)'\stdc headers\sys</Filter>
     </ClInclude>
-    <ClInclude Include="c:/Users/User/Desktop/Stage4/source/pauseMenu.h">
+    <ClInclude Include="c:/Stage4/source/pauseMenu.h">
       <Filter>source</Filter>
     </ClInclude>
     <ClInclude Include="c:/marmalade/7.5/modules/third_party/libpng/h/png.h">
@@ -1022,7 +1022,7 @@
     <ClInclude Include="c:/marmalade/7.5/s3e/h/std/sys/resource.h">
       <Filter>'Marmalade System (S3E)'\stdc headers\sys</Filter>
     </ClInclude>
-    <ClInclude Include="c:/Users/User/Desktop/Stage4/source/resources.h">
+    <ClInclude Include="c:/Stage4/source/resources.h">
       <Filter>source</Filter>
     </ClInclude>
     <ClInclude Include="c:/marmalade/7.5/s3e/h/std/c++/rlocks.h">
@@ -1163,7 +1163,7 @@
     <ClInclude Include="c:/marmalade/7.5/s3e/h/ext/s3edebugHeap.h">
       <Filter>'Marmalade System (S3E)'\Extensions</Filter>
     </ClInclude>
-    <ClInclude Include="c:/Users/User/Desktop/Stage4/source/scene.h">
+    <ClInclude Include="c:/Stage4/source/scene.h">
       <Filter>source</Filter>
     </ClInclude>
     <ClInclude Include="c:/marmalade/7.5/s3e/h/std/sched.h">
@@ -1247,10 +1247,10 @@
     <ClInclude Include="c:/marmalade/7.5/s3e/h/std/syslog.h">
       <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
     </ClInclude>
-    <ClInclude Include="c:/Users/User/Desktop/Stage4/build_stage4_vc12/temp_defines_debug.h">
+    <ClInclude Include="c:/Stage4/build_stage4_vc12/temp_defines_debug.h">
       <Filter>'generated files'</Filter>
     </ClInclude>
-    <ClInclude Include="c:/Users/User/Desktop/Stage4/build_stage4_vc12/temp_defines_release.h">
+    <ClInclude Include="c:/Stage4/build_stage4_vc12/temp_defines_release.h">
       <Filter>'generated files'</Filter>
     </ClInclude>
     <ClInclude Include="c:/marmalade/7.5/s3e/h/std/termios.h">
@@ -1262,7 +1262,7 @@
     <ClInclude Include="c:/marmalade/7.5/s3e/h/std/sys/time.h">
       <Filter>'Marmalade System (S3E)'\stdc headers\sys</Filter>
     </ClInclude>
-    <ClInclude Include="c:/Users/User/Desktop/Stage4/source/timer.h">
+    <ClInclude Include="c:/Stage4/source/timer.h">
       <Filter>source</Filter>
     </ClInclude>
     <ClInclude Include="c:/marmalade/7.5/s3e/h/std/sys/times.h">
@@ -1321,10 +1321,10 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\marmalade\7.5\modules\iw2dscenegraph\source\Iw2DSceneGraph.cpp">
+    <ClCompile Include="..\..\marmalade\7.5\modules\iw2dscenegraph\source\Iw2DSceneGraph.cpp">
       <Filter>'Marmalade Studio'\iw2dscenegraph</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\marmalade\7.5\modules\iw2dscenegraphcore\source\Iw2DSceneGraphCore.cpp">
+    <ClCompile Include="..\..\marmalade\7.5\modules\iw2dscenegraphcore\source\Iw2DSceneGraphCore.cpp">
       <Filter>'Marmalade Studio'\iw2dscenegraphcore</Filter>
     </ClCompile>
     <ClCompile Include="..\modules\soundengine\source\IwResHandlerWAV.cpp">
@@ -1357,10 +1357,10 @@
     <ClCompile Include="..\modules\soundengine\source\IwSoundWAV.cpp">
       <Filter>(SoundEngine)</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\marmalade\7.5\modules\iwtween\source\IwTween.cpp">
+    <ClCompile Include="..\..\marmalade\7.5\modules\iwtween\source\IwTween.cpp">
       <Filter>(iwtween)</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\marmalade\7.5\extensions\pvrtextool\interface\PVRTexTool_interface.cpp">
+    <ClCompile Include="..\..\marmalade\7.5\extensions\pvrtextool\interface\PVRTexTool_interface.cpp">
       <Filter>Extensions\PVRTexTool\interface</Filter>
     </ClCompile>
     <ClCompile Include="..\source\audio.cpp">

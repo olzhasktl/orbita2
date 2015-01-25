@@ -23,10 +23,10 @@ class HubConfig(deploy_config.DefaultConfig):
     android_icon_group = {}
     android_install_location = 1
     android_pkgname = r"com.Olzhas.Stage4"
-    icon = r"C:/Marmalade/7.5/examples/GameTutorial/CPP/Stage4/../../../marmaladeexampleresources/resources/icons"
-    splashscreen = r"C:/Marmalade/7.5/examples/GameTutorial/CPP/Stage4/../../../marmaladeexampleresources/resources/splashscreens"
+    icon = r"C:/Stage4/../../../marmaladeexampleresources/resources/icons"
+    splashscreen = r"C:/Stage4/../../../marmaladeexampleresources/resources/splashscreens"
     assets = assets["Default"]
-    config = [ur"C:/Marmalade/7.5/examples/GameTutorial/CPP/Stage4/data/app.icf"]
+    config = [ur"C:/Stage4/data/app.icf"]
     name = ur"Stage4"
     caption = ur"Stage4"
     provider = ur"Olzhas"
